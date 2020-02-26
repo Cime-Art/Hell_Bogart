@@ -77,7 +77,7 @@ DerivedDataCache/*
 .cache/*
 **/*.akd
 **/*.prof
-**/*.wsetting
-**/*.validation
+**/*.wsettings
+**/*.validationcache
 **/*.wem
 
