@@ -1,0 +1,29 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	754284858	Ammo_Type			\Default Work Unit\Iems\Ammo_Type	
+	1112577096	Grip_Type			\Default Work Unit\Iems\Grip_Type	
+	2316866892	Chamber_Type			\Default Work Unit\Iems\Chamber_Type	
+	3038226489	Canon_Type			\Default Work Unit\Iems\Canon_Type	
+
+State	ID	Name	State Group			Notes
+	0	None	Ammo_Type			
+	186852181	Thunder	Ammo_Type			
+	344481046	Ice	Ammo_Type			
+	2628937827	Regular	Ammo_Type			
+	2678880713	Fire	Ammo_Type			
+	0	None	Grip_Type			
+	0	None	Chamber_Type			
+	252199009	Spread_60	Chamber_Type			
+	419409252	Spread_180	Chamber_Type			
+	2572109827	Regular_Spread	Chamber_Type			
+	0	None	Canon_Type			
+	2815114540	Transpercant	Canon_Type			
+	3185142962	Portee	Canon_Type			
+	3626681980	Regular_Chamber	Canon_Type			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
