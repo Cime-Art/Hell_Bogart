@@ -1,0 +1,4 @@
+General_Soundbank	"Stop_Door_Opening"
+General_Soundbank	"Play_Door_Opening"
+General_Soundbank	"Play_Shotgun"
+General_Soundbank	"Play_Mob_Exploded"

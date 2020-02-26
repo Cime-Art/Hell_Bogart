@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{887FAF05-D3F3-4C32-AC51-2B7DE72266B6}" SchemaVersion="94">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{887FAF05-D3F3-4C32-AC51-2B7DE72266B6}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Firing_Rate" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

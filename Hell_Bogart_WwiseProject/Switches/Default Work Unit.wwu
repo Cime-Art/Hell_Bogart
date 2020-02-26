@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{34C85D2D-598A-435C-96F5-FA0CF0715A26}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{34C85D2D-598A-435C-96F5-FA0CF0715A26}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Weapon_Type" ID="{86EA499B-1858-42E5-95B9-A16DAD816365}">
+					<ChildrenList>
+						<Switch Name="Shotgun" ID="{7E4F6955-F44B-40D8-956E-3CBCAE1837BB}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
