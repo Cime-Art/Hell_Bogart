@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\GIT REPOSITORIES\Projets JV\Hell_Bogart\Hell_Bogart_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GIT REPOSITORIES\Projets JV\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GIT REPOSITORIES\Projets JV\Hell_Bogart\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\GIT REPOSITORIES\Projets JV\Hell_Bogart\Hell_Bogart_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3657742645" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\General_Soundbank</ObjectPath>
+			<ShortName>General_Soundbank</ShortName>
+			<Path>General_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1548782119" Name="Play_Door_Opening" ObjectPath="\Events\Default Work Unit\Play_Door_Opening"/>
+				<Event Id="4263196898" Name="Play_Mob_Exploded" ObjectPath="\Events\Default Work Unit\Play_Mob_Exploded"/>
+				<Event Id="992244" Name="Play_Shotgun" ObjectPath="\Events\Default Work Unit\Play_Shotgun"/>
+				<Event Id="3101840973" Name="Stop_Door_Opening" ObjectPath="\Events\Default Work Unit\Stop_Door_Opening"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="78832806" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_NoChamber_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_NoChamber_01_10C4C929.wem</Path>
+				</File>
+				<File Id="101291286" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_RegularCanon_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_RegularCanon_02_10C4C929.wem</Path>
+				</File>
+				<File Id="112992839" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_RegularAmmo_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_RegularAmmo_01_10C4C929.wem</Path>
+				</File>
+				<File Id="114633403" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitIce_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitIce_01_10C4C929.wem</Path>
+				</File>
+				<File Id="131298312" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_RegularCanon_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_RegularCanon_00_10C4C929.wem</Path>
+				</File>
+				<File Id="139919943" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_StartDropShell_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_StartDropShell_00_10C4C929.wem</Path>
+				</File>
+				<File Id="163274769" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_IceAmmo_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_IceAmmo_02_10C4C929.wem</Path>
+				</File>
+				<File Id="173870180" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitIce_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitIce_02_10C4C929.wem</Path>
+				</File>
+				<File Id="175927279" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_IceAmmo_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_IceAmmo_01_10C4C929.wem</Path>
+				</File>
+				<File Id="209701508" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_CanonPortee_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_CanonPortee_02_10C4C929.wem</Path>
+				</File>
+				<File Id="227489954" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitThunder_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitThunder_00_10C4C929.wem</Path>
+				</File>
+				<File Id="230183498" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitFire_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitFire_02_10C4C929.wem</Path>
+				</File>
+				<File Id="240532853" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitThunder_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitThunder_02_10C4C929.wem</Path>
+				</File>
+				<File Id="244648758" Language="SFX">
+					<ShortName>HB-SFX-Other-EndBigStoneDoorOpening.wav</ShortName>
+					<Path>SFX\HB-SFX-Other-EndBigStoneDoorOpening_10C4C929.wem</Path>
+				</File>
+				<File Id="277417704" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_NoChamber_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_NoChamber_02_10C4C929.wem</Path>
+				</File>
+				<File Id="293781532" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitRegular_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitRegular_00_10C4C929.wem</Path>
+				</File>
+				<File Id="305038015" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_ThunderAmmo_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_ThunderAmmo_02_ED91B86A.wem</Path>
+				</File>
+				<File Id="317111851" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitRegular_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitRegular_02_10C4C929.wem</Path>
+				</File>
+				<File Id="333758070" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_FireAmmo_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_FireAmmo_00_10C4C929.wem</Path>
+				</File>
+				<File Id="345676462" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitRegular_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitRegular_01_10C4C929.wem</Path>
+				</File>
+				<File Id="358363726" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_FireAmmo_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_FireAmmo_01_10C4C929.wem</Path>
+				</File>
+				<File Id="390658827" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Spread180_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Spread180_02_10C4C929.wem</Path>
+				</File>
+				<File Id="393304929" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Reload_Out_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Reload_Out_00_10C4C929.wem</Path>
+				</File>
+				<File Id="396565415" Language="SFX">
+					<ShortName>SFX-HB-MobJungleCharlie-Exploded-v2-02.wav</ShortName>
+					<Path>SFX\SFX-HB-MobJungleCharlie-Exploded-v2-02_10C4C929.wem</Path>
+				</File>
+				<File Id="398942520" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_EndDropShell_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_EndDropShell_01_10C4C929.wem</Path>
+				</File>
+				<File Id="418805654" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_CanonPortee_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_CanonPortee_01_10C4C929.wem</Path>
+				</File>
+				<File Id="431303083" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_StartDropShell_03.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_StartDropShell_03_10C4C929.wem</Path>
+				</File>
+				<File Id="447038367" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_IceAmmo_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_IceAmmo_00_10C4C929.wem</Path>
+				</File>
+				<File Id="454462908" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Spread60_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Spread60_01_10C4C929.wem</Path>
+				</File>
+				<File Id="464167368" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_NoChamber_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_NoChamber_00_10C4C929.wem</Path>
+				</File>
+				<File Id="499447587" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitFire_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitFire_00_10C4C929.wem</Path>
+				</File>
+				<File Id="502360136" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_EndDropShell_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_EndDropShell_02_10C4C929.wem</Path>
+				</File>
+				<File Id="516143379" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_RegularAmmo_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_RegularAmmo_00_10C4C929.wem</Path>
+				</File>
+				<File Id="529571687" Language="SFX">
+					<ShortName>SFX-HB-MobJungleCharlie-Exploded-v2-04.wav</ShortName>
+					<Path>SFX\SFX-HB-MobJungleCharlie-Exploded-v2-04_10C4C929.wem</Path>
+				</File>
+				<File Id="552564079" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_RegularCanon_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_RegularCanon_01_10C4C929.wem</Path>
+				</File>
+				<File Id="561745439" Language="SFX">
+					<ShortName>SFX-HB-MobJungleCharlie-Exploded-v2-03.wav</ShortName>
+					<Path>SFX\SFX-HB-MobJungleCharlie-Exploded-v2-03_10C4C929.wem</Path>
+				</File>
+				<File Id="562077786" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_EndDropShell_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_EndDropShell_00_10C4C929.wem</Path>
+				</File>
+				<File Id="565969212" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Spread180_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Spread180_00_10C4C929.wem</Path>
+				</File>
+				<File Id="581784882" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_CanonTranspercant_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_CanonTranspercant_01_10C4C929.wem</Path>
+				</File>
+				<File Id="589757548" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_CanonTranspercant_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_CanonTranspercant_02_10C4C929.wem</Path>
+				</File>
+				<File Id="611242115" Language="SFX">
+					<ShortName>SFX-HB-MobJungleCharlie-Exploded-v2-01.wav</ShortName>
+					<Path>SFX\SFX-HB-MobJungleCharlie-Exploded-v2-01_10C4C929.wem</Path>
+				</File>
+				<File Id="646026284" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Reload_In_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Reload_In_02_10C4C929.wem</Path>
+				</File>
+				<File Id="646754001" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitIce_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitIce_00_10C4C929.wem</Path>
+				</File>
+				<File Id="651766913" Language="SFX">
+					<ShortName>SFX-HB-MobJungleCharlie-Exploded-v2-00.wav</ShortName>
+					<Path>SFX\SFX-HB-MobJungleCharlie-Exploded-v2-00_10C4C929.wem</Path>
+				</File>
+				<File Id="661955203" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_EndDropShell_03.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_EndDropShell_03_10C4C929.wem</Path>
+				</File>
+				<File Id="715525088" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_ThunderAmmo_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_ThunderAmmo_01_13059E1A.wem</Path>
+				</File>
+				<File Id="728468316" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_StartDropShell_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_StartDropShell_02_10C4C929.wem</Path>
+				</File>
+				<File Id="739433020" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Spread60_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Spread60_02_10C4C929.wem</Path>
+				</File>
+				<File Id="742319399" Language="SFX">
+					<ShortName>HB-SFX-Other-OpenBigStoneDoor.wav</ShortName>
+					<Path>SFX\HB-SFX-Other-OpenBigStoneDoor_10C4C929.wem</Path>
+				</File>
+				<File Id="746337883" Language="SFX">
+					<ShortName>HB-SFX-Other-LoopBigStoneDoorOpening.wav</ShortName>
+					<Path>SFX\HB-SFX-Other-LoopBigStoneDoorOpening_D79FB2B7.wem</Path>
+				</File>
+				<File Id="756586809" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_ThunderAmmo_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_ThunderAmmo_00_13824A88.wem</Path>
+				</File>
+				<File Id="761814132" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Spread180_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Spread180_01_10C4C929.wem</Path>
+				</File>
+				<File Id="780555555" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Spread60_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Spread60_00_10C4C929.wem</Path>
+				</File>
+				<File Id="798374029" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitFire_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitFire_01_10C4C929.wem</Path>
+				</File>
+				<File Id="845056824" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_RegularAmmo_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_RegularAmmo_02_10C4C929.wem</Path>
+				</File>
+				<File Id="849695572" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_StartDropShell_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_StartDropShell_01_10C4C929.wem</Path>
+				</File>
+				<File Id="855272960" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_CanonPortee_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_CanonPortee_00_10C4C929.wem</Path>
+				</File>
+				<File Id="864636949" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_CanonTranspercant_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_CanonTranspercant_00_10C4C929.wem</Path>
+				</File>
+				<File Id="910590706" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Reload_Out_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Reload_Out_01_10C4C929.wem</Path>
+				</File>
+				<File Id="956980184" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Reload_Out_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Reload_Out_02_10C4C929.wem</Path>
+				</File>
+				<File Id="1010445267" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_HitThunder_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_HitThunder_01_10C4C929.wem</Path>
+				</File>
+				<File Id="1043116496" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_FireAmmo_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_FireAmmo_02_10C4C929.wem</Path>
+				</File>
+				<File Id="1045122310" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Reload_In_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Reload_In_01_10C4C929.wem</Path>
+				</File>
+				<File Id="1069671681" Language="SFX">
+					<ShortName>HB_SFX_Shotgun_Reload_In_00.wav</ShortName>
+					<Path>SFX\HB_SFX_Shotgun_Reload_In_00_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
