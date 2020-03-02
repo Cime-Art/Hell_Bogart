@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6C7CCDE0-AF93-493A-A8DF-31739D320EF3}" SchemaVersion="94">
+	<SoundcasterSessions>
+		<WorkUnit Name="Simon" ID="{6C7CCDE0-AF93-493A-A8DF-31739D320EF3}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Character" ID="{3E4E9FD7-5F7E-4EBA-851A-2DA57709D058}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Shotgun" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Mob_Exploded" ID="{52656032-C1BD-42D6-AA40-2E5AF52D1CD6}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
+							<Value>4</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Fire" ID="{50764EF1-8C40-4B5A-8672-41C948DE7270}"/>
+						<CurrentStateRef Name="Spread_180" ID="{FC55DF69-7C23-4C99-9025-1D3267E6E6A5}"/>
+						<CurrentStateRef Name="Portee" ID="{23DC4F78-3731-4D47-9A4D-6BE404AFFD37}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

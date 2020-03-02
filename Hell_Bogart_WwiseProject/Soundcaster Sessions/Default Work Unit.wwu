@@ -1,43 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0FAAECEB-DFDE-4850-9E45-8EB7748F45D9}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{0FAAECEB-DFDE-4850-9E45-8EB7748F45D9}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundcasterSession Name="Soundcaster" ID="{3E4E9FD7-5F7E-4EBA-851A-2DA57709D058}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="Play_Shotgun" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}" WorkUnitID="{A5EED9D8-8846-4160-A94B-A2051695A28A}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Mob_Exploded" ID="{52656032-C1BD-42D6-AA40-2E5AF52D1CD6}" WorkUnitID="{A5EED9D8-8846-4160-A94B-A2051695A28A}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Door_Opening" ID="{7E4511E8-B55D-48C3-AF33-F81DD6DD4E50}" WorkUnitID="{A5EED9D8-8846-4160-A94B-A2051695A28A}"/>
-							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Stop_Door_Opening" ID="{0F44ECC8-0C4B-4A06-B809-BF7009EBAB35}" WorkUnitID="{A5EED9D8-8846-4160-A94B-A2051695A28A}"/>
-							<Position X="4" Y="0"/>
-						</Module>
-					</ModuleList>
-					<RTPCValueList ShowAll="true">
-						<RTPCValue>
-							<GameParameterRef Name="Firing_Rate" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
-							<Value>0</Value>
-						</RTPCValue>
-					</RTPCValueList>
-					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
-						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
-						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
-					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Shotgun" ID="{7E4F6955-F44B-40D8-956E-3CBCAE1837BB}"/>
-					</CurrentSwitchList>
-				</SoundcasterSession>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{0FAAECEB-DFDE-4850-9E45-8EB7748F45D9}" PersistMode="Standalone"/>
 	</SoundcasterSessions>
 </WwiseDocument>
