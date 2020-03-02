@@ -22,6 +22,10 @@
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Exploded_MobJungleCharlie_EVENT" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Shotgun_EVENT" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -49,17 +53,17 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
-							<Value>12</Value>
+							<Value>49</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
-							<Value>10.9</Value>
+							<Value>4</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
-						<CurrentStateRef Name="Transpercant" ID="{CB2C51F5-D833-4773-B566-177406D771B5}"/>
+						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
 						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
 					</CurrentStateList>

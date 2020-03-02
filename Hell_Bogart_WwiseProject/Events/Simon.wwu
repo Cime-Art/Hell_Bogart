@@ -193,6 +193,21 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Folder Name="Exploded" ID="{48E3BE68-111B-4B47-BBE6-FC5C1D69C608}" ShortID="305815484">
+									<ChildrenList>
+										<Event Name="Play_Exploded_MobJungleCharlie_EVENT" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}">
+											<ChildrenList>
+												<Action Name="" ID="{72FE124C-6193-4C3F-901E-0E04A49A9283}" ShortID="760425453">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Exploded_Bones_MobJungleCharlie_RND" ID="{090D44BB-BD78-4D83-BC3D-872B64C372FA}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

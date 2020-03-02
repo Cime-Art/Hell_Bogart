@@ -3474,6 +3474,134 @@
 														</RandomSequenceContainer>
 													</ChildrenList>
 												</Folder>
+												<Folder Name="Exploded" ID="{6BDBACA1-D15B-488B-9AAF-EB863EF10780}" ShortID="269171098">
+													<ChildrenList>
+														<RandomSequenceContainer Name="Exploded_Bones_MobJungleCharlie_RND" ID="{090D44BB-BD78-4D83-BC3D-872B64C372FA}" ShortID="1016997420">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="SFX_HB_MobJungleCharlie_v3_Exploded_01" ID="{3EE03A48-D7EB-4E1D-9050-1E92B25EFAA5}" ShortID="153367142">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend2">
+																			<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HB_MobJungleCharlie_v3_Exploded_01" ID="{0EE20C1A-899D-4250-943B-537B839AF4E7}" ShortID="890190337">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HB_MobJungleCharlie_v3_Exploded_01.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HB_MobJungleCharlie_v3_Exploded_01" ID="{0EE20C1A-899D-4250-943B-537B839AF4E7}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HB_MobJungleCharlie_v3_Exploded_02" ID="{4B4107D9-2C06-477D-9AB4-222178B6E399}" ShortID="764422778">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend2">
+																			<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HB_MobJungleCharlie_v3_Exploded_02" ID="{EB6C1660-9EBA-46C2-AF73-013E8387ACEB}" ShortID="476338869">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HB_MobJungleCharlie_v3_Exploded_02.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HB_MobJungleCharlie_v3_Exploded_02" ID="{EB6C1660-9EBA-46C2-AF73-013E8387ACEB}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HB_MobJungleCharlie_v3_Exploded_03" ID="{F28BEE1E-E246-400E-9D83-8839D88E0D31}" ShortID="470617786">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend2">
+																			<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HB_MobJungleCharlie_v3_Exploded_03" ID="{24728B62-8641-4275-AD06-F698819B5A6B}" ShortID="15139620">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HB_MobJungleCharlie_v3_Exploded_03.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HB_MobJungleCharlie_v3_Exploded_03" ID="{24728B62-8641-4275-AD06-F698819B5A6B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HB_MobJungleCharlie_v3_Exploded_04" ID="{2E1131AD-5E78-44ED-9D4A-AE3036D3A012}" ShortID="19779920">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend2">
+																			<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HB_MobJungleCharlie_v3_Exploded_04" ID="{F7D6101D-465E-4A4D-AEEB-843A68C6BDA6}" ShortID="985307796">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HB_MobJungleCharlie_v3_Exploded_04.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HB_MobJungleCharlie_v3_Exploded_04" ID="{F7D6101D-465E-4A4D-AEEB-843A68C6BDA6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+												</Folder>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
