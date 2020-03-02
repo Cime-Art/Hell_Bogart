@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Iems" ID="{8F2BADD0-F656-449B-B33E-0899089CB237}" ShortID="974916730">
 					<ChildrenList>
-						<StateGroup Name="Ammo_Type" ID="{DC8CE865-7803-420C-9365-226A284C6C30}">
+						<StateGroup Name="Ammo_Type_STATE" ID="{DC8CE865-7803-420C-9365-226A284C6C30}">
 							<ChildrenList>
 								<State Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
 								<State Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
@@ -14,7 +14,7 @@
 								<State Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
 							</ChildrenList>
 						</StateGroup>
-						<StateGroup Name="Canon_Type" ID="{F9419D13-9F28-4B7C-A1BE-0236D8F316D1}">
+						<StateGroup Name="Canon_Type_STATE" ID="{F9419D13-9F28-4B7C-A1BE-0236D8F316D1}">
 							<ChildrenList>
 								<State Name="None" ID="{513033F6-C1BC-4896-8DE5-A53FA48880AB}"/>
 								<State Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
@@ -22,7 +22,7 @@
 								<State Name="Transpercant" ID="{CB2C51F5-D833-4773-B566-177406D771B5}"/>
 							</ChildrenList>
 						</StateGroup>
-						<StateGroup Name="Chamber_Type" ID="{2719BAF0-9D20-4657-9C6E-B97269AC2F57}">
+						<StateGroup Name="Chamber_Type_STATE" ID="{2719BAF0-9D20-4657-9C6E-B97269AC2F57}">
 							<ChildrenList>
 								<State Name="None" ID="{9B0A7F4C-EC6C-4D50-B4F9-C44A88277C9E}"/>
 								<State Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
@@ -30,10 +30,44 @@
 								<State Name="Spread_180" ID="{FC55DF69-7C23-4C99-9025-1D3267E6E6A5}"/>
 							</ChildrenList>
 						</StateGroup>
-						<StateGroup Name="Grip_Type" ID="{32B3B4B2-97BB-4C04-8A81-B9A37B07C45D}">
+						<StateGroup Name="Shotgun_Equiped_STATE" ID="{8FB916D5-E8AE-4E49-8C0A-0B2F5F122240}">
 							<ChildrenList>
-								<State Name="None" ID="{F3DFEB37-AB76-4219-BD82-E5005CBE1317}"/>
+								<State Name="None" ID="{AC1DEA53-B294-4EF1-BC43-204DB946B111}"/>
+								<State Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
+								<State Name="No" ID="{05CC5C8D-A3EC-425E-8E5E-11D81F5F5D42}"/>
 							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enviro" ID="{52C61503-DF22-4044-A720-1EC170C23122}" ShortID="606328828">
+					<ChildrenList>
+						<StateGroup Name="Acoustic_STATE" ID="{ADEED407-5BAD-4BFD-8E19-6306DBDB07C6}">
+							<ChildrenList>
+								<State Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
+								<State Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+								<State Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
+								<State Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
+							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+									<EndState Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
+									<Time>1</Time>
+									<IsShared>true</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
+									<EndState Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+									<Time>1</Time>
+									<IsShared>true</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
+									<EndState Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
+									<Time>1</Time>
+									<IsShared>true</IsShared>
+								</Transition>
+							</TransitionList>
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
