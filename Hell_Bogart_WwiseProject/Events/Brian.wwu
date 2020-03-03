@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Brian" ID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" PersistMode="Standalone"/>
+		<WorkUnit Name="Brian" ID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Method_A" ID="{1C0FAB98-371F-48A4-93F3-0C576D6D079C}">
+					<ChildrenList>
+						<Action Name="" ID="{35055F90-B285-4B37-919D-8C4AD271051F}" ShortID="387051863">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_SWITCH(method_A)" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Method_B" ID="{B15C0BEB-6218-41BC-A928-2D0C773A9A38}">
+					<ChildrenList>
+						<Action Name="" ID="{497E2F55-DC13-49B9-8A8A-0E3856AC12C9}" ShortID="843837723">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_SWITCH(method_B)" ID="{7CF81895-ABF7-4E49-985C-E21B80533E6F}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
