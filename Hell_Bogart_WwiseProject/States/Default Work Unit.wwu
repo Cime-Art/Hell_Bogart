@@ -1,43 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{69595B73-0272-4AD5-BB5F-5B6E67744D43}" SchemaVersion="94">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{69595B73-0272-4AD5-BB5F-5B6E67744D43}" PersistMode="Standalone">
-			<ChildrenList>
-				<Folder Name="Iems" ID="{8F2BADD0-F656-449B-B33E-0899089CB237}" ShortID="974916730">
-					<ChildrenList>
-						<StateGroup Name="Ammo_Type" ID="{DC8CE865-7803-420C-9365-226A284C6C30}">
-							<ChildrenList>
-								<State Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
-								<State Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
-								<State Name="Fire" ID="{50764EF1-8C40-4B5A-8672-41C948DE7270}"/>
-								<State Name="Thunder" ID="{08B6B359-539F-4C36-9B2E-5359AEA8CEFF}"/>
-								<State Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
-							</ChildrenList>
-						</StateGroup>
-						<StateGroup Name="Canon_Type" ID="{F9419D13-9F28-4B7C-A1BE-0236D8F316D1}">
-							<ChildrenList>
-								<State Name="None" ID="{513033F6-C1BC-4896-8DE5-A53FA48880AB}"/>
-								<State Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
-								<State Name="Portee" ID="{23DC4F78-3731-4D47-9A4D-6BE404AFFD37}"/>
-								<State Name="Transpercant" ID="{CB2C51F5-D833-4773-B566-177406D771B5}"/>
-							</ChildrenList>
-						</StateGroup>
-						<StateGroup Name="Chamber_Type" ID="{2719BAF0-9D20-4657-9C6E-B97269AC2F57}">
-							<ChildrenList>
-								<State Name="None" ID="{9B0A7F4C-EC6C-4D50-B4F9-C44A88277C9E}"/>
-								<State Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
-								<State Name="Spread_60" ID="{C61C8502-F87D-4C0B-B0DF-D3181CF6CC48}"/>
-								<State Name="Spread_180" ID="{FC55DF69-7C23-4C99-9025-1D3267E6E6A5}"/>
-							</ChildrenList>
-						</StateGroup>
-						<StateGroup Name="Grip_Type" ID="{32B3B4B2-97BB-4C04-8A81-B9A37B07C45D}">
-							<ChildrenList>
-								<State Name="None" ID="{F3DFEB37-AB76-4219-BD82-E5005CBE1317}"/>
-							</ChildrenList>
-						</StateGroup>
-					</ChildrenList>
-				</Folder>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{69595B73-0272-4AD5-BB5F-5B6E67744D43}" PersistMode="Standalone"/>
 	</States>
 </WwiseDocument>

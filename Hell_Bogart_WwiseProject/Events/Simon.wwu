@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E9453A87-3759-4759-9E78-7293ECE81D94}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Simon" ID="{E9453A87-3759-4759-9E78-7293ECE81D94}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Weapons" ID="{02F08245-3221-455D-BAD9-0DD7CB19DC74}" ShortID="354736482">
+					<ChildrenList>
+						<Event Name="Play_Shotgun_EVENT" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}">
+							<ChildrenList>
+								<Action Name="" ID="{8EFDCB69-4254-4477-B255-9A53961A4ED1}" ShortID="337429708">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Loop_Shotgun_SEQ" ID="{06DB8CBC-D670-42DE-AF71-6BD3A587BA96}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B4E376AA-E749-414A-B43B-FB5140CFC0C2}" ShortID="416862005">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Power_Layer_RND" ID="{A0C64617-BE32-4C2A-9E3F-E49C609375D4}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Initialize_Shotgun_EVENT" ID="{F61282D3-78A2-43D8-9029-A088AAE20939}">
+							<ChildrenList>
+								<Action Name="" ID="{BE5A5484-28F0-464D-971B-114ED88C9C29}" ShortID="470783520">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2FFDE923-A2E2-4288-B0AE-EEE657A473C3}" ShortID="265915014">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{539F0313-2EDD-4743-9F1C-6150C5B864E4}" ShortID="110811263">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{523A206D-C6F7-4BDC-AD11-4E411C07B90E}" ShortID="932739069">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemies" ID="{0E1AB6DB-6E19-4EF1-8B50-B136E7CF3931}" ShortID="380634297">
+					<ChildrenList>
+						<Folder Name="MobJungleCharlie" ID="{24C9D08B-4327-4F03-AD76-C4F8C9028B45}" ShortID="1035089461">
+							<ChildrenList>
+								<Folder Name="Iddle" ID="{72714B59-1657-46D0-8A48-A4CF5C2D7307}" ShortID="819559892">
+									<ChildrenList>
+										<Event Name="Play_Iddle_MobJungleCharlie_EVENT" ID="{0793E287-B45B-4BFB-8144-B964C70DE1BB}">
+											<ChildrenList>
+												<Action Name="" ID="{8911BDBB-55DB-4722-9E6E-42304FBB70B3}" ShortID="302603654">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Iddle_MobJungleCharlie_Voice_SEQ" ID="{66C0A785-2861-4147-851F-CD1DC426EDBF}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{0E944265-E052-4C67-9177-2905638C0A44}" ShortID="4714120">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Iddle_MobJungleCharlie_Foleys_RND" ID="{A94A54C9-1C4F-4569-81D2-570FDFC9A432}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Stop_Iddle_MobJungleCharlie_EVENT" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}">
+											<ChildrenList>
+												<Action Name="" ID="{CDEAF1C0-A8A6-407D-9990-37214A4D6E43}" ShortID="358523836">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Iddle_MobJungleCharlie_Foleys_RND" ID="{A94A54C9-1C4F-4569-81D2-570FDFC9A432}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{FB1DCB07-896B-489A-8B9C-8DEAD3EFE8A5}" ShortID="312424913">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Iddle_MobJungleCharlie_Voice_SEQ" ID="{66C0A785-2861-4147-851F-CD1DC426EDBF}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Attack" ID="{01B66094-C2AD-4E4A-9336-1B8849CCD804}" ShortID="612645085">
+									<ChildrenList>
+										<Event Name="Play_Attack_MobJungleCharlie_EVENT" ID="{5B1790E9-CFE2-42D5-A7A2-1057AE8B4497}">
+											<ChildrenList>
+												<Action Name="" ID="{07DE1825-C259-4F16-8195-D39A122AE979}" ShortID="1020958065">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Attack_MobJungleCharlie_RND" ID="{AB487345-B0D3-4BDC-A3D8-1A39493CD6F7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{0CB3B888-2C37-4231-BB69-E01033B649FB}" ShortID="244760642">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="41"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Stop_Iddle_MobJungleCharlie_EVENT" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{CA7A3A98-72A7-4D3D-B516-13809E6B96D8}" ShortID="15090257">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.7"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Hit_MobJungleCharlie" ID="{BB1C446F-554E-4A89-BDCC-5C343DA2E9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Death" ID="{47711465-8E47-4D92-98F0-923045AAB372}" ShortID="888273674">
+									<ChildrenList>
+										<Event Name="Play_Death_MobJungleCharlie_EVENT" ID="{826C685D-5D84-48DC-9144-F906FBF293F1}">
+											<ChildrenList>
+												<Action Name="" ID="{84114B91-0BD6-481A-8C2E-3E2C7C667188}" ShortID="898162120">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Death_MobJungleCharlie" ID="{24198B40-E39F-4627-9F95-D7E348BE5309}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{3482EA0A-AC20-40A2-9638-EC0F398565BE}" ShortID="586941345">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Attack_MobJungleCharlie_RND" ID="{AB487345-B0D3-4BDC-A3D8-1A39493CD6F7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{62DEFA87-36FE-4941-9AFE-90EAD35C7201}" ShortID="541509145">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="41"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Stop_Iddle_MobJungleCharlie_EVENT" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{B74D452A-EAF1-4A53-B632-30EB788967E6}" ShortID="261292890">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.7"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="GenericBodyFall_MobJungleCharlie_RND" ID="{E8E78927-E9AE-4DD9-9297-D788581DC92D}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{6E304F49-2F0B-442E-BE1A-C2ED0D4343EC}" ShortID="574693201">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="LaunchSpear" ID="{0AC47520-5BE5-41D9-A996-9B0FA1DF8E02}" ShortID="288879691">
+									<ChildrenList>
+										<Event Name="Play_LaunchSpear_MobJungleCharlie_EVENT" ID="{7B540F1B-E5C1-4F50-8AC7-FFFE6CF971CC}">
+											<ChildrenList>
+												<Action Name="" ID="{3110016B-C12E-4D22-B624-098EFF13BDEA}" ShortID="471551060">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="LaunchSpear_MobJungleCharlie_RND" ID="{7C2EE2C1-7E7B-4385-95B2-5EA2C05E42E2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{9E751A30-5460-4B39-94DA-E3204654A042}" ShortID="273651432">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Attack_MobJungleCharlie_RND" ID="{AB487345-B0D3-4BDC-A3D8-1A39493CD6F7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{BD6F6764-7CC9-4478-8A88-AB4ACDBEA890}" ShortID="338177808">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="41"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Stop_Iddle_MobJungleCharlie_EVENT" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Exploded" ID="{48E3BE68-111B-4B47-BBE6-FC5C1D69C608}" ShortID="305815484">
+									<ChildrenList>
+										<Event Name="Play_Exploded_MobJungleCharlie_EVENT" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}">
+											<ChildrenList>
+												<Action Name="" ID="{72FE124C-6193-4C3F-901E-0E04A49A9283}" ShortID="760425453">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Exploded_Bones_MobJungleCharlie_RND" ID="{090D44BB-BD78-4D83-BC3D-872B64C372FA}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{A2793308-4C12-4AF7-9FB5-22A3AB70F2B4}" ShortID="921182791">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Attack_MobJungleCharlie_RND" ID="{AB487345-B0D3-4BDC-A3D8-1A39493CD6F7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{7C322A30-D969-465A-B915-C00969459549}" ShortID="525727162">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Death_MobJungleCharlie" ID="{24198B40-E39F-4627-9F95-D7E348BE5309}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{6C79727A-9FE2-4A53-A694-E1DDCE700FB4}" ShortID="618176978">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Hit_MobJungleCharlie" ID="{BB1C446F-554E-4A89-BDCC-5C343DA2E9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{E5692E0C-B28B-4C5A-99CE-54F22D3B6052}" ShortID="891030351">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Iddle_MobJungleCharlie_Voice_SEQ" ID="{66C0A785-2861-4147-851F-CD1DC426EDBF}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{C2316323-76C7-450A-9990-D971C4D3515F}" ShortID="1073366429">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Iddle_MobJungleCharlie_Foleys_RND" ID="{A94A54C9-1C4F-4569-81D2-570FDFC9A432}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{2823D13D-B7F2-42F2-8D8A-C2BDEA5F19D5}" ShortID="176302694">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="LaunchSpear_MobJungleCharlie_RND" ID="{7C2EE2C1-7E7B-4385-95B2-5EA2C05E42E2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{CA0E4C1A-454A-4531-A5D7-4B54EB48DFFA}" ShortID="753215924">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Charge" ID="{E000A136-4CBF-419A-8116-D73331F15327}" ShortID="727349184">
+									<ChildrenList>
+										<Event Name="Play_Charge_MobJungleCharlie_EVENT" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}">
+											<ChildrenList>
+												<Action Name="" ID="{C0CACDB3-2EE7-457D-892F-54EA3CCE47E9}" ShortID="805343824">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{A67D1B8B-2110-46E6-AC32-3A06C4B8D56E}" ShortID="179417172">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="41"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Stop_Iddle_MobJungleCharlie_EVENT" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enviro" ID="{1FD5A903-BDC2-4D21-9715-A30CC91C2660}" ShortID="269519169">
+					<ChildrenList>
+						<Folder Name="Big Stone Door" ID="{5555832C-6DED-48FD-9A0C-BAB3AA7B8496}" ShortID="407084525">
+							<ChildrenList>
+								<Event Name="Stop_Door_Opening_EVENT" ID="{0F44ECC8-0C4B-4A06-B809-BF7009EBAB35}">
+									<ChildrenList>
+										<Action Name="" ID="{2F5AFD1B-DD1E-44A4-8081-DD011F1DC03D}" ShortID="437820095">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB-SFX-Other-LoopBigStoneDoorOpening" ID="{A70FF459-B9BD-41CC-8944-6DE32E901523}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9A977BF5-14A4-4F9A-90BA-EBCF8647793E}" ShortID="141167471">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB-SFX-Other-EndBigStoneDoorOpening" ID="{5F72F2E4-D037-4F5C-BE9F-FDF2C8E11A26}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Door_Opening_EVENT" ID="{7E4511E8-B55D-48C3-AF33-F81DD6DD4E50}">
+									<ChildrenList>
+										<Action Name="" ID="{3FEBBDD9-F58D-4E1F-AC65-E66CE978AC0F}" ShortID="525307958">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB-SFX-Other-OpenBigStoneDoor" ID="{F9B91D42-DB33-4A02-A065-22FA1964D426}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E716D05E-EBC8-40A0-825C-DCCF5BA39B32}" ShortID="417882547">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.08"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB-SFX-Other-LoopBigStoneDoorOpening" ID="{A70FF459-B9BD-41CC-8944-6DE32E901523}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Mob_Exploded_EVENT" ID="{52656032-C1BD-42D6-AA40-2E5AF52D1CD6}">
+									<ChildrenList>
+										<Action Name="" ID="{2370F119-C0F8-4396-A79F-B77625C665AB}" ShortID="422453927">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Exploded_by_Shotgun_RND" ID="{ECA4215F-8C03-4C99-B80E-654DE96F2F99}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F91BD3E5-A8DA-4848-8054-E0D5FEA1467E}" ShortID="1044821446">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Element_Explosion_SWITCH" ID="{1E697BBE-64CE-4D69-9831-1CD0D38BA599}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{1AA6172F-BFEE-412A-8920-9CC6FBFEAB60}" ShortID="241915473">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Acoustics" ID="{573B6C02-4FBF-4097-A858-05EED3AEF692}" ShortID="539735933">
+							<ChildrenList>
+								<Event Name="Go_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}">
+									<ChildrenList>
+										<Action Name="" ID="{1825908A-3194-44F6-BAEB-BCD950B91E73}" ShortID="1011643688">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Go_Ruines" ID="{C353E2E9-9109-4E73-8F21-5EF93B0294A4}">
+									<ChildrenList>
+										<Action Name="" ID="{C19B4413-7A77-43A6-965D-EC5CF793C0E7}" ShortID="464163612">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Go_Boss_Arena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}">
+									<ChildrenList>
+										<Action Name="" ID="{C110E809-7655-49F7-A45E-3239AD4FF407}" ShortID="1027713717">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

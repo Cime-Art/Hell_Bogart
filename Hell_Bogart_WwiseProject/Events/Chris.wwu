@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FAA10444-24FE-4423-857A-D8F0320B223E}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Chris" ID="{FAA10444-24FE-4423-857A-D8F0320B223E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="HB_Heartbeat_EVENT" ID="{729E36E5-D4B9-4A41-B25C-CF4050D7BDBF}">
+					<ChildrenList>
+						<Action Name="" ID="{15D1374A-A2FB-4C58-95CD-CB4A0884CDB8}" ShortID="178432711">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HeartBeat" ID="{0EA566B3-CC3A-4135-BB2A-0886B9D382B4}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HB_UiAmmo_EVENT" ID="{AD36FDAF-25A9-4D91-8B9C-E63004A090FE}">
+					<ChildrenList>
+						<Action Name="" ID="{38FA9B56-248E-4A09-BE9D-577EE14B037B}" ShortID="169404089">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ammo_Switch" ID="{C59307DC-5951-4B50-AD6E-0BC1E0A57BDA}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HB_UiWep_Equip_EVENT" ID="{908DFB87-BD81-4BEF-9E62-F13F2B12DF7C}">
+					<ChildrenList>
+						<Action Name="" ID="{F910D4DF-0318-4ED6-9304-88859D498556}" ShortID="179116525">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RND_EquipItem" ID="{9E19697B-6D30-4D45-933C-427B12E6A4F6}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HB_PickUp_EVENT" ID="{93A3B8D0-3050-4D01-9BA8-EE7DCB3A369A}">
+					<ChildrenList>
+						<Action Name="" ID="{524DEEEF-B013-4558-AF38-5BA3AA0524BC}" ShortID="113827074">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}" SchemaVersion="94">
+	<GameParameters>
+		<WorkUnit Name="Simon" ID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Character" ID="{BD09CBF8-7B79-4315-8E2A-EDEB8E6D5453}" ShortID="56283887">
+					<ChildrenList>
+						<Folder Name="Shotgun" ID="{91DE12C3-6CC3-4BF9-9730-3AB68AB9F621}" ShortID="22127491">
+							<ChildrenList>
+								<GameParameter Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
+								<GameParameter Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}">
+									<PropertyList>
+										<Property Name="InitialValue" Type="Real64" Value="12"/>
+										<Property Name="Max" Type="Real64" Value="12"/>
+										<Property Name="Min" Type="Real64" Value="4"/>
+									</PropertyList>
+								</GameParameter>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

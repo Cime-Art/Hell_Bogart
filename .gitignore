@@ -80,4 +80,6 @@ DerivedDataCache/*
 **/*.wsettings
 **/*.validationcache
 **/*.wem
-
+Hell_Bogart_WwiseProject/.cache/Windows/SFX/Wwise.dat
+Hell_Bogart_WwiseProject/Hell_Bogart_WwiseProject.ACFA.validationcache
+Hell_Bogart_WwiseProject/Hell_Bogart_WwiseProject.ACFA.wsettings
