@@ -23,6 +23,50 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Initialize_Shotgun_EVENT" ID="{F61282D3-78A2-43D8-9029-A088AAE20939}">
+							<ChildrenList>
+								<Action Name="" ID="{BE5A5484-28F0-464D-971B-114ED88C9C29}" ShortID="470783520">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2FFDE923-A2E2-4288-B0AE-EEE657A473C3}" ShortID="265915014">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{539F0313-2EDD-4743-9F1C-6150C5B864E4}" ShortID="110811263">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{523A206D-C6F7-4BDC-AD11-4E411C07B90E}" ShortID="932739069">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{0E1AB6DB-6E19-4EF1-8B50-B136E7CF3931}" ShortID="380634297">
@@ -204,6 +248,66 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
+												<Action Name="" ID="{A2793308-4C12-4AF7-9FB5-22A3AB70F2B4}" ShortID="921182791">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Attack_MobJungleCharlie_RND" ID="{AB487345-B0D3-4BDC-A3D8-1A39493CD6F7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{7C322A30-D969-465A-B915-C00969459549}" ShortID="525727162">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Death_MobJungleCharlie" ID="{24198B40-E39F-4627-9F95-D7E348BE5309}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{6C79727A-9FE2-4A53-A694-E1DDCE700FB4}" ShortID="618176978">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Hit_MobJungleCharlie" ID="{BB1C446F-554E-4A89-BDCC-5C343DA2E9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{E5692E0C-B28B-4C5A-99CE-54F22D3B6052}" ShortID="891030351">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Iddle_MobJungleCharlie_Voice_SEQ" ID="{66C0A785-2861-4147-851F-CD1DC426EDBF}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{C2316323-76C7-450A-9990-D971C4D3515F}" ShortID="1073366429">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Iddle_MobJungleCharlie_Foleys_RND" ID="{A94A54C9-1C4F-4569-81D2-570FDFC9A432}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{2823D13D-B7F2-42F2-8D8A-C2BDEA5F19D5}" ShortID="176302694">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="LaunchSpear_MobJungleCharlie_RND" ID="{7C2EE2C1-7E7B-4385-95B2-5EA2C05E42E2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 											</ChildrenList>
 										</Event>
 									</ChildrenList>
@@ -274,6 +378,12 @@
 													<ObjectRef Name="Element_Explosion_SWITCH" ID="{1E697BBE-64CE-4D69-9831-1CD0D38BA599}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{1AA6172F-BFEE-412A-8920-9CC6FBFEAB60}" ShortID="241915473">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList/>
 										</Action>
 									</ChildrenList>
 								</Event>

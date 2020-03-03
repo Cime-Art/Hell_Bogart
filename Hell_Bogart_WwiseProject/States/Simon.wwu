@@ -34,7 +34,6 @@
 							<ChildrenList>
 								<State Name="None" ID="{AC1DEA53-B294-4EF1-BC43-204DB946B111}"/>
 								<State Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
-								<State Name="No" ID="{05CC5C8D-A3EC-425E-8E5E-11D81F5F5D42}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>

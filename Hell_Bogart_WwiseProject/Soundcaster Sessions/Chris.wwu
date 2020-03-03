@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B27A3C76-CCEC-41B3-B109-CF8B18F8A306}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Chris" ID="{B27A3C76-CCEC-41B3-B109-CF8B18F8A306}" PersistMode="Standalone"/>
+		<WorkUnit Name="Chris" ID="{B27A3C76-CCEC-41B3-B109-CF8B18F8A306}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="UiWep" ID="{EC2DDB30-780C-4D3D-9890-AD9CC2F81868}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="HB_UiAmmo_EVENT" ID="{AD36FDAF-25A9-4D91-8B9C-E63004A090FE}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="HB_UiWep_Equip_EVENT" ID="{908DFB87-BD81-4BEF-9E62-F13F2B12DF7C}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="HB_PickUp_EVENT" ID="{93A3B8D0-3050-4D01-9BA8-EE7DCB3A369A}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
+							<Value>12</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
+						<CurrentStateRef Name="None" ID="{9B0A7F4C-EC6C-4D50-B4F9-C44A88277C9E}"/>
+						<CurrentStateRef Name="None" ID="{513033F6-C1BC-4896-8DE5-A53FA48880AB}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
+						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
