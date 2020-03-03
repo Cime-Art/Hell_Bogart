@@ -612,6 +612,65 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FTP_eau_01" ID="{4F48C5D5-3EB6-40CC-90E3-C16FE1E2FE0B}" ShortID="442637099">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FTP_eau_01" ID="{93E54013-2DA4-45CE-82FA-61586E30249D}" ShortID="1038132948">
+													<Language>SFX</Language>
+													<AudioFile>FTP_eau_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FTP_eau_01" ID="{93E54013-2DA4-45CE-82FA-61586E30249D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FTP_eau_02" ID="{355BC9C9-4FF8-4995-BA07-DE8CC7357DF5}" ShortID="307319438">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FTP_eau_02" ID="{2A2C67DF-7639-4BA8-8DB8-A126A2D9180D}" ShortID="313260999">
+													<Language>SFX</Language>
+													<AudioFile>FTP_eau_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FTP_eau_02" ID="{2A2C67DF-7639-4BA8-8DB8-A126A2D9180D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FTP_eau_03" ID="{3B47C54E-8C1C-4647-9D4C-B0150A0186BC}" ShortID="1063802431">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FTP_eau_03" ID="{BF0E3E36-43BE-4576-A733-85E9922B2EFD}" ShortID="263403301">
+													<Language>SFX</Language>
+													<AudioFile>FTP_eau_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FTP_eau_03" ID="{BF0E3E36-43BE-4576-A733-85E9922B2EFD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FTP_Sol_gravier_RND" ID="{30D436DC-2383-4E35-AC7C-60D8166E35C8}" ShortID="753983576">
 									<PropertyList>
