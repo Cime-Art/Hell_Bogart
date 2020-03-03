@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Chris" ID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="AMMO_type" ID="{BA35DEFC-0656-4AEE-A58C-4EEC74B0CE97}">
+					<ChildrenList>
+						<Switch Name="Standar" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}"/>
+						<Switch Name="Rare" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
+						<Switch Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="PickUP_type" ID="{DEBCC2DF-83A9-4206-B1CB-4C169460F450}">
+					<ChildrenList>
+						<Switch Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
+						<Switch Name="RARE" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
+						<Switch Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

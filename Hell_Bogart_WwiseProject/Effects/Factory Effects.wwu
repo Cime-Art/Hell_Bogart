@@ -128,7 +128,35 @@
 								<Property Name="DelayTime" Type="Real32" Value="1"/>
 							</PropertyList>
 						</Effect>
-						<Effect Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
+						<Effect Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.11"/>
+								<Property Name="Feedback" Type="Real32" Value="10"/>
+								<Property Name="OutputLevel" Type="Real32" Value="-20.4"/>
+								<Property Name="WetDryMix" Type="Real32" Value="100"/>
+							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Acoustic_STATE" ID="{ADEED407-5BAD-4BFD-8E19-6306DBDB07C6}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+										<CustomState Name="" ID="{325139EE-DB05-4465-9781-59A912F6FFC4}" ShortID="471255650"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
+										<CustomState Name="" ID="{7F2AF19F-71F1-4E33-8807-9E5BB8D3442E}" ShortID="404207403"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
+										<CustomState Name="" ID="{3D1CD346-F802-4525-A46E-02A7FE2C71C5}" ShortID="728941519"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Effect>
 						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
 						<Effect Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
@@ -137,7 +165,7 @@
 						</Effect>
 						<Effect Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
-								<Property Name="DelayTime" Type="Real32" Value="0.6"/>
+								<Property Name="DelayTime" Type="Real32" Value="0.25"/>
 								<Property Name="Feedback" Type="Real32" Value="80"/>
 								<Property Name="WetDryMix" Type="Real32" Value="30"/>
 							</PropertyList>
@@ -839,7 +867,7 @@
 										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
 										<Property Name="PreDelay" Type="Real32" Value="75"/>
 										<Property Name="Quality" Type="int32" Value="16"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-25"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
 										<Property Name="RoomShape" Type="Real32" Value="55"/>
 										<Property Name="RoomSize" Type="Real32" Value="73"/>
 									</PropertyList>
@@ -859,7 +887,7 @@
 										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
 										<Property Name="PreDelay" Type="Real32" Value="48"/>
 										<Property Name="Quality" Type="int32" Value="16"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-36"/>
 										<Property Name="RoomShape" Type="Real32" Value="55"/>
 										<Property Name="RoomSize" Type="Real32" Value="53"/>
 										<Property Name="StereoWidth" Type="Real32" Value="165"/>
@@ -1511,8 +1539,9 @@
 										<Property Name="Density" Type="Real32" Value="50"/>
 										<Property Name="ERLevel" Type="Real32" Value="-18"/>
 										<Property Name="ERPattern" Type="int32" Value="29"/>
-										<Property Name="Filter1Freq" Type="Real32" Value="210"/>
-										<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
+										<Property Name="EnableToneControls" Type="bool" Value="True"/>
+										<Property Name="Filter1Freq" Type="Real32" Value="830"/>
+										<Property Name="Filter1Gain" Type="Real32" Value="-24"/>
 										<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
 										<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
 										<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
@@ -1521,9 +1550,8 @@
 										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
 										<Property Name="PreDelay" Type="Real32" Value="145"/>
 										<Property Name="Quality" Type="int32" Value="12"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-37"/>
-										<Property Name="RoomSize" Type="Real32" Value="73"/>
-										<Property Name="StereoWidth" Type="Real32" Value="28"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-21"/>
+										<Property Name="RoomSize" Type="Real32" Value="-63"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1782,10 +1810,13 @@
 								<Property Name="FilterFrequency" Type="Real32" Value="2507"/>
 								<Property Name="FilterGain" Type="Real32" Value="-24"/>
 								<Property Name="FilterType" Type="int32" Value="3"/>
-								<Property Name="LeftCrossfeed" Type="Real32" Value="-10"/>
-								<Property Name="LeftDelayTime" Type="Real32" Value="0.29"/>
-								<Property Name="RightCrossfeed" Type="Real32" Value="-8"/>
-								<Property Name="RightDelayTime" Type="Real32" Value="0.43"/>
+								<Property Name="LeftCrossfeed" Type="Real32" Value="-48"/>
+								<Property Name="LeftDelayTime" Type="Real32" Value="1.15"/>
+								<Property Name="LeftFeedback" Type="Real32" Value="-48"/>
+								<Property Name="RightCrossfeed" Type="Real32" Value="-14.6"/>
+								<Property Name="RightDelayTime" Type="Real32" Value="2"/>
+								<Property Name="RightFeedback" Type="Real32" Value="-24.6"/>
+								<Property Name="WetLevel" Type="Real32" Value="9"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Personnel_Advisor" ID="{B78063AF-DC4F-4D1D-B4AB-B3487BE02D7F}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">

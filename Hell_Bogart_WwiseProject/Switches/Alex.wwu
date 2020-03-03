@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7130362E-D281-4CAD-90E5-8B25E6F92FDE}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Alex" ID="{7130362E-D281-4CAD-90E5-8B25E6F92FDE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Character" ID="{87D239C8-1879-40C8-AE37-B4F247F29DF3}" ShortID="1057791086">
+					<ChildrenList>
+						<Folder Name="Surface type" ID="{67640692-0271-48B7-94A8-495D2EEB0008}" ShortID="497465169">
+							<ChildrenList>
+								<SwitchGroup Name="Surface_type_FTP_switch" ID="{4581F3B9-F08F-4948-864A-FCA235DA7E8A}">
+									<ChildrenList>
+										<Switch Name="FTP_Herbes_seches_switch" ID="{43B444AE-B802-41C4-9A13-4F39F9506A72}"/>
+										<Switch Name="FTP_Herbes_humides_switch" ID="{165C79C4-6625-43EB-9DFC-B5A80533831B}"/>
+										<Switch Name="FTP_Dalles_pierre_switch" ID="{A784672B-87AF-4B4C-80A2-62022ECE904A}"/>
+										<Switch Name="FTP_Sol_pierre_switch" ID="{51CC2FA8-C8F2-4C58-B589-BD2C24D255B0}"/>
+										<Switch Name="FTP_Boue_switch" ID="{DD3810C4-FAEB-4C1E-B4F3-E2E42D04349A}"/>
+										<Switch Name="FTP_Flaques_switch" ID="{7254AC06-F331-4106-9713-5EA7B28D8641}"/>
+										<Switch Name="FTP_Sol_sec_switch" ID="{18141E01-FFC4-41D2-BE4F-0742BB1606E8}"/>
+										<Switch Name="FTP_Sol_poussiereux_switch" ID="{AA037956-C904-4615-B36A-2F1670DF7E50}"/>
+										<Switch Name="FTP_Eau_switch" ID="{81B24A04-B222-474D-9BDF-B4A2ECE4990B}"/>
+										<Switch Name="FTP_Sol_gravier_switch" ID="{8E77F3CA-3AF9-475D-BA31-7B2C550D55D2}"/>
+										<Switch Name="FTP_Sable_switch" ID="{3D29F59B-0B2C-4073-9F6E-95F78A55DAFE}"/>
+										<Switch Name="FTP_Bois_sec_switch" ID="{FCCF7992-4DE1-455B-B60D-7C074635855E}"/>
+										<Switch Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+										<Switch Name="FTP_Ossements_sol_switch" ID="{66E03050-3797-4780-B57B-8D61679CE18B}"/>
+										<Switch Name="FTP_Metal_switch" ID="{C017C313-7D52-4206-92EB-EA5C848B44F9}"/>
+										<Switch Name="FTP_Ossements_pierre_switch" ID="{7DD390D7-243E-4E17-9E0F-F8658D3558E2}"/>
+									</ChildrenList>
+								</SwitchGroup>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
