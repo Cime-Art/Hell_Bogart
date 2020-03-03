@@ -3,7 +3,7 @@
 	<SoundcasterSessions>
 		<WorkUnit Name="Simon" ID="{6C7CCDE0-AF93-493A-A8DF-31739D320EF3}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundcasterSession Name="Character_Mobs" ID="{3E4E9FD7-5F7E-4EBA-851A-2DA57709D058}">
+				<SoundcasterSession Name="Mecas" ID="{3E4E9FD7-5F7E-4EBA-851A-2DA57709D058}">
 					<ModuleList>
 						<Module>
 							<ObjectRef Name="Play_Iddle_MobJungleCharlie_EVENT" ID="{0793E287-B45B-4BFB-8144-B964C70DE1BB}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -34,20 +34,24 @@
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Door_Opening_EVENT" ID="{7E4511E8-B55D-48C3-AF33-F81DD6DD4E50}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="3" Y="1"/>
+							<ObjectRef Name="Initialize_Shotgun_EVENT" ID="{F61282D3-78A2-43D8-9029-A088AAE20939}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Go_Ruines" ID="{C353E2E9-9109-4E73-8F21-5EF93B0294A4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Door_Opening_EVENT" ID="{0F44ECC8-0C4B-4A06-B809-BF7009EBAB35}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="4" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Go_Boss_Arena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Door_Opening_EVENT" ID="{7E4511E8-B55D-48C3-AF33-F81DD6DD4E50}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Door_Opening_EVENT" ID="{0F44ECC8-0C4B-4A06-B809-BF7009EBAB35}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="6" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -64,10 +68,12 @@
 						<CurrentStateRef Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
-						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+						<CurrentStateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="FTP_Sol_pierre_switch" ID="{51CC2FA8-C8F2-4C58-B589-BD2C24D255B0}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
