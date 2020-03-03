@@ -6,27 +6,27 @@
 				<SoundcasterSession Name="Mecas" ID="{3E4E9FD7-5F7E-4EBA-851A-2DA57709D058}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Iddle_MobJungleCharlie_EVENT" ID="{0793E287-B45B-4BFB-8144-B964C70DE1BB}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_Mob_JungleCharlie_Iddle" ID="{0793E287-B45B-4BFB-8144-B964C70DE1BB}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Charge_MobJungleCharlie_EVENT" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_Mob_JungleCharlie_Charge" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Attack_MobJungleCharlie_EVENT" ID="{5B1790E9-CFE2-42D5-A7A2-1057AE8B4497}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_Mob_JungleCharlie_Attack" ID="{5B1790E9-CFE2-42D5-A7A2-1057AE8B4497}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_LaunchSpear_MobJungleCharlie_EVENT" ID="{7B540F1B-E5C1-4F50-8AC7-FFFE6CF971CC}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_Mob_JungleCharlie_LaunchSpear" ID="{7B540F1B-E5C1-4F50-8AC7-FFFE6CF971CC}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Death_MobJungleCharlie_EVENT" ID="{826C685D-5D84-48DC-9144-F906FBF293F1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_Mob_JungleCharlie_Death" ID="{826C685D-5D84-48DC-9144-F906FBF293F1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Exploded_MobJungleCharlie_EVENT" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_Mob_JungleCharlie_Exploded" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="5"/>
 						</Module>
 						<Module>
@@ -34,7 +34,7 @@
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Go_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_SetAcoustic_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
@@ -42,19 +42,19 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Go_Ruines" ID="{C353E2E9-9109-4E73-8F21-5EF93B0294A4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_SetAcoustic_Ruines" ID="{C353E2E9-9109-4E73-8F21-5EF93B0294A4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Go_Boss_Arena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_SetAcoustic_BossArena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Door_Opening_EVENT" ID="{7E4511E8-B55D-48C3-AF33-F81DD6DD4E50}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_BigStoneDoor_Opening" ID="{7E4511E8-B55D-48C3-AF33-F81DD6DD4E50}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="5" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Door_Opening_EVENT" ID="{0F44ECC8-0C4B-4A06-B809-BF7009EBAB35}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_BigStoneDoor_Stop" ID="{0F44ECC8-0C4B-4A06-B809-BF7009EBAB35}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="6" Y="0"/>
 						</Module>
 					</ModuleList>
@@ -72,7 +72,7 @@
 						<CurrentStateRef Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
-						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+						<CurrentStateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
