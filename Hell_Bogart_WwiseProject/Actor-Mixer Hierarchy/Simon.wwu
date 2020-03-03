@@ -1168,14 +1168,6 @@
 																			<ItemRef Name="Ammo_Type_SWITCH" ID="{E612D62B-EAA4-4B5A-9E38-A6CBCEC2C47A}"/>
 																		</ItemList>
 																	</Grouping>
-																	<Grouping>
-																		<SwitchRef Name="No" ID="{05CC5C8D-A3EC-425E-8E5E-11D81F5F5D42}"/>
-																		<ItemList>
-																			<ItemRef Name="Canon_Type_SWITCH" ID="{DD6D3500-D663-44F6-A4EB-9CE0EFC95A86}"/>
-																			<ItemRef Name="Chamber_Type_SWITCH" ID="{F7BD851D-E04A-46F5-B4FC-1ECA57814D31}"/>
-																			<ItemRef Name="Ammo_Type_SWITCH" ID="{E612D62B-EAA4-4B5A-9E38-A6CBCEC2C47A}"/>
-																		</ItemList>
-																	</Grouping>
 																</GroupingList>
 															</GroupingInfo>
 														</SwitchContainer>
@@ -1422,10 +1414,7 @@
 																		<ItemRef Name="Reload_In" ID="{A31F7F37-4CFA-45EA-A763-501020553569}"/>
 																	</Playlist>
 																</RandomSequenceContainer>
-																<RandomSequenceContainer Name="Drop_Shell_Or_not-RND" ID="{68455A1E-4EAB-4857-B0DF-DD846CDC5120}" ShortID="16458851">
-																	<PropertyList>
-																		<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-																	</PropertyList>
+																<SwitchContainer Name="Drop_Shell_SWITCH" ID="{B2CE82AC-B821-40D1-AF3A-F44162E99B30}" ShortID="876551565">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1433,37 +1422,26 @@
 																		<Reference Name="OutputBus">
 																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 																		</Reference>
+																		<Reference Name="SwitchGroupOrStateGroup">
+																			<ObjectRef Name="Surface_type_FTP_switch" ID="{4581F3B9-F08F-4948-864A-FCA235DA7E8A}" WorkUnitID="{7130362E-D281-4CAD-90E5-8B25E6F92FDE}"/>
+																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<Sound Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}" ShortID="39819209">
-																			<PropertyList>
-																				<Property Name="Weight" Type="Real64">
-																					<ValueList>
-																						<Value>100</Value>
-																					</ValueList>
-																				</Property>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<SourcePlugin Name="Wwise Silence" ID="{A51E055D-6962-4800-8145-6477B368D974}" ShortID="597886035" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-																					<Language>SFX</Language>
-																				</SourcePlugin>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Wwise Silence" ID="{A51E055D-6962-4800-8145-6477B368D974}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
 																		<RandomSequenceContainer Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}" ShortID="404432548">
 																			<PropertyList>
+																				<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																				<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+																				<Property Name="UserAuxSendVolume1" Type="Real64">
+																					<ValueList>
+																						<Value>-3</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UserAuxSendVolume2" Type="Real64">
+																					<ValueList>
+																						<Value>-5</Value>
+																					</ValueList>
+																				</Property>
 																				<Property Name="Volume" Type="Real64">
 																					<ValueList>
 																						<Value>-6</Value>
@@ -1476,6 +1454,15 @@
 																				</Reference>
 																				<Reference Name="OutputBus">
 																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend0">
+																					<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend1">
+																					<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend2">
+																					<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
@@ -1661,12 +1648,87 @@
 																				<ItemRef Name="End_Drop" ID="{7D76C8BF-FC91-49C5-9278-F48D9D6FB25C}"/>
 																			</Playlist>
 																		</RandomSequenceContainer>
+																		<Sound Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}" ShortID="39819209">
+																			<PropertyList>
+																				<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																				<Property Name="UserAuxSendVolume1" Type="Real64">
+																					<ValueList>
+																						<Value>-3</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UserAuxSendVolume2" Type="Real64">
+																					<ValueList>
+																						<Value>-5</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Weight" Type="Real64">
+																					<ValueList>
+																						<Value>100</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend0">
+																					<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend1">
+																					<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend2">
+																					<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<SourcePlugin Name="Wwise Silence" ID="{A51E055D-6962-4800-8145-6477B368D974}" ShortID="597886035" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																					<Language>SFX</Language>
+																				</SourcePlugin>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Wwise Silence" ID="{A51E055D-6962-4800-8145-6477B368D974}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
 																	</ChildrenList>
-																</RandomSequenceContainer>
+																	<GroupingInfo>
+																		<GroupingBehaviorList>
+																			<GroupingBehavior>
+																				<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
+																			</GroupingBehavior>
+																			<GroupingBehavior>
+																				<ItemRef Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																			</GroupingBehavior>
+																		</GroupingBehaviorList>
+																		<GroupingList>
+																			<Grouping>
+																				<SwitchRef Name="FTP_Metal_switch" ID="{C017C313-7D52-4206-92EB-EA5C848B44F9}"/>
+																				<ItemList>
+																					<ItemRef Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="FTP_Dalles_pierre_switch" ID="{A784672B-87AF-4B4C-80A2-62022ECE904A}"/>
+																				<ItemList>
+																					<ItemRef Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="FTP_Sol_pierre_switch" ID="{51CC2FA8-C8F2-4C58-B589-BD2C24D255B0}"/>
+																				<ItemList>
+																					<ItemRef Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																				</ItemList>
+																			</Grouping>
+																		</GroupingList>
+																	</GroupingInfo>
+																</SwitchContainer>
 															</ChildrenList>
 															<Playlist>
 																<ItemRef Name="OutIn_SEQ" ID="{A525F487-3454-498D-A9D5-5CA41AD2A7E6}"/>
-																<ItemRef Name="Drop_Shell_Or_not-RND" ID="{68455A1E-4EAB-4857-B0DF-DD846CDC5120}"/>
+																<ItemRef Name="Drop_Shell_SWITCH" ID="{B2CE82AC-B821-40D1-AF3A-F44162E99B30}"/>
 															</Playlist>
 														</RandomSequenceContainer>
 													</ChildrenList>
@@ -3477,6 +3539,13 @@
 												<Folder Name="Exploded" ID="{6BDBACA1-D15B-488B-9AAF-EB863EF10780}" ShortID="269171098">
 													<ChildrenList>
 														<RandomSequenceContainer Name="Exploded_Bones_MobJungleCharlie_RND" ID="{090D44BB-BD78-4D83-BC3D-872B64C372FA}" ShortID="1016997420">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
