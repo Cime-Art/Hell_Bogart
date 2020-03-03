@@ -198,6 +198,16 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
+												<Action Name="" ID="{6E304F49-2F0B-442E-BE1A-C2ED0D4343EC}" ShortID="574693201">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 											</ChildrenList>
 										</Event>
 									</ChildrenList>
@@ -305,6 +315,41 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="LaunchSpear_MobJungleCharlie_RND" ID="{7C2EE2C1-7E7B-4385-95B2-5EA2C05E42E2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{CA0E4C1A-454A-4531-A5D7-4B54EB48DFFA}" ShortID="753215924">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Charge" ID="{E000A136-4CBF-419A-8116-D73331F15327}" ShortID="727349184">
+									<ChildrenList>
+										<Event Name="Play_Charge_MobJungleCharlie_EVENT" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}">
+											<ChildrenList>
+												<Action Name="" ID="{C0CACDB3-2EE7-457D-892F-54EA3CCE47E9}" ShortID="805343824">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{A67D1B8B-2110-46E6-AC32-3A06C4B8D56E}" ShortID="179417172">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="41"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Stop_Iddle_MobJungleCharlie_EVENT" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
