@@ -26,10 +26,15 @@
 				<Event Id="518829068" Name="Go_Ruines" ObjectPath="\Events\Simon\Enviro\Acoustics\Go_Ruines"/>
 				<Event Id="3887785823" Name="HB_PickUp_EVENT" ObjectPath="\Events\Chris\HB_PickUp_EVENT"/>
 				<Event Id="2857119571" Name="HB_UiAmmo_EVENT" ObjectPath="\Events\Chris\HB_UiAmmo_EVENT"/>
+				<Event Id="3689389172" Name="HB_UiWep_Equip_EVENT" ObjectPath="\Events\Chris\HB_UiWep_Equip_EVENT"/>
 				<Event Id="3859520409" Name="Initialize_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Initialize_Shotgun_EVENT"/>
 				<Event Id="3284918817" Name="Play_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Play_Shotgun_EVENT"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="12908966" Language="SFX">
+					<ShortName>HB_SFX_Uiwep_Equip2.wav</ShortName>
+					<Path>SFX\HB_SFX_Uiwep_Equip2_BCF095EF.wem</Path>
+				</File>
 				<File Id="50418130" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_PowerLayer_01_10C4C929.wem</Path>
@@ -57,6 +62,10 @@
 				<File Id="143384558" Language="SFX">
 					<ShortName>HB_SFX_ammo_EPIC.wav</ShortName>
 					<Path>SFX\HB_SFX_ammo_EPIC_10C4C929.wem</Path>
+				</File>
+				<File Id="150310060" Language="SFX">
+					<ShortName>HB_SFX_Uiwep_Equip3.wav</ShortName>
+					<Path>SFX\HB_SFX_Uiwep_Equip3_01D43173.wem</Path>
 				</File>
 				<File Id="163274769" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_IceAmmo_02.wav</ShortName>
@@ -90,9 +99,17 @@
 					<ShortName>HB_SFX_Shotgun_ThunderAmmo_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_ThunderAmmo_02_ED91B86A.wem</Path>
 				</File>
+				<File Id="331013577" Language="SFX">
+					<ShortName>HB_SFX_Uiwep_Equip1.wav</ShortName>
+					<Path>SFX\HB_SFX_Uiwep_Equip1_10C4C929.wem</Path>
+				</File>
 				<File Id="333758070" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_FireAmmo_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_FireAmmo_00_10C4C929.wem</Path>
+				</File>
+				<File Id="337804232" Language="SFX">
+					<ShortName>HB_SFX_UiWep_Equip4.wav</ShortName>
+					<Path>SFX\HB_SFX_UiWep_Equip4_28D79C38.wem</Path>
 				</File>
 				<File Id="358363726" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_FireAmmo_01.wav</ShortName>
@@ -237,6 +254,10 @@
 				<File Id="910590706" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Reload_Out_01_10C4C929.wem</Path>
+				</File>
+				<File Id="948793202" Language="SFX">
+					<ShortName>HB_SFX_UiWep_Equip5.wav</ShortName>
+					<Path>SFX\HB_SFX_UiWep_Equip5_3063DED4.wem</Path>
 				</File>
 				<File Id="956940309" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_02.wav</ShortName>
