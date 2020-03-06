@@ -24,6 +24,8 @@
 				<Event Id="3271422357" Name="Go_Boss_Arena" ObjectPath="\Events\Simon\Enviro\Acoustics\Go_Boss_Arena"/>
 				<Event Id="1853672252" Name="Go_Exterior" ObjectPath="\Events\Simon\Enviro\Acoustics\Go_Exterior"/>
 				<Event Id="518829068" Name="Go_Ruines" ObjectPath="\Events\Simon\Enviro\Acoustics\Go_Ruines"/>
+				<Event Id="3887785823" Name="HB_PickUp_EVENT" ObjectPath="\Events\Chris\HB_PickUp_EVENT"/>
+				<Event Id="2857119571" Name="HB_UiAmmo_EVENT" ObjectPath="\Events\Chris\HB_UiAmmo_EVENT"/>
 				<Event Id="3859520409" Name="Initialize_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Initialize_Shotgun_EVENT"/>
 				<Event Id="3284918817" Name="Play_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Play_Shotgun_EVENT"/>
 			</IncludedEvents>
@@ -52,6 +54,10 @@
 					<ShortName>HB_SFX_Shotgun_StartDropShell_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_StartDropShell_00_10C4C929.wem</Path>
 				</File>
+				<File Id="143384558" Language="SFX">
+					<ShortName>HB_SFX_ammo_EPIC.wav</ShortName>
+					<Path>SFX\HB_SFX_ammo_EPIC_10C4C929.wem</Path>
+				</File>
 				<File Id="163274769" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_IceAmmo_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_IceAmmo_02_10C4C929.wem</Path>
@@ -63,6 +69,18 @@
 				<File Id="209701508" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_CanonPortee_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonPortee_02_10C4C929.wem</Path>
+				</File>
+				<File Id="238885831" Language="SFX">
+					<ShortName>HB_SFX_Pickup_EPIC.wav</ShortName>
+					<Path>SFX\HB_SFX_Pickup_EPIC_10C4C929.wem</Path>
+				</File>
+				<File Id="265842113" Language="SFX">
+					<ShortName>HB_SFX_ammo_01.wav</ShortName>
+					<Path>SFX\HB_SFX_ammo_01_9EE4F1CE.wem</Path>
+				</File>
+				<File Id="271601829" Language="SFX">
+					<ShortName>HB_SFX_ammo_03.wav</ShortName>
+					<Path>SFX\HB_SFX_ammo_03_43970F03.wem</Path>
 				</File>
 				<File Id="277417704" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_NoChamber_02.wav</ShortName>
@@ -112,6 +130,18 @@
 					<ShortName>HB_SFX_Shotgun_NoChamber_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_NoChamber_00_10C4C929.wem</Path>
 				</File>
+				<File Id="476709970" Language="SFX">
+					<ShortName>HB_SFX_Uiwep_Pickup3.wav</ShortName>
+					<Path>SFX\HB_SFX_Uiwep_Pickup3_CCED4F44.wem</Path>
+				</File>
+				<File Id="481689103" Language="SFX">
+					<ShortName>HB_SFX_Uiwep_Pickup1.wav</ShortName>
+					<Path>SFX\HB_SFX_Uiwep_Pickup1_A583DCB4.wem</Path>
+				</File>
+				<File Id="489126667" Language="SFX">
+					<ShortName>HB_SFX_Pickup_RARE.wav</ShortName>
+					<Path>SFX\HB_SFX_Pickup_RARE_10C4C929.wem</Path>
+				</File>
 				<File Id="502360136" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_EndDropShell_02_10C4C929.wem</Path>
@@ -123,6 +153,10 @@
 				<File Id="552564079" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_RegularCanon_01_10C4C929.wem</Path>
+				</File>
+				<File Id="555529559" Language="SFX">
+					<ShortName>HB_SFX_ammo_RARE.wav</ShortName>
+					<Path>SFX\HB_SFX_ammo_RARE_10C4C929.wem</Path>
 				</File>
 				<File Id="562077786" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_00.wav</ShortName>
@@ -152,6 +186,10 @@
 					<ShortName>HB_SFX_Shotgun_ThunderAmmo_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_ThunderAmmo_01_13059E1A.wem</Path>
 				</File>
+				<File Id="721740263" Language="SFX">
+					<ShortName>HB_SFX_ammo_02.wav</ShortName>
+					<Path>SFX\HB_SFX_ammo_02_D8E2CF04.wem</Path>
+				</File>
 				<File Id="728468316" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_StartDropShell_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_StartDropShell_02_10C4C929.wem</Path>
@@ -159,6 +197,10 @@
 				<File Id="739433020" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Spread60_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread60_02_10C4C929.wem</Path>
+				</File>
+				<File Id="740162737" Language="SFX">
+					<ShortName>HB_SFX_Uiwep_Pickup2.wav</ShortName>
+					<Path>SFX\HB_SFX_Uiwep_Pickup2_35512C65.wem</Path>
 				</File>
 				<File Id="756586809" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_ThunderAmmo_00.wav</ShortName>

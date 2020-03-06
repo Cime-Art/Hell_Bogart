@@ -1,14 +1,24 @@
 Event	ID	Name			Wwise Object Path	Notes
 	518829068	Go_Ruines			\Simon\Enviro\Acoustics\Go_Ruines	
 	1853672252	Go_Exterior			\Simon\Enviro\Acoustics\Go_Exterior	
+	2857119571	HB_UiAmmo_EVENT			\Chris\HB_UiAmmo_EVENT	
 	3271422357	Go_Boss_Arena			\Simon\Enviro\Acoustics\Go_Boss_Arena	
 	3284918817	Play_Shotgun_EVENT			\Simon\Weapons\Play_Shotgun_EVENT	
 	3859520409	Initialize_Shotgun_EVENT			\Simon\Weapons\Initialize_Shotgun_EVENT	
+	3887785823	HB_PickUp_EVENT			\Chris\HB_PickUp_EVENT	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	754284858	AMMO_type			\Chris\AMMO_type	
+	1075172584	PickUP_type			\Chris\PickUP_type	
 	3211962897	Surface_type_FTP_switch			\Alex\Character\Surface type\Surface_type_FTP_switch	
 
 Switch	ID	Name	Switch Group			Notes
+	564986154	Epic	AMMO_type			
+	2127292149	Rare	AMMO_type			
+	3730551722	Standar	AMMO_type			
+	564986154	EPIC	PickUP_type			
+	2127292149	RARE	PickUP_type			
+	3730551722	Standar	PickUP_type			
 	635148068	FTP_Flaques_switch	Surface_type_FTP_switch			
 	756232859	FTP_Sol_sec_switch	Surface_type_FTP_switch			
 	1023131442	FTP_Eau_switch	Surface_type_FTP_switch			
@@ -60,9 +70,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	112992839	HB_SFX_Shotgun_RegularAmmo_01	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_RegularAmmo_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Regular_Ammo_RND\HB_SFX_Shotgun_RegularAmmo_01		63714
 	131298312	HB_SFX_Shotgun_RegularCanon_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_RegularCanon_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Canon_Type_SWITCH\Regular_Canon_RND\HB_SFX_Shotgun_RegularCanon_00		57622
 	139919943	HB_SFX_Shotgun_StartDropShell_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_StartDropShell_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\Drop_Shell_SWITCH\Drop_Shell_SEQ\Start_Drop\HB_SFX_Shotgun_StartDropShell_00		26676
+	143384558	HB_SFX_ammo_EPIC	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_ammo_EPIC_10C4C929.wem		\Actor-Mixer Hierarchy\Chris\UIweps\Ammo_Switch\RND_Ammo_Epic\HB_SFX_ammo_EPIC		791508
 	163274769	HB_SFX_Shotgun_IceAmmo_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_IceAmmo_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Ice _Ammo_RND\HB_SFX_Shotgun_IceAmmo_02		48796
 	175927279	HB_SFX_Shotgun_IceAmmo_01	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_IceAmmo_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Ice _Ammo_RND\HB_SFX_Shotgun_IceAmmo_01		47986
 	209701508	HB_SFX_Shotgun_CanonPortee_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_CanonPortee_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Canon_Type_SWITCH\Canon_Portee_RND\HB_SFX_Shotgun_CanonPortee_02		105436
+	238885831	HB_SFX_Pickup_EPIC	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Pickup_EPIC_10C4C929.wem		\Actor-Mixer Hierarchy\Chris\UIweps\PickUP_Switch\PICKUP_EPIC\HB_SFX_Pickup_EPIC		456432
+	265842113	HB_SFX_ammo_01	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_ammo_01_9EE4F1CE.wem		\Actor-Mixer Hierarchy\Chris\UIweps\Ammo_Switch\RND_Ammo_standar\HB_SFX_ammo_01		324900
+	271601829	HB_SFX_ammo_03	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_ammo_03_43970F03.wem		\Actor-Mixer Hierarchy\Chris\UIweps\Ammo_Switch\RND_Ammo_standar\HB_SFX_ammo_03		323176
 	277417704	HB_SFX_Shotgun_NoChamber_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_NoChamber_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\No_Chamber_RND\HB_SFX_Shotgun_NoChamber_02		12646
 	305038015	HB_SFX_Shotgun_ThunderAmmo_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_ThunderAmmo_02_ED91B86A.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Thunder_Ammo_RND\HB_SFX_Shotgun_ThunderAmmo_02		48796
 	333758070	HB_SFX_Shotgun_FireAmmo_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_FireAmmo_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Fire_Ammo_RND\HB_SFX_Shotgun_FireAmmo_00		71964
@@ -75,9 +89,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	447038367	HB_SFX_Shotgun_IceAmmo_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_IceAmmo_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Ice _Ammo_RND\HB_SFX_Shotgun_IceAmmo_00		46590
 	454462908	HB_SFX_Shotgun_Spread60_01	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Spread60_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\Spread_60_RND\HB_SFX_Shotgun_Spread60_01		16106
 	464167368	HB_SFX_Shotgun_NoChamber_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_NoChamber_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\No_Chamber_RND\HB_SFX_Shotgun_NoChamber_00		16106
+	476709970	HB_Pickup_03	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Uiwep_Pickup3_CCED4F44.wem		\Actor-Mixer Hierarchy\Chris\UIweps\PickUP_Switch\RND_Pickup_item\HB_Pickup_03		224008
+	481689103	HB_Pickup_01	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Uiwep_Pickup1_A583DCB4.wem		\Actor-Mixer Hierarchy\Chris\UIweps\PickUP_Switch\RND_Pickup_item\HB_Pickup_01		216732
+	489126667	HB_SFX_Pickup_RARE	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Pickup_RARE_10C4C929.wem		\Actor-Mixer Hierarchy\Chris\UIweps\PickUP_Switch\PICKUP_RARE\HB_SFX_Pickup_RARE		456432
 	502360136	HB_SFX_Shotgun_EndDropShell_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_EndDropShell_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\Drop_Shell_SWITCH\Drop_Shell_SEQ\End_Drop\HB_SFX_Shotgun_EndDropShell_02		87504
 	516143379	HB_SFX_Shotgun_RegularAmmo_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_RegularAmmo_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Regular_Ammo_RND\HB_SFX_Shotgun_RegularAmmo_00		54410
 	552564079	HB_SFX_Shotgun_RegularCanon_01	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_RegularCanon_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Canon_Type_SWITCH\Regular_Canon_RND\HB_SFX_Shotgun_RegularCanon_01		47986
+	555529559	HB_SFX_ammo_RARE	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_ammo_RARE_10C4C929.wem		\Actor-Mixer Hierarchy\Chris\UIweps\Ammo_Switch\RND_Ammo_Rare\HB_SFX_ammo_RARE		791508
 	562077786	HB_SFX_Shotgun_EndDropShell_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_EndDropShell_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\Drop_Shell_SWITCH\Drop_Shell_SEQ\End_Drop\HB_SFX_Shotgun_EndDropShell_00		89542
 	565969212	HB_SFX_Shotgun_Spread180_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Spread180_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\Spread_180_RND\HB_SFX_Shotgun_Spread180_00		9376
 	581784882	HB_SFX_Shotgun_CanonTranspercant_01	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_CanonTranspercant_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Canon_Type_SWITCH\Canon_Transpercant_RND\HB_SFX_Shotgun_CanonTranspercant_01		72108
@@ -85,8 +103,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	646026284	HB_SFX_Shotgun_Reload_In_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Reload_In_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\OutIn_SEQ\Reload_In\HB_SFX_Shotgun_Reload_In_02		29168
 	661955203	HB_SFX_Shotgun_EndDropShell_03	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_EndDropShell_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\Drop_Shell_SWITCH\Drop_Shell_SEQ\End_Drop\HB_SFX_Shotgun_EndDropShell_03		89512
 	715525088	HB_SFX_Shotgun_ThunderAmmo_01	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_ThunderAmmo_01_13059E1A.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Thunder_Ammo_RND\HB_SFX_Shotgun_ThunderAmmo_01		47986
+	721740263	HB_SFX_ammo_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_ammo_02_D8E2CF04.wem		\Actor-Mixer Hierarchy\Chris\UIweps\Ammo_Switch\RND_Ammo_standar\HB_SFX_ammo_02		342540
 	728468316	HB_SFX_Shotgun_StartDropShell_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_StartDropShell_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\Drop_Shell_SWITCH\Drop_Shell_SEQ\Start_Drop\HB_SFX_Shotgun_StartDropShell_02		24106
 	739433020	HB_SFX_Shotgun_Spread60_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Spread60_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\Spread_60_RND\HB_SFX_Shotgun_Spread60_02		12646
+	740162737	HB_Pickup_02	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Uiwep_Pickup2_35512C65.wem		\Actor-Mixer Hierarchy\Chris\UIweps\PickUP_Switch\RND_Pickup_item\HB_Pickup_02		224956
 	756586809	HB_SFX_Shotgun_ThunderAmmo_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_ThunderAmmo_00_13824A88.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Thunder_Ammo_RND\HB_SFX_Shotgun_ThunderAmmo_00		57622
 	761814132	HB_SFX_Shotgun_Spread180_01	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Spread180_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\Spread_180_RND\HB_SFX_Shotgun_Spread180_01		12722
 	780555555	HB_SFX_Shotgun_Spread60_00	E:\Unreal\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Spread60_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\Spread_60_RND\HB_SFX_Shotgun_Spread60_00		16106
