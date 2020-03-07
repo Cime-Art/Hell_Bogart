@@ -70,6 +70,17 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{51166EAA-8443-4D9A-B41B-88EC1592B235}" ShortID="559904340">
+					<ChildrenList>
+						<StateGroup Name="Music_STATE" ID="{F6D3DE5E-D808-437D-B8B8-024D13D3C80C}">
+							<ChildrenList>
+								<State Name="None" ID="{711F642A-D061-406A-A43C-7DFCFA603C38}"/>
+								<State Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}"/>
+								<State Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
