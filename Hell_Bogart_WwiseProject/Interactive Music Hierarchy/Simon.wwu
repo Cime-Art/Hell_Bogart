@@ -62,6 +62,11 @@
 													</ValueList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A03CF19D-FA3E-42A7-919A-5298D8E5704F}"/>
+														</ModifierInfo>
+													</ModifierList>
 													<RTPCList>
 														<RTPC Name="" ID="{22C56CFA-BA4F-48E6-A273-BEFDAAEE8E56}" ShortID="254464664">
 															<ReferenceList>
@@ -773,6 +778,14 @@
 												</MusicTrackSequence>
 												<MusicTrackSequence Name="" ID="{B43BB290-974C-416F-B038-FA40467D52D2}">
 													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Medium_04_Transi" ID="{D0683D14-665C-41B5-94FB-DAEE12710ECB}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Medium_04_Transi" ID="{EF75313B-6FDD-49BF-B6C5-9D6671E0DB3B}"/>
+														</MusicClip>
 														<MusicClip Name="MUS_HB_Jungle_Medium_04_Transi" ID="{9DF53784-F980-4690-B5A5-91545BC8DD66}">
 															<PropertyList>
 																<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
@@ -837,8 +850,32 @@
 													</ClipList>
 												</MusicTrackSequence>
 												<MusicTrackSequence Name="" ID="{02C857A0-408C-4169-AAE2-A01239E7CA05}"/>
-												<MusicTrackSequence Name="" ID="{E550CA23-3F56-420E-BA4F-C53EB25489F0}"/>
-												<MusicTrackSequence Name="" ID="{4C663683-5F83-4BEF-BB86-C1937858F877}"/>
+												<MusicTrackSequence Name="" ID="{E550CA23-3F56-420E-BA4F-C53EB25489F0}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Medium_04_Transi" ID="{BC410121-5AFE-4756-A170-3B137F819025}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Medium_04_Transi" ID="{EF75313B-6FDD-49BF-B6C5-9D6671E0DB3B}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{4C663683-5F83-4BEF-BB86-C1937858F877}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Medium_01" ID="{8B39B8FC-8A59-43B4-ACDD-E0DBE7130772}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Medium_01" ID="{740F44D4-B19C-4EF9-A832-9765FB8483D8}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
 												<MusicTrackSequence Name="" ID="{0CB90D27-8FE6-45A9-80E3-7809D9824C4F}"/>
 												<MusicTrackSequence Name="" ID="{ED548112-A8BB-46EC-8CC0-B846220FA797}"/>
 												<MusicTrackSequence Name="" ID="{644177F4-633B-4B7B-BF78-7FA9FD50AB09}"/>
@@ -1032,10 +1069,6 @@
 												</MusicTrackSequence>
 												<MusicTrackSequence Name="" ID="{BEB015EF-23E8-4390-8626-C6FBCA84A6C8}"/>
 												<MusicTrackSequence Name="" ID="{A0DC91CD-2B57-4DA6-AAD4-11C3108B2E7C}"/>
-												<MusicTrackSequence Name="" ID="{C64A9953-36CB-4E2D-92ED-46924B04E491}"/>
-												<MusicTrackSequence Name="" ID="{4FFF5B2F-404F-4B64-9223-661B5BBE4BD3}"/>
-												<MusicTrackSequence Name="" ID="{486DD7F7-9DF4-4096-8D29-E1AE3953F89B}"/>
-												<MusicTrackSequence Name="" ID="{CD19DD30-2161-4FB2-9EAB-D1635D33502C}"/>
 												<MusicTrackSequence Name="" ID="{F2230415-99DC-4D43-84DE-46A8C02E3059}"/>
 												<MusicTrackSequence Name="" ID="{96680532-6A39-48C6-8C48-6367FEFEBF68}"/>
 												<MusicTrackSequence Name="" ID="{A2FDDDF2-3DDB-434C-9B41-9B9BEBFE29EF}"/>
@@ -1323,6 +1356,13 @@
 												<MusicTrackSequence Name="" ID="{5F4D431A-5B60-48B4-9D02-018A06C77158}"/>
 												<MusicTrackSequence Name="" ID="{55BA4941-6A17-49A4-A237-D0B8AB10514A}"/>
 												<MusicTrackSequence Name="" ID="{BF45CEA9-9A53-4819-A9B5-7AE462EC112D}"/>
+												<MusicTrackSequence Name="" ID="{F1B35E62-57E1-4479-A010-B1365202DB47}"/>
+												<MusicTrackSequence Name="" ID="{719A2D8D-2384-49B5-99B6-B33A46B37AE7}"/>
+												<MusicTrackSequence Name="" ID="{003DC0AF-1E59-465A-9CBD-740D0DF7270B}"/>
+												<MusicTrackSequence Name="" ID="{097EC12E-5B72-42FC-9A0F-EFEE596E60CA}"/>
+												<MusicTrackSequence Name="" ID="{02EFA4FF-F234-4B5C-92C6-346B7DF4C78D}"/>
+												<MusicTrackSequence Name="" ID="{F19C54A5-3662-4665-9CFB-F64C9D647B13}"/>
+												<MusicTrackSequence Name="" ID="{69A9866D-5E5D-42B6-9BF5-B643B4609B49}"/>
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="MalletCymbal" ID="{EB5E5FEA-6257-4B0A-BE45-2CF1D0AF0CAF}" ShortID="810166827">
@@ -2070,18 +2110,6 @@
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
 												<Property Name="TimeMs" Type="Real64" Value="4000"/>
-											</PropertyList>
-										</MusicCue>
-										<MusicCue Name="Event Tresor" ID="{A4DFA4E6-E8B9-4F5B-AD81-982C2C6BCCC3}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="2"/>
-												<Property Name="TimeMs" Type="Real64" Value="1.53477230924182E-12"/>
-											</PropertyList>
-										</MusicCue>
-										<MusicCue Name="Event Tresor" ID="{024C5345-C090-4261-ACD9-D55BC6F17825}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="2"/>
-												<Property Name="TimeMs" Type="Real64" Value="2000"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
@@ -4768,6 +4796,25 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicSegment Name="End_Music" ID="{91C8D2DE-6539-49F2-B125-3CECC3632881}" ShortID="801068830">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{28E4EDBA-4213-4FE1-A5A9-EE547B616345}"/>
+								<MusicCue Name="Exit Cue" ID="{8FDDD646-1D35-4D02-B3DB-13099E0E5F5B}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{7D315DDD-895D-4E41-AB6D-0064ADAC1EF0}">
@@ -4832,6 +4879,19 @@
 										<TransitionObjectRef Name="MUS_HB_JUNGLE_BigDrum_EndFight" ID="{D80327EC-3EA9-4239-8807-EE2F520E149B}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{A8BB916F-705A-4855-856D-F9861EEA1FB5}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="End_Music" ID="{91C8D2DE-6539-49F2-B125-3CECC3632881}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Mus_MalletCymbal_Transition_RND" ID="{60AF1EE5-EB74-44B0-B286-1767561DCC36}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+									</TransitionInfo>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
@@ -4854,6 +4914,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Mus_Jungle_Fight_LOOP" ID="{4A43584D-5401-4224-AB74-02CAB5905D26}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="End_Music" ID="{F98C25B7-C5CA-4858-B4D9-4136E6494696}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="End_Music" ID="{91C8D2DE-6539-49F2-B125-3CECC3632881}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>
