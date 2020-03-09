@@ -19,6 +19,15 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{9735F68B-AADC-467A-BB42-0C7FBDAEDADE}" ShortID="803640199">
+					<ChildrenList>
+						<GameParameter Name="Distance_From_Enemy" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
