@@ -41,8 +41,8 @@
 								<State Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
 								<State Name="Fire" ID="{B0A5DC31-2D63-455C-9EE3-E19F3029E000}"/>
 								<State Name="Ice" ID="{BEFC7779-5A48-4827-8367-4DEB88AF99D6}"/>
-								<State Name="Electricity" ID="{C213861F-6FBB-41A8-B76F-86E3600D00A2}"/>
-								<State Name="Regular" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
+								<State Name="Thunder" ID="{C213861F-6FBB-41A8-B76F-86E3600D00A2}"/>
+								<State Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>

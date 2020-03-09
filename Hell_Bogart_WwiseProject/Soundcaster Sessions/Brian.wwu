@@ -14,7 +14,7 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Elm_Electricity" ID="{E88FC537-22E0-4BC9-9C7A-0525FC7975AD}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+							<ObjectRef Name="Elm_Thunder" ID="{E88FC537-22E0-4BC9-9C7A-0525FC7975AD}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
@@ -53,7 +53,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Regular" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
+						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
 						<CurrentStateRef Name="Ruin_Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

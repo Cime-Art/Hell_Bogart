@@ -110,7 +110,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Regular" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+											<ObjectRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
