@@ -9,10 +9,6 @@
 							<ObjectRef Name="Music_SWITCH(method_A)" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
 							<Position X="0" Y="0"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="Music_SWITCH(method_B)" ID="{7CF81895-ABF7-4E49-985C-E21B80533E6F}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
-							<Position X="1" Y="0"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -29,10 +25,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Boss" ID="{28BF95A2-FE03-476E-A2A7-EB88C0DEAA93}"/>
-						<CurrentStateRef Name="Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}"/>
-						<CurrentStateRef Name="Phase_1" ID="{31D97934-83D1-4445-9C51-BDDECF358AB8}"/>
-						<CurrentStateRef Name="Ruine" ID="{9A38206D-D323-4E4E-A0F2-188223DD5419}"/>
+						<CurrentStateRef Name="Ruin_Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
