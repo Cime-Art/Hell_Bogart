@@ -13,8 +13,8 @@
 											<Modifier Name="" ID="{262D2D94-5254-4A81-9BD5-C250DF582B56}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="300"/>
-													<Property Name="Min" Type="Real64" Value="-300"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -399,7 +399,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="FTP_flaques_01" ID="{9A23AE9F-96BF-4685-BD50-E3B193F4B157}" ShortID="441000509">
+										<Sound Name="HB_FTP_Flaque_01" ID="{64A28323-CA2C-429A-BAFC-238E74DD7D40}" ShortID="381505075">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -409,16 +409,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="FTP_flaques_01" ID="{F300AB0F-C51E-4708-95B6-FC923E30FCBE}" ShortID="81302234">
+												<AudioFileSource Name="HB_FTP_Flaque_01" ID="{CC30BCE9-C68E-496E-87F2-7F5F5156218F}" ShortID="600781554">
 													<Language>SFX</Language>
-													<AudioFile>FTP_flaques_01.wav</AudioFile>
+													<AudioFile>HB_FTP_Flaque_01.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="FTP_flaques_01" ID="{F300AB0F-C51E-4708-95B6-FC923E30FCBE}" Platform="Linked"/>
+												<ActiveSource Name="HB_FTP_Flaque_01" ID="{CC30BCE9-C68E-496E-87F2-7F5F5156218F}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="FTP_flaques_02" ID="{1338D0DF-7401-412A-9D6B-E9C740D67831}" ShortID="576285663">
+										<Sound Name="HB_FTP_Flaque_02" ID="{4AB62E34-35DB-4716-B233-202FDF8BC538}" ShortID="1057609510">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -428,16 +428,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="FTP_flaques_02" ID="{F020ECED-B1C5-4360-A932-6CAB5CBF468B}" ShortID="332913447">
+												<AudioFileSource Name="HB_FTP_Flaque_02" ID="{9F4E1A7E-2F3E-416D-B25E-7A97602B6BA7}" ShortID="458831136">
 													<Language>SFX</Language>
-													<AudioFile>FTP_flaques_02.wav</AudioFile>
+													<AudioFile>HB_FTP_Flaque_02.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="FTP_flaques_02" ID="{F020ECED-B1C5-4360-A932-6CAB5CBF468B}" Platform="Linked"/>
+												<ActiveSource Name="HB_FTP_Flaque_02" ID="{9F4E1A7E-2F3E-416D-B25E-7A97602B6BA7}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="FTP_flaques_03" ID="{5D341B2A-6129-49E9-B906-7DC96619F378}" ShortID="379646374">
+										<Sound Name="HB_FTP_Flaque_03" ID="{7B8E9851-595B-45E2-817B-95C535766D4D}" ShortID="313399188">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -447,13 +447,13 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="FTP_flaques_03" ID="{5D47311F-37E1-4362-8A90-B2FBD818F45E}" ShortID="124019649">
+												<AudioFileSource Name="HB_FTP_Flaque_03" ID="{2DFD1406-71D2-4E85-B2FC-07B7F6F36AE3}" ShortID="479199677">
 													<Language>SFX</Language>
-													<AudioFile>FTP_flaques_03.wav</AudioFile>
+													<AudioFile>HB_FTP_Flaque_03.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="FTP_flaques_03" ID="{5D47311F-37E1-4362-8A90-B2FBD818F45E}" Platform="Linked"/>
+												<ActiveSource Name="HB_FTP_Flaque_03" ID="{2DFD1406-71D2-4E85-B2FC-07B7F6F36AE3}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -481,6 +481,65 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HB_Steps_herbeshumides" ID="{9805B01E-F2E6-42B8-8BA5-8AEC95196796}" ShortID="766688534">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_Steps_herbeshumides" ID="{0C459EE4-6CCA-4677-8675-6691605BD612}" ShortID="864222219">
+													<Language>SFX</Language>
+													<AudioFile>HB_Steps_herbeshumides.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_Steps_herbeshumides" ID="{0C459EE4-6CCA-4677-8675-6691605BD612}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HB_Steps_herbeshumides_02" ID="{15828433-611C-41E7-A495-211663231FBE}" ShortID="419744773">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_Steps_herbeshumides_02" ID="{03C7944F-4AED-40B4-938A-0FD0BD64B070}" ShortID="355370330">
+													<Language>SFX</Language>
+													<AudioFile>HB_Steps_herbeshumides_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_Steps_herbeshumides_02" ID="{03C7944F-4AED-40B4-938A-0FD0BD64B070}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HB_Steps_herbeshumides_03" ID="{8A7B5DA3-8463-4859-BE72-D4E51A042511}" ShortID="1058934611">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_Steps_herbeshumides_03" ID="{23386EF7-A5BD-4D91-A330-D7DEB03CAF77}" ShortID="553559462">
+													<Language>SFX</Language>
+													<AudioFile>HB_Steps_herbeshumides_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_Steps_herbeshumides_03" ID="{23386EF7-A5BD-4D91-A330-D7DEB03CAF77}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FTP_Dalles_pierre_RND" ID="{9D7A9581-2476-415A-95F9-0EC340816F9F}" ShortID="711654778">
 									<PropertyList>
@@ -505,6 +564,65 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HB_Steps_Dalles_1" ID="{5690FA1A-6853-43A2-9523-0B6AA6858E14}" ShortID="985698333">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_Steps_Dalles_1" ID="{8E6BFAF4-6A95-43F1-98AF-86CE4AED126C}" ShortID="353586372">
+													<Language>SFX</Language>
+													<AudioFile>HB_Steps_Dalles_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_Steps_Dalles_1" ID="{8E6BFAF4-6A95-43F1-98AF-86CE4AED126C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HB_Steps_Dalles_2" ID="{5223B7C4-620E-4369-9FA3-26AD50416503}" ShortID="1028272334">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_Steps_Dalles_2" ID="{117BE215-1BDF-4FFA-9E38-DCB0EAC702B1}" ShortID="248132464">
+													<Language>SFX</Language>
+													<AudioFile>HB_Steps_Dalles_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_Steps_Dalles_2" ID="{117BE215-1BDF-4FFA-9E38-DCB0EAC702B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HB_Steps_Dalles_3" ID="{CEDBB277-BCE4-4257-9E15-518028A5B7F2}" ShortID="808766770">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_Steps_Dalles_3" ID="{3740C777-0B70-49E4-92A6-D203C3FF0F44}" ShortID="487019024">
+													<Language>SFX</Language>
+													<AudioFile>HB_Steps_Dalles_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_Steps_Dalles_3" ID="{3740C777-0B70-49E4-92A6-D203C3FF0F44}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FTP_Sol_poussiereux_RND" ID="{071D873A-FE9E-4A93-A374-78CBD846F861}" ShortID="234410361">
 									<PropertyList>

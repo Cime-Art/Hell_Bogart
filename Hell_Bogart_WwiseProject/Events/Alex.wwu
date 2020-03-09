@@ -3,9 +3,9 @@
 	<Events>
 		<WorkUnit Name="Alex" ID="{D109BCCB-2B16-4626-BAE8-CEC4CBAA63B7}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_FTP_surface_type_switch" ID="{4E0AC160-5907-4630-A324-702BDDF497A1}">
+				<Event Name="E_FTP_surface_type_switch" ID="{D0B0DCD4-17EB-4EF9-91BD-BEC7676D9860}">
 					<ChildrenList>
-						<Action Name="" ID="{79C1F41D-F37F-4F3A-92F6-B24E3BF24B7B}" ShortID="150458396">
+						<Action Name="" ID="{6E2E307E-D35B-4002-878A-0ED7EECAA5E4}" ShortID="772450416">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="FTP_surface_type_switch" ID="{29EE7E0A-1940-4DF7-B1DA-61575C7B6D63}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
