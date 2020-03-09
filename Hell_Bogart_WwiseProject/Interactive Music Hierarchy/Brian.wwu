@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Brian" ID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSwitchContainer Name="Music_SWITCH(method_A)" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" ShortID="943125971">
+				<MusicSwitchContainer Name="Music_SWITCH" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" ShortID="943125971">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="11"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>

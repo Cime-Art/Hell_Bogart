@@ -1,6 +1,545 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="Brian" ID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Brian" ID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Grenade" ID="{F69406BF-EBE8-4D12-AF5C-481616C4143C}" ShortID="405835023">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<ActorMixer Name="MIX_Grenade" ID="{BAE3BDFB-7925-4868-861B-828188502EA4}" ShortID="1029881172">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Level_SWITCH" ID="{A120B179-F525-4A58-8788-EA7E9AF6293B}" ShortID="1022951605">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="1"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Regular" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Element" ID="{127802BB-8D2B-4686-824E-EE1E762107B9}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="Elm_Fire" ID="{7AC10C4F-9836-4700-A3C7-988C84840253}" ShortID="705777537">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="23"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Commun" ID="{6FCEA347-5618-4134-B859-77236C5CDF6B}" ShortID="627441892">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-GenadeFire-00" ID="{8A2DA911-947A-4A0C-BAC9-16C8514DB016}" ShortID="570978224">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-GenadeFire-00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-GenadeFire-00" ID="{8A2DA911-947A-4A0C-BAC9-16C8514DB016}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Legendary" ID="{E1707B98-7D09-444B-922B-1655196DBA31}" ShortID="952333405">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-GenadeFire-02" ID="{BBC8AFE7-D8FB-4AAE-A5DD-5DB572263AC1}" ShortID="1001555105">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-GenadeFire-02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-GenadeFire-02" ID="{BBC8AFE7-D8FB-4AAE-A5DD-5DB572263AC1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Epic" ID="{640453AA-CF68-42F0-8002-C2544937F88E}" ShortID="878397067">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-GenadeFire-01" ID="{56655DA5-4726-4732-8E57-464D2AA71C7C}" ShortID="749607470">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-GenadeFire-01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-GenadeFire-01" ID="{56655DA5-4726-4732-8E57-464D2AA71C7C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Commun" ID="{6FCEA347-5618-4134-B859-77236C5CDF6B}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Legendary" ID="{E1707B98-7D09-444B-922B-1655196DBA31}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Epic" ID="{640453AA-CF68-42F0-8002-C2544937F88E}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+														<ItemList>
+															<ItemRef Name="Epic" ID="{640453AA-CF68-42F0-8002-C2544937F88E}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+														<ItemList>
+															<ItemRef Name="Legendary" ID="{E1707B98-7D09-444B-922B-1655196DBA31}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+														<ItemList>
+															<ItemRef Name="Commun" ID="{6FCEA347-5618-4134-B859-77236C5CDF6B}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="Elm_Ice" ID="{8ADAB159-AF9D-4AE6-8772-5F73904ACBC1}" ShortID="436323712">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="15"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Commun" ID="{94424C85-2F36-44A7-A4D2-729D6C3098C7}" ShortID="372168138">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-GenadeIce-00" ID="{C3A03B32-8AD4-474A-B4F8-D378765BD09E}" ShortID="227928416">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-GenadeIce-00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-GenadeIce-00" ID="{C3A03B32-8AD4-474A-B4F8-D378765BD09E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Legendary" ID="{9017703E-F69B-4D32-A9A2-0EE2CDB1D0D4}" ShortID="886949862">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-GenadeIce-02" ID="{2679619B-5197-4855-987E-E5CC0E510435}" ShortID="567405934">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-GenadeIce-02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-GenadeIce-02" ID="{2679619B-5197-4855-987E-E5CC0E510435}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Epic" ID="{45B49742-FC2E-434A-9881-682DFB72F213}" ShortID="404045601">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-GenadeIce-01" ID="{66EC2F6D-3FFB-48E2-9AE7-E720CFFFE70E}" ShortID="104514832">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-GenadeIce-01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-GenadeIce-01" ID="{66EC2F6D-3FFB-48E2-9AE7-E720CFFFE70E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Legendary" ID="{9017703E-F69B-4D32-A9A2-0EE2CDB1D0D4}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Epic" ID="{45B49742-FC2E-434A-9881-682DFB72F213}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Commun" ID="{94424C85-2F36-44A7-A4D2-729D6C3098C7}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+														<ItemList>
+															<ItemRef Name="Epic" ID="{45B49742-FC2E-434A-9881-682DFB72F213}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+														<ItemList>
+															<ItemRef Name="Legendary" ID="{9017703E-F69B-4D32-A9A2-0EE2CDB1D0D4}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+														<ItemList>
+															<ItemRef Name="Commun" ID="{94424C85-2F36-44A7-A4D2-729D6C3098C7}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="Elm_Electricity" ID="{E88FC537-22E0-4BC9-9C7A-0525FC7975AD}" ShortID="718921380">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="19"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Commun" ID="{DB0A8C47-89B3-456B-AC89-3ED2AD0AA42A}" ShortID="589240274">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-GenadeElec-00" ID="{6A28A5B4-7456-484B-9649-F55EBD032DFD}" ShortID="475995238">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-GenadeElec-00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-GenadeElec-00" ID="{6A28A5B4-7456-484B-9649-F55EBD032DFD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Legendary" ID="{F3A287DC-DEE9-4962-A0BF-80D3F9E50FD3}" ShortID="145629748">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-GenadeElec-02" ID="{2551E4E5-CD99-48E7-B8C6-B577BDB8FE02}" ShortID="505838822">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-GenadeElec-02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-GenadeElec-02" ID="{2551E4E5-CD99-48E7-B8C6-B577BDB8FE02}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Epic" ID="{7FE2488A-1077-4742-ACF3-AEF0A633286B}" ShortID="85884282">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-GenadeElec-01" ID="{D85FB7E1-D4BD-46A3-AD88-9EA19C60F9AE}" ShortID="978071521">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-GenadeElec-01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-GenadeElec-01" ID="{D85FB7E1-D4BD-46A3-AD88-9EA19C60F9AE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Commun" ID="{DB0A8C47-89B3-456B-AC89-3ED2AD0AA42A}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Epic" ID="{7FE2488A-1077-4742-ACF3-AEF0A633286B}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Legendary" ID="{F3A287DC-DEE9-4962-A0BF-80D3F9E50FD3}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+														<ItemList>
+															<ItemRef Name="Epic" ID="{7FE2488A-1077-4742-ACF3-AEF0A633286B}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+														<ItemList>
+															<ItemRef Name="Legendary" ID="{F3A287DC-DEE9-4962-A0BF-80D3F9E50FD3}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+														<ItemList>
+															<ItemRef Name="Commun" ID="{DB0A8C47-89B3-456B-AC89-3ED2AD0AA42A}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="Elm_Regular" ID="{5C91A112-5143-4FC2-A2B4-73EB11CCBC56}" ShortID="108686200">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="17"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Commun" ID="{68B77280-7ADF-4177-8BC7-94CB063E235E}" ShortID="117816027">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Genade-00" ID="{C2626BE7-E381-4674-A3F3-220EBF25B10F}" ShortID="1028693436">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Genade-00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Genade-00" ID="{C2626BE7-E381-4674-A3F3-220EBF25B10F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Legendary" ID="{2AB006B9-A7EB-4BF5-88D4-FF170594C061}" ShortID="350530266">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Genade-02" ID="{36051516-DD81-450C-B96C-0CBB67BAC28D}" ShortID="89815110">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Genade-02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Genade-02" ID="{36051516-DD81-450C-B96C-0CBB67BAC28D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Epic" ID="{967DD1D9-F0CA-454B-A8DA-C5D25738FEA5}" ShortID="758828941">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Genade-01" ID="{E665C90D-8875-4E6A-B5F6-15377F47C3DF}" ShortID="137620780">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Genade-01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Genade-01" ID="{E665C90D-8875-4E6A-B5F6-15377F47C3DF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Commun" ID="{68B77280-7ADF-4177-8BC7-94CB063E235E}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Legendary" ID="{2AB006B9-A7EB-4BF5-88D4-FF170594C061}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Epic" ID="{967DD1D9-F0CA-454B-A8DA-C5D25738FEA5}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+														<ItemList>
+															<ItemRef Name="Epic" ID="{967DD1D9-F0CA-454B-A8DA-C5D25738FEA5}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+														<ItemList>
+															<ItemRef Name="Legendary" ID="{2AB006B9-A7EB-4BF5-88D4-FF170594C061}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+														<ItemList>
+															<ItemRef Name="Commun" ID="{68B77280-7ADF-4177-8BC7-94CB063E235E}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Elm_Regular" ID="{5C91A112-5143-4FC2-A2B4-73EB11CCBC56}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Elm_Electricity" ID="{E88FC537-22E0-4BC9-9C7A-0525FC7975AD}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Elm_Fire" ID="{7AC10C4F-9836-4700-A3C7-988C84840253}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Elm_Ice" ID="{8ADAB159-AF9D-4AE6-8772-5F73904ACBC1}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Electricity" ID="{C213861F-6FBB-41A8-B76F-86E3600D00A2}"/>
+												<ItemList>
+													<ItemRef Name="Elm_Electricity" ID="{E88FC537-22E0-4BC9-9C7A-0525FC7975AD}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Fire" ID="{B0A5DC31-2D63-455C-9EE3-E19F3029E000}"/>
+												<ItemList>
+													<ItemRef Name="Elm_Fire" ID="{7AC10C4F-9836-4700-A3C7-988C84840253}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Regular" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
+												<ItemList>
+													<ItemRef Name="Elm_Regular" ID="{5C91A112-5143-4FC2-A2B4-73EB11CCBC56}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Ice" ID="{BEFC7779-5A48-4827-8367-4DEB88AF99D6}"/>
+												<ItemList>
+													<ItemRef Name="Elm_Ice" ID="{8ADAB159-AF9D-4AE6-8772-5F73904ACBC1}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

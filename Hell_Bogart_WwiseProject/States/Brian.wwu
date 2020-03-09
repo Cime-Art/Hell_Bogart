@@ -3,33 +3,51 @@
 	<States>
 		<WorkUnit Name="Brian" ID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="AmbToFight_STATE" ID="{7BA97260-BE77-4BFF-BCF8-023F25310BE9}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="13"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
+				<Folder Name="Musique" ID="{EB06F698-6DA9-44B1-B44C-34EF47EAE260}" ShortID="610582069">
 					<ChildrenList>
-						<State Name="None" ID="{AD1B78E7-9E09-4B51-A12E-A34064C3DE10}"/>
-						<State Name="Ruin_Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="25"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-						</State>
-						<State Name="Ruin_Combat" ID="{122201CD-4DCA-4354-813F-FAD7441F4521}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="10"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-						</State>
-						<State Name="Ruin_End" ID="{39BD2336-CE91-4BF1-9DDD-1642854F1A8C}">
+						<StateGroup Name="AmbToFight_STATE" ID="{7BA97260-BE77-4BFF-BCF8-023F25310BE9}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="13"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
-						</State>
+							<ChildrenList>
+								<State Name="None" ID="{AD1B78E7-9E09-4B51-A12E-A34064C3DE10}"/>
+								<State Name="Ruin_Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="25"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</State>
+								<State Name="Ruin_Combat" ID="{122201CD-4DCA-4354-813F-FAD7441F4521}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="10"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</State>
+								<State Name="Ruin_End" ID="{39BD2336-CE91-4BF1-9DDD-1642854F1A8C}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="13"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</State>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
-				</StateGroup>
+				</Folder>
+				<Folder Name="Grenade" ID="{B1D618B2-39D1-4949-9F5A-2583FAC39355}" ShortID="366745188">
+					<ChildrenList>
+						<StateGroup Name="Element" ID="{127802BB-8D2B-4686-824E-EE1E762107B9}">
+							<ChildrenList>
+								<State Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
+								<State Name="Fire" ID="{B0A5DC31-2D63-455C-9EE3-E19F3029E000}"/>
+								<State Name="Ice" ID="{BEFC7779-5A48-4827-8367-4DEB88AF99D6}"/>
+								<State Name="Electricity" ID="{C213861F-6FBB-41A8-B76F-86E3600D00A2}"/>
+								<State Name="Regular" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Guardian" ID="{F9A66FE8-03F9-416F-A1EE-79F97E0526FF}" ShortID="486364957"/>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
