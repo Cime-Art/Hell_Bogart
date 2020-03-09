@@ -18,49 +18,71 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="E_Play_Grenade" ID="{55E9DB6F-559F-416D-91AF-A1309789F473}">
+				<Folder Name="UI" ID="{52CC3777-6500-458E-93D6-D36D6FAE371A}" ShortID="220642255">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="Color" Type="int16" Value="15"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{E1BB0AF4-280C-42E9-AC1E-3ED31F9F6EB6}" ShortID="226408232">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Level_SWITCH" ID="{A120B179-F525-4A58-8788-EA7E9AF6293B}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="E_UI_Exit" ID="{23A26257-5D58-4BE0-96D8-6A06EF162DAB}"/>
+						<Event Name="E_UI_Option" ID="{D5C449DA-7D73-482D-BA58-D5D663DB096B}"/>
+						<Event Name="E_UI_Overlay" ID="{A629395E-107E-405D-9275-7A5C47457320}"/>
+						<Event Name="E_UI_Return" ID="{2C9450D2-541B-4C5F-954F-92BA0BD0C994}"/>
+						<Event Name="E_UI_Valid" ID="{7A0A0B78-5601-4E81-AE97-1397EBD9DE81}"/>
+						<Event Name="E_UI_Play" ID="{5427B47F-7A54-4A5D-9AD0-57D7448AAA1A}"/>
 					</ChildrenList>
-				</Event>
-				<Event Name="E_Initialize_Grenade" ID="{1324F38C-46B8-4F17-989C-58110C415D5C}">
+				</Folder>
+				<Folder Name="Grenade" ID="{4A5036C9-3CA4-4172-B8EB-B5C05C670182}" ShortID="344577583">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{74B796E1-AC37-44DB-9E19-2DF307AC47AB}" ShortID="359638345">
+						<Event Name="E_Initialize_Grenade" ID="{1324F38C-46B8-4F17-989C-58110C415D5C}">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Regular" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{0CE1A2B5-09EE-4E75-BF9E-ECDDEC459516}" ShortID="953559144">
+							<ChildrenList>
+								<Action Name="" ID="{74B796E1-AC37-44DB-9E19-2DF307AC47AB}" ShortID="359638345">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Regular" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0CE1A2B5-09EE-4E75-BF9E-ECDDEC459516}" ShortID="953559144">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Play_Grenade" ID="{55E9DB6F-559F-416D-91AF-A1309789F473}">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="23"/>
+								<Property Name="Color" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+							<ChildrenList>
+								<Action Name="" ID="{E1BB0AF4-280C-42E9-AC1E-3ED31F9F6EB6}" ShortID="226408232">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_SWITCH" ID="{A120B179-F525-4A58-8788-EA7E9AF6293B}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
