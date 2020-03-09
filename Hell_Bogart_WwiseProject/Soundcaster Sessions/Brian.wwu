@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9C0D8C68-1BBD-4393-8A45-5D34D8020E35}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Brian" ID="{9C0D8C68-1BBD-4393-8A45-5D34D8020E35}" PersistMode="Standalone"/>
+		<WorkUnit Name="Brian" ID="{9C0D8C68-1BBD-4393-8A45-5D34D8020E35}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Musique" ID="{8D86AF9B-A218-4053-BB86-4201CD9111B8}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Music_SWITCH(method_A)" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_SWITCH(method_B)" ID="{7CF81895-ABF7-4E49-985C-E21B80533E6F}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
+							<Value>12</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Boss" ID="{28BF95A2-FE03-476E-A2A7-EB88C0DEAA93}"/>
+						<CurrentStateRef Name="Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}"/>
+						<CurrentStateRef Name="Phase_1" ID="{31D97934-83D1-4445-9C51-BDDECF358AB8}"/>
+						<CurrentStateRef Name="Ruine" ID="{9A38206D-D323-4E4E-A0F2-188223DD5419}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

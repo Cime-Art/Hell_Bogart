@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}" SchemaVersion="94">
 	<States>
-		<WorkUnit Name="Brian" ID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}" PersistMode="Standalone"/>
+		<WorkUnit Name="Brian" ID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Environnement_STATE" ID="{4F714766-9BE9-4FBA-957C-37F279235447}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{CD5F848B-A3CB-4819-A213-61CA81B10775}"/>
+						<State Name="Jungle" ID="{938031B2-5527-452B-8EC7-6E3E107D1E71}"/>
+						<State Name="Ruine" ID="{9A38206D-D323-4E4E-A0F2-188223DD5419}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="9"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="MainMenu" ID="{BCEEB049-8E7B-4409-AACD-2FEFD73A41FB}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Situation_STATE" ID="{90FDE85F-425E-4217-BC64-331A4C62A8DE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C72FB9D8-11AC-42FA-B94C-9C85C76C109F}"/>
+						<State Name="Combat" ID="{63D4AEF2-E472-4877-A814-59E60F7808B2}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="23"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Boss" ID="{28BF95A2-FE03-476E-A2A7-EB88C0DEAA93}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Ambiance" ID="{FE430652-432A-44A5-B293-9D1DF9B81836}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Phase_Boss_STATE" ID="{BD8939B9-5E54-4E4E-AC93-8C1B80D5837B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{760DCF85-085A-48AB-8B6C-EBC281E2562A}"/>
+						<State Name="Phase_1" ID="{31D97934-83D1-4445-9C51-BDDECF358AB8}"/>
+						<State Name="Phase_3" ID="{8E537805-5C2D-4012-B9E5-084CE28DE08A}"/>
+						<State Name="Phase_2" ID="{A15DF1A3-A0F4-483B-B8CB-5B1356925457}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Amb_to_Fight_STATE" ID="{7BA97260-BE77-4BFF-BCF8-023F25310BE9}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="13"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{AD1B78E7-9E09-4B51-A12E-A34064C3DE10}"/>
+						<State Name="Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}"/>
+						<State Name="Combat" ID="{122201CD-4DCA-4354-813F-FAD7441F4521}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
