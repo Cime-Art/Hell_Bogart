@@ -24,12 +24,72 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="E_UI_Exit" ID="{23A26257-5D58-4BE0-96D8-6A06EF162DAB}"/>
-						<Event Name="E_UI_Option" ID="{D5C449DA-7D73-482D-BA58-D5D663DB096B}"/>
-						<Event Name="E_UI_Overlay" ID="{A629395E-107E-405D-9275-7A5C47457320}"/>
-						<Event Name="E_UI_Return" ID="{2C9450D2-541B-4C5F-954F-92BA0BD0C994}"/>
-						<Event Name="E_UI_Valid" ID="{7A0A0B78-5601-4E81-AE97-1397EBD9DE81}"/>
-						<Event Name="E_UI_Play" ID="{5427B47F-7A54-4A5D-9AD0-57D7448AAA1A}"/>
+						<Event Name="E_UI_Exit" ID="{23A26257-5D58-4BE0-96D8-6A06EF162DAB}">
+							<ChildrenList>
+								<Action Name="" ID="{F5E538BB-883C-4274-95F1-DB6C96117630}" ShortID="983768783">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB-SFX-UImenu-Exit" ID="{B9F0FF5A-951C-4FA4-A554-1E78BAF4DD04}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Option" ID="{D5C449DA-7D73-482D-BA58-D5D663DB096B}">
+							<ChildrenList>
+								<Action Name="" ID="{AEFF0241-9265-47C2-AF7F-684E23231A59}" ShortID="302291538">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB-SFX-UImenu-Option" ID="{85A3D7F1-70FA-4A5C-BA27-3F33984CB8A0}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Overlay" ID="{A629395E-107E-405D-9275-7A5C47457320}">
+							<ChildrenList>
+								<Action Name="" ID="{D14AA20D-2780-4D91-808B-596BD1F81210}" ShortID="203737109">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB-SFX-UImenu-Overlay" ID="{83739F17-B467-484C-AAE1-CD1F2EC12A91}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Return" ID="{2C9450D2-541B-4C5F-954F-92BA0BD0C994}">
+							<ChildrenList>
+								<Action Name="" ID="{D2E2F819-6B8B-4E4B-90E5-4CC73E4373FA}" ShortID="1037319886">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB-SFX-UImenu-Return" ID="{5E009CD9-03FE-4782-AA86-2855C6E1494B}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Valid" ID="{7A0A0B78-5601-4E81-AE97-1397EBD9DE81}">
+							<ChildrenList>
+								<Action Name="" ID="{56938542-10BA-4903-B116-22ECA4737835}" ShortID="442830305">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB-SFX-UImenu-Valid" ID="{3C8F4FD3-E666-4628-A4EE-5472F68D135F}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Play" ID="{5427B47F-7A54-4A5D-9AD0-57D7448AAA1A}">
+							<ChildrenList>
+								<Action Name="" ID="{B32D006C-9E07-4AAC-93E0-030BC9799035}" ShortID="37595777">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB-SFX-UImenu-Play" ID="{A598B049-D601-40CC-9A45-59CFA911B6AC}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Grenade" ID="{4A5036C9-3CA4-4172-B8EB-B5C05C670182}" ShortID="344577583">

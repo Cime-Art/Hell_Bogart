@@ -11,7 +11,9 @@
 					<ChildrenList>
 						<ActorMixer Name="MIX_Grenade" ID="{BAE3BDFB-7925-4868-861B-828188502EA4}" ShortID="1029881172">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Color" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -545,7 +547,7 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Sound Name="HB-SFX-UImenu-Exit" ID="{B9F0FF5A-951C-4FA4-A554-1E78BAF4DD04}" ShortID="307792482">
+						<ActorMixer Name="MIX_UI" ID="{810A6A64-7B85-4880-9440-2E720F49A893}" ShortID="91547332">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -555,110 +557,122 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="HB-SFX-UImenu-Exit" ID="{644CB6BA-5D22-4499-8690-61BB06FB961C}" ShortID="672905168">
-									<Language>SFX</Language>
-									<AudioFile>HB-SFX-UImenu-Exit.wav</AudioFile>
-								</AudioFileSource>
+								<Sound Name="HB-SFX-UImenu-Option" ID="{85A3D7F1-70FA-4A5C-BA27-3F33984CB8A0}" ShortID="567880456">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HB-SFX-UImenu-Option" ID="{C847AA25-389E-498F-B564-D4589F0013BD}" ShortID="593751682">
+											<Language>SFX</Language>
+											<AudioFile>HB-SFX-UImenu-Option.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HB-SFX-UImenu-Option" ID="{C847AA25-389E-498F-B564-D4589F0013BD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="HB-SFX-UImenu-Overlay" ID="{83739F17-B467-484C-AAE1-CD1F2EC12A91}" ShortID="716294738">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HB-SFX-UImenu-Overlay" ID="{0A6327BD-BD4F-47EA-9567-87A8341A4089}" ShortID="614136027">
+											<Language>SFX</Language>
+											<AudioFile>HB-SFX-UImenu-Overlay.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HB-SFX-UImenu-Overlay" ID="{0A6327BD-BD4F-47EA-9567-87A8341A4089}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="HB-SFX-UImenu-Play" ID="{A598B049-D601-40CC-9A45-59CFA911B6AC}" ShortID="575360410">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HB-SFX-UImenu-Play" ID="{A7ED8C2B-74ED-42C2-BD9A-36B505BE1CC8}" ShortID="464707944">
+											<Language>SFX</Language>
+											<AudioFile>HB-SFX-UImenu-Play.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HB-SFX-UImenu-Play" ID="{A7ED8C2B-74ED-42C2-BD9A-36B505BE1CC8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="HB-SFX-UImenu-Valid" ID="{3C8F4FD3-E666-4628-A4EE-5472F68D135F}" ShortID="402580436">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HB-SFX-UImenu-Valid" ID="{33B4BF15-44E0-43D8-AC28-C183231430C3}" ShortID="279102213">
+											<Language>SFX</Language>
+											<AudioFile>HB-SFX-UImenu-Valid.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HB-SFX-UImenu-Valid" ID="{33B4BF15-44E0-43D8-AC28-C183231430C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="HB-SFX-UImenu-Exit" ID="{B9F0FF5A-951C-4FA4-A554-1E78BAF4DD04}" ShortID="307792482">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HB-SFX-UImenu-Exit" ID="{644CB6BA-5D22-4499-8690-61BB06FB961C}" ShortID="672905168">
+											<Language>SFX</Language>
+											<AudioFile>HB-SFX-UImenu-Exit.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HB-SFX-UImenu-Exit" ID="{644CB6BA-5D22-4499-8690-61BB06FB961C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="HB-SFX-UImenu-Return" ID="{5E009CD9-03FE-4782-AA86-2855C6E1494B}" ShortID="179087025">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="HB-SFX-UImenu-Return" ID="{C3B1CB68-A56D-4528-8773-A0230CC99A66}" ShortID="415180222">
+											<Language>SFX</Language>
+											<AudioFile>HB-SFX-UImenu-Return.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HB-SFX-UImenu-Return" ID="{C3B1CB68-A56D-4528-8773-A0230CC99A66}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HB-SFX-UImenu-Exit" ID="{644CB6BA-5D22-4499-8690-61BB06FB961C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="HB-SFX-UImenu-Option" ID="{85A3D7F1-70FA-4A5C-BA27-3F33984CB8A0}" ShortID="567880456">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HB-SFX-UImenu-Option" ID="{C847AA25-389E-498F-B564-D4589F0013BD}" ShortID="593751682">
-									<Language>SFX</Language>
-									<AudioFile>HB-SFX-UImenu-Option.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HB-SFX-UImenu-Option" ID="{C847AA25-389E-498F-B564-D4589F0013BD}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="HB-SFX-UImenu-Overlay" ID="{83739F17-B467-484C-AAE1-CD1F2EC12A91}" ShortID="716294738">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HB-SFX-UImenu-Overlay" ID="{0A6327BD-BD4F-47EA-9567-87A8341A4089}" ShortID="614136027">
-									<Language>SFX</Language>
-									<AudioFile>HB-SFX-UImenu-Overlay.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HB-SFX-UImenu-Overlay" ID="{0A6327BD-BD4F-47EA-9567-87A8341A4089}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="HB-SFX-UImenu-Play" ID="{A598B049-D601-40CC-9A45-59CFA911B6AC}" ShortID="575360410">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HB-SFX-UImenu-Play" ID="{A7ED8C2B-74ED-42C2-BD9A-36B505BE1CC8}" ShortID="464707944">
-									<Language>SFX</Language>
-									<AudioFile>HB-SFX-UImenu-Play.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HB-SFX-UImenu-Play" ID="{A7ED8C2B-74ED-42C2-BD9A-36B505BE1CC8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="HB-SFX-UImenu-Return" ID="{5E009CD9-03FE-4782-AA86-2855C6E1494B}" ShortID="179087025">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HB-SFX-UImenu-Return" ID="{C3B1CB68-A56D-4528-8773-A0230CC99A66}" ShortID="415180222">
-									<Language>SFX</Language>
-									<AudioFile>HB-SFX-UImenu-Return.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HB-SFX-UImenu-Return" ID="{C3B1CB68-A56D-4528-8773-A0230CC99A66}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="HB-SFX-UImenu-Valid" ID="{3C8F4FD3-E666-4628-A4EE-5472F68D135F}" ShortID="402580436">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HB-SFX-UImenu-Valid" ID="{33B4BF15-44E0-43D8-AC28-C183231430C3}" ShortID="279102213">
-									<Language>SFX</Language>
-									<AudioFile>HB-SFX-UImenu-Valid.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HB-SFX-UImenu-Valid" ID="{33B4BF15-44E0-43D8-AC28-C183231430C3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</ActorMixer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
