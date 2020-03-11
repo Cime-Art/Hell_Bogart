@@ -3,21 +3,45 @@
 	<SoundcasterSessions>
 		<WorkUnit Name="Brian" ID="{9C0D8C68-1BBD-4393-8A45-5D34D8020E35}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundcasterSession Name="Musique" ID="{8D86AF9B-A218-4053-BB86-4201CD9111B8}">
+				<SoundcasterSession Name="Work_Test" ID="{8D86AF9B-A218-4053-BB86-4201CD9111B8}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Music_SWITCH(method_A)" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+							<ObjectRef Name="Music_SWITCH" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Music_SWITCH(method_B)" ID="{7CF81895-ABF7-4E49-985C-E21B80533E6F}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
-							<Position X="1" Y="0"/>
+							<ObjectRef Name="E_Play_Grenade" ID="{55E9DB6F-559F-416D-91AF-A1309789F473}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Elm_Thunder" ID="{E88FC537-22E0-4BC9-9C7A-0525FC7975AD}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Elm_Fire" ID="{7AC10C4F-9836-4700-A3C7-988C84840253}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Elm_Ice" ID="{8ADAB159-AF9D-4AE6-8772-5F73904ACBC1}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Elm_Regular" ID="{5C91A112-5143-4FC2-A2B4-73EB11CCBC56}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Initialize_Grenade" ID="{1324F38C-46B8-4F17-989C-58110C415D5C}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="5" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
 							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_From_Enemy" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
@@ -29,13 +53,12 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Boss" ID="{28BF95A2-FE03-476E-A2A7-EB88C0DEAA93}"/>
-						<CurrentStateRef Name="Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}"/>
-						<CurrentStateRef Name="Phase_1" ID="{31D97934-83D1-4445-9C51-BDDECF358AB8}"/>
-						<CurrentStateRef Name="Ruine" ID="{9A38206D-D323-4E4E-A0F2-188223DD5419}"/>
+						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
+						<CurrentStateRef Name="Ruin_Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
 						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
