@@ -4,6 +4,9 @@
 		<WorkUnit Name="Simon" ID="{C83CF8AC-E373-4214-9006-244B54CF287B}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Mus_Jungle_Main_SWITCH" ID="{C586B2D9-5E20-446C-9DC8-F4CFDD0E2716}" ShortID="294331237">
+					<PropertyList>
+						<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -71,7 +74,7 @@
 														<RTPC Name="" ID="{22C56CFA-BA4F-48E6-A273-BEFDAAEE8E56}" ShortID="254464664">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_From_Enemy" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+																	<ObjectRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{A25C5E1B-53D9-44E5-BA28-AE005DE38DA4}">
@@ -272,7 +275,7 @@
 														<RTPC Name="" ID="{BAB6017B-24FC-4CE5-B288-5818E9D4F2D1}" ShortID="875000222">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_From_Enemy" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+																	<ObjectRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{4E60850C-9DDB-4FF6-960F-E677921AF549}">
@@ -1388,7 +1391,7 @@
 														<RTPC Name="" ID="{0693B0E6-3E2D-4555-BB51-92970825989F}" ShortID="728200774">
 															<ReferenceList>
 																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_From_Enemy" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+																	<ObjectRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 																</Reference>
 															</ReferenceList>
 															<Curve Name="" ID="{C97D693A-73BE-4184-A9D7-6CBF61FC2AF8}">
@@ -4815,6 +4818,1192 @@
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
+						<MusicPlaylistContainer Name="Mus_Jungle_Fight_v2_LOOP" ID="{990C23BB-8CBD-4748-952E-D20DFCCA8B2C}" ShortID="686768982">
+							<PropertyList>
+								<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="145"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Mus_Jungle_Fight_v2_SEG" ID="{888BB570-84FC-4842-829D-FA7A47425F6B}" ShortID="117376997">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="13655.1666666667"/>
+										<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
+										<Property Name="Tempo" Type="Real64" Value="145"/>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Big Drums" ID="{36C0FBC4-60B3-4784-B818-BEFE55DFB23D}" ShortID="239517892">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LookAheadTime" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_BigDrums_01" ID="{6DF329B6-9D24-4BEC-A055-6BE9C832D588}" ShortID="570462180">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_BigDrums_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_BigDrums_02" ID="{D101596F-1984-4929-9628-A55D514828BC}" ShortID="532757390">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_BigDrums_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_BigDrums_03" ID="{835112F4-D8F0-4959-A99E-8C319B80AC1F}" ShortID="101168740">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_BigDrums_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_BigDrums_04" ID="{5E029D98-486C-49ED-9DC8-D68792C247A6}" ShortID="856758309">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_BigDrums_04.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_BigDrums_05" ID="{BE1E430A-E702-447E-80CA-DC72FC248AE2}" ShortID="875890333">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_BigDrums_05.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_BigDrums_06" ID="{5C89A563-259A-424E-ACE7-EB5647597CA3}" ShortID="567726270">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_BigDrums_06.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_BigDrums_07" ID="{F2699155-4D21-4238-8EE3-0386B32D6B59}" ShortID="396464521">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_BigDrums_07.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_BigDrums_08" ID="{48488A1F-FEDC-4BAB-BE7C-0BA840A6C47E}" ShortID="289951946">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_BigDrums_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{262C9553-0FA9-404C-A05A-325C2D279AC0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{2A02CA8D-2F2E-4C66-BFD4-21ACC9B94588}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_BigDrums_01" ID="{1A23BE6F-294A-44BD-94D6-A14DBC4DE9B4}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_BigDrums_01" ID="{6DF329B6-9D24-4BEC-A055-6BE9C832D588}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{F4C741C6-D075-4D90-8475-A4A622DCD924}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_BigDrums_02" ID="{CDF35D12-A431-4D98-B30D-92B1BE142A91}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_BigDrums_02" ID="{D101596F-1984-4929-9628-A55D514828BC}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{2893999C-E305-4AE9-83B6-AF57197FCF2A}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_BigDrums_03" ID="{3EE8FCFD-550C-4D71-B770-5602D468358C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_BigDrums_03" ID="{835112F4-D8F0-4959-A99E-8C319B80AC1F}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{B9FE99FA-3CE5-43F7-BAEB-A9CD99BD5704}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_BigDrums_04" ID="{C9495358-F777-4E3F-BCAB-36B043F6D739}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_BigDrums_04" ID="{5E029D98-486C-49ED-9DC8-D68792C247A6}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{362A4D06-000C-4AAF-8F1F-CD26C0368CE4}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_BigDrums_05" ID="{2D861C6C-0D23-4AF3-B6E4-798D986FCA59}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_BigDrums_05" ID="{BE1E430A-E702-447E-80CA-DC72FC248AE2}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{FCD383F5-75E0-45B9-AC59-DA66D406A500}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_BigDrums_06" ID="{05D4DF7B-FB05-4A2C-8E5E-1704122C6CE3}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_BigDrums_06" ID="{5C89A563-259A-424E-ACE7-EB5647597CA3}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{965ED2D0-A59E-4CA7-8E8C-F6B0F6795D96}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_BigDrums_07" ID="{ACD1FC16-A8F7-4E77-9DEC-E1E8D28DE657}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_BigDrums_07" ID="{F2699155-4D21-4238-8EE3-0386B32D6B59}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{B50DB185-332D-427F-9A8D-0A98171DF5AD}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_BigDrums_08" ID="{725EFFF6-FB42-4E7C-AF02-0C1E33B64123}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_BigDrums_08" ID="{48488A1F-FEDC-4BAB-BE7C-0BA840A6C47E}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Flute Medium" ID="{6B033238-74E5-4D9B-AD97-2CF72BBD1D49}" ShortID="566229669">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LookAheadTime" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_FluteMedium_01" ID="{B46E5FA0-65D1-462B-B6A8-2A3BDE0A5496}" ShortID="565736839">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_FluteMedium_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_FluteMedium_02" ID="{82B9A33F-91AD-4A19-A0B9-18B6CE740FA6}" ShortID="690794931">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_FluteMedium_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_FluteMedium_03" ID="{7F10D8F6-D67A-43EB-BC2E-E1067E36D606}" ShortID="296211514">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_FluteMedium_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AE980A8F-B5C4-4C9A-A8C6-B97467A16E4E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{92AB9FBA-8A8F-4A23-83DD-F2F3BAA99AEA}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_FluteMedium_01" ID="{5EA422D3-2272-482D-AA89-A0CB040C70B5}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_FluteMedium_01" ID="{B46E5FA0-65D1-462B-B6A8-2A3BDE0A5496}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{8BE026B6-C4FE-4611-804C-DDAB33B978CB}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_FluteMedium_02" ID="{42713624-CF52-4B2B-866F-1B3EE5E8BAE4}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_FluteMedium_02" ID="{82B9A33F-91AD-4A19-A0B9-18B6CE740FA6}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{4733DB12-B910-4F47-B22B-279991938868}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_FluteMedium_03" ID="{3326ED75-8CFC-4587-A1BC-65E1B796FD08}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4965.52083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_FluteMedium_03" ID="{7F10D8F6-D67A-43EB-BC2E-E1067E36D606}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{43103370-A1B5-479D-8E09-FD31D0A48000}"/>
+												<MusicTrackSequence Name="" ID="{51A9C4C3-55CE-4A0F-A7D5-C5C0F69AF28C}"/>
+												<MusicTrackSequence Name="" ID="{2CD18BA9-CF69-41F8-8014-AD131B02878B}"/>
+												<MusicTrackSequence Name="" ID="{21AD9317-ED59-4697-9C73-06B8B3667C43}"/>
+												<MusicTrackSequence Name="" ID="{19BBEDCF-F7CA-49B5-8B36-712E84E60D3E}"/>
+												<MusicTrackSequence Name="" ID="{1170750F-72B7-43BB-A841-D38C1658A05D}"/>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Guitar" ID="{A19D629B-B2FA-4E1F-9D45-1434A139D7E7}" ShortID="255024643">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Guitar_01" ID="{BC530E17-41F5-40D6-9495-257519A87C3C}" ShortID="104759296">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Guitar_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Guitar_02" ID="{FFB66F10-4CEB-4F7C-9C6C-F4A837F063B6}" ShortID="638590993">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Guitar_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Guitar_03" ID="{6F4657D2-455B-4100-9044-BCBEA4B73B14}" ShortID="827596408">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Guitar_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Guitar_04" ID="{CC375B89-D16D-4EEE-8276-F8C1E8CD3C81}" ShortID="617764400">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Guitar_04.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Guitar_05" ID="{0C187D79-28DA-49E4-BF1D-A678D5BA074E}" ShortID="136533898">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Guitar_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{674EE338-92FE-4664-8547-B5227CE0CB9F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{5B310C6A-2529-4751-990C-19167233611C}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Guitar_01" ID="{604F8B6D-88F8-4925-9851-7715EBD00179}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="8689.64583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Guitar_01" ID="{BC530E17-41F5-40D6-9495-257519A87C3C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{EA3569BD-A457-4994-9372-77D0B6BD3ECE}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Guitar_02" ID="{3D3BD038-BC23-40CF-8C4E-4A0EBB1FE14D}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="8689.66666666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Guitar_02" ID="{FFB66F10-4CEB-4F7C-9C6C-F4A837F063B6}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{9E7D8465-2026-47A4-91ED-126754CC141A}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Guitar_03" ID="{19FF3001-ED4B-405F-9BB2-201D01E8AF14}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="8689.66666666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Guitar_03" ID="{6F4657D2-455B-4100-9044-BCBEA4B73B14}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{C5AEABC5-C959-40BD-8E3F-468D7B9AC008}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Guitar_04" ID="{40E93472-26C8-4884-B1E2-1140ABCC270C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="7448.27083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Guitar_04" ID="{CC375B89-D16D-4EEE-8276-F8C1E8CD3C81}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{6BEA3C10-FCE1-4DF7-B51C-B40B610B7A80}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Guitar_05" ID="{9CCB6B12-5B9C-4549-8D6C-A5AFDA8227FE}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="7448.29166666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Guitar_05" ID="{0C187D79-28DA-49E4-BF1D-A678D5BA074E}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{E9906ADB-BEF6-44F6-9509-304B94632B1C}"/>
+												<MusicTrackSequence Name="" ID="{381F55B2-A195-44FB-B56D-9A1C2F5F2AC6}"/>
+												<MusicTrackSequence Name="" ID="{9FED3209-1B5A-4D48-A8D2-9E2F66051C47}"/>
+												<MusicTrackSequence Name="" ID="{5CB3DA26-8235-4E85-B55B-8C542545A3FE}"/>
+												<MusicTrackSequence Name="" ID="{E770B037-1A8C-4804-B65E-84CBEAAB6D0A}"/>
+												<MusicTrackSequence Name="" ID="{0D991E2D-0AA5-4A38-8216-3EC3572834E5}"/>
+												<MusicTrackSequence Name="" ID="{7EA031A4-10FD-49BF-9394-9892334AF977}"/>
+												<MusicTrackSequence Name="" ID="{990DBBB5-AD63-43C5-986C-A48C284BEA41}"/>
+												<MusicTrackSequence Name="" ID="{8698DC09-26F5-4FF4-BA5A-8DF45650FD24}"/>
+												<MusicTrackSequence Name="" ID="{7224FA40-F274-439B-8ADD-DD296E497138}"/>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Mallet Cymbal" ID="{65D96FC8-2346-42CB-B9A5-C63BBEC74B33}" ShortID="951935866">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_MalletCymbal_02" ID="{B20978AD-CE50-4EDC-9300-E28168044895}" ShortID="203204884">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_MalletCymbal_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{A203BA24-6B31-4F4B-98A5-3E0E7B06656E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{E71FDB4F-6656-4620-9F61-0440FCAACB92}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_MalletCymbal_02" ID="{600DF02D-67EB-4784-8EDD-1A258F4CF57F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9931.04166666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_MalletCymbal_02" ID="{B20978AD-CE50-4EDC-9300-E28168044895}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{AC9A6121-71A5-4DC8-9DAA-30CD9A69605E}"/>
+												<MusicTrackSequence Name="" ID="{A1223EDE-EE9B-4693-8A17-5D16648A8FD0}"/>
+												<MusicTrackSequence Name="" ID="{34E1D192-849F-498D-8700-2F2A4B5AB3AE}"/>
+												<MusicTrackSequence Name="" ID="{88FC3F38-40FC-4178-8DD2-C05F6F9A9C63}"/>
+												<MusicTrackSequence Name="" ID="{8748F730-4466-48A7-8801-A44027B43A6E}"/>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Mysterious Element" ID="{4FA9CB24-FDBD-4F0E-886F-0F53DBADDA66}" ShortID="608903395">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_MysteriousElement_01" ID="{E3229B6B-76BA-423B-8D6A-E825510DB900}" ShortID="6554429">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_MysteriousElement_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_MysteriousElement_02" ID="{3993E562-9F5E-4EF7-8D1A-FEFD2EE9943A}" ShortID="581986247">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_MysteriousElement_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_MysteriousElement_03" ID="{10F9B8CC-92B7-4E5B-851B-9FCB648C65B5}" ShortID="865242522">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_MysteriousElement_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_MysteriousElement_04" ID="{B1CDE032-10A5-4CE7-B219-ABA6D8DCE116}" ShortID="1032983273">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_MysteriousElement_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{D4CE3538-3C8B-4388-88F6-0E80169ECD6A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{31B61182-1388-4ED5-AE88-1C307FF766A6}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_MysteriousElement_01" ID="{1835A89F-7DD6-469D-AE5C-D404C29FE25F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9931.04166666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_MysteriousElement_01" ID="{E3229B6B-76BA-423B-8D6A-E825510DB900}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{01DA2755-413F-49EF-91F0-D102129EFC67}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_MysteriousElement_02" ID="{B1D56843-3822-418A-B3C3-20F91C19B3E9}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9931.04166666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_MysteriousElement_02" ID="{3993E562-9F5E-4EF7-8D1A-FEFD2EE9943A}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{51FAA554-865C-4436-AAF7-F86B2723ECCF}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_MysteriousElement_03" ID="{3BC19737-1F46-4E3C-A10E-D319370F044D}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9931.04166666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_MysteriousElement_03" ID="{10F9B8CC-92B7-4E5B-851B-9FCB648C65B5}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{40EC8374-0899-46B4-89CE-6EF52CEF8331}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_MysteriousElement_04" ID="{306391E5-6AC3-4489-B1D6-0B73E0B006FA}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9931.04166666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_MysteriousElement_04" ID="{B1CDE032-10A5-4CE7-B219-ABA6D8DCE116}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{833898D8-C9C2-4D63-AF78-D10C32D636F9}"/>
+												<MusicTrackSequence Name="" ID="{2E1EB4EF-3523-4C9C-BA68-6BA26E86F3F1}"/>
+												<MusicTrackSequence Name="" ID="{1192BEE2-E2BD-4112-84D0-2179D5173E88}"/>
+												<MusicTrackSequence Name="" ID="{0964388A-5415-48EE-9F75-C8C0A732821A}"/>
+												<MusicTrackSequence Name="" ID="{1BBF920A-7AB4-4CFA-8DD4-A4AF1816198F}"/>
+												<MusicTrackSequence Name="" ID="{F175838B-3885-40EE-8014-5D33472998A0}"/>
+												<MusicTrackSequence Name="" ID="{FBB6BFAF-F291-4F1C-98B2-A0E76F3E740B}"/>
+												<MusicTrackSequence Name="" ID="{2B232BE0-88F9-4EEC-9F1D-BC66EAB57766}"/>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Ride" ID="{0FE76DC9-9E75-4980-BD2A-5A12E23CEA1B}" ShortID="379370316">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Ride_01" ID="{2DF7629A-99E3-4FAA-9D82-9D95519122C2}" ShortID="329594634">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Ride_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Ride_02" ID="{5566A5EC-93AD-432D-A801-602A8B9720DD}" ShortID="892682435">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Ride_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Ride_03" ID="{29A44201-DCCD-4B12-BBC4-D72C6BDBB7BA}" ShortID="843315552">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Ride_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Ride_04" ID="{5B2F31AD-61EC-4D5E-8FD5-93468CBA8EB6}" ShortID="890872801">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Ride_04.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_Ride_05" ID="{12D6B1C0-9724-4402-A584-44489CC286C1}" ShortID="1012313207">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_Ride_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{FF8D23F3-7F5E-4FE7-BACE-E3301F528871}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{DF0A8BA5-39C4-41F1-BB11-0E62E5167D05}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Ride_01" ID="{51EC71E2-A15A-478F-8C5C-EE6C9098C58B}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="13655.1666666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Ride_01" ID="{2DF7629A-99E3-4FAA-9D82-9D95519122C2}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{BD221C9E-A382-4EBD-BACC-DCAD8A27056D}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Ride_02" ID="{5D3669A2-0660-42C2-A6E0-88D597B73C57}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="13655.1666666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Ride_02" ID="{5566A5EC-93AD-432D-A801-602A8B9720DD}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{B64CF504-F734-4A6B-85BE-D0A95E761D6A}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Ride_03" ID="{B3A9C254-7920-4F9E-9387-9B5418DA1D6E}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="13655.1666666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Ride_03" ID="{29A44201-DCCD-4B12-BBC4-D72C6BDBB7BA}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{C060046E-E78F-4157-B5C8-4AA9E2DBE2A9}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Ride_04" ID="{F7E775AF-C89E-48A6-8AE9-DEED8017E629}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="12413.7916666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Ride_04" ID="{5B2F31AD-61EC-4D5E-8FD5-93468CBA8EB6}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{E521DEAC-31B5-467F-8FE9-5C33950D08B7}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_Ride_05" ID="{8D6EF251-D933-4BEC-BD96-FA2821A1C5EA}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="12413.7916666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_Ride_05" ID="{12D6B1C0-9724-4402-A584-44489CC286C1}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{BD377FE5-73C8-484D-A7CB-C6C9BFD4B9BA}"/>
+												<MusicTrackSequence Name="" ID="{06DDE5D1-B35B-4BD5-AEA0-931A80CAFA7D}"/>
+												<MusicTrackSequence Name="" ID="{745C5B09-1EAD-429E-9511-899B5B4841C6}"/>
+												<MusicTrackSequence Name="" ID="{83E36DF5-BFFC-4CB1-95F9-143592D96125}"/>
+												<MusicTrackSequence Name="" ID="{BFB21F66-C175-4412-B538-A3BF395DB5D3}"/>
+												<MusicTrackSequence Name="" ID="{66F1C8C8-CF5A-47C6-B765-0A674B7A1200}"/>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Tambourin High" ID="{339D795B-E187-4B07-97CF-D977E857627E}" ShortID="907194421">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinHigh_01" ID="{882AC936-A198-4D00-806C-68E188655A0E}" ShortID="644614915">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinHigh_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinHigh_02" ID="{7A23EE3F-67D9-4EA5-A06D-A5DE509970AF}" ShortID="442816216">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinHigh_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinHigh_03" ID="{114A09F7-9FE7-4CBC-868B-C57F86CDEA40}" ShortID="885698861">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinHigh_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinHigh_04" ID="{0054BA90-3EC8-4B76-A338-CC88C88B8D69}" ShortID="627470068">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinHigh_04.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinHigh_05" ID="{FD343468-00F4-42D5-A2FA-B5885026CC08}" ShortID="349946034">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinHigh_05.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinHigh_06" ID="{78159495-958A-4E6A-9AD3-788CCB631790}" ShortID="1001166694">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinHigh_06.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinHigh_07" ID="{5485511F-AFF4-4939-B6F6-E7E0C1372E27}" ShortID="1052366076">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinHigh_07.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinHigh_08" ID="{B84B4C68-7DE1-4045-98BE-95BCC255BC40}" ShortID="108920607">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinHigh_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{E9D3F166-4C55-4B62-AF00-30A5744F175E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{7B7F2BAC-F9C5-4165-AE30-89673A1CE2F5}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinHigh_01" ID="{ACACBB6C-3FF3-4202-A2D9-0B970B4660B6}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinHigh_01" ID="{882AC936-A198-4D00-806C-68E188655A0E}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{6E29BE68-70D8-4261-9820-991008E3E876}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinHigh_02" ID="{EB70E193-43E2-4DD0-B226-5C2BF3EB830C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinHigh_02" ID="{7A23EE3F-67D9-4EA5-A06D-A5DE509970AF}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{5B462F20-8C90-47C3-8086-1F77BCFDEAEB}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinHigh_03" ID="{4DA3A637-B605-4384-B11B-4607BB5B0EF4}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinHigh_03" ID="{114A09F7-9FE7-4CBC-868B-C57F86CDEA40}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{A4309AA6-322C-4C0E-ADDA-703BD6E43D90}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinHigh_04" ID="{BC55B136-59BC-4639-8C40-37A34FB9C285}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinHigh_04" ID="{0054BA90-3EC8-4B76-A338-CC88C88B8D69}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{184535C5-6535-421D-925D-7DAF73D3E967}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinHigh_05" ID="{CA75B35C-81C9-4D79-8200-F09ED6FC58D5}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinHigh_05" ID="{FD343468-00F4-42D5-A2FA-B5885026CC08}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{F7A0F705-B882-479D-962A-29F217526871}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinHigh_06" ID="{75793833-3420-4F58-A4AC-9AF6817C7F33}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinHigh_06" ID="{78159495-958A-4E6A-9AD3-788CCB631790}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{15D31ADF-1EDF-4C6A-9037-66289F4B16F8}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinHigh_07" ID="{2D19BA6A-0640-4066-8365-3EA2251B7BCE}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinHigh_07" ID="{5485511F-AFF4-4939-B6F6-E7E0C1372E27}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{B17A9CDF-8E9A-4A9C-B5A6-10457ABC71A7}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinHigh_08" ID="{1AB53F50-D8DF-4FBE-B357-3678DF7B8372}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinHigh_08" ID="{B84B4C68-7DE1-4045-98BE-95BCC255BC40}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Tambourin Low" ID="{11152024-B20C-4EEE-9038-AB6F60B65A97}" ShortID="356851858">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinLow_01" ID="{69DB23A3-9281-47B0-9AA5-EADFEDACC4D6}" ShortID="933648227">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinLow_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinLow_02" ID="{5A3C0621-22A6-4355-9C16-094FC759CF8E}" ShortID="638721291">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinLow_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinLow_03" ID="{E009D036-CDCD-485B-BED4-A7B8BCD36FD7}" ShortID="157702656">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinLow_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinLow_04" ID="{5021BEC1-44B4-4141-8E7A-54E419A0ADE0}" ShortID="1036494358">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinLow_04.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinLow_05" ID="{A5C1A885-BABF-465E-88AD-33D0E96FAF8E}" ShortID="395651896">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinLow_05.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinLow_06" ID="{7AA39CA3-AE2A-4866-ACD6-34C0E3C2F77D}" ShortID="178317480">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinLow_06.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinLow_07" ID="{860B5C42-EE20-4EEB-A9B9-F348BC44F9C5}" ShortID="140440838">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinLow_07.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TambourinLow_08" ID="{D968D358-5758-44EC-937C-126084EF330D}" ShortID="936479834">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TambourinLow_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{010A334E-606C-46E0-9B20-5F334F09FC91}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{9B7DD85F-A8CA-41F9-93BF-4C27E8B4BF37}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinLow_01" ID="{E05F4917-82E8-4AE3-97A1-460DA47FA8A1}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinLow_01" ID="{69DB23A3-9281-47B0-9AA5-EADFEDACC4D6}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{70DDA0C5-8F7F-4486-9155-F151557B636F}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinLow_02" ID="{D54438C9-6D39-4B66-B39E-60B349A8ED6D}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinLow_02" ID="{5A3C0621-22A6-4355-9C16-094FC759CF8E}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{2EBC589E-EF73-4637-B254-6D2D30CBCFE1}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinLow_03" ID="{2AAAA075-3603-444B-A845-6AE1641D4375}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinLow_03" ID="{E009D036-CDCD-485B-BED4-A7B8BCD36FD7}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{9A44DE99-C5A6-48B9-8406-35878DD78428}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinLow_04" ID="{81B0C82E-278A-4A4F-8BDF-4A43CDD1039F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinLow_04" ID="{5021BEC1-44B4-4141-8E7A-54E419A0ADE0}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{21F7A821-F508-4976-B34B-855B8AF8BE6D}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinLow_05" ID="{2E9CEB49-2F28-4CF9-B354-82C03BA877B3}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinLow_05" ID="{A5C1A885-BABF-465E-88AD-33D0E96FAF8E}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{827D044F-FE65-4E8C-95BA-227FA748BA6C}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinLow_06" ID="{3597423A-B089-4C6F-90D8-B2FC7FBF60DA}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinLow_06" ID="{7AA39CA3-AE2A-4866-ACD6-34C0E3C2F77D}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{6486380A-D32B-4F6A-82CA-672E8248AA97}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinLow_07" ID="{5B05F3F9-EE20-4481-8B48-55F8380FBE16}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinLow_07" ID="{860B5C42-EE20-4EEB-A9B9-F348BC44F9C5}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{762DC9E0-FE1C-4007-8430-9D0315917D11}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TambourinLow_08" ID="{EAABB719-3E6E-4F7F-9713-9CAA1A803CCF}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TambourinLow_08" ID="{D968D358-5758-44EC-937C-126084EF330D}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Tam Tam" ID="{2DD4C79A-4D6C-43BE-81D0-F2A19C2A6AFB}" ShortID="1042240790">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TamTam_01" ID="{C076F3E0-FC54-4665-A432-3C3FD50B5D1F}" ShortID="596400244">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TamTam_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TamTam_02" ID="{3EBEC3A7-14BB-4DFA-A5C0-C3907F81DDAA}" ShortID="473415161">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TamTam_02.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TamTam_03" ID="{4056CCE2-A836-4CA2-BA94-7FA876140C25}" ShortID="693970732">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TamTam_03.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TamTam_04" ID="{6EF116C7-F82C-45CE-B5E2-AFEBCEFE01C6}" ShortID="174651868">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TamTam_04.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TamTam_05" ID="{7AEA97A7-7939-48CD-8B2A-2C94AA6599D0}" ShortID="489302106">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TamTam_05.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TamTam_06" ID="{00001885-AB01-4E56-B021-B4BBF9EF3345}" ShortID="406555800">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TamTam_06.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_TamTam_07" ID="{FB72D977-83D1-4784-AD61-36B7EF90EA36}" ShortID="241609316">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_TamTam_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{5F10F411-E41E-412E-A945-776B795B78C0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{62BA78DD-D6C1-495C-8B64-B5B1462A53A3}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TamTam_01" ID="{6D4F573A-4E8F-472D-807B-CCD6B4DF088A}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6206.89583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TamTam_01" ID="{C076F3E0-FC54-4665-A432-3C3FD50B5D1F}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{298157F3-E2D7-4F45-947D-54CA8DF32E7B}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TamTam_02" ID="{B1B61602-4115-4D12-8C49-C7B0BB225AFC}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6206.89583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TamTam_02" ID="{3EBEC3A7-14BB-4DFA-A5C0-C3907F81DDAA}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{D25832C2-797A-4C5C-892B-7AFDC2074B7F}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TamTam_03" ID="{A7E5E4E1-F114-4927-BAFC-6455E14C3ED7}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6206.89583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TamTam_03" ID="{4056CCE2-A836-4CA2-BA94-7FA876140C25}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{D5F86BBC-E24A-499E-A908-C459CF2037D5}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TamTam_04" ID="{F70EBD73-CE06-4146-8A37-440AB9BB01C0}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6206.89583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TamTam_04" ID="{6EF116C7-F82C-45CE-B5E2-AFEBCEFE01C6}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{777E2B99-1D63-4310-B802-D77962C24981}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TamTam_05" ID="{1BC71831-EE30-40A1-8A17-3FFDA26CB5F9}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="7448.27083333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TamTam_05" ID="{7AEA97A7-7939-48CD-8B2A-2C94AA6599D0}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{2BE0FD29-CC67-4665-B387-BA6E66F602AB}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TamTam_06" ID="{5C5634A7-84F7-44BA-A6A8-0F1F59B12498}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6206.89583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TamTam_06" ID="{00001885-AB01-4E56-B021-B4BBF9EF3345}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{262BED69-90E0-4864-8CAD-B77067ED360C}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_TamTam_07" ID="{45A0D0AF-F851-47B2-819D-6D13A3AE0F94}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6206.91666666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_TamTam_07" ID="{FB72D977-83D1-4784-AD61-36B7EF90EA36}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{F3CDA127-7A88-4128-B3A7-AC53E8148D81}"/>
+												<MusicTrackSequence Name="" ID="{68720DE5-BFF1-4DCC-A1F0-CB11C953F1FF}"/>
+												<MusicTrackSequence Name="" ID="{130CB850-05F5-43BC-81E4-2629C5C7C218}"/>
+												<MusicTrackSequence Name="" ID="{CA39E311-982E-43F0-8F09-7BBD9EDCDF0D}"/>
+												<MusicTrackSequence Name="" ID="{BFE980D8-C8B1-429E-A32D-A01E62941FA4}"/>
+												<MusicTrackSequence Name="" ID="{DA99E948-0F03-40BA-B0A2-F8533701D59F}"/>
+												<MusicTrackSequence Name="" ID="{E79516CD-F79D-4F57-B8EB-B8163905AFE2}"/>
+												<MusicTrackSequence Name="" ID="{FFDAA949-864F-4813-8FA0-A7B39266959E}"/>
+												<MusicTrackSequence Name="" ID="{49D42CD3-1A14-437A-AEB0-D68FF1BA4934}"/>
+												<MusicTrackSequence Name="" ID="{CEEB03D3-65D9-478E-A369-5F459A25D8CF}"/>
+												<MusicTrackSequence Name="" ID="{DBA1D3A1-0552-473A-BD3F-E986A6427AD3}"/>
+												<MusicTrackSequence Name="" ID="{BAC28BF7-9311-4CF5-A84D-32CA36A82427}"/>
+												<MusicTrackSequence Name="" ID="{0E0751FF-C689-40F4-AB10-D05514C59B69}"/>
+												<MusicTrackSequence Name="" ID="{6461F9E9-6FEE-44DD-8FDA-A1A2052B006A}"/>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Low Boom" ID="{5C8B8B9F-79F0-4F90-8CF2-0152B964370D}" ShortID="462330800">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Fight_LowBoom" ID="{71D35B06-1875-4B5D-8C83-B5092E2A838C}" ShortID="391334209">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Fight_LowBoom.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{9B4C2FCF-D16C-49E9-B0A9-18717E602898}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{D524BDF9-E42C-480A-89A9-C8619F63721A}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Fight_LowBoom" ID="{AD8F6CBD-A312-46A6-8C3C-498BFF211F5A}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3724.14583333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Fight_LowBoom" ID="{71D35B06-1875-4B5D-8C83-B5092E2A838C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{3F1E4967-CB0C-4A87-94C8-22434CA12298}"/>
+										<MusicCue Name="Exit Cue" ID="{CD1690A6-AE18-44D0-BDE9-7374FCEA2292}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="2482.75862068966"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{A5ED2716-57C5-480B-B647-408B0F686952}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{585997EF-CF1B-43EE-83C9-F53F7ADD377B}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{CC0A34B8-20F9-42CC-AFB9-94E3274AC301}" ShortID="230216781">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{DA2B52D3-2C6A-466E-AA98-A0802F13404C}" ShortID="20003948">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Mus_Jungle_Fight_v2_SEG" ID="{888BB570-84FC-4842-829D-FA7A47425F6B}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{7D315DDD-895D-4E41-AB6D-0064ADAC1EF0}">
@@ -4825,43 +6014,36 @@
 								<MusicTransition Name="Transition" ID="{8C1A821E-8554-45DE-A283-E6DD4D23FDDD}">
 									<TransitionInfo/>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{43C2287A-B004-4A99-AB41-492CCC11D029}">
+								<MusicTransition Name="Transition" ID="{60B3F3DB-1804-493F-B278-1BF309FF19E8}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Mus_Jungle_Fight_LOOP" ID="{4A43584D-5401-4224-AB74-02CAB5905D26}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+											<ObjectRef Name="Mus_Jungle_Fight_v2_LOOP" ID="{990C23BB-8CBD-4748-952E-D20DFCCA8B2C}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="Mus_Jungle_Explo_LOOP" ID="{C7D3F76E-5FDF-43AA-AD7C-9A3B982B2F42}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
-										<TransitionObjectRef Name="Mus_MalletCymbal_Transition_RND" ID="{60AF1EE5-EB74-44B0-B286-1767561DCC36}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+										<TransitionObjectRef Name="MUS_HB_Jungle_Transi_BeginFight" ID="{C69CA438-B77E-44A7-9680-7276D781BDA5}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 										<SourceFadeOut>
-											<MusicFade Name="Source Fade-out" ID="{6B73A3DA-9D7F-437C-9AFC-3EE9533B78B8}">
+											<MusicFade Name="Source Fade-out" ID="{1B08030A-D1ED-4DC2-ADE4-B5FA12F644C6}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
 										</SourceFadeOut>
-										<DestinationFadeIn>
-											<MusicFade Name="Destination Fade-in" ID="{10F4F490-09DF-49DF-B58C-B8817E3C4F70}">
-												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
-													<Property Name="FadeTime" Type="Real64" Value="1"/>
-												</PropertyList>
-											</MusicFade>
-										</DestinationFadeIn>
 									</TransitionInfo>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{F76FC5DF-AC12-4E38-9CA6-B2B84DDFF225}">
+								<MusicTransition Name="Transition" ID="{4626D2DD-1210-478E-AE06-9E5454B1A350}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
@@ -4872,24 +6054,44 @@
 											<ObjectRef Name="Mus_Jungle_Explo_LOOP" ID="{C7D3F76E-5FDF-43AA-AD7C-9A3B982B2F42}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="Mus_Jungle_Fight_LOOP" ID="{4A43584D-5401-4224-AB74-02CAB5905D26}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+											<ObjectRef Name="Mus_Jungle_Fight_v2_LOOP" ID="{990C23BB-8CBD-4748-952E-D20DFCCA8B2C}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
-										<TransitionObjectRef Name="MUS_HB_JUNGLE_BigDrum_EndFight" ID="{D80327EC-3EA9-4239-8807-EE2F520E149B}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+										<TransitionObjectRef Name="MUS_HB_Jungle_Transi_EndFight" ID="{D80327EC-3EA9-4239-8807-EE2F520E149B}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 									</TransitionInfo>
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{A8BB916F-705A-4855-856D-F9861EEA1FB5}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
 											<ObjectRef Name="End_Music" ID="{91C8D2DE-6539-49F2-B125-3CECC3632881}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Mus_Jungle_Explo_LOOP" ID="{C7D3F76E-5FDF-43AA-AD7C-9A3B982B2F42}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{912680CC-A9A1-4C82-9213-C151F815D4E5}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="End_Music" ID="{91C8D2DE-6539-49F2-B125-3CECC3632881}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Mus_Jungle_Fight_v2_LOOP" ID="{990C23BB-8CBD-4748-952E-D20DFCCA8B2C}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
-										<TransitionObjectRef Name="Mus_MalletCymbal_Transition_RND" ID="{60AF1EE5-EB74-44B0-B286-1767561DCC36}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+										<TransitionObjectRef Name="MUS_HB_Jungle_Transi_EndFight" ID="{D80327EC-3EA9-4239-8807-EE2F520E149B}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
@@ -4910,250 +6112,30 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Mus_Jungle_Fight_LOOP" ID="{4A43584D-5401-4224-AB74-02CAB5905D26}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
 								<PathElementRef Name="End_Music" ID="{F98C25B7-C5CA-4858-B4D9-4136E6494696}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="End_Music" ID="{91C8D2DE-6539-49F2-B125-3CECC3632881}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Mus_Jungle_Fight_v2_LOOP" ID="{990C23BB-8CBD-4748-952E-D20DFCCA8B2C}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
 					</EntryList>
 				</MusicSwitchContainer>
-				<MusicSegment Name="Mus_MalletCymbal_Transition_RND" ID="{60AF1EE5-EB74-44B0-B286-1767561DCC36}" ShortID="290252109">
-					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="14000"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-8</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<MusicTrack Name="MUS_HB_Jungle_MalletCymbal_03" ID="{B28A95D9-71C5-4FB7-A4EE-7EC60D87E8F6}" ShortID="830845977">
-							<PropertyList>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="LookAheadTime" Type="int16">
-									<ValueList>
-										<Value>200</Value>
-									</ValueList>
-								</Property>
-								<Property Name="MusicTrackType" Type="int16" Value="2"/>
-								<Property Name="PreFetchLength" Type="int16">
-									<ValueList>
-										<Value>200</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="MUS_HB_Jungle_MalletCymbal_03" ID="{97334219-5599-4143-A935-290017D3DF81}" ShortID="477040553">
-									<Language>SFX</Language>
-									<AudioFile>MUS_HB_Jungle_MalletCymbal_03.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="645192106"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-								<AudioFileSource Name="MUS_HB_Jungle_MalletCymbal_06" ID="{838AEBC0-488F-4AF2-B16C-C0B4F6898462}" ShortID="357486571">
-									<Language>SFX</Language>
-									<AudioFile>MUS_HB_Jungle_MalletCymbal_06.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="202206224"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{CB1FCF6B-FD2C-4255-9040-34507BB6DC7C}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<SequenceList>
-								<MusicTrackSequence Name="" ID="{5AB298A3-482F-49E9-B53C-3E0D4012204B}">
-									<ClipList>
-										<MusicClip Name="MUS_HB_Jungle_MalletCymbal_03" ID="{DB48BD43-CA3E-4633-815D-5590C20120B7}">
-											<PropertyList>
-												<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
-												<Property Name="EndTrimOffset" Type="Real64" Value="14000"/>
-												<Property Name="FadeInMode" Type="int16" Value="0"/>
-												<Property Name="FadeOutMode" Type="int16" Value="0"/>
-												<Property Name="PlayAt" Type="Real64" Value="-2000"/>
-											</PropertyList>
-											<AudioSourceRef Name="MUS_HB_Jungle_MalletCymbal_03" ID="{97334219-5599-4143-A935-290017D3DF81}"/>
-											<PropertyCurveList>
-												<PropertyCurve PropertyName="Highpass">
-													<Curve Name="" ID="{9D49E3FF-92DE-42C0-9DE1-F7E99B651286}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>2</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>14</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</PropertyCurve>
-												<PropertyCurve PropertyName="Lowpass">
-													<Curve Name="" ID="{67A3340C-4D63-460F-9565-87B192352037}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>2</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>14</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</PropertyCurve>
-												<PropertyCurve PropertyName="Volume">
-													<Curve Name="" ID="{0C27941E-CACE-4683-84EE-049D109B3282}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>2</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>14</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</PropertyCurve>
-											</PropertyCurveList>
-										</MusicClip>
-									</ClipList>
-								</MusicTrackSequence>
-								<MusicTrackSequence Name="" ID="{D7B830B0-5EDD-4677-B077-626B25E2ED7A}">
-									<ClipList>
-										<MusicClip Name="MUS_HB_Jungle_MalletCymbal_06" ID="{27DE848E-403A-400A-A846-D8BBEE3B63F5}">
-											<PropertyList>
-												<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
-												<Property Name="EndTrimOffset" Type="Real64" Value="14000"/>
-												<Property Name="FadeInMode" Type="int16" Value="0"/>
-												<Property Name="FadeOutMode" Type="int16" Value="0"/>
-												<Property Name="PlayAt" Type="Real64" Value="-2000"/>
-											</PropertyList>
-											<AudioSourceRef Name="MUS_HB_Jungle_MalletCymbal_06" ID="{838AEBC0-488F-4AF2-B16C-C0B4F6898462}"/>
-											<PropertyCurveList>
-												<PropertyCurve PropertyName="Highpass">
-													<Curve Name="" ID="{7D1FDAFC-5AD7-4D30-8607-A8B470E987BC}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>2</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>14</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</PropertyCurve>
-												<PropertyCurve PropertyName="Lowpass">
-													<Curve Name="" ID="{94896546-3DDF-4FAD-98DA-0733E48935CB}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>2</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>14</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</PropertyCurve>
-												<PropertyCurve PropertyName="Volume">
-													<Curve Name="" ID="{35CC0353-9781-40F7-AF3C-FBD166955475}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>2</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>14</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</PropertyCurve>
-											</PropertyCurveList>
-										</MusicClip>
-									</ClipList>
-								</MusicTrackSequence>
-							</SequenceList>
-						</MusicTrack>
-					</ChildrenList>
-					<CueList>
-						<MusicCue Name="Entry Cue" ID="{9E4B8050-98CA-4463-8433-374C1A7CD8F0}"/>
-						<MusicCue Name="Exit Cue" ID="{61CED276-7AF1-44C7-9D26-DBBBD941C748}">
-							<PropertyList>
-								<Property Name="CueType" Type="int16" Value="1"/>
-							</PropertyList>
-						</MusicCue>
-					</CueList>
-				</MusicSegment>
 				<MusicSegment Name="MUS_HB_Jungle_EventTresor" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" ShortID="229941932">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="10000"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -5277,12 +6259,12 @@
 						</MusicCue>
 					</CueList>
 				</MusicSegment>
-				<MusicSegment Name="MUS_HB_JUNGLE_BigDrum_EndFight" ID="{D80327EC-3EA9-4239-8807-EE2F520E149B}" ShortID="1021271457">
+				<MusicSegment Name="MUS_HB_Jungle_Transi_EndFight" ID="{D80327EC-3EA9-4239-8807-EE2F520E149B}" ShortID="1021271457">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="6000"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-16</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -5295,7 +6277,14 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicTrack Name="MUS_HB_JUNGLE_BigDrum_EndFight" ID="{D4A1151F-C779-4C75-B70D-A426CCC46E87}" ShortID="407180746">
+						<MusicTrack Name="Low Boom End" ID="{D4A1151F-C779-4C75-B70D-A426CCC46E87}" ShortID="407180746">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -5330,12 +6319,158 @@
 								</MusicTrackSequence>
 							</SequenceList>
 						</MusicTrack>
+						<MusicTrack Name="Big Drum End" ID="{4E3E488B-4AB6-4D4E-9BD8-91CDB8F1CBBA}" ShortID="694714578">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUS_HB_Jungle_Fight_BigDrums_End" ID="{AE87871E-CCB9-45D2-93F8-618912EED486}" ShortID="817692512">
+									<Language>SFX</Language>
+									<AudioFile>MUS_HB_Jungle_Fight_BigDrums_End.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{A35BD353-9431-42E7-86A0-3C1D8A7BCA81}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{1C7E38E7-6BED-4EAB-A9A9-EAD2A91C5775}">
+									<ClipList>
+										<MusicClip Name="MUS_HB_Jungle_Fight_BigDrums_End" ID="{76582581-6DD9-4193-AA56-3B7546EFEE15}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="4893.89583333333"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="MUS_HB_Jungle_Fight_BigDrums_End" ID="{AE87871E-CCB9-45D2-93F8-618912EED486}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
 					</ChildrenList>
 					<CueList>
 						<MusicCue Name="Entry Cue" ID="{964C934C-4870-4B5F-81E6-80D8BD7165FE}"/>
 						<MusicCue Name="Exit Cue" ID="{47F67DA6-3BD6-47CB-BF36-26C59A8CC367}">
 							<PropertyList>
 								<Property Name="CueType" Type="int16" Value="1"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+				<MusicSegment Name="MUS_HB_Jungle_Transi_BeginFight" ID="{C69CA438-B77E-44A7-9680-7276D781BDA5}" ShortID="982864358">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="13250"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="MUS_HB_Jungle_Fight_MalletCymbal_01" ID="{378FE9BF-6593-49AD-8C32-9EE5B58AABA5}" ShortID="136404801">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUS_HB_Jungle_Fight_MalletCymbal_01" ID="{939DF3B4-85C3-4B37-AA0F-FC340CE12E13}" ShortID="716610373">
+									<Language>SFX</Language>
+									<AudioFile>MUS_HB_Jungle_Fight_MalletCymbal_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{9C147BE7-D4BC-411C-926E-82D0E79DD15C}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{166E817A-30ED-490E-826B-6CB3EC74327C}">
+									<ClipList>
+										<MusicClip Name="MUS_HB_Jungle_Fight_MalletCymbal_01" ID="{F9E7A9DF-AAA9-4C36-9577-7D743B41CD75}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="9931.04166666667"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+												<Property Name="PlayAt" Type="Real64" Value="1000"/>
+											</PropertyList>
+											<AudioSourceRef Name="MUS_HB_Jungle_Fight_MalletCymbal_01" ID="{939DF3B4-85C3-4B37-AA0F-FC340CE12E13}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+						<MusicTrack Name="MUS_HB_Jungle_Fight_TransitionBegin" ID="{42FB0850-EC68-468D-A46D-D1DEFB3F35D1}" ShortID="784284270">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUS_HB_Jungle_Fight_TransitionBegin" ID="{F29EA185-76D3-4DD5-84C4-55125DD054E7}" ShortID="909569087">
+									<Language>SFX</Language>
+									<AudioFile>MUS_HB_Jungle_Fight_TransitionBegin.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{3F38AABB-39CC-4213-AB46-FFE68EFA7A86}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{905F0E83-650E-45C8-A747-4E44E9A2825F}">
+									<ClipList>
+										<MusicClip Name="MUS_HB_Jungle_Fight_TransitionBegin" ID="{D2DB265F-47FD-4FC7-BB37-F1FACC7B6801}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="MUS_HB_Jungle_Fight_TransitionBegin" ID="{F29EA185-76D3-4DD5-84C4-55125DD054E7}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{6CAE2130-C632-47E0-B098-C2DC97B2678F}">
+							<PropertyList>
+								<Property Name="TimeMs" Type="Real64" Value="1000"/>
+							</PropertyList>
+						</MusicCue>
+						<MusicCue Name="Exit Cue" ID="{4F58D94A-810F-4AB7-9F59-C85B5B36F2D8}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="1000"/>
 							</PropertyList>
 						</MusicCue>
 					</CueList>

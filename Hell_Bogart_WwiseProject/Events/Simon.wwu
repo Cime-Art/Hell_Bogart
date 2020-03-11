@@ -492,7 +492,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Distance_From_Enemy" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+													<ObjectRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
