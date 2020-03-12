@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}" SchemaVersion="94">
 	<Switches>
-		<WorkUnit Name="Brian" ID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Brian" ID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Guardian" ID="{465D3D43-AF1A-47F5-A248-2F0332DC7F8A}" ShortID="895560278"/>
+				<Folder Name="Grenade" ID="{89A8CA87-853E-47B9-98AC-FFF6CCDCDED5}" ShortID="26514163">
+					<ChildrenList>
+						<SwitchGroup Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}">
+							<ChildrenList>
+								<Switch Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+								<Switch Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+								<Switch Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
