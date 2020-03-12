@@ -14,7 +14,7 @@
 						<ObjectRef Name="E_SetAcoustic_BossArena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SetAcoustic_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Mob_JungleCharlie_Charge" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Mob_JungleCharlie_Scream" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Option" ID="{D5C449DA-7D73-482D-BA58-D5D663DB096B}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Exploded" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="TEST_Play_Method_A" ID="{1C0FAB98-371F-48A4-93F3-0C576D6D079C}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
