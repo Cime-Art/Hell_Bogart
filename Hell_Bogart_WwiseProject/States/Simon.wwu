@@ -3,7 +3,7 @@
 	<States>
 		<WorkUnit Name="Simon" ID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Iems" ID="{8F2BADD0-F656-449B-B33E-0899089CB237}" ShortID="974916730">
+				<Folder Name="Items" ID="{8F2BADD0-F656-449B-B33E-0899089CB237}" ShortID="974916730">
 					<ChildrenList>
 						<StateGroup Name="Ammo_Type_STATE" ID="{DC8CE865-7803-420C-9365-226A284C6C30}">
 							<ChildrenList>
@@ -38,7 +38,7 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Enviro" ID="{52C61503-DF22-4044-A720-1EC170C23122}" ShortID="606328828">
+				<Folder Name="Global" ID="{52C61503-DF22-4044-A720-1EC170C23122}" ShortID="606328828">
 					<ChildrenList>
 						<StateGroup Name="Acoustic_STATE" ID="{ADEED407-5BAD-4BFD-8E19-6306DBDB07C6}">
 							<ChildrenList>
