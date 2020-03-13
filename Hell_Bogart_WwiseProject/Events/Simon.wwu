@@ -272,6 +272,13 @@
 									<ChildrenList>
 										<Event Name="E_Mob_JungleCharlie_Exploded" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}">
 											<ChildrenList>
+												<Action Name="" ID="{9B5BC691-82EB-4B57-B9AD-C9AC17DCC194}" ShortID="815418560">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_GetHit_MAIN_RND" ID="{5A6B34C4-EEC3-4723-8C4C-56D87B73C34A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{72FE124C-6193-4C3F-901E-0E04A49A9283}" ShortID="760425453">
 													<ReferenceList>
 														<Reference Name="Target">
@@ -355,7 +362,7 @@
 								</Folder>
 								<Folder Name="Charge" ID="{E000A136-4CBF-419A-8116-D73331F15327}" ShortID="727349184">
 									<ChildrenList>
-										<Event Name="E_Mob_JungleCharlie_Charge" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}">
+										<Event Name="E_Mob_JungleCharlie_Scream" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}">
 											<ChildrenList>
 												<Action Name="" ID="{C0CACDB3-2EE7-457D-892F-54EA3CCE47E9}" ShortID="805343824">
 													<ReferenceList>
@@ -371,6 +378,28 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="GetHit" ID="{D82AE75B-D8F5-4E4F-A87F-DF15720ABBE7}" ShortID="422280137">
+									<ChildrenList>
+										<Event Name="E_MobJungleCharlie_GetHit" ID="{EA163DFE-A0BD-443C-A2CB-34FA8A68B0F3}">
+											<ChildrenList>
+												<Action Name="" ID="{D86D871D-D8E5-4CAF-BA0B-8DC6C587956A}" ShortID="636517557">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_GetHit_MAIN_RND" ID="{5A6B34C4-EEC3-4723-8C4C-56D87B73C34A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{8EB074F5-7385-4C85-B969-871A9A6B47E5}" ShortID="219998957">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_GetHit_ELEMENT_SWITCH" ID="{193EC443-EB3D-4159-B3C0-AC820B519F34}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -431,6 +460,82 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{CB808997-9F6A-47F6-9C31-CF9884025AE1}" ShortID="1057474070">
+					<ChildrenList>
+						<Folder Name="Jungle" ID="{124F6E3B-BAAF-47FB-8802-9EA6E06B4901}" ShortID="963593335">
+							<ChildrenList>
+								<Event Name="E_Mus_SetExplorationState" ID="{134BEA16-70AF-42BC-BAA0-FD3E12D72846}">
+									<ChildrenList>
+										<Action Name="" ID="{AE9C4A74-1BF2-4B37-A513-F118B0E78F7E}" ShortID="508062970">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{6B02FC3B-CEDB-4F26-91D3-C4FCF59D2691}" ShortID="218353538">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Mus_Jungle_Main_Play" ID="{1BB4E9C1-06DA-4333-935C-F4418EBAFDE0}">
+									<ChildrenList>
+										<Action Name="" ID="{FD4BB6FE-CFCD-4AF8-A618-F2312E4EE030}" ShortID="923685599">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Mus_Jungle_MAIN_SWITCH" ID="{C586B2D9-5E20-446C-9DC8-F4CFDD0E2716}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Mus_SetFightState" ID="{15D8128B-0DA6-4B1E-9D80-FBF6213F36B8}">
+									<ChildrenList>
+										<Action Name="" ID="{A0D86E77-E4A9-4C02-AAC4-490EA797C772}" ShortID="130502110">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Mus_Jungle_End" ID="{C104ADD5-BABF-4A20-9389-C87AF892FFC1}">
+									<ChildrenList>
+										<Action Name="" ID="{3E740117-E79F-48F6-9EAD-1634022759B7}" ShortID="1014875978">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="End_Music" ID="{F98C25B7-C5CA-4858-B4D9-4136E6494696}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Global" ID="{88B37875-1B83-43F8-8070-B53CCCCD6609}" ShortID="178615531">
+					<ChildrenList>
 						<Folder Name="Acoustics" ID="{573B6C02-4FBF-4097-A858-05EED3AEF692}" ShortID="539735933">
 							<ChildrenList>
 								<Event Name="E_SetAcoustic_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}">
@@ -469,79 +574,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Music" ID="{CB808997-9F6A-47F6-9C31-CF9884025AE1}" ShortID="1057474070">
-					<ChildrenList>
-						<Folder Name="Jungle" ID="{124F6E3B-BAAF-47FB-8802-9EA6E06B4901}" ShortID="963593335">
-							<ChildrenList>
-								<Event Name="E_Mus_SetExplorationState" ID="{134BEA16-70AF-42BC-BAA0-FD3E12D72846}">
-									<ChildrenList>
-										<Action Name="" ID="{AE9C4A74-1BF2-4B37-A513-F118B0E78F7E}" ShortID="508062970">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="GameParameterValue" Type="Real64" Value="100"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{6B02FC3B-CEDB-4F26-91D3-C4FCF59D2691}" ShortID="218353538">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="22"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="E_Mus_Jungle_Main_Play" ID="{1BB4E9C1-06DA-4333-935C-F4418EBAFDE0}">
-									<ChildrenList>
-										<Action Name="" ID="{FD4BB6FE-CFCD-4AF8-A618-F2312E4EE030}" ShortID="923685599">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Mus_Jungle_Main_SWITCH" ID="{C586B2D9-5E20-446C-9DC8-F4CFDD0E2716}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="E_Mus_SetFightState" ID="{15D8128B-0DA6-4B1E-9D80-FBF6213F36B8}">
-									<ChildrenList>
-										<Action Name="" ID="{A0D86E77-E4A9-4C02-AAC4-490EA797C772}" ShortID="130502110">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="22"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="E_Mus_Jungle_End" ID="{C104ADD5-BABF-4A20-9389-C87AF892FFC1}">
-									<ChildrenList>
-										<Action Name="" ID="{3E740117-E79F-48F6-9EAD-1634022759B7}" ShortID="1014875978">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="22"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="End_Music" ID="{F98C25B7-C5CA-4858-B4D9-4136E6494696}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+													<ObjectRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
