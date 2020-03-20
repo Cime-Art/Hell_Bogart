@@ -1,9 +1,12 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	916310236	Ammo_Type_STATE			\Simon\Iems\Ammo_Type_STATE	
-	2069469294	Acoustic_STATE			\Simon\Enviro\Acoustic_STATE	
-	2243093414	Chamber_Type_STATE			\Simon\Iems\Chamber_Type_STATE	
-	4121978141	Shotgun_Equiped_STATE			\Simon\Iems\Shotgun_Equiped_STATE	
-	4261493451	Canon_Type_STATE			\Simon\Iems\Canon_Type_STATE	
+	916310236	Ammo_Type_STATE			\Simon\Items\Ammo_Type_STATE	
+	1573985144	AmbToFight_STATE			\Brian\Musique\AmbToFight_STATE	
+	2069469294	Acoustic_STATE			\Simon\Global\Acoustic_STATE	
+	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
+	3826569560	Music_STATE			\Simon\Music\Music_STATE	
+	4121978141	Shotgun_Equiped_STATE			\Simon\Items\Shotgun_Equiped_STATE	
+	4135068155	Element			\Brian\Grenade\Element	
+	4261493451	Canon_Type_STATE			\Simon\Items\Canon_Type_STATE	
 
 State	ID	Name	State Group			Notes
 	0	None	Ammo_Type_STATE			
@@ -11,6 +14,10 @@ State	ID	Name	State Group			Notes
 	344481046	Ice	Ammo_Type_STATE			
 	2628937827	Regular	Ammo_Type_STATE			
 	2678880713	Fire	Ammo_Type_STATE			
+	0	None	AmbToFight_STATE			
+	1235729018	Ruin_Combat	AmbToFight_STATE			
+	2361306101	Ruin_End	AmbToFight_STATE			
+	3968964982	Ruin_Ambiance	AmbToFight_STATE			
 	0	None	Acoustic_STATE			
 	2213992659	Exterior	Acoustic_STATE			
 	3265560855	Ruines	Acoustic_STATE			
@@ -19,8 +26,17 @@ State	ID	Name	State Group			Notes
 	252199009	Spread_60	Chamber_Type_STATE			
 	419409252	Spread_180	Chamber_Type_STATE			
 	2572109827	Regular_Spread	Chamber_Type_STATE			
+	0	None	Music_STATE			
+	514064485	Fight	Music_STATE			
+	1428057472	End_Music	Music_STATE			
+	2582085496	Exploration	Music_STATE			
 	0	None	Shotgun_Equiped_STATE			
 	979470758	Yes	Shotgun_Equiped_STATE			
+	0	None	Element			
+	186852181	Thunder	Element			
+	344481046	Ice	Element			
+	433216386	Explosive	Element			
+	2678880713	Fire	Element			
 	0	None	Canon_Type_STATE			
 	2815114540	Transpercant	Canon_Type_STATE			
 	3185142962	Portee	Canon_Type_STATE			
