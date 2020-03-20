@@ -1,6 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7E163290-B769-42C2-AF51-FC4D4AB35C60}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Ben" ID="{7E163290-B769-42C2-AF51-FC4D4AB35C60}" PersistMode="Standalone"/>
+		<WorkUnit Name="Ben" ID="{7E163290-B769-42C2-AF51-FC4D4AB35C60}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="E_play_Minigun" ID="{E438292D-A8BD-4D70-804C-B9FC0D5CFD20}">
+					<ChildrenList>
+						<Action Name="" ID="{0D1977CD-66D3-42AB-8983-43DBDF9F89CB}" ShortID="187906799">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Minigun_Barrel_Start" ID="{CAC3A58B-3B7E-41F3-90CD-C3C16368D9A7}" WorkUnitID="{8A35AA74-FF80-4EDA-A5D5-97293E81E195}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D0EDE2B2-FE27-4FFB-8081-4F5E856C1CE5}" ShortID="983921540">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire" ID="{E749DD99-3F0B-43B8-B797-8E747830D6A2}" WorkUnitID="{8A35AA74-FF80-4EDA-A5D5-97293E81E195}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{65499E68-3154-49EA-B6E3-01655A1380CB}" ShortID="313162797">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shells" ID="{AFA343D5-B7C4-462C-9BFD-77B1C5846FF1}" WorkUnitID="{8A35AA74-FF80-4EDA-A5D5-97293E81E195}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="E_play_Minigun_Stop" ID="{FC36404C-7846-474D-A14C-C5DD14EAEB1A}">
+					<ChildrenList>
+						<Action Name="" ID="{48903CB0-B075-4FAD-8512-D3C1C106AE90}" ShortID="477549367">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MnGn_Barrel_Down" ID="{25A6CDC0-ACEB-4A2B-A892-F6CD42D11428}" WorkUnitID="{8A35AA74-FF80-4EDA-A5D5-97293E81E195}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D5A942E9-A491-461F-A3AD-292ED05EF3F9}" ShortID="710300136">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Minigun_Barrel_Start" ID="{CAC3A58B-3B7E-41F3-90CD-C3C16368D9A7}" WorkUnitID="{8A35AA74-FF80-4EDA-A5D5-97293E81E195}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{587F0DA6-DB18-4AEF-8666-75848899AAA7}" ShortID="493359318">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="34"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire" ID="{E749DD99-3F0B-43B8-B797-8E747830D6A2}" WorkUnitID="{8A35AA74-FF80-4EDA-A5D5-97293E81E195}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F74D433A-CEFD-4928-A1C4-8290F0876620}" ShortID="904786142">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="34"/>
+								<Property Name="Delay" Type="Real64" Value="1.4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shells" ID="{AFA343D5-B7C4-462C-9BFD-77B1C5846FF1}" WorkUnitID="{8A35AA74-FF80-4EDA-A5D5-97293E81E195}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AC736168-CA80-4F08-BD33-67BC906C9270}" ShortID="38232886">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sizzel" ID="{055E0944-9FEE-4EBA-A5C5-9D6DC226F41B}" WorkUnitID="{8A35AA74-FF80-4EDA-A5D5-97293E81E195}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
