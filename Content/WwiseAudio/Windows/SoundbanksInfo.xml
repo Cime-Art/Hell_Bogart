@@ -482,6 +482,8 @@
 				<Event Id="4247850677" Name="E_Mus_SetExplorationState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetExplorationState"/>
 				<Event Id="102331918" Name="E_Mus_SetFightState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetFightState"/>
 				<Event Id="3376467880" Name="E_Play_Grenade" ObjectPath="\Events\Brian\Grenade\E_Play_Grenade"/>
+				<Event Id="2055309167" Name="E_play_Minigun" ObjectPath="\Events\Ben\E_play_Minigun"/>
+				<Event Id="1306962266" Name="E_play_Minigun_Stop" ObjectPath="\Events\Ben\E_play_Minigun_Stop"/>
 				<Event Id="3359588815" Name="E_SetAcoustic_BossArena" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_BossArena"/>
 				<Event Id="1975484871" Name="E_SetAcoustic_Exterior" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Exterior"/>
 				<Event Id="1418412915" Name="E_SetAcoustic_Ruines" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Ruines"/>
@@ -625,9 +627,17 @@
 					<ShortName>FTP_bois_humide_02.wav</ShortName>
 					<Path>SFX\FTP_bois_humide_02_10C4C929.wem</Path>
 				</File>
+				<File Id="48319379" Language="SFX">
+					<ShortName>Shell_Wood_03.wav</ShortName>
+					<Path>SFX\Shell_Wood_03_10C4C929.wem</Path>
+				</File>
 				<File Id="50418130" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_PowerLayer_01_10C4C929.wem</Path>
+				</File>
+				<File Id="58330489" Language="SFX">
+					<ShortName>SF-DS Weapon Projectile 03_01.wav</ShortName>
+					<Path>SFX\SF-DS Weapon Projectile 03_01_10C4C929.wem</Path>
 				</File>
 				<File Id="70517950" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_08.wav</ShortName>
@@ -640,6 +650,14 @@
 				<File Id="89815110" Language="SFX">
 					<ShortName>HB-SFX-Genade-02.wav</ShortName>
 					<Path>SFX\HB-SFX-Genade-02_10C4C929.wem</Path>
+				</File>
+				<File Id="94451676" Language="SFX">
+					<ShortName>Shell_Gravel_03.wav</ShortName>
+					<Path>SFX\Shell_Gravel_03_10C4C929.wem</Path>
+				</File>
+				<File Id="94536974" Language="SFX">
+					<ShortName>Shell_Water_02.wav</ShortName>
+					<Path>SFX\Shell_Water_02_10C4C929.wem</Path>
 				</File>
 				<File Id="95268103" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-04.wav</ShortName>
@@ -665,9 +683,17 @@
 					<ShortName>HB_SFX_Shotgun_RegularAmmo_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_RegularAmmo_01_10C4C929.wem</Path>
 				</File>
+				<File Id="124738395" Language="SFX">
+					<ShortName>Shell_Water_05.wav</ShortName>
+					<Path>SFX\Shell_Water_05_10C4C929.wem</Path>
+				</File>
 				<File Id="131298312" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_RegularCanon_00_10C4C929.wem</Path>
+				</File>
+				<File Id="135613566" Language="SFX">
+					<ShortName>MnGn_Fire_05.wav</ShortName>
+					<Path>SFX\MnGn_Fire_05_10C4C929.wem</Path>
 				</File>
 				<File Id="137620780" Language="SFX">
 					<ShortName>HB-SFX-Genade-01.wav</ShortName>
@@ -696,6 +722,14 @@
 				<File Id="154187278" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-SpearLaunch-01.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-SpearLaunch-01_10C4C929.wem</Path>
+				</File>
+				<File Id="157876437" Language="SFX">
+					<ShortName>60 - .45 auto shell single shell on hard packed dirt-11.wav</ShortName>
+					<Path>SFX\60 - .45 auto shell single shell on hard packed dirt-11_10C4C929.wem</Path>
+				</File>
+				<File Id="157876821" Language="SFX">
+					<ShortName>MnGn_Barrel_Loop.wav</ShortName>
+					<Path>SFX\MnGn_Barrel_Loop_D79FB2B7.wem</Path>
 				</File>
 				<File Id="159176522" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_08.wav</ShortName>
@@ -753,6 +787,10 @@
 					<ShortName>HB_SFX_Shotgun_CanonPortee_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonPortee_02_10C4C929.wem</Path>
 				</File>
+				<File Id="215037878" Language="SFX">
+					<ShortName>Shell_Gravel_02.wav</ShortName>
+					<Path>SFX\Shell_Gravel_02_10C4C929.wem</Path>
+				</File>
 				<File Id="222189558" Language="SFX">
 					<ShortName>FTP_gravier_01.wav</ShortName>
 					<Path>SFX\FTP_gravier_01_10C4C929.wem</Path>
@@ -768,6 +806,10 @@
 				<File Id="232000533" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-003.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GenericBodyFall_01-003_10C4C929.wem</Path>
+				</File>
+				<File Id="234048296" Language="SFX">
+					<ShortName>Shell_Wood_01.wav</ShortName>
+					<Path>SFX\Shell_Wood_01_10C4C929.wem</Path>
 				</File>
 				<File Id="238885831" Language="SFX">
 					<ShortName>HB_SFX_Pickup_EPIC.wav</ShortName>
@@ -821,6 +863,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleOUT_02_10C4C929.wem</Path>
 				</File>
+				<File Id="287228049" Language="SFX">
+					<ShortName>Shell_Concrete_03.wav</ShortName>
+					<Path>SFX\Shell_Concrete_03_10C4C929.wem</Path>
+				</File>
 				<File Id="302458388" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-002.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GenericBodyFall_01-002_10C4C929.wem</Path>
@@ -832,6 +878,10 @@
 				<File Id="305038015" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_ThunderAmmo_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_ThunderAmmo_02_ED91B86A.wem</Path>
+				</File>
+				<File Id="307472904" Language="SFX">
+					<ShortName>Shell_Concrete_02.wav</ShortName>
+					<Path>SFX\Shell_Concrete_02_10C4C929.wem</Path>
 				</File>
 				<File Id="308780867" Language="SFX">
 					<ShortName>FTP_ossements_pierre_02.wav</ShortName>
@@ -856,6 +906,10 @@
 				<File Id="331013577" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Equip1.wav</ShortName>
 					<Path>SFX\HB_SFX_Uiwep_Equip1_10C4C929.wem</Path>
+				</File>
+				<File Id="333470233" Language="SFX">
+					<ShortName>MnGn_Fire_01.wav</ShortName>
+					<Path>SFX\MnGn_Fire_01_10C4C929.wem</Path>
 				</File>
 				<File Id="333758070" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_FireAmmo_00.wav</ShortName>
@@ -921,6 +975,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Death_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_02_10C4C929.wem</Path>
 				</File>
+				<File Id="395274477" Language="SFX">
+					<ShortName>MnGn_Fire_03.wav</ShortName>
+					<Path>SFX\MnGn_Fire_03_10C4C929.wem</Path>
+				</File>
 				<File Id="396871728" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_06.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_06_10C4C929.wem</Path>
@@ -936,6 +994,14 @@
 				<File Id="405943385" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-02.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-Hit-02_10C4C929.wem</Path>
+				</File>
+				<File Id="407438892" Language="SFX">
+					<ShortName>MnGn_Barrel_Down.wav</ShortName>
+					<Path>SFX\MnGn_Barrel_Down_10C4C929.wem</Path>
+				</File>
+				<File Id="408430445" Language="SFX">
+					<ShortName>Shell_Gravel_04.wav</ShortName>
+					<Path>SFX\Shell_Gravel_04_10C4C929.wem</Path>
 				</File>
 				<File Id="415180222" Language="SFX">
 					<ShortName>HB-SFX-UImenu-Return.wav</ShortName>
@@ -960,6 +1026,10 @@
 				<File Id="447038367" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_IceAmmo_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_IceAmmo_00_10C4C929.wem</Path>
+				</File>
+				<File Id="447496301" Language="SFX">
+					<ShortName>60 - .45 auto shell single shell on hard packed dirt-15.wav</ShortName>
+					<Path>SFX\60 - .45 auto shell single shell on hard packed dirt-15_10C4C929.wem</Path>
 				</File>
 				<File Id="452050017" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_05.wav</ShortName>
@@ -993,6 +1063,10 @@
 					<ShortName>HB-SFX-GenadeElec-00.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-00_10C4C929.wem</Path>
 				</File>
+				<File Id="476039211" Language="SFX">
+					<ShortName>Shell_Metal_03.wav</ShortName>
+					<Path>SFX\Shell_Metal_03_10C4C929.wem</Path>
+				</File>
 				<File Id="476563295" Language="SFX">
 					<ShortName>FTP_sol poussiereux_02.wav</ShortName>
 					<Path>SFX\FTP_sol poussiereux_02_10C4C929.wem</Path>
@@ -1016,6 +1090,10 @@
 				<File Id="489126667" Language="SFX">
 					<ShortName>HB_SFX_Pickup_RARE.wav</ShortName>
 					<Path>SFX\HB_SFX_Pickup_RARE_10C4C929.wem</Path>
+				</File>
+				<File Id="489172454" Language="SFX">
+					<ShortName>Shell_Concrete_04.wav</ShortName>
+					<Path>SFX\Shell_Concrete_04_10C4C929.wem</Path>
 				</File>
 				<File Id="495664766" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_06.wav</ShortName>
@@ -1049,6 +1127,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_06.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_06_D36221DB.wem</Path>
 				</File>
+				<File Id="531370814" Language="SFX">
+					<ShortName>Shell_Metal_02.wav</ShortName>
+					<Path>SFX\Shell_Metal_02_10C4C929.wem</Path>
+				</File>
 				<File Id="532242473" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-00.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-Hit-00_10C4C929.wem</Path>
@@ -1057,9 +1139,21 @@
 					<ShortName>HB_SFX_Shotgun_RegularCanon_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_RegularCanon_01_10C4C929.wem</Path>
 				</File>
+				<File Id="553183363" Language="SFX">
+					<ShortName>MnGn_Barrel_Up.wav</ShortName>
+					<Path>SFX\MnGn_Barrel_Up_10C4C929.wem</Path>
+				</File>
 				<File Id="553559462" Language="SFX">
 					<ShortName>HB_Steps_herbeshumides_03.wav</ShortName>
 					<Path>SFX\HB_Steps_herbeshumides_03_10C4C929.wem</Path>
+				</File>
+				<File Id="555292007" Language="SFX">
+					<ShortName>Shell_Water_03.wav</ShortName>
+					<Path>SFX\Shell_Water_03_10C4C929.wem</Path>
+				</File>
+				<File Id="555296050" Language="SFX">
+					<ShortName>Shell_Metal_04.wav</ShortName>
+					<Path>SFX\Shell_Metal_04_10C4C929.wem</Path>
 				</File>
 				<File Id="555529559" Language="SFX">
 					<ShortName>HB_SFX_ammo_RARE.wav</ShortName>
@@ -1068,6 +1162,10 @@
 				<File Id="559357836" Language="SFX">
 					<ShortName>FTP_sable_02.wav</ShortName>
 					<Path>SFX\FTP_sable_02_10C4C929.wem</Path>
+				</File>
+				<File Id="560119645" Language="SFX">
+					<ShortName>Shell_Concrete_05.wav</ShortName>
+					<Path>SFX\Shell_Concrete_05_10C4C929.wem</Path>
 				</File>
 				<File Id="562077786" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_00.wav</ShortName>
@@ -1092,6 +1190,10 @@
 				<File Id="581784882" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_CanonTranspercant_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonTranspercant_01_10C4C929.wem</Path>
+				</File>
+				<File Id="584368452" Language="SFX">
+					<ShortName>Shell_Water_01.wav</ShortName>
+					<Path>SFX\Shell_Water_01_10C4C929.wem</Path>
 				</File>
 				<File Id="585423988" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_03.wav</ShortName>
@@ -1145,6 +1247,18 @@
 					<ShortName>HB_SFX_Shotgun_Reload_In_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Reload_In_02_0D54C86F.wem</Path>
 				</File>
+				<File Id="646470638" Language="SFX">
+					<ShortName>Shell_Concrete_01.wav</ShortName>
+					<Path>SFX\Shell_Concrete_01_10C4C929.wem</Path>
+				</File>
+				<File Id="654608427" Language="SFX">
+					<ShortName>Shell_Metal_05.wav</ShortName>
+					<Path>SFX\Shell_Metal_05_10C4C929.wem</Path>
+				</File>
+				<File Id="659057326" Language="SFX">
+					<ShortName>CECK FIRE Burst Sizzle Small_01.wav</ShortName>
+					<Path>SFX\CECK FIRE Burst Sizzle Small_01_10C4C929.wem</Path>
+				</File>
 				<File Id="661955203" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_EndDropShell_03_10C4C929.wem</Path>
@@ -1165,6 +1279,10 @@
 					<ShortName>MUS_HB_Jungle_EventTresor.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_EventTresor_D79FB2B7.wem</Path>
 				</File>
+				<File Id="685052240" Language="SFX">
+					<ShortName>Shell_Wood_05.wav</ShortName>
+					<Path>SFX\Shell_Wood_05_10C4C929.wem</Path>
+				</File>
 				<File Id="698178078" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_04_10C4C929.wem</Path>
@@ -1176,6 +1294,10 @@
 				<File Id="715525088" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_ThunderAmmo_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_ThunderAmmo_01_13059E1A.wem</Path>
+				</File>
+				<File Id="716246107" Language="SFX">
+					<ShortName>Shell_Wood_02.wav</ShortName>
+					<Path>SFX\Shell_Wood_02_10C4C929.wem</Path>
 				</File>
 				<File Id="716610373" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Fight_MalletCymbal_01.wav</ShortName>
@@ -1209,6 +1331,10 @@
 					<ShortName>HB_SFX_Uiwep_Pickup2.wav</ShortName>
 					<Path>SFX\HB_SFX_Uiwep_Pickup2_35512C65.wem</Path>
 				</File>
+				<File Id="741470113" Language="SFX">
+					<ShortName>60 - .45 auto shell single shell on hard packed dirt-03.wav</ShortName>
+					<Path>SFX\60 - .45 auto shell single shell on hard packed dirt-03_10C4C929.wem</Path>
+				</File>
 				<File Id="742319399" Language="SFX">
 					<ShortName>HB-SFX-Other-OpenBigStoneDoor.wav</ShortName>
 					<Path>SFX\HB-SFX-Other-OpenBigStoneDoor_10C4C929.wem</Path>
@@ -1241,6 +1367,14 @@
 					<ShortName>HB_SFX_Shotgun_Spread60_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread60_00_10C4C929.wem</Path>
 				</File>
+				<File Id="782075629" Language="SFX">
+					<ShortName>Shell_Gravel_01.wav</ShortName>
+					<Path>SFX\Shell_Gravel_01_10C4C929.wem</Path>
+				</File>
+				<File Id="788905969" Language="SFX">
+					<ShortName>Shell_Metal_01.wav</ShortName>
+					<Path>SFX\Shell_Metal_01_10C4C929.wem</Path>
+				</File>
 				<File Id="811391564" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_PowerLayer_03_10C4C929.wem</Path>
@@ -1252,6 +1386,14 @@
 				<File Id="817692512" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Fight_BigDrums_End.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_Fight_BigDrums_End_D79FB2B7.wem</Path>
+				</File>
+				<File Id="836753407" Language="SFX">
+					<ShortName>Shell_Water_04.wav</ShortName>
+					<Path>SFX\Shell_Water_04_10C4C929.wem</Path>
+				</File>
+				<File Id="838770258" Language="SFX">
+					<ShortName>Shell_Gravel_05.wav</ShortName>
+					<Path>SFX\Shell_Gravel_05_10C4C929.wem</Path>
 				</File>
 				<File Id="841003399" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleIN_03.wav</ShortName>
@@ -1349,6 +1491,10 @@
 					<ShortName>FTP_ossements_sol_03.wav</ShortName>
 					<Path>SFX\FTP_ossements_sol_03_10C4C929.wem</Path>
 				</File>
+				<File Id="964166816" Language="SFX">
+					<ShortName>60 - .45 auto shell single shell on hard packed dirt-07.wav</ShortName>
+					<Path>SFX\60 - .45 auto shell single shell on hard packed dirt-07_10C4C929.wem</Path>
+				</File>
 				<File Id="972483720" Language="SFX">
 					<ShortName>HB_Footstep_SolPierre_03.wav</ShortName>
 					<Path>SFX\HB_Footstep_SolPierre_03_10C4C929.wem</Path>
@@ -1365,6 +1511,10 @@
 					<ShortName>HB-SFX-GenadeFire-02.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeFire-02_10C4C929.wem</Path>
 				</File>
+				<File Id="1002155297" Language="SFX">
+					<ShortName>SF-DS Weapon Projectile 03_02.wav</ShortName>
+					<Path>SFX\SF-DS Weapon Projectile 03_02_10C4C929.wem</Path>
+				</File>
 				<File Id="1028175132" Language="SFX">
 					<ShortName>FTP_bois_sec_01.wav</ShortName>
 					<Path>SFX\FTP_bois_sec_01_10C4C929.wem</Path>
@@ -1376,6 +1526,10 @@
 				<File Id="1034636194" Language="SFX">
 					<ShortName>FTP_bois_sec_03.wav</ShortName>
 					<Path>SFX\FTP_bois_sec_03_10C4C929.wem</Path>
+				</File>
+				<File Id="1035227437" Language="SFX">
+					<ShortName>Shell_Wood_04.wav</ShortName>
+					<Path>SFX\Shell_Wood_04_10C4C929.wem</Path>
 				</File>
 				<File Id="1038132948" Language="SFX">
 					<ShortName>FTP_eau_01.wav</ShortName>
@@ -1396,6 +1550,22 @@
 				<File Id="1053490257" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleOUT_04_10C4C929.wem</Path>
+				</File>
+				<File Id="1060154308" Language="SFX">
+					<ShortName>MnGn_Fire_04.wav</ShortName>
+					<Path>SFX\MnGn_Fire_04_10C4C929.wem</Path>
+				</File>
+				<File Id="1063326116" Language="SFX">
+					<ShortName>SF-DS Weapon Projectile 03_03.wav</ShortName>
+					<Path>SFX\SF-DS Weapon Projectile 03_03_10C4C929.wem</Path>
+				</File>
+				<File Id="1064636151" Language="SFX">
+					<ShortName>SF-DS Weapon Projectile 03_04.wav</ShortName>
+					<Path>SFX\SF-DS Weapon Projectile 03_04_10C4C929.wem</Path>
+				</File>
+				<File Id="1067846903" Language="SFX">
+					<ShortName>MnGn_Fire_02.wav</ShortName>
+					<Path>SFX\MnGn_Fire_02_10C4C929.wem</Path>
 				</File>
 				<File Id="1069671681" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_00.wav</ShortName>
