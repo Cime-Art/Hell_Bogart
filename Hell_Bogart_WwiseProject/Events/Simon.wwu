@@ -163,16 +163,6 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
-												<Action Name="" ID="{CA7A3A98-72A7-4D3D-B516-13809E6B96D8}" ShortID="15090257">
-													<PropertyList>
-														<Property Name="Delay" Type="Real64" Value="0.7"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Hit_MobJungleCharlie" ID="{BB1C446F-554E-4A89-BDCC-5C343DA2E9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
 											</ChildrenList>
 										</Event>
 									</ChildrenList>
@@ -407,6 +397,21 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Folder Name="Hit" ID="{31C25C91-A063-4E4C-BDDA-692A0A252330}" ShortID="1005512746">
+									<ChildrenList>
+										<Event Name="E_MobJungleCharlie_Hit" ID="{FDCFF838-BD41-48DC-8123-A8E3C5DD2BBD}">
+											<ChildrenList>
+												<Action Name="" ID="{087004CA-55C6-4E63-9E93-22CEAF59BC81}" ShortID="12697804">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Hit_MobJungleCharlie" ID="{BB1C446F-554E-4A89-BDCC-5C343DA2E9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -471,7 +476,7 @@
 										<Action Name="" ID="{AE9C4A74-1BF2-4B37-A513-F118B0E78F7E}" ShortID="508062970">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="3000"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
