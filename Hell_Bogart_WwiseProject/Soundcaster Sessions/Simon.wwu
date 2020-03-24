@@ -22,16 +22,20 @@
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_MobJungleCharlie_GetHit" ID="{EA163DFE-A0BD-443C-A2CB-34FA8A68B0F3}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_MobJungleCharlie_Hit" ID="{FDCFF838-BD41-48DC-8123-A8E3C5DD2BBD}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Mob_JungleCharlie_Death" ID="{826C685D-5D84-48DC-9144-F906FBF293F1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_MobJungleCharlie_GetHit" ID="{EA163DFE-A0BD-443C-A2CB-34FA8A68B0F3}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Mob_JungleCharlie_Exploded" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_Mob_JungleCharlie_Death" ID="{826C685D-5D84-48DC-9144-F906FBF293F1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mob_JungleCharlie_Exploded" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="0" Y="7"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Shotgun_EVENT" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -105,14 +109,14 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
-							<Value>12</Value>
+							<Value>4</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
-						<CurrentStateRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}"/>
+						<CurrentStateRef Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
+						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
-						<CurrentStateRef Name="In" ID="{F0DD71A8-59AA-4F09-9732-5FBFA0055581}"/>
+						<CurrentStateRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
 						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
@@ -120,7 +124,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
-						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+						<CurrentSwitchRef Name="FTP_Dalles_pierre_switch" ID="{A784672B-87AF-4B4C-80A2-62022ECE904A}"/>
 						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

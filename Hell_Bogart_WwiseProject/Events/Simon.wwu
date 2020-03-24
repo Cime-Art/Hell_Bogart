@@ -262,17 +262,17 @@
 									<ChildrenList>
 										<Event Name="E_Mob_JungleCharlie_Exploded" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}">
 											<ChildrenList>
-												<Action Name="" ID="{9B5BC691-82EB-4B57-B9AD-C9AC17DCC194}" ShortID="815418560">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MobJungleCharlie_GetHit_MAIN_RND" ID="{5A6B34C4-EEC3-4723-8C4C-56D87B73C34A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
 												<Action Name="" ID="{72FE124C-6193-4C3F-901E-0E04A49A9283}" ShortID="760425453">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Exploded_Bones_MobJungleCharlie_RND" ID="{090D44BB-BD78-4D83-BC3D-872B64C372FA}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{3064659F-423C-4383-9EAA-1CDD8E509F13}" ShortID="377815301">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_GetHit_MAIN_RND" ID="{5A6B34C4-EEC3-4723-8C4C-56D87B73C34A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

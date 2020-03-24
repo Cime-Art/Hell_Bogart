@@ -652,7 +652,7 @@
 				</File>
 				<File Id="70517950" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_08.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_08_10C4C929.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_08_CB631199.wem</Path>
 				</File>
 				<File Id="78350251" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Death_03.wav</ShortName>
@@ -685,10 +685,6 @@
 				<File Id="104514832" Language="SFX">
 					<ShortName>HB-SFX-GenadeIce-01.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeIce-01_10C4C929.wem</Path>
-				</File>
-				<File Id="107480940" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_GetHit_01.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_01_10C4C929.wem</Path>
 				</File>
 				<File Id="110551969" Language="SFX">
 					<ShortName>FTP_ossements_pierre_03.wav</ShortName>
@@ -776,7 +772,7 @@
 				</File>
 				<File Id="178280742" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_07.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_07_10C4C929.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_07_D7BF9345.wem</Path>
 				</File>
 				<File Id="189737840" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-005.wav</ShortName>
@@ -785,10 +781,6 @@
 				<File Id="196894485" Language="SFX">
 					<ShortName>FTP_sol poussiereux_01.wav</ShortName>
 					<Path>SFX\FTP_sol poussiereux_01_10C4C929.wem</Path>
-				</File>
-				<File Id="197139135" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_GetHit_02.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_02_10C4C929.wem</Path>
 				</File>
 				<File Id="198502002" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleIN_01.wav</ShortName>
@@ -805,6 +797,10 @@
 				<File Id="203146354" Language="SFX">
 					<ShortName>FTP_sable_01.wav</ShortName>
 					<Path>SFX\FTP_sable_01_10C4C929.wem</Path>
+				</File>
+				<File Id="203857023" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Exploded_02.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_02_10C4C929.wem</Path>
 				</File>
 				<File Id="209701508" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_CanonPortee_02.wav</ShortName>
@@ -844,7 +840,7 @@
 				</File>
 				<File Id="246468043" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_01.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_01_10C4C929.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_01_F0112845.wem</Path>
 				</File>
 				<File Id="248132464" Language="SFX">
 					<ShortName>HB_Steps_Dalles_2.wav</ShortName>
@@ -852,7 +848,7 @@
 				</File>
 				<File Id="251862085" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_05.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_05_10C4C929.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_05_3573D169.wem</Path>
 				</File>
 				<File Id="254534760" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_04.wav</ShortName>
@@ -866,6 +862,10 @@
 					<ShortName>HB_SFX_ammo_01.wav</ShortName>
 					<Path>SFX\HB_SFX_ammo_01_9EE4F1CE.wem</Path>
 				</File>
+				<File Id="271455945" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_GetHit_04.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_04_10C4C929.wem</Path>
+				</File>
 				<File Id="271601829" Language="SFX">
 					<ShortName>HB_SFX_ammo_03.wav</ShortName>
 					<Path>SFX\HB_SFX_ammo_03_43970F03.wem</Path>
@@ -876,7 +876,7 @@
 				</File>
 				<File Id="277470035" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_03.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_03_10C4C929.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_03_1AFB2C70.wem</Path>
 				</File>
 				<File Id="279102213" Language="SFX">
 					<ShortName>HB-SFX-UImenu-Valid.wav</ShortName>
@@ -966,6 +966,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_05.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_05_10C4C929.wem</Path>
 				</File>
+				<File Id="360845496" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_GetHit_01.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_01_10C4C929.wem</Path>
+				</File>
 				<File Id="361072813" Language="SFX">
 					<ShortName>FTP_sable_03.wav</ShortName>
 					<Path>SFX\FTP_sable_03_10C4C929.wem</Path>
@@ -1013,10 +1017,6 @@
 				<File Id="398942520" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_EndDropShell_01_10C4C929.wem</Path>
-				</File>
-				<File Id="400962886" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_GetHit_03.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_03_10C4C929.wem</Path>
 				</File>
 				<File Id="405943385" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-02.wav</ShortName>
@@ -1082,10 +1082,6 @@
 					<ShortName>HB-SFX-UImenu-Play.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Play_10C4C929.wem</Path>
 				</File>
-				<File Id="470549954" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_Exploded_04.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_04_10C4C929.wem</Path>
-				</File>
 				<File Id="475995238" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-00.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-00_10C4C929.wem</Path>
@@ -1124,7 +1120,7 @@
 				</File>
 				<File Id="495664766" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_06.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_06_10C4C929.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_06_F7239737.wem</Path>
 				</File>
 				<File Id="502360136" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_02.wav</ShortName>
@@ -1133,6 +1129,10 @@
 				<File Id="505838822" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-02.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-02_10C4C929.wem</Path>
+				</File>
+				<File Id="508221935" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_GetHit_02.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_02_10C4C929.wem</Path>
 				</File>
 				<File Id="509917278" Language="SFX">
 					<ShortName>FTP_boue_02.wav</ShortName>
@@ -1274,17 +1274,13 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_10C4C929.wem</Path>
 				</File>
-				<File Id="627743926" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_Exploded_02.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_02_10C4C929.wem</Path>
-				</File>
 				<File Id="628955542" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_IceHit_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_IceHit_03_10C4C929.wem</Path>
 				</File>
 				<File Id="637723326" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_04.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_04_10C4C929.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_04_4F58FBE9.wem</Path>
 				</File>
 				<File Id="646026284" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_02.wav</ShortName>
@@ -1365,10 +1361,6 @@
 				<File Id="721740263" Language="SFX">
 					<ShortName>HB_SFX_ammo_02.wav</ShortName>
 					<Path>SFX\HB_SFX_ammo_02_D8E2CF04.wem</Path>
-				</File>
-				<File Id="726321482" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_Exploded_03.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_03_10C4C929.wem</Path>
 				</File>
 				<File Id="728468316" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_StartDropShell_02.wav</ShortName>
@@ -1486,9 +1478,13 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_02_2C52C4C4.wem</Path>
 				</File>
+				<File Id="883049314" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Exploded_04.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_04_10C4C929.wem</Path>
+				</File>
 				<File Id="892397347" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_02.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_02_10C4C929.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_02_C1BBB01A.wem</Path>
 				</File>
 				<File Id="895724132" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Death_02.wav</ShortName>
@@ -1502,10 +1498,6 @@
 					<ShortName>HB_SFX_Shotgun_Reload_Out_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Reload_Out_01_10C4C929.wem</Path>
 				</File>
-				<File Id="910675382" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_GetHit_04.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_04_10C4C929.wem</Path>
-				</File>
 				<File Id="914170520" Language="SFX">
 					<ShortName>HB_Footstep_HerbesSèches_01.wav</ShortName>
 					<Path>SFX\HB_Footstep_HerbesSèches_01_10C4C929.wem</Path>
@@ -1514,13 +1506,13 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_01_10C4C929.wem</Path>
 				</File>
-				<File Id="934336066" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_Exploded_01.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_01_10C4C929.wem</Path>
-				</File>
 				<File Id="937418768" Language="SFX">
 					<ShortName>HB_Footstep_SolPierre_02.wav</ShortName>
 					<Path>SFX\HB_Footstep_SolPierre_02_10C4C929.wem</Path>
+				</File>
+				<File Id="940739760" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_GetHit_03.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_03_10C4C929.wem</Path>
 				</File>
 				<File Id="943871921" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_03.wav</ShortName>
@@ -1561,6 +1553,10 @@
 				<File Id="978071521" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-01.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-01_10C4C929.wem</Path>
+				</File>
+				<File Id="984607391" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Exploded_01.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_01_10C4C929.wem</Path>
 				</File>
 				<File Id="985776297" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_02.wav</ShortName>

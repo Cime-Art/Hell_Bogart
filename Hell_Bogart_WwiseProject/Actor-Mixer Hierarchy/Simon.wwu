@@ -1913,12 +1913,13 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>5</Value>
 									</ValueList>
 								</Property>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>3</Value>
@@ -1948,6 +1949,18 @@
 							<ChildrenList>
 								<ActorMixer Name="Attack" ID="{AD455A3A-F231-48C0-87B7-6990B9D506B5}" ShortID="825118274">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
@@ -2013,6 +2026,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Attack_01" ID="{41124543-CAD3-4787-BC97-D0A271037F99}" ShortID="246468043">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.052173801369863"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Attack_01.wav</AudioFile>
 														</AudioFileSource>
@@ -2032,6 +2050,10 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Attack_02" ID="{8948C1AD-C0BC-4F14-9030-3CC9F02F0703}" ShortID="892397347">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="4.88140696347032E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Attack_02.wav</AudioFile>
 														</AudioFileSource>
@@ -2051,6 +2073,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Attack_03" ID="{7FB8BE17-8F80-4E3E-AC06-FE1D21040F97}" ShortID="277470035">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="5.50495861872146E-02"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Attack_03.wav</AudioFile>
 														</AudioFileSource>
@@ -2070,6 +2097,10 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Attack_04" ID="{59959767-BA62-4B7B-9327-9F623032B2C4}" ShortID="637723326">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="5.69165239726027E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Attack_04.wav</AudioFile>
 														</AudioFileSource>
@@ -2089,6 +2120,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Attack_05" ID="{28A6E116-C173-4671-8169-FA278D2FAFBC}" ShortID="251862085">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="5.78468892694064E-02"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Attack_05.wav</AudioFile>
 														</AudioFileSource>
@@ -2108,6 +2144,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Attack_06" ID="{CC6E6543-CC8C-476C-B56C-DF54FB94F972}" ShortID="495664766">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.050349600456621"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Attack_06.wav</AudioFile>
 														</AudioFileSource>
@@ -2127,6 +2168,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Attack_07" ID="{5C2E7521-1265-4BC1-906A-1A7DCF7B2C9A}" ShortID="178280742">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="5.39922945205479E-02"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Attack_07.wav</AudioFile>
 														</AudioFileSource>
@@ -2146,6 +2192,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Attack_08" ID="{B038B2BC-D27A-434A-BEA7-4A04A42D9431}" ShortID="70517950">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.067595747716895"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Attack_08.wav</AudioFile>
 														</AudioFileSource>
@@ -2160,6 +2211,18 @@
 								</ActorMixer>
 								<ActorMixer Name="Body Fall" ID="{E1B38731-6A0D-4B4A-BF78-7490D16161A5}" ShortID="365425641">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-14</Value>
@@ -2320,9 +2383,21 @@
 								</ActorMixer>
 								<ActorMixer Name="Scream" ID="{9CBB0521-D307-411E-8B3E-0483FE370852}" ShortID="1031313811">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2565,6 +2640,18 @@
 								</ActorMixer>
 								<ActorMixer Name="Launch Spear" ID="{4E44D763-5977-485F-8237-B4397BFDDB56}" ShortID="734542804">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -2703,18 +2790,12 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>5</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -3082,6 +3163,18 @@
 								</ActorMixer>
 								<ActorMixer Name="Death" ID="{00A0CA7D-AA98-41BB-B5E1-F9618223A506}" ShortID="505062733">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-13</Value>
@@ -3293,6 +3386,26 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Hit" ID="{63BA99EC-800A-40A7-B899-B3EDE07DF734}" ShortID="31952351">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3306,6 +3419,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
@@ -3341,6 +3459,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="SFX-HB-MobJungleCharlie-Hit-00" ID="{2FDC47CB-8D1A-40F1-AD85-1BFD6E1C0623}" ShortID="325357477">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3360,6 +3485,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="SFX-HB-MobJungleCharlie-Hit-01" ID="{45185D10-D565-4620-A09E-35566895F639}" ShortID="599094242">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3398,6 +3530,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="SFX-HB-MobJungleCharlie-Hit-03" ID="{35334DAF-060E-4A6D-B35F-6DC1D96AF8C9}" ShortID="275474797">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3417,6 +3556,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="SFX-HB-MobJungleCharlie-Hit-04" ID="{1BB3CF8E-EA27-40AF-9C11-1ADF4B8FA93F}" ShortID="205345596">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3440,6 +3586,25 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Exploded" ID="{87AEA51E-15AB-4988-8171-6627B50435AB}" ShortID="801802766">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3453,11 +3618,6 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-4</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3480,7 +3640,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{EBF0953C-524D-40EF-B698-2C2016BD2818}" ShortID="483047993">
+												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{8EC30FC8-CF28-4F66-BA69-E281088DC481}" ShortID="1067310078">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3490,16 +3650,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{9C2CB133-1A3B-4ECE-B148-8ABC5D05D3AB}" ShortID="934336066">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{68C8C831-F352-4D35-A0BB-361AFCBB0FAB}" ShortID="984607391">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Exploded_01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{9C2CB133-1A3B-4ECE-B148-8ABC5D05D3AB}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{68C8C831-F352-4D35-A0BB-361AFCBB0FAB}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{B9B24129-2056-48AF-8858-007CB8248175}" ShortID="1054006910">
+												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{A8334DA1-E2E4-4735-B05C-6D064BF8BF32}" ShortID="885368183">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3509,16 +3669,23 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{D5ECD8ED-D1BF-46DB-AB5C-C7C23D4B3EB0}" ShortID="627743926">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{9DBB2271-9777-4F65-A2C4-9C5168286C9C}" ShortID="203857023">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Exploded_02.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{D5ECD8ED-D1BF-46DB-AB5C-C7C23D4B3EB0}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{9DBB2271-9777-4F65-A2C4-9C5168286C9C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{E3EDD025-EEB5-4E64-BEB4-EA6B71540FB2}" ShortID="90675191">
+												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{337E1B79-D80F-435D-A8A5-FDD5B5BC228D}" ShortID="431521236">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3528,16 +3695,21 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{9E75B4E2-A1BE-4D9F-853A-F1890E1EF15B}" ShortID="726321482">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{F6C69663-4CC1-4061-A482-A6EEE286D716}" ShortID="816482091">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="6.75379922945205E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.16121575342466E-02"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Exploded_03.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{9E75B4E2-A1BE-4D9F-853A-F1890E1EF15B}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{F6C69663-4CC1-4061-A482-A6EEE286D716}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{D0C2510D-7842-411C-825F-94A5D12A9656}" ShortID="722965796">
+												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{4FA35E52-7B71-48E6-AA5D-8AD5FEEA538B}" ShortID="145626105">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3547,13 +3719,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{A1CEE00C-E77D-44BB-91CC-5BEBB024FF53}" ShortID="470549954">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{FFA5991E-1310-47E9-B7BA-38E66279EA8A}" ShortID="883049314">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Exploded_04.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{A1CEE00C-E77D-44BB-91CC-5BEBB024FF53}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{FFA5991E-1310-47E9-B7BA-38E66279EA8A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -3904,6 +4076,26 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Get Hit" ID="{5BB4CFB6-2DF1-4001-BB23-37E42A7E576C}" ShortID="84794890">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3915,11 +4107,12 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="MobJungleCharlie_GetHit_MAIN_RND" ID="{5A6B34C4-EEC3-4723-8C4C-56D87B73C34A}" ShortID="462280827">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64">
+												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>5</Value>
+														<Value>10</Value>
 													</ValueList>
 												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -3930,154 +4123,80 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="SFX_HB_MobJungleCharlie_GetHit_01" ID="{67EE6811-961B-4BE2-91F9-3263857AE0D0}" ShortID="56687295">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>10</Value>
-															</ValueList>
-														</Property>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
-													</PropertyList>
+												<Sound Name="SFX_HB_MobJungleCharlie_GetHit_01" ID="{F4B2CAFC-3225-488C-A8D5-7F3053C151FC}" ShortID="5803453">
 													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
-														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend1">
-															<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend2">
-															<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_01" ID="{D2F5D15C-B493-455C-89F9-9F8CEE06F76A}" ShortID="107480940">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_01" ID="{A6DE4BA4-64E1-4640-8223-4288402E7B76}" ShortID="360845496">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_GetHit_01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_GetHit_01" ID="{D2F5D15C-B493-455C-89F9-9F8CEE06F76A}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_GetHit_01" ID="{A6DE4BA4-64E1-4640-8223-4288402E7B76}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_MobJungleCharlie_GetHit_02" ID="{94B666F1-1CF6-4F99-B8FE-851EEEC0A19F}" ShortID="134680260">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>20</Value>
-															</ValueList>
-														</Property>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
-													</PropertyList>
+												<Sound Name="SFX_HB_MobJungleCharlie_GetHit_02" ID="{99C38486-707E-40D1-B13E-A1F9F4B70BC0}" ShortID="22120117">
 													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
-														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend1">
-															<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend2">
-															<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_02" ID="{8276BD9B-443A-4FC1-BA8E-CED6466BB792}" ShortID="197139135">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_02" ID="{6F6CC3DC-07E0-499F-B05D-B44E0BCF3E15}" ShortID="508221935">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_GetHit_02.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_GetHit_02" ID="{8276BD9B-443A-4FC1-BA8E-CED6466BB792}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_GetHit_02" ID="{6F6CC3DC-07E0-499F-B05D-B44E0BCF3E15}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_MobJungleCharlie_GetHit_03" ID="{D1E19E2E-44FE-47F5-A611-EA743A9111A5}" ShortID="481887001">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
-													</PropertyList>
+												<Sound Name="SFX_HB_MobJungleCharlie_GetHit_03" ID="{1ED55945-090F-4F71-B18B-90E068DA2D3A}" ShortID="901656988">
 													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
-														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend1">
-															<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend2">
-															<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_03" ID="{26CD34D7-077D-4FAB-B2C1-C2509C86C986}" ShortID="400962886">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_03" ID="{0A81DD99-4940-4364-896D-A295F6114267}" ShortID="940739760">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_GetHit_03.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_GetHit_03" ID="{26CD34D7-077D-4FAB-B2C1-C2509C86C986}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_GetHit_03" ID="{0A81DD99-4940-4364-896D-A295F6114267}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_MobJungleCharlie_GetHit_04" ID="{18108FA1-A19B-4C79-8986-60EFD181E0ED}" ShortID="845661119">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
-													</PropertyList>
+												<Sound Name="SFX_HB_MobJungleCharlie_GetHit_04" ID="{C446444E-41F3-4C04-BCE6-620C7371F905}" ShortID="381791240">
 													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
-														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend1">
-															<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend2">
-															<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_04" ID="{71A6B859-1E53-409D-AA19-4C3ABC170B09}" ShortID="910675382">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_04" ID="{DC5B30C3-5912-47C8-9244-25193020C6EB}" ShortID="271455945">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_GetHit_04.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_GetHit_04" ID="{71A6B859-1E53-409D-AA19-4C3ABC170B09}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_GetHit_04" ID="{DC5B30C3-5912-47C8-9244-25193020C6EB}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
