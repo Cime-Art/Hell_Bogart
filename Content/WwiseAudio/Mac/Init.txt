@@ -68,7 +68,6 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
-	1588715066	Echoes_Linear	Wwise Delay			
 	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
 	3442768367	Hall_Large_Dark	Wwise RoomVerb			
 
