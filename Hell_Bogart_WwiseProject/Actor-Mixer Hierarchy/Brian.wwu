@@ -11,29 +11,17 @@
 					<ChildrenList>
 						<ActorMixer Name="MIX_Grenade" ID="{BAE3BDFB-7925-4868-861B-828188502EA4}" ShortID="1029881172">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Color" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Att_Grenade" ID="{5AD52D86-47B8-4C77-BCF8-56E9AEB30E1A}" WorkUnitID="{42C153B7-22D5-46E6-BD43-9CCEF4DD7BFB}"/>
-								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Acoustics_BUS" ID="{D0A15373-28FF-4CA5-9B3B-21597792E936}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-								<Reference Name="UserAuxSend1">
-									<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-								<Reference Name="UserAuxSend2">
-									<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -78,10 +66,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Commun" ID="{6FCEA347-5618-4134-B859-77236C5CDF6B}" ShortID="627441892">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -101,10 +85,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Legendary" ID="{E1707B98-7D09-444B-922B-1655196DBA31}" ShortID="952333405">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -124,10 +104,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Epic" ID="{640453AA-CF68-42F0-8002-C2544937F88E}" ShortID="878397067">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -202,10 +178,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Commun" ID="{94424C85-2F36-44A7-A4D2-729D6C3098C7}" ShortID="372168138">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -225,10 +197,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Legendary" ID="{9017703E-F69B-4D32-A9A2-0EE2CDB1D0D4}" ShortID="886949862">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -248,10 +216,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Epic" ID="{45B49742-FC2E-434A-9881-682DFB72F213}" ShortID="404045601">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -326,10 +290,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Commun" ID="{DB0A8C47-89B3-456B-AC89-3ED2AD0AA42A}" ShortID="589240274">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -349,10 +309,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Legendary" ID="{F3A287DC-DEE9-4962-A0BF-80D3F9E50FD3}" ShortID="145629748">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -372,10 +328,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Epic" ID="{7FE2488A-1077-4742-ACF3-AEF0A633286B}" ShortID="85884282">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -450,10 +402,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Commun" ID="{68B77280-7ADF-4177-8BC7-94CB063E235E}" ShortID="117816027">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -473,10 +421,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Legendary" ID="{2AB006B9-A7EB-4BF5-88D4-FF170594C061}" ShortID="350530266">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -496,10 +440,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Epic" ID="{967DD1D9-F0CA-454B-A8DA-C5D25738FEA5}" ShortID="758828941">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
