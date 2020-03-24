@@ -489,6 +489,7 @@
 				<Event Id="3359588815" Name="E_SetAcoustic_BossArena" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_BossArena"/>
 				<Event Id="1975484871" Name="E_SetAcoustic_Exterior" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Exterior"/>
 				<Event Id="1418412915" Name="E_SetAcoustic_Ruines" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Ruines"/>
+				<Event Id="355937833" Name="E_Traps_SpikeTrap" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap"/>
 				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
 				<Event Id="842152325" Name="E_UI_Option" ObjectPath="\Events\Brian\UI\E_UI_Option"/>
 				<Event Id="2920923470" Name="E_UI_Overlay" ObjectPath="\Events\Brian\UI\E_UI_Overlay"/>
@@ -653,6 +654,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_08.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_08_10C4C929.wem</Path>
 				</File>
+				<File Id="78350251" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Death_03.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Death_03_10C4C929.wem</Path>
+				</File>
 				<File Id="78832806" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_NoChamber_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_NoChamber_01_10C4C929.wem</Path>
@@ -793,6 +798,10 @@
 					<ShortName>HB_Footstep_HerbesSèches_03.wav</ShortName>
 					<Path>SFX\HB_Footstep_HerbesSèches_03_10C4C929.wem</Path>
 				</File>
+				<File Id="201532359" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_01.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_01_10C4C929.wem</Path>
+				</File>
 				<File Id="203146354" Language="SFX">
 					<ShortName>FTP_sable_01.wav</ShortName>
 					<Path>SFX\FTP_sable_01_10C4C929.wem</Path>
@@ -880,6 +889,10 @@
 				<File Id="287228049" Language="SFX">
 					<ShortName>Shell_Concrete_03.wav</ShortName>
 					<Path>SFX\Shell_Concrete_03_10C4C929.wem</Path>
+				</File>
+				<File Id="290530205" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Death_01.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Death_01_10C4C929.wem</Path>
 				</File>
 				<File Id="302458388" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-002.wav</ShortName>
@@ -1249,6 +1262,10 @@
 					<ShortName>HB-SFX-UImenu-Overlay.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Overlay_10C4C929.wem</Path>
 				</File>
+				<File Id="621841728" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_02_10C4C929.wem</Path>
+				</File>
 				<File Id="623124765" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_08.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_08_872ACF78.wem</Path>
@@ -1473,6 +1490,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_02_10C4C929.wem</Path>
 				</File>
+				<File Id="895724132" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Death_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Death_02_10C4C929.wem</Path>
+				</File>
 				<File Id="909569087" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Fight_TransitionBegin.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_Fight_TransitionBegin_D79FB2B7.wem</Path>
@@ -1500,6 +1521,10 @@
 				<File Id="937418768" Language="SFX">
 					<ShortName>HB_Footstep_SolPierre_02.wav</ShortName>
 					<Path>SFX\HB_Footstep_SolPierre_02_10C4C929.wem</Path>
+				</File>
+				<File Id="943871921" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_03.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_03_10C4C929.wem</Path>
 				</File>
 				<File Id="945167861" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-03.wav</ShortName>

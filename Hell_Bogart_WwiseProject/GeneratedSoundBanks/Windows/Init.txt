@@ -1,6 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	916310236	Ammo_Type_STATE			\Simon\Items\Ammo_Type_STATE	
 	1573985144	AmbToFight_STATE			\Brian\Musique\AmbToFight_STATE	
+	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
 	2069469294	Acoustic_STATE			\Simon\Global\Acoustic_STATE	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
 	3826569560	Music_STATE			\Simon\Music\Music_STATE	
@@ -18,6 +19,9 @@ State	ID	Name	State Group			Notes
 	1235729018	Ruin_Combat	AmbToFight_STATE			
 	2361306101	Ruin_End	AmbToFight_STATE			
 	3968964982	Ruin_Ambiance	AmbToFight_STATE			
+	0	None	IsInATrap_STATE			
+	645492555	Out	IsInATrap_STATE			
+	1752637612	In	IsInATrap_STATE			
 	0	None	Acoustic_STATE			
 	2213992659	Exterior	Acoustic_STATE			
 	3265560855	Ruines	Acoustic_STATE			
