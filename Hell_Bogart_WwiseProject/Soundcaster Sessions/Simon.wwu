@@ -85,7 +85,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
-							<Value>0</Value>
+							<Value>3000</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
@@ -97,7 +97,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
+						<CurrentStateRef Name="Fire" ID="{50764EF1-8C40-4B5A-8672-41C948DE7270}"/>
 						<CurrentStateRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
