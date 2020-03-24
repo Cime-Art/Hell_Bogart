@@ -589,6 +589,21 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Traps" ID="{23C7724F-3F1E-4ED6-817D-50474523B8E9}" ShortID="345295909">
+					<ChildrenList>
+						<Event Name="E_Traps_SpikeTrap" ID="{AEDF05AF-CCF6-44D5-BFD9-BE593DE36942}">
+							<ChildrenList>
+								<Action Name="" ID="{FEB48356-A508-4468-8051-2E8CE1CE64FD}" ShortID="545532106">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spike_Trap_SEQ" ID="{12F0FFA5-C6F7-4A3B-B631-8540EF21BC28}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

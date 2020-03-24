@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	102331918	E_Mus_SetFightState			\Simon\Music\Jungle\E_Mus_SetFightState	
+	355937833	E_Traps_SpikeTrap			\Simon\Traps\E_Traps_SpikeTrap	
 	694853374	E_Mob_JungleCharlie_Attack			\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack	
 	762198780	E_UI_Play			\Brian\UI\E_UI_Play	
 	842152325	E_UI_Option			\Brian\UI\E_UI_Option	
@@ -71,6 +72,7 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	916310236	Ammo_Type_STATE			\Simon\Items\Ammo_Type_STATE	
+	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
 	3826569560	Music_STATE			\Simon\Music\Music_STATE	
 	4121978141	Shotgun_Equiped_STATE			\Simon\Items\Shotgun_Equiped_STATE	
@@ -83,6 +85,9 @@ State	ID	Name	State Group			Notes
 	344481046	Ice	Ammo_Type_STATE			
 	2628937827	Regular	Ammo_Type_STATE			
 	2678880713	Fire	Ammo_Type_STATE			
+	0	None	IsInATrap_STATE			
+	645492555	Out	IsInATrap_STATE			
+	1752637612	In	IsInATrap_STATE			
 	0	None	Chamber_Type_STATE			
 	252199009	Spread_60	Chamber_Type_STATE			
 	419409252	Spread_180	Chamber_Type_STATE			
@@ -112,6 +117,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Trigger	ID	Name			Wwise Object Path	Notes
 	851152099	T_Jungle_TresorFound			\Simon\T_Jungle_TresorFound	
 
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	413377738	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\Traps\Traps\Spike Trap\Spike_Trap_SEQ\IsInSpikeTrap_SWITCH\Silence\Wwise Silence	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12908966	HB_SFX_Uiwep_Equip2	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Uiwep_Equip2_BCF095EF.wem		\Actor-Mixer Hierarchy\Chris\UIweps\RND_EquipItem\HB_SFX_Uiwep_Equip2		120788
 	14777753	SFX_HB_MobJungleCharlie_Death_05	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Death_05_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Death\Death_MobJungleCharlie\SFX_HB_MobJungleCharlie_Death_05		180218
@@ -122,6 +130,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	58330489	SF-DS Weapon Projectile 03_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SF-DS Weapon Projectile 03_01_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\MiniGun_Fire\Fire\Shoot_02\SF-DS Weapon Projectile 03_01		126840
 	64327808	SFX_HB_MobJungleCharlie_FireHit_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_FireHit_04_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Get Hit\MobJungleCharlie_GetHit_ELEMENT_SWITCH\MobJungleCharlie_GetHit_Fire_RND\SFX_HB_MobJungleCharlie_FireHit_04		140544
 	70517950	SFX_HB_MobJungleCharlie_Attack_08	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Attack_08_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Attack\Attack_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Attack_08		122312
+	78350251	SFX_HB_Traps_SpikeTrap_Death_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Traps_SpikeTrap_Death_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Traps\Traps\Spike Trap\Spike_Trap_SEQ\IsInSpikeTrap_SWITCH\SpikeTrap_Death_RND\SFX_HB_Traps_SpikeTrap_Death_03		111068
 	78832806	HB_SFX_Shotgun_NoChamber_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_NoChamber_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\No_Chamber_RND\HB_SFX_Shotgun_NoChamber_01		16106
 	89815110	Legendary	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Genade-02_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Regular\Legendary		416796
 	94451676	Shell_Gravel_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Shell_Gravel_03_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Gravel\Shell_Gravel_03		36512
@@ -157,6 +166,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	197139135	SFX_HB_MobJungleCharlie_GetHit_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_GetHit_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Get Hit\MobJungleCharlie_GetHit_MAIN_RND\SFX_HB_MobJungleCharlie_GetHit_02		40854
 	198502002	SFX_HB_MobJungleCharlie_v2_IddleIN_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_v2_IddleIN_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Iddle\Iddle_MobJungleCharlie_Voice_SEQ\Iddle_Mob_BreathIN_RND\SFX_HB_MobJungleCharlie_v2_IddleIN_01		217784
 	198642157	HB_Footstep_HerbesSèches_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_Footstep_HerbesSèches_03_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\FTP_surface_type_switch\FTP_Herbes_seches_RND\HB_Footstep_HerbesSèches_03		88264
+	201532359	SFX_HB_Traps_SpikeTrap_Trigger_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Traps_SpikeTrap_Trigger_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Traps\Traps\Spike Trap\Spike_Trap_SEQ\SpikeTrap_Triggered_RND\SFX_HB_Traps_SpikeTrap_Trigger_01		198312
 	203146354	FTP_sable_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\FTP_sable_01_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\FTP_surface_type_switch\FTP_Sable_RND\FTP_sable_01		22576
 	209701508	HB_SFX_Shotgun_CanonPortee_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_CanonPortee_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Canon_Type_SWITCH\Canon_Portee_RND\HB_SFX_Shotgun_CanonPortee_02		105436
 	215037878	Shell_Gravel_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Shell_Gravel_02_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Gravel\Shell_Gravel_02		53294
@@ -179,6 +189,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	279102213	HB-SFX-UImenu-Valid	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-UImenu-Valid_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\UI\MIX_UI\HB-SFX-UImenu-Valid		38780
 	282797728	SFX_HB_MobJungleCharlie_v2_IddleOUT_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_v2_IddleOUT_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Iddle\Iddle_MobJungleCharlie_Voice_SEQ\Iddle_Mob_BreathOUT_RND\SFX_HB_MobJungleCharlie_v2_IddleOUT_02		235220
 	287228049	Shell_Concrete_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Shell_Concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Concrete\Shell_Concrete_03		125812
+	290530205	SFX_HB_Traps_SpikeTrap_Death_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Traps_SpikeTrap_Death_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Traps\Traps\Spike Trap\Spike_Trap_SEQ\IsInSpikeTrap_SWITCH\SpikeTrap_Death_RND\SFX_HB_Traps_SpikeTrap_Death_01		77820
 	302458388	SFX_HB_MobJungleCharlie_GenericBodyFall_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_GenericBodyFall_01-002_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Body Fall\GenericBodyFall_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_GenericBodyFall_02		113716
 	303224884	FTP_sol sec_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\FTP_sol sec_03_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\FTP_surface_type_switch\FTP_Sol_sec_RND\FTP_sol sec_03		19088
 	305038015	HB_SFX_Shotgun_ThunderAmmo_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_ThunderAmmo_02_ED91B86A.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Thunder_Ammo_RND\HB_SFX_Shotgun_ThunderAmmo_02		48796
@@ -271,6 +282,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	600781554	HB_FTP_Flaque_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_FTP_Flaque_01_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\FTP_surface_type_switch\FTP_Flaques_RND\HB_FTP_Flaque_01		24914
 	605531044	FTP_metal_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\FTP_metal_02_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\FTP_surface_type_switch\FTP_Metal_RND\FTP_metal_02		17032
 	614136027	HB-SFX-UImenu-Overlay	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-UImenu-Overlay_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\UI\MIX_UI\HB-SFX-UImenu-Overlay		76596
+	621841728	SFX_HB_Traps_SpikeTrap_Trigger_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Traps_SpikeTrap_Trigger_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Traps\Traps\Spike Trap\Spike_Trap_SEQ\SpikeTrap_Triggered_RND\SFX_HB_Traps_SpikeTrap_Trigger_02		202972
 	623124765	SFX_HB_MobJungleCharlie_Charge_08	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Charge_08_872ACF78.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Scream\Charge_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Charge_08		146462
 	626546830	SFX_HB_MobJungleCharlie_v2_IddleFoley_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Iddle\Iddle_MobJungleCharlie_Foleys_RND\SFX_HB_MobJungleCharlie_v2_IddleFoley_03		190594
 	627743926	SFX_HB_MobJungleCharlie_Exploded_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Exploded_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Exploded\Exploded_Bones_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Exploded_02		126658
@@ -327,6 +339,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	879127390	Low Boom End	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_JUNGLE_BigDrum_EndFight_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\Jungle\Transitions\Mus_Jungle_Transi_EndFight\Low Boom End		1152064
 	879344485	SFX_HB_MobJungleCharlie_Charge_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Charge_02_2C52C4C4.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Scream\Charge_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Charge_02		174378
 	892397347	SFX_HB_MobJungleCharlie_Attack_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Attack_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Attack\Attack_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Attack_02		124460
+	895724132	SFX_HB_Traps_SpikeTrap_Death_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Traps_SpikeTrap_Death_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Traps\Traps\Spike Trap\Spike_Trap_SEQ\IsInSpikeTrap_SWITCH\SpikeTrap_Death_RND\SFX_HB_Traps_SpikeTrap_Death_02		149844
 	909569087	MUS_HB_Jungle_Fight_TransitionBegin	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_Fight_TransitionBegin_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\Jungle\Transitions\Mus_Jungle_Transi_BeginFight\MUS_HB_Jungle_Fight_TransitionBegin		1536064
 	910590706	HB_SFX_Shotgun_Reload_Out_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Reload_Out_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\OutIn_SEQ\Reload_Out\HB_SFX_Shotgun_Reload_Out_01		29526
 	910675382	SFX_HB_MobJungleCharlie_GetHit_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_GetHit_04_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Get Hit\MobJungleCharlie_GetHit_MAIN_RND\SFX_HB_MobJungleCharlie_GetHit_04		48566
@@ -334,6 +347,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	932358588	SFX_HB_MobJungleCharlie_v2_IddleFoley_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Iddle\Iddle_MobJungleCharlie_Foleys_RND\SFX_HB_MobJungleCharlie_v2_IddleFoley_01		112882
 	934336066	SFX_HB_MobJungleCharlie_Exploded_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Exploded_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Exploded\Exploded_Bones_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Exploded_01		145778
 	937418768	HB_Footstep_SolPierre_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_Footstep_SolPierre_02_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\FTP_surface_type_switch\FTP_Sol_pierre_RND\HB_Footstep_SolPierre_02		88264
+	943871921	SFX_HB_Traps_SpikeTrap_Trigger_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Traps_SpikeTrap_Trigger_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Traps\Traps\Spike Trap\Spike_Trap_SEQ\SpikeTrap_Triggered_RND\SFX_HB_Traps_SpikeTrap_Trigger_03		209480
 	945167861	SFX-HB-MobJungleCharlie-Hit-03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX-HB-MobJungleCharlie-Hit-03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Hit\Hit_MobJungleCharlie\SFX-HB-MobJungleCharlie-Hit-03		24384
 	946150559	SFX-HB-MobJungleCharlie-SpearLaunch-04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX-HB-MobJungleCharlie-SpearLaunch-04_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Launch Spear\LaunchSpear_MobJungleCharlie_RND\SFX-HB-MobJungleCharlie-SpearLaunch-04		114474
 	948793202	HB_SFX_UiWep_Equip5	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_UiWep_Equip5_3063DED4.wem		\Actor-Mixer Hierarchy\Chris\UIweps\RND_EquipItem\HB_SFX_UiWep_Equip5		491612

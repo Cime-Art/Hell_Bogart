@@ -82,6 +82,17 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Traps" ID="{3056DA3E-F8D3-4CCA-9080-B1D86ADD39B8}" ShortID="972726749">
+					<ChildrenList>
+						<StateGroup Name="IsInATrap_STATE" ID="{0C19F3F3-2D7D-4B36-8CE0-DAF275765A4E}">
+							<ChildrenList>
+								<State Name="None" ID="{A062BEF1-9176-42B0-96D8-9A8B90BBB40C}"/>
+								<State Name="In" ID="{F0DD71A8-59AA-4F09-9732-5FBFA0055581}"/>
+								<State Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
