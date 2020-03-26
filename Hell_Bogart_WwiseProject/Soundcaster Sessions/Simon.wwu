@@ -90,8 +90,16 @@
 							<Position X="5" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_StoneDoorRiddle_Opening" ID="{1B6E7126-E1E7-4F8B-A8F3-42C0C51A1B7B}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_BigStoneDoor_Stop" ID="{0F44ECC8-0C4B-4A06-B809-BF7009EBAB35}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="6" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_StoneDoorRiddle_Stop" ID="{4DB9CC59-B87F-4268-8ECB-9B686D86FDA2}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="6" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
