@@ -234,7 +234,16 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+									<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend2">
+									<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 								</Reference>
 							</ReferenceList>
 						</ActorMixer>
@@ -3766,7 +3775,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{8EC30FC8-CF28-4F66-BA69-E281088DC481}" ShortID="1067310078">
+												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{91DAFB41-3EC5-48D3-9984-44667AFBABBE}" ShortID="935587681">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3776,16 +3785,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{68C8C831-F352-4D35-A0BB-361AFCBB0FAB}" ShortID="984607391">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{FEE57909-03CD-4433-896E-2AC34B85480F}" ShortID="242927382">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Exploded_01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{68C8C831-F352-4D35-A0BB-361AFCBB0FAB}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_01" ID="{FEE57909-03CD-4433-896E-2AC34B85480F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{A8334DA1-E2E4-4735-B05C-6D064BF8BF32}" ShortID="885368183">
+												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{AD8ACC61-8A13-4F82-B84B-2431DEF22D57}" ShortID="846731922">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3795,23 +3804,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{9DBB2271-9777-4F65-A2C4-9C5168286C9C}" ShortID="203857023">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{0D48E16C-0E60-47BB-9C60-43569B7AD2B4}" ShortID="681370907">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Exploded_02.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{9DBB2271-9777-4F65-A2C4-9C5168286C9C}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_02" ID="{0D48E16C-0E60-47BB-9C60-43569B7AD2B4}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{337E1B79-D80F-435D-A8A5-FDD5B5BC228D}" ShortID="431521236">
-													<PropertyList>
-														<Property Name="Inclusion" Type="bool">
-															<ValueList>
-																<Value>False</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
+												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{06334C9A-E5B4-4586-9A11-0E93922CA37D}" ShortID="19128963">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3821,21 +3823,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{F6C69663-4CC1-4061-A482-A6EEE286D716}" ShortID="816482091">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="6.75379922945205E-02"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="2.16121575342466E-02"/>
-															</PropertyList>
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{1BDA1C5F-610C-46D1-9235-79C691B22817}" ShortID="672867481">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Exploded_03.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{F6C69663-4CC1-4061-A482-A6EEE286D716}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_03" ID="{1BDA1C5F-610C-46D1-9235-79C691B22817}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{4FA35E52-7B71-48E6-AA5D-8AD5FEEA538B}" ShortID="145626105">
+												<Sound Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{5095BFA0-554C-4A61-9B1D-1BB97FC4589E}" ShortID="892113097">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3845,13 +3842,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{FFA5991E-1310-47E9-B7BA-38E66279EA8A}" ShortID="883049314">
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{B86315A0-DE62-4EE1-9F23-C08869E9E9F0}" ShortID="446615788">
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_Exploded_04.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{FFA5991E-1310-47E9-B7BA-38E66279EA8A}" Platform="Linked"/>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Exploded_04" ID="{B86315A0-DE62-4EE1-9F23-C08869E9E9F0}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -4211,11 +4208,6 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>8</Value>
@@ -4238,7 +4230,19 @@
 														<Value>10</Value>
 													</ValueList>
 												</Property>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -4260,6 +4264,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_01" ID="{A6DE4BA4-64E1-4640-8223-4288402E7B76}" ShortID="360845496">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="3.02791452625571E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.297600742009132"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_GetHit_01.wav</AudioFile>
 														</AudioFileSource>
@@ -4279,6 +4288,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_02" ID="{6F6CC3DC-07E0-499F-B05D-B44E0BCF3E15}" ShortID="508221935">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.81890339611872E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.284476491152968"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_GetHit_02.wav</AudioFile>
 														</AudioFileSource>
@@ -4298,6 +4312,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_03" ID="{0A81DD99-4940-4364-896D-A295F6114267}" ShortID="940739760">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="3.95522973744292E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.378571989155251"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_GetHit_03.wav</AudioFile>
 														</AudioFileSource>
@@ -4317,6 +4336,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="SFX_HB_MobJungleCharlie_GetHit_04" ID="{DC5B30C3-5912-47C8-9244-25193020C6EB}" ShortID="271455945">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.73023687214612E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.339991545376712"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>SFX_HB_MobJungleCharlie_GetHit_04.wav</AudioFile>
 														</AudioFileSource>
@@ -4328,6 +4352,20 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<SwitchContainer Name="MobJungleCharlie_GetHit_ELEMENT_SWITCH" ID="{193EC443-EB3D-4159-B3C0-AC820B519F34}" ShortID="791207744">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -4346,6 +4384,11 @@
 												<RandomSequenceContainer Name="MobJungleCharlie_GetHit_Fire_RND" ID="{51B028D0-AEC0-4BDC-9ED3-A477507BFDA6}" ShortID="206715736">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>23</Value>
+															</ValueList>
+														</Property>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 													</PropertyList>
 													<ReferenceList>
@@ -5155,6 +5198,578 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Destructibles" ID="{91325FD5-A228-4DCE-8922-8CAE16FBDEF3}" ShortID="698049496">
+					<ChildrenList>
+						<ActorMixer Name="Destructibles" ID="{F56D3C1D-156E-4A4B-9B80-236B84230D62}" ShortID="431852829">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend2">
+									<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Destroy_Object_SWITCH" ID="{00421940-28A7-45E0-81D5-13A5513592F2}" ShortID="908104506">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Stone" ID="{1A092FB0-3C81-4E82-B338-2045227D7034}" WorkUnitID="{6ADE16AE-6F5A-4248-8BB4-52C7CF374A31}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Destroyed_Object_Type_SWITCH" ID="{8D318D4F-5588-4172-B95A-E4B5BDACB4E9}" WorkUnitID="{6ADE16AE-6F5A-4248-8BB4-52C7CF374A31}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Destroy_Jarre_RND" ID="{D06B175E-72F4-4060-9E25-4B1901A6E5D2}" ShortID="984219182">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B7B44CB7-B3B9-4F8E-A9CC-038352A217AB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_Destructibles_Jarre_01" ID="{B6AEB815-CA08-4083-B571-75895FDC4D27}" ShortID="1032954669">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Jarre_01" ID="{FC651A2C-E03C-4591-8B3E-652208F30718}" ShortID="162369242">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Jarre_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Jarre_01" ID="{FC651A2C-E03C-4591-8B3E-652208F30718}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Jarre_02" ID="{08C1270C-1683-4E68-A41C-C17B78ACA423}" ShortID="166103881">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Jarre_02" ID="{C4642352-D87A-4046-B3FA-52980114A2AA}" ShortID="500196847">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Jarre_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Jarre_02" ID="{C4642352-D87A-4046-B3FA-52980114A2AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Jarre_03" ID="{0517ED37-C2BE-4AB1-A1C1-5E9BD64F54A4}" ShortID="976638381">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Jarre_03" ID="{C4B17A13-FAA4-4FDE-A5DC-51124F872E77}" ShortID="850278687">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Jarre_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Jarre_03" ID="{C4B17A13-FAA4-4FDE-A5DC-51124F872E77}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Destroy_Planche_RND" ID="{A5B4678D-A4AE-4E11-962E-5273194F7708}" ShortID="28173461">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_Destructibles_Planches_01" ID="{23EDDFBA-4E58-4150-B77D-B654AE60411E}" ShortID="673734621">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Planches_01" ID="{1B2B847A-1678-46BE-A95B-264339372F0C}" ShortID="903659593">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Planches_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Planches_01" ID="{1B2B847A-1678-46BE-A95B-264339372F0C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Planches_02" ID="{8808CDF6-4906-4ECD-8133-A4C8E7500887}" ShortID="535210061">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Planches_02" ID="{FDD11752-9353-412C-976A-90ED480EAB1A}" ShortID="436110025">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Planches_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Planches_02" ID="{FDD11752-9353-412C-976A-90ED480EAB1A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Planches_03" ID="{43BEF0C9-C4AB-402B-8AE1-E7175D5FA6B8}" ShortID="407634104">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Planches_03" ID="{E662BFF5-AFA3-4137-A772-785A703B9EE0}" ShortID="527715797">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Planches_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Planches_03" ID="{E662BFF5-AFA3-4137-A772-785A703B9EE0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Destroy_Stone_RND" ID="{D65D5222-246D-4075-9F98-50E6E38446D7}" ShortID="407644336">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_Destructibles_Stone_01" ID="{02C5A809-CE2C-41CB-8AEE-80C6305E48E8}" ShortID="255290638">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Stone_01" ID="{CF487D29-94A6-4C7E-A53D-66F7C8B7AB9C}" ShortID="802288181">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Stone_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Stone_01" ID="{CF487D29-94A6-4C7E-A53D-66F7C8B7AB9C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Stone_02" ID="{6322D8EB-DFC3-40D3-8D92-035C26869A39}" ShortID="212557682">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Stone_02" ID="{A3722004-A667-4E53-A3D5-2AE058BB5A3A}" ShortID="452145211">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Stone_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Stone_02" ID="{A3722004-A667-4E53-A3D5-2AE058BB5A3A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Stone_03" ID="{272C96BD-F430-482A-9BC9-CB5473010532}" ShortID="554271301">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Stone_03" ID="{80DCBC88-C737-4312-A259-0067C3E63AD8}" ShortID="282251612">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Stone_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Stone_03" ID="{80DCBC88-C737-4312-A259-0067C3E63AD8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Destroy_Tonneau_RND" ID="{008CCB54-DB8B-4865-810F-2D61F5685E94}" ShortID="530176904">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AFA1595D-1613-42A1-819B-71809FD8C49A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_Destructibles_Tonneau_01" ID="{5A5747F7-6556-4F5D-A272-EED35D0D0A55}" ShortID="826949443">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Tonneau_01" ID="{B6E776DE-5605-4608-88E6-0B1942D7CA5F}" ShortID="347316120">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Tonneau_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Tonneau_01" ID="{B6E776DE-5605-4608-88E6-0B1942D7CA5F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Tonneau_02" ID="{D17C18A0-A707-4A99-AE09-FDD8C8A252E9}" ShortID="36679767">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Tonneau_02" ID="{EFA2555A-EC59-414C-AF42-B1C975FC5F1E}" ShortID="361573215">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Tonneau_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Tonneau_02" ID="{EFA2555A-EC59-414C-AF42-B1C975FC5F1E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Tonneau_03" ID="{E27C3BFB-EF27-4230-981A-A3B983D3B8CD}" ShortID="362586261">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Tonneau_03" ID="{D7C87D47-B639-4E05-9EBF-376141C92ED7}" ShortID="322036231">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Tonneau_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Tonneau_03" ID="{D7C87D47-B639-4E05-9EBF-376141C92ED7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Destroy_Tronc_RND" ID="{2F319B0E-DB1E-4B3E-8265-CB1709345E5C}" ShortID="607392764">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_Destructibles_Tronc_01" ID="{B5AB0770-5F5D-4E49-9331-E316557804FE}" ShortID="148724589">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Tronc_01" ID="{2B9109B8-5DDB-4207-8E85-6AC12E144AD4}" ShortID="286725655">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Tronc_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Tronc_01" ID="{2B9109B8-5DDB-4207-8E85-6AC12E144AD4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Tronc_02" ID="{52088CDD-EEC2-47C3-A32C-008FBF56E136}" ShortID="958757406">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Tronc_02" ID="{AC71BDFB-7EDB-4F7E-8131-88B773FC3F3F}" ShortID="720473691">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Tronc_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Tronc_02" ID="{AC71BDFB-7EDB-4F7E-8131-88B773FC3F3F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Tronc_03" ID="{EDC12115-51B4-4CB2-B5E2-8719066B2376}" ShortID="229243226">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Tronc_03" ID="{6775BCA1-47D9-4B2C-B8AB-851C18439DC3}" ShortID="148808536">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Tronc_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Tronc_03" ID="{6775BCA1-47D9-4B2C-B8AB-851C18439DC3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Destroy_WallStone_RND" ID="{EC686103-FAE3-4F17-93DA-ACC4F5A45593}" ShortID="156891065">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_Destructibles_Wallstone_01" ID="{0F47F63A-D8F2-4503-9E18-04600009E3EA}" ShortID="575437200">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Wallstone_01" ID="{9C5D66F6-C7F5-431B-91A5-791129B2ABF9}" ShortID="261990251">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Wallstone_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Wallstone_01" ID="{9C5D66F6-C7F5-431B-91A5-791129B2ABF9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Wallstone_02" ID="{2BF70F8D-EA89-4AFD-B672-8B78EB23526A}" ShortID="341077861">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Wallstone_02" ID="{8274E5E1-E255-4D5D-AECE-D96A7DD50259}" ShortID="301186491">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Wallstone_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Wallstone_02" ID="{8274E5E1-E255-4D5D-AECE-D96A7DD50259}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Destructibles_Wallstone_03" ID="{E5BED08C-AFB0-490A-8CEE-6F2261F3B7A5}" ShortID="637910492">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Destructibles_Wallstone_03" ID="{6DA8FDE3-DC55-4075-A77B-5B41111C438F}" ShortID="589973158">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Destructibles_Wallstone_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Destructibles_Wallstone_03" ID="{6DA8FDE3-DC55-4075-A77B-5B41111C438F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Destroy_WallStone_RND" ID="{EC686103-FAE3-4F17-93DA-ACC4F5A45593}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Destroy_Tronc_RND" ID="{2F319B0E-DB1E-4B3E-8265-CB1709345E5C}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Destroy_Stone_RND" ID="{D65D5222-246D-4075-9F98-50E6E38446D7}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Destroy_Tonneau_RND" ID="{008CCB54-DB8B-4865-810F-2D61F5685E94}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Destroy_Jarre_RND" ID="{D06B175E-72F4-4060-9E25-4B1901A6E5D2}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Destroy_Planche_RND" ID="{A5B4678D-A4AE-4E11-962E-5273194F7708}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Jarre" ID="{A639CD38-D095-4F32-A71B-370AC5D67590}"/>
+												<ItemList>
+													<ItemRef Name="Destroy_Jarre_RND" ID="{D06B175E-72F4-4060-9E25-4B1901A6E5D2}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Stone" ID="{1A092FB0-3C81-4E82-B338-2045227D7034}"/>
+												<ItemList>
+													<ItemRef Name="Destroy_Stone_RND" ID="{D65D5222-246D-4075-9F98-50E6E38446D7}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="WallStone" ID="{481FD3BC-CD23-4A62-8E7B-66BAAFBE994B}"/>
+												<ItemList>
+													<ItemRef Name="Destroy_WallStone_RND" ID="{EC686103-FAE3-4F17-93DA-ACC4F5A45593}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Tonneau" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
+												<ItemList>
+													<ItemRef Name="Destroy_Tonneau_RND" ID="{008CCB54-DB8B-4865-810F-2D61F5685E94}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Tronc" ID="{A0ABA7CD-721F-4A18-A535-385550A3B9DC}"/>
+												<ItemList>
+													<ItemRef Name="Destroy_Tronc_RND" ID="{2F319B0E-DB1E-4B3E-8265-CB1709345E5C}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Planche" ID="{7C37FFDC-146B-485C-9AF1-95B944241D82}"/>
+												<ItemList>
+													<ItemRef Name="Destroy_Planche_RND" ID="{A5B4678D-A4AE-4E11-962E-5273194F7708}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

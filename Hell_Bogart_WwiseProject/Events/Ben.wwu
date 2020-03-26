@@ -80,7 +80,7 @@
 						</Action>
 						<Action Name="" ID="{AC736168-CA80-4F08-BD33-67BC906C9270}" ShortID="38232886">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
