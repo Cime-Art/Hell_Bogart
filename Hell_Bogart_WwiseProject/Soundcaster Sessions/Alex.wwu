@@ -16,7 +16,7 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
+							<GameParameterRef Name="Distance_From_Enemy" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -32,7 +32,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
-						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+						<CurrentSwitchRef Name="FTP_Sol_poussiereux_switch" ID="{AA037956-C904-4615-B36A-2F1670DF7E50}"/>
 						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
