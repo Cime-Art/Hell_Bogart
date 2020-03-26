@@ -42,7 +42,7 @@
 						<CurrentStateRef Name="None" ID="{513033F6-C1BC-4896-8DE5-A53FA48880AB}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
+						<CurrentSwitchRef Name="RARE" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
 						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
