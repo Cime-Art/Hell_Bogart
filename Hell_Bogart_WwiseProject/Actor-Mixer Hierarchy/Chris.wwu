@@ -280,210 +280,6 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<SwitchContainer Name="PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" ShortID="892574741">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="PickUP_type" ID="{DEBCC2DF-83A9-4206-B1CB-4C169460F450}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}" ShortID="982866528">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="HB_SFX_Pickup_EPIC" ID="{6EC410FB-854F-4FEB-97B9-A7D29CBD9F33}" ShortID="609408930">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Pickup_EPIC" ID="{9E58D600-ED94-489C-B4CA-974F14409E29}" ShortID="238885831">
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Pickup_EPIC.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Pickup_EPIC" ID="{9E58D600-ED94-489C-B4CA-974F14409E29}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}" ShortID="670246627">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="HB_SFX_Pickup_RARE" ID="{56070811-CE1C-427A-B6AB-AB2CC10BC967}" ShortID="406339830">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Pickup_RARE" ID="{5533E71A-CCBA-4108-8955-46FA92531846}" ShortID="489126667">
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Pickup_RARE.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Pickup_RARE" ID="{5533E71A-CCBA-4108-8955-46FA92531846}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}" ShortID="986440601">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="HB_Pickup_01" ID="{4725384B-203F-4A8C-AB53-1286ACF141E5}" ShortID="74567877">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Uiwep_Pickup1" ID="{FC8A87EB-AE69-4C52-9556-C64234ACAFE7}" ShortID="313989002">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.242068193130911"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Uiwep_Pickup1.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="481689103"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Uiwep_Pickup1" ID="{FC8A87EB-AE69-4C52-9556-C64234ACAFE7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="HB_Pickup_02" ID="{4608614A-2AC0-4E50-A85C-2FD28651A143}" ShortID="925448018">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Uiwep_Pickup2" ID="{0375C1E4-E69B-431B-9CDD-2BC6192908FF}" ShortID="232088301">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.195447652231624"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.195447652231624"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Uiwep_Pickup2.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="740162737"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Uiwep_Pickup2" ID="{0375C1E4-E69B-431B-9CDD-2BC6192908FF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="HB_Pickup_03" ID="{CC56A522-C43B-4E0C-B7C3-0513ED954304}" ShortID="386437933">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Uiwep_Pickup3" ID="{C72658B0-3265-4C7B-BAE9-989A34126124}" ShortID="385884009">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.200826945412311"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Uiwep_Pickup3.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="476709970"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Uiwep_Pickup3" ID="{C72658B0-3265-4C7B-BAE9-989A34126124}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="RARE" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
-										<ItemList>
-											<ItemRef Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
-										<ItemList>
-											<ItemRef Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
-										<ItemList>
-											<ItemRef Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
 						<ActorMixer Name="Ammo_Pickup" ID="{C971739E-34A7-4FEC-B688-2E9CFC5406AF}" ShortID="771873757">
 							<PropertyList>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
@@ -661,6 +457,243 @@
 												<SwitchRef Name="Rare" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
 												<ItemList>
 													<ItemRef Name="RND_Ammo_Rare" ID="{0EF6BB82-6F81-4DE7-9592-ACC054058C2B}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" ShortID="892574741">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="PickUP_type" ID="{DEBCC2DF-83A9-4206-B1CB-4C169460F450}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}" ShortID="982866528">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Hb_sfx_other_pickup_epic_alp" ID="{2F8CCFAE-9C8A-4A29-919A-C33ADA7C1667}" ShortID="504763371">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Hb_sfx_other_pickup_epic_alp" ID="{5925B2B0-ED7A-4DCA-BEF0-EE7C14E3AA91}" ShortID="297572707">
+															<Language>SFX</Language>
+															<AudioFile>Hb_sfx_other_pickup_epic.alp.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Hb_sfx_other_pickup_epic_alp" ID="{5925B2B0-ED7A-4DCA-BEF0-EE7C14E3AA91}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}" ShortID="670246627">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Hb_sfx_other_pickup_rare" ID="{C0C1F3D8-36B7-44C4-87B7-F4E6BE278AC6}" ShortID="218956583">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Hb_sfx_other_pickup_rare" ID="{B972EF01-CB88-48BE-9342-961576F18C67}" ShortID="211643422">
+															<Language>SFX</Language>
+															<AudioFile>Hb_sfx_other_pickup_rare.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Hb_sfx_other_pickup_rare" ID="{B972EF01-CB88-48BE-9342-961576F18C67}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}" ShortID="986440601">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_Pickup_01" ID="{4725384B-203F-4A8C-AB53-1286ACF141E5}" ShortID="74567877">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_Uiwep_Pickup1" ID="{FC8A87EB-AE69-4C52-9556-C64234ACAFE7}" ShortID="313989002">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.242068193130911"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_Uiwep_Pickup1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="481689103"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_Uiwep_Pickup1" ID="{FC8A87EB-AE69-4C52-9556-C64234ACAFE7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_Pickup_02" ID="{4608614A-2AC0-4E50-A85C-2FD28651A143}" ShortID="925448018">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_Uiwep_Pickup2" ID="{0375C1E4-E69B-431B-9CDD-2BC6192908FF}" ShortID="232088301">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0.195447652231624"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.195447652231624"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_Uiwep_Pickup2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="740162737"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_Uiwep_Pickup2" ID="{0375C1E4-E69B-431B-9CDD-2BC6192908FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_Pickup_03" ID="{CC56A522-C43B-4E0C-B7C3-0513ED954304}" ShortID="386437933">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_Uiwep_Pickup3" ID="{C72658B0-3265-4C7B-BAE9-989A34126124}" ShortID="385884009">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.200826945412311"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_Uiwep_Pickup3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="476709970"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_Uiwep_Pickup3" ID="{C72658B0-3265-4C7B-BAE9-989A34126124}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Hb_sfx_other_pickup_standar" ID="{F906D6D5-E737-4F41-8115-E7C630D77122}" ShortID="1061374124">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Hb_sfx_other_pickup_standar" ID="{FBE8D696-61F9-4620-ACA8-8E8CE382A163}" ShortID="528701847">
+															<Language>SFX</Language>
+															<AudioFile>Hb_sfx_other_pickup_standar.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Hb_sfx_other_pickup_standar" ID="{FBE8D696-61F9-4620-ACA8-8E8CE382A163}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="RARE" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
+												<ItemList>
+													<ItemRef Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+												<ItemList>
+													<ItemRef Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
+												<ItemList>
+													<ItemRef Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
