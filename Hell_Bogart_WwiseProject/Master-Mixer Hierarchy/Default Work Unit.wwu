@@ -123,15 +123,7 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}"/>
-						<Bus Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}">
-							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-96</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-						</Bus>
+						<Bus Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
 						<Bus Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}"/>
 					</ChildrenList>
 				</Bus>
