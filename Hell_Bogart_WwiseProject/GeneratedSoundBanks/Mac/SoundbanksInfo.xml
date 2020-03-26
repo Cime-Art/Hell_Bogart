@@ -682,7 +682,7 @@
 				</File>
 				<File Id="98705135" Language="SFX">
 					<ShortName>Hb_sfx_other_Ammo_standar.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_Ammo_standar_10C4C929.wem</Path>
+					<Path>SFX\Hb_sfx_other_Ammo_standar_7AAB2865.wem</Path>
 				</File>
 				<File Id="101291286" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_02.wav</ShortName>
@@ -814,7 +814,7 @@
 				</File>
 				<File Id="211643422" Language="SFX">
 					<ShortName>Hb_sfx_other_pickup_rare.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_pickup_rare_10C4C929.wem</Path>
+					<Path>SFX\Hb_sfx_other_pickup_rare_2C8617B0.wem</Path>
 				</File>
 				<File Id="215037878" Language="SFX">
 					<ShortName>Shell_Gravel_02.wav</ShortName>
@@ -894,7 +894,7 @@
 				</File>
 				<File Id="297572707" Language="SFX">
 					<ShortName>Hb_sfx_other_pickup_epic.alp.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_pickup_epic.alp_10C4C929.wem</Path>
+					<Path>SFX\Hb_sfx_other_pickup_epic.alp_4ED9BE0A.wem</Path>
 				</File>
 				<File Id="302458388" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-002.wav</ShortName>
@@ -1554,7 +1554,7 @@
 				</File>
 				<File Id="973879160" Language="SFX">
 					<ShortName>Hb_sfx_other_Ammo_epic.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_Ammo_epic_10C4C929.wem</Path>
+					<Path>SFX\Hb_sfx_other_Ammo_epic_CFAD1C77.wem</Path>
 				</File>
 				<File Id="978071521" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-01.wav</ShortName>
@@ -1594,7 +1594,7 @@
 				</File>
 				<File Id="1027984298" Language="SFX">
 					<ShortName>Hb_sfx_other_Ammo_rare.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_Ammo_rare_10C4C929.wem</Path>
+					<Path>SFX\Hb_sfx_other_Ammo_rare_E4AFE46D.wem</Path>
 				</File>
 				<File Id="1028175132" Language="SFX">
 					<ShortName>FTP_bois_sec_01.wav</ShortName>
