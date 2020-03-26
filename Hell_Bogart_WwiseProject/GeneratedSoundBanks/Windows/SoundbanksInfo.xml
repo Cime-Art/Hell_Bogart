@@ -489,6 +489,8 @@
 				<Event Id="3359588815" Name="E_SetAcoustic_BossArena" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_BossArena"/>
 				<Event Id="1975484871" Name="E_SetAcoustic_Exterior" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Exterior"/>
 				<Event Id="1418412915" Name="E_SetAcoustic_Ruines" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Ruines"/>
+				<Event Id="2750501103" Name="E_StoneDoorRiddle_Opening" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Opening"/>
+				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
 				<Event Id="355937833" Name="E_Traps_SpikeTrap" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap"/>
 				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
 				<Event Id="842152325" Name="E_UI_Option" ObjectPath="\Events\Brian\UI\E_UI_Option"/>
@@ -652,7 +654,7 @@
 				</File>
 				<File Id="70517950" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_08.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_08_89D454E4.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_08_CB631199.wem</Path>
 				</File>
 				<File Id="78350251" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Death_03.wav</ShortName>
@@ -677,6 +679,10 @@
 				<File Id="95268103" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-04.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-Hit-04_10C4C929.wem</Path>
+				</File>
+				<File Id="98705135" Language="SFX">
+					<ShortName>Hb_sfx_other_Ammo_standar.wav</ShortName>
+					<Path>SFX\Hb_sfx_other_Ammo_standar_10C4C929.wem</Path>
 				</File>
 				<File Id="101291286" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_02.wav</ShortName>
@@ -714,9 +720,9 @@
 					<ShortName>HB_SFX_Shotgun_StartDropShell_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_StartDropShell_00_10C4C929.wem</Path>
 				</File>
-				<File Id="143384558" Language="SFX">
-					<ShortName>HB_SFX_ammo_EPIC.wav</ShortName>
-					<Path>SFX\HB_SFX_ammo_EPIC_10C4C929.wem</Path>
+				<File Id="142673508" Language="SFX">
+					<ShortName>SFX_HB_Other_LoopStoneDoorRiddle.wav</ShortName>
+					<Path>SFX\SFX_HB_Other_LoopStoneDoorRiddle_81238AE1.wem</Path>
 				</File>
 				<File Id="143492210" Language="SFX">
 					<ShortName>FTP_ossements_pierre_01.wav</ShortName>
@@ -772,7 +778,7 @@
 				</File>
 				<File Id="178280742" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_07.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_07_0D43ACFE.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_07_D7BF9345.wem</Path>
 				</File>
 				<File Id="189737840" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-005.wav</ShortName>
@@ -806,6 +812,10 @@
 					<ShortName>HB_SFX_Shotgun_CanonPortee_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonPortee_02_10C4C929.wem</Path>
 				</File>
+				<File Id="211643422" Language="SFX">
+					<ShortName>Hb_sfx_other_pickup_rare.wav</ShortName>
+					<Path>SFX\Hb_sfx_other_pickup_rare_10C4C929.wem</Path>
+				</File>
 				<File Id="215037878" Language="SFX">
 					<ShortName>Shell_Gravel_02.wav</ShortName>
 					<Path>SFX\Shell_Gravel_02_10C4C929.wem</Path>
@@ -830,17 +840,13 @@
 					<ShortName>Shell_Wood_01.wav</ShortName>
 					<Path>SFX\Shell_Wood_01_10C4C929.wem</Path>
 				</File>
-				<File Id="238885831" Language="SFX">
-					<ShortName>HB_SFX_Pickup_EPIC.wav</ShortName>
-					<Path>SFX\HB_SFX_Pickup_EPIC_10C4C929.wem</Path>
-				</File>
 				<File Id="244648758" Language="SFX">
 					<ShortName>HB-SFX-Other-EndBigStoneDoorOpening.wav</ShortName>
 					<Path>SFX\HB-SFX-Other-EndBigStoneDoorOpening_10C4C929.wem</Path>
 				</File>
 				<File Id="246468043" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_01.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_01_85E29230.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_01_F0112845.wem</Path>
 				</File>
 				<File Id="248132464" Language="SFX">
 					<ShortName>HB_Steps_Dalles_2.wav</ShortName>
@@ -858,17 +864,9 @@
 					<ShortName>FTP_eau_03.wav</ShortName>
 					<Path>SFX\FTP_eau_03_10C4C929.wem</Path>
 				</File>
-				<File Id="265842113" Language="SFX">
-					<ShortName>HB_SFX_ammo_01.wav</ShortName>
-					<Path>SFX\HB_SFX_ammo_01_9EE4F1CE.wem</Path>
-				</File>
 				<File Id="271455945" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GetHit_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_04_10C4C929.wem</Path>
-				</File>
-				<File Id="271601829" Language="SFX">
-					<ShortName>HB_SFX_ammo_03.wav</ShortName>
-					<Path>SFX\HB_SFX_ammo_03_43970F03.wem</Path>
 				</File>
 				<File Id="277417704" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_NoChamber_02.wav</ShortName>
@@ -876,7 +874,7 @@
 				</File>
 				<File Id="277470035" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_03.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_03_ABD51A92.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_03_1AFB2C70.wem</Path>
 				</File>
 				<File Id="279102213" Language="SFX">
 					<ShortName>HB-SFX-UImenu-Valid.wav</ShortName>
@@ -893,6 +891,10 @@
 				<File Id="290530205" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Death_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_SpikeTrap_Death_01_10C4C929.wem</Path>
+				</File>
+				<File Id="297572707" Language="SFX">
+					<ShortName>Hb_sfx_other_pickup_epic.alp.wav</ShortName>
+					<Path>SFX\Hb_sfx_other_pickup_epic.alp_10C4C929.wem</Path>
 				</File>
 				<File Id="302458388" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-002.wav</ShortName>
@@ -945,6 +947,10 @@
 				<File Id="337804232" Language="SFX">
 					<ShortName>HB_SFX_UiWep_Equip4.wav</ShortName>
 					<Path>SFX\HB_SFX_UiWep_Equip4_28D79C38.wem</Path>
+				</File>
+				<File Id="339593625" Language="SFX">
+					<ShortName>SFX_HB_Other_EndStoneDoorRiddle.wav</ShortName>
+					<Path>SFX\SFX_HB_Other_EndStoneDoorRiddle_10C4C929.wem</Path>
 				</File>
 				<File Id="353586372" Language="SFX">
 					<ShortName>HB_Steps_Dalles_1.wav</ShortName>
@@ -1110,17 +1116,13 @@
 					<ShortName>HB_Steps_Dalles_3.wav</ShortName>
 					<Path>SFX\HB_Steps_Dalles_3_10C4C929.wem</Path>
 				</File>
-				<File Id="489126667" Language="SFX">
-					<ShortName>HB_SFX_Pickup_RARE.wav</ShortName>
-					<Path>SFX\HB_SFX_Pickup_RARE_10C4C929.wem</Path>
-				</File>
 				<File Id="489172454" Language="SFX">
 					<ShortName>Shell_Concrete_04.wav</ShortName>
 					<Path>SFX\Shell_Concrete_04_10C4C929.wem</Path>
 				</File>
 				<File Id="495664766" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_06.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_06_9A3EE3B1.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_06_F7239737.wem</Path>
 				</File>
 				<File Id="502360136" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_02.wav</ShortName>
@@ -1154,6 +1156,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_06.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_06_D36221DB.wem</Path>
 				</File>
+				<File Id="528701847" Language="SFX">
+					<ShortName>Hb_sfx_other_pickup_standar.wav</ShortName>
+					<Path>SFX\Hb_sfx_other_pickup_standar_10C4C929.wem</Path>
+				</File>
 				<File Id="531370814" Language="SFX">
 					<ShortName>Shell_Metal_02.wav</ShortName>
 					<Path>SFX\Shell_Metal_02_10C4C929.wem</Path>
@@ -1165,6 +1171,10 @@
 				<File Id="532271097" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_IceHit_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_IceHit_02_10C4C929.wem</Path>
+				</File>
+				<File Id="545463051" Language="SFX">
+					<ShortName>SFX_HB_Other_OpenStoneDoorRiddle.wav</ShortName>
+					<Path>SFX\SFX_HB_Other_OpenStoneDoorRiddle_10C4C929.wem</Path>
 				</File>
 				<File Id="552564079" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_01.wav</ShortName>
@@ -1185,10 +1195,6 @@
 				<File Id="555296050" Language="SFX">
 					<ShortName>Shell_Metal_04.wav</ShortName>
 					<Path>SFX\Shell_Metal_04_10C4C929.wem</Path>
-				</File>
-				<File Id="555529559" Language="SFX">
-					<ShortName>HB_SFX_ammo_RARE.wav</ShortName>
-					<Path>SFX\HB_SFX_ammo_RARE_10C4C929.wem</Path>
 				</File>
 				<File Id="559357836" Language="SFX">
 					<ShortName>FTP_sable_02.wav</ShortName>
@@ -1280,7 +1286,7 @@
 				</File>
 				<File Id="637723326" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_04.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_04_7C6A72EE.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_04_4F58FBE9.wem</Path>
 				</File>
 				<File Id="646026284" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_02.wav</ShortName>
@@ -1357,10 +1363,6 @@
 				<File Id="720796991" Language="SFX">
 					<ShortName>HB_Footstep_HerbesSèches_02.wav</ShortName>
 					<Path>SFX\HB_Footstep_HerbesSèches_02_10C4C929.wem</Path>
-				</File>
-				<File Id="721740263" Language="SFX">
-					<ShortName>HB_SFX_ammo_02.wav</ShortName>
-					<Path>SFX\HB_SFX_ammo_02_D8E2CF04.wem</Path>
 				</File>
 				<File Id="728468316" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_StartDropShell_02.wav</ShortName>
@@ -1484,7 +1486,7 @@
 				</File>
 				<File Id="892397347" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_02.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_02_13EE3A60.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_02_C1BBB01A.wem</Path>
 				</File>
 				<File Id="895724132" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Death_02.wav</ShortName>
@@ -1550,6 +1552,10 @@
 					<ShortName>HB_Footstep_SolPierre_03.wav</ShortName>
 					<Path>SFX\HB_Footstep_SolPierre_03_10C4C929.wem</Path>
 				</File>
+				<File Id="973879160" Language="SFX">
+					<ShortName>Hb_sfx_other_Ammo_epic.wav</ShortName>
+					<Path>SFX\Hb_sfx_other_Ammo_epic_10C4C929.wem</Path>
+				</File>
 				<File Id="978071521" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-01.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-01_10C4C929.wem</Path>
@@ -1585,6 +1591,10 @@
 				<File Id="1027878983" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Thunder_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_01_10C4C929.wem</Path>
+				</File>
+				<File Id="1027984298" Language="SFX">
+					<ShortName>Hb_sfx_other_Ammo_rare.wav</ShortName>
+					<Path>SFX\Hb_sfx_other_Ammo_rare_10C4C929.wem</Path>
 				</File>
 				<File Id="1028175132" Language="SFX">
 					<ShortName>FTP_bois_sec_01.wav</ShortName>
