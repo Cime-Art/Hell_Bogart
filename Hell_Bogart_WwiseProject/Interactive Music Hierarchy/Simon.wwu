@@ -91,7 +91,7 @@
 																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>3000</XPos>
+																				<XPos>4500</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -293,7 +293,7 @@
 																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>3000</XPos>
+																				<XPos>4500</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -1410,7 +1410,7 @@
 																				<SegmentShape>Log2</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>3000</XPos>
+																				<XPos>4500</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -2124,7 +2124,7 @@
 										</MusicSegment>
 										<MusicSegment Name="Silence" ID="{DE6E777F-84D6-4D98-8937-6B8189B31D89}" ShortID="1032203043">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="6026.61207778915"/>
+												<Property Name="EndPosition" Type="Real64" Value="12000"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2134,6 +2134,864 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Tambourim_High" ID="{533B5A8B-3D2C-47DE-BA2E-E55AACC4FD2D}" ShortID="875323185">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="LookAheadTime" Type="int16">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="PreFetchLength" Type="int16">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{901F519F-B81D-4A3A-9F39-184AD065F6D5}" ShortID="644552923">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{97F86807-E949-4067-9E6E-D38614E9B5ED}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>2000</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>4500</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinHi_01" ID="{A59294D4-E6B5-4CAF-989E-E01CC3A05E0A}" ShortID="897814564">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinHi_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="418642795"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinHi_02" ID="{4BF8B494-88C2-49CE-8696-942004C003E6}" ShortID="903742163">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinHi_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="390654327"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinHi_03" ID="{5F95B906-D387-4E37-9FEA-A36397E53D13}" ShortID="961757155">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinHi_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="8466346"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinHi_04" ID="{E877989F-8F56-4A40-BF90-4661033A7EB9}" ShortID="220111150">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinHi_04.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="880844464"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinHi_05" ID="{14ED44E2-ED4F-41B0-9F67-D4C8F345C522}" ShortID="875001154">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinHi_05.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="322690508"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinHi_06" ID="{6DA8C476-C564-4030-B8AB-7EBC79D0767B}" ShortID="295891591">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinHi_06.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="419964556"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinHi_07" ID="{C1FDE9E9-98EE-473B-B781-3A45E0C897DB}" ShortID="518048714">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinHi_07.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="228559737"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinHi_08" ID="{07E0FC50-FBF8-4C87-AB5A-D99842F89345}" ShortID="938335490">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinHi_08.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="549701467"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{219D830F-7465-43F9-B3D1-3C7423665357}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{929362BD-BEB2-40BD-BB04-E0B1292D761A}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinHi_01" ID="{9187F78A-A0FD-4B2C-89EB-F90C7330670D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinHi_01" ID="{A59294D4-E6B5-4CAF-989E-E01CC3A05E0A}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{F9E03912-AC32-4A79-869A-06FF97320BBE}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinHi_02" ID="{BD88BBC4-67AB-4418-BC92-E3FAA2546D50}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinHi_02" ID="{4BF8B494-88C2-49CE-8696-942004C003E6}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{0774E92D-F0BB-462D-ACC8-1CEE80654DD1}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinHi_03" ID="{2B380378-161D-49CA-A9D5-8CADB5B8A4EE}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinHi_03" ID="{5F95B906-D387-4E37-9FEA-A36397E53D13}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{39499A28-D137-494A-BED6-0568DF332E9C}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinHi_04" ID="{2557788F-94A3-4659-A68A-704E2258E404}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinHi_04" ID="{E877989F-8F56-4A40-BF90-4661033A7EB9}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{944BA601-3B78-4E38-B0C6-CDF4A9C7E3F9}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinHi_05" ID="{4E1B2C7C-5124-4964-8AC4-6235BBA60EF3}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinHi_05" ID="{14ED44E2-ED4F-41B0-9F67-D4C8F345C522}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{32166405-FDE7-4106-99DF-DEA8D59A40FD}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinHi_06" ID="{8424ED37-BDE0-4934-B83E-D92727F18158}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinHi_06" ID="{6DA8C476-C564-4030-B8AB-7EBC79D0767B}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{CDC16519-C9FD-4668-9A40-7DBB048E1E5D}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinHi_07" ID="{D540CC08-8153-4CBE-BFAE-B296764E39FA}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinHi_07" ID="{C1FDE9E9-98EE-473B-B781-3A45E0C897DB}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{62E07831-06F9-4D5A-95A8-CCAC7FCFD004}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinHi_08" ID="{EEF8B5D6-BCFB-42A4-BD87-932C562C43CE}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinHi_08" ID="{07E0FC50-FBF8-4C87-AB5A-D99842F89345}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="Tambourim_Low" ID="{08553692-46AC-4CB9-9D6D-F784D0241791}" ShortID="264864508">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="LookAheadTime" Type="int16">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="PreFetchLength" Type="int16">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{53609708-7652-4B1C-B5E9-39923CFCC821}" ShortID="879048585">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{71A208A5-3FC5-4E4E-B3AE-BE2ADE0E134C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>2000</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>4500</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinLow_01" ID="{8C24E911-4FDF-4620-9339-211ED373730C}" ShortID="203234832">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinLow_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="689319336"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinLow_02" ID="{79774D8C-69FE-4137-80C4-414768E11269}" ShortID="162879431">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinLow_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="523807693"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinLow_03" ID="{1612FE6A-26FE-4FEC-A9E3-40376E04484F}" ShortID="742735896">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinLow_03.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="686567305"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinLow_04" ID="{41AE6C85-C41C-4B4B-A360-FEAB8479A24E}" ShortID="763419722">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinLow_04.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="174667659"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinLow_05" ID="{E516BABD-7AB1-468C-82D1-B7942EBFA116}" ShortID="811064899">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinLow_05.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="704769384"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinLow_06" ID="{E533E7C6-2933-4425-8361-6803626F5882}" ShortID="674834839">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinLow_06.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="370497558"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinLow_07" ID="{C72F2016-4AC7-4933-8542-044FF4C4C9BA}" ShortID="654778046">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinLow_07.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="8249594"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_TambourinLow_08" ID="{568FD0EC-EC82-4C66-8C5A-C88A9A7391D7}" ShortID="164892091">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_TambourinLow_08.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="653556879"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{63EAF5E0-D914-4658-A68C-8A46C770BDC5}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{5FC13C59-7D59-464A-BC3D-B7601AA8EC7D}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinLow_01" ID="{EDB2F780-86DA-44EB-8E0E-53BEE71E0616}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinLow_01" ID="{8C24E911-4FDF-4620-9339-211ED373730C}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{CF319894-26C4-40C0-A082-E468302F48A6}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinLow_02" ID="{A0CE8206-B962-4401-8E83-DE48E7E63674}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinLow_02" ID="{79774D8C-69FE-4137-80C4-414768E11269}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{2DA0BA62-33AE-4EA3-A393-7FA294683950}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinLow_03" ID="{823C228D-3254-4197-87ED-89429A018BA2}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinLow_03" ID="{1612FE6A-26FE-4FEC-A9E3-40376E04484F}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{BA8E846B-AAAB-4648-BCCA-D5445FC06595}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinLow_04" ID="{3A47DB7C-AE9F-45DB-A6CE-E18AEC448900}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinLow_04" ID="{41AE6C85-C41C-4B4B-A360-FEAB8479A24E}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{ED6E901E-B005-434E-AD03-19F51E68F0D7}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinLow_05" ID="{935CE751-0038-406B-8989-BDEB0F3D34D8}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinLow_05" ID="{E516BABD-7AB1-468C-82D1-B7942EBFA116}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{99A5CA1E-0A09-4325-9B71-FC9FA371C41C}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinLow_06" ID="{E419620F-1BC5-49B0-B631-ECEC5807DC72}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinLow_06" ID="{E533E7C6-2933-4425-8361-6803626F5882}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{C9C50928-BC0C-4CE6-9981-4F4C0DC94532}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinLow_07" ID="{2BE26F6D-500A-47C2-8B05-920BCC2B1F7A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinLow_07" ID="{C72F2016-4AC7-4933-8542-044FF4C4C9BA}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{E33B08FA-A23B-4C94-B1FA-2A977558BDB7}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_TambourinLow_08" ID="{0364F514-8EFD-4610-A95A-3F36751B9BDD}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_TambourinLow_08" ID="{568FD0EC-EC82-4C66-8C5A-C88A9A7391D7}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="MalletCymbal" ID="{E404A192-0DE7-4E13-AA96-68308600B886}" ShortID="1030437110">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="LookAheadTime" Type="int16">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="PreFetchLength" Type="int16">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{F5518B4C-1D1A-4186-99D5-6153ABFFB1AC}" ShortID="659540344">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{8376BA57-6E69-437F-93A6-071A2B985815}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>2000</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>4500</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="MUS_HB_Jungle_MalletCymbal_01" ID="{36BD8069-8C73-4F49-BAC7-2D8CD65178BE}" ShortID="92258681">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_MalletCymbal_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="724181735"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_MalletCymbal_02" ID="{A48D756B-6947-4DCF-9D2D-0577114B9267}" ShortID="41938988">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_MalletCymbal_02.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="947653927"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_MalletCymbal_04" ID="{7907E6E4-FB03-47D2-8652-6ADC4C4E3382}" ShortID="300905999">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_MalletCymbal_04.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="606220365"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_MalletCymbal_05" ID="{6861E059-8CB6-4F44-9A95-8FD967A22CD6}" ShortID="432369366">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_MalletCymbal_05.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="346083593"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{B2883F1E-5B8E-40A6-A7C3-E83DF3BDC890}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{E090ACFA-522F-4C30-A067-CCBF1F99622A}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_MalletCymbal_01" ID="{3885A8C0-5762-4B1C-9F14-23683BA6B7E1}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="14000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_MalletCymbal_01" ID="{36BD8069-8C73-4F49-BAC7-2D8CD65178BE}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{E068C92F-FF0A-466F-8EAF-B1F0DF70BC52}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{F03CCF8E-23BB-4761-A95F-E67A6F5452B1}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{66ED23E1-3998-4656-92FB-8E02E1B3AEA3}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{2B936A25-578F-43BA-AA0B-62BA6291D15D}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_MalletCymbal_02" ID="{8B6BFD8F-2E48-4F63-8269-4EBC62945126}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="14000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_MalletCymbal_02" ID="{A48D756B-6947-4DCF-9D2D-0577114B9267}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{1C0E9077-B177-4D31-B506-442BE7F7B2D2}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{F95B33B4-661D-462B-B91C-592F316812DE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{58558355-476B-48A0-94C7-90D4654398AA}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{A8CF74C0-6C02-4FF4-8E35-30C2976FE5F4}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_MalletCymbal_04" ID="{E576AABC-C895-44A6-9127-20CF1BA27E47}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="14000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_MalletCymbal_04" ID="{7907E6E4-FB03-47D2-8652-6ADC4C4E3382}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{404B3E7C-FD1C-420C-96B8-7E8455496232}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{4A2E3E27-43C4-4EAB-B67E-7AE9B9148DBE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{3138E03B-4C65-43BB-BA06-A3402713924B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{5D6CF903-972A-4245-B785-24EC6754FAA8}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_MalletCymbal_05" ID="{F972076B-73C7-4822-AF14-772732D7C9EB}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="14000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_MalletCymbal_05" ID="{6861E059-8CB6-4F44-9A95-8FD967A22CD6}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{19CE5342-2F99-4456-BDED-4FC6ABC6DF17}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{BAF3489C-B480-414D-B01F-1EE92CF1F66E}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{41AE5E98-ED22-44E9-9736-0223E2B94C80}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>14</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{C0E8C6FE-4462-4DC0-8BBF-C43414E72423}"/>
+														<MusicTrackSequence Name="" ID="{D0ACB235-322D-4A3C-87BA-C05ADE86F6B0}"/>
+														<MusicTrackSequence Name="" ID="{9D30F998-8D68-421F-8209-80B54389C75F}"/>
+														<MusicTrackSequence Name="" ID="{4B433C07-A378-46F1-B88F-A95452A29248}"/>
+														<MusicTrackSequence Name="" ID="{878C6239-FA46-420D-B614-1C04B8CEC958}"/>
+														<MusicTrackSequence Name="" ID="{07BDB07D-B9FF-4F17-A07A-50298D18B2B3}"/>
+														<MusicTrackSequence Name="" ID="{9FB38A27-F670-4B4E-8CE9-CAB2D86BA6A0}"/>
+														<MusicTrackSequence Name="" ID="{F5EDE7B2-48E5-47D1-A20A-12D73EC17716}"/>
+														<MusicTrackSequence Name="" ID="{B8810029-5A81-4345-BC38-444FF2D80DF0}"/>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
 											<CueList>
 												<MusicCue Name="Entry Cue" ID="{7A454BC4-50BE-478F-81AB-8EA38B859E5A}"/>
 												<MusicCue Name="Exit Cue" ID="{D40E70F8-31E2-4685-9C1C-F1ED2DE3FF83}">
