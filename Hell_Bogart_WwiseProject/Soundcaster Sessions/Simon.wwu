@@ -26,11 +26,11 @@
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_MobJungleCharlie_GetHit" ID="{EA163DFE-A0BD-443C-A2CB-34FA8A68B0F3}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_Mob_JungleCharlie_Death" ID="{826C685D-5D84-48DC-9144-F906FBF293F1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Mob_JungleCharlie_Death" ID="{826C685D-5D84-48DC-9144-F906FBF293F1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_MobJungleCharlie_GetHit" ID="{EA163DFE-A0BD-443C-A2CB-34FA8A68B0F3}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="6"/>
 						</Module>
 						<Module>
@@ -94,6 +94,10 @@
 							<Position X="5" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Destroy_Object" ID="{E9974C9F-DAF8-470F-91A9-F03D4FAF4252}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="5" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_BigStoneDoor_Stop" ID="{0F44ECC8-0C4B-4A06-B809-BF7009EBAB35}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="6" Y="0"/>
 						</Module>
@@ -122,17 +126,18 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
-						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
+						<CurrentStateRef Name="End_Music" ID="{F98C25B7-C5CA-4858-B4D9-4136E6494696}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
-						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+						<CurrentStateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="WallStone" ID="{481FD3BC-CD23-4A62-8E7B-66BAAFBE994B}"/>
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
-						<CurrentSwitchRef Name="FTP_Dalles_pierre_switch" ID="{A784672B-87AF-4B4C-80A2-62022ECE904A}"/>
+						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
 						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

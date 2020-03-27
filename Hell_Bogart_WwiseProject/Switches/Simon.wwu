@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6ADE16AE-6F5A-4248-8BB4-52C7CF374A31}" SchemaVersion="94">
 	<Switches>
-		<WorkUnit Name="Simon" ID="{6ADE16AE-6F5A-4248-8BB4-52C7CF374A31}" PersistMode="Standalone"/>
+		<WorkUnit Name="Simon" ID="{6ADE16AE-6F5A-4248-8BB4-52C7CF374A31}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Destructibles" ID="{C1D9005B-DCF0-4983-9AA5-853CCA472987}" ShortID="716087524">
+					<ChildrenList>
+						<SwitchGroup Name="Destroyed_Object_Type_SWITCH" ID="{8D318D4F-5588-4172-B95A-E4B5BDACB4E9}">
+							<ChildrenList>
+								<Switch Name="Caisse" ID="{53291F45-44D8-4058-95A8-28E8E7717593}"/>
+								<Switch Name="Planche" ID="{7C37FFDC-146B-485C-9AF1-95B944241D82}"/>
+								<Switch Name="Tronc" ID="{A0ABA7CD-721F-4A18-A535-385550A3B9DC}"/>
+								<Switch Name="WallStone" ID="{481FD3BC-CD23-4A62-8E7B-66BAAFBE994B}"/>
+								<Switch Name="Stone" ID="{1A092FB0-3C81-4E82-B338-2045227D7034}"/>
+								<Switch Name="Jarre" ID="{A639CD38-D095-4F32-A71B-370AC5D67590}"/>
+								<Switch Name="Tonneau" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
+								<Switch Name="Explosif" ID="{8D74F0FD-956B-4A53-B994-470BBE09DD6C}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
