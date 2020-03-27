@@ -1200,6 +1200,13 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<Sound Name="Sizzel" ID="{055E0944-9FEE-4EBA-A5C5-9D6DC226F41B}" ShortID="565292550">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1210,6 +1217,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="CECK FIRE Burst Sizzle Small_01" ID="{1C807D79-4613-4B89-A447-5A6636A5284A}" ShortID="659057326">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.43282254682695"/>
+										<Property Name="FadeOutShape" Type="int16" Value="4"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.23432481440065"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>CECK FIRE Burst Sizzle Small_01.wav</AudioFile>
 								</AudioFileSource>
