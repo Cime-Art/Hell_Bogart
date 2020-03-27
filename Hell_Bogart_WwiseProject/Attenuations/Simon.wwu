@@ -47,7 +47,7 @@
 									</CurveUsageInfo>
 								</VolumeDryUsage>
 								<VolumeWetGameUsage>
-									<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+									<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry">
 										<Curve Name="VolumeWetGame" ID="{03042ACD-8D34-4797-95A1-FA9417FFC947}">
 											<PropertyList>
 												<Property Name="Flags" Type="int32" Value="3"/>
@@ -76,13 +76,20 @@
 											<PointList>
 												<Point>
 													<XPos>0</XPos>
-													<YPos>-3</YPos>
+													<YPos>-11.85148</YPos>
 													<Flags>5</Flags>
+													<SegmentShape>Log2</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>3000.78369905956</XPos>
-													<YPos>-0.369577198949771</YPos>
+													<XPos>1887.82816</XPos>
+													<YPos>0</YPos>
 													<Flags>0</Flags>
+												</Point>
+												<Point>
+													<XPos>2132.04861</XPos>
+													<YPos>-0.05497</YPos>
+													<Flags>0</Flags>
+													<SegmentShape>Exp2</SegmentShape>
 												</Point>
 												<Point>
 													<XPos>3500</XPos>

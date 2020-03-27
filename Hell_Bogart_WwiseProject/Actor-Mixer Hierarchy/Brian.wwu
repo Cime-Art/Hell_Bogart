@@ -687,6 +687,739 @@
 						</ActorMixer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Stone_Gardian" ID="{62A50D27-5AF9-46D7-B13D-DB3B4FB275CE}" ShortID="623795449">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<ActorMixer Name="MIX_StoneGardian" ID="{B7A23354-FE61-4838-BD9B-3C3C0E393138}" ShortID="167636211">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="MIX_Attack" ID="{AAD89A9C-D56E-442B-BDA7-324C3D2BE336}" ShortID="744155569">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="2"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_Attack" ID="{EACE4176-D891-4AD7-A9A0-FC164E7C4FB7}" ShortID="772703087">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB-SFX-Gardian-Attack_00" ID="{0F55A7EA-34AE-47D0-A5EF-BD843FA8AACB}" ShortID="877556041">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-Attack_00" ID="{3EA1B080-185E-4D9B-85E7-19A7907D0B26}" ShortID="1042924671">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-Attack_00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-Attack_00" ID="{3EA1B080-185E-4D9B-85E7-19A7907D0B26}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB-SFX-Gardian-Attack_01" ID="{CE69CA53-46CA-43A1-AF5F-194420F41324}" ShortID="653047315">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-Attack_01" ID="{F8864C80-29AA-4BFB-AFC2-537E8047BE85}" ShortID="126948374">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-Attack_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-Attack_01" ID="{F8864C80-29AA-4BFB-AFC2-537E8047BE85}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB-SFX-Gardian-Attack_02" ID="{DF47D54C-87FE-4E6A-9152-E0BE00861AB3}" ShortID="503149913">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-Attack_02" ID="{D1C58E95-81CC-4283-94BB-6883DD42AAB0}" ShortID="956737558">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-Attack_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-Attack_02" ID="{D1C58E95-81CC-4283-94BB-6883DD42AAB0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB-SFX-Gardian-Attack_03" ID="{CC2A38F4-4A29-449C-BA95-A673A13E4F30}" ShortID="453000194">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-Attack_03" ID="{952E32E0-FA13-4BE5-9558-F56C66BD06D2}" ShortID="1016390998">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-Attack_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-Attack_03" ID="{952E32E0-FA13-4BE5-9558-F56C66BD06D2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="MIX_Footstep" ID="{7335A19C-0C1D-458F-BEBE-17341190BCB4}" ShortID="718371024">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="21"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="SWITCH_Footstep" ID="{E4AABB5D-7B01-4808-96F5-2FD77EDC6110}" ShortID="681068716">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Footstep_Charge" ID="{5E428EE6-BAB5-455E-BAB4-893EA8BEEE97}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="RND_Footstep_Charge" ID="{2C7ED995-95D9-4B38-A193-212F86DA79BE}" ShortID="427392980">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB-SFX-Gardian-FootstepCharge_00" ID="{E84BD3E9-C040-48D6-8C28-CD69A3744360}" ShortID="205128290">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-FootstepCharge_00" ID="{C1402DA7-D717-4639-8533-C41AF2F6A1D2}" ShortID="313310772">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-FootstepCharge_00.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-FootstepCharge_00" ID="{C1402DA7-D717-4639-8533-C41AF2F6A1D2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-FootstepCharge_01" ID="{3D858AF3-AF86-4316-9670-001DD51E8864}" ShortID="1033327513">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-FootstepCharge_01" ID="{FFB7D255-6090-4C2C-A5DC-9C4167BDC749}" ShortID="533650562">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-FootstepCharge_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-FootstepCharge_01" ID="{FFB7D255-6090-4C2C-A5DC-9C4167BDC749}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-FootstepCharge_02" ID="{395F5B3A-7479-4DAF-A8D0-691DE4BFCF4D}" ShortID="524071088">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-FootstepCharge_02" ID="{123B5D6C-0687-4B4A-B8DB-F53CAAB6A731}" ShortID="839062688">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-FootstepCharge_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-FootstepCharge_02" ID="{123B5D6C-0687-4B4A-B8DB-F53CAAB6A731}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-FootstepCharge_03" ID="{5F68DBFA-4CA9-4B59-8A84-3B2BC9D8F32B}" ShortID="446931645">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-FootstepCharge_03" ID="{B5FDE520-B8CE-4DEF-B0C1-744E36E37854}" ShortID="1048881042">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-FootstepCharge_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-FootstepCharge_03" ID="{B5FDE520-B8CE-4DEF-B0C1-744E36E37854}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RND_Footstep" ID="{B985DF9C-7781-4C05-9295-1420F26BC071}" ShortID="622894151">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB-SFX-Gardian-Footstep_00" ID="{3CBE6D05-9DED-43A7-8A29-193BEF1BADFC}" ShortID="451226200">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-Footstep_00" ID="{5FDD26D7-97EA-45DC-A27A-1D5EF367534D}" ShortID="591128391">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-Footstep_00.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-Footstep_00" ID="{5FDD26D7-97EA-45DC-A27A-1D5EF367534D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-Footstep_01" ID="{85E70930-CE93-41AE-9E67-A73F9DD49651}" ShortID="391092874">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-Footstep_01" ID="{CB34B283-DF68-410B-A2F6-B026833942CF}" ShortID="619914566">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-Footstep_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-Footstep_01" ID="{CB34B283-DF68-410B-A2F6-B026833942CF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-Footstep_02" ID="{DF50C837-51A9-4D95-8F82-B260CEDF3D63}" ShortID="7485007">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-Footstep_02" ID="{C9A24DB4-837B-4E3C-BCE3-68D290F6030A}" ShortID="60005933">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-Footstep_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-Footstep_02" ID="{C9A24DB4-837B-4E3C-BCE3-68D290F6030A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-Footstep_03" ID="{ABA686C8-251C-4628-BAC4-08B94D4A5B41}" ShortID="192080994">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-Footstep_03" ID="{A7725293-DCD5-47D8-9B6A-299048D98C55}" ShortID="91265510">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-Footstep_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-Footstep_03" ID="{A7725293-DCD5-47D8-9B6A-299048D98C55}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-Footstep_04" ID="{EA3A961B-675D-4349-B3E8-6D000A6B39F8}" ShortID="441536654">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-Footstep_04" ID="{EFACFC7A-8B24-4714-9A52-F7808BF8EFEC}" ShortID="581294037">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-Footstep_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-Footstep_04" ID="{EFACFC7A-8B24-4714-9A52-F7808BF8EFEC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-Footstep_05" ID="{39703741-C066-4CFE-94A5-EFBCE7291FF4}" ShortID="449380719">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-Footstep_05" ID="{C6A1D231-C824-4F87-B4A1-5C43E630D27A}" ShortID="367645582">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-Footstep_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-Footstep_05" ID="{C6A1D231-C824-4F87-B4A1-5C43E630D27A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-Footstep_06" ID="{C056F642-210D-4E75-A57C-011D46FF6B84}" ShortID="245304655">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-Footstep_06" ID="{FC2126F8-0C68-43DC-AC85-50E87F171FD7}" ShortID="745202616">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-Footstep_06.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-Footstep_06" ID="{FC2126F8-0C68-43DC-AC85-50E87F171FD7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-Footstep_07" ID="{51E699DE-0798-49B8-B19E-E787F1AD417E}" ShortID="1065110233">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-Footstep_07" ID="{A47540D5-E9EE-4A92-B110-0DAF1ED48611}" ShortID="63219166">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-Footstep_07.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-Footstep_07" ID="{A47540D5-E9EE-4A92-B110-0DAF1ED48611}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="RND_Footstep_Charge" ID="{2C7ED995-95D9-4B38-A193-212F86DA79BE}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RND_Footstep" ID="{B985DF9C-7781-4C05-9295-1420F26BC071}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
+														<ItemList>
+															<ItemRef Name="RND_Footstep" ID="{B985DF9C-7781-4C05-9295-1420F26BC071}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Start" ID="{220B4154-EBE4-4C51-9B3A-924E2597A8F3}"/>
+														<ItemList>
+															<ItemRef Name="RND_Footstep_Charge" ID="{2C7ED995-95D9-4B38-A193-212F86DA79BE}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="MIX_Death" ID="{B2B00261-883D-4D66-A6CE-4CE6B24595D9}" ShortID="378300035">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_Death" ID="{4B2846D8-8DE1-4B75-B17C-62C2DDDA9230}" ShortID="33461161">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB-SFX-Gardian-Death_00" ID="{338C3F21-0C10-462B-A788-4C8F993A606C}" ShortID="911414726">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-Death_00" ID="{773A1A48-1BA9-4992-AD3A-1F90FB85404E}" ShortID="13826524">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-Death_00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-Death_00" ID="{773A1A48-1BA9-4992-AD3A-1F90FB85404E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB-SFX-Gardian-Death_01" ID="{A641F380-C488-434E-9D0D-D6412E68D4A5}" ShortID="477198620">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-Death_01" ID="{39C4B62F-40C8-4611-8274-334D05163E94}" ShortID="747661496">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-Death_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-Death_01" ID="{39C4B62F-40C8-4611-8274-334D05163E94}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="MIX_GetHit" ID="{57BE0757-90ED-4098-8B40-B7D2BE3820E9}" ShortID="278580615">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="10"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_GetHit" ID="{702339D9-7B41-4D6B-85FD-1E60BD8580CA}" ShortID="440840681">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB-SFX-Gardian-GetHit_00" ID="{9BD72FAC-BF99-483B-BC39-D8B8AF09EE22}" ShortID="56610530">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-GetHit_00" ID="{13E149D8-C1C2-4299-A65A-F5B997C0E10F}" ShortID="540566815">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-GetHit_00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-GetHit_00" ID="{13E149D8-C1C2-4299-A65A-F5B997C0E10F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB-SFX-Gardian-GetHit_01" ID="{BB378B62-A141-4F44-A230-6EEAC0D4A9C4}" ShortID="416082614">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-GetHit_01" ID="{A6D37D4C-FA66-4353-8539-5DBB92B6BFD7}" ShortID="600255511">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-GetHit_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-GetHit_01" ID="{A6D37D4C-FA66-4353-8539-5DBB92B6BFD7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB-SFX-Gardian-GetHit_02" ID="{3E6341E5-7FDC-4DA4-8A16-9EBC93CAC629}" ShortID="417047045">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-GetHit_02" ID="{2E5C58B0-0AB2-4910-8B5B-A69AE64AD598}" ShortID="938875212">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-GetHit_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-GetHit_02" ID="{2E5C58B0-0AB2-4910-8B5B-A69AE64AD598}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB-SFX-Gardian-GetHit_03" ID="{7AB906BE-BF14-4FD4-840E-C8DA3B9E8DC1}" ShortID="857097120">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-GetHit_03" ID="{ADD4F97E-19BE-43AC-942D-040BB9807925}" ShortID="386008256">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-GetHit_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-GetHit_03" ID="{ADD4F97E-19BE-43AC-942D-040BB9807925}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="MIX_Charge" ID="{84A2DD00-4B1D-4A3E-8B9C-A8C78113EACB}" ShortID="859769849">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="9"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+								</ActorMixer>
+								<ActorMixer Name="MIX_Stomp" ID="{124A9806-9A2B-4EE3-B0EE-453B248BB831}" ShortID="1027501795">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_Stomp" ID="{3CDD4C14-1A06-4725-B578-7CD7085F0370}" ShortID="328637155">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB-SFX-Gardian-Stomp_00" ID="{37D7BC89-9BF0-42A9-9839-87733F10C767}" ShortID="908410678">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-Stomp_00" ID="{0026C603-34DB-4778-AC00-98A541C61090}" ShortID="67009919">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-Stomp_00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-Stomp_00" ID="{0026C603-34DB-4778-AC00-98A541C61090}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB-SFX-Gardian-Stomp_01" ID="{223662A0-C167-48E9-863D-43D919457E9A}" ShortID="654212809">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-Stomp_01" ID="{0F35AA11-5DBA-4BED-984C-89CD14E25CFF}" ShortID="947548818">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-Stomp_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-Stomp_01" ID="{0F35AA11-5DBA-4BED-984C-89CD14E25CFF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB-SFX-Gardian-Stomp_02" ID="{CE199D21-5FC6-4CA8-8482-6B12FEB86918}" ShortID="66077390">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB-SFX-Gardian-Stomp_02" ID="{1469806D-EC3E-4B62-B6EE-8E95AE5C734A}" ShortID="568154459">
+															<Language>SFX</Language>
+															<AudioFile>HB-SFX-Gardian-Stomp_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB-SFX-Gardian-Stomp_02" ID="{1469806D-EC3E-4B62-B6EE-8E95AE5C734A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Coffre" ID="{38E5939E-A8ED-4C62-8346-68D2DF5826DC}" ShortID="489044917">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="8"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Folder Name="Metal_Vieux" ID="{1BB2CDEC-E6B5-432A-B7F1-D92D643ABAD2}" ShortID="733792160"/>
+						<Folder Name="Metal_Neuf" ID="{47CC54E7-C154-4981-98B3-A420381E45F5}" ShortID="1022121752"/>
+						<Folder Name="Bois" ID="{50C8A1B7-F374-4147-912D-D42B876B712B}" ShortID="155431612"/>
+						<Folder Name="Pierre" ID="{3701C1E6-D6E7-4844-A7A0-C6DA0291DCE1}" ShortID="740192159"/>
+						<Folder Name="Loquet" ID="{115D4C88-8867-4518-B976-1180972D78EF}" ShortID="173317938"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Caisse" ID="{E77A9FCA-9236-48C3-A46D-F67B38C273C1}" ShortID="108216894">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="20"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
