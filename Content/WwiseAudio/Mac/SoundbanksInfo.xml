@@ -499,8 +499,10 @@
 				<Event Id="762198780" Name="E_UI_Play" ObjectPath="\Events\Brian\UI\E_UI_Play"/>
 				<Event Id="1971253356" Name="E_UI_Return" ObjectPath="\Events\Brian\UI\E_UI_Return"/>
 				<Event Id="1254674964" Name="E_UI_Valid" ObjectPath="\Events\Brian\UI\E_UI_Valid"/>
+				<Event Id="2759949120" Name="HB_Healthkit" ObjectPath="\Events\Chris\HB_Healthkit"/>
 				<Event Id="3564297591" Name="HB_Heartbeat_EVENT" ObjectPath="\Events\Chris\HB_Heartbeat_EVENT"/>
 				<Event Id="3887785823" Name="HB_PickUp_EVENT" ObjectPath="\Events\Chris\HB_PickUp_EVENT"/>
+				<Event Id="3546449532" Name="HB_PickUpHealthkit" ObjectPath="\Events\Chris\HB_PickUpHealthkit"/>
 				<Event Id="2857119571" Name="HB_UiAmmo_EVENT" ObjectPath="\Events\Chris\HB_UiAmmo_EVENT"/>
 				<Event Id="3689389172" Name="HB_UiWep_Equip_EVENT" ObjectPath="\Events\Chris\HB_UiWep_Equip_EVENT"/>
 				<Event Id="3859520409" Name="Initialize_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Initialize_Shotgun_EVENT"/>
@@ -632,6 +634,10 @@
 				<File Id="16371881" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Thunder_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_04_10C4C929.wem</Path>
+				</File>
+				<File Id="37010359" Language="SFX">
+					<ShortName>HB_SFX_Other_PickUpHealthkit.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_PickUpHealthkit_3F55BAC7.wem</Path>
 				</File>
 				<File Id="40813436" Language="SFX">
 					<ShortName>FTP_bois_humide_02.wav</ShortName>
@@ -821,10 +827,6 @@
 					<ShortName>HB_SFX_Shotgun_CanonPortee_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonPortee_02_10C4C929.wem</Path>
 				</File>
-				<File Id="211643422" Language="SFX">
-					<ShortName>Hb_sfx_other_pickup_rare.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_pickup_rare_2C8617B0.wem</Path>
-				</File>
 				<File Id="215037878" Language="SFX">
 					<ShortName>Shell_Gravel_02.wav</ShortName>
 					<Path>SFX\Shell_Gravel_02_10C4C929.wem</Path>
@@ -920,10 +922,6 @@
 				<File Id="290530205" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Death_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_SpikeTrap_Death_01_10C4C929.wem</Path>
-				</File>
-				<File Id="297572707" Language="SFX">
-					<ShortName>Hb_sfx_other_pickup_epic.alp.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_pickup_epic.alp_4ED9BE0A.wem</Path>
 				</File>
 				<File Id="301186491" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Wallstone_02.wav</ShortName>
@@ -1032,6 +1030,10 @@
 				<File Id="375260706" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-01.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-Hit-01_10C4C929.wem</Path>
+				</File>
+				<File Id="379540692" Language="SFX">
+					<ShortName>HB_SFX_Other_Healthkit.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Healthkit_149C83B2.wem</Path>
 				</File>
 				<File Id="379879356" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-004.wav</ShortName>
@@ -1649,10 +1651,6 @@
 					<ShortName>HB_Footstep_SolPierre_03.wav</ShortName>
 					<Path>SFX\HB_Footstep_SolPierre_03_10C4C929.wem</Path>
 				</File>
-				<File Id="973879160" Language="SFX">
-					<ShortName>Hb_sfx_other_Ammo_epic.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_Ammo_epic_CFAD1C77.wem</Path>
-				</File>
 				<File Id="978071521" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-01.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-01_10C4C929.wem</Path>
@@ -1688,10 +1686,6 @@
 				<File Id="1027878983" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Thunder_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_01_10C4C929.wem</Path>
-				</File>
-				<File Id="1027984298" Language="SFX">
-					<ShortName>Hb_sfx_other_Ammo_rare.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_Ammo_rare_E4AFE46D.wem</Path>
 				</File>
 				<File Id="1028175132" Language="SFX">
 					<ShortName>FTP_bois_sec_01.wav</ShortName>
