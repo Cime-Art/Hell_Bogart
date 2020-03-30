@@ -653,6 +653,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_04_10C4C929.wem</Path>
 				</File>
+				<File Id="69955049" Language="SFX">
+					<ShortName>SFX_HB_CaisseExplosive_01.wav</ShortName>
+					<Path>SFX\SFX_HB_CaisseExplosive_01_10C4C929.wem</Path>
+				</File>
 				<File Id="70517950" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_08.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_08_CB631199.wem</Path>
@@ -881,6 +885,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_GetHit_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_04_E1C71E79.wem</Path>
 				</File>
+				<File Id="273333574" Language="SFX">
+					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_01.wav</ShortName>
+					<Path>SFX\SFX_HB_PetiteCaisseBoisExplosion_01_10C4C929.wem</Path>
+				</File>
 				<File Id="277417704" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_NoChamber_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_NoChamber_02_10C4C929.wem</Path>
@@ -1089,6 +1097,10 @@
 					<ShortName>HB_SFX_Shotgun_StartDropShell_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_StartDropShell_03_10C4C929.wem</Path>
 				</File>
+				<File Id="432770256" Language="SFX">
+					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_00.wav</ShortName>
+					<Path>SFX\SFX_HB_PetiteCaisseBoisExplosion_00_10C4C929.wem</Path>
+				</File>
 				<File Id="436110025" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Planches_02.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Planches_02_10C4C929.wem</Path>
@@ -1276,6 +1288,10 @@
 				<File Id="567405934" Language="SFX">
 					<ShortName>HB-SFX-GenadeIce-02.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeIce-02_10C4C929.wem</Path>
+				</File>
+				<File Id="570337413" Language="SFX">
+					<ShortName>SFX_HB_CaisseExplosive_00.wav</ShortName>
+					<Path>SFX\SFX_HB_CaisseExplosive_00_10C4C929.wem</Path>
 				</File>
 				<File Id="570978224" Language="SFX">
 					<ShortName>HB-SFX-GenadeFire-00.wav</ShortName>
@@ -1660,6 +1676,10 @@
 				<File Id="1010589217" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Thunder_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_02_10C4C929.wem</Path>
+				</File>
+				<File Id="1014806612" Language="SFX">
+					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_02.wav</ShortName>
+					<Path>SFX\SFX_HB_PetiteCaisseBoisExplosion_02_10C4C929.wem</Path>
 				</File>
 				<File Id="1022224548" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_IceHit_04.wav</ShortName>

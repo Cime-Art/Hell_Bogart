@@ -134,7 +134,7 @@
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="WallStone" ID="{481FD3BC-CD23-4A62-8E7B-66BAAFBE994B}"/>
+						<CurrentSwitchRef Name="Jarre" ID="{A639CD38-D095-4F32-A71B-370AC5D67590}"/>
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
