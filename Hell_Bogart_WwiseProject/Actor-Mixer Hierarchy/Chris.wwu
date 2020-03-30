@@ -83,14 +83,14 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>10.6552895124346</RightEdgePos>
+														<RightEdgePos>10.0147201174168</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
 												<BlendTrackAssoc>
 													<ItemRef Name="HB_Heartbeat_slow" ID="{8EDFC986-1481-457F-9B07-6A5FD863FDCC}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>10.5066677028796</LeftEdgePos>
+														<LeftEdgePos>10.0084470623102</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<RightEdgePos>25</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
@@ -100,6 +100,78 @@
 										</BlendTrack>
 									</BlendTrackList>
 								</BlendContainer>
+								<ActorMixer Name="PickUpHealthkit" ID="{0C6BF5D0-6C3D-41E3-9A43-07D200309718}" ShortID="614463485">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HB_PickUpHealthkit" ID="{1044A179-EF22-4B37-B9B5-CDDF96349B22}" ShortID="10629119">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_Other_PickUpHealthkit" ID="{BD01E005-8B41-434A-B7AA-DD1849D4F89A}" ShortID="37010359">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.97321156773212"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_Other_PickUpHealthkit.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_Other_PickUpHealthkit" ID="{BD01E005-8B41-434A-B7AA-DD1849D4F89A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Healthkit" ID="{853C7734-7636-4F53-B7BA-DC7DB3997F67}" ShortID="682818835">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" ShortID="596721459">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_Other_Healthkit" ID="{218DC6D9-2FF3-4570-B5C2-96CEA497104D}" ShortID="379540692">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.14768427919113"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.23999782561426"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_Other_Healthkit.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_Other_Healthkit" ID="{218DC6D9-2FF3-4570-B5C2-96CEA497104D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -204,31 +276,6 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Hb_sfx_other_Ammo_rare" ID="{DDDED8F1-BB7A-42C6-B064-2B550EB8AAEB}" ShortID="508836594">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Hb_sfx_other_Ammo_rare" ID="{1397FF7C-B6CF-416F-BB6A-5ACBBEE3E266}" ShortID="1027984298">
-															<PropertyList>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.92416200726866"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Hb_sfx_other_Ammo_rare.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Hb_sfx_other_Ammo_rare" ID="{1397FF7C-B6CF-416F-BB6A-5ACBBEE3E266}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="RND_Ammo_Epic" ID="{9B8981D5-0E61-42D6-847A-36604F140283}" ShortID="713260850">
 											<ReferenceList>
@@ -239,32 +286,6 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Hb_sfx_other_Ammo_epic" ID="{032011E9-37FA-442D-BF72-E94AB388F072}" ShortID="359379145">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Hb_sfx_other_Ammo_epic" ID="{32D741D3-3A79-4130-843A-3BEE40DC6EAC}" ShortID="973879160">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.988026861429503"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.988026861429503"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Hb_sfx_other_Ammo_epic.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Hb_sfx_other_Ammo_epic" ID="{32D741D3-3A79-4130-843A-3BEE40DC6EAC}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
@@ -340,39 +361,6 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Hb_sfx_other_pickup_epic_alp" ID="{2F8CCFAE-9C8A-4A29-919A-C33ADA7C1667}" ShortID="504763371">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Hb_sfx_other_pickup_epic_alp" ID="{5925B2B0-ED7A-4DCA-BEF0-EE7C14E3AA91}" ShortID="297572707">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.993091471748517"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.02681910663809"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Hb_sfx_other_pickup_epic.alp.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Hb_sfx_other_pickup_epic_alp" ID="{5925B2B0-ED7A-4DCA-BEF0-EE7C14E3AA91}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}" ShortID="670246627">
 											<ReferenceList>
@@ -383,39 +371,6 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Hb_sfx_other_pickup_rare" ID="{C0C1F3D8-36B7-44C4-87B7-F4E6BE278AC6}" ShortID="218956583">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>2</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Hb_sfx_other_pickup_rare" ID="{B972EF01-CB88-48BE-9342-961576F18C67}" ShortID="211643422">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.98556603920107"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.990568912496506"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Hb_sfx_other_pickup_rare.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Hb_sfx_other_pickup_rare" ID="{B972EF01-CB88-48BE-9342-961576F18C67}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}" ShortID="986440601">
 											<ReferenceList>

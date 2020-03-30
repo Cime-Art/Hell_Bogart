@@ -50,6 +50,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="HB_PickUpHealthkit" ID="{DEA28796-4AA7-4143-826C-1AE6D1E87BD7}">
+					<ChildrenList>
+						<Action Name="" ID="{DE0025EE-8798-48AA-B71C-0C20284C5C5E}" ShortID="811428973">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HB_PickUpHealthkit" ID="{1044A179-EF22-4B37-B9B5-CDDF96349B22}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HB_Healthkit" ID="{C652CBF4-E8CD-4807-98CA-9D58BA179795}">
+					<ChildrenList>
+						<Action Name="" ID="{D9325B45-7388-4100-9C35-EF227B69427D}" ShortID="1055440013">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
