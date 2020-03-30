@@ -1,4 +1,5 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	393509290	Footstep_Charge			\Brian\Guardian\Footstep_Charge	
 	916310236	Ammo_Type_STATE			\Simon\Items\Ammo_Type_STATE	
 	1573985144	AmbToFight_STATE			\Brian\Musique\AmbToFight_STATE	
 	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
@@ -10,6 +11,9 @@ State Group	ID	Name			Wwise Object Path	Notes
 	4261493451	Canon_Type_STATE			\Simon\Items\Canon_Type_STATE	
 
 State	ID	Name	State Group			Notes
+	0	None	Footstep_Charge			
+	529726532	End	Footstep_Charge			
+	1281810935	Start	Footstep_Charge			
 	0	None	Ammo_Type_STATE			
 	186852181	Thunder	Ammo_Type_STATE			
 	344481046	Ice	Ammo_Type_STATE			
