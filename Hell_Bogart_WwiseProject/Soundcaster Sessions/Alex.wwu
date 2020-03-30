@@ -40,7 +40,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
-						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+						<CurrentSwitchRef Name="FTP_Bridge" ID="{1DCC363B-AA5F-495C-8B67-A2EFAC2BB453}"/>
 						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

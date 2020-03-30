@@ -25,6 +25,7 @@
 										<Switch Name="FTP_Ossements_sol_switch" ID="{66E03050-3797-4780-B57B-8D61679CE18B}"/>
 										<Switch Name="FTP_Metal_switch" ID="{C017C313-7D52-4206-92EB-EA5C848B44F9}"/>
 										<Switch Name="FTP_Ossements_pierre_switch" ID="{7DD390D7-243E-4E17-9E0F-F8658D3558E2}"/>
+										<Switch Name="FTP_Bridge" ID="{1DCC363B-AA5F-495C-8B67-A2EFAC2BB453}"/>
 									</ChildrenList>
 								</SwitchGroup>
 							</ChildrenList>
