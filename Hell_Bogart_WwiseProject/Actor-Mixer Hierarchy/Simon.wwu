@@ -5445,6 +5445,8 @@
 					<ChildrenList>
 						<ActorMixer Name="Destructibles" ID="{F56D3C1D-156E-4A4B-9B80-236B84230D62}" ShortID="431852829">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>6</Value>
@@ -5452,6 +5454,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATT_Destructibles" ID="{A0BF58A6-770E-4832-B15F-5D0CC3866086}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 								</Reference>
@@ -5471,6 +5476,11 @@
 							<ChildrenList>
 								<SwitchContainer Name="Destroy_Object_SWITCH" ID="{00421940-28A7-45E0-81D5-13A5513592F2}" ShortID="908104506">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
@@ -5517,6 +5527,11 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -5588,6 +5603,25 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Destroy_Planche_RND" ID="{A5B4678D-A4AE-4E11-962E-5273194F7708}" ShortID="28173461">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -5598,6 +5632,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="SFX_HB_Destructibles_Planches_01" ID="{23EDDFBA-4E58-4150-B77D-B654AE60411E}" ShortID="673734621">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -5617,6 +5658,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="SFX_HB_Destructibles_Planches_02" ID="{8808CDF6-4906-4ECD-8133-A4C8E7500887}" ShortID="535210061">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -5636,6 +5684,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="SFX_HB_Destructibles_Planches_03" ID="{43BEF0C9-C4AB-402B-8AE1-E7175D5FA6B8}" ShortID="407634104">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -5974,6 +6029,243 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Destroy_Caisse_RND" ID="{D4451C5E-CAE8-4D5C-8B73-2F6655F8BCAB}" ShortID="927010165">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_PetiteCaisseBoisExplosion_00" ID="{60B5E923-CEF0-4F45-9423-9D9219368BC0}" ShortID="1026489030">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_Destructibles" ID="{A0BF58A6-770E-4832-B15F-5D0CC3866086}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_PetiteCaisseBoisExplosion_00" ID="{60FF6CD9-3971-443C-8CEA-89AE144FD490}" ShortID="432770256">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_PetiteCaisseBoisExplosion_00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_PetiteCaisseBoisExplosion_00" ID="{60FF6CD9-3971-443C-8CEA-89AE144FD490}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_PetiteCaisseBoisExplosion_01" ID="{7812BE48-7BC7-4523-AB85-FAB249BB38D1}" ShortID="321816765">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_Destructibles" ID="{A0BF58A6-770E-4832-B15F-5D0CC3866086}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_PetiteCaisseBoisExplosion_01" ID="{B43D9E11-84F4-490A-A39D-2F32A453F11F}" ShortID="273333574">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_PetiteCaisseBoisExplosion_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_PetiteCaisseBoisExplosion_01" ID="{B43D9E11-84F4-490A-A39D-2F32A453F11F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_PetiteCaisseBoisExplosion_02" ID="{786D7F0D-41EA-4F84-BCC3-EF2C12808001}" ShortID="145962740">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_Destructibles" ID="{A0BF58A6-770E-4832-B15F-5D0CC3866086}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_PetiteCaisseBoisExplosion_02" ID="{3FD119A7-1B40-4DE5-84FE-E115F79B1867}" ShortID="1014806612">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_PetiteCaisseBoisExplosion_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_PetiteCaisseBoisExplosion_02" ID="{3FD119A7-1B40-4DE5-84FE-E115F79B1867}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Destroy_Explosif_RND" ID="{498CD2EE-0E1C-4A55-926C-FD50E1AF7AE8}" ShortID="642337542">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-19</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_CaisseExplosive_00" ID="{E0D31710-676D-40AA-977A-BE6F6DE90BCB}" ShortID="389097027">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_Destructibles" ID="{A0BF58A6-770E-4832-B15F-5D0CC3866086}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_CaisseExplosive_00" ID="{C0B7E408-F495-447F-907F-54156360A776}" ShortID="570337413">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_CaisseExplosive_00.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_CaisseExplosive_00" ID="{C0B7E408-F495-447F-907F-54156360A776}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_CaisseExplosive_01" ID="{BF34BE45-BA29-4A87-AB73-35323F3FB610}" ShortID="632670018">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_Destructibles" ID="{A0BF58A6-770E-4832-B15F-5D0CC3866086}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_CaisseExplosive_01" ID="{CB0FE2FA-10B6-40F3-8F25-77FAA26D48B5}" ShortID="69955049">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_CaisseExplosive_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_CaisseExplosive_01" ID="{CB0FE2FA-10B6-40F3-8F25-77FAA26D48B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
@@ -5993,7 +6285,13 @@
 												<ItemRef Name="Destroy_Jarre_RND" ID="{D06B175E-72F4-4060-9E25-4B1901A6E5D2}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
+												<ItemRef Name="Destroy_Caisse_RND" ID="{D4451C5E-CAE8-4D5C-8B73-2F6655F8BCAB}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="Destroy_Planche_RND" ID="{A5B4678D-A4AE-4E11-962E-5273194F7708}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Destroy_Explosif_RND" ID="{498CD2EE-0E1C-4A55-926C-FD50E1AF7AE8}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
@@ -6004,19 +6302,25 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
+												<SwitchRef Name="Caiss" ID="{53291F45-44D8-4058-95A8-28E8E7717593}"/>
+												<ItemList>
+													<ItemRef Name="Destroy_Caisse_RND" ID="{D4451C5E-CAE8-4D5C-8B73-2F6655F8BCAB}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Stone" ID="{1A092FB0-3C81-4E82-B338-2045227D7034}"/>
 												<ItemList>
 													<ItemRef Name="Destroy_Stone_RND" ID="{D65D5222-246D-4075-9F98-50E6E38446D7}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="WallStone" ID="{481FD3BC-CD23-4A62-8E7B-66BAAFBE994B}"/>
+												<SwitchRef Name="Walls" ID="{481FD3BC-CD23-4A62-8E7B-66BAAFBE994B}"/>
 												<ItemList>
 													<ItemRef Name="Destroy_WallStone_RND" ID="{EC686103-FAE3-4F17-93DA-ACC4F5A45593}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="Tonneau" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
+												<SwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
 												<ItemList>
 													<ItemRef Name="Destroy_Tonneau_RND" ID="{008CCB54-DB8B-4865-810F-2D61F5685E94}"/>
 												</ItemList>
@@ -6028,9 +6332,15 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="Planche" ID="{7C37FFDC-146B-485C-9AF1-95B944241D82}"/>
+												<SwitchRef Name="Plank" ID="{7C37FFDC-146B-485C-9AF1-95B944241D82}"/>
 												<ItemList>
 													<ItemRef Name="Destroy_Planche_RND" ID="{A5B4678D-A4AE-4E11-962E-5273194F7708}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Explo" ID="{8D74F0FD-956B-4A53-B994-470BBE09DD6C}"/>
+												<ItemList>
+													<ItemRef Name="Destroy_Explosif_RND" ID="{498CD2EE-0E1C-4A55-926C-FD50E1AF7AE8}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
