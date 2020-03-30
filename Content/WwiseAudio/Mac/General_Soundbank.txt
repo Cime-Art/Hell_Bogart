@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	694853374	E_Mob_JungleCharlie_Attack			\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack	
 	717878901	E_StoneDoorRiddle_Stop			\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop	
 	762198780	E_UI_Play			\Brian\UI\E_UI_Play	
+	762238587	E_GroundSwitch_Low			\Simon\Enviro\Ground Switches\E_GroundSwitch_Low	
 	842152325	E_UI_Option			\Brian\UI\E_UI_Option	
 	1031929396	E_Mus_Jungle_End			\Simon\Music\Jungle\E_Mus_Jungle_End	
 	1058217336	E_Initialize_Grenade			\Brian\Grenade\E_Initialize_Grenade	
@@ -14,6 +15,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1418412915	E_SetAcoustic_Ruines			\Simon\Global\Acoustics\E_SetAcoustic_Ruines	
 	1638544743	E_Mob_JungleCharlie_Exploded			\Simon\Enemies\MobJungleCharlie\Exploded\E_Mob_JungleCharlie_Exploded	
 	1693088249	E_Destroy_Object			\Simon\Destructibles\E_Destroy_Object	
+	1942792786	E_GroundSwitch_Medium			\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium	
 	1971253356	E_UI_Return			\Brian\UI\E_UI_Return	
 	1975484871	E_SetAcoustic_Exterior			\Simon\Global\Acoustics\E_SetAcoustic_Exterior	
 	2055309167	E_play_Minigun			\Ben\E_play_Minigun	
@@ -40,6 +42,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3867560083	E_Mus_Jungle_Main_Play			\Simon\Music\Jungle\E_Mus_Jungle_Main_Play	
 	3887785823	HB_PickUp_EVENT			\Chris\HB_PickUp_EVENT	
 	3926686718	TEST_Play_Method_A			\Brian\TEST_Play_Method_A	
+	4222663323	E_Mus_TriggerEnigmeChest			\Simon\Music\Jungle\E_Mus_TriggerEnigmeChest	
 	4247850677	E_Mus_SetExplorationState			\Simon\Music\Jungle\E_Mus_SetExplorationState	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -145,7 +148,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	50418130	HB_SFX_Shotgun_PowerLayer_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Shotgun_PowerLayer_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Power_Layer_RND\HB_SFX_Shotgun_PowerLayer_01		85568
 	58330489	SF-DS Weapon Projectile 03_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SF-DS Weapon Projectile 03_01_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\MiniGun_Fire\Fire\Shoot_02\SF-DS Weapon Projectile 03_01		126840
 	64327808	SFX_HB_MobJungleCharlie_FireHit_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_MobJungleCharlie_FireHit_04_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Get Hit\MobJungleCharlie_GetHit_ELEMENT_SWITCH\MobJungleCharlie_GetHit_Fire_RND\SFX_HB_MobJungleCharlie_FireHit_04		140544
-	69955049	SFX_HB_CaisseExplosive_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_CaisseExplosive_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Destructibles\Destructibles\Destroy_Object_SWITCH\Destroy_Explosif_RND\SFX_HB_CaisseExplosive_01		379704
 	70517950	SFX_HB_MobJungleCharlie_Attack_08	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_MobJungleCharlie_Attack_08_CB631199.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Attack\Attack_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Attack_08		122312
 	78350251	SFX_HB_Traps_SpikeTrap_Death_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_Traps_SpikeTrap_Death_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Traps\Traps\Spike Trap\Spike_Trap_SEQ\IsInSpikeTrap_SWITCH\SpikeTrap_Death_RND\SFX_HB_Traps_SpikeTrap_Death_03		111068
 	78832806	HB_SFX_Shotgun_NoChamber_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Shotgun_NoChamber_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\No_Chamber_RND\HB_SFX_Shotgun_NoChamber_01		16106
@@ -309,10 +311,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	564419644	FTP_bois_sec_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\FTP_bois_sec_02_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\Footsteps\FTP_surface_type_switch\FTP_Bois_sec_Bridge_RND\FTP_bois_sec_02		16196
 	565969212	HB_SFX_Shotgun_Spread180_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Shotgun_Spread180_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\Spread_180_RND\HB_SFX_Shotgun_Spread180_00		9376
 	567405934	Legendary	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-GenadeIce-02_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Ice\Legendary		456960
-	570337413	SFX_HB_CaisseExplosive_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_CaisseExplosive_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Destructibles\Destructibles\Destroy_Object_SWITCH\Destroy_Explosif_RND\SFX_HB_CaisseExplosive_00		416716
 	570978224	Commun	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-GenadeFire-00_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Fire\Commun		381360
 	581784882	HB_SFX_Shotgun_CanonTranspercant_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Shotgun_CanonTranspercant_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Canon_Type_SWITCH\Canon_Transpercant_RND\HB_SFX_Shotgun_CanonTranspercant_01		72108
 	584368452	Shell_Water_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Shell_Water_01_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Water\Shell_Water_01		74288
+	584699736	SFX_HB_CaisseExplosive_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_CaisseExplosive_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Destructibles\Destructibles\Destroy_Object_SWITCH\Destroy_Explosif_RND\SFX_HB_CaisseExplosive_00		416716
 	585423988	SFX_HB_MobJungleCharlie_v2_IddleOUT_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_MobJungleCharlie_v2_IddleOUT_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Iddle\Iddle_MobJungleCharlie_SEQ\Iddle_MobJungleCharlie_Voice_SEQ\Iddle_Mob_BreathOUT_RND\SFX_HB_MobJungleCharlie_v2_IddleOUT_03		318968
 	585735897	FTP_gravier_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\FTP_gravier_03_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\Footsteps\FTP_surface_type_switch\FTP_Sol_gravier_RND\FTP_gravier_03		17580
 	586926021	FTP_ossements_sol_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\FTP_ossements_sol_02_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\Footsteps\FTP_surface_type_switch\FTP_Ossements_sol_RND\FTP_ossements_sol_02		20290
@@ -328,6 +330,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	626546830	SFX_HB_MobJungleCharlie_v2_IddleFoley_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Iddle\Iddle_MobJungleCharlie_Foleys_RND\SFX_HB_MobJungleCharlie_v2_IddleFoley_03		190594
 	628955542	SFX_HB_MobJungleCharlie_IceHit_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_MobJungleCharlie_IceHit_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Get Hit\MobJungleCharlie_GetHit_ELEMENT_SWITCH\MobJungleCharlie_GetHit_Ice_RND\SFX_HB_MobJungleCharlie_IceHit_03		204292
 	637723326	SFX_HB_MobJungleCharlie_Attack_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_MobJungleCharlie_Attack_04_4F58FBE9.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Attack\Attack_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Attack_04		118248
+	643377963	SFX_HB_CaisseExplosive_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_CaisseExplosive_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Destructibles\Destructibles\Destroy_Object_SWITCH\Destroy_Explosif_RND\SFX_HB_CaisseExplosive_01		379704
 	646026284	HB_SFX_Shotgun_Reload_In_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Shotgun_Reload_In_02_0D54C86F.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\OutIn_SEQ\Reload_In\HB_SFX_Shotgun_Reload_In_02		26826
 	646470638	Shell_Concrete_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Shell_Concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Concrete\Shell_Concrete_01		121954
 	654608427	Shell_Metal_05	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Shell_Metal_05_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Metal\Shell_Metal_05		79666
@@ -358,6 +361,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	742319399	HB-SFX-Other-OpenBigStoneDoor	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-Other-OpenBigStoneDoor_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enviro\Big Stone Door\HB-SFX-Other-OpenBigStoneDoor		244060
 	746337883	HB-SFX-Other-LoopBigStoneDoorOpening	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-Other-LoopBigStoneDoorOpening_D79FB2B7.wem		\Actor-Mixer Hierarchy\Simon\Enviro\Big Stone Door\HB-SFX-Other-LoopBigStoneDoorOpening		588244
 	749607470	Epic	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-GenadeFire-01_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Fire\Epic		419160
+	754682193	SFX_OTHERS_GroundSwitch_Klonk3	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_OTHERS_GroundSwitch_Klonk3_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enviro\Ground Stone Switch\SFX_OTHERS_GroundSwitch_Klonk3		576240
 	756092202	HB_Heartbeat_slow	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Other_HeartbeatSlow_C196C064.wem		\Actor-Mixer Hierarchy\Chris\character\other\HeartBeat\HB_Heartbeat_slow		463564
 	756586809	HB_SFX_Shotgun_ThunderAmmo_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Shotgun_ThunderAmmo_00_13824A88.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Thunder_Ammo_RND\HB_SFX_Shotgun_ThunderAmmo_00		57622
 	760505559	SFX_HB_MobJungleCharlie_v2_IddleIN_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_MobJungleCharlie_v2_IddleIN_04_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Iddle\Iddle_MobJungleCharlie_SEQ\Iddle_MobJungleCharlie_Voice_SEQ\Iddle_Mob_BreathIN_RND\SFX_HB_MobJungleCharlie_v2_IddleIN_04		242416
@@ -402,6 +406,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	964166816	Shell_Dirt_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\60 - .45 auto shell single shell on hard packed dirt-07_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Dirt\Shell_Dirt_02		94732
 	972483720	HB_Footstep_SolPierre_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_Footstep_SolPierre_03_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\Footsteps\FTP_surface_type_switch\FTP_Sol_pierre_RND\HB_Footstep_SolPierre_03		88264
 	978071521	Epic	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-GenadeElec-01_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Thunder\Epic		343560
+	982895792	SFX_HB_GroundSwitch_Klonk	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_GroundSwitch_Klonk_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enviro\Ground Stone Switch\SFX_HB_GroundSwitch_Klonk		456240
 	985776297	SFX_HB_MobJungleCharlie_FireHit_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_MobJungleCharlie_FireHit_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Get Hit\MobJungleCharlie_GetHit_ELEMENT_SWITCH\MobJungleCharlie_GetHit_Fire_RND\SFX_HB_MobJungleCharlie_FireHit_02		140632
 	994240380	FTP_ossements_sol_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\FTP_ossements_sol_01_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\Footsteps\FTP_surface_type_switch\FTP_Ossements_sol_RND\FTP_ossements_sol_01		21716
 	1001555105	Legendary	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-GenadeFire-02_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Fire\Legendary		381360
