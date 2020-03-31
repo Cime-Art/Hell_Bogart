@@ -271,19 +271,12 @@
 						<ActorMixer Name="Ground Stone Switch" ID="{8C843CAB-3D0F-404E-8834-71555CBD3A02}" ShortID="752229597">
 							<PropertyList>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
