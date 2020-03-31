@@ -465,7 +465,8 @@
 										</Action>
 										<Action Name="" ID="{E716D05E-EBC8-40A0-825C-DCCF5BA39B32}" ShortID="417882547">
 											<PropertyList>
-												<Property Name="Delay" Type="Real64" Value="1.08"/>
+												<Property Name="Delay" Type="Real64" Value="0.5"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -479,27 +480,6 @@
 						</Folder>
 						<Folder Name="Stone Door Riddle" ID="{B193C2AA-1E7A-4C59-A9A0-524E54C32D37}" ShortID="647118899">
 							<ChildrenList>
-								<Event Name="E_StoneDoorRiddle_Opening" ID="{1B6E7126-E1E7-4F8B-A8F3-42C0C51A1B7B}">
-									<ChildrenList>
-										<Action Name="" ID="{61CB760B-412E-44AA-9EC0-6635C7235C0D}" ShortID="22327759">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="SFX_HB_Other_OpenStoneDoorRiddle" ID="{89745786-CE3B-419C-A3AC-D9B635913FD5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{A8B9510A-57C5-4C08-BF55-FAF1EE844D50}" ShortID="544108520">
-											<PropertyList>
-												<Property Name="Delay" Type="Real64" Value="1.08"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="SFX_HB_Other_LoopStoneDoorRiddle" ID="{827D9DB6-48A2-4B8E-AA3D-6B637A13A447}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="E_StoneDoorRiddle_Stop" ID="{4DB9CC59-B87F-4268-8ECB-9B686D86FDA2}">
 									<ChildrenList>
 										<Action Name="" ID="{7671CE51-CF80-439F-96C9-5EBA76729BC0}" ShortID="8682459">
@@ -517,6 +497,27 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_HB_Other_EndStoneDoorRiddle" ID="{B0EE893E-97E3-4DC8-B2F4-E25A7BABA72A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_StoneDoorRiddle_Openning" ID="{4ACDF199-1841-48B6-B290-105536B42A14}">
+									<ChildrenList>
+										<Action Name="" ID="{2002A7A2-4AF4-406F-B609-41B39F5CBE6A}" ShortID="11665572">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HB_Other_OpenStoneDoorRiddle" ID="{89745786-CE3B-419C-A3AC-D9B635913FD5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AA6318D0-FB7F-4F3B-903D-A7E887A79514}" ShortID="745610952">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.08"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HB_Other_LoopStoneDoorRiddle" ID="{827D9DB6-48A2-4B8E-AA3D-6B637A13A447}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
