@@ -90,7 +90,7 @@
 							<Position X="5" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_StoneDoorRiddle_Opening" ID="{1B6E7126-E1E7-4F8B-A8F3-42C0C51A1B7B}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_StoneDoorRiddle_Openning" ID="{4ACDF199-1841-48B6-B290-105536B42A14}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="5" Y="1"/>
 						</Module>
 						<Module>
@@ -125,7 +125,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
+						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
 						<CurrentStateRef Name="End_Music" ID="{F98C25B7-C5CA-4858-B4D9-4136E6494696}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
