@@ -466,12 +466,22 @@
 			<ShortName>General_Soundbank</ShortName>
 			<Path>General_Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1849535609" Name="E_Attack" ObjectPath="\Events\Brian\Gardian\E_Attack"/>
 				<Event Id="2368673453" Name="E_BigStoneDoor_Opening" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Opening"/>
 				<Event Id="2503251047" Name="E_BigStoneDoor_Stop" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Stop"/>
+				<Event Id="825092078" Name="E_Coffre_Bois" ObjectPath="\Events\Brian\Coffre\E_Coffre_Bois"/>
+				<Event Id="3105411141" Name="E_Coffre_Loquet" ObjectPath="\Events\Brian\Coffre\E_Coffre_Loquet"/>
+				<Event Id="453363137" Name="E_Coffre_Metal_Neuf" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Neuf"/>
+				<Event Id="251601818" Name="E_Coffre_Metal_Vieux" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Vieux"/>
+				<Event Id="1482865096" Name="E_Coffre_Pierre" ObjectPath="\Events\Brian\Coffre\E_Coffre_Pierre"/>
+				<Event Id="1674672365" Name="E_Death" ObjectPath="\Events\Brian\Gardian\E_Death"/>
 				<Event Id="1693088249" Name="E_Destroy_Object" ObjectPath="\Events\Simon\Destructibles\E_Destroy_Object"/>
+				<Event Id="1082760276" Name="E_EndCharge" ObjectPath="\Events\Brian\Gardian\E_EndCharge"/>
+				<Event Id="2224696771" Name="E_Footstep" ObjectPath="\Events\Brian\Gardian\E_Footstep"/>
 				<Event Id="3189034779" Name="E_FTP_surface_type_switch" ObjectPath="\Events\Alex\E_FTP_surface_type_switch"/>
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
+				<Event Id="539842108" Name="E_Hit" ObjectPath="\Events\Brian\Gardian\E_Hit"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
 				<Event Id="694853374" Name="E_Mob_JungleCharlie_Attack" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack"/>
 				<Event Id="2112280100" Name="E_Mob_JungleCharlie_Death" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death"/>
@@ -487,13 +497,16 @@
 				<Event Id="4247850677" Name="E_Mus_SetExplorationState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetExplorationState"/>
 				<Event Id="102331918" Name="E_Mus_SetFightState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetFightState"/>
 				<Event Id="4222663323" Name="E_Mus_TriggerEnigmeChest" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_TriggerEnigmeChest"/>
+				<Event Id="850917734" Name="E_Petite_Boite" ObjectPath="\Events\Brian\Coffre\E_Petite_Boite"/>
 				<Event Id="3376467880" Name="E_Play_Grenade" ObjectPath="\Events\Brian\Grenade\E_Play_Grenade"/>
 				<Event Id="2055309167" Name="E_play_Minigun" ObjectPath="\Events\Ben\E_play_Minigun"/>
 				<Event Id="1306962266" Name="E_play_Minigun_Stop" ObjectPath="\Events\Ben\E_play_Minigun_Stop"/>
 				<Event Id="3359588815" Name="E_SetAcoustic_BossArena" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_BossArena"/>
 				<Event Id="1975484871" Name="E_SetAcoustic_Exterior" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Exterior"/>
 				<Event Id="1418412915" Name="E_SetAcoustic_Ruines" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Ruines"/>
-				<Event Id="2750501103" Name="E_StoneDoorRiddle_Opening" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Opening"/>
+				<Event Id="3774871727" Name="E_StartCharge" ObjectPath="\Events\Brian\Gardian\E_StartCharge"/>
+				<Event Id="3471430412" Name="E_Stomp" ObjectPath="\Events\Brian\Gardian\E_Stomp"/>
+				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
 				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
 				<Event Id="355937833" Name="E_Traps_SpikeTrap" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap"/>
 				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
@@ -630,6 +643,10 @@
 					<ShortName>HB_SFX_Uiwep_Equip2.wav</ShortName>
 					<Path>SFX\HB_SFX_Uiwep_Equip2_BCF095EF.wem</Path>
 				</File>
+				<File Id="13826524" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Death_00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Death_00_10C4C929.wem</Path>
+				</File>
 				<File Id="14777753" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_05.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_05_10C4C929.wem</Path>
@@ -658,9 +675,25 @@
 					<ShortName>SF-DS Weapon Projectile 03_01.wav</ShortName>
 					<Path>SFX\SF-DS Weapon Projectile 03_01_10C4C929.wem</Path>
 				</File>
+				<File Id="60005933" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Footstep_02.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Footstep_02_10C4C929.wem</Path>
+				</File>
+				<File Id="63219166" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Footstep_07.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Footstep_07_10C4C929.wem</Path>
+				</File>
 				<File Id="64327808" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_04_10C4C929.wem</Path>
+				</File>
+				<File Id="67009919" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Stomp_00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Stomp_00_10C4C929.wem</Path>
+				</File>
+				<File Id="68373746" Language="SFX">
+					<ShortName>HB-SFX-Gardian-EndCharge.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-EndCharge_10C4C929.wem</Path>
 				</File>
 				<File Id="70517950" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_08.wav</ShortName>
@@ -677,6 +710,10 @@
 				<File Id="89815110" Language="SFX">
 					<ShortName>HB-SFX-Genade-02.wav</ShortName>
 					<Path>SFX\HB-SFX-Genade-02_10C4C929.wem</Path>
+				</File>
+				<File Id="91265510" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Footstep_03.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Footstep_03_10C4C929.wem</Path>
 				</File>
 				<File Id="94451676" Language="SFX">
 					<ShortName>Shell_Gravel_03.wav</ShortName>
@@ -717,6 +754,10 @@
 				<File Id="124738395" Language="SFX">
 					<ShortName>Shell_Water_05.wav</ShortName>
 					<Path>SFX\Shell_Water_05_10C4C929.wem</Path>
+				</File>
+				<File Id="126948374" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Attack_01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Attack_01_10C4C929.wem</Path>
 				</File>
 				<File Id="131298312" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_00.wav</ShortName>
@@ -966,6 +1007,10 @@
 					<ShortName>FTP_eau_02.wav</ShortName>
 					<Path>SFX\FTP_eau_02_10C4C929.wem</Path>
 				</File>
+				<File Id="313310772" Language="SFX">
+					<ShortName>HB-SFX-Gardian-FootstepCharge_00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-FootstepCharge_00_10C4C929.wem</Path>
+				</File>
 				<File Id="321376137" Language="SFX">
 					<ShortName>FTP_bois_humide_01.wav</ShortName>
 					<Path>SFX\FTP_bois_humide_01_10C4C929.wem</Path>
@@ -1022,6 +1067,10 @@
 					<ShortName>HB_SFX_Shotgun_FireAmmo_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_FireAmmo_01_10C4C929.wem</Path>
 				</File>
+				<File Id="359709367" Language="SFX">
+					<ShortName>SFX-HB-CoffreMetalNeuf_00.wav</ShortName>
+					<Path>SFX\SFX-HB-CoffreMetalNeuf_00_10C4C929.wem</Path>
+				</File>
 				<File Id="360541133" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_05.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_05_10C4C929.wem</Path>
@@ -1042,6 +1091,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_01_8AFC4E80.wem</Path>
 				</File>
+				<File Id="367645582" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Footstep_05.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Footstep_05_10C4C929.wem</Path>
+				</File>
 				<File Id="369157319" Language="SFX">
 					<ShortName>HB_rope_moving_2.wav</ShortName>
 					<Path>SFX\HB_rope_moving_2_10C4C929.wem</Path>
@@ -1061,6 +1114,10 @@
 				<File Id="380168037" Language="SFX">
 					<ShortName>FTP_sol sec_01.wav</ShortName>
 					<Path>SFX\FTP_sol sec_01_10C4C929.wem</Path>
+				</File>
+				<File Id="386008256" Language="SFX">
+					<ShortName>HB-SFX-Gardian-GetHit_03.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-GetHit_03_10C4C929.wem</Path>
 				</File>
 				<File Id="388700628" Language="SFX">
 					<ShortName>HB_SFX_Other_HeartbeatFast.wav</ShortName>
@@ -1125,6 +1182,10 @@
 				<File Id="436110025" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Planches_02.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Planches_02_10C4C929.wem</Path>
+				</File>
+				<File Id="443141729" Language="SFX">
+					<ShortName>HB-SFX-Gardian-StartCharge.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-StartCharge_10C4C929.wem</Path>
 				</File>
 				<File Id="445859187" Language="SFX">
 					<ShortName>FTP_metal_03.wav</ShortName>
@@ -1206,6 +1267,10 @@
 					<ShortName>Shell_Concrete_04.wav</ShortName>
 					<Path>SFX\Shell_Concrete_04_10C4C929.wem</Path>
 				</File>
+				<File Id="490570754" Language="SFX">
+					<ShortName>SFX-HB-CoffreLoquet_00.wav</ShortName>
+					<Path>SFX\SFX-HB-CoffreLoquet_00_10C4C929.wem</Path>
+				</File>
 				<File Id="495664766" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_06.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_06_F7239737.wem</Path>
@@ -1266,6 +1331,14 @@
 					<ShortName>SFX_HB_MobJungleCharlie_IceHit_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_IceHit_02_10C4C929.wem</Path>
 				</File>
+				<File Id="533650562" Language="SFX">
+					<ShortName>HB-SFX-Gardian-FootstepCharge_01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-FootstepCharge_01_10C4C929.wem</Path>
+				</File>
+				<File Id="540566815" Language="SFX">
+					<ShortName>HB-SFX-Gardian-GetHit_00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-GetHit_00_10C4C929.wem</Path>
+				</File>
 				<File Id="545463051" Language="SFX">
 					<ShortName>SFX_HB_Other_OpenStoneDoorRiddle.wav</ShortName>
 					<Path>SFX\SFX_HB_Other_OpenStoneDoorRiddle_10C4C929.wem</Path>
@@ -1314,9 +1387,17 @@
 					<ShortName>HB-SFX-GenadeIce-02.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeIce-02_10C4C929.wem</Path>
 				</File>
+				<File Id="568154459" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Stomp_02.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Stomp_02_10C4C929.wem</Path>
+				</File>
 				<File Id="570978224" Language="SFX">
 					<ShortName>HB-SFX-GenadeFire-00.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeFire-00_10C4C929.wem</Path>
+				</File>
+				<File Id="581294037" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Footstep_04.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Footstep_04_10C4C929.wem</Path>
 				</File>
 				<File Id="581784882" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_CanonTranspercant_01.wav</ShortName>
@@ -1350,6 +1431,10 @@
 					<ShortName>SFX_HB_Destructibles_Wallstone_03.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Wallstone_03_10C4C929.wem</Path>
 				</File>
+				<File Id="591128391" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Footstep_00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Footstep_00_10C4C929.wem</Path>
+				</File>
 				<File Id="593751682" Language="SFX">
 					<ShortName>HB-SFX-UImenu-Option.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Option_10C4C929.wem</Path>
@@ -1357,6 +1442,10 @@
 				<File Id="595008208" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_03_10C4C929.wem</Path>
+				</File>
+				<File Id="600255511" Language="SFX">
+					<ShortName>HB-SFX-Gardian-GetHit_01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-GetHit_01_10C4C929.wem</Path>
 				</File>
 				<File Id="600781554" Language="SFX">
 					<ShortName>HB_FTP_Flaque_01.wav</ShortName>
@@ -1366,9 +1455,17 @@
 					<ShortName>FTP_metal_02.wav</ShortName>
 					<Path>SFX\FTP_metal_02_10C4C929.wem</Path>
 				</File>
+				<File Id="613642299" Language="SFX">
+					<ShortName>SFX-HB-CoffreBois_01.wav</ShortName>
+					<Path>SFX\SFX-HB-CoffreBois_01_10C4C929.wem</Path>
+				</File>
 				<File Id="614136027" Language="SFX">
 					<ShortName>HB-SFX-UImenu-Overlay.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Overlay_10C4C929.wem</Path>
+				</File>
+				<File Id="619914566" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Footstep_01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Footstep_01_10C4C929.wem</Path>
 				</File>
 				<File Id="621841728" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_02.wav</ShortName>
@@ -1506,13 +1603,25 @@
 					<ShortName>HB-SFX-Other-OpenBigStoneDoor.wav</ShortName>
 					<Path>SFX\HB-SFX-Other-OpenBigStoneDoor_10C4C929.wem</Path>
 				</File>
+				<File Id="745202616" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Footstep_06.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Footstep_06_10C4C929.wem</Path>
+				</File>
 				<File Id="746337883" Language="SFX">
 					<ShortName>HB-SFX-Other-LoopBigStoneDoorOpening.wav</ShortName>
 					<Path>SFX\HB-SFX-Other-LoopBigStoneDoorOpening_D79FB2B7.wem</Path>
 				</File>
+				<File Id="747661496" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Death_01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Death_01_10C4C929.wem</Path>
+				</File>
 				<File Id="749607470" Language="SFX">
 					<ShortName>HB-SFX-GenadeFire-01.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeFire-01_10C4C929.wem</Path>
+				</File>
+				<File Id="750198670" Language="SFX">
+					<ShortName>SFX-HB-CoffreMetalVieux_01.wav</ShortName>
+					<Path>SFX\SFX-HB-CoffreMetalVieux_01_10C4C929.wem</Path>
 				</File>
 				<File Id="754682193" Language="SFX">
 					<ShortName>SFX_OTHERS_GroundSwitch_Klonk3.wav</ShortName>
@@ -1521,6 +1630,10 @@
 				<File Id="756092202" Language="SFX">
 					<ShortName>HB_SFX_Other_HeartbeatSlow.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_HeartbeatSlow_C196C064.wem</Path>
+				</File>
+				<File Id="756545490" Language="SFX">
+					<ShortName>SFX-HB-CoffrePierre.wav</ShortName>
+					<Path>SFX\SFX-HB-CoffrePierre_10C4C929.wem</Path>
 				</File>
 				<File Id="756586809" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_ThunderAmmo_00.wav</ShortName>
@@ -1546,6 +1659,10 @@
 					<ShortName>Shell_Metal_01.wav</ShortName>
 					<Path>SFX\Shell_Metal_01_10C4C929.wem</Path>
 				</File>
+				<File Id="795317854" Language="SFX">
+					<ShortName>SFX-HB-CoffreMetalVieux_00.wav</ShortName>
+					<Path>SFX\SFX-HB-CoffreMetalVieux_00_10C4C929.wem</Path>
+				</File>
 				<File Id="802288181" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Stone_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Stone_01_10C4C929.wem</Path>
@@ -1569,6 +1686,10 @@
 				<File Id="838770258" Language="SFX">
 					<ShortName>Shell_Gravel_05.wav</ShortName>
 					<Path>SFX\Shell_Gravel_05_10C4C929.wem</Path>
+				</File>
+				<File Id="839062688" Language="SFX">
+					<ShortName>HB-SFX-Gardian-FootstepCharge_02.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-FootstepCharge_02_10C4C929.wem</Path>
 				</File>
 				<File Id="841003399" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleIN_03.wav</ShortName>
@@ -1626,6 +1747,10 @@
 					<ShortName>SFX_HB_Traps_SpikeTrap_Death_02.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_SpikeTrap_Death_02_10C4C929.wem</Path>
 				</File>
+				<File Id="900275101" Language="SFX">
+					<ShortName>SFX-HB-PetiteBoiteMetal_00.wav</ShortName>
+					<Path>SFX\SFX-HB-PetiteBoiteMetal_00_10C4C929.wem</Path>
+				</File>
 				<File Id="903659593" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Planches_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Planches_01_10C4C929.wem</Path>
@@ -1650,6 +1775,10 @@
 					<ShortName>HB_Footstep_SolPierre_02.wav</ShortName>
 					<Path>SFX\HB_Footstep_SolPierre_02_10C4C929.wem</Path>
 				</File>
+				<File Id="938875212" Language="SFX">
+					<ShortName>HB-SFX-Gardian-GetHit_02.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-GetHit_02_10C4C929.wem</Path>
+				</File>
 				<File Id="940739760" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GetHit_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_03_67A9E647.wem</Path>
@@ -1657,6 +1786,10 @@
 				<File Id="943871921" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_03.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_03_10C4C929.wem</Path>
+				</File>
+				<File Id="944648679" Language="SFX">
+					<ShortName>SFX-HB-CoffreBois_00.wav</ShortName>
+					<Path>SFX\SFX-HB-CoffreBois_00_10C4C929.wem</Path>
 				</File>
 				<File Id="945167861" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-03.wav</ShortName>
@@ -1666,9 +1799,17 @@
 					<ShortName>SFX-HB-MobJungleCharlie-SpearLaunch-04.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-SpearLaunch-04_10C4C929.wem</Path>
 				</File>
+				<File Id="947548818" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Stomp_01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Stomp_01_10C4C929.wem</Path>
+				</File>
 				<File Id="948793202" Language="SFX">
 					<ShortName>HB_SFX_UiWep_Equip5.wav</ShortName>
 					<Path>SFX\HB_SFX_UiWep_Equip5_3063DED4.wem</Path>
+				</File>
+				<File Id="956737558" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Attack_02.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Attack_02_10C4C929.wem</Path>
 				</File>
 				<File Id="956940309" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_02.wav</ShortName>
@@ -1702,6 +1843,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_02_10C4C929.wem</Path>
 				</File>
+				<File Id="991710585" Language="SFX">
+					<ShortName>SFX-HB-CoffreMetalNeuf_01.wav</ShortName>
+					<Path>SFX\SFX-HB-CoffreMetalNeuf_01_10C4C929.wem</Path>
+				</File>
 				<File Id="994240380" Language="SFX">
 					<ShortName>FTP_ossements_sol_01.wav</ShortName>
 					<Path>SFX\FTP_ossements_sol_01_10C4C929.wem</Path>
@@ -1721,6 +1866,10 @@
 				<File Id="1014806612" Language="SFX">
 					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_02.wav</ShortName>
 					<Path>SFX\SFX_HB_PetiteCaisseBoisExplosion_02_10C4C929.wem</Path>
+				</File>
+				<File Id="1016390998" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Attack_03.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Attack_03_10C4C929.wem</Path>
 				</File>
 				<File Id="1022224548" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_IceHit_04.wav</ShortName>
@@ -1754,6 +1903,10 @@
 					<ShortName>FTP_boue_01.wav</ShortName>
 					<Path>SFX\FTP_boue_01_10C4C929.wem</Path>
 				</File>
+				<File Id="1042924671" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Attack_00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Attack_00_10C4C929.wem</Path>
+				</File>
 				<File Id="1043116496" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_FireAmmo_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_FireAmmo_02_10C4C929.wem</Path>
@@ -1761,6 +1914,10 @@
 				<File Id="1045122310" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Reload_In_01_10C4C929.wem</Path>
+				</File>
+				<File Id="1048881042" Language="SFX">
+					<ShortName>HB-SFX-Gardian-FootstepCharge_03.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-FootstepCharge_03_10C4C929.wem</Path>
 				</File>
 				<File Id="1053490257" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_04.wav</ShortName>
@@ -1774,6 +1931,10 @@
 					<ShortName>SF-DS Weapon Projectile 03_03.wav</ShortName>
 					<Path>SFX\SF-DS Weapon Projectile 03_03_10C4C929.wem</Path>
 				</File>
+				<File Id="1063645455" Language="SFX">
+					<ShortName>SFX-HB-PetiteBoiteMetal_01.wav</ShortName>
+					<Path>SFX\SFX-HB-PetiteBoiteMetal_01_10C4C929.wem</Path>
+				</File>
 				<File Id="1064636151" Language="SFX">
 					<ShortName>SF-DS Weapon Projectile 03_04.wav</ShortName>
 					<Path>SFX\SF-DS Weapon Projectile 03_04_10C4C929.wem</Path>
@@ -1785,6 +1946,10 @@
 				<File Id="1069671681" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Reload_In_00_6E84BCF9.wem</Path>
+				</File>
+				<File Id="1070432713" Language="SFX">
+					<ShortName>SFX-HB-CoffreLoquet_01.wav</ShortName>
+					<Path>SFX\SFX-HB-CoffreLoquet_01_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
