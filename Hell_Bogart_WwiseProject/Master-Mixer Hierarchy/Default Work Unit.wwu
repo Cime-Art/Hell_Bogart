@@ -123,7 +123,24 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}"/>
-						<Bus Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
+						<Bus Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}">
+							<ChildrenList>
+								<Bus Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}"/>
+								<Bus Name="Jungle_Event_Enigme_Chest_BUS" ID="{42F00B64-1D6F-4A91-8B81-DBA2EB4BB424}">
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>4</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
 						<Bus Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}"/>
 					</ChildrenList>
 				</Bus>

@@ -617,6 +617,7 @@
 															</ValueList>
 														</Property>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="PreFetchLength" Type="int16">
 															<ValueList>
 																<Value>200</Value>
@@ -630,7 +631,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1094,6 +1095,7 @@
 															</ValueList>
 														</Property>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="PreFetchLength" Type="int16">
 															<ValueList>
 																<Value>200</Value>
@@ -1102,7 +1104,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1250,6 +1252,7 @@
 															</ValueList>
 														</Property>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="PreFetchLength" Type="int16">
 															<ValueList>
 																<Value>200</Value>
@@ -1258,7 +1261,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1768,6 +1771,7 @@
 															</ValueList>
 														</Property>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="PreFetchLength" Type="int16">
 															<ValueList>
 																<Value>200</Value>
@@ -1776,7 +1780,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -3020,10 +3024,10 @@
 										<MusicStinger Name="" ID="{F73729D8-8B9D-4CE6-BDA1-0EBF84DCBC93}">
 											<PropertyList>
 												<Property Name="CustomCueMatchName" Type="string" Value="Event Tresor"/>
-												<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+												<Property Name="PlaySegmentAt" Type="int16" Value="2"/>
 											</PropertyList>
-											<TriggerRef Name="T_Jungle_TresorFound" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
-											<SegmentRef Name="Mus_Jungle_EventTresor" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+											<TriggerRef Name="T_Jungle_Event_Enigme_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
+											<SegmentRef Name="Mus_Jungle_Event_Enigme_Chest" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 										</MusicStinger>
 									</StingerList>
 									<Playlist>
@@ -3049,6 +3053,11 @@
 															</ModifierList>
 														</Property>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<SegmentRef Name="Mus_Jungle_Explo_SEG" ID="{916951CC-D728-44C3-AB0F-0875C9AEDA08}"/>
 												</MusicPlaylistItem>
@@ -3068,6 +3077,11 @@
 															</ModifierList>
 														</Property>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>30</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<SegmentRef Name="Silence" ID="{DE6E777F-84D6-4D98-8937-6B8189B31D89}"/>
 												</MusicPlaylistItem>
@@ -4746,12 +4760,12 @@
 						</Folder>
 						<Folder Name="Events" ID="{B204658A-5DB0-4413-881C-D17C6CEC2A62}" ShortID="14594599">
 							<ChildrenList>
-								<MusicSegment Name="Mus_Jungle_EventTresor" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" ShortID="229941932">
+								<MusicSegment Name="Mus_Jungle_Event_Enigme_Chest" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" ShortID="229941932">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="10000"/>
+										<Property Name="EndPosition" Type="Real64" Value="8553.31663681338"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4760,17 +4774,13 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+											<ObjectRef Name="Jungle_Event_Enigme_Chest_BUS" ID="{42F00B64-1D6F-4A91-8B81-DBA2EB4BB424}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MUS_HB_Jungle_EventTresor" ID="{B33287D8-3B1D-46D4-97B9-29624C02B896}" ShortID="901657666">
+										<MusicTrack Name="Event Enigme Chest" ID="{BFD115BA-E63D-45A7-A2EC-A4298B118147}" ShortID="802317300">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-10</Value>
-													</ValueList>
-												</Property>
+												<Property Name="MusicTrackType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
@@ -4778,13 +4788,17 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_HB_Jungle_EventTresor" ID="{4E30A1DB-EAA5-4E4A-B3F5-A4028BB38F8F}" ShortID="681027254">
+												<AudioFileSource Name="MUS_HB_Jungle_Enigme_Chest_Event_01" ID="{8ADD5066-9BC9-4738-AC97-D71C82FBB8F6}" ShortID="8010806">
 													<Language>SFX</Language>
-													<AudioFile>MUS_HB_Jungle_EventTresor.wav</AudioFile>
+													<AudioFile>MUS_HB_Jungle_Enigme_Chest_Event_01.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Jungle_Enigme_Chest_Event_02" ID="{57F72FC9-D771-49D8-AEF5-38B76B195611}" ShortID="1042611356">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Enigme_Chest_Event_02.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{2F199713-6173-43C1-8496-D04C3C843A0F}">
+												<MusicTransition Name="Root" ID="{1AF00759-C2F1-4174-BFE7-563251F6A7A6}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -4792,26 +4806,26 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{EABF0D42-8637-4F2A-96FA-EDE4A28C300B}">
+												<MusicTrackSequence Name="" ID="{0566D40E-D024-46E7-AEE0-E3101A15171C}">
 													<ClipList>
-														<MusicClip Name="MUS_HB_Jungle_EventTresor" ID="{249BEFAC-4AE7-4D67-8E3F-1419F0B5CA97}">
+														<MusicClip Name="MUS_HB_Jungle_Enigme_Chest_Event_01" ID="{D0420D1A-3663-4EC4-9D76-7AC1407D4F8D}">
 															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="-2000"/>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="1500"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9999.99999999996"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="5.53246963893719"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1573.49539406346"/>
+																<Property Name="PlayAt" Type="Real64" Value="-1500"/>
 															</PropertyList>
-															<AudioSourceRef Name="MUS_HB_Jungle_EventTresor" ID="{4E30A1DB-EAA5-4E4A-B3F5-A4028BB38F8F}"/>
+															<AudioSourceRef Name="MUS_HB_Jungle_Enigme_Chest_Event_01" ID="{8ADD5066-9BC9-4738-AC97-D71C82FBB8F6}"/>
 															<PropertyCurveList>
 																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{A4EE0DDA-E355-464E-B06B-424C59C206DA}">
+																	<Curve Name="" ID="{9527CA34-3BCC-4261-AF11-B39C042BDBE1}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="1"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>2</XPos>
+																				<XPos>1.5</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
@@ -4824,13 +4838,13 @@
 																	</Curve>
 																</PropertyCurve>
 																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{2D79E605-DB3E-4AB0-9F5C-EE85C9AF5C43}">
+																	<Curve Name="" ID="{9B67E3CF-5497-44E2-95A0-4A1F3DD60A94}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="1"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>2</XPos>
+																				<XPos>1.5</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
@@ -4843,13 +4857,86 @@
 																	</Curve>
 																</PropertyCurve>
 																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{49C42CF2-9AFD-4812-B319-843D0E29C1DF}">
+																	<Curve Name="" ID="{4B786D56-6B41-4FA4-947B-67B5A391F03B}">
 																		<PropertyList>
 																			<Property Name="Flags" Type="int32" Value="3"/>
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>2</XPos>
+																				<XPos>1.5</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{831FE4FD-8EBE-41F6-A966-39CAC2524C43}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Enigme_Chest_Event_02" ID="{E3F3F5A7-E641-4252-8715-FC97DCA5553B}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="1500"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9999.99999999996"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.76623481946865"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1663.40941658137"/>
+																<Property Name="PlayAt" Type="Real64" Value="-1500"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Enigme_Chest_Event_02" ID="{57F72FC9-D771-49D8-AEF5-38B76B195611}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{45457978-756B-4E97-B0B5-B24993535DA6}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>1.5</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{CFBF28F8-1339-4A1F-A3C0-90F3C0E2EFD4}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>1.5</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{7F0B7B31-ECA3-4996-A062-86915924DFBC}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>1.5</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
@@ -4869,10 +4956,15 @@
 										</MusicTrack>
 									</ChildrenList>
 									<CueList>
-										<MusicCue Name="Entry Cue" ID="{51313530-8666-422A-A816-FA4921E1835F}"/>
+										<MusicCue Name="Entry Cue" ID="{51313530-8666-422A-A816-FA4921E1835F}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="500"/>
+											</PropertyList>
+										</MusicCue>
 										<MusicCue Name="Exit Cue" ID="{786BDF78-3315-45FE-BEDF-25E28D147C63}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="2500"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
