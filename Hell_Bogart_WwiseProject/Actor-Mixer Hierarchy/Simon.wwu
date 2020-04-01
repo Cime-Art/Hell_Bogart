@@ -117,7 +117,7 @@
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
-										<Value>10</Value>
+										<Value>12</Value>
 									</ValueList>
 								</Property>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
@@ -130,7 +130,7 @@
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

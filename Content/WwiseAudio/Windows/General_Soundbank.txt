@@ -150,12 +150,13 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4095840129	Firing_Rate_GP			\Simon\Character\Shotgun\Firing_Rate_GP	
 
 Trigger	ID	Name			Wwise Object Path	Notes
-	851152099	T_Jungle_TresorFound			\Simon\T_Jungle_TresorFound	
+	1012603002	T_Jungle_Event_Enigme_Chest			\Simon\T_Jungle_Event_Enigme_Chest	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	413377738	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\Traps\Traps\Spike Trap\Spike_Trap_SEQ\IsInSpikeTrap_SWITCH\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	8010806	Event Enigme Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_Enigme_Chest_Event_01_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\Jungle\Events\Mus_Jungle_Event_Enigme_Chest\Event Enigme Chest		2295872
 	12908966	HB_SFX_Uiwep_Equip2	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Uiwep_Equip2_BCF095EF.wem		\Actor-Mixer Hierarchy\Chris\UIweps\SFX_HB_Other_Equip\RND_EquipItem\HB_SFX_Uiwep_Equip2		120788
 	13826524	HB-SFX-Gardian-Death_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Gardian-Death_00_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Stone_Gardian\MIX_StoneGardian\MIX_Death\RND_Death\HB-SFX-Gardian-Death_00		492316
 	14777753	SFX_HB_MobJungleCharlie_Death_05	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Death_05_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Death\Death_MobJungleCharlie\SFX_HB_MobJungleCharlie_Death_05		180218
@@ -380,7 +381,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	670947103	HB_rope_moving_4	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_rope_moving_4_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\Footsteps\FTP_surface_type_switch\Rope Wood\HB_rope_moving_4		705664
 	672867481	SFX_HB_MobJungleCharlie_Exploded_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Exploded_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Exploded\Exploded_Bones_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Exploded_03		151522
 	672905168	HB-SFX-UImenu-Exit	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-UImenu-Exit_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\UI\MIX_UI\HB-SFX-UImenu-Exit		57680
-	681027254	MUS_HB_Jungle_EventTresor	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_EventTresor_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\Jungle\Events\Mus_Jungle_EventTresor\MUS_HB_Jungle_EventTresor		1920064
 	681370907	SFX_HB_MobJungleCharlie_Exploded_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Exploded_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Exploded\Exploded_Bones_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Exploded_02		126658
 	685052240	Shell_Wood_05	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Shell_Wood_05_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Wood\Shell_Wood_05		71634
 	698178078	SFX_HB_MobJungleCharlie_Death_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Death_04_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Death\Death_MobJungleCharlie\SFX_HB_MobJungleCharlie_Death_04		184726
@@ -472,6 +472,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1035227437	Shell_Wood_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Shell_Wood_04_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Wood\Shell_Wood_04		98686
 	1038132948	FTP_eau_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\FTP_eau_01_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\Footsteps\FTP_surface_type_switch\FTP_Eau_RND\FTP_eau_01		118402
 	1038223983	FTP_boue_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\FTP_boue_01_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\Footstep\Footsteps\FTP_surface_type_switch\FTP_Boue_RND\FTP_boue_01		24714
+	1042611356	Event Enigme Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_Enigme_Chest_Event_02_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\Jungle\Events\Mus_Jungle_Event_Enigme_Chest\Event Enigme Chest		2304068
 	1042924671	HB-SFX-Gardian-Attack_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Gardian-Attack_00_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Stone_Gardian\MIX_StoneGardian\MIX_Attack\RND_Attack\HB-SFX-Gardian-Attack_00		230864
 	1043116496	HB_SFX_Shotgun_FireAmmo_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_FireAmmo_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Fire_Ammo_RND\HB_SFX_Shotgun_FireAmmo_02		74728
 	1045122310	HB_SFX_Shotgun_Reload_In_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Reload_In_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\OutIn_SEQ\Reload_In\HB_SFX_Shotgun_Reload_In_01		26904

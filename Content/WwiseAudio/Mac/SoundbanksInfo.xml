@@ -639,6 +639,10 @@
 				<File Id="1070140938"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
+				<File Id="8010806" Language="SFX">
+					<ShortName>MUS_HB_Jungle_Enigme_Chest_Event_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Jungle_Enigme_Chest_Event_01_D79FB2B7.wem</Path>
+				</File>
 				<File Id="12908966" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Equip2.wav</ShortName>
 					<Path>SFX\HB_SFX_Uiwep_Equip2_BCF095EF.wem</Path>
@@ -1535,10 +1539,6 @@
 					<ShortName>HB-SFX-UImenu-Exit.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Exit_10C4C929.wem</Path>
 				</File>
-				<File Id="681027254" Language="SFX">
-					<ShortName>MUS_HB_Jungle_EventTresor.wav</ShortName>
-					<Path>SFX\MUS_HB_Jungle_EventTresor_D79FB2B7.wem</Path>
-				</File>
 				<File Id="681370907" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Exploded_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_02_10C4C929.wem</Path>
@@ -1902,6 +1902,10 @@
 				<File Id="1038223983" Language="SFX">
 					<ShortName>FTP_boue_01.wav</ShortName>
 					<Path>SFX\FTP_boue_01_10C4C929.wem</Path>
+				</File>
+				<File Id="1042611356" Language="SFX">
+					<ShortName>MUS_HB_Jungle_Enigme_Chest_Event_02.wav</ShortName>
+					<Path>SFX\MUS_HB_Jungle_Enigme_Chest_Event_02_D79FB2B7.wem</Path>
 				</File>
 				<File Id="1042924671" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Attack_00.wav</ShortName>

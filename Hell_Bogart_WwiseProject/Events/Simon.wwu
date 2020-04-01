@@ -629,7 +629,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="T_Jungle_TresorFound" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
+													<ObjectRef Name="T_Jungle_Event_Enigme_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
