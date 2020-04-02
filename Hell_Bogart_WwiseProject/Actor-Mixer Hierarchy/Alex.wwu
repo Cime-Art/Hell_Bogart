@@ -2031,6 +2031,191 @@
 						</ActorMixer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Helico" ID="{EBCE8A11-BF7B-4180-AA86-C232D2D087E7}" ShortID="91603981">
+					<ChildrenList>
+						<ActorMixer Name="Helico" ID="{58EAAD2B-15D4-4E46-BE92-E44B8DF4805A}" ShortID="47544341">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Amb Helico" ID="{22290980-D2A2-4168-A3C5-9D07A176DDC8}" ShortID="7043855">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="Helico" ID="{F26FE782-FEFF-4085-83A6-BAE1333F5F01}" ShortID="22369127">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="HelicoNormal" ID="{48BD85EA-F05E-4430-82FD-6DECE4BDA3A6}" WorkUnitID="{7130362E-D281-4CAD-90E5-8B25E6F92FDE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Helico_Switch" ID="{E4DBD005-758C-481B-BCD2-C3B4C843ACB2}" WorkUnitID="{7130362E-D281-4CAD-90E5-8B25E6F92FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HelicoCrash" ID="{299ADA7F-485B-4741-9F74-BD18628FBFAC}" ShortID="570792119">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+												</Sound>
+												<Sound Name="SFX_HelicoCasse" ID="{FF1886B7-E3CD-474F-AB73-C9FA2A07E4A0}" ShortID="832229221">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+												</Sound>
+												<Sound Name="SFX_HelicoPalmier" ID="{E618A183-B5A9-4073-A283-9621A595F80E}" ShortID="254257236">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+												</Sound>
+												<Sound Name="SFX_HelicoNormal" ID="{FF6200A3-B007-40DC-98A3-90DB6EE7E858}" ShortID="655653098">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_HelicoCrash" ID="{299ADA7F-485B-4741-9F74-BD18628FBFAC}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_HelicoPalmier" ID="{E618A183-B5A9-4073-A283-9621A595F80E}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_HelicoNormal" ID="{FF6200A3-B007-40DC-98A3-90DB6EE7E858}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_HelicoCasse" ID="{FF1886B7-E3CD-474F-AB73-C9FA2A07E4A0}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="HelicoCrash" ID="{10AE2020-53FB-4BC5-B60B-865BFE694BBB}"/>
+														<ItemList>
+															<ItemRef Name="SFX_HelicoCrash" ID="{299ADA7F-485B-4741-9F74-BD18628FBFAC}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
+														<ItemList>
+															<ItemRef Name="SFX_HelicoCasse" ID="{FF1886B7-E3CD-474F-AB73-C9FA2A07E4A0}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="HelicoPalmier" ID="{7CEFFAD0-AAC9-4108-AC9E-4D9CE94E776A}"/>
+														<ItemList>
+															<ItemRef Name="SFX_HelicoPalmier" ID="{E618A183-B5A9-4073-A283-9621A595F80E}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="HelicoNormal" ID="{48BD85EA-F05E-4430-82FD-6DECE4BDA3A6}"/>
+														<ItemList>
+															<ItemRef Name="SFX_HelicoNormal" ID="{FF6200A3-B007-40DC-98A3-90DB6EE7E858}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<Sound Name="SFX_Impact" ID="{48F17984-E7A5-4B50-AF7A-6BE5C3424834}" ShortID="1038082709">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Amb Helico" ID="{196A997D-35C1-4259-9CAA-E69DEB83186F}" ShortID="830853203">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}" WorkUnitID="{68C923B5-1F32-49EF-AEA4-570BEC8414CA}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Helico" ID="{F26FE782-FEFF-4085-83A6-BAE1333F5F01}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>60</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="Impact" ID="{73DE1EAC-2645-48AB-B86F-C7F1FED6F67B}" ShortID="27539588">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}" WorkUnitID="{68C923B5-1F32-49EF-AEA4-570BEC8414CA}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="SFX_Impact" ID="{48F17984-E7A5-4B50-AF7A-6BE5C3424834}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>60</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
