@@ -1,16 +1,31 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1063787454	Helico_Switch			\Alex\Helico\Helico_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	681198242	HelicoNormal	Helico_Switch			
+	1596370716	HelicoCrash	Helico_Switch			
+	2351582869	HelicoPalmier	Helico_Switch			
+	3477598558	HelicoCasse	Helico_Switch			
+
 State Group	ID	Name			Wwise Object Path	Notes
+	334651340	Bridge_Music_STATE			\Simon\Music\Bridge_Music_STATE	
 	393509290	Footstep_Charge			\Brian\Guardian\Footstep_Charge	
 	916310236	Ammo_Type_STATE			\Simon\Items\Ammo_Type_STATE	
-	1573985144	AmbToFight_STATE			\Brian\Musique\AmbToFight_STATE	
+	1321818117	Music_Ruin_STATE			\Brian\Music\Music_Ruin_STATE	
 	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
 	2069469294	Acoustic_STATE			\Simon\Global\Acoustic_STATE	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
-	3826569560	Music_STATE			\Simon\Music\Music_STATE	
+	3469316424	Jungle_Music_STATE			\Simon\Music\Jungle_Music_STATE	
 	4121978141	Shotgun_Equiped_STATE			\Simon\Items\Shotgun_Equiped_STATE	
 	4135068155	Element			\Brian\Grenade\Element	
 	4261493451	Canon_Type_STATE			\Simon\Items\Canon_Type_STATE	
 
 State	ID	Name	State Group			Notes
+	0	None	Bridge_Music_STATE			
+	1428057472	End_Music	Bridge_Music_STATE			
+	1622949421	Phase_2	Bridge_Music_STATE			
+	1622949422	Phase_1	Bridge_Music_STATE			
+	4130461444	Begin_Music	Bridge_Music_STATE			
 	0	None	Footstep_Charge			
 	529726532	End	Footstep_Charge			
 	1281810935	Start	Footstep_Charge			
@@ -19,10 +34,10 @@ State	ID	Name	State Group			Notes
 	344481046	Ice	Ammo_Type_STATE			
 	2628937827	Regular	Ammo_Type_STATE			
 	2678880713	Fire	Ammo_Type_STATE			
-	0	None	AmbToFight_STATE			
-	1235729018	Ruin_Combat	AmbToFight_STATE			
-	2361306101	Ruin_End	AmbToFight_STATE			
-	3968964982	Ruin_Ambiance	AmbToFight_STATE			
+	0	None	Music_Ruin_STATE			
+	45878617	Ruin_Exploration	Music_Ruin_STATE			
+	757299892	Ruin_Fight	Music_Ruin_STATE			
+	2034030177	Ruin_End_Music	Music_Ruin_STATE			
 	0	None	IsInATrap_STATE			
 	645492555	Out	IsInATrap_STATE			
 	1752637612	In	IsInATrap_STATE			
@@ -34,10 +49,10 @@ State	ID	Name	State Group			Notes
 	252199009	Spread_60	Chamber_Type_STATE			
 	419409252	Spread_180	Chamber_Type_STATE			
 	2572109827	Regular_Spread	Chamber_Type_STATE			
-	0	None	Music_STATE			
-	514064485	Fight	Music_STATE			
-	1428057472	End_Music	Music_STATE			
-	2582085496	Exploration	Music_STATE			
+	0	None	Jungle_Music_STATE			
+	514064485	Fight	Jungle_Music_STATE			
+	1428057472	End_Music	Jungle_Music_STATE			
+	2582085496	Exploration	Jungle_Music_STATE			
 	0	None	Shotgun_Equiped_STATE			
 	979470758	Yes	Shotgun_Equiped_STATE			
 	0	None	Element			
@@ -64,6 +79,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	940753649	MUS_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS	
 	1614488460	Jungle_Explo_Melodic_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS\Jungle_Explo_Melodic_BUS	
 	2138725528	Acoustics_BUS			\Default Work Unit\Master Audio Bus\Acoustics_BUS	
+	2329759771	Mobs_Bridge_SUBBUS			\Default Work Unit\Master Audio Bus\SFX_BUS\Mobs_Bridge_SUBBUS	
 	3119335404	Jungle_Event_Enigme_Chest_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS\Jungle_Event_Enigme_Chest_BUS	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

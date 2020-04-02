@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{68C923B5-1F32-49EF-AEA4-570BEC8414CA}" SchemaVersion="94">
 	<GameParameters>
-		<WorkUnit Name="Alex" ID="{68C923B5-1F32-49EF-AEA4-570BEC8414CA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Alex" ID="{68C923B5-1F32-49EF-AEA4-570BEC8414CA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Helico" ID="{3ACF1056-8586-4D0E-B989-5E3152E86D7F}" ShortID="552064519">
+					<ChildrenList>
+						<GameParameter Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="60"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

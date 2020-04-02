@@ -198,11 +198,6 @@
 					<ChildrenList>
 						<Attenuation Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" ShortID="520266619">
 							<PropertyList>
-								<Property Name="ConeUse" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
 								<Property Name="RadiusMax" Type="Real64" Value="3500"/>
 							</PropertyList>
 							<CurveUsageInfoList>

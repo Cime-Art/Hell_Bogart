@@ -7,37 +7,6 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Folder Name="Musique" ID="{EB06F698-6DA9-44B1-B44C-34EF47EAE260}" ShortID="610582069">
-					<ChildrenList>
-						<StateGroup Name="AmbToFight_STATE" ID="{7BA97260-BE77-4BFF-BCF8-023F25310BE9}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="13"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<State Name="None" ID="{AD1B78E7-9E09-4B51-A12E-A34064C3DE10}"/>
-								<State Name="Ruin_Ambiance" ID="{24ABAD40-0B70-436B-B54F-0CE1713E710A}">
-									<PropertyList>
-										<Property Name="Color" Type="int16" Value="25"/>
-										<Property Name="OverrideColor" Type="bool" Value="True"/>
-									</PropertyList>
-								</State>
-								<State Name="Ruin_Combat" ID="{122201CD-4DCA-4354-813F-FAD7441F4521}">
-									<PropertyList>
-										<Property Name="Color" Type="int16" Value="10"/>
-										<Property Name="OverrideColor" Type="bool" Value="True"/>
-									</PropertyList>
-								</State>
-								<State Name="Ruin_End" ID="{39BD2336-CE91-4BF1-9DDD-1642854F1A8C}">
-									<PropertyList>
-										<Property Name="Color" Type="int16" Value="13"/>
-										<Property Name="OverrideColor" Type="bool" Value="True"/>
-									</PropertyList>
-								</State>
-							</ChildrenList>
-						</StateGroup>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Grenade" ID="{B1D618B2-39D1-4949-9F5A-2583FAC39355}" ShortID="366745188">
 					<ChildrenList>
 						<StateGroup Name="Element" ID="{127802BB-8D2B-4686-824E-EE1E762107B9}">
@@ -58,6 +27,22 @@
 								<State Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
 								<State Name="Start" ID="{220B4154-EBE4-4C51-9B3A-924E2597A8F3}"/>
 								<State Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{6CF1F548-BA22-4D0E-9285-CD6B9696FC9E}" ShortID="17858872">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<StateGroup Name="Music_Ruin_STATE" ID="{2B661CF3-9AFF-468E-8228-41A85FFE2AF7}">
+							<ChildrenList>
+								<State Name="None" ID="{0A02832D-A4D8-4BC2-B6BC-0910FE4765F7}"/>
+								<State Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
+								<State Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
+								<State Name="Ruin_End_Music" ID="{78F6B36D-D4A0-445E-94BB-AAFA3DFA916F}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>

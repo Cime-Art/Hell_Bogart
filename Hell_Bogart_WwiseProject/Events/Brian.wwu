@@ -3,21 +3,6 @@
 	<Events>
 		<WorkUnit Name="Brian" ID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="TEST_Play_Method_A" ID="{1C0FAB98-371F-48A4-93F3-0C576D6D079C}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="13"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{35055F90-B285-4B37-919D-8C4AD271051F}" ShortID="387051863">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_SWITCH" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="UI" ID="{52CC3777-6500-458E-93D6-D36D6FAE371A}" ShortID="220642255">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="15"/>
@@ -425,6 +410,67 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="RAND_Coffre_Pierre" ID="{6D5B884E-9990-45BB-942A-70CB666056BD}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{24118CD8-9140-4CC8-84DD-F95AE1CB1F56}" ShortID="755440998">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="E_Mus_Ruin_End" ID="{220C3A19-F845-4D4E-889E-AB7A99E406FB}">
+							<ChildrenList>
+								<Action Name="" ID="{CA9871AF-0893-40E4-8F92-E649B6142E60}" ShortID="211963699">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ruin_End_Music" ID="{78F6B36D-D4A0-445E-94BB-AAFA3DFA916F}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Ruin_Main_Play" ID="{5C2483EA-55EB-4719-8F4C-669398336ECE}">
+							<ChildrenList>
+								<Action Name="" ID="{3E2A02F6-A77A-483F-B356-1F11CD6F7A0F}" ShortID="414190933">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_Ruin_MAIN_SWITCH" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Ruin_Explo" ID="{22387EE2-54A7-4AE8-B56E-324C42EC398B}">
+							<ChildrenList>
+								<Action Name="" ID="{604CB6F9-A833-46F9-8276-12F9A84EBDB7}" ShortID="56809476">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Ruin_Fight" ID="{8A0C29B6-59E4-4F08-8889-8A4A4A1A84EE}">
+							<ChildrenList>
+								<Action Name="" ID="{3C6A2826-6FCE-4DBE-AD5C-680864466F19}" ShortID="119554155">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
