@@ -461,69 +461,24 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\General_Soundbank</ObjectPath>
-			<ShortName>General_Soundbank</ShortName>
-			<Path>General_Soundbank.bnk</Path>
+		<SoundBank Id="3589812408" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music_Soundbank</ObjectPath>
+			<ShortName>Music_Soundbank</ShortName>
+			<Path>Music_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1849535609" Name="E_Attack" ObjectPath="\Events\Brian\Gardian\E_Attack"/>
-				<Event Id="2368673453" Name="E_BigStoneDoor_Opening" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Opening"/>
-				<Event Id="2503251047" Name="E_BigStoneDoor_Stop" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Stop"/>
-				<Event Id="825092078" Name="E_Coffre_Bois" ObjectPath="\Events\Brian\Coffre\E_Coffre_Bois"/>
-				<Event Id="3105411141" Name="E_Coffre_Loquet" ObjectPath="\Events\Brian\Coffre\E_Coffre_Loquet"/>
-				<Event Id="453363137" Name="E_Coffre_Metal_Neuf" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Neuf"/>
-				<Event Id="251601818" Name="E_Coffre_Metal_Vieux" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Vieux"/>
-				<Event Id="1482865096" Name="E_Coffre_Pierre" ObjectPath="\Events\Brian\Coffre\E_Coffre_Pierre"/>
-				<Event Id="1674672365" Name="E_Death" ObjectPath="\Events\Brian\Gardian\E_Death"/>
-				<Event Id="1693088249" Name="E_Destroy_Object" ObjectPath="\Events\Simon\Destructibles\E_Destroy_Object"/>
-				<Event Id="1082760276" Name="E_EndCharge" ObjectPath="\Events\Brian\Gardian\E_EndCharge"/>
-				<Event Id="2224696771" Name="E_Footstep" ObjectPath="\Events\Brian\Gardian\E_Footstep"/>
-				<Event Id="3189034779" Name="E_FTP_surface_type_switch" ObjectPath="\Events\Alex\E_FTP_surface_type_switch"/>
-				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
-				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
-				<Event Id="539842108" Name="E_Hit" ObjectPath="\Events\Brian\Gardian\E_Hit"/>
-				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
-				<Event Id="694853374" Name="E_Mob_JungleCharlie_Attack" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack"/>
-				<Event Id="2112280100" Name="E_Mob_JungleCharlie_Death" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death"/>
-				<Event Id="1638544743" Name="E_Mob_JungleCharlie_Exploded" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Exploded\E_Mob_JungleCharlie_Exploded"/>
-				<Event Id="1319469614" Name="E_Mob_JungleCharlie_Iddle" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle"/>
-				<Event Id="3371588653" Name="E_Mob_JungleCharlie_Iddle_STOP" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle_STOP"/>
-				<Event Id="2473679398" Name="E_Mob_JungleCharlie_LaunchSpear" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\LaunchSpear\E_Mob_JungleCharlie_LaunchSpear"/>
-				<Event Id="3786112473" Name="E_Mob_JungleCharlie_Scream" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Charge\E_Mob_JungleCharlie_Scream"/>
-				<Event Id="3156110896" Name="E_MobJungleCharlie_GetHit" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\GetHit\E_MobJungleCharlie_GetHit"/>
-				<Event Id="1166618678" Name="E_MobJungleCharlie_Hit" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Hit\E_MobJungleCharlie_Hit"/>
+				<Event Id="1316302252" Name="E_Mus_Bridge_Begin" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_Begin"/>
+				<Event Id="3685971472" Name="E_Mus_Bridge_End" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_End"/>
+				<Event Id="156378190" Name="E_Mus_Bridge_GoToPhase1" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase1"/>
+				<Event Id="156378189" Name="E_Mus_Bridge_GoToPhase2" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase2"/>
 				<Event Id="1031929396" Name="E_Mus_Jungle_End" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_Jungle_End"/>
 				<Event Id="3867560083" Name="E_Mus_Jungle_Main_Play" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_Jungle_Main_Play"/>
+				<Event Id="2386022965" Name="E_Mus_Ruin_End" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_End"/>
+				<Event Id="3396393780" Name="E_Mus_Ruin_Explo" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Explo"/>
+				<Event Id="3116078580" Name="E_Mus_Ruin_Fight" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Fight"/>
+				<Event Id="2044504258" Name="E_Mus_Ruin_Main_Play" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Main_Play"/>
 				<Event Id="4247850677" Name="E_Mus_SetExplorationState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetExplorationState"/>
 				<Event Id="102331918" Name="E_Mus_SetFightState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetFightState"/>
 				<Event Id="4222663323" Name="E_Mus_TriggerEnigmeChest" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_TriggerEnigmeChest"/>
-				<Event Id="850917734" Name="E_Petite_Boite" ObjectPath="\Events\Brian\Coffre\E_Petite_Boite"/>
-				<Event Id="3376467880" Name="E_Play_Grenade" ObjectPath="\Events\Brian\Grenade\E_Play_Grenade"/>
-				<Event Id="2055309167" Name="E_play_Minigun" ObjectPath="\Events\Ben\E_play_Minigun"/>
-				<Event Id="1306962266" Name="E_play_Minigun_Stop" ObjectPath="\Events\Ben\E_play_Minigun_Stop"/>
-				<Event Id="3359588815" Name="E_SetAcoustic_BossArena" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_BossArena"/>
-				<Event Id="1975484871" Name="E_SetAcoustic_Exterior" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Exterior"/>
-				<Event Id="1418412915" Name="E_SetAcoustic_Ruines" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Ruines"/>
-				<Event Id="3774871727" Name="E_StartCharge" ObjectPath="\Events\Brian\Gardian\E_StartCharge"/>
-				<Event Id="3471430412" Name="E_Stomp" ObjectPath="\Events\Brian\Gardian\E_Stomp"/>
-				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
-				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
-				<Event Id="355937833" Name="E_Traps_SpikeTrap" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap"/>
-				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
-				<Event Id="842152325" Name="E_UI_Option" ObjectPath="\Events\Brian\UI\E_UI_Option"/>
-				<Event Id="2920923470" Name="E_UI_Overlay" ObjectPath="\Events\Brian\UI\E_UI_Overlay"/>
-				<Event Id="762198780" Name="E_UI_Play" ObjectPath="\Events\Brian\UI\E_UI_Play"/>
-				<Event Id="1971253356" Name="E_UI_Return" ObjectPath="\Events\Brian\UI\E_UI_Return"/>
-				<Event Id="1254674964" Name="E_UI_Valid" ObjectPath="\Events\Brian\UI\E_UI_Valid"/>
-				<Event Id="2759949120" Name="HB_Healthkit" ObjectPath="\Events\Chris\HB_Healthkit"/>
-				<Event Id="3564297591" Name="HB_Heartbeat_EVENT" ObjectPath="\Events\Chris\HB_Heartbeat_EVENT"/>
-				<Event Id="3887785823" Name="HB_PickUp_EVENT" ObjectPath="\Events\Chris\HB_PickUp_EVENT"/>
-				<Event Id="3546449532" Name="HB_PickUpHealthkit" ObjectPath="\Events\Chris\HB_PickUpHealthkit"/>
-				<Event Id="2857119571" Name="HB_UiAmmo_EVENT" ObjectPath="\Events\Chris\HB_UiAmmo_EVENT"/>
-				<Event Id="3689389172" Name="HB_UiWep_Equip_EVENT" ObjectPath="\Events\Chris\HB_UiWep_Equip_EVENT"/>
-				<Event Id="3859520409" Name="Initialize_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Initialize_Shotgun_EVENT"/>
-				<Event Id="3284918817" Name="Play_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Play_Shotgun_EVENT"/>
-				<Event Id="3926686718" Name="TEST_Play_Method_A" ObjectPath="\Events\Brian\TEST_Play_Method_A"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="6554429"/>
@@ -643,6 +598,183 @@
 					<ShortName>MUS_HB_Jungle_Enigme_Chest_Event_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_Enigme_Chest_Event_01_D79FB2B7.wem</Path>
 				</File>
+				<File Id="39990194" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_End.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_End_D79FB2B7.wem</Path>
+				</File>
+				<File Id="107510737" Language="SFX">
+					<ShortName>MUS_HB_Ruines_BigVoice_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_BigVoice_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="116141061" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Transi_DownhillToP1.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Transi_DownhillToP1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="131441704" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_03.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_03_D79FB2B7.wem</Path>
+				</File>
+				<File Id="144089296" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Ambiance.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Ambiance_D79FB2B7.wem</Path>
+				</File>
+				<File Id="146828919" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_03.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_03_D79FB2B7.wem</Path>
+				</File>
+				<File Id="232388641" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_01.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="262844369" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_02.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_02_D79FB2B7.wem</Path>
+				</File>
+				<File Id="268485447" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_02.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_02_D79FB2B7.wem</Path>
+				</File>
+				<File Id="310030802" Language="SFX">
+					<ShortName>MUS_HB_Ruines_String_00.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_String_00_D79FB2B7.wem</Path>
+				</File>
+				<File Id="367335765" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_04.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_04_D79FB2B7.wem</Path>
+				</File>
+				<File Id="452570176" Language="SFX">
+					<ShortName>MUS_HB_Ruines_String_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_String_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="462795873" Language="SFX">
+					<ShortName>MUS_HB_Ruines_End.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_End_D79FB2B7.wem</Path>
+				</File>
+				<File Id="660836541" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_04.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_04_D79FB2B7.wem</Path>
+				</File>
+				<File Id="716610373" Language="SFX">
+					<ShortName>MUS_HB_Jungle_Fight_MalletCymbal_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Jungle_Fight_MalletCymbal_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="718109556" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_01.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="726862209" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Tambour_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Tambour_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="726920984" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_DownhillSegment.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_DownhillSegment_D79FB2B7.wem</Path>
+				</File>
+				<File Id="757816540" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_Transi_P1ToP2.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_Transi_P1ToP2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="765855572" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Snare_00.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Snare_00_D79FB2B7.wem</Path>
+				</File>
+				<File Id="817692512" Language="SFX">
+					<ShortName>MUS_HB_Jungle_Fight_BigDrums_End.wav</ShortName>
+					<Path>SFX\MUS_HB_Jungle_Fight_BigDrums_End_D79FB2B7.wem</Path>
+				</File>
+				<File Id="855857155" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Start.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Start_D79FB2B7.wem</Path>
+				</File>
+				<File Id="866325847" Language="SFX">
+					<ShortName>MUS_HB_Ruines_BigVoice_00.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_BigVoice_00_D79FB2B7.wem</Path>
+				</File>
+				<File Id="877113610" Language="SFX">
+					<ShortName>MUS_HB_BridgeJungle_BeginJingle.wav</ShortName>
+					<Path>SFX\MUS_HB_BridgeJungle_BeginJingle_D79FB2B7.wem</Path>
+				</File>
+				<File Id="879127390" Language="SFX">
+					<ShortName>MUS_HB_JUNGLE_BigDrum_EndFight.wav</ShortName>
+					<Path>SFX\MUS_HB_JUNGLE_BigDrum_EndFight_D79FB2B7.wem</Path>
+				</File>
+				<File Id="909569087" Language="SFX">
+					<ShortName>MUS_HB_Jungle_Fight_TransitionBegin.wav</ShortName>
+					<Path>SFX\MUS_HB_Jungle_Fight_TransitionBegin_D79FB2B7.wem</Path>
+				</File>
+				<File Id="951005522" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Tambour_00.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Tambour_00_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1029166442" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Snare_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Snare_01_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1042611356" Language="SFX">
+					<ShortName>MUS_HB_Jungle_Enigme_Chest_Event_02.wav</ShortName>
+					<Path>SFX\MUS_HB_Jungle_Enigme_Chest_Event_02_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3657742645" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\General_Soundbank</ObjectPath>
+			<ShortName>General_Soundbank</ShortName>
+			<Path>General_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1849535609" Name="E_Attack" ObjectPath="\Events\Brian\Gardian\E_Attack"/>
+				<Event Id="2368673453" Name="E_BigStoneDoor_Opening" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Opening"/>
+				<Event Id="2503251047" Name="E_BigStoneDoor_Stop" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Stop"/>
+				<Event Id="825092078" Name="E_Coffre_Bois" ObjectPath="\Events\Brian\Coffre\E_Coffre_Bois"/>
+				<Event Id="3105411141" Name="E_Coffre_Loquet" ObjectPath="\Events\Brian\Coffre\E_Coffre_Loquet"/>
+				<Event Id="453363137" Name="E_Coffre_Metal_Neuf" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Neuf"/>
+				<Event Id="251601818" Name="E_Coffre_Metal_Vieux" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Vieux"/>
+				<Event Id="1482865096" Name="E_Coffre_Pierre" ObjectPath="\Events\Brian\Coffre\E_Coffre_Pierre"/>
+				<Event Id="1674672365" Name="E_Death" ObjectPath="\Events\Brian\Gardian\E_Death"/>
+				<Event Id="1693088249" Name="E_Destroy_Object" ObjectPath="\Events\Simon\Destructibles\E_Destroy_Object"/>
+				<Event Id="1082760276" Name="E_EndCharge" ObjectPath="\Events\Brian\Gardian\E_EndCharge"/>
+				<Event Id="2224696771" Name="E_Footstep" ObjectPath="\Events\Brian\Gardian\E_Footstep"/>
+				<Event Id="3189034779" Name="E_FTP_surface_type_switch" ObjectPath="\Events\Alex\E_FTP_surface_type_switch"/>
+				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
+				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
+				<Event Id="539842108" Name="E_Hit" ObjectPath="\Events\Brian\Gardian\E_Hit"/>
+				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
+				<Event Id="694853374" Name="E_Mob_JungleCharlie_Attack" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack"/>
+				<Event Id="2112280100" Name="E_Mob_JungleCharlie_Death" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death"/>
+				<Event Id="1638544743" Name="E_Mob_JungleCharlie_Exploded" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Exploded\E_Mob_JungleCharlie_Exploded"/>
+				<Event Id="1319469614" Name="E_Mob_JungleCharlie_Iddle" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle"/>
+				<Event Id="3371588653" Name="E_Mob_JungleCharlie_Iddle_STOP" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle_STOP"/>
+				<Event Id="2473679398" Name="E_Mob_JungleCharlie_LaunchSpear" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\LaunchSpear\E_Mob_JungleCharlie_LaunchSpear"/>
+				<Event Id="3786112473" Name="E_Mob_JungleCharlie_Scream" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Charge\E_Mob_JungleCharlie_Scream"/>
+				<Event Id="3156110896" Name="E_MobJungleCharlie_GetHit" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\GetHit\E_MobJungleCharlie_GetHit"/>
+				<Event Id="1166618678" Name="E_MobJungleCharlie_Hit" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Hit\E_MobJungleCharlie_Hit"/>
+				<Event Id="850917734" Name="E_Petite_Boite" ObjectPath="\Events\Brian\Coffre\E_Petite_Boite"/>
+				<Event Id="3376467880" Name="E_Play_Grenade" ObjectPath="\Events\Brian\Grenade\E_Play_Grenade"/>
+				<Event Id="2055309167" Name="E_play_Minigun" ObjectPath="\Events\Ben\E_play_Minigun"/>
+				<Event Id="1306962266" Name="E_play_Minigun_Stop" ObjectPath="\Events\Ben\E_play_Minigun_Stop"/>
+				<Event Id="3359588815" Name="E_SetAcoustic_BossArena" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_BossArena"/>
+				<Event Id="1975484871" Name="E_SetAcoustic_Exterior" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Exterior"/>
+				<Event Id="1418412915" Name="E_SetAcoustic_Ruines" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Ruines"/>
+				<Event Id="3774871727" Name="E_StartCharge" ObjectPath="\Events\Brian\Gardian\E_StartCharge"/>
+				<Event Id="3471430412" Name="E_Stomp" ObjectPath="\Events\Brian\Gardian\E_Stomp"/>
+				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
+				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
+				<Event Id="355937833" Name="E_Traps_SpikeTrap" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap"/>
+				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
+				<Event Id="842152325" Name="E_UI_Option" ObjectPath="\Events\Brian\UI\E_UI_Option"/>
+				<Event Id="2920923470" Name="E_UI_Overlay" ObjectPath="\Events\Brian\UI\E_UI_Overlay"/>
+				<Event Id="762198780" Name="E_UI_Play" ObjectPath="\Events\Brian\UI\E_UI_Play"/>
+				<Event Id="1971253356" Name="E_UI_Return" ObjectPath="\Events\Brian\UI\E_UI_Return"/>
+				<Event Id="1254674964" Name="E_UI_Valid" ObjectPath="\Events\Brian\UI\E_UI_Valid"/>
+				<Event Id="2759949120" Name="HB_Healthkit" ObjectPath="\Events\Chris\HB_Healthkit"/>
+				<Event Id="3564297591" Name="HB_Heartbeat_EVENT" ObjectPath="\Events\Chris\HB_Heartbeat_EVENT"/>
+				<Event Id="3887785823" Name="HB_PickUp_EVENT" ObjectPath="\Events\Chris\HB_PickUp_EVENT"/>
+				<Event Id="3546449532" Name="HB_PickUpHealthkit" ObjectPath="\Events\Chris\HB_PickUpHealthkit"/>
+				<Event Id="2857119571" Name="HB_UiAmmo_EVENT" ObjectPath="\Events\Chris\HB_UiAmmo_EVENT"/>
+				<Event Id="3689389172" Name="HB_UiWep_Equip_EVENT" ObjectPath="\Events\Chris\HB_UiWep_Equip_EVENT"/>
+				<Event Id="3859520409" Name="Initialize_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Initialize_Shotgun_EVENT"/>
+				<Event Id="3284918817" Name="Play_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Play_Shotgun_EVENT"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
 				<File Id="12908966" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Equip2.wav</ShortName>
 					<Path>SFX\HB_SFX_Uiwep_Equip2_BCF095EF.wem</Path>
@@ -1563,10 +1695,6 @@
 					<ShortName>Shell_Wood_02.wav</ShortName>
 					<Path>SFX\Shell_Wood_02_10C4C929.wem</Path>
 				</File>
-				<File Id="716610373" Language="SFX">
-					<ShortName>MUS_HB_Jungle_Fight_MalletCymbal_01.wav</ShortName>
-					<Path>SFX\MUS_HB_Jungle_Fight_MalletCymbal_01_D79FB2B7.wem</Path>
-				</File>
 				<File Id="718060554" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_01_10C4C929.wem</Path>
@@ -1675,10 +1803,6 @@
 					<ShortName>FTP_metal_01.wav</ShortName>
 					<Path>SFX\FTP_metal_01_10C4C929.wem</Path>
 				</File>
-				<File Id="817692512" Language="SFX">
-					<ShortName>MUS_HB_Jungle_Fight_BigDrums_End.wav</ShortName>
-					<Path>SFX\MUS_HB_Jungle_Fight_BigDrums_End_D79FB2B7.wem</Path>
-				</File>
 				<File Id="836753407" Language="SFX">
 					<ShortName>Shell_Water_04.wav</ShortName>
 					<Path>SFX\Shell_Water_04_10C4C929.wem</Path>
@@ -1731,10 +1855,6 @@
 					<ShortName>HB_Footstep_SolPierre_01.wav</ShortName>
 					<Path>SFX\HB_Footstep_SolPierre_01_10C4C929.wem</Path>
 				</File>
-				<File Id="879127390" Language="SFX">
-					<ShortName>MUS_HB_JUNGLE_BigDrum_EndFight.wav</ShortName>
-					<Path>SFX\MUS_HB_JUNGLE_BigDrum_EndFight_D79FB2B7.wem</Path>
-				</File>
 				<File Id="879344485" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_02_2C52C4C4.wem</Path>
@@ -1754,10 +1874,6 @@
 				<File Id="903659593" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Planches_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Planches_01_10C4C929.wem</Path>
-				</File>
-				<File Id="909569087" Language="SFX">
-					<ShortName>MUS_HB_Jungle_Fight_TransitionBegin.wav</ShortName>
-					<Path>SFX\MUS_HB_Jungle_Fight_TransitionBegin_D79FB2B7.wem</Path>
 				</File>
 				<File Id="910590706" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_01.wav</ShortName>
@@ -1902,10 +2018,6 @@
 				<File Id="1038223983" Language="SFX">
 					<ShortName>FTP_boue_01.wav</ShortName>
 					<Path>SFX\FTP_boue_01_10C4C929.wem</Path>
-				</File>
-				<File Id="1042611356" Language="SFX">
-					<ShortName>MUS_HB_Jungle_Enigme_Chest_Event_02.wav</ShortName>
-					<Path>SFX\MUS_HB_Jungle_Enigme_Chest_Event_02_D79FB2B7.wem</Path>
 				</File>
 				<File Id="1042924671" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Attack_00.wav</ShortName>

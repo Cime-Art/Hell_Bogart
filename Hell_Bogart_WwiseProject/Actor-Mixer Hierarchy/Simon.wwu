@@ -5268,6 +5268,47 @@
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="EnableAttenuation"/>
+									<Property Name="Highpass"/>
+									<Property Name="Lowpass"/>
+									<Property Name="MakeUpGain"/>
+									<Property Name="Pitch"/>
+									<Property Name="Volume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Jungle_Music_STATE" ID="{F6D3DE5E-D808-437D-B8B8-024D13D3C80C}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="End_Music" ID="{F98C25B7-C5CA-4858-B4D9-4136E6494696}"/>
+										<CustomState Name="" ID="{C60D6C23-1A3A-4414-84DC-6F78C5883691}" ShortID="368649605">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}"/>
+										<CustomState Name="" ID="{D55ABC42-A395-4420-8B21-E3287A02CC49}" ShortID="636459105">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
+										<CustomState Name="" ID="{0DA93B62-F235-4337-ABB4-B7225A456631}" ShortID="219287767">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</ActorMixer>
 					</ChildrenList>
 				</Folder>

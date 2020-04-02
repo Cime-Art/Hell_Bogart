@@ -122,7 +122,16 @@
 								</AuxBus>
 							</ChildrenList>
 						</Bus>
-						<Bus Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}"/>
+						<Bus Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}">
+							<ChildrenList>
+								<Bus Name="Mobs_Bridge_SUBBUS" ID="{E1F7FB72-56E8-4F86-8044-4A31A81E55EA}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
 						<Bus Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}">
 							<ChildrenList>
 								<Bus Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}"/>

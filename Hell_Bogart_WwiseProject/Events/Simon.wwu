@@ -637,6 +637,73 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Bridge" ID="{6BFFE01F-3F94-47B6-811D-7190150057F2}" ShortID="1068530687">
+							<ChildrenList>
+								<Event Name="E_Mus_Bridge_Begin" ID="{0EBFBCBD-E095-4142-AC92-B52939AADE0A}">
+									<ChildrenList>
+										<Action Name="" ID="{CE51ED84-9E9E-4B53-B00B-3718F9B6703F}" ShortID="109763793">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Begin_Music" ID="{C2E07CA0-9094-453E-8EF5-E50527099C8E}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{17910376-F844-4924-BFEC-BED154D14C32}" ShortID="396362655">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Mus_Bridge_MAIN_SWITCH" ID="{22EC1E07-9954-41C0-B37A-A58D94A07C83}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Mus_Bridge_GoToPhase1" ID="{E23198FE-C61C-465D-94F4-72A13BDEE57C}">
+									<ChildrenList>
+										<Action Name="" ID="{3A4F21B2-6128-4BDD-8939-B9503D8CDA8E}" ShortID="56584473">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Phase_1" ID="{ABAAF5E5-2CDD-4FE2-9428-D76699596B9D}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Mus_Bridge_GoToPhase2" ID="{FDF36D42-84ED-4690-B6A8-4107FEE6DAE0}">
+									<ChildrenList>
+										<Action Name="" ID="{FAE3BFFE-D6BB-429A-957C-FAD3FC123D29}" ShortID="769494169">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Phase_2" ID="{A3F081EA-75E4-404A-BF9B-CC890B6BFD91}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Mus_Bridge_End" ID="{EA62336C-AF07-47F7-B78B-CB4F5405B902}">
+									<ChildrenList>
+										<Action Name="" ID="{011F1842-D556-4492-8AA7-47103DF41337}" ShortID="13196645">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="End_Music" ID="{3A466E4D-077D-4216-B554-EE3DCDF3C5FF}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Global" ID="{88B37875-1B83-43F8-8070-B53CCCCD6609}" ShortID="178615531">

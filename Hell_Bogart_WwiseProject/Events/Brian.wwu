@@ -3,21 +3,6 @@
 	<Events>
 		<WorkUnit Name="Brian" ID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="TEST_Play_Method_A" ID="{1C0FAB98-371F-48A4-93F3-0C576D6D079C}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="13"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{35055F90-B285-4B37-919D-8C4AD271051F}" ShortID="387051863">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music_Ruin_MAIN_SWITCH" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="UI" ID="{52CC3777-6500-458E-93D6-D36D6FAE371A}" ShortID="220642255">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="15"/>
