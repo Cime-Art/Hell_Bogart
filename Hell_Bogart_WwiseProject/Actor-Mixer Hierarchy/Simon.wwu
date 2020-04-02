@@ -114,7 +114,7 @@
 						</ActorMixer>
 						<ActorMixer Name="Stone Door Riddle" ID="{27BB102E-B947-4A48-A100-6039A6A0F17F}" ShortID="1067970854">
 							<PropertyList>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
 										<Value>12</Value>
@@ -127,7 +127,7 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-10</Value>
@@ -135,6 +135,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATT_StoneDoorRiddle" ID="{9581B568-8E07-4582-A9A9-DECB23E00378}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 								</Reference>
@@ -277,6 +280,11 @@
 									</ValueList>
 								</Property>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3013,7 +3021,6 @@
 								<ActorMixer Name="Iddle" ID="{54ED9365-39B0-4841-AE4B-BB6EFC0AFA70}" ShortID="5444479">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>4</Value>
@@ -3024,6 +3031,11 @@
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
