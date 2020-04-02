@@ -163,16 +163,6 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
-												<Action Name="" ID="{CA7A3A98-72A7-4D3D-B516-13809E6B96D8}" ShortID="15090257">
-													<PropertyList>
-														<Property Name="Delay" Type="Real64" Value="0.7"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Hit_MobJungleCharlie" ID="{BB1C446F-554E-4A89-BDCC-5C343DA2E9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
 											</ChildrenList>
 										</Event>
 									</ChildrenList>
@@ -272,17 +262,23 @@
 									<ChildrenList>
 										<Event Name="E_Mob_JungleCharlie_Exploded" ID="{C23FDF1A-E174-48A2-AC34-D9018CC7F78E}">
 											<ChildrenList>
-												<Action Name="" ID="{9B5BC691-82EB-4B57-B9AD-C9AC17DCC194}" ShortID="815418560">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MobJungleCharlie_GetHit_MAIN_RND" ID="{5A6B34C4-EEC3-4723-8C4C-56D87B73C34A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
 												<Action Name="" ID="{72FE124C-6193-4C3F-901E-0E04A49A9283}" ShortID="760425453">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.15"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Exploded_Bones_MobJungleCharlie_RND" ID="{090D44BB-BD78-4D83-BC3D-872B64C372FA}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{3064659F-423C-4383-9EAA-1CDD8E509F13}" ShortID="377815301">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.15"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_GetHit_MAIN_RND" ID="{5A6B34C4-EEC3-4723-8C4C-56D87B73C34A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -390,6 +386,9 @@
 										<Event Name="E_MobJungleCharlie_GetHit" ID="{EA163DFE-A0BD-443C-A2CB-34FA8A68B0F3}">
 											<ChildrenList>
 												<Action Name="" ID="{D86D871D-D8E5-4CAF-BA0B-8DC6C587956A}" ShortID="636517557">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.15"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="MobJungleCharlie_GetHit_MAIN_RND" ID="{5A6B34C4-EEC3-4723-8C4C-56D87B73C34A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
@@ -397,9 +396,27 @@
 													</ReferenceList>
 												</Action>
 												<Action Name="" ID="{8EB074F5-7385-4C85-B969-871A9A6B47E5}" ShortID="219998957">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.15"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="MobJungleCharlie_GetHit_ELEMENT_SWITCH" ID="{193EC443-EB3D-4159-B3C0-AC820B519F34}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Hit" ID="{31C25C91-A063-4E4C-BDDA-692A0A252330}" ShortID="1005512746">
+									<ChildrenList>
+										<Event Name="E_MobJungleCharlie_Hit" ID="{FDCFF838-BD41-48DC-8123-A8E3C5DD2BBD}">
+											<ChildrenList>
+												<Action Name="" ID="{087004CA-55C6-4E63-9E93-22CEAF59BC81}" ShortID="12697804">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Hit_MobJungleCharlie" ID="{BB1C446F-554E-4A89-BDCC-5C343DA2E9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -448,11 +465,85 @@
 										</Action>
 										<Action Name="" ID="{E716D05E-EBC8-40A0-825C-DCCF5BA39B32}" ShortID="417882547">
 											<PropertyList>
-												<Property Name="Delay" Type="Real64" Value="1.08"/>
+												<Property Name="Delay" Type="Real64" Value="0.5"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="HB-SFX-Other-LoopBigStoneDoorOpening" ID="{A70FF459-B9BD-41CC-8944-6DE32E901523}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Stone Door Riddle" ID="{B193C2AA-1E7A-4C59-A9A0-524E54C32D37}" ShortID="647118899">
+							<ChildrenList>
+								<Event Name="E_StoneDoorRiddle_Stop" ID="{4DB9CC59-B87F-4268-8ECB-9B686D86FDA2}">
+									<ChildrenList>
+										<Action Name="" ID="{7671CE51-CF80-439F-96C9-5EBA76729BC0}" ShortID="8682459">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HB_Other_LoopStoneDoorRiddle" ID="{827D9DB6-48A2-4B8E-AA3D-6B637A13A447}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A5E41758-6487-43DB-8294-50F7DFD239F2}" ShortID="384894255">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HB_Other_EndStoneDoorRiddle" ID="{B0EE893E-97E3-4DC8-B2F4-E25A7BABA72A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_StoneDoorRiddle_Openning" ID="{4ACDF199-1841-48B6-B290-105536B42A14}">
+									<ChildrenList>
+										<Action Name="" ID="{2002A7A2-4AF4-406F-B609-41B39F5CBE6A}" ShortID="11665572">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HB_Other_OpenStoneDoorRiddle" ID="{89745786-CE3B-419C-A3AC-D9B635913FD5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AA6318D0-FB7F-4F3B-903D-A7E887A79514}" ShortID="745610952">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.08"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HB_Other_LoopStoneDoorRiddle" ID="{827D9DB6-48A2-4B8E-AA3D-6B637A13A447}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ground Switches" ID="{B704BB40-6AEF-43E7-A533-A9C4B710541F}" ShortID="1007545672">
+							<ChildrenList>
+								<Event Name="E_GroundSwitch_Low" ID="{A2B52A0D-7E86-417C-8549-9409C23B8675}">
+									<ChildrenList>
+										<Action Name="" ID="{2228316B-A011-4CF5-B6EE-B3C09B74D84E}" ShortID="812432830">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_OTHERS_GroundSwitch_Klonk3" ID="{89F737E4-4422-4C25-8FA3-9D8021585138}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_GroundSwitch_Medium" ID="{058C4428-58E9-4F2F-B99C-8A3B118E3EE4}">
+									<ChildrenList>
+										<Action Name="" ID="{4EE905BF-78D5-409D-9EBF-993F1ADFCF29}" ShortID="529522843">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HB_GroundSwitch_Klonk" ID="{0FE95116-15B5-4E07-82B3-18B36614EDA3}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -471,7 +562,7 @@
 										<Action Name="" ID="{AE9C4A74-1BF2-4B37-A513-F118B0E78F7E}" ShortID="508062970">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="4500"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -530,6 +621,20 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_Mus_TriggerEnigmeChest" ID="{50F64845-E7BA-4DA8-912B-34F5FFE137A0}">
+									<ChildrenList>
+										<Action Name="" ID="{A086E5D9-E6F0-4CD7-811C-C5CF51D35C27}" ShortID="963413561">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="35"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="T_Jungle_Event_Enigme_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -582,6 +687,36 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Traps" ID="{23C7724F-3F1E-4ED6-817D-50474523B8E9}" ShortID="345295909">
+					<ChildrenList>
+						<Event Name="E_Traps_SpikeTrap" ID="{AEDF05AF-CCF6-44D5-BFD9-BE593DE36942}">
+							<ChildrenList>
+								<Action Name="" ID="{FEB48356-A508-4468-8051-2E8CE1CE64FD}" ShortID="545532106">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spike_Trap_SEQ" ID="{12F0FFA5-C6F7-4A3B-B631-8540EF21BC28}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Destructibles" ID="{E917B8D0-8FA3-47DE-B4C1-5B271665B8EC}" ShortID="163303108">
+					<ChildrenList>
+						<Event Name="E_Destroy_Object" ID="{E9974C9F-DAF8-470F-91A9-F03D4FAF4252}">
+							<ChildrenList>
+								<Action Name="" ID="{105EA475-9655-47FD-B6AB-F318CDF3DC8E}" ShortID="971635419">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Destroy_Object_SWITCH" ID="{00421940-28A7-45E0-81D5-13A5513592F2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

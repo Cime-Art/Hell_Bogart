@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}" SchemaVersion="94">
 	<States>
 		<WorkUnit Name="Brian" ID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="14"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Folder Name="Musique" ID="{EB06F698-6DA9-44B1-B44C-34EF47EAE260}" ShortID="610582069">
 					<ChildrenList>
@@ -47,7 +51,17 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Guardian" ID="{F9A66FE8-03F9-416F-A1EE-79F97E0526FF}" ShortID="486364957"/>
+				<Folder Name="Guardian" ID="{F9A66FE8-03F9-416F-A1EE-79F97E0526FF}" ShortID="486364957">
+					<ChildrenList>
+						<StateGroup Name="Footstep_Charge" ID="{5E428EE6-BAB5-455E-BAB4-893EA8BEEE97}">
+							<ChildrenList>
+								<State Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
+								<State Name="Start" ID="{220B4154-EBE4-4C51-9B3A-924E2597A8F3}"/>
+								<State Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

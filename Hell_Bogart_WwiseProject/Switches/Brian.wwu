@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}" SchemaVersion="94">
 	<Switches>
 		<WorkUnit Name="Brian" ID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="14"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Folder Name="Guardian" ID="{465D3D43-AF1A-47F5-A248-2F0332DC7F8A}" ShortID="895560278"/>
 				<Folder Name="Grenade" ID="{89A8CA87-853E-47B9-98AC-FFF6CCDCDED5}" ShortID="26514163">

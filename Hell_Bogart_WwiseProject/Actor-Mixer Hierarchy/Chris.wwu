@@ -83,14 +83,14 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>10.6552895124346</RightEdgePos>
+														<RightEdgePos>10.0147201174168</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
 												<BlendTrackAssoc>
 													<ItemRef Name="HB_Heartbeat_slow" ID="{8EDFC986-1481-457F-9B07-6A5FD863FDCC}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>10.5066677028796</LeftEdgePos>
+														<LeftEdgePos>10.0084470623102</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<RightEdgePos>25</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
@@ -100,130 +100,467 @@
 										</BlendTrack>
 									</BlendTrackList>
 								</BlendContainer>
+								<ActorMixer Name="PickUpHealthkit" ID="{0C6BF5D0-6C3D-41E3-9A43-07D200309718}" ShortID="614463485">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HB_PickUpHealthkit" ID="{1044A179-EF22-4B37-B9B5-CDDF96349B22}" ShortID="10629119">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_Other_PickUpHealthkit" ID="{BD01E005-8B41-434A-B7AA-DD1849D4F89A}" ShortID="37010359">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.97321156773212"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_Other_PickUpHealthkit.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_Other_PickUpHealthkit" ID="{BD01E005-8B41-434A-B7AA-DD1849D4F89A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Healthkit" ID="{853C7734-7636-4F53-B7BA-DC7DB3997F67}" ShortID="682818835">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" ShortID="596721459">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_Other_Healthkit" ID="{218DC6D9-2FF3-4570-B5C2-96CEA497104D}" ShortID="379540692">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.14768427919113"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.23999782561426"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_Other_Healthkit.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_Other_Healthkit" ID="{218DC6D9-2FF3-4570-B5C2-96CEA497104D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UIweps" ID="{D7D213AD-5E9F-46E0-9A8F-1E4DE517F815}" ShortID="456890586">
 					<ChildrenList>
-						<RandomSequenceContainer Name="RND_EquipItem" ID="{9E19697B-6D30-4D45-933C-427B12E6A4F6}" ShortID="611851805">
+						<ActorMixer Name="SFX_HB_Other_Ammo_Pickup" ID="{C971739E-34A7-4FEC-B688-2E9CFC5406AF}" ShortID="771873757">
 							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{420236EF-E335-4FE6-BE73-B93BA1B1C9B3}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="11"/>
-													<Property Name="Min" Type="Real64" Value="-4"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>80</Value>
+										<Value>1</Value>
 									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{2B172E25-E473-48F5-AC3B-3900E2DF0246}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="5"/>
-													<Property Name="Min" Type="Real64" Value="-5"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
 								</Property>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 								</Reference>
 								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend2">
+									<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Ammo_Switch" ID="{C59307DC-5951-4B50-AD6E-0BC1E0A57BDA}" ShortID="358703727">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Standar" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="AMMO_type" ID="{BA35DEFC-0656-4AEE-A58C-4EEC74B0CE97}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_Ammo_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}" ShortID="235240877">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Hb_sfx_other_Ammo_standar" ID="{78CD82CF-F18C-42E5-AACE-ED89ED2ED97D}" ShortID="172620751">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Hb_sfx_other_Ammo_standar" ID="{718EE022-B5A2-4C20-8E28-EE395EFEE1C1}" ShortID="98705135">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.795456853974466"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Hb_sfx_other_Ammo_standar.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Hb_sfx_other_Ammo_standar" ID="{718EE022-B5A2-4C20-8E28-EE395EFEE1C1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RND_Ammo_Rare" ID="{0EF6BB82-6F81-4DE7-9592-ACC054058C2B}" ShortID="763028211">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RND_Ammo_Epic" ID="{9B8981D5-0E61-42D6-847A-36604F140283}" ShortID="713260850">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="RND_Ammo_Rare" ID="{0EF6BB82-6F81-4DE7-9592-ACC054058C2B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="RND_Ammo_Epic" ID="{9B8981D5-0E61-42D6-847A-36604F140283}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="RND_Ammo_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Standar" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}"/>
+												<ItemList>
+													<ItemRef Name="RND_Ammo_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+												<ItemList>
+													<ItemRef Name="RND_Ammo_Epic" ID="{9B8981D5-0E61-42D6-847A-36604F140283}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Rare" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
+												<ItemList>
+													<ItemRef Name="RND_Ammo_Rare" ID="{0EF6BB82-6F81-4DE7-9592-ACC054058C2B}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" ShortID="892574741">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="PickUP_type" ID="{DEBCC2DF-83A9-4206-B1CB-4C169460F450}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}" ShortID="982866528">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}" ShortID="670246627">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}" ShortID="986440601">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_Pickup_01" ID="{4725384B-203F-4A8C-AB53-1286ACF141E5}" ShortID="74567877">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_Uiwep_Pickup1" ID="{FC8A87EB-AE69-4C52-9556-C64234ACAFE7}" ShortID="313989002">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.242068193130911"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_Uiwep_Pickup1.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="481689103"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_Uiwep_Pickup1" ID="{FC8A87EB-AE69-4C52-9556-C64234ACAFE7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_Pickup_02" ID="{4608614A-2AC0-4E50-A85C-2FD28651A143}" ShortID="925448018">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_Uiwep_Pickup2" ID="{0375C1E4-E69B-431B-9CDD-2BC6192908FF}" ShortID="232088301">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0.195447652231624"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.195447652231624"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_Uiwep_Pickup2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="740162737"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_Uiwep_Pickup2" ID="{0375C1E4-E69B-431B-9CDD-2BC6192908FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_Pickup_03" ID="{CC56A522-C43B-4E0C-B7C3-0513ED954304}" ShortID="386437933">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_Uiwep_Pickup3" ID="{C72658B0-3265-4C7B-BAE9-989A34126124}" ShortID="385884009">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.200826945412311"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_Uiwep_Pickup3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="476709970"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_Uiwep_Pickup3" ID="{C72658B0-3265-4C7B-BAE9-989A34126124}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Hb_sfx_other_pickup_standar" ID="{F906D6D5-E737-4F41-8115-E7C630D77122}" ShortID="1061374124">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Hb_sfx_other_pickup_standar" ID="{FBE8D696-61F9-4620-ACA8-8E8CE382A163}" ShortID="528701847">
+															<Language>SFX</Language>
+															<AudioFile>Hb_sfx_other_pickup_standar.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Hb_sfx_other_pickup_standar" ID="{FBE8D696-61F9-4620-ACA8-8E8CE382A163}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="RARE" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
+												<ItemList>
+													<ItemRef Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+												<ItemList>
+													<ItemRef Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
+												<ItemList>
+													<ItemRef Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="SFX_HB_Other_Equip" ID="{E34B5E7F-4D48-466D-ACBB-161987894473}" ShortID="930157339">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="HB_SFX_Uiwep_Equip1" ID="{9319FA17-934B-4DB4-A45E-64166C474707}" ShortID="44507335">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="HB_SFX_Uiwep_Equip1" ID="{3F053406-944B-4E18-897B-23C339BE5F6A}" ShortID="331013577">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>HB_SFX_Uiwep_Equip1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HB_SFX_Uiwep_Equip1" ID="{3F053406-944B-4E18-897B-23C339BE5F6A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="HB_SFX_Uiwep_Equip2" ID="{6BA3205B-BC3D-413A-8A51-58DFB5691B98}" ShortID="934990867">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="HB_SFX_Uiwep_Equip2" ID="{20C0A41D-5740-4FB1-98F6-D07BE0CB3727}" ShortID="12908966">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.046337260107295"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>HB_SFX_Uiwep_Equip2.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HB_SFX_Uiwep_Equip2" ID="{20C0A41D-5740-4FB1-98F6-D07BE0CB3727}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="HB_SFX_Uiwep_Equip3" ID="{12B27D50-EB1A-41BB-ABCA-6B67BDAB2B5B}" ShortID="517062404">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="HB_SFX_Uiwep_Equip3" ID="{E763EE3B-A8C1-4B6C-A3EB-C3A0A48AD3B2}" ShortID="150310060">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="4.00995520159284E-02"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>HB_SFX_Uiwep_Equip3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HB_SFX_Uiwep_Equip3" ID="{E763EE3B-A8C1-4B6C-A3EB-C3A0A48AD3B2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="HB_SFX_UiWep_Equip4" ID="{DA26B1B6-6048-47E1-BA4B-FFD37280FB40}" ShortID="988797360">
+								<RandomSequenceContainer Name="RND_EquipItem" ID="{9E19697B-6D30-4D45-933C-427B12E6A4F6}" ShortID="611851805">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{420236EF-E335-4FE6-BE73-B93BA1B1C9B3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="11"/>
+															<Property Name="Min" Type="Real64" Value="-4"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2B172E25-E473-48F5-AC3B-3900E2DF0246}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -234,79 +571,113 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="HB_SFX_UiWep_Equip4" ID="{158173EE-5A05-4971-B306-90EF79936EFF}" ShortID="337804232">
+										<Sound Name="HB_SFX_Uiwep_Equip1" ID="{9319FA17-934B-4DB4-A45E-64166C474707}" ShortID="44507335">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_Uiwep_Equip1" ID="{3F053406-944B-4E18-897B-23C339BE5F6A}" ShortID="331013577">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_Uiwep_Equip1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_Uiwep_Equip1" ID="{3F053406-944B-4E18-897B-23C339BE5F6A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HB_SFX_Uiwep_Equip2" ID="{6BA3205B-BC3D-413A-8A51-58DFB5691B98}" ShortID="934990867">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_Uiwep_Equip2" ID="{20C0A41D-5740-4FB1-98F6-D07BE0CB3727}" ShortID="12908966">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.046337260107295"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_Uiwep_Equip2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_Uiwep_Equip2" ID="{20C0A41D-5740-4FB1-98F6-D07BE0CB3727}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HB_SFX_Uiwep_Equip3" ID="{12B27D50-EB1A-41BB-ABCA-6B67BDAB2B5B}" ShortID="517062404">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_Uiwep_Equip3" ID="{E763EE3B-A8C1-4B6C-A3EB-C3A0A48AD3B2}" ShortID="150310060">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.00995520159284E-02"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_Uiwep_Equip3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_Uiwep_Equip3" ID="{E763EE3B-A8C1-4B6C-A3EB-C3A0A48AD3B2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HB_SFX_UiWep_Equip4" ID="{DA26B1B6-6048-47E1-BA4B-FFD37280FB40}" ShortID="988797360">
 											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.267451413085559"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>HB_SFX_UiWep_Equip4.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HB_SFX_UiWep_Equip4" ID="{158173EE-5A05-4971-B306-90EF79936EFF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="HB_SFX_UiWep_Equip5" ID="{4B9A09DF-8A74-441B-BEF2-D5F2F00581DB}" ShortID="540821363">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="HB_SFX_UiWep_Equip5" ID="{D5A8C95D-003D-4FCD-A7C9-4DB33F4FF761}" ShortID="948793202">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_UiWep_Equip4" ID="{158173EE-5A05-4971-B306-90EF79936EFF}" ShortID="337804232">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.267451413085559"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_UiWep_Equip4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_UiWep_Equip4" ID="{158173EE-5A05-4971-B306-90EF79936EFF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HB_SFX_UiWep_Equip5" ID="{4B9A09DF-8A74-441B-BEF2-D5F2F00581DB}" ShortID="540821363">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.17709620596206"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.17709620596206"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>HB_SFX_UiWep_Equip5.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HB_SFX_UiWep_Equip5" ID="{D5A8C95D-003D-4FCD-A7C9-4DB33F4FF761}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<SwitchContainer Name="Ammo_Switch" ID="{C59307DC-5951-4B50-AD6E-0BC1E0A57BDA}" ShortID="358703727">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Standar" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="AMMO_type" ID="{BA35DEFC-0656-4AEE-A58C-4EEC74B0CE97}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="RND_Ammo_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}" ShortID="235240877">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="HB_SFX_ammo_01" ID="{D0A6E5E4-E373-408D-9667-06ED13807EC8}" ShortID="134937571">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -316,368 +687,24 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_ammo_01" ID="{BFBFEA04-F691-4E22-A44B-EDE36629BAFE}" ShortID="265842113">
+												<AudioFileSource Name="HB_SFX_UiWep_Equip5" ID="{D5A8C95D-003D-4FCD-A7C9-4DB33F4FF761}" ShortID="948793202">
 													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.17709620596206"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.158536585365854"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.17709620596206"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>HB_SFX_ammo_01.wav</AudioFile>
+													<AudioFile>HB_SFX_UiWep_Equip5.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_ammo_01" ID="{BFBFEA04-F691-4E22-A44B-EDE36629BAFE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="HB_SFX_ammo_02" ID="{A3920349-5ED4-48E0-86E4-FF1CB7732119}" ShortID="469616113">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_ammo_02" ID="{6C472B02-DE3F-4ACF-B569-2009BD3726FE}" ShortID="721740263">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="5.85365853658537E-02"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_ammo_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_ammo_02" ID="{6C472B02-DE3F-4ACF-B569-2009BD3726FE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="HB_SFX_ammo_03" ID="{7B0B2FEB-4621-46E2-A94F-527EFFC0904A}" ShortID="733943950">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_ammo_03" ID="{62A2B4A1-A257-4587-9F1C-0FBB641D6CFD}" ShortID="271601829">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.168292682926829"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_ammo_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_ammo_03" ID="{62A2B4A1-A257-4587-9F1C-0FBB641D6CFD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RND_Ammo_Rare" ID="{0EF6BB82-6F81-4DE7-9592-ACC054058C2B}" ShortID="763028211">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="HB_SFX_ammo_RARE" ID="{45F3093F-3C6D-4686-84EB-00D31EB2A962}" ShortID="932779350">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_ammo_RARE" ID="{E82E5C7C-C22F-49CA-8885-02360205E38C}" ShortID="555529559">
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_ammo_RARE.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_ammo_RARE" ID="{E82E5C7C-C22F-49CA-8885-02360205E38C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RND_Ammo_Epic" ID="{9B8981D5-0E61-42D6-847A-36604F140283}" ShortID="713260850">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="HB_SFX_ammo_EPIC" ID="{4A320334-3377-4C12-8B44-7E1434A1F315}" ShortID="498493519">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_ammo_EPIC" ID="{86EDF3EF-7B90-4E9A-968A-58D1916C14C6}" ShortID="143384558">
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_ammo_EPIC.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_ammo_EPIC" ID="{86EDF3EF-7B90-4E9A-968A-58D1916C14C6}" Platform="Linked"/>
+												<ActiveSource Name="HB_SFX_UiWep_Equip5" ID="{D5A8C95D-003D-4FCD-A7C9-4DB33F4FF761}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="RND_Ammo_Rare" ID="{0EF6BB82-6F81-4DE7-9592-ACC054058C2B}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="RND_Ammo_Epic" ID="{9B8981D5-0E61-42D6-847A-36604F140283}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="RND_Ammo_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Standar" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}"/>
-										<ItemList>
-											<ItemRef Name="RND_Ammo_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
-										<ItemList>
-											<ItemRef Name="RND_Ammo_Epic" ID="{9B8981D5-0E61-42D6-847A-36604F140283}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Rare" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
-										<ItemList>
-											<ItemRef Name="RND_Ammo_Rare" ID="{0EF6BB82-6F81-4DE7-9592-ACC054058C2B}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
-						<SwitchContainer Name="PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" ShortID="892574741">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="PickUP_type" ID="{DEBCC2DF-83A9-4206-B1CB-4C169460F450}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}" ShortID="982866528">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="HB_SFX_Pickup_EPIC" ID="{6EC410FB-854F-4FEB-97B9-A7D29CBD9F33}" ShortID="609408930">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Pickup_EPIC" ID="{9E58D600-ED94-489C-B4CA-974F14409E29}" ShortID="238885831">
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Pickup_EPIC.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Pickup_EPIC" ID="{9E58D600-ED94-489C-B4CA-974F14409E29}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}" ShortID="670246627">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="HB_SFX_Pickup_RARE" ID="{56070811-CE1C-427A-B6AB-AB2CC10BC967}" ShortID="406339830">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Pickup_RARE" ID="{5533E71A-CCBA-4108-8955-46FA92531846}" ShortID="489126667">
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Pickup_RARE.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Pickup_RARE" ID="{5533E71A-CCBA-4108-8955-46FA92531846}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}" ShortID="986440601">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="HB_Pickup_01" ID="{4725384B-203F-4A8C-AB53-1286ACF141E5}" ShortID="74567877">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Uiwep_Pickup1" ID="{FC8A87EB-AE69-4C52-9556-C64234ACAFE7}" ShortID="313989002">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.242068193130911"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Uiwep_Pickup1.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="481689103"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Uiwep_Pickup1" ID="{FC8A87EB-AE69-4C52-9556-C64234ACAFE7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="HB_Pickup_02" ID="{4608614A-2AC0-4E50-A85C-2FD28651A143}" ShortID="925448018">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Uiwep_Pickup2" ID="{0375C1E4-E69B-431B-9CDD-2BC6192908FF}" ShortID="232088301">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.195447652231624"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.195447652231624"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Uiwep_Pickup2.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="740162737"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Uiwep_Pickup2" ID="{0375C1E4-E69B-431B-9CDD-2BC6192908FF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="HB_Pickup_03" ID="{CC56A522-C43B-4E0C-B7C3-0513ED954304}" ShortID="386437933">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Uiwep_Pickup3" ID="{C72658B0-3265-4C7B-BAE9-989A34126124}" ShortID="385884009">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.200826945412311"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Uiwep_Pickup3.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="476709970"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Uiwep_Pickup3" ID="{C72658B0-3265-4C7B-BAE9-989A34126124}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="RARE" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
-										<ItemList>
-											<ItemRef Name="PICKUP_RARE" ID="{5EEF3E9D-FFFB-4226-BAFA-19DB3DEBDF24}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
-										<ItemList>
-											<ItemRef Name="PICKUP_EPIC" ID="{49F7C00C-9099-418D-8F66-A702FF4EB58C}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
-										<ItemList>
-											<ItemRef Name="RND_Pickup_item" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
+						</ActorMixer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -4,12 +4,28 @@
 		<WorkUnit Name="Ben" ID="{8A35AA74-FF80-4EDA-A5D5-97293E81E195}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="MiniGun" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" ShortID="607574626">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+							<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Exterior_Delay_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="Ruines_Reverb_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+						</Reference>
+						<Reference Name="UserAuxSend2">
+							<ObjectRef Name="Boss_Arena_Reverb_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -366,6 +382,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<SwitchContainer Name="Shells" ID="{AFA343D5-B7C4-462C-9BFD-77B1C5846FF1}" ShortID="1032676627">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1177,6 +1200,13 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<Sound Name="Sizzel" ID="{055E0944-9FEE-4EBA-A5C5-9D6DC226F41B}" ShortID="565292550">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1187,6 +1217,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="CECK FIRE Burst Sizzle Small_01" ID="{1C807D79-4613-4B89-A447-5A6636A5284A}" ShortID="659057326">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.43282254682695"/>
+										<Property Name="FadeOutShape" Type="int16" Value="4"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.23432481440065"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>CECK FIRE Burst Sizzle Small_01.wav</AudioFile>
 								</AudioFileSource>
