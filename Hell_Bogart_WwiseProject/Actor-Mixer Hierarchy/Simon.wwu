@@ -2134,6 +2134,30 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+												<CustomState Name="" ID="{7EE59CD5-894F-4FAC-8987-380C37C5C44F}" ShortID="569796237"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+												<CustomState Name="" ID="{1B7DD874-47F8-4CCE-B593-C737771B5966}" ShortID="872028081">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-3"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
@@ -2619,7 +2643,7 @@
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>2</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -2877,11 +2901,6 @@
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>3</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
@@ -3635,6 +3654,32 @@
 											</Playlist>
 										</RandomSequenceContainer>
 									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="EnableAttenuation"/>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+												<CustomState Name="" ID="{B557915C-F7E8-4326-99F8-D57681750B9A}" ShortID="867669233"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+												<CustomState Name="" ID="{B172E6FC-38DB-406F-AD50-676C8D97E768}" ShortID="573580414">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Volume" Type="Real64" Value="-12"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</ActorMixer>
 								<ActorMixer Name="Death" ID="{00A0CA7D-AA98-41BB-B5E1-F9618223A506}" ShortID="505062733">
 									<PropertyList>
@@ -3863,7 +3908,6 @@
 								<ActorMixer Name="Hit" ID="{63BA99EC-800A-40A7-B899-B3EDE07DF734}" ShortID="31952351">
 									<PropertyList>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>3</Value>
@@ -4540,7 +4584,6 @@
 								</ActorMixer>
 								<ActorMixer Name="Get Hit" ID="{5BB4CFB6-2DF1-4001-BB23-37E42A7E576C}" ShortID="84794890">
 									<PropertyList>
-										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
@@ -5271,39 +5314,24 @@
 							<StateInfo>
 								<StatePropertyList>
 									<Property Name="EnableAttenuation"/>
-									<Property Name="Highpass"/>
-									<Property Name="Lowpass"/>
-									<Property Name="MakeUpGain"/>
-									<Property Name="Pitch"/>
 									<Property Name="Volume"/>
 								</StatePropertyList>
 								<StateGroupList>
 									<StateGroupInfo>
-										<StateGroupRef Name="Jungle_Music_STATE" ID="{F6D3DE5E-D808-437D-B8B8-024D13D3C80C}"/>
+										<StateGroupRef Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}"/>
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="End_Music" ID="{F98C25B7-C5CA-4858-B4D9-4136E6494696}"/>
-										<CustomState Name="" ID="{C60D6C23-1A3A-4414-84DC-6F78C5883691}" ShortID="368649605">
-											<PropertyList>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-											</PropertyList>
-										</CustomState>
+										<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+										<CustomState Name="" ID="{B20292DE-FA9D-4B97-A7A2-D2A26321726E}" ShortID="559629018"/>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}"/>
-										<CustomState Name="" ID="{D55ABC42-A395-4420-8B21-E3287A02CC49}" ShortID="636459105">
+										<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+										<CustomState Name="" ID="{D724E22F-AFDA-4BF2-953F-07C3FAB2639E}" ShortID="636145736">
 											<PropertyList>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
-										<CustomState Name="" ID="{0DA93B62-F235-4337-ABB4-B7225A456631}" ShortID="219287767">
-											<PropertyList>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64" Value="-9"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>

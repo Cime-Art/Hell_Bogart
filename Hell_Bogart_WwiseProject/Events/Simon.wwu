@@ -821,6 +821,34 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_Disable_Attenuation" ID="{3B8003DC-3CF3-4CAD-8C66-67B212FB57F5}">
+									<ChildrenList>
+										<Action Name="" ID="{A7F1AB51-52D7-4649-BEC5-70B7A860F0AB}" ShortID="475117305">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Enable_Attenuation" ID="{A154F87E-5C6E-4751-A501-5E9FE4461565}">
+									<ChildrenList>
+										<Action Name="" ID="{D34CADFD-FBB8-431A-9D8E-1967B57BDFAA}" ShortID="10604587">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

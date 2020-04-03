@@ -731,6 +731,8 @@
 				<Event Id="1482865096" Name="E_Coffre_Pierre" ObjectPath="\Events\Brian\Coffre\E_Coffre_Pierre"/>
 				<Event Id="1674672365" Name="E_Death" ObjectPath="\Events\Brian\Gardian\E_Death"/>
 				<Event Id="1693088249" Name="E_Destroy_Object" ObjectPath="\Events\Simon\Destructibles\E_Destroy_Object"/>
+				<Event Id="2375570282" Name="E_Disable_Attenuation" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Disable_Attenuation"/>
+				<Event Id="301183665" Name="E_Enable_Attenuation" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Enable_Attenuation"/>
 				<Event Id="1082760276" Name="E_EndCharge" ObjectPath="\Events\Brian\Gardian\E_EndCharge"/>
 				<Event Id="2224696771" Name="E_Footstep" ObjectPath="\Events\Brian\Gardian\E_Footstep"/>
 				<Event Id="3189034779" Name="E_FTP_surface_type_switch" ObjectPath="\Events\Alex\E_FTP_surface_type_switch"/>
@@ -768,12 +770,12 @@
 				<Event Id="762198780" Name="E_UI_Play" ObjectPath="\Events\Brian\UI\E_UI_Play"/>
 				<Event Id="1971253356" Name="E_UI_Return" ObjectPath="\Events\Brian\UI\E_UI_Return"/>
 				<Event Id="1254674964" Name="E_UI_Valid" ObjectPath="\Events\Brian\UI\E_UI_Valid"/>
-				<Event Id="2759949120" Name="HB_Healthkit" ObjectPath="\Events\Chris\HB_Healthkit"/>
-				<Event Id="3564297591" Name="HB_Heartbeat_EVENT" ObjectPath="\Events\Chris\HB_Heartbeat_EVENT"/>
-				<Event Id="3887785823" Name="HB_PickUp_EVENT" ObjectPath="\Events\Chris\HB_PickUp_EVENT"/>
-				<Event Id="3546449532" Name="HB_PickUpHealthkit" ObjectPath="\Events\Chris\HB_PickUpHealthkit"/>
-				<Event Id="2857119571" Name="HB_UiAmmo_EVENT" ObjectPath="\Events\Chris\HB_UiAmmo_EVENT"/>
-				<Event Id="3689389172" Name="HB_UiWep_Equip_EVENT" ObjectPath="\Events\Chris\HB_UiWep_Equip_EVENT"/>
+				<Event Id="2759949120" Name="HB_Healthkit" ObjectPath="\Events\Chris\HB_Ui_Character\HB_Healthkit"/>
+				<Event Id="3564297591" Name="HB_Heartbeat_EVENT" ObjectPath="\Events\Chris\HB_Ui_Character\HB_Heartbeat_EVENT"/>
+				<Event Id="3887785823" Name="HB_PickUp_EVENT" ObjectPath="\Events\Chris\HB_Ui_Character\HB_PickUp_EVENT"/>
+				<Event Id="3546449532" Name="HB_PickUpHealthkit" ObjectPath="\Events\Chris\HB_Ui_Character\HB_PickUpHealthkit"/>
+				<Event Id="2857119571" Name="HB_UiAmmo_EVENT" ObjectPath="\Events\Chris\HB_Ui_Character\HB_UiAmmo_EVENT"/>
+				<Event Id="3689389172" Name="HB_UiWep_Equip_EVENT" ObjectPath="\Events\Chris\HB_Ui_Character\HB_UiWep_Equip_EVENT"/>
 				<Event Id="3859520409" Name="Initialize_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Initialize_Shotgun_EVENT"/>
 				<Event Id="3284918817" Name="Play_Shotgun_EVENT" ObjectPath="\Events\Simon\Weapons\Play_Shotgun_EVENT"/>
 			</IncludedEvents>
