@@ -584,6 +584,16 @@
 								</Event>
 								<Event Name="E_Mus_Jungle_Main_Play" ID="{1BB4E9C1-06DA-4333-935C-F4418EBAFDE0}">
 									<ChildrenList>
+										<Action Name="" ID="{9FA96010-BC3C-4790-A3CE-F22C2188FC95}" ShortID="290290998">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{FD4BB6FE-CFCD-4AF8-A618-F2312E4EE030}" ShortID="923685599">
 											<ReferenceList>
 												<Reference Name="Target">
