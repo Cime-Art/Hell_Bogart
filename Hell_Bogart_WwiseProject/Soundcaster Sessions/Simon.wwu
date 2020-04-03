@@ -38,6 +38,14 @@
 							<Position X="0" Y="7"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Traps_SpikeTrap" ID="{AEDF05AF-CCF6-44D5-BFD9-BE593DE36942}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Ruin_Main_Play" ID="{5C2483EA-55EB-4719-8F4C-669398336ECE}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Shotgun_EVENT" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -58,7 +66,7 @@
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Traps_SpikeTrap" ID="{AEDF05AF-CCF6-44D5-BFD9-BE593DE36942}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<ObjectRef Name="E_Mus_Ruin_Fight" ID="{8A0C29B6-59E4-4F08-8889-8A4A4A1A84EE}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
 							<Position X="2" Y="6"/>
 						</Module>
 						<Module>
@@ -78,12 +86,20 @@
 							<Position X="3" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Mus_Ruin_Explo" ID="{22387EE2-54A7-4AE8-B56E-324C42EC398B}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="3" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Mus_SetFightState" ID="{15D8128B-0DA6-4B1E-9D80-FBF6213F36B8}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_SetAcoustic_BossArena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="4" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Ruin_End" ID="{220C3A19-F845-4D4E-889E-AB7A99E406FB}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="4" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_BigStoneDoor_Opening" ID="{7E4511E8-B55D-48C3-AF33-F81DD6DD4E50}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -172,7 +188,7 @@
 						<CurrentStateRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
-						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
+						<CurrentStateRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
 						<CurrentStateRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
 						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
