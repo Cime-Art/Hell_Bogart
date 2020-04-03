@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	355937833	E_Traps_SpikeTrap			\Simon\Traps\E_Traps_SpikeTrap	
 	453363137	E_Coffre_Metal_Neuf			\Brian\Coffre\E_Coffre_Metal_Neuf	
 	539842108	E_Hit			\Brian\Gardian\E_Hit	
+	574868710	E_Global_SetOutPauseMenu			\Simon\Global\GlobalEffects\E_Global_SetOutPauseMenu	
 	694853374	E_Mob_JungleCharlie_Attack			\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack	
 	717878901	E_StoneDoorRiddle_Stop			\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop	
 	762198780	E_UI_Play			\Brian\UI\E_UI_Play	
@@ -18,6 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1319469614	E_Mob_JungleCharlie_Iddle			\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle	
 	1418412915	E_SetAcoustic_Ruines			\Simon\Global\Acoustics\E_SetAcoustic_Ruines	
 	1482865096	E_Coffre_Pierre			\Brian\Coffre\E_Coffre_Pierre	
+	1494526797	E_HPChange			\Simon\Character\E_HPChange	
 	1614602739	E_StoneDoorRiddle_Openning			\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning	
 	1638544743	E_Mob_JungleCharlie_Exploded			\Simon\Enemies\MobJungleCharlie\Exploded\E_Mob_JungleCharlie_Exploded	
 	1674672365	E_Death			\Brian\Gardian\E_Death	
@@ -51,6 +53,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3786112473	E_Mob_JungleCharlie_Scream			\Simon\Enemies\MobJungleCharlie\Charge\E_Mob_JungleCharlie_Scream	
 	3859520409	Initialize_Shotgun_EVENT			\Simon\Weapons\Initialize_Shotgun_EVENT	
 	3887785823	HB_PickUp_EVENT			\Chris\HB_PickUp_EVENT	
+	3910514663	E_Global_SetInPauseMenu			\Simon\Global\GlobalEffects\E_Global_SetInPauseMenu	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	754284858	AMMO_type			\Chris\AMMO_type	
@@ -139,6 +142,7 @@ State	ID	Name	State Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_Health			\Chris\Player_Health	
+	1262098586	Volume_Heartbeat			\Simon\Character\Health\Volume_Heartbeat	
 	2379719543	Total_Power_GP			\Simon\Character\Shotgun\Total_Power_GP	
 	4095840129	Firing_Rate_GP			\Simon\Character\Shotgun\Firing_Rate_GP	
 
