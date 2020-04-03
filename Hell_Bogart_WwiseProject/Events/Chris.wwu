@@ -7,7 +7,7 @@
 					<ChildrenList>
 						<Folder Name="JUMP IMPACT" ID="{198B1FF5-1A6E-472A-B46D-0278AA527908}" ShortID="903520121">
 							<ChildrenList>
-								<Event Name="E_Jump" ID="{7A8CC6AE-6E9A-4D97-AB22-D45CF58F7417}">
+								<Event Name="E_KaliBoss_Jump" ID="{7A8CC6AE-6E9A-4D97-AB22-D45CF58F7417}">
 									<ChildrenList>
 										<Action Name="" ID="{E6685FF6-F567-4B67-88B7-FDA03911B816}" ShortID="276823467">
 											<ReferenceList>
@@ -25,8 +25,18 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Impact" ID="{D6C314B3-C9DB-49F7-B7D8-13DB53F2167E}">
+								<Event Name="E_KaliBoss_Impact" ID="{D6C314B3-C9DB-49F7-B7D8-13DB53F2167E}">
 									<ChildrenList>
+										<Action Name="" ID="{53ACBE4C-808B-4ECE-92D8-DD3AFB901612}" ShortID="1025155900">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB_SFX_KALI_Jump_Loop" ID="{B25DAD9F-8946-40E6-AC4E-71C58C6AC7E9}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{F0019704-B057-49E0-94C0-EC0577BCA13C}" ShortID="246679090">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -40,7 +50,7 @@
 						</Folder>
 						<Folder Name="Grab" ID="{6BF9F0EC-ED2C-49D7-A0B0-7BDCB43D66FE}" ShortID="643994177">
 							<ChildrenList>
-								<Event Name="E_Grab" ID="{978E3028-B223-48EC-8E63-1717348C77A2}">
+								<Event Name="E_KaliBoss_Grab" ID="{978E3028-B223-48EC-8E63-1717348C77A2}">
 									<ChildrenList>
 										<Action Name="" ID="{2ECED3D2-DC4D-47BC-A63C-DEF4F89AD4F3}" ShortID="920908646">
 											<ReferenceList>
@@ -51,7 +61,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_GranEND" ID="{54295308-C493-438F-B3D0-801F61477249}">
+								<Event Name="E_KaliBoss_GrandEND" ID="{54295308-C493-438F-B3D0-801F61477249}">
 									<ChildrenList>
 										<Action Name="" ID="{DBF657A6-C806-4F52-A6A0-3B3BC3442348}" ShortID="248815211">
 											<ReferenceList>
@@ -66,7 +76,7 @@
 						</Folder>
 						<Folder Name="SLASHS" ID="{6C802197-2DD5-4E12-9C72-F0542DF11975}" ShortID="351364000">
 							<ChildrenList>
-								<Event Name="E_Slash" ID="{1A934DF9-900B-43EF-9E34-2FB56B53CB62}">
+								<Event Name="E_KaliBoss_Slash" ID="{1A934DF9-900B-43EF-9E34-2FB56B53CB62}">
 									<ChildrenList>
 										<Action Name="" ID="{8386BBA4-143B-46C0-8DC1-91B27DFF216E}" ShortID="583745131">
 											<ReferenceList>
@@ -81,7 +91,7 @@
 						</Folder>
 						<Folder Name="HIT" ID="{D315A34E-EB9C-4649-B843-2AF50BA93FF9}" ShortID="832227846">
 							<ChildrenList>
-								<Event Name="E_HITS" ID="{88969CA4-14DD-4841-985D-F8B504417AA9}">
+								<Event Name="E_KaliBoss_Hit" ID="{88969CA4-14DD-4841-985D-F8B504417AA9}">
 									<ChildrenList>
 										<Action Name="" ID="{BA8581C7-DDF6-4D05-A597-6247CF8BE2A6}" ShortID="250640048">
 											<ReferenceList>
@@ -96,7 +106,7 @@
 						</Folder>
 						<Folder Name="Whirlwind" ID="{D78D618B-8A61-42E9-997B-9BBCD6949ED7}" ShortID="773926583">
 							<ChildrenList>
-								<Event Name="E_Whirlwind" ID="{E78BF0CF-91F1-4853-963A-272A481451CC}">
+								<Event Name="E_KaliBoss_Whirlwind" ID="{E78BF0CF-91F1-4853-963A-272A481451CC}">
 									<ChildrenList>
 										<Action Name="" ID="{E2E8846E-B94B-4D01-8A57-F84A9E51D00F}" ShortID="339994964">
 											<ReferenceList>
