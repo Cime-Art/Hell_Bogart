@@ -15,6 +15,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
 	2069469294	Acoustic_STATE			\Simon\Global\Acoustic_STATE	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
+	2955909185	IsInPauseMenu_STATE			\Simon\Global\IsInPauseMenu_STATE	
 	3469316424	Jungle_Music_STATE			\Simon\Music\Jungle_Music_STATE	
 	4121978141	Shotgun_Equiped_STATE			\Simon\Items\Shotgun_Equiped_STATE	
 	4135068155	Element			\Brian\Grenade\Element	
@@ -49,6 +50,9 @@ State	ID	Name	State Group			Notes
 	252199009	Spread_60	Chamber_Type_STATE			
 	419409252	Spread_180	Chamber_Type_STATE			
 	2572109827	Regular_Spread	Chamber_Type_STATE			
+	0	None	IsInPauseMenu_STATE			
+	1462275554	In_PauseMenu	IsInPauseMenu_STATE			
+	3090617217	Out_PauseMenu	IsInPauseMenu_STATE			
 	0	None	Jungle_Music_STATE			
 	514064485	Fight	Jungle_Music_STATE			
 	1428057472	End_Music	Jungle_Music_STATE			
@@ -70,8 +74,13 @@ Custom State	ID	Name	State Group	Owner		Notes
 	382833313	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Exterior_Delay_AUX		
 	490763632	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Exterior_Delay_AUX		
 	593548003	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Ruines_Reverb_AUX		
+	879075251	In_PauseMenu	IsInPauseMenu_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MUS_BUS		
 	898817968	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Boss_Arena_Reverb_AUX		
 	929591680	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Ruines_Reverb_AUX		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	613965330	LowPassGlobalSFX_GP			\Simon\Global\LowPassGlobalSFX_GP	
+	3039232389	PitchGlobalSFX_GP			\Simon\Global\PitchGlobalSFX_GP	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	213475909	SFX_BUS			\Default Work Unit\Master Audio Bus\SFX_BUS	
@@ -81,6 +90,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2138725528	Acoustics_BUS			\Default Work Unit\Master Audio Bus\Acoustics_BUS	
 	2329759771	Mobs_Bridge_SUBBUS			\Default Work Unit\Master Audio Bus\SFX_BUS\Mobs_Bridge_SUBBUS	
 	3119335404	Jungle_Event_Enigme_Chest_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS\Jungle_Event_Enigme_Chest_BUS	
+	3247222208	UI_BUS			\Default Work Unit\Master Audio Bus\UI_BUS	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes

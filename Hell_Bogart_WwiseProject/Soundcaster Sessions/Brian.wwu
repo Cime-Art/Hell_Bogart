@@ -76,27 +76,37 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
-							<Value>50</Value>
+							<Value>45.7311534968211</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
 							<Value>12</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}"/>
+							<Value>0</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
 						<CurrentStateRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
 						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
-						<CurrentStateRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
+						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
 						<CurrentStateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Caiss" ID="{53291F45-44D8-4058-95A8-28E8E7717593}"/>
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
 						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
