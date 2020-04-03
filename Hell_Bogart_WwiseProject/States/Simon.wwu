@@ -68,6 +68,36 @@
 								</Transition>
 							</TransitionList>
 						</StateGroup>
+						<StateGroup Name="IsInPauseMenu_STATE" ID="{55E0B01A-C453-41AF-B874-EAB6C752182A}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{01EE7C62-5AF8-43A5-857B-EC55BB689B66}"/>
+								<State Name="In_PauseMenu" ID="{B4EFAD2A-5FF1-402E-9474-C250EC641DBF}"/>
+								<State Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
+							</ChildrenList>
+							<TransitionList>
+								<Transition>
+									<StartState Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
+									<EndState Name="In_PauseMenu" ID="{B4EFAD2A-5FF1-402E-9474-C250EC641DBF}"/>
+									<Time>1</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="In_PauseMenu" ID="{B4EFAD2A-5FF1-402E-9474-C250EC641DBF}"/>
+									<EndState Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
+									<Time>0.5</Time>
+									<IsShared>false</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="None" ID="{01EE7C62-5AF8-43A5-857B-EC55BB689B66}"/>
+									<EndState Name="In_PauseMenu" ID="{B4EFAD2A-5FF1-402E-9474-C250EC641DBF}"/>
+									<Time>0.5</Time>
+									<IsShared>true</IsShared>
+								</Transition>
+							</TransitionList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{51166EAA-8443-4D9A-B41B-88EC1592B235}" ShortID="559904340">

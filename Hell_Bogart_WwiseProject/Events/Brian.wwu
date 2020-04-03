@@ -439,6 +439,16 @@
 						</Event>
 						<Event Name="E_Mus_Ruin_Main_Play" ID="{5C2483EA-55EB-4719-8F4C-669398336ECE}">
 							<ChildrenList>
+								<Action Name="" ID="{4A7CC46C-C17F-4713-976F-8DB56A6A58BB}" ShortID="565851185">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{3E2A02F6-A77A-483F-B356-1F11CD6F7A0F}" ShortID="414190933">
 									<ReferenceList>
 										<Reference Name="Target">

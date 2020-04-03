@@ -584,6 +584,16 @@
 								</Event>
 								<Event Name="E_Mus_Jungle_Main_Play" ID="{1BB4E9C1-06DA-4333-935C-F4418EBAFDE0}">
 									<ChildrenList>
+										<Action Name="" ID="{9FA96010-BC3C-4790-A3CE-F22C2188FC95}" ShortID="290290998">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{FD4BB6FE-CFCD-4AF8-A618-F2312E4EE030}" ShortID="923685599">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -754,6 +764,65 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="GlobalEffects" ID="{117FEB34-AB85-4530-9061-DE09F548E22F}" ShortID="300334270">
+							<ChildrenList>
+								<Event Name="E_Global_SetInPauseMenu" ID="{85FBA638-4F4B-43D8-9A14-5F36F100CC3E}">
+									<ChildrenList>
+										<Action Name="" ID="{9DA2FADD-3135-4105-85F8-8DC5B63C2B8F}" ShortID="469254412">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="80"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{5B5988F4-F4F0-43A5-A114-CE002CF7AED3}" ShortID="488796526">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="Delay" Type="Real64" Value="0.3"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="-3000"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Global_SetOutPauseMenu" ID="{82C7AD9A-A115-4C13-AF34-10F51C0D829F}">
+									<ChildrenList>
+										<Action Name="" ID="{2334CC6B-47DF-4892-B378-BFFFD2788D6E}" ShortID="560335640">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{71A4E0F7-B818-4C1D-A318-2A1788FC3850}" ShortID="262703622">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Traps" ID="{23C7724F-3F1E-4ED6-817D-50474523B8E9}" ShortID="345295909">
@@ -779,6 +848,38 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Destroy_Object_SWITCH" ID="{00421940-28A7-45E0-81D5-13A5513592F2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Character" ID="{37B4B94B-9131-4558-B804-1663F42C362A}" ShortID="796136799">
+					<ChildrenList>
+						<Event Name="E_HPChange" ID="{60B9462E-BFD8-4CA3-8832-15F06C4AE3DD}">
+							<ChildrenList>
+								<Action Name="" ID="{9806DF46-BA6B-4B11-AFB0-7805912CAA11}" ShortID="559724552">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{85123B6C-8ED1-485C-B07B-3263CD072CD1}" ShortID="284971301">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="Delay" Type="Real64" Value="4"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

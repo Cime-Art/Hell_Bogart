@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Hell_Bogart\Hell_Bogart_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Hell_Bogart\Hell_Bogart_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Hell_Bogart\Hell_Bogart_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -734,9 +734,12 @@
 				<Event Id="1082760276" Name="E_EndCharge" ObjectPath="\Events\Brian\Gardian\E_EndCharge"/>
 				<Event Id="2224696771" Name="E_Footstep" ObjectPath="\Events\Brian\Gardian\E_Footstep"/>
 				<Event Id="3189034779" Name="E_FTP_surface_type_switch" ObjectPath="\Events\Alex\E_FTP_surface_type_switch"/>
+				<Event Id="3910514663" Name="E_Global_SetInPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetInPauseMenu"/>
+				<Event Id="574868710" Name="E_Global_SetOutPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetOutPauseMenu"/>
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="539842108" Name="E_Hit" ObjectPath="\Events\Brian\Gardian\E_Hit"/>
+				<Event Id="1494526797" Name="E_HPChange" ObjectPath="\Events\Simon\Character\E_HPChange"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
 				<Event Id="694853374" Name="E_Mob_JungleCharlie_Attack" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack"/>
 				<Event Id="2112280100" Name="E_Mob_JungleCharlie_Death" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death"/>
