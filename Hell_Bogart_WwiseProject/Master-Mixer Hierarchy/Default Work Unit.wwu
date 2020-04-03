@@ -123,6 +123,64 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{9766EEA9-308E-40E7-99EA-6596B7D0F4E5}" ShortID="94013435">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{A06ADE73-8C97-4150-B534-FAE6F429051D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{611018F1-A4EF-4270-A6F5-4061FBEEFEC3}" ShortID="668974941">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{838B9381-0EF1-427B-ADDF-44E9C6FCDDC4}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-4800</XPos>
+														<YPos>-4800</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>4800</XPos>
+														<YPos>4800</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Mobs_Bridge_SUBBUS" ID="{E1F7FB72-56E8-4F86-8044-4A31A81E55EA}">
 									<PropertyList>
@@ -133,6 +191,37 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{DAE1F710-6A91-443C-9F27-61D79B74985E}" ShortID="712695300">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{40E00B61-8521-4B00-94E1-06176520C004}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}"/>
 								<Bus Name="Jungle_Event_Enigme_Chest_BUS" ID="{42F00B64-1D6F-4A91-8B81-DBA2EB4BB424}">
@@ -149,8 +238,30 @@
 									</DuckingList>
 								</Bus>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="IsInPauseMenu_STATE" ID="{55E0B01A-C453-41AF-B874-EAB6C752182A}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="In_PauseMenu" ID="{B4EFAD2A-5FF1-402E-9474-C250EC641DBF}"/>
+										<CustomState Name="" ID="{2C02DAA1-22C4-477F-B5EB-A0243A898FB0}" ShortID="879075251">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="70"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
+										<CustomState Name="" ID="{D8298D71-6F36-44BF-AA07-F09E6C9A52FC}" ShortID="356874205"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}"/>
+						<Bus Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

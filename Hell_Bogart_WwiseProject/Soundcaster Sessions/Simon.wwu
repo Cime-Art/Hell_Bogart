@@ -98,6 +98,10 @@
 							<Position X="5" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Global_SetInPauseMenu" ID="{85FBA638-4F4B-43D8-9A14-5F36F100CC3E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="5" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Mus_Bridge_Begin" ID="{0EBFBCBD-E095-4142-AC92-B52939AADE0A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="5" Y="5"/>
 						</Module>
@@ -114,6 +118,10 @@
 							<Position X="6" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Global_SetOutPauseMenu" ID="{82C7AD9A-A115-4C13-AF34-10F51C0D829F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="6" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Mus_Bridge_GoToPhase1" ID="{E23198FE-C61C-465D-94F4-72A13BDEE57C}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="6" Y="5"/>
 						</Module>
@@ -124,7 +132,19 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
+							<Value>1.56968773917758E-311</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -145,10 +165,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
 						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
-						<CurrentStateRef Name="End_Music" ID="{3A466E4D-077D-4216-B554-EE3DCDF3C5FF}"/>
+						<CurrentStateRef Name="Phase_1" ID="{ABAAF5E5-2CDD-4FE2-9428-D76699596B9D}"/>
 						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
+						<CurrentStateRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
+						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
+						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
 						<CurrentStateRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
 						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
@@ -157,6 +181,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Jarre" ID="{A639CD38-D095-4F32-A71B-370AC5D67590}"/>
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
 						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
