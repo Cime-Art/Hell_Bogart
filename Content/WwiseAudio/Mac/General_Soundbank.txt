@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	251601818	E_Coffre_Metal_Vieux			\Brian\Coffre\E_Coffre_Metal_Vieux	
+	301183665	E_Enable_Attenuation			\Simon\Global\GlobalEffects\E_Enable_Attenuation	
 	355937833	E_Traps_SpikeTrap			\Simon\Traps\E_Traps_SpikeTrap	
 	453363137	E_Coffre_Metal_Neuf			\Brian\Coffre\E_Coffre_Metal_Neuf	
 	539842108	E_Hit			\Brian\Gardian\E_Hit	
@@ -32,11 +33,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	2112280100	E_Mob_JungleCharlie_Death			\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death	
 	2224696771	E_Footstep			\Brian\Gardian\E_Footstep	
 	2368673453	E_BigStoneDoor_Opening			\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Opening	
+	2375570282	E_Disable_Attenuation			\Simon\Global\GlobalEffects\E_Disable_Attenuation	
 	2473679398	E_Mob_JungleCharlie_LaunchSpear			\Simon\Enemies\MobJungleCharlie\LaunchSpear\E_Mob_JungleCharlie_LaunchSpear	
 	2503251047	E_BigStoneDoor_Stop			\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Stop	
-	2759949120	HB_Healthkit			\Chris\HB_Healthkit	
+	2759949120	HB_Healthkit			\Chris\HB_Ui_Character\HB_Healthkit	
 	2798184598	E_UI_Exit			\Brian\UI\E_UI_Exit	
-	2857119571	HB_UiAmmo_EVENT			\Chris\HB_UiAmmo_EVENT	
+	2857119571	HB_UiAmmo_EVENT			\Chris\HB_Ui_Character\HB_UiAmmo_EVENT	
 	2920923470	E_UI_Overlay			\Brian\UI\E_UI_Overlay	
 	3105411141	E_Coffre_Loquet			\Brian\Coffre\E_Coffre_Loquet	
 	3156110896	E_MobJungleCharlie_GetHit			\Simon\Enemies\MobJungleCharlie\GetHit\E_MobJungleCharlie_GetHit	
@@ -46,13 +48,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	3371588653	E_Mob_JungleCharlie_Iddle_STOP			\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle_STOP	
 	3376467880	E_Play_Grenade			\Brian\Grenade\E_Play_Grenade	
 	3471430412	E_Stomp			\Brian\Gardian\E_Stomp	
-	3546449532	HB_PickUpHealthkit			\Chris\HB_PickUpHealthkit	
-	3564297591	HB_Heartbeat_EVENT			\Chris\HB_Heartbeat_EVENT	
-	3689389172	HB_UiWep_Equip_EVENT			\Chris\HB_UiWep_Equip_EVENT	
+	3546449532	HB_PickUpHealthkit			\Chris\HB_Ui_Character\HB_PickUpHealthkit	
+	3564297591	HB_Heartbeat_EVENT			\Chris\HB_Ui_Character\HB_Heartbeat_EVENT	
+	3689389172	HB_UiWep_Equip_EVENT			\Chris\HB_Ui_Character\HB_UiWep_Equip_EVENT	
 	3774871727	E_StartCharge			\Brian\Gardian\E_StartCharge	
 	3786112473	E_Mob_JungleCharlie_Scream			\Simon\Enemies\MobJungleCharlie\Charge\E_Mob_JungleCharlie_Scream	
 	3859520409	Initialize_Shotgun_EVENT			\Simon\Weapons\Initialize_Shotgun_EVENT	
-	3887785823	HB_PickUp_EVENT			\Chris\HB_PickUp_EVENT	
+	3887785823	HB_PickUp_EVENT			\Chris\HB_Ui_Character\HB_PickUp_EVENT	
 	3910514663	E_Global_SetInPauseMenu			\Simon\Global\GlobalEffects\E_Global_SetInPauseMenu	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -99,16 +101,19 @@ Switch	ID	Name	Switch Group			Notes
 	3594596058	FTP_Bois_sec_switch	Surface_type_FTP_switch			
 
 State Group	ID	Name			Wwise Object Path	Notes
+	283398981	Attenuation_STATE			\Simon\Global\Attenuation_STATE	
 	393509290	Footstep_Charge			\Brian\Guardian\Footstep_Charge	
 	916310236	Ammo_Type_STATE			\Simon\Items\Ammo_Type_STATE	
 	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
-	3469316424	Jungle_Music_STATE			\Simon\Music\Jungle_Music_STATE	
 	4121978141	Shotgun_Equiped_STATE			\Simon\Items\Shotgun_Equiped_STATE	
 	4135068155	Element			\Brian\Grenade\Element	
 	4261493451	Canon_Type_STATE			\Simon\Items\Canon_Type_STATE	
 
 State	ID	Name	State Group			Notes
+	0	None	Attenuation_STATE			
+	388576012	Enable_Att	Attenuation_STATE			
+	1384889739	Disable_Att	Attenuation_STATE			
 	0	None	Footstep_Charge			
 	529726532	End	Footstep_Charge			
 	1281810935	Start	Footstep_Charge			
@@ -124,10 +129,6 @@ State	ID	Name	State Group			Notes
 	252199009	Spread_60	Chamber_Type_STATE			
 	419409252	Spread_180	Chamber_Type_STATE			
 	2572109827	Regular_Spread	Chamber_Type_STATE			
-	0	None	Jungle_Music_STATE			
-	514064485	Fight	Jungle_Music_STATE			
-	1428057472	End_Music	Jungle_Music_STATE			
-	2582085496	Exploration	Jungle_Music_STATE			
 	0	None	Shotgun_Equiped_STATE			
 	979470758	Yes	Shotgun_Equiped_STATE			
 	0	None	Element			
@@ -139,6 +140,16 @@ State	ID	Name	State Group			Notes
 	2815114540	Transpercant	Canon_Type_STATE			
 	3185142962	Portee	Canon_Type_STATE			
 	3626681980	Regular_Chamber	Canon_Type_STATE			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	121088226	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade		
+	216675186	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade		
+	510064631	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Ben\MiniGun		
+	559629018	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie		
+	573580414	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Iddle		
+	636145736	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie		
+	867669233	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\Enemies\Mob Jungle Charlie\Iddle		
+	872028081	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\Character\Weapons\Shotgun		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_Health			\Chris\Player_Health	
