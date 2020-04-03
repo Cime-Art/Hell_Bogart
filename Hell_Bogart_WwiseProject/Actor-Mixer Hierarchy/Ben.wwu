@@ -1232,6 +1232,30 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="Volume"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+								<CustomState Name="" ID="{BFCB8460-32C4-4934-BEF1-070CA2F0B205}" ShortID="800761838"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+								<CustomState Name="" ID="{EDC429A4-F474-4368-94E0-882BDB8B4070}" ShortID="510064631">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-3"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

@@ -121,7 +121,7 @@
 						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
 						<CurrentStateRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
 						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
-						<CurrentStateRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
+						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
 						<CurrentStateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
