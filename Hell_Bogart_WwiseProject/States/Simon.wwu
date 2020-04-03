@@ -98,6 +98,13 @@
 								</Transition>
 							</TransitionList>
 						</StateGroup>
+						<StateGroup Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}">
+							<ChildrenList>
+								<State Name="None" ID="{99508074-D0B5-4286-8BF2-BD358242ADBE}"/>
+								<State Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+								<State Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{51166EAA-8443-4D9A-B41B-88EC1592B235}" ShortID="559904340">
