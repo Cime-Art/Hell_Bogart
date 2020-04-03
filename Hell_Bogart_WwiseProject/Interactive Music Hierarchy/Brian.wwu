@@ -147,7 +147,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MUS_HB_Ruines_BigVoice_00" ID="{929CBEB8-1F06-4F12-898D-1A8529C6D009}" ShortID="340605293">
+										<MusicTrack Name="MUS_HB_Ruines_BigVoice" ID="{929CBEB8-1F06-4F12-898D-1A8529C6D009}" ShortID="340605293">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -202,7 +202,7 @@
 												<MusicTrackSequence Name="" ID="{D718D162-19B5-439D-8EA9-82C42C82B52A}"/>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="MUS_HB_Ruines_Snare_00" ID="{C4D60068-7AAD-4F4D-97B9-EECB05C0B9C7}" ShortID="279946388">
+										<MusicTrack Name="MUS_HB_Ruines_Snare" ID="{C4D60068-7AAD-4F4D-97B9-EECB05C0B9C7}" ShortID="279946388">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -258,7 +258,7 @@
 												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="MUS_HB_Ruines_String_00" ID="{B13D5517-392A-4032-B9B4-2F1004490F87}" ShortID="247369515">
+										<MusicTrack Name="MUS_HB_Ruines_String" ID="{B13D5517-392A-4032-B9B4-2F1004490F87}" ShortID="247369515">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -312,7 +312,7 @@
 												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="MUS_HB_Ruines_Tambour_00" ID="{8E0081E1-9FCC-4673-8C46-84DFB54ECAC8}" ShortID="704598079">
+										<MusicTrack Name="MUS_HB_Ruines_Tambour" ID="{8E0081E1-9FCC-4673-8C46-84DFB54ECAC8}" ShortID="704598079">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="1"/>
 											</PropertyList>
@@ -405,6 +405,534 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" ShortID="359888686">
+							<PropertyList>
+								<Property Name="Tempo" Type="Real64" Value="90"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="MUS_Ruin_GardianFight_SEG" ID="{7C5EEEC0-73E9-462D-95E0-668DF51674B1}" ShortID="659220802">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="34951.3832199546"/>
+										<Property Name="Tempo" Type="Real64" Value="90"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="MUS_HB_Ruines_Choir" ID="{B841E692-73F0-44EB-9715-0CCBB8482D1B}" ShortID="55733315">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Ruines_Choir_00" ID="{11E401D4-A156-4F60-B31E-FD1A379D53A5}" ShortID="506404397">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Ruines_Choir_00.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Ruines_Choir_01" ID="{6991374C-663A-4D6A-821B-2AFBFEDF4C95}" ShortID="516836356">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Ruines_Choir_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{42766F49-EFA3-4BB3-BA66-6DF0E38D3E9D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{71C37E78-11C7-43DC-8DBD-1CA0254921D8}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Ruines_Choir_00" ID="{846053DB-ACE6-456D-A08D-FB15A240928A}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="24145.8276643991"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_Choir_00" ID="{11E401D4-A156-4F60-B31E-FD1A379D53A5}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{8B79DC5E-6FED-4888-8A88-D19EBABC0E39}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Ruines_Choir_01" ID="{C1D3E88B-A13E-4566-B6A0-63BFD97CB191}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="24131.9501133787"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_Choir_01" ID="{6991374C-663A-4D6A-821B-2AFBFEDF4C95}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="MUS_HB_Ruines_TambourAdd" ID="{FF4B3A03-4CF8-40A7-B72B-FE66D0FA0F91}" ShortID="198211196">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Ruines_TambourAdd_00" ID="{AA535843-9DF8-4BEC-9921-4A79279A4A35}" ShortID="222323825">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Ruines_TambourAdd_00.wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Ruines_TambourAdd_01" ID="{9E725D3B-5851-4416-A727-737D1000420D}" ShortID="788627694">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Ruines_TambourAdd_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{9AE1A737-0D44-4DB2-A33A-CF1E749899A6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{4FA5E37E-C234-44C2-AB8E-7E026853FDF6}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Ruines_TambourAdd_00" ID="{76D3C62E-75A1-4788-80E5-3706C8BCDB15}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="11333.3333333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_TambourAdd_00" ID="{AA535843-9DF8-4BEC-9921-4A79279A4A35}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{7CB4F23C-E71D-4929-ADCB-05E842BB776C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>11.33333</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{923375E3-910B-48AD-8825-DA626AD44AE1}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>11.33333</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{CD9374F8-A6CB-45EC-8D50-B41A1DE6F348}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>11.33333</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+														<MusicClip Name="MUS_HB_Ruines_TambourAdd_00" ID="{AAB21020-3BA4-49D4-B138-DABB4453009A}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="12666.6666666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="10666.6666666667"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_TambourAdd_00" ID="{AA535843-9DF8-4BEC-9921-4A79279A4A35}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{DF791D93-002B-43C7-819B-EEA16A9B031D}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>12.66667</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{6B817D81-5E40-4485-A03F-BD2E2EAA33E1}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>12.66667</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{63B188D7-6DE8-4448-83A2-3AF44B7AEDD4}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>12.66667</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{33D77DB7-81C4-4757-AC84-F1861D91D7B9}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Ruines_TambourAdd_01" ID="{D3CF2413-0753-4C24-BB7C-20E9A221E22D}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="11333.3333333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_TambourAdd_01" ID="{9E725D3B-5851-4416-A727-737D1000420D}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{AF6B5975-EE7D-40D5-A9CB-E561D0775199}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>11.33333</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{9A9470E5-D3C0-48A4-A713-997D26128AAE}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>11.33333</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{09A9EA24-C942-4207-8E24-36D99E9973D2}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>11.33333</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+														<MusicClip Name="MUS_HB_Ruines_TambourAdd_01" ID="{B6142364-5626-41B3-9F97-3CFA518B0CE7}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="12666.6666666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="10666.6666666667"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_TambourAdd_01" ID="{9E725D3B-5851-4416-A727-737D1000420D}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{9C2659B7-3834-4161-8CB6-52C42F04D51C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>12.66667</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{C4CDEDBD-F8D7-4F7A-B64E-5D9CD44D55D1}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>12.66667</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{0575E78B-6233-4E4D-AD1D-291D354FD807}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>12.66667</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{0CB0282F-1B42-4636-AF94-458419FF44D9}"/>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="MUS_HB_Ruines_String" ID="{A6D7FFE3-C68B-4BA4-ACC1-2CB0C56161E4}" ShortID="916424451">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Ruines_String_00" ID="{7CFFA8CA-4186-4D02-ADD7-6C391F105680}" ShortID="1069188005">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Ruines_String_00.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="310030802"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="MUS_HB_Ruines_String_01" ID="{5159A270-05A3-47CB-BA9C-E6D0C12EB72C}" ShortID="800798983">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Ruines_String_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="452570176"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{74B7D6C7-E042-4B48-8B71-6FA1C11EAA2D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{3CE91660-2248-4B7F-938B-3DAF17833F85}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Ruines_String_00" ID="{E256C4D0-58A1-4625-B8C9-437FA541694E}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="12659.7278911565"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_String_00" ID="{7CFFA8CA-4186-4D02-ADD7-6C391F105680}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+												<MusicTrackSequence Name="" ID="{B010D515-6C5C-4E45-A6CB-F5630F613F08}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Ruines_String_01" ID="{93D4C372-3D4B-415D-8EB1-88BEA0E608BB}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="12687.5056689342"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_String_01" ID="{5159A270-05A3-47CB-BA9C-E6D0C12EB72C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="MUS_HB_Ruines_Tambour" ID="{870ED202-E530-4776-B5C1-0FAFC9516C8E}" ShortID="1001669153">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Ruines_Tambour_02" ID="{36A25226-9A72-4E59-ACE7-251E24925EE1}" ShortID="763074539">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Ruines_Tambour_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{B3D61AF0-AD24-4306-92C2-4873A7F613C0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList/>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{87808049-B63A-466F-9065-E255D65D0446}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Ruines_Tambour_02" ID="{504EE6EF-FCA8-4449-B5C1-D6BE7E0CCD36}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="28562.4943310658"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_Tambour_02" ID="{36A25226-9A72-4E59-ACE7-251E24925EE1}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{D96AFB4D-34ED-43B9-9FC7-A7E7F3F65E24}"/>
+										<MusicCue Name="Exit Cue" ID="{955397A9-F7AE-4531-B303-47513676CE01}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="21333.3333333333"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{1B6D78A3-0320-4E96-A160-CB88FA7C4DBD}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{90C2EE14-B991-4CBE-AB30-DE485AA054BE}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{B3A97A5E-6E0E-4BFA-B434-F96328A24AB3}" ShortID="295194489">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{2E53A7EB-44B5-4F46-9A70-E21B20712437}" ShortID="357072867">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="MUS_Ruin_GardianFight_SEG" ID="{7C5EEEC0-73E9-462D-95E0-668DF51674B1}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{25BC5F1D-B37E-4F1F-A00C-7E97FE45E7F2}">
@@ -414,6 +942,25 @@
 							<ChildrenList>
 								<MusicTransition Name="Transition" ID="{CD3A954D-4EE6-4511-ACB0-E34E744EB199}">
 									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{F94DFBA5-4A27-4CD1-9AF2-11E4DF17A0B8}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="MUS_Ruin_Explo_LOOP" ID="{197B58DA-CB36-4005-80E9-31E40470A918}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="MUS_HB_Ruines_Start" ID="{EF35F5CE-F2F2-49A3-9279-DBE91CA81C3C}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+									</TransitionInfo>
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{0BA3DD52-3CCF-4A00-8450-2FC03CCDA2AE}">
 									<PropertyList>
@@ -434,6 +981,35 @@
 										<TransitionObjectRef Name="MUS_HB_Ruines_Start" ID="{EF35F5CE-F2F2-49A3-9279-DBE91CA81C3C}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{BEB0FE4F-A0ED-470F-95C8-2F49E8C4BE66}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="MUS_Ruin_Fight_LOOP" ID="{3A2C7952-E01A-4760-A4CB-92F21568D10E}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="MUS_HB_Ruines_Start" ID="{EF35F5CE-F2F2-49A3-9279-DBE91CA81C3C}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{8862D47E-4939-4D2D-BD90-AE1B037EFB31}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="6"/>
+													<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{D0FF014A-2452-428A-AD10-ECF5F03A5EA7}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
@@ -451,6 +1027,54 @@
 									</ReferenceList>
 									<TransitionInfo>
 										<TransitionObjectRef Name="MUS_HB_Ruines_End" ID="{FA1D9585-A587-42FD-9CD2-B6B3D177CB93}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{F616EB31-F9DE-43C9-B253-2251E1DBB693}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="MUS_Ruin_Fight_LOOP" ID="{3A2C7952-E01A-4760-A4CB-92F21568D10E}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="MUS_HB_Ruines_EndGardian" ID="{E3EAA176-3456-43A5-8D3B-FDE43D28D3A8}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{36FC6E6E-B690-4180-9BAE-329FEE16FE58}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="6"/>
+													<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{69DA03EC-CEAB-49A2-9603-CC172F487AE3}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="MUS_Ruin_Explo_LOOP" ID="{197B58DA-CB36-4005-80E9-31E40470A918}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="MUS_HB_Ruines_EndGardian" ID="{E3EAA176-3456-43A5-8D3B-FDE43D28D3A8}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
 									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
@@ -475,6 +1099,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="MUS_Ruin_Fight_LOOP" ID="{3A2C7952-E01A-4760-A4CB-92F21568D10E}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Ruin_GardianFight" ID="{A093A748-6BEF-4677-BDFA-5629D3114C59}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>
@@ -671,6 +1303,69 @@
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
 										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="MUS_HB_Ruines_EndGardian" ID="{E3EAA176-3456-43A5-8D3B-FDE43D28D3A8}" ShortID="488190819">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="9812.49433106576"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="MUS_HB_Ruines_EndGardian" ID="{BE52DC47-8834-4413-A165-A1D35C055B19}" ShortID="873883586">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MUS_HB_Ruines_EndGardian" ID="{9555A0C5-2B77-4B09-93B2-F175D1B048DF}" ShortID="913982641">
+											<Language>SFX</Language>
+											<AudioFile>MUS_HB_Ruines_EndGardian.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{BDAB9722-01E4-4CE8-BDDD-020BFDF9B01F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{35FCD64D-B1C1-4241-A97B-A6D702A0F0DA}">
+											<ClipList>
+												<MusicClip Name="MUS_HB_Ruines_EndGardian" ID="{3902A757-6535-4742-8D91-15C841C932CB}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="9812.49433106576"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="MUS_HB_Ruines_EndGardian" ID="{9555A0C5-2B77-4B09-93B2-F175D1B048DF}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{0474160D-F54A-4230-950A-C4E758F79F5C}"/>
+								<MusicCue Name="Exit Cue" ID="{2F2D6009-D52B-465D-998D-7DDA855D83AA}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
