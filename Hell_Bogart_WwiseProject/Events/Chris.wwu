@@ -3,75 +3,187 @@
 	<Events>
 		<WorkUnit Name="Chris" ID="{FAA10444-24FE-4423-857A-D8F0320B223E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="HB_Heartbeat_EVENT" ID="{729E36E5-D4B9-4A41-B25C-CF4050D7BDBF}">
+				<Folder Name="HB_Kali Events" ID="{F45B69E4-EC02-4C40-A9AD-7E207F69F6BC}" ShortID="28818909">
 					<ChildrenList>
-						<Action Name="" ID="{15D1374A-A2FB-4C58-95CD-CB4A0884CDB8}" ShortID="178432711">
-							<PropertyList>
-								<Property Name="FadeInCurve" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="HeartBeat" ID="{0EA566B3-CC3A-4135-BB2A-0886B9D382B4}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Folder Name="JUMP IMPACT" ID="{198B1FF5-1A6E-472A-B46D-0278AA527908}" ShortID="903520121">
+							<ChildrenList>
+								<Event Name="E_Jump" ID="{7A8CC6AE-6E9A-4D97-AB22-D45CF58F7417}">
+									<ChildrenList>
+										<Action Name="" ID="{E6685FF6-F567-4B67-88B7-FDA03911B816}" ShortID="276823467">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Jump" ID="{8A9F5EB6-B111-41F7-AFA7-60C9B683A7A5}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0DE71B1C-7E15-43D1-8987-54BA3947B57B}" ShortID="173126003">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB_SFX_KALI_Jump_Loop" ID="{B25DAD9F-8946-40E6-AC4E-71C58C6AC7E9}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Impact" ID="{D6C314B3-C9DB-49F7-B7D8-13DB53F2167E}">
+									<ChildrenList>
+										<Action Name="" ID="{F0019704-B057-49E0-94C0-EC0577BCA13C}" ShortID="246679090">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Impacts" ID="{CAA6A217-2512-41AE-B8E1-A66348FB2696}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Grab" ID="{6BF9F0EC-ED2C-49D7-A0B0-7BDCB43D66FE}" ShortID="643994177">
+							<ChildrenList>
+								<Event Name="E_Grab" ID="{978E3028-B223-48EC-8E63-1717348C77A2}">
+									<ChildrenList>
+										<Action Name="" ID="{2ECED3D2-DC4D-47BC-A63C-DEF4F89AD4F3}" ShortID="920908646">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Grabs" ID="{FE9E0E51-6C95-4C1C-8C0F-5F1EC20C424D}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_GranEND" ID="{54295308-C493-438F-B3D0-801F61477249}">
+									<ChildrenList>
+										<Action Name="" ID="{DBF657A6-C806-4F52-A6A0-3B3BC3442348}" ShortID="248815211">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Grabs ENDS" ID="{EB41FD6C-4EFA-44AC-BCB0-C5BEB895FD4E}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="SLASHS" ID="{6C802197-2DD5-4E12-9C72-F0542DF11975}" ShortID="351364000">
+							<ChildrenList>
+								<Event Name="E_Slash" ID="{1A934DF9-900B-43EF-9E34-2FB56B53CB62}">
+									<ChildrenList>
+										<Action Name="" ID="{8386BBA4-143B-46C0-8DC1-91B27DFF216E}" ShortID="583745131">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Rnd_Slashs" ID="{70D23B3B-10A8-4480-9AFC-AFE6F479FD3D}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="HIT" ID="{D315A34E-EB9C-4649-B843-2AF50BA93FF9}" ShortID="832227846">
+							<ChildrenList>
+								<Event Name="E_HITS" ID="{88969CA4-14DD-4841-985D-F8B504417AA9}">
+									<ChildrenList>
+										<Action Name="" ID="{BA8581C7-DDF6-4D05-A597-6247CF8BE2A6}" ShortID="250640048">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Hits" ID="{A2B93BB2-6439-46A2-9B13-5904ACFBE49E}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Whirlwind" ID="{D78D618B-8A61-42E9-997B-9BBCD6949ED7}" ShortID="773926583">
+							<ChildrenList>
+								<Event Name="E_Whirlwind" ID="{E78BF0CF-91F1-4853-963A-272A481451CC}">
+									<ChildrenList>
+										<Action Name="" ID="{E2E8846E-B94B-4D01-8A57-F84A9E51D00F}" ShortID="339994964">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB_SFX_KALI_Slash_Whirlwind_01" ID="{AA574D00-1FE7-4C3B-938F-47C7104DE1E3}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
-				</Event>
-				<Event Name="HB_UiAmmo_EVENT" ID="{AD36FDAF-25A9-4D91-8B9C-E63004A090FE}">
+				</Folder>
+				<Folder Name="HB_Ui_Character" ID="{6238A0C0-DC63-40FA-BE22-55F0706986CE}" ShortID="604188379">
 					<ChildrenList>
-						<Action Name="" ID="{38FA9B56-248E-4A09-BE9D-577EE14B037B}" ShortID="169404089">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ammo_Switch" ID="{C59307DC-5951-4B50-AD6E-0BC1E0A57BDA}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="HB_UiAmmo_EVENT" ID="{AD36FDAF-25A9-4D91-8B9C-E63004A090FE}">
+							<ChildrenList>
+								<Action Name="" ID="{38FA9B56-248E-4A09-BE9D-577EE14B037B}" ShortID="169404089">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ammo_Switch" ID="{C59307DC-5951-4B50-AD6E-0BC1E0A57BDA}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HB_UiWep_Equip_EVENT" ID="{908DFB87-BD81-4BEF-9E62-F13F2B12DF7C}">
+							<ChildrenList>
+								<Action Name="" ID="{F910D4DF-0318-4ED6-9304-88859D498556}" ShortID="179116525">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RND_EquipItem" ID="{9E19697B-6D30-4D45-933C-427B12E6A4F6}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HB_PickUp_EVENT" ID="{93A3B8D0-3050-4D01-9BA8-EE7DCB3A369A}">
+							<ChildrenList>
+								<Action Name="" ID="{524DEEEF-B013-4558-AF38-5BA3AA0524BC}" ShortID="113827074">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HB_PickUpHealthkit" ID="{DEA28796-4AA7-4143-826C-1AE6D1E87BD7}">
+							<ChildrenList>
+								<Action Name="" ID="{DE0025EE-8798-48AA-B71C-0C20284C5C5E}" ShortID="811428973">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB_PickUpHealthkit" ID="{1044A179-EF22-4B37-B9B5-CDDF96349B22}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HB_Heartbeat_EVENT" ID="{729E36E5-D4B9-4A41-B25C-CF4050D7BDBF}">
+							<ChildrenList>
+								<Action Name="" ID="{15D1374A-A2FB-4C58-95CD-CB4A0884CDB8}" ShortID="178432711">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HeartBeat" ID="{0EA566B3-CC3A-4135-BB2A-0886B9D382B4}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HB_Healthkit" ID="{C652CBF4-E8CD-4807-98CA-9D58BA179795}">
+							<ChildrenList>
+								<Action Name="" ID="{D9325B45-7388-4100-9C35-EF227B69427D}" ShortID="1055440013">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="HB_UiWep_Equip_EVENT" ID="{908DFB87-BD81-4BEF-9E62-F13F2B12DF7C}">
-					<ChildrenList>
-						<Action Name="" ID="{F910D4DF-0318-4ED6-9304-88859D498556}" ShortID="179116525">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RND_EquipItem" ID="{9E19697B-6D30-4D45-933C-427B12E6A4F6}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="HB_PickUp_EVENT" ID="{93A3B8D0-3050-4D01-9BA8-EE7DCB3A369A}">
-					<ChildrenList>
-						<Action Name="" ID="{524DEEEF-B013-4558-AF38-5BA3AA0524BC}" ShortID="113827074">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="HB_PickUpHealthkit" ID="{DEA28796-4AA7-4143-826C-1AE6D1E87BD7}">
-					<ChildrenList>
-						<Action Name="" ID="{DE0025EE-8798-48AA-B71C-0C20284C5C5E}" ShortID="811428973">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="HB_PickUpHealthkit" ID="{1044A179-EF22-4B37-B9B5-CDDF96349B22}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="HB_Healthkit" ID="{C652CBF4-E8CD-4807-98CA-9D58BA179795}">
-					<ChildrenList>
-						<Action Name="" ID="{D9325B45-7388-4100-9C35-EF227B69427D}" ShortID="1055440013">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

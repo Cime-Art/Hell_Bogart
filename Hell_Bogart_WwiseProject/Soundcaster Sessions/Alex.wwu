@@ -12,24 +12,36 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
-							<Value>50</Value>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
-							<Value>100</Value>
+							<Value>4500</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
-							<Value>50</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
-							<Value>12</Value>
+							<Value>4</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}"/>
-							<Value>1.19488727152458E-311</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
