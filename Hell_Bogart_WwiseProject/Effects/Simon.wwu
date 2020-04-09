@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5FAAA63E-EE60-49E9-B693-A6DD018B7E4E}" SchemaVersion="94" RootDocumentID="{097CA683-4406-4A9A-BB27-6FD13B3F2A81}">
+	<Effects>
+		<WorkUnit Name="Simon" ID="{5FAAA63E-EE60-49E9-B693-A6DD018B7E4E}" OwnerID="{097CA683-4406-4A9A-BB27-6FD13B3F2A81}" PersistMode="Nested">
+			<ChildrenList>
+				<Effect Name="Voice_Bear_Events_Signal_Meter" ID="{131F746A-9CCC-4533-BE41-AA7053AAC5EF}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="Max" Type="Real32" Value="-96.3"/>
+						<Property Name="Min" Type="Real32" Value="0"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

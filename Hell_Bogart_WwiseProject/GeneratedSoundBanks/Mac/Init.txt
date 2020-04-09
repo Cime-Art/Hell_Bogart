@@ -41,6 +41,7 @@ State	ID	Name	State Group			Notes
 	2678880713	Fire	Ammo_Type_STATE			
 	0	None	Music_Ruin_STATE			
 	45878617	Ruin_Exploration	Music_Ruin_STATE			
+	446637814	Ruin_GardianFight	Music_Ruin_STATE			
 	757299892	Ruin_Fight	Music_Ruin_STATE			
 	2034030177	Ruin_End_Music	Music_Ruin_STATE			
 	0	None	IsInATrap_STATE			
@@ -74,13 +75,13 @@ State	ID	Name	State Group			Notes
 	3626681980	Regular_Chamber	Canon_Type_STATE			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	253057875	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Boss_Arena_Reverb_AUX		
-	382833313	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Exterior_Delay_AUX		
-	490763632	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Exterior_Delay_AUX		
-	593548003	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Ruines_Reverb_AUX		
+	253057875	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS\Boss_Arena_Reverb_AUX		
+	382833313	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS\Exterior_Delay_AUX		
+	490763632	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS\Exterior_Delay_AUX		
+	593548003	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS\Ruines_Reverb_AUX		
 	879075251	In_PauseMenu	IsInPauseMenu_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MUS_BUS		
-	898817968	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Boss_Arena_Reverb_AUX		
-	929591680	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Acoustics_BUS\Ruines_Reverb_AUX		
+	898817968	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS\Boss_Arena_Reverb_AUX		
+	929591680	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS\Ruines_Reverb_AUX		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	613965330	LowPassGlobalSFX_GP			\Simon\Global\LowPassGlobalSFX_GP	
@@ -91,16 +92,15 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	287439398	VOICE_BUS			\Default Work Unit\Master Audio Bus\VOICE_BUS	
 	940753649	MUS_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS	
 	1614488460	Jungle_Explo_Melodic_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS\Jungle_Explo_Melodic_BUS	
-	2138725528	Acoustics_BUS			\Default Work Unit\Master Audio Bus\Acoustics_BUS	
-	2329759771	Mobs_Bridge_SUBBUS			\Default Work Unit\Master Audio Bus\SFX_BUS\Mobs_Bridge_SUBBUS	
+	2138725528	Acoustics_BUS			\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS	
 	3119335404	Jungle_Event_Enigme_Chest_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS\Jungle_Event_Enigme_Chest_BUS	
 	3247222208	UI_BUS			\Default Work Unit\Master Audio Bus\UI_BUS	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	505824112	Exterior_Delay_AUX			\Default Work Unit\Master Audio Bus\Acoustics_BUS\Exterior_Delay_AUX	
-	1214272541	Ruines_Reverb_AUX			\Default Work Unit\Master Audio Bus\Acoustics_BUS\Ruines_Reverb_AUX	
-	3784581938	Boss_Arena_Reverb_AUX			\Default Work Unit\Master Audio Bus\Acoustics_BUS\Boss_Arena_Reverb_AUX	
+	505824112	Exterior_Delay_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS\Exterior_Delay_AUX	
+	1214272541	Ruines_Reverb_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS\Ruines_Reverb_AUX	
+	3784581938	Boss_Arena_Reverb_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_BUS\Boss_Arena_Reverb_AUX	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			

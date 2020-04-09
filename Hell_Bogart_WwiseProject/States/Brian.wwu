@@ -43,6 +43,7 @@
 								<State Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
 								<State Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
 								<State Name="Ruin_End_Music" ID="{78F6B36D-D4A0-445E-94BB-AAFA3DFA916F}"/>
+								<State Name="Ruin_GardianFight" ID="{A093A748-6BEF-4677-BDFA-5629D3114C59}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>
