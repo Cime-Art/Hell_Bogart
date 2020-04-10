@@ -395,16 +395,6 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
-												<Action Name="" ID="{8EB074F5-7385-4C85-B969-871A9A6B47E5}" ShortID="219998957">
-													<PropertyList>
-														<Property Name="Delay" Type="Real64" Value="0.15"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="MobJungleCharlie_GetHit_ELEMENT_SWITCH" ID="{193EC443-EB3D-4159-B3C0-AC820B519F34}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
 											</ChildrenList>
 										</Event>
 									</ChildrenList>

@@ -849,10 +849,6 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Death_05.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_05_10C4C929.wem</Path>
 				</File>
-				<File Id="16371881" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_Thunder_04.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_04_10C4C929.wem</Path>
-				</File>
 				<File Id="20413594" Language="SFX">
 					<ShortName>VOICE_HB_Bear_BOSS_Sandwitch.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_BOSS_Sandwitch_10C4C929.wem</Path>
@@ -888,10 +884,6 @@
 				<File Id="63219166" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Footstep_07.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Footstep_07_10C4C929.wem</Path>
-				</File>
-				<File Id="64327808" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_FireHit_04.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_04_10C4C929.wem</Path>
 				</File>
 				<File Id="66774646" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Explo_HolyShit.wav</ShortName>
@@ -1044,10 +1036,6 @@
 				<File Id="160432375" Language="SFX">
 					<ShortName>VOICE_HB_Bear_BOSS_Ghost.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_BOSS_Ghost_10C4C929.wem</Path>
-				</File>
-				<File Id="160487195" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_IceHit_01.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_IceHit_01_10C4C929.wem</Path>
 				</File>
 				<File Id="161779199" Language="SFX">
 					<ShortName>VOICE_HB_Bear_AgainstCharlie_HelloGoodbye.wav</ShortName>
@@ -1231,7 +1219,7 @@
 				</File>
 				<File Id="286612238" Language="SFX">
 					<ShortName>HB_WoodCringe_02.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_02_10C4C929.wem</Path>
+					<Path>SFX\HB_WoodCringe_02_3D50D031.wem</Path>
 				</File>
 				<File Id="286725655" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Tronc_01.wav</ShortName>
@@ -1267,7 +1255,7 @@
 				</File>
 				<File Id="305427602" Language="SFX">
 					<ShortName>HB_WoodCringe_01.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_01_10C4C929.wem</Path>
+					<Path>SFX\HB_WoodCringe_01_D0BFF504.wem</Path>
 				</File>
 				<File Id="307472904" Language="SFX">
 					<ShortName>Shell_Concrete_02.wav</ShortName>
@@ -1519,7 +1507,7 @@
 				</File>
 				<File Id="457581505" Language="SFX">
 					<ShortName>HB_WoodCringe_04.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_04_10C4C929.wem</Path>
+					<Path>SFX\HB_WoodCringe_04_984DB840.wem</Path>
 				</File>
 				<File Id="458831136" Language="SFX">
 					<ShortName>HB_FTP_Flaque_02.wav</ShortName>
@@ -1624,10 +1612,6 @@
 				<File Id="532242473" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-00.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-Hit-00_10C4C929.wem</Path>
-				</File>
-				<File Id="532271097" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_IceHit_02.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_IceHit_02_10C4C929.wem</Path>
 				</File>
 				<File Id="533650562" Language="SFX">
 					<ShortName>HB-SFX-Gardian-FootstepCharge_01.wav</ShortName>
@@ -1757,10 +1741,6 @@
 					<ShortName>HB-SFX-UImenu-Option.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Option_10C4C929.wem</Path>
 				</File>
-				<File Id="595008208" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_FireHit_03.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_03_10C4C929.wem</Path>
-				</File>
 				<File Id="597257408" Language="SFX">
 					<ShortName>VOICE_HB_Bear_AgainstCharlie_StupidDieTwice.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_AgainstCharlie_StupidDieTwice_10C4C929.wem</Path>
@@ -1809,10 +1789,6 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_10C4C929.wem</Path>
 				</File>
-				<File Id="628955542" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_IceHit_03.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_IceHit_03_10C4C929.wem</Path>
-				</File>
 				<File Id="637723326" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_04_4F58FBE9.wem</Path>
@@ -1844,10 +1820,6 @@
 				<File Id="659057326" Language="SFX">
 					<ShortName>CECK FIRE Burst Sizzle Small_01.wav</ShortName>
 					<Path>SFX\CECK FIRE Burst Sizzle Small_01_646CD338.wem</Path>
-				</File>
-				<File Id="659992907" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_Thunder_03.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_03_10C4C929.wem</Path>
 				</File>
 				<File Id="661955203" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_03.wav</ShortName>
@@ -1912,10 +1884,6 @@
 				<File Id="716246107" Language="SFX">
 					<ShortName>Shell_Wood_02.wav</ShortName>
 					<Path>SFX\Shell_Wood_02_10C4C929.wem</Path>
-				</File>
-				<File Id="718060554" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_FireHit_01.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_01_10C4C929.wem</Path>
 				</File>
 				<File Id="718659218" Language="SFX">
 					<ShortName>FTP_sol poussiereux_03.wav</ShortName>
@@ -2075,7 +2043,7 @@
 				</File>
 				<File Id="862182120" Language="SFX">
 					<ShortName>HB_WoodCringe_03.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_03_10C4C929.wem</Path>
+					<Path>SFX\HB_WoodCringe_03_B7AE9286.wem</Path>
 				</File>
 				<File Id="864222219" Language="SFX">
 					<ShortName>HB_Steps_herbeshumides.wav</ShortName>
@@ -2213,10 +2181,6 @@
 					<ShortName>SFX_HB_GroundSwitch_Klonk.wav</ShortName>
 					<Path>SFX\SFX_HB_GroundSwitch_Klonk_10C4C929.wem</Path>
 				</File>
-				<File Id="985776297" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_FireHit_02.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_02_10C4C929.wem</Path>
-				</File>
 				<File Id="991710585" Language="SFX">
 					<ShortName>SFX-HB-CoffreMetalNeuf_01.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreMetalNeuf_01_10C4C929.wem</Path>
@@ -2245,10 +2209,6 @@
 					<ShortName>VOICE_HB_Bear_BOSS_IntroduceToMyMother.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_BOSS_IntroduceToMyMother_10C4C929.wem</Path>
 				</File>
-				<File Id="1010589217" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_Thunder_02.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_02_10C4C929.wem</Path>
-				</File>
 				<File Id="1014806612" Language="SFX">
 					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_02.wav</ShortName>
 					<Path>SFX\SFX_HB_PetiteCaisseBoisExplosion_02_10C4C929.wem</Path>
@@ -2257,17 +2217,9 @@
 					<ShortName>HB-SFX-Gardian-Attack_03.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Attack_03_10C4C929.wem</Path>
 				</File>
-				<File Id="1022224548" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_IceHit_04.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_IceHit_04_10C4C929.wem</Path>
-				</File>
 				<File Id="1022942566" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LoosingLife_LuckNotSkill.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LoosingLife_LuckNotSkill_10C4C929.wem</Path>
-				</File>
-				<File Id="1027878983" Language="SFX">
-					<ShortName>SFX_HB_MobJungleCharlie_Thunder_01.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_01_10C4C929.wem</Path>
 				</File>
 				<File Id="1028175132" Language="SFX">
 					<ShortName>FTP_bois_sec_01.wav</ShortName>

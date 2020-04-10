@@ -10,6 +10,11 @@
 								<MusicSwitchContainer Name="Mus_Jungle_MAIN_SWITCH" ID="{C586B2D9-5E20-446C-9DC8-F4CFDD0E2716}" ShortID="294331237">
 									<PropertyList>
 										<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4547,7 +4552,7 @@
 												<Property Name="EndPosition" Type="Real64" Value="13250"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-13</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4651,7 +4656,7 @@
 												<Property Name="EndPosition" Type="Real64" Value="6000"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-16</Value>
+														<Value>-19</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4767,7 +4772,7 @@
 												<Property Name="EndPosition" Type="Real64" Value="8553.31663681338"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

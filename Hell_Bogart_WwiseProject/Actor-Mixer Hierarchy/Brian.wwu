@@ -1481,6 +1481,13 @@
 					</PropertyList>
 					<ChildrenList>
 						<ActorMixer Name="MIX_Coffre" ID="{F834FA59-43A2-4EB1-8A29-4E03D8DCE99B}" ShortID="660381779">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
