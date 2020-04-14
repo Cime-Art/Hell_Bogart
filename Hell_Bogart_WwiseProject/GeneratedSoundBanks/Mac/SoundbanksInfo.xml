@@ -1219,7 +1219,7 @@
 				</File>
 				<File Id="286612238" Language="SFX">
 					<ShortName>HB_WoodCringe_02.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_02_3D50D031.wem</Path>
+					<Path>SFX\HB_WoodCringe_02_60A8A272.wem</Path>
 				</File>
 				<File Id="286725655" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Tronc_01.wav</ShortName>
@@ -1255,7 +1255,7 @@
 				</File>
 				<File Id="305427602" Language="SFX">
 					<ShortName>HB_WoodCringe_01.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_01_D0BFF504.wem</Path>
+					<Path>SFX\HB_WoodCringe_01_9AC54320.wem</Path>
 				</File>
 				<File Id="307472904" Language="SFX">
 					<ShortName>Shell_Concrete_02.wav</ShortName>
@@ -1507,7 +1507,7 @@
 				</File>
 				<File Id="457581505" Language="SFX">
 					<ShortName>HB_WoodCringe_04.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_04_984DB840.wem</Path>
+					<Path>SFX\HB_WoodCringe_04_2BDE6C34.wem</Path>
 				</File>
 				<File Id="458831136" Language="SFX">
 					<ShortName>HB_FTP_Flaque_02.wav</ShortName>
@@ -2043,7 +2043,7 @@
 				</File>
 				<File Id="862182120" Language="SFX">
 					<ShortName>HB_WoodCringe_03.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_03_B7AE9286.wem</Path>
+					<Path>SFX\HB_WoodCringe_03_F1866793.wem</Path>
 				</File>
 				<File Id="864222219" Language="SFX">
 					<ShortName>HB_Steps_herbeshumides.wav</ShortName>
