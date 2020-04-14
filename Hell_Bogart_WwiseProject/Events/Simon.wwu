@@ -911,34 +911,12 @@
 							<ChildrenList>
 								<Folder Name="AgainstCharlie" ID="{00F5DED3-63E8-4692-B4BE-F5707B81B12B}" ShortID="438693858">
 									<ChildrenList>
-										<Event Name="E_Speech_Bear_AgainstCharlie_AfterShoot" ID="{0C412C39-AF7E-4B16-BECC-F3D182BA7B79}">
-											<ChildrenList>
-												<Action Name="" ID="{31F77945-AC06-43D3-86D6-2F27F0202DC7}" ShortID="474657527">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_AgainstCharlie_AfterShoot_RND" ID="{DDE3F790-0B57-4EB6-975B-81470B9C6311}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 										<Event Name="E_Speech_Bear_AgainstCharlie_DuringFight_LOOP" ID="{CBE7FAD7-5944-4A3C-BD9A-99E7D69F5711}">
 											<ChildrenList>
 												<Action Name="" ID="{D2A36581-BC64-42E9-8FFF-DECCB027C2F5}" ShortID="220367647">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT" ID="{486A7238-3CC0-4FC5-848D-CFD7048B7198}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="E_Speech_Bear_AgainstCharlie_Engage" ID="{E500EF2A-1A16-4EEA-A442-593170797856}">
-											<ChildrenList>
-												<Action Name="" ID="{9728A455-81E7-4D61-8ECA-2DD57CE3D21D}" ShortID="836419401">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_AgainstCharlie_Engage_RND" ID="{2777C3EF-56BE-4263-BF3F-A9D7CE07EACA}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -955,12 +933,12 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="E_Speech_Bear_AgainstCharlie_EndFight" ID="{0FE579E9-2BB1-4C83-8CE9-8AC6F6A6E4A5}">
+										<Event Name="E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP" ID="{CC50D25A-BAB9-4E4C-AACE-CAD37C6E0ACC}">
 											<ChildrenList>
-												<Action Name="" ID="{CA71623B-F943-4694-8569-E7E72D23FAD1}" ShortID="315513529">
+												<Action Name="" ID="{EFE2D1A4-FB83-459D-9B41-4D35B60B2E60}" ShortID="349471267">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_AgainstCharlie_EndFight_RND" ID="{B22BD81E-DDAB-4609-80F6-D967624E21E8}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+															<ObjectRef Name="Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT" ID="{486A7238-3CC0-4FC5-848D-CFD7048B7198}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -1025,6 +1003,20 @@
 												</Action>
 											</ChildrenList>
 										</Event>
+										<Event Name="E_Speech_Bear_BOSS_DuringFight_STOP_LOOP" ID="{98E5368E-2312-4BD0-95E3-212EB2A7F83E}">
+											<ChildrenList>
+												<Action Name="" ID="{B4979DF2-F8C0-435D-BB5A-5F93E80763F1}" ShortID="792749772">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Bear_Speech_BOSS_DuringFight_SEQ_CONT" ID="{C2B16211-8678-402A-833D-D38672F2F357}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Grenade" ID="{65C8F07A-D855-4A07-87A1-4D9E4463791B}" ShortID="341588212">
@@ -1035,17 +1027,6 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Bear_Speech_Grenade_Starter_RND" ID="{91FA3694-757A-4A61-AF0B-2321324BBF64}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="E_Speech_Bear_Grenade_End" ID="{C950C1A8-3FB0-40CF-825F-02FC7C379132}">
-											<ChildrenList>
-												<Action Name="" ID="{51BDA361-21D7-4FC1-A542-886C5B09BCEF}" ShortID="101813145">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_Grenade_End_RND" ID="{FE38760F-00BF-481F-8723-192EDBCD99D7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -1077,6 +1058,20 @@
 												</Action>
 											</ChildrenList>
 										</Event>
+										<Event Name="E_Speech_Bear_EXPLO_Random_STOP_LOOP" ID="{2FF97DCE-5B8A-4F7D-A46E-5E469119081E}">
+											<ChildrenList>
+												<Action Name="" ID="{4C579E11-7D83-4F3E-9BD3-B310C4285615}" ShortID="489208289">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Bear_Speech_EXPLO_Random_SEQ_CONT" ID="{DD5751EC-49F5-4B71-90E0-1C80B9E50299}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Loot" ID="{098B8311-5B62-4F90-A9B0-CFBF01048BA8}" ShortID="714643814">
@@ -1097,7 +1092,7 @@
 												<Action Name="" ID="{A665B7DE-D3C3-437D-8D11-55C6D1837107}" ShortID="782054535">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_Loot_Legendary_PRIORITY" ID="{8AB4D1C3-EA3D-49BF-BA58-B38DD1840365}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+															<ObjectRef Name="Bear_Speech_Loot_Legendary_PRIORITY" ID="{CC93E476-667F-43CD-815E-C7D155BE7BC5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -1133,34 +1128,12 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="E_Speech_Bear_Ulti_Shooting" ID="{6C75457B-1A0D-4D4B-AF01-302DF3CDE5CE}">
-											<ChildrenList>
-												<Action Name="" ID="{DE3AA51A-CD2D-4268-A31B-AD6DCF2A7192}" ShortID="75963926">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_Ulti_Shooting_RND" ID="{973EC459-D11A-4AEB-A4E5-F7022B2A91FC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 										<Event Name="E_Speech_Bear_Ulti_Boss_Starter" ID="{26DB2B24-80C6-4FEA-BCCC-4E014F5FEE31}">
 											<ChildrenList>
 												<Action Name="" ID="{80151D57-9733-4D00-A474-8F61198322B4}" ShortID="665161861">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Bear_Speech_BOSS_Ulti_Starter_RND" ID="{E602D3BD-4D7B-441B-9267-465640B3F1F5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="E_Speech_Bear_Ulti_Finished" ID="{B1AEE9C8-F7C8-4B7D-B400-21EF058D5B6D}">
-											<ChildrenList>
-												<Action Name="" ID="{EE49F357-60BC-4E0C-B9C9-407542082056}" ShortID="267374522">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_Ulti_Finished_RND" ID="{7F692B70-D255-49BF-9FC0-5B1B9917551F}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
