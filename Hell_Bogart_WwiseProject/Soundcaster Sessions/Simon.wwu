@@ -70,10 +70,6 @@
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Bear_Speech_AgainstCharlie_AfterShoot_Speech_RND" ID="{239B1C2B-C064-4FBA-ABAC-EC85DE909CEB}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-							<Position X="2" Y="6"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Initialize_Shotgun_EVENT" ID="{F61282D3-78A2-43D8-9029-A088AAE20939}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -219,10 +215,6 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Speech_Bear_AgainstCharlie_Engage" ID="{E500EF2A-1A16-4EEA-A442-593170797856}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="0" Y="3"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_Speech_Bear_BOSS_LooseHerMask_PRIORITY" ID="{25D3E92B-4D47-4839-BDF0-CA6557963071}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="0" Y="5"/>
 						</Module>
@@ -243,16 +235,8 @@
 							<Position X="1" Y="6"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Speech_Bear_AgainstCharlie_AfterShoot" ID="{0C412C39-AF7E-4B16-BECC-F3D182BA7B79}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="2" Y="3"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_Speech_Bear_BOSS_AfterSlashCaC" ID="{7F181389-D435-4644-8A6F-2DB8977E4696}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="6"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="E_Speech_Bear_AgainstCharlie_EndFight" ID="{0FE579E9-2BB1-4C83-8CE9-8AC6F6A6E4A5}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Speech_Bear_BOSS_GiveDmgToKali" ID="{6D6A73B4-0BCD-450D-B511-FF3219C1C961}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -279,20 +263,8 @@
 							<Position X="6" Y="7"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Speech_Bear_Ulti_Shooting" ID="{6C75457B-1A0D-4D4B-AF01-302DF3CDE5CE}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="7" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_Speech_Bear_Loot_Legendary_PRIORITY" ID="{4F5C7B85-3C0D-4811-B04C-E6EE60FA468F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="7" Y="3"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="E_Speech_Bear_Grenade_End" ID="{C950C1A8-3FB0-40CF-825F-02FC7C379132}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="7" Y="5"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="E_Speech_Bear_Ulti_Finished" ID="{B1AEE9C8-F7C8-4B7D-B400-21EF058D5B6D}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="8" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -333,7 +305,11 @@
 						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
 						<CurrentStateRef Name="Phase_1" ID="{ABAAF5E5-2CDD-4FE2-9428-D76699596B9D}"/>
 						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
+						<CurrentStateRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
+						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
+						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
+						<CurrentStateRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
 						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
