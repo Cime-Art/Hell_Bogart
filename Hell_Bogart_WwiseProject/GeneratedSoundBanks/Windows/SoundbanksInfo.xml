@@ -783,27 +783,24 @@
 				<Event Id="3359588815" Name="E_SetAcoustic_BossArena" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_BossArena"/>
 				<Event Id="1975484871" Name="E_SetAcoustic_Exterior" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Exterior"/>
 				<Event Id="1418412915" Name="E_SetAcoustic_Ruines" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Ruines"/>
-				<Event Id="2199860498" Name="E_Speech_Bear_AgainstCharlie_AfterShoot" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_AfterShoot"/>
 				<Event Id="3765570229" Name="E_Speech_Bear_AgainstCharlie_DuringFight_LOOP" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_DuringFight_LOOP"/>
-				<Event Id="3054227258" Name="E_Speech_Bear_AgainstCharlie_EndFight" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_EndFight"/>
-				<Event Id="583758136" Name="E_Speech_Bear_AgainstCharlie_Engage" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_Engage"/>
+				<Event Id="212888376" Name="E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP"/>
 				<Event Id="2655041407" Name="E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY"/>
 				<Event Id="709799615" Name="E_Speech_Bear_BOSS_AfterBigAttack" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_AfterBigAttack"/>
 				<Event Id="3541588761" Name="E_Speech_Bear_BOSS_AfterSlashCaC" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_AfterSlashCaC"/>
 				<Event Id="52447643" Name="E_Speech_Bear_BOSS_DuringFight_LOOP" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_DuringFight_LOOP"/>
+				<Event Id="3090329286" Name="E_Speech_Bear_BOSS_DuringFight_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_DuringFight_STOP_LOOP"/>
 				<Event Id="1647351970" Name="E_Speech_Bear_BOSS_GiveDmgToKali" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_GiveDmgToKali"/>
 				<Event Id="4130951651" Name="E_Speech_Bear_BOSS_LooseHerMask_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_LooseHerMask_PRIORITY"/>
 				<Event Id="4231375772" Name="E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY"/>
 				<Event Id="2359215024" Name="E_Speech_Bear_EXPLO_Random_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_LOOP"/>
+				<Event Id="2025380871" Name="E_Speech_Bear_EXPLO_Random_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_STOP_LOOP"/>
 				<Event Id="3071693117" Name="E_Speech_Bear_Grenade_Begin" ObjectPath="\Events\Simon\Voice\Bear\Grenade\E_Speech_Bear_Grenade_Begin"/>
-				<Event Id="4046931381" Name="E_Speech_Bear_Grenade_End" ObjectPath="\Events\Simon\Voice\Bear\Grenade\E_Speech_Bear_Grenade_End"/>
 				<Event Id="4064144418" Name="E_Speech_Bear_Loot_Legendary_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\Loot\E_Speech_Bear_Loot_Legendary_PRIORITY"/>
 				<Event Id="3031028797" Name="E_Speech_Bear_Loot_Normal" ObjectPath="\Events\Simon\Voice\Bear\Loot\E_Speech_Bear_Loot_Normal"/>
 				<Event Id="1655997511" Name="E_Speech_Bear_LosingLife" ObjectPath="\Events\Simon\Voice\Bear\LoosingLife\E_Speech_Bear_LosingLife"/>
 				<Event Id="881475495" Name="E_Speech_Bear_Ulti_Boss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_Boss_Starter"/>
-				<Event Id="1686450090" Name="E_Speech_Bear_Ulti_Finished" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_Finished"/>
 				<Event Id="3970556566" Name="E_Speech_Bear_Ulti_NoBoss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_NoBoss_Starter"/>
-				<Event Id="1780906659" Name="E_Speech_Bear_Ulti_Shooting" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_Shooting"/>
 				<Event Id="3774871727" Name="E_StartCharge" ObjectPath="\Events\Brian\Gardian\E_StartCharge"/>
 				<Event Id="3471430412" Name="E_Stomp" ObjectPath="\Events\Brian\Gardian\E_Stomp"/>
 				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
@@ -1219,7 +1216,7 @@
 				</File>
 				<File Id="286612238" Language="SFX">
 					<ShortName>HB_WoodCringe_02.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_02_3D50D031.wem</Path>
+					<Path>SFX\HB_WoodCringe_02_60A8A272.wem</Path>
 				</File>
 				<File Id="286725655" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Tronc_01.wav</ShortName>
@@ -1255,7 +1252,7 @@
 				</File>
 				<File Id="305427602" Language="SFX">
 					<ShortName>HB_WoodCringe_01.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_01_D0BFF504.wem</Path>
+					<Path>SFX\HB_WoodCringe_01_9AC54320.wem</Path>
 				</File>
 				<File Id="307472904" Language="SFX">
 					<ShortName>Shell_Concrete_02.wav</ShortName>
@@ -1507,7 +1504,7 @@
 				</File>
 				<File Id="457581505" Language="SFX">
 					<ShortName>HB_WoodCringe_04.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_04_984DB840.wem</Path>
+					<Path>SFX\HB_WoodCringe_04_2BDE6C34.wem</Path>
 				</File>
 				<File Id="458831136" Language="SFX">
 					<ShortName>HB_FTP_Flaque_02.wav</ShortName>
@@ -2043,7 +2040,7 @@
 				</File>
 				<File Id="862182120" Language="SFX">
 					<ShortName>HB_WoodCringe_03.wav</ShortName>
-					<Path>SFX\HB_WoodCringe_03_B7AE9286.wem</Path>
+					<Path>SFX\HB_WoodCringe_03_F1866793.wem</Path>
 				</File>
 				<File Id="864222219" Language="SFX">
 					<ShortName>HB_Steps_herbeshumides.wav</ShortName>
