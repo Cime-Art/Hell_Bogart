@@ -9,6 +9,7 @@
 							<ChildrenList>
 								<BlendContainer Name="HeartBeat" ID="{0EA566B3-CC3A-4135-BB2A-0886B9D382B4}" ShortID="970186845">
 									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<RTPCList>
 												<RTPC Name="" ID="{BC1C529F-5673-4204-B696-BE29F05D2A0A}" ShortID="123581670">
@@ -96,16 +97,6 @@
 												<ActiveSource Name="HB_SFX_Other_HeartbeatSlow" ID="{1EABE00A-EBCC-45FB-BA09-E21ACD15AADB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<RandomSequenceContainer Name="New Random Container" ID="{3ED91F2B-66FA-4E94-B4F2-2FC0AF1A1502}" ShortID="757040926">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
 									</ChildrenList>
 									<BlendTrackList>
 										<BlendTrack Name="Player Health" ID="{032C3713-D8B1-4E79-98F5-A8DE5894A18D}" ShortID="659059917">
