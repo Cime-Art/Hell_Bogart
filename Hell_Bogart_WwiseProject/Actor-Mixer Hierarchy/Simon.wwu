@@ -6809,16 +6809,17 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Bear_Speech_EXPLO_Random_SEQ_CONT" ID="{DD5751EC-49F5-4B71-90E0-1C80B9E50299}" ShortID="256467048">
 											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="90">
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{8076DEE4-2234-497B-96A1-8D933EE6796D}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="10"/>
-																	<Property Name="Min" Type="Real64" Value="-10"/>
+																	<Property Name="Max" Type="Real64" Value="30"/>
+																	<Property Name="Min" Type="Real64" Value="-30"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -6845,7 +6846,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Bear_Speech_EXPLO_Random_RND_LOOP" ID="{905E9EEE-30AB-404E-9153-36AAFC593239}" ShortID="148934376">
+												<RandomSequenceContainer Name="Bear_Speech_EXPLO_Random_RND" ID="{905E9EEE-30AB-404E-9153-36AAFC593239}" ShortID="148934376">
 													<PropertyList>
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -6863,7 +6864,6 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
-														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 													</PropertyList>
 													<ReferenceList>
@@ -7022,7 +7022,7 @@
 											</ChildrenList>
 											<Playlist>
 												<ItemRef Name="No_Speech_EXPLO_Random" ID="{CFC1FFF4-7224-4700-B796-7618E3902773}"/>
-												<ItemRef Name="Bear_Speech_EXPLO_Random_RND_LOOP" ID="{905E9EEE-30AB-404E-9153-36AAFC593239}"/>
+												<ItemRef Name="Bear_Speech_EXPLO_Random_RND" ID="{905E9EEE-30AB-404E-9153-36AAFC593239}"/>
 											</Playlist>
 										</RandomSequenceContainer>
 									</ChildrenList>
@@ -7031,6 +7031,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT" ID="{486A7238-3CC0-4FC5-848D-CFD7048B7198}" ShortID="613040621">
 											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
@@ -7069,7 +7070,6 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="Bear_Speech_AgainstCharlie_DuringFight_RND_LOOP" ID="{A625F529-851F-4384-B82B-879078AAAABB}" ShortID="366929085">
 													<PropertyList>
-														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
@@ -7085,7 +7085,6 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
-														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="12"/>
 													</PropertyList>
 													<ReferenceList>
@@ -7764,8 +7763,8 @@
 												</Sound>
 											</ChildrenList>
 											<Playlist>
-												<ItemRef Name="No_Speech_AgainstCharlie_DuringFight" ID="{ECFF9397-9786-435F-8252-B6E016485402}"/>
 												<ItemRef Name="Bear_Speech_AgainstCharlie_DuringFight_RND_LOOP" ID="{A625F529-851F-4384-B82B-879078AAAABB}"/>
+												<ItemRef Name="No_Speech_AgainstCharlie_DuringFight" ID="{ECFF9397-9786-435F-8252-B6E016485402}"/>
 											</Playlist>
 										</RandomSequenceContainer>
 										<Sound Name="Bear_Speech_AgainstCharlie_FirstEncounter_PRIORITY" ID="{121A3A4A-7185-459C-ABA8-D13D221CE537}" ShortID="280110674">
