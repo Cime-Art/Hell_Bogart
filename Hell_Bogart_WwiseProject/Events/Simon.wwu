@@ -936,6 +936,9 @@
 										<Event Name="E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP" ID="{CC50D25A-BAB9-4E4C-AACE-CAD37C6E0ACC}">
 											<ChildrenList>
 												<Action Name="" ID="{EFE2D1A4-FB83-459D-9B41-4D35B60B2E60}" ShortID="349471267">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT" ID="{486A7238-3CC0-4FC5-848D-CFD7048B7198}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
