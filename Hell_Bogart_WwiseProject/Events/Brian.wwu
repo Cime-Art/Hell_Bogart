@@ -124,6 +124,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{604C8A2B-4731-45FA-B964-79250AB531C0}" ShortID="602100249">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ground_SWITCH" ID="{E7987704-D43E-44C5-8B6E-F23D4627BB5D}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
@@ -134,7 +141,7 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="E_StartCharge" ID="{2D9AC109-54F9-4094-9356-2C92FC0E1726}">
+						<Event Name="E_Mob_Gardian_StartCharge" ID="{2D9AC109-54F9-4094-9356-2C92FC0E1726}">
 							<ChildrenList>
 								<Action Name="" ID="{13696980-BDA5-42B6-AAAE-C661709914BB}" ShortID="883817689">
 									<PropertyList>
@@ -155,7 +162,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_EndCharge" ID="{4CA236AD-F648-49CA-9A41-F81895CEEB15}">
+						<Event Name="E_Mob_Gardian_EndCharge" ID="{4CA236AD-F648-49CA-9A41-F81895CEEB15}">
 							<ChildrenList>
 								<Action Name="" ID="{55F1E8A4-4B76-46D8-9F6F-2726207506C1}" ShortID="765407896">
 									<PropertyList>
@@ -176,7 +183,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Attack" ID="{0346A734-40F3-4FBE-9DE8-16112ADC1F04}">
+						<Event Name="E_Mob_Gardian_Attack" ID="{0346A734-40F3-4FBE-9DE8-16112ADC1F04}">
 							<ChildrenList>
 								<Action Name="" ID="{73F2BF96-4D71-4C9A-A0CC-F5D890586D91}" ShortID="137517074">
 									<ReferenceList>
@@ -217,7 +224,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Stomp" ID="{664EAF6C-1D06-42DC-ABA6-425ADD82BB69}">
+						<Event Name="E_Mob_Gardian_Stomp" ID="{664EAF6C-1D06-42DC-ABA6-425ADD82BB69}">
 							<ChildrenList>
 								<Action Name="" ID="{BCB59CBA-DD5A-4018-83A7-F0CD0D860389}" ShortID="770158478">
 									<ReferenceList>
@@ -258,7 +265,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Footstep" ID="{225277E9-0838-4FB4-8AD4-8352A466578F}">
+						<Event Name="E_Mob_Gardian_Footstep" ID="{225277E9-0838-4FB4-8AD4-8352A466578F}">
 							<ChildrenList>
 								<Action Name="" ID="{B20227E0-AA58-4612-90E6-04E9C1319346}" ShortID="947532168">
 									<ReferenceList>
@@ -269,7 +276,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Death" ID="{807077AB-8410-4553-ADAF-BB3C2AF45B5F}">
+						<Event Name="E_Mob_Gardian_Death" ID="{807077AB-8410-4553-ADAF-BB3C2AF45B5F}">
 							<ChildrenList>
 								<Action Name="" ID="{9479962F-D008-4878-9141-E0DD8B77DF39}" ShortID="1066097833">
 									<ReferenceList>
@@ -330,12 +337,53 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Hit" ID="{D9BF8027-BBB7-46F9-B23F-D99D2DB26C66}">
+						<Event Name="E_Mob_Gardian_GetHit" ID="{D9BF8027-BBB7-46F9-B23F-D99D2DB26C66}">
 							<ChildrenList>
 								<Action Name="" ID="{64300504-844B-46F0-92B2-A1BD5B90FB77}" ShortID="960275137">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="RND_GetHit" ID="{702339D9-7B41-4D6B-85FD-1E60BD8580CA}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mob_Gardian_Hit" ID="{3F9B7232-704F-4590-B051-F3C8ACBF3D64}">
+							<ChildrenList>
+								<Action Name="" ID="{8448244F-1E97-42AC-92F9-552A1B5B8B9F}" ShortID="857513772">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RND_HitPlayer" ID="{AB535604-D4A1-4BBC-8387-4D82C381F3F6}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{91D081DD-F13C-4B59-9023-3D92BA0D781D}" ShortID="519529367">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MIX_Stomp" ID="{124A9806-9A2B-4EE3-B0EE-453B248BB831}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DE4FAC43-D0F9-4AEC-B71E-BC91EC40B543}" ShortID="848359300">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MIX_Footstep" ID="{7335A19C-0C1D-458F-BEBE-17341190BCB4}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1E27AE6A-1E47-4F28-96BE-5AA53D5733E5}" ShortID="38476389">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MIX_Charge" ID="{84A2DD00-4B1D-4A3E-8B9C-A8C78113EACB}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -535,6 +583,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MUS_Ruin_Fight_LOOP" ID="{3A2C7952-E01A-4760-A4CB-92F21568D10E}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Ruin_TriggerEnigmeChest" ID="{55D2C921-5B75-4C90-AF98-03202E416C1F}">
+							<ChildrenList>
+								<Action Name="" ID="{79E62A1F-96B9-45AA-BFE2-60027FEBB6F9}" ShortID="837334328">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="T_Ruines_Event_Enigme_Chest" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

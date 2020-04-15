@@ -21,6 +21,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Guardian" ID="{F9A66FE8-03F9-416F-A1EE-79F97E0526FF}" ShortID="486364957">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<StateGroup Name="Footstep_Charge" ID="{5E428EE6-BAB5-455E-BAB4-893EA8BEEE97}">
 							<ChildrenList>

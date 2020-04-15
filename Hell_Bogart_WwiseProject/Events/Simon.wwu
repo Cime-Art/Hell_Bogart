@@ -153,16 +153,6 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
-												<Action Name="" ID="{0CB3B888-2C37-4231-BB69-E01033B649FB}" ShortID="244760642">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="41"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
 											</ChildrenList>
 										</Event>
 									</ChildrenList>
@@ -364,16 +354,6 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{A67D1B8B-2110-46E6-AC32-3A06C4B8D56E}" ShortID="179417172">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="41"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

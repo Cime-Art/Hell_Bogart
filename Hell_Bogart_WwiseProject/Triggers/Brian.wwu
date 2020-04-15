@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FB91E194-39E0-4627-BDA4-1F358C712049}" SchemaVersion="94">
 	<Triggers>
-		<WorkUnit Name="Brian" ID="{FB91E194-39E0-4627-BDA4-1F358C712049}" PersistMode="Standalone"/>
+		<WorkUnit Name="Brian" ID="{FB91E194-39E0-4627-BDA4-1F358C712049}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="20"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Trigger Name="T_Ruines_Event_Enigme_Chest" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>
