@@ -173,6 +173,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_Health			\Chris\Player_Health	
 	1262098586	Volume_Heartbeat			\Simon\Character\Health\Volume_Heartbeat	
 	2379719543	Total_Power_GP			\Simon\Character\Shotgun\Total_Power_GP	
+	3541389910	LOD_Iddle_Enemi			\Simon\Enemi\LOD_Iddle_Enemi	
 	4095840129	Firing_Rate_GP			\Simon\Character\Shotgun\Firing_Rate_GP	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes

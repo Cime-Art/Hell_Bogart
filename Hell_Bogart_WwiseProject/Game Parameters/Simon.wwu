@@ -59,6 +59,17 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Enemi" ID="{9E18D225-B1C1-47CC-808A-F15378F2BD17}" ShortID="266083883">
+					<ChildrenList>
+						<GameParameter Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="10000"/>
+								<Property Name="Max" Type="Real64" Value="10000"/>
+								<Property Name="Min" Type="Real64" Value="1600"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
