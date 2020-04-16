@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Project\Hell_Bogart\Hell_Bogart_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Project\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Project\Hell_Bogart\Hell_Bogart_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Project\Hell_Bogart\Hell_Bogart_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -475,7 +475,9 @@
 				<Event Id="2386022965" Name="E_Mus_Ruin_End" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_End"/>
 				<Event Id="3396393780" Name="E_Mus_Ruin_Explo" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Explo"/>
 				<Event Id="3116078580" Name="E_Mus_Ruin_Fight" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Fight"/>
+				<Event Id="1700046390" Name="E_Mus_Ruin_GardianFight" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_GardianFight"/>
 				<Event Id="2044504258" Name="E_Mus_Ruin_Main_Play" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Main_Play"/>
+				<Event Id="36394964" Name="E_Mus_Ruin_TriggerEnigmeChest" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_TriggerEnigmeChest"/>
 				<Event Id="4247850677" Name="E_Mus_SetExplorationState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetExplorationState"/>
 				<Event Id="102331918" Name="E_Mus_SetFightState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetFightState"/>
 				<Event Id="4222663323" Name="E_Mus_TriggerEnigmeChest" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_TriggerEnigmeChest"/>
@@ -602,6 +604,10 @@
 					<ShortName>MUS_HB_BridgeJungle_End.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_End_EA9615DC.wem</Path>
 				</File>
+				<File Id="98029768" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Amb_05.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Amb_05_EA9615DC.wem</Path>
+				</File>
 				<File Id="107510737" Language="SFX">
 					<ShortName>MUS_HB_Ruines_BigVoice_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_BigVoice_01_EA9615DC.wem</Path>
@@ -613,10 +619,6 @@
 				<File Id="131441704" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_03.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_03_EA9615DC.wem</Path>
-				</File>
-				<File Id="144089296" Language="SFX">
-					<ShortName>MUS_HB_Ruines_Ambiance.wav</ShortName>
-					<Path>SFX\MUS_HB_Ruines_Ambiance_EA9615DC.wem</Path>
 				</File>
 				<File Id="146828919" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_03.wav</ShortName>
@@ -630,6 +632,10 @@
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_01.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_01_EA9615DC.wem</Path>
 				</File>
+				<File Id="237149597" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Trigger_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Trigger_01_EA9615DC.wem</Path>
+				</File>
 				<File Id="262844369" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_02.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_02_EA9615DC.wem</Path>
@@ -638,21 +644,41 @@
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_02.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_02_EA9615DC.wem</Path>
 				</File>
+				<File Id="303842504" Language="SFX">
+					<ShortName>MUS_HB_Ruines_EndGardian_00.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_EndGardian_00_EA9615DC.wem</Path>
+				</File>
 				<File Id="310030802" Language="SFX">
 					<ShortName>MUS_HB_Ruines_String_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_String_00_EA9615DC.wem</Path>
+				</File>
+				<File Id="312525543" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Trigger_00.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Trigger_00_EA9615DC.wem</Path>
+				</File>
+				<File Id="363699513" Language="SFX">
+					<ShortName>MUS_HB_Ruines_EndGardian_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_EndGardian_01_EA9615DC.wem</Path>
 				</File>
 				<File Id="367335765" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_04.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_04_EA9615DC.wem</Path>
 				</File>
+				<File Id="375039806" Language="SFX">
+					<ShortName>MUS_HB_Ruines_End_02.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_End_02_EA9615DC.wem</Path>
+				</File>
+				<File Id="445581775" Language="SFX">
+					<ShortName>MUS_HB_Ruines_EndGardian_02.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_EndGardian_02_EA9615DC.wem</Path>
+				</File>
 				<File Id="452570176" Language="SFX">
 					<ShortName>MUS_HB_Ruines_String_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_String_01_EA9615DC.wem</Path>
 				</File>
-				<File Id="462795873" Language="SFX">
-					<ShortName>MUS_HB_Ruines_End.wav</ShortName>
-					<Path>SFX\MUS_HB_Ruines_End_EA9615DC.wem</Path>
+				<File Id="500624380" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Amb_03.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Amb_03_EA9615DC.wem</Path>
 				</File>
 				<File Id="506404397" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Choir_00.wav</ShortName>
@@ -662,9 +688,21 @@
 					<ShortName>MUS_HB_Ruines_Choir_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Choir_01_EA9615DC.wem</Path>
 				</File>
+				<File Id="539506128" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Amb_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Amb_01_EA9615DC.wem</Path>
+				</File>
+				<File Id="595572684" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Amb_02.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Amb_02_EA9615DC.wem</Path>
+				</File>
 				<File Id="660836541" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_04.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_04_EA9615DC.wem</Path>
+				</File>
+				<File Id="668388054" Language="SFX">
+					<ShortName>MUS_HB_Ruines_End_00.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_End_00_EA9615DC.wem</Path>
 				</File>
 				<File Id="716610373" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Fight_MalletCymbal_01.wav</ShortName>
@@ -698,13 +736,17 @@
 					<ShortName>MUS_HB_Ruines_TambourAdd_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_TambourAdd_01_EA9615DC.wem</Path>
 				</File>
+				<File Id="803568545" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Start_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Start_01_EA9615DC.wem</Path>
+				</File>
 				<File Id="817692512" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Fight_BigDrums_End.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_Fight_BigDrums_End_EA9615DC.wem</Path>
 				</File>
-				<File Id="855857155" Language="SFX">
-					<ShortName>MUS_HB_Ruines_Start.wav</ShortName>
-					<Path>SFX\MUS_HB_Ruines_Start_EA9615DC.wem</Path>
+				<File Id="839996953" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Start_03.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Start_03_EA9615DC.wem</Path>
 				</File>
 				<File Id="866325847" Language="SFX">
 					<ShortName>MUS_HB_Ruines_BigVoice_00.wav</ShortName>
@@ -718,13 +760,21 @@
 					<ShortName>MUS_HB_JUNGLE_BigDrum_EndFight.wav</ShortName>
 					<Path>SFX\MUS_HB_JUNGLE_BigDrum_EndFight_EA9615DC.wem</Path>
 				</File>
+				<File Id="900343963" Language="SFX">
+					<ShortName>MUS_HB_Ruines_End_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_End_01_EA9615DC.wem</Path>
+				</File>
 				<File Id="909569087" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Fight_TransitionBegin.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_Fight_TransitionBegin_EA9615DC.wem</Path>
 				</File>
-				<File Id="913982641" Language="SFX">
-					<ShortName>MUS_HB_Ruines_EndGardian.wav</ShortName>
-					<Path>SFX\MUS_HB_Ruines_EndGardian_EA9615DC.wem</Path>
+				<File Id="916412374" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Amb_04.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Amb_04_EA9615DC.wem</Path>
+				</File>
+				<File Id="947932089" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Amb_00.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Amb_00_EA9615DC.wem</Path>
 				</File>
 				<File Id="951005522" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Tambour_00.wav</ShortName>
@@ -734,9 +784,17 @@
 					<ShortName>MUS_HB_Ruines_Snare_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Snare_01_EA9615DC.wem</Path>
 				</File>
+				<File Id="1040288944" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Start_02.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Start_02_EA9615DC.wem</Path>
+				</File>
 				<File Id="1042611356" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Enigme_Chest_Event_02.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_Enigme_Chest_Event_02_EA9615DC.wem</Path>
+				</File>
+				<File Id="1051529773" Language="SFX">
+					<ShortName>MUS_HB_Ruines_Start_00.wav</ShortName>
+					<Path>SFX\MUS_HB_Ruines_Start_00_EA9615DC.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -745,7 +803,6 @@
 			<ShortName>General_Soundbank</ShortName>
 			<Path>General_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1849535609" Name="E_Attack" ObjectPath="\Events\Brian\Gardian\E_Attack"/>
 				<Event Id="2368673453" Name="E_BigStoneDoor_Opening" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Opening"/>
 				<Event Id="2503251047" Name="E_BigStoneDoor_Stop" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Stop"/>
 				<Event Id="825092078" Name="E_Coffre_Bois" ObjectPath="\Events\Brian\Coffre\E_Coffre_Bois"/>
@@ -753,20 +810,23 @@
 				<Event Id="453363137" Name="E_Coffre_Metal_Neuf" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Neuf"/>
 				<Event Id="251601818" Name="E_Coffre_Metal_Vieux" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Vieux"/>
 				<Event Id="1482865096" Name="E_Coffre_Pierre" ObjectPath="\Events\Brian\Coffre\E_Coffre_Pierre"/>
-				<Event Id="1674672365" Name="E_Death" ObjectPath="\Events\Brian\Gardian\E_Death"/>
 				<Event Id="1693088249" Name="E_Destroy_Object" ObjectPath="\Events\Simon\Destructibles\E_Destroy_Object"/>
 				<Event Id="2375570282" Name="E_Disable_Attenuation" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Disable_Attenuation"/>
 				<Event Id="301183665" Name="E_Enable_Attenuation" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Enable_Attenuation"/>
-				<Event Id="1082760276" Name="E_EndCharge" ObjectPath="\Events\Brian\Gardian\E_EndCharge"/>
-				<Event Id="2224696771" Name="E_Footstep" ObjectPath="\Events\Brian\Gardian\E_Footstep"/>
 				<Event Id="3189034779" Name="E_FTP_surface_type_switch" ObjectPath="\Events\Alex\E_FTP_surface_type_switch"/>
 				<Event Id="3910514663" Name="E_Global_SetInPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetInPauseMenu"/>
 				<Event Id="574868710" Name="E_Global_SetOutPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetOutPauseMenu"/>
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
-				<Event Id="539842108" Name="E_Hit" ObjectPath="\Events\Brian\Gardian\E_Hit"/>
 				<Event Id="1494526797" Name="E_HPChange" ObjectPath="\Events\Simon\Character\E_HPChange"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
+				<Event Id="663816717" Name="E_Mob_Gardian_Attack" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Attack"/>
+				<Event Id="1083833169" Name="E_Mob_Gardian_Death" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Death"/>
+				<Event Id="1279445176" Name="E_Mob_Gardian_EndCharge" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_EndCharge"/>
+				<Event Id="1530050711" Name="E_Mob_Gardian_Footstep" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Footstep"/>
+				<Event Id="593671754" Name="E_Mob_Gardian_GetHit" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_GetHit"/>
+				<Event Id="517464027" Name="E_Mob_Gardian_StartCharge" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_StartCharge"/>
+				<Event Id="1937325648" Name="E_Mob_Gardian_Stomp" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Stomp"/>
 				<Event Id="694853374" Name="E_Mob_JungleCharlie_Attack" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack"/>
 				<Event Id="2112280100" Name="E_Mob_JungleCharlie_Death" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death"/>
 				<Event Id="1638544743" Name="E_Mob_JungleCharlie_Exploded" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Exploded\E_Mob_JungleCharlie_Exploded"/>
@@ -801,8 +861,6 @@
 				<Event Id="1655997511" Name="E_Speech_Bear_LosingLife" ObjectPath="\Events\Simon\Voice\Bear\LoosingLife\E_Speech_Bear_LosingLife"/>
 				<Event Id="881475495" Name="E_Speech_Bear_Ulti_Boss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_Boss_Starter"/>
 				<Event Id="3970556566" Name="E_Speech_Bear_Ulti_NoBoss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_NoBoss_Starter"/>
-				<Event Id="3774871727" Name="E_StartCharge" ObjectPath="\Events\Brian\Gardian\E_StartCharge"/>
-				<Event Id="3471430412" Name="E_Stomp" ObjectPath="\Events\Brian\Gardian\E_Stomp"/>
 				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
 				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
 				<Event Id="355937833" Name="E_Traps_SpikeTrap" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap"/>
@@ -1082,6 +1140,10 @@
 					<ShortName>FTP_sol poussiereux_01.wav</ShortName>
 					<Path>SFX\FTP_sol poussiereux_01_10C4C929.wem</Path>
 				</File>
+				<File Id="198072548" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Water_00.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Water_00_10C4C929.wem</Path>
+				</File>
 				<File Id="198502002" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleIN_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleIN_01_10C4C929.wem</Path>
@@ -1214,6 +1276,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleOUT_02_10C4C929.wem</Path>
 				</File>
+				<File Id="285662931" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Rock_02.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Rock_02_10C4C929.wem</Path>
+				</File>
 				<File Id="286612238" Language="SFX">
 					<ShortName>HB_WoodCringe_02.wav</ShortName>
 					<Path>SFX\HB_WoodCringe_02_60A8A272.wem</Path>
@@ -1269,6 +1335,10 @@
 				<File Id="313310772" Language="SFX">
 					<ShortName>HB-SFX-Gardian-FootstepCharge_00.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-FootstepCharge_00_10C4C929.wem</Path>
+				</File>
+				<File Id="320764015" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Wood_01.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Wood_01_10C4C929.wem</Path>
 				</File>
 				<File Id="321376137" Language="SFX">
 					<ShortName>FTP_bois_humide_01.wav</ShortName>
@@ -1498,6 +1568,10 @@
 					<ShortName>HB_SFX_Shotgun_Spread60_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread60_01_10C4C929.wem</Path>
 				</File>
+				<File Id="455107736" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Wood_02.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Wood_02_10C4C929.wem</Path>
+				</File>
 				<File Id="457379691" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Grenade_BearStyle.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Grenade_BearStyle_10C4C929.wem</Path>
@@ -1517,6 +1591,10 @@
 				<File Id="464707944" Language="SFX">
 					<ShortName>HB-SFX-UImenu-Play.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Play_10C4C929.wem</Path>
+				</File>
+				<File Id="472789580" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Wood_00.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Wood_00_10C4C929.wem</Path>
 				</File>
 				<File Id="475995238" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-00.wav</ShortName>
@@ -1786,6 +1864,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_10C4C929.wem</Path>
 				</File>
+				<File Id="633385100" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Dirt_02.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Dirt_02_10C4C929.wem</Path>
+				</File>
 				<File Id="637723326" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_04_4F58FBE9.wem</Path>
@@ -1801,6 +1883,10 @@
 				<File Id="646470638" Language="SFX">
 					<ShortName>Shell_Concrete_01.wav</ShortName>
 					<Path>SFX\Shell_Concrete_01_10C4C929.wem</Path>
+				</File>
+				<File Id="649027812" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Rock_00.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Rock_00_10C4C929.wem</Path>
 				</File>
 				<File Id="653401680" Language="SFX">
 					<ShortName>VOICE_HB_Bear_AgainstCharlie_NeedAPlan.wav</ShortName>
@@ -1862,6 +1948,10 @@
 					<ShortName>VOICE_HB_Bear_AgainstCharlie_Asshole.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_AgainstCharlie_Asshole_10C4C929.wem</Path>
 				</File>
+				<File Id="694818606" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Water_01.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Water_01_10C4C929.wem</Path>
+				</File>
 				<File Id="698178078" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_04_10C4C929.wem</Path>
@@ -1918,6 +2008,10 @@
 					<ShortName>HB-SFX-Other-OpenBigStoneDoor.wav</ShortName>
 					<Path>SFX\HB-SFX-Other-OpenBigStoneDoor_10C4C929.wem</Path>
 				</File>
+				<File Id="744898605" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Water_02.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Water_02_10C4C929.wem</Path>
+				</File>
 				<File Id="745202616" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Footstep_06.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Footstep_06_10C4C929.wem</Path>
@@ -1937,6 +2031,10 @@
 				<File Id="750198670" Language="SFX">
 					<ShortName>SFX-HB-CoffreMetalVieux_01.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreMetalVieux_01_10C4C929.wem</Path>
+				</File>
+				<File Id="751258681" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Dirt_01.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Dirt_01_10C4C929.wem</Path>
 				</File>
 				<File Id="751958664" Language="SFX">
 					<ShortName>VOICE_HB_Bear_AgainstCharlie_YouUglyMotherfucker.wav</ShortName>
@@ -2053,6 +2151,10 @@
 				<File Id="866745273" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleOUT_01_10C4C929.wem</Path>
+				</File>
+				<File Id="868266234" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Rock_01.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Rock_01_10C4C929.wem</Path>
 				</File>
 				<File Id="876870059" Language="SFX">
 					<ShortName>HB_Footstep_SolPierre_01.wav</ShortName>
@@ -2193,6 +2295,10 @@
 				<File Id="998850758" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Grenade_GreenBalls.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Grenade_GreenBalls_10C4C929.wem</Path>
+				</File>
+				<File Id="999875653" Language="SFX">
+					<ShortName>Grenade_SFX_Ground_Dirt_00.wav</ShortName>
+					<Path>SFX\Grenade_SFX_Ground_Dirt_00_10C4C929.wem</Path>
 				</File>
 				<File Id="1001555105" Language="SFX">
 					<ShortName>HB-SFX-GenadeFire-02.wav</ShortName>
