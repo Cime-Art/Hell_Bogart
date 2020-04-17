@@ -130,11 +130,16 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
+						<CurrentStateRef Name="Phase_1" ID="{ABAAF5E5-2CDD-4FE2-9428-D76699596B9D}"/>
 						<CurrentStateRef Name="None" ID="{711F642A-D061-406A-A43C-7DFCFA603C38}"/>
 						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
+						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
-						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
+						<CurrentStateRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
+						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
 						<CurrentStateRef Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
+						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
+						<CurrentStateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Caiss" ID="{53291F45-44D8-4058-95A8-28E8E7717593}"/>
