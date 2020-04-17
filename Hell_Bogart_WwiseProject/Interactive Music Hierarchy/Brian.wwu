@@ -417,7 +417,7 @@
 							<StingerList>
 								<MusicStinger Name="" ID="{B2ACA86D-E802-4291-8DDE-C3659BE48BD3}">
 									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="2"/>
+										<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
 									</PropertyList>
 									<TriggerRef Name="T_Ruines_Event_Enigme_Chest" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
 									<SegmentRef Name="Mus_Jungle_Event_Enigme_Chest" ID="{1855623C-9ED9-4168-A14E-549592C180CC}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
