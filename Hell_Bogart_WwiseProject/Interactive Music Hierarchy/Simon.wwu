@@ -3031,7 +3031,7 @@
 												<MusicStinger Name="" ID="{F73729D8-8B9D-4CE6-BDA1-0EBF84DCBC93}">
 													<PropertyList>
 														<Property Name="CustomCueMatchName" Type="string" Value="Event Tresor"/>
-														<Property Name="PlaySegmentAt" Type="int16" Value="2"/>
+														<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
 													</PropertyList>
 													<TriggerRef Name="T_Jungle_Event_Enigme_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
 													<SegmentRef Name="Mus_Jungle_Event_Enigme_Chest" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
