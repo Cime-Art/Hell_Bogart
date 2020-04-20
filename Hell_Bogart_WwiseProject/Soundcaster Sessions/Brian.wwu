@@ -78,8 +78,12 @@
 							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Mus_Ruin_TriggerEnigmeChest" ID="{55D2C921-5B75-4C90-AF98-03202E416C1F}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<ObjectRef Name="E_Mus_Ruin_Trigger_Enigme" ID="{55D2C921-5B75-4C90-AF98-03202E416C1F}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
 							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Ruin_Trigger_Chest" ID="{49C32D81-991B-49B2-9869-B9DD7447B879}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="4" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Elm_Regular" ID="{5C91A112-5143-4FC2-A2B4-73EB11CCBC56}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
