@@ -47,6 +47,7 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
 						<CurrentStateRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}"/>
+						<CurrentStateRef Name="None" ID="{670CED5E-8BD5-4159-A6F1-5BFDCC82867B}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
 						<CurrentStateRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
