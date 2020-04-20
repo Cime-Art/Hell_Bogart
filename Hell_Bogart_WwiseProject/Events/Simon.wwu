@@ -836,6 +836,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Traps_GrosseBoule" ID="{8B4C65DF-B73F-4C6C-9BAA-9E7FCCDDD2F6}">
+							<ChildrenList>
+								<Action Name="" ID="{E6BB2E33-74B2-4236-ACE8-F735C13C4F15}" ShortID="427339710">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Grosse_Boule_Trap_SEQ" ID="{E03062D2-363F-4472-ADE6-9B3B87EAC13A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_Punji" ID="{F2928F2B-4285-4218-99B5-F5C9BA24EDAE}">
+							<ChildrenList>
+								<Action Name="" ID="{A2C16565-7E68-4DEC-9671-F5B1FB14F777}" ShortID="534700581">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_PUNJI IMPACT" ID="{5682CD94-4BBA-4651-94EC-9C9919E18462}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_GrosTronc" ID="{C08EE6D2-5786-4CA0-9B9E-C905659003AC}">
+							<ChildrenList>
+								<Action Name="" ID="{5F54EBDE-EC38-4168-B150-F6711EAFB403}" ShortID="1061119837">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gros_Tronc_Trap_SEQ" ID="{29A0B0D7-27B2-4719-AAAD-964E42098D9B}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Destructibles" ID="{E917B8D0-8FA3-47DE-B4C1-5B271665B8EC}" ShortID="163303108">

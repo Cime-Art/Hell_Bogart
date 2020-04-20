@@ -863,6 +863,9 @@
 				<Event Id="3970556566" Name="E_Speech_Bear_Ulti_NoBoss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_NoBoss_Starter"/>
 				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
 				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
+				<Event Id="658926298" Name="E_Traps_GrosseBoule" ObjectPath="\Events\Simon\Traps\E_Traps_GrosseBoule"/>
+				<Event Id="1936964117" Name="E_Traps_GrosTronc" ObjectPath="\Events\Simon\Traps\E_Traps_GrosTronc"/>
+				<Event Id="3391365552" Name="E_Traps_Punji" ObjectPath="\Events\Simon\Traps\E_Traps_Punji"/>
 				<Event Id="355937833" Name="E_Traps_SpikeTrap" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap"/>
 				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
 				<Event Id="842152325" Name="E_UI_Option" ObjectPath="\Events\Brian\UI\E_UI_Option"/>
@@ -1208,6 +1211,10 @@
 					<ShortName>VOICE_HB_Bear_AgainstCharlie_KennedyProtectYou.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_AgainstCharlie_KennedyProtectYou_10C4C929.wem</Path>
 				</File>
+				<File Id="242741858" Language="SFX">
+					<ShortName>SFX_HB_PUNJI IMPACT.wav</ShortName>
+					<Path>SFX\SFX_HB_PUNJI IMPACT_10C4C929.wem</Path>
+				</File>
 				<File Id="242927382" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Exploded_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_01_10C4C929.wem</Path>
@@ -1456,6 +1463,10 @@
 					<ShortName>HB-SFX-Gardian-GetHit_03.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-GetHit_03_10C4C929.wem</Path>
 				</File>
+				<File Id="387729076" Language="SFX">
+					<ShortName>SFX_HB_GrosTroncImpacte_V2.wav</ShortName>
+					<Path>SFX\SFX_HB_GrosTroncImpacte_V2_10C4C929.wem</Path>
+				</File>
 				<File Id="388700628" Language="SFX">
 					<ShortName>HB_SFX_Other_HeartbeatFast.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_HeartbeatFast_D79FB2B7.wem</Path>
@@ -1471,6 +1482,10 @@
 				<File Id="393304929" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Reload_Out_00_10C4C929.wem</Path>
+				</File>
+				<File Id="394235374" Language="SFX">
+					<ShortName>SFX_HB_BouleRoll_V5.wav</ShortName>
+					<Path>SFX\SFX_HB_BouleRoll_V5_DC569D9F.wem</Path>
 				</File>
 				<File Id="394460289" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_02.wav</ShortName>
@@ -1519,6 +1534,10 @@
 				<File Id="432770256" Language="SFX">
 					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_00.wav</ShortName>
 					<Path>SFX\SFX_HB_PetiteCaisseBoisExplosion_00_10C4C929.wem</Path>
+				</File>
+				<File Id="433758976" Language="SFX">
+					<ShortName>SFX_HB_GrosTroncSwingV4.wav</ShortName>
+					<Path>SFX\SFX_HB_GrosTroncSwingV4_10C4C929.wem</Path>
 				</File>
 				<File Id="436110025" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Planches_02.wav</ShortName>
@@ -2319,6 +2338,10 @@
 				<File Id="1016390998" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Attack_03.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Attack_03_10C4C929.wem</Path>
+				</File>
+				<File Id="1022107374" Language="SFX">
+					<ShortName>SFX_HB_VibrationVégétale_OneShot.wav</ShortName>
+					<Path>SFX\SFX_HB_VibrationVégétale_OneShot_C57361F0.wem</Path>
 				</File>
 				<File Id="1022942566" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LoosingLife_LuckNotSkill.wav</ShortName>

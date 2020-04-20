@@ -417,10 +417,17 @@
 							<StingerList>
 								<MusicStinger Name="" ID="{B2ACA86D-E802-4291-8DDE-C3659BE48BD3}">
 									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 									</PropertyList>
-									<TriggerRef Name="T_Ruines_Event_Enigme_Chest" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
-									<SegmentRef Name="Mus_Jungle_Event_Enigme_Chest" ID="{1855623C-9ED9-4168-A14E-549592C180CC}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+									<TriggerRef Name="T_Ruines_Event_Enigme" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
+									<SegmentRef Name="Mus_Ruin_Event_Enigme" ID="{1855623C-9ED9-4168-A14E-549592C180CC}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+								</MusicStinger>
+								<MusicStinger Name="" ID="{EACF6FB9-FC4F-4233-B903-03CB60C16791}">
+									<PropertyList>
+										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+									</PropertyList>
+									<TriggerRef Name="T_Ruines_Event_Chest" ID="{C1BBA841-F0BE-487E-BCD8-607A48945454}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
+									<SegmentRef Name="Mus_Ruin_Event_Chest" ID="{96D23101-593B-48DA-B73F-4A9BF6400E58}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
 								</MusicStinger>
 							</StingerList>
 							<Playlist>
@@ -2029,9 +2036,9 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<MusicSegment Name="Mus_Jungle_Event_Enigme_Chest" ID="{1855623C-9ED9-4168-A14E-549592C180CC}" ShortID="475970454">
+						<MusicSegment Name="Mus_Ruin_Event_Enigme" ID="{1855623C-9ED9-4168-A14E-549592C180CC}" ShortID="475970454">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="14263.9002267574"/>
+								<Property Name="EndPosition" Type="Real64" Value="42625.0340136054"/>
 								<Property Name="Tempo" Type="Real64" Value="90"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2048,7 +2055,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="Event Enigme Chest" ID="{741B163A-2A44-4091-BD04-F8D7AADFD4A3}" ShortID="854254934">
+								<MusicTrack Name="Event Enigme" ID="{741B163A-2A44-4091-BD04-F8D7AADFD4A3}" ShortID="854254934">
 									<PropertyList>
 										<Property Name="MusicTrackType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -2058,13 +2065,17 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="MUS_HB_Ruines_Trigger_00" ID="{65876391-A5BC-4C3D-B0C4-28D40FA1887E}" ShortID="312525543">
+										<AudioFileSource Name="MUS_HB_Ruines_Trigger_A00" ID="{BA54EA9B-7E62-434A-99F9-80966B0348F1}" ShortID="801456708">
 											<Language>SFX</Language>
-											<AudioFile>MUS_HB_Ruines_Trigger_00.wav</AudioFile>
+											<AudioFile>MUS_HB_Ruines_Trigger_A00.wav</AudioFile>
 										</AudioFileSource>
-										<AudioFileSource Name="MUS_HB_Ruines_Trigger_01" ID="{4663E0B4-8629-4353-BD1F-46C72DD0BF66}" ShortID="237149597">
+										<AudioFileSource Name="MUS_HB_Ruines_Trigger_A01" ID="{B530724D-270E-492A-9CE5-92C5BE663513}" ShortID="576860599">
 											<Language>SFX</Language>
-											<AudioFile>MUS_HB_Ruines_Trigger_01.wav</AudioFile>
+											<AudioFile>MUS_HB_Ruines_Trigger_A01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MUS_HB_Ruines_Trigger_A02" ID="{D3F6C970-4DB9-4D74-AEB7-C7E85B3D5016}" ShortID="126265991">
+											<Language>SFX</Language>
+											<AudioFile>MUS_HB_Ruines_Trigger_A02.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -2078,25 +2089,37 @@
 									<SequenceList>
 										<MusicTrackSequence Name="" ID="{C145F09D-E1E5-49AA-8CED-8BB48051347A}">
 											<ClipList>
-												<MusicClip Name="MUS_HB_Ruines_Trigger_00" ID="{4821E1FE-C551-4D31-8082-61B1E3B479F4}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="12687.5056689342"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="MUS_HB_Ruines_Trigger_00" ID="{65876391-A5BC-4C3D-B0C4-28D40FA1887E}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{D3359E09-3736-4275-9C9E-CAD7FF65B121}">
-											<ClipList>
-												<MusicClip Name="MUS_HB_Ruines_Trigger_01" ID="{3844D60C-C02A-491C-AED6-4D0BF65E38D2}">
+												<MusicClip Name="MUS_HB_Ruines_Trigger_A00" ID="{C0671B40-A79A-47AA-ACD9-05B0AB56896B}">
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="13430.566893424"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
-													<AudioSourceRef Name="MUS_HB_Ruines_Trigger_01" ID="{4663E0B4-8629-4353-BD1F-46C72DD0BF66}"/>
+													<AudioSourceRef Name="MUS_HB_Ruines_Trigger_A00" ID="{BA54EA9B-7E62-434A-99F9-80966B0348F1}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D3359E09-3736-4275-9C9E-CAD7FF65B121}">
+											<ClipList>
+												<MusicClip Name="MUS_HB_Ruines_Trigger_A01" ID="{9DC87E73-CFFD-4612-A183-1FC3F10490F2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13430.566893424"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="MUS_HB_Ruines_Trigger_A01" ID="{B530724D-270E-492A-9CE5-92C5BE663513}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B7B5784F-FACF-4BB5-87B2-245BBB845B95}">
+											<ClipList>
+												<MusicClip Name="MUS_HB_Ruines_Trigger_A02" ID="{E8A6A892-C2C9-4114-97BD-E790EE410FE2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13430.566893424"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="MUS_HB_Ruines_Trigger_A02" ID="{D3F6C970-4DB9-4D74-AEB7-C7E85B3D5016}"/>
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
@@ -2110,6 +2133,126 @@
 									</PropertyList>
 								</MusicCue>
 								<MusicCue Name="Exit Cue" ID="{A9790B53-5A3A-4899-B93E-BDF98C5AC32E}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="2500"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Mus_Ruin_Event_Chest" ID="{96D23101-593B-48DA-B73F-4A9BF6400E58}" ShortID="578879467">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="54388.8662131519"/>
+								<Property Name="Tempo" Type="Real64" Value="90"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Music_Conversion_Settings" ID="{A41B3C03-D345-4072-9F0D-207252976325}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Jungle_Event_Enigme_Chest_BUS" ID="{42F00B64-1D6F-4A91-8B81-DBA2EB4BB424}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Event Chest" ID="{6A3C9C67-47B0-4388-919E-502CA5840B68}" ShortID="341072048">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MUS_HB_Ruines_Trigger_B00" ID="{6644ED3F-56EB-4C7E-AA3D-02FAB109A428}" ShortID="115769674">
+											<Language>SFX</Language>
+											<AudioFile>MUS_HB_Ruines_Trigger_B00.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MUS_HB_Ruines_Trigger_B01" ID="{E62CD385-4238-414D-B55A-9AAF9E3DC1EF}" ShortID="1043129415">
+											<Language>SFX</Language>
+											<AudioFile>MUS_HB_Ruines_Trigger_B01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MUS_HB_Ruines_Trigger_B02" ID="{2DB9CD16-E708-4532-ACB0-510483483268}" ShortID="440069006">
+											<Language>SFX</Language>
+											<AudioFile>MUS_HB_Ruines_Trigger_B02.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="MUS_HB_Ruines_Trigger_B03" ID="{90F4E185-F167-470D-892D-EA4AD6F97256}" ShortID="228854696">
+											<Language>SFX</Language>
+											<AudioFile>MUS_HB_Ruines_Trigger_B03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3FB68ABC-47CF-4FD5-A1CD-CF8E3B8EBF1A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{08F42F20-8401-4160-AB14-8214BDC9CF6E}">
+											<ClipList>
+												<MusicClip Name="MUS_HB_Ruines_Trigger_B00" ID="{24CE6646-D005-4529-AEC8-C29D947BDEC3}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="12687.5056689342"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="MUS_HB_Ruines_Trigger_B00" ID="{6644ED3F-56EB-4C7E-AA3D-02FAB109A428}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{45467429-F4EB-41D0-9E18-027E4BC0DB88}">
+											<ClipList>
+												<MusicClip Name="MUS_HB_Ruines_Trigger_B01" ID="{CB2BAC40-66CD-478B-90DC-8FDC9028FD84}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="12673.6054421769"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="MUS_HB_Ruines_Trigger_B01" ID="{E62CD385-4238-414D-B55A-9AAF9E3DC1EF}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{6269C50A-62F5-4359-A4DB-5366A8990267}">
+											<ClipList>
+												<MusicClip Name="MUS_HB_Ruines_Trigger_B02" ID="{34D35D39-B942-4B3C-8578-3E6BFBD861BA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="12680.5442176871"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="MUS_HB_Ruines_Trigger_B02" ID="{2DB9CD16-E708-4532-ACB0-510483483268}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{72050D74-1B40-4176-BF32-D7D93FB62B88}">
+											<ClipList>
+												<MusicClip Name="MUS_HB_Ruines_Trigger_B03" ID="{144DB400-F456-47EC-8F49-1F35E84F1A0A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="12680.5442176871"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="MUS_HB_Ruines_Trigger_B03" ID="{90F4E185-F167-470D-892D-EA4AD6F97256}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{7CD31F3B-3891-4230-944A-38D987111703}">
+									<PropertyList>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+									</PropertyList>
+								</MusicCue>
+								<MusicCue Name="Exit Cue" ID="{EC31ACD8-7628-434A-A5FE-A295F9B640A9}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
 										<Property Name="TimeMs" Type="Real64" Value="2500"/>
