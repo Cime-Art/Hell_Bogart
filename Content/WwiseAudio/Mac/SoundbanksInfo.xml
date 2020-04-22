@@ -882,6 +882,7 @@
 				<Event Id="3090329286" Name="E_Speech_Bear_BOSS_DuringFight_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_DuringFight_STOP_LOOP"/>
 				<Event Id="1647351970" Name="E_Speech_Bear_BOSS_GiveDmgToKali" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_GiveDmgToKali"/>
 				<Event Id="4130951651" Name="E_Speech_Bear_BOSS_LooseHerMask_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_LooseHerMask_PRIORITY"/>
+				<Event Id="2317185274" Name="E_Speech_Bear_BOSS_MySoulmate_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_MySoulmate_PRIORITY"/>
 				<Event Id="4231375772" Name="E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY"/>
 				<Event Id="2359215024" Name="E_Speech_Bear_EXPLO_Random_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_LOOP"/>
 				<Event Id="2025380871" Name="E_Speech_Bear_EXPLO_Random_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_STOP_LOOP"/>
@@ -2136,6 +2137,10 @@
 				<File Id="698178078" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_04_10C4C929.wem</Path>
+				</File>
+				<File Id="700611296" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Bossline_1-3_BabyMySoulmate.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Bossline_1-3_BabyMySoulmate_10C4C929.wem</Path>
 				</File>
 				<File Id="705273490" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_01.wav</ShortName>
