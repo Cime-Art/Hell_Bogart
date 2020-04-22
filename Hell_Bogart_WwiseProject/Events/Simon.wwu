@@ -926,6 +926,16 @@
 									<ChildrenList>
 										<Event Name="E_Speech_Bear_AgainstCharlie_DuringFight_LOOP" ID="{CBE7FAD7-5944-4A3C-BD9A-99E7D69F5711}">
 											<ChildrenList>
+												<Action Name="" ID="{EE568CB5-BA61-4F99-822B-A528E06A65A0}" ShortID="642522272">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Bear_Speech_EXPLO_Random_SEQ_CONT" ID="{DD5751EC-49F5-4B71-90E0-1C80B9E50299}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{D2A36581-BC64-42E9-8FFF-DECCB027C2F5}" ShortID="220367647">
 													<ReferenceList>
 														<Reference Name="Target">
@@ -940,7 +950,7 @@
 												<Action Name="" ID="{2AE982DD-9E63-4FD7-8D9F-D4CB2664146F}" ShortID="470415384">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_AgainstCharlie_FirstEncounter_PRIORITY" ID="{121A3A4A-7185-459C-ABA8-D13D221CE537}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+															<ObjectRef Name="VOICE_HB_Bear_FirstEncounter_5_PRIORITY" ID="{6A000079-A1E5-49F0-B49A-A115BDCE32D7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -955,6 +965,38 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT" ID="{486A7238-3CC0-4FC5-848D-CFD7048B7198}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="E_Speech_Bear_AgainstCharlie_EndFight_SetExplo" ID="{4ABCEE8A-55BF-4D89-8736-3EA81BAB295F}">
+											<ChildrenList>
+												<Action Name="" ID="{A3F6E91C-02D6-4C29-A44C-8C3673C98994}" ShortID="101824537">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT" ID="{486A7238-3CC0-4FC5-848D-CFD7048B7198}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{DA31727E-CE48-4BCF-94C4-526ECC66F6A6}" ShortID="837055919">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Bear_Speech_EndFight_RND" ID="{92DBEEFB-D013-488E-995F-4A2D24993249}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{DF17188D-B785-4F9B-87AF-BC8444AFAD7A}" ShortID="300416940">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="41"/>
+														<Property Name="Delay" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="E_Speech_Bear_EXPLO_Random_LOOP" ID="{B502F958-39D1-44BA-8F1C-78E858D85097}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -980,7 +1022,7 @@
 												<Action Name="" ID="{9D982230-1319-4F87-A49B-06AC0D66A219}" ShortID="104873701">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_BOSS_LooseHerMask_PRIORITY" ID="{537FC923-8DA6-4DD4-85C4-EAD57B16F7F2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+															<ObjectRef Name="VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_PRIORITY" ID="{716A7BFD-58D1-4905-A25A-9289DD7EA1F9}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -988,6 +1030,16 @@
 										</Event>
 										<Event Name="E_Speech_Bear_BOSS_DuringFight_LOOP" ID="{D6296B8C-ECC0-4330-8F04-67EBF0A853B7}">
 											<ChildrenList>
+												<Action Name="" ID="{E26283ED-CA13-4ED8-901E-F0266E115A8E}" ShortID="318801774">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Bear_Speech_EXPLO_Random_SEQ_CONT" ID="{DD5751EC-49F5-4B71-90E0-1C80B9E50299}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{887CA64F-2833-4525-84E0-423557F249BF}" ShortID="209289573">
 													<ReferenceList>
 														<Reference Name="Target">
@@ -1068,7 +1120,7 @@
 												<Action Name="" ID="{146C32EF-ECBB-49B4-94D9-DA2168ECE187}" ShortID="994733912">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_Bridge_ItsBeautiful_PRIORITY" ID="{54AD63E4-27C0-4516-800E-403619E29EEC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+															<ObjectRef Name="VOICE_HB_Bear_TamponBridge_4_PRIORITY" ID="{5F0E714B-6B52-46EE-96C2-B8D911BC649D}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -1108,7 +1160,7 @@
 												<Action Name="" ID="{A665B7DE-D3C3-437D-8D11-55C6D1837107}" ShortID="782054535">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_Loot_Legendary_PRIORITY" ID="{CC93E476-667F-43CD-815E-C7D155BE7BC5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+															<ObjectRef Name="Bear_Speech_Loot_Legendary_RND" ID="{CC93E476-667F-43CD-815E-C7D155BE7BC5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -1138,7 +1190,7 @@
 												<Action Name="" ID="{5DB4FBC0-804C-44F6-881F-592D7E44930C}" ShortID="651530058">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_Ulti_Starter_RND" ID="{F94B3CA4-BAC5-4C75-8E53-1783DA8D6AA6}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+															<ObjectRef Name="Bear_Speech_Ulti_NotBoss_RND" ID="{E9738195-0971-4333-A6AD-0426F18AEDE6}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -1149,7 +1201,7 @@
 												<Action Name="" ID="{80151D57-9733-4D00-A474-8F61198322B4}" ShortID="665161861">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_BOSS_Ulti_Starter_RND" ID="{E602D3BD-4D7B-441B-9267-465640B3F1F5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+															<ObjectRef Name="Bear_Speech_BOSS_Ulti_RND" ID="{E602D3BD-4D7B-441B-9267-465640B3F1F5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

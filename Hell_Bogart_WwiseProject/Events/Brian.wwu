@@ -588,7 +588,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Mus_Ruin_TriggerEnigmeChest" ID="{55D2C921-5B75-4C90-AF98-03202E416C1F}">
+						<Event Name="E_Mus_Ruin_Trigger_Enigme" ID="{55D2C921-5B75-4C90-AF98-03202E416C1F}">
 							<ChildrenList>
 								<Action Name="" ID="{79E62A1F-96B9-45AA-BFE2-60027FEBB6F9}" ShortID="837334328">
 									<PropertyList>
@@ -596,7 +596,21 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="T_Ruines_Event_Enigme_Chest" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
+											<ObjectRef Name="T_Ruines_Event_Enigme" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mus_Ruin_Trigger_Chest" ID="{49C32D81-991B-49B2-9869-B9DD7447B879}">
+							<ChildrenList>
+								<Action Name="" ID="{CE032B67-8D24-486D-8760-831878F2528C}" ShortID="812191613">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="T_Ruines_Event_Chest" ID="{C1BBA841-F0BE-487E-BCD8-607A48945454}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

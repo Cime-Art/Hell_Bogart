@@ -8,14 +8,17 @@ Switch	ID	Name	Switch Group			Notes
 	3477598558	HelicoCasse	Helico_Switch			
 
 State Group	ID	Name			Wwise Object Path	Notes
+	205605436	State_track			\Alex\State_track	
 	283398981	Attenuation_STATE			\Simon\Global\Attenuation_STATE	
 	334651340	Bridge_Music_STATE			\Simon\Music\Bridge_Music_STATE	
 	393509290	Footstep_Charge			\Brian\Guardian\Footstep_Charge	
 	916310236	Ammo_Type_STATE			\Simon\Items\Ammo_Type_STATE	
 	1321818117	Music_Ruin_STATE			\Brian\Music\Music_Ruin_STATE	
 	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
+	1909677728	State_Gethit			\Alex\State_Gethit	
 	2069469294	Acoustic_STATE			\Simon\Global\Acoustic_STATE	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
+	2634557799	State_attack			\Alex\State_attack	
 	2955909185	IsInPauseMenu_STATE			\Simon\Global\IsInPauseMenu_STATE	
 	3469316424	Jungle_Music_STATE			\Simon\Music\Jungle_Music_STATE	
 	4121978141	Shotgun_Equiped_STATE			\Simon\Items\Shotgun_Equiped_STATE	
@@ -23,6 +26,9 @@ State Group	ID	Name			Wwise Object Path	Notes
 	4261493451	Canon_Type_STATE			\Simon\Items\Canon_Type_STATE	
 
 State	ID	Name	State Group			Notes
+	0	None	State_track			
+	789576189	Spot	State_track			
+	3579833626	Track	State_track			
 	0	None	Attenuation_STATE			
 	388576012	Enable_Att	Attenuation_STATE			
 	1384889739	Disable_Att	Attenuation_STATE			
@@ -47,6 +53,9 @@ State	ID	Name	State Group			Notes
 	0	None	IsInATrap_STATE			
 	645492555	Out	IsInATrap_STATE			
 	1752637612	In	IsInATrap_STATE			
+	0	None	State_Gethit			
+	1160234136	normal	State_Gethit			
+	2534871658	critical	State_Gethit			
 	0	None	Acoustic_STATE			
 	2213992659	Exterior	Acoustic_STATE			
 	3265560855	Ruines	Acoustic_STATE			
@@ -55,6 +64,9 @@ State	ID	Name	State Group			Notes
 	252199009	Spread_60	Chamber_Type_STATE			
 	419409252	Spread_180	Chamber_Type_STATE			
 	2572109827	Regular_Spread	Chamber_Type_STATE			
+	0	None	State_attack			
+	180661997	Attack	State_attack			
+	839543372	Big_attack	State_attack			
 	0	None	IsInPauseMenu_STATE			
 	1462275554	In_PauseMenu	IsInPauseMenu_STATE			
 	3090617217	Out_PauseMenu	IsInPauseMenu_STATE			

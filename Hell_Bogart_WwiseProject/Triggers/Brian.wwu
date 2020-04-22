@@ -7,7 +7,8 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Trigger Name="T_Ruines_Event_Enigme_Chest" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}"/>
+				<Trigger Name="T_Ruines_Event_Enigme" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}"/>
+				<Trigger Name="T_Ruines_Event_Chest" ID="{C1BBA841-F0BE-487E-BCD8-607A48945454}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>
