@@ -841,9 +841,9 @@
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1494526797" Name="E_HPChange" ObjectPath="\Events\Simon\Character\E_HPChange"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
+				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\GET HIT\E_KaliBoss_GetHit"/>
 				<Event Id="1324023236" Name="E_KaliBoss_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_Grab"/>
 				<Event Id="2252209331" Name="E_KaliBoss_GrandEND" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_GrandEND"/>
-				<Event Id="1005491101" Name="E_KaliBoss_Hit" ObjectPath="\Events\Chris\HB_Kali Events\HIT\E_KaliBoss_Hit"/>
 				<Event Id="3318371348" Name="E_KaliBoss_Impact" ObjectPath="\Events\Chris\HB_Kali Events\JUMP IMPACT\E_KaliBoss_Impact"/>
 				<Event Id="658884810" Name="E_KaliBoss_Jump" ObjectPath="\Events\Chris\HB_Kali Events\JUMP IMPACT\E_KaliBoss_Jump"/>
 				<Event Id="1363676921" Name="E_KaliBoss_Slash" ObjectPath="\Events\Chris\HB_Kali Events\SLASHS\E_KaliBoss_Slash"/>
@@ -2373,6 +2373,10 @@
 				<File Id="761814132" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Spread180_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread180_01_10C4C929.wem</Path>
+				</File>
+				<File Id="764513421" Language="SFX">
+					<ShortName>SFX_HB_Traps_Explo_Grosse_Boule.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_Explo_Grosse_Boule_10C4C929.wem</Path>
 				</File>
 				<File Id="778412427" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_10-4_WifeNotApreciateThat.wav</ShortName>

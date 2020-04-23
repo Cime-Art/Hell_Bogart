@@ -22,7 +22,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	842152325	E_UI_Option			\Brian\UI\E_UI_Option	
 	850917734	E_Petite_Boite			\Brian\Coffre\E_Petite_Boite	
 	881475495	E_Speech_Bear_Ulti_Boss_Starter			\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_Boss_Starter	
-	1005491101	E_KaliBoss_Hit			\Chris\HB_Kali Events\HIT\E_KaliBoss_Hit	
 	1044613943	E_Speech_Bear_AgainstCharlie_EndFight_SetExplo			\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_EndFight_SetExplo	
 	1058217336	E_Initialize_Grenade			\Brian\Grenade\E_Initialize_Grenade	
 	1083833169	E_Mob_Gardian_Death			\Brian\Gardian\E_Mob_Gardian_Death	
@@ -81,6 +80,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3371588653	E_Mob_JungleCharlie_Iddle_STOP			\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle_STOP	
 	3376467880	E_Play_Grenade			\Brian\Grenade\E_Play_Grenade	
 	3391365552	E_Traps_Punji			\Simon\Traps\E_Traps_Punji	
+	3418847825	E_KaliBoss_GetHit			\Chris\HB_Kali Events\GET HIT\E_KaliBoss_GetHit	
 	3541588761	E_Speech_Bear_BOSS_AfterSlashCaC			\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_AfterSlashCaC	
 	3546449532	HB_PickUpHealthkit			\Chris\HB_Ui_Character\HB_PickUpHealthkit	
 	3564297591	HB_Heartbeat_EVENT			\Chris\HB_Ui_Character\HB_Heartbeat_EVENT	
@@ -594,6 +594,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	758351355	HB-SFX-Gardian-HitPlayer_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Gardian-HitPlayer_03_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Stone_Gardian\MIX_StoneGardian\MIX_HitPlayer\RND_HitPlayer\HB-SFX-Gardian-HitPlayer_03		303316
 	760505559	SFX_HB_MobJungleCharlie_v2_IddleIN_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_v2_IddleIN_04_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Enemies\Mob Jungle Charlie\Iddle\Iddle_MobJungleCharlie_SEQ\Iddle_MobJungleCharlie_Voice_SEQ\Iddle_Mob_BreathIN_RND\SFX_HB_MobJungleCharlie_v2_IddleIN_04		242416
 	761814132	HB_SFX_Shotgun_Spread180_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Spread180_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\Spread_180_RND\HB_SFX_Shotgun_Spread180_01		12722
+	764513421	SFX_HB_Traps_Explo_Grosse_Boule	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Traps_Explo_Grosse_Boule_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Traps\Traps\Grosse Boule Trap\Grosse_Boule_Trap_SEQ\SFX_HB_Traps_Explo_Grosse_Boule		221512
 	778412427	VOICE_HB_Bear_Bossline_10-4_WifeNotApreciateThat	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_Bossline_10-4_WifeNotApreciateThat_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\BOSS Continuous\Bear_Speech_BOSS_DuringFight_SEQ_CONT\Bear_Speech_BOSS_DuringFight_RND_LOOP\VOICE_HB_Bear_Bossline_10-4_WifeNotApreciateThat		202896
 	780555555	HB_SFX_Shotgun_Spread60_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Spread60_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\Spread_60_RND\HB_SFX_Shotgun_Spread60_00		16106
 	781049257	VOICE_HB_Bear_Explo_HolyShit_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_Explo_HolyShit_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\EXPLO Continuous\Bear_Speech_EXPLO_Random_SEQ_CONT\Bear_Speech_EXPLO_Random_RND\VOICE_HB_Bear_Explo_HolyShit_02		123292
