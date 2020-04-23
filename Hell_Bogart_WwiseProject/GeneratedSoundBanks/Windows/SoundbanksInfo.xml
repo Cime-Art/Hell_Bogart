@@ -893,12 +893,13 @@
 				<Event Id="881475495" Name="E_Speech_Bear_Ulti_Boss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_Boss_Starter"/>
 				<Event Id="3970556566" Name="E_Speech_Bear_Ulti_NoBoss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_NoBoss_Starter"/>
 				<Event Id="64626783" Name="E_Speech_Kali_Before_Big_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Before_Big_Attack"/>
+				<Event Id="303195765" Name="E_Speech_Kali_GetHit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_GetHit"/>
 				<Event Id="3925619008" Name="E_Speech_Kali_Grab" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Grab"/>
 				<Event Id="2742739284" Name="E_Speech_Kali_i_will_end_your_suffering" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_i_will_end_your_suffering"/>
 				<Event Id="2204209177" Name="E_Speech_Kali_i_will_put_you_to_rest" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_i_will_put_you_to_rest"/>
+				<Event Id="4177976852" Name="E_Speech_Kali_Random_Lines_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_LOOP"/>
+				<Event Id="3985088299" Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_STOP_LOOP"/>
 				<Event Id="1343698428" Name="E_Speech_Kali_State_attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_State_attack"/>
-				<Event Id="3165196994" Name="E_Speech_Kali_State_get_hit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_State_get_hit"/>
-				<Event Id="3955111074" Name="E_Speech_Kali_State_Voice_Track" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_State_Voice_Track"/>
 				<Event Id="2428615881" Name="E_Speech_Kali_the_chase_is_on" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_the_chase_is_on"/>
 				<Event Id="4001924455" Name="E_Speech_Kali_there_is_no_escape" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_there_is_no_escape"/>
 				<Event Id="1617862160" Name="E_Speech_Kali_your_soul_will_be_mine" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_your_soul_will_be_mine"/>
@@ -1160,6 +1161,10 @@
 					<ShortName>HB_SFX_Shotgun_IceAmmo_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_IceAmmo_02_10C4C929.wem</Path>
 				</File>
+				<File Id="164532848" Language="SFX">
+					<ShortName>dont_hide.WAV</ShortName>
+					<Path>SFX\dont_hide_10C4C929.wem</Path>
+				</File>
 				<File Id="167945936" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_02_10C4C929.wem</Path>
@@ -1167,6 +1172,10 @@
 				<File Id="169729514" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_07.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_07_10C4C929.wem</Path>
+				</File>
+				<File Id="170640478" Language="SFX">
+					<ShortName>i_found_you.WAV</ShortName>
+					<Path>SFX\i_found_you_10C4C929.wem</Path>
 				</File>
 				<File Id="172222264" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-SpearLaunch-03.wav</ShortName>
@@ -1276,6 +1285,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-003.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GenericBodyFall_01-003_10C4C929.wem</Path>
 				</File>
+				<File Id="232588016" Language="SFX">
+					<ShortName>im_coming_for_you.WAV</ShortName>
+					<Path>SFX\im_coming_for_you_10C4C929.wem</Path>
+				</File>
 				<File Id="234048296" Language="SFX">
 					<ShortName>Shell_Wood_01.wav</ShortName>
 					<Path>SFX\Shell_Wood_01_10C4C929.wem</Path>
@@ -1283,6 +1296,10 @@
 				<File Id="237015842" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LootNormal_2-1_MoreHoles.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LootNormal_2-1_MoreHoles_10C4C929.wem</Path>
+				</File>
+				<File Id="237414432" Language="SFX">
+					<ShortName>i_can_hear_you.WAV</ShortName>
+					<Path>SFX\i_can_hear_you_10C4C929.wem</Path>
 				</File>
 				<File Id="241520658" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_1-2_UglyMotherFcker.wav</ShortName>
@@ -1540,6 +1557,10 @@
 					<ShortName>HB_SFX_Shotgun_FireAmmo_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_FireAmmo_01_10C4C929.wem</Path>
 				</File>
+				<File Id="358883183" Language="SFX">
+					<ShortName>i_can_see_you.WAV</ShortName>
+					<Path>SFX\i_can_see_you_10C4C929.wem</Path>
+				</File>
 				<File Id="359709367" Language="SFX">
 					<ShortName>SFX-HB-CoffreMetalNeuf_00.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreMetalNeuf_00_10C4C929.wem</Path>
@@ -1619,6 +1640,10 @@
 				<File Id="390658827" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Spread180_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread180_02_10C4C929.wem</Path>
+				</File>
+				<File Id="390888805" Language="SFX">
+					<ShortName>dont_be_shy.WAV</ShortName>
+					<Path>SFX\dont_be_shy_10C4C929.wem</Path>
 				</File>
 				<File Id="393304929" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_00.wav</ShortName>

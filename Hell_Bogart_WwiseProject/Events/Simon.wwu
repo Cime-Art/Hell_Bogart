@@ -1257,17 +1257,6 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Speech_Kali_State_Voice_Track" ID="{1E4DE0CA-0A19-4663-9F04-6C377AA3D4ED}">
-									<ChildrenList>
-										<Action Name="" ID="{D8CF074D-2341-4CB4-A163-BDF2C1A4CDA9}" ShortID="582975505">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="State Voice Track" ID="{BF926BCE-199E-4AD9-84F1-41A7FDC1B15C}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="E_Speech_Kali_Grab" ID="{F814971F-A575-4260-83A5-60813DD2EE30}">
 									<ChildrenList>
 										<Action Name="" ID="{B4B7C8E9-4727-4CDE-B4F7-FB8AC5F7477A}" ShortID="135076971">
@@ -1290,12 +1279,12 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Speech_Kali_State_get_hit" ID="{74291BE7-7F5C-48C0-A186-A72C5DF06E0B}">
+								<Event Name="E_Speech_Kali_GetHit" ID="{74291BE7-7F5C-48C0-A186-A72C5DF06E0B}">
 									<ChildrenList>
 										<Action Name="" ID="{BD91FBE3-A6C2-414C-BE27-7011F02F38D6}" ShortID="220548479">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="State get hit" ID="{E2ED9D29-E463-4938-A5A7-976073D61580}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+													<ObjectRef Name="Kali_Speech_GetHit_RND" ID="{CD2598B8-D1E6-49F7-AA4F-80DD377924A3}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1329,6 +1318,31 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="your_soul_will_be_mine" ID="{45B2C95D-88DB-4265-8E46-5EE59DF99760}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_Random_Lines_LOOP" ID="{B012DD18-59B5-477E-8BBE-23002959BF86}">
+									<ChildrenList>
+										<Action Name="" ID="{B200E43C-551B-431A-AFEC-35ECAA12F5C7}" ShortID="841001815">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Kali_Speech_Random_SEQ_LOOP" ID="{2CA907EB-DAF5-4D65-973B-667FC3F36B20}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ID="{5E8D3608-0C67-4EE7-853F-E80D576BB461}">
+									<ChildrenList>
+										<Action Name="" ID="{2FBDA9B0-A566-461F-BF72-3FF2BE81AA38}" ShortID="733325027">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Kali_Speech_Random_SEQ_LOOP" ID="{2CA907EB-DAF5-4D65-973B-667FC3F36B20}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
