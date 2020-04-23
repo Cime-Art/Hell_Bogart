@@ -16,6 +16,7 @@
 						<ObjectRef Name="E_Speech_Kali_your_soul_will_be_mine" ID="{5A309616-32CE-406D-82D2-39841971695E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_StartCharge" ID="{2D9AC109-54F9-4094-9356-2C92FC0E1726}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_Ulti_NoBoss_Starter" ID="{99729638-2CF4-4103-B8A7-139137D94378}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Speech_Kali_STOP_Track_Spot_LOOP" ID="{26539762-BDB5-4127-929D-06FAF939D983}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="HB_PickUpHealthkit" ID="{DEA28796-4AA7-4143-826C-1AE6D1E87BD7}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Play_Grenade" ID="{55E9DB6F-559F-416D-91AF-A1309789F473}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_GroundSwitch_Low" ID="{A2B52A0D-7E86-417C-8549-9409C23B8675}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
@@ -41,7 +42,7 @@
 						<ObjectRef Name="E_Mob_Gardian_Hit" ID="{3F9B7232-704F-4590-B051-F3C8ACBF3D64}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SetAcoustic_BossArena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_BOSS_AfterSlashCaC" ID="{7F181389-D435-4644-8A6F-2DB8977E4696}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Kali_State_Voice_Track" ID="{1E4DE0CA-0A19-4663-9F04-6C377AA3D4ED}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Speech_Kali_Track_Spot_LOOP" ID="{1E4DE0CA-0A19-4663-9F04-6C377AA3D4ED}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SetAcoustic_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Scream" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>

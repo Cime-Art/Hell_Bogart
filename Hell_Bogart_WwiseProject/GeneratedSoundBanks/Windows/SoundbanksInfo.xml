@@ -898,9 +898,10 @@
 				<Event Id="2204209177" Name="E_Speech_Kali_i_will_put_you_to_rest" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_i_will_put_you_to_rest"/>
 				<Event Id="1343698428" Name="E_Speech_Kali_State_attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_State_attack"/>
 				<Event Id="3165196994" Name="E_Speech_Kali_State_get_hit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_State_get_hit"/>
-				<Event Id="3955111074" Name="E_Speech_Kali_State_Voice_Track" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_State_Voice_Track"/>
+				<Event Id="1334298806" Name="E_Speech_Kali_STOP_Track_Spot_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_STOP_Track_Spot_LOOP"/>
 				<Event Id="2428615881" Name="E_Speech_Kali_the_chase_is_on" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_the_chase_is_on"/>
 				<Event Id="4001924455" Name="E_Speech_Kali_there_is_no_escape" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_there_is_no_escape"/>
+				<Event Id="219905063" Name="E_Speech_Kali_Track_Spot_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Track_Spot_LOOP"/>
 				<Event Id="1617862160" Name="E_Speech_Kali_your_soul_will_be_mine" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_your_soul_will_be_mine"/>
 				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
 				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
