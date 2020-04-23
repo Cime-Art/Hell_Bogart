@@ -892,14 +892,15 @@
 				<Event Id="1655997511" Name="E_Speech_Bear_LosingLife" ObjectPath="\Events\Simon\Voice\Bear\LoosingLife\E_Speech_Bear_LosingLife"/>
 				<Event Id="881475495" Name="E_Speech_Bear_Ulti_Boss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_Boss_Starter"/>
 				<Event Id="3970556566" Name="E_Speech_Bear_Ulti_NoBoss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_NoBoss_Starter"/>
+				<Event Id="3244386490" Name="E_Speech_Kali_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Attack"/>
 				<Event Id="64626783" Name="E_Speech_Kali_Before_Big_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Before_Big_Attack"/>
 				<Event Id="303195765" Name="E_Speech_Kali_GetHit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_GetHit"/>
 				<Event Id="3925619008" Name="E_Speech_Kali_Grab" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Grab"/>
+				<Event Id="2894307937" Name="E_Speech_Kali_Hit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Hit"/>
 				<Event Id="2742739284" Name="E_Speech_Kali_i_will_end_your_suffering" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_i_will_end_your_suffering"/>
 				<Event Id="2204209177" Name="E_Speech_Kali_i_will_put_you_to_rest" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_i_will_put_you_to_rest"/>
 				<Event Id="4177976852" Name="E_Speech_Kali_Random_Lines_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_LOOP"/>
 				<Event Id="3985088299" Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_STOP_LOOP"/>
-				<Event Id="1343698428" Name="E_Speech_Kali_State_attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_State_attack"/>
 				<Event Id="2428615881" Name="E_Speech_Kali_the_chase_is_on" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_the_chase_is_on"/>
 				<Event Id="4001924455" Name="E_Speech_Kali_there_is_no_escape" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_there_is_no_escape"/>
 				<Event Id="1617862160" Name="E_Speech_Kali_your_soul_will_be_mine" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_your_soul_will_be_mine"/>

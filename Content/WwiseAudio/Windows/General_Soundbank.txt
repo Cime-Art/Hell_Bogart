@@ -32,7 +32,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1306962266	E_play_Minigun_Stop			\Ben\E_play_Minigun_Stop	
 	1319469614	E_Mob_JungleCharlie_Iddle			\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle	
 	1324023236	E_KaliBoss_Grab			\Chris\HB_Kali Events\Grab\E_KaliBoss_Grab	
-	1343698428	E_Speech_Kali_State_attack			\Simon\Voice\Kali\E_Speech_Kali_State_attack	
 	1363676921	E_KaliBoss_Slash			\Chris\HB_Kali Events\SLASHS\E_KaliBoss_Slash	
 	1418412915	E_SetAcoustic_Ruines			\Simon\Global\Acoustics\E_SetAcoustic_Ruines	
 	1482865096	E_Coffre_Pierre			\Brian\Coffre\E_Coffre_Pierre	
@@ -67,6 +66,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2759949120	HB_Healthkit			\Chris\HB_Ui_Character\HB_Healthkit	
 	2798184598	E_UI_Exit			\Brian\UI\E_UI_Exit	
 	2857119571	HB_UiAmmo_EVENT			\Chris\HB_Ui_Character\HB_UiAmmo_EVENT	
+	2894307937	E_Speech_Kali_Hit			\Simon\Voice\Kali\E_Speech_Kali_Hit	
 	2920923470	E_UI_Overlay			\Brian\UI\E_UI_Overlay	
 	3031028797	E_Speech_Bear_Loot_Normal			\Simon\Voice\Bear\Loot\E_Speech_Bear_Loot_Normal	
 	3071693117	E_Speech_Bear_Grenade_Begin			\Simon\Voice\Bear\Grenade\E_Speech_Bear_Grenade_Begin	
@@ -74,6 +74,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3105411141	E_Coffre_Loquet			\Brian\Coffre\E_Coffre_Loquet	
 	3156110896	E_MobJungleCharlie_GetHit			\Simon\Enemies\MobJungleCharlie\GetHit\E_MobJungleCharlie_GetHit	
 	3189034779	E_FTP_surface_type_switch			\Alex\E_FTP_surface_type_switch	
+	3244386490	E_Speech_Kali_Attack			\Simon\Voice\Kali\E_Speech_Kali_Attack	
 	3284918817	Play_Shotgun_EVENT			\Simon\Weapons\Play_Shotgun_EVENT	
 	3318371348	E_KaliBoss_Impact			\Chris\HB_Kali Events\JUMP IMPACT\E_KaliBoss_Impact	
 	3359588815	E_SetAcoustic_BossArena			\Simon\Global\Acoustics\E_SetAcoustic_BossArena	
@@ -152,7 +153,6 @@ State Group	ID	Name			Wwise Object Path	Notes
 	393509290	Footstep_Charge			\Brian\Guardian\Footstep_Charge	
 	916310236	Ammo_Type_STATE			\Simon\Items\Ammo_Type_STATE	
 	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
-	1646215745	Kali_AttackType_STATE			\Alex\Kali_AttackType_STATE	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
 	3424336725	Kali_Track_Spot_STATE			\Alex\Kali_Track_Spot_STATE	
 	4121978141	Shotgun_Equiped_STATE			\Simon\Items\Shotgun_Equiped_STATE	
@@ -174,9 +174,6 @@ State	ID	Name	State Group			Notes
 	0	None	IsInATrap_STATE			
 	645492555	Out	IsInATrap_STATE			
 	1752637612	In	IsInATrap_STATE			
-	0	None	Kali_AttackType_STATE			
-	180661997	Attack	Kali_AttackType_STATE			
-	839543372	Big_attack	Kali_AttackType_STATE			
 	0	None	Chamber_Type_STATE			
 	252199009	Spread_60	Chamber_Type_STATE			
 	419409252	Spread_180	Chamber_Type_STATE			
@@ -218,9 +215,9 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	99860651	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\EXPLO Continuous\Bear_Speech_EXPLO_Random_SEQ_CONT\No_Speech_EXPLO_Random\Wwise Silence	
 	111212027	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Grenades\Bear_Speech_Grenade_Starter_RND\No_Speech_Grenade\Wwise Silence	
 	191053142	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Loot\Bear_Speech_Loot_RND\No_Speech_Loot\Wwise Silence	
-	240244597	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Big Attack\No_Speech_Kali_Attack\Wwise Silence	
+	240244597	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Hit\Hit\No_Speech_Kali_Hit\Wwise Silence	
 	240337968	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Against Charlie\Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT\Bear_Speech_AgainstChalie_ContinueFight_SEQ_CONT\No_Speech_AgainstCharlie_DuringFight\Wwise Silence	
-	281451009	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Attack\No_Speech_Kali_Attack\Wwise Silence	
+	281451009	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\Attack\No_Speech_Kali_Attack\Wwise Silence	
 	349241041	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\SFX\Traps\Traps\Gros Tronc Trap\Gros_Tronc_Trap_SEQ\Gros_Tronc_Impact_Verif_SWITCH\Silence\Wwise Silence	
 	386495945	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\BOSS Events\Bear_Speech_BOSS_AfterSlashCaC_RND\No_Speech_BOSS_AfterSlashCaC\Wwise Silence	
 	413377738	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\SFX\Traps\Traps\Spike Trap\Spike_Trap_SEQ\IsInSpikeTrap_SWITCH\Silence\Wwise Silence	
@@ -452,7 +449,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	458831136	HB_FTP_Flaque_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_FTP_Flaque_02_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\SFX\Footstep\Footsteps\FTP_surface_type_switch\FTP_Flaques_RND\HB_FTP_Flaque_02		26514
 	464167368	HB_SFX_Shotgun_NoChamber_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_NoChamber_00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Chamber_Type_SWITCH\No_Chamber_RND\HB_SFX_Shotgun_NoChamber_00		16106
 	464707944	HB-SFX-UImenu-Play	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-UImenu-Play_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\UI\MIX_UI\HB-SFX-UImenu-Play		78944
-	467470043	die	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\die_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Big Attack\Kali_Speech_Big_Attack_RND\die		378860
+	467470043	die	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\die_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Hit\Hit\Kali_Speech_Hit_RND\die		378860
 	467856361	HB-SFX-Gardian-HitPlayer_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Gardian-HitPlayer_02_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Stone_Gardian\MIX_StoneGardian\MIX_HitPlayer\RND_HitPlayer\HB-SFX-Gardian-HitPlayer_02		303316
 	472789580	Grenade_SFX_Ground_Wood_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Grenade_SFX_Ground_Wood_00_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Ground_SWITCH\Wood\Grenade_SFX_Ground_Wood_00		303316
 	475995238	Commun	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-GenadeElec-00_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Thunder\Commun		419160
@@ -470,7 +467,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	500196847	SFX_HB_Destructibles_Jarre_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Destructibles_Jarre_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Destructibles\Destructibles\Destroy_Object_SWITCH\Destroy_Jarre_RND\SFX_HB_Destructibles_Jarre_02		121654
 	502360136	HB_SFX_Shotgun_EndDropShell_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_EndDropShell_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\Drop_Shell_SWITCH\Drop_Shell_SEQ\End_Drop\HB_SFX_Shotgun_EndDropShell_02		87504
 	502994512	VOICE_HB_Bear_CombatEnd_2-4_SeeYouMotherFucker	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_CombatEnd_2-4_SeeYouMotherFucker_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Against Charlie\Bear_Speech_EndFight_RND\VOICE_HB_Bear_CombatEnd_2-4_SeeYouMotherFucker		176324
-	504436301	suffer	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\suffer_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Big Attack\Kali_Speech_Big_Attack_RND\suffer		352044
+	504436301	suffer	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\suffer_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Hit\Hit\Kali_Speech_Hit_RND\suffer		352044
 	505838822	Legendary	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-GenadeElec-02_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Thunder\Legendary		456960
 	506878004	VOICE_HB_Bear_UltiStarter_Contact_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_UltiStarter_Contact_04_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Ulti\Bear_Speech_Ulti_NotBoss_RND\VOICE_HB_Bear_UltiStarter_Contact_04		80128
 	508221935	SFX_HB_MobJungleCharlie_GetHit_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_GetHit_02_D85D2276.wem		\Actor-Mixer Hierarchy\Simon\SFX\Enemies\Mob Jungle Charlie\Get Hit\MobJungleCharlie_GetHit_MAIN_RND\SFX_HB_MobJungleCharlie_GetHit_02		27374
@@ -491,7 +488,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	532242473	SFX-HB-MobJungleCharlie-Hit-00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX-HB-MobJungleCharlie-Hit-00_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Enemies\Mob Jungle Charlie\Hit\Hit_MobJungleCharlie\SFX-HB-MobJungleCharlie-Hit-00		33578
 	533650562	HB-SFX-Gardian-FootstepCharge_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Gardian-FootstepCharge_01_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Stone_Gardian\MIX_StoneGardian\MIX_Footstep\SWITCH_Footstep\RND_Footstep_Charge\HB-SFX-Gardian-FootstepCharge_01		150540
 	540566815	HB-SFX-Gardian-GetHit_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Gardian-GetHit_00_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Stone_Gardian\MIX_StoneGardian\MIX_GetHit\RND_GetHit\HB-SFX-Gardian-GetHit_00		152904
-	545236896	laugh2	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\laugh2_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Big Attack\Kali_Speech_Big_Attack_RND\laugh2		526356
+	545236896	laugh2	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\laugh2_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Hit\Hit\Kali_Speech_Hit_RND\laugh2		526356
 	545424023	VOICE_HB_Bear_GrenadeStarter_2-2_BearStyle	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_GrenadeStarter_2-2_BearStyle_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Grenades\Bear_Speech_Grenade_Starter_RND\Bear_Speech_Grenade_Speech_RND\VOICE_HB_Bear_GrenadeStarter_2-2_BearStyle		145324
 	545463051	SFX_HB_Other_OpenStoneDoorRiddle	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Other_OpenStoneDoorRiddle_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Enviro\Stone Door Riddle\SFX_HB_Other_OpenStoneDoorRiddle		600192
 	552564079	HB_SFX_Shotgun_RegularCanon_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_RegularCanon_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Canon_Type_SWITCH\Regular_Canon_RND\HB_SFX_Shotgun_RegularCanon_01		47986
@@ -510,7 +507,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	568154459	HB-SFX-Gardian-Stomp_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Gardian-Stomp_02_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Stone_Gardian\MIX_StoneGardian\MIX_Stomp\RND_Stomp\HB-SFX-Gardian-Stomp_02		511216
 	568783539	VOICE_HB_Bear_Explo_1-3_CharlieWhereAreYou	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_Explo_1-3_CharlieWhereAreYou_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\EXPLO Continuous\Bear_Speech_EXPLO_Random_SEQ_CONT\Bear_Speech_EXPLO_Random_RND\VOICE_HB_Bear_Explo_1-3_CharlieWhereAreYou		213418
 	570978224	Commun	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-GenadeFire-00_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Fire\Commun		381360
-	579166449	laugh1	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\laugh1_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Big Attack\Kali_Speech_Big_Attack_RND\laugh1		643680
+	579166449	laugh1	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\laugh1_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Hit\Hit\Kali_Speech_Hit_RND\laugh1		643680
 	579289829	VOICE_HB_Bear_AfterShoot_3-4_RestInPeace	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_AfterShoot_3-4_RestInPeace_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Against Charlie\Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT\Bear_Speech_AgainstChalie_ContinueFight_SEQ_CONT\Bear_Speech_AgainstCharlie_DuringFight_RND_LOOP\VOICE_HB_Bear_AfterShoot_3-4_RestInPeace		237628
 	581294037	HB-SFX-Gardian-Footstep_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Gardian-Footstep_04_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Stone_Gardian\MIX_StoneGardian\MIX_Footstep\SWITCH_Footstep\RND_Footstep\HB-SFX-Gardian-Footstep_04		186764
 	581784882	HB_SFX_Shotgun_CanonTranspercant_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_CanonTranspercant_01_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Canon_Type_SWITCH\Canon_Transpercant_RND\HB_SFX_Shotgun_CanonTranspercant_01		72108
@@ -554,7 +551,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	672867481	SFX_HB_MobJungleCharlie_Exploded_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Exploded_03_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Enemies\Mob Jungle Charlie\Exploded\Exploded_Bones_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Exploded_03		151522
 	672905168	HB-SFX-UImenu-Exit	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-UImenu-Exit_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\UI\MIX_UI\HB-SFX-UImenu-Exit		57680
 	676028387	VOICE_HB_Bear_GrenadeStarter_1-3_GreenBalls	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_GrenadeStarter_1-3_GreenBalls_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Grenades\Bear_Speech_Grenade_Starter_RND\Bear_Speech_Grenade_Speech_RND\VOICE_HB_Bear_GrenadeStarter_1-3_GreenBalls		184338
-	679519239	attacking3	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\attacking3_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Attack\Kali_Speech_Attack_RND\attacking3		328580
+	679519239	attacking3	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\attacking3_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\Attack\Kali_Speech_Attack_RND\attacking3		328580
 	681370907	SFX_HB_MobJungleCharlie_Exploded_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_MobJungleCharlie_Exploded_02_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Enemies\Mob Jungle Charlie\Exploded\Exploded_Bones_MobJungleCharlie_RND\SFX_HB_MobJungleCharlie_Exploded_02		126658
 	682102811	VOICE_HB_Bear_Bossline_8-3_BodyIsReady	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_Bossline_8-3_BodyIsReady_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\BOSS Continuous\Bear_Speech_BOSS_DuringFight_SEQ_CONT\Bear_Speech_BOSS_DuringFight_RND_LOOP\VOICE_HB_Bear_Bossline_8-3_BodyIsReady		116722
 	685052240	Shell_Wood_05	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Shell_Wood_05_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Wood\Shell_Wood_05		71634
@@ -590,7 +587,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	750198670	SFX-HB-CoffreMetalVieux_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX-HB-CoffreMetalVieux_01_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Coffre\MIX_Coffre\MIX_Coffre_Metal_Vieux\RAND_Coffre_Metal_Vieux\SFX-HB-CoffreMetalVieux_01		160776
 	751258681	Grenade_SFX_Ground_Dirt_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Grenade_SFX_Ground_Dirt_01_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Ground_SWITCH\Dirt\Grenade_SFX_Ground_Dirt_01		310404
 	754682193	SFX_OTHERS_GroundSwitch_Klonk3	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_OTHERS_GroundSwitch_Klonk3_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\SFX\Enviro\Ground Stone Switch\SFX_OTHERS_GroundSwitch_Klonk3		576240
-	755306815	attacking2	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\attacking2_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Attack\Kali_Speech_Attack_RND\attacking2		409028
+	755306815	attacking2	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\attacking2_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\Attack\Kali_Speech_Attack_RND\attacking2		409028
 	756092202	HB_Heartbeat_slow	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Other_HeartbeatSlow_C196C064.wem		\Actor-Mixer Hierarchy\Chris\character\other\HeartBeat\HB_Heartbeat_slow		463564
 	756545490	SFX-HB-CoffrePierre	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX-HB-CoffrePierre_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Coffre\MIX_Coffre\MIX_Coffre_Pierre\RAND_Coffre_Pierre\SFX-HB-CoffrePierre		384428
 	756586809	HB_SFX_Shotgun_ThunderAmmo_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_ThunderAmmo_00_13824A88.wem		\Actor-Mixer Hierarchy\Simon\SFX\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Thunder_Ammo_RND\HB_SFX_Shotgun_ThunderAmmo_00		57622
@@ -684,7 +681,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1023057183	VOICE_HB_Bear_LosingLife_Fuck_08	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_LosingLife_Fuck_08_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Losing Life\Bear_Speech_LosingLife_RND\Bear_Speech_LosingLife_Speech_RND\Bear_Speech_LosingLife_FuckShit_RND\VOICE_HB_Bear_LosingLife_Fuck_08		63094
 	1028175132	FTP_bois_sec_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\FTP_bois_sec_01_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\SFX\Footstep\Footsteps\FTP_surface_type_switch\FTP_Bois_sec_RND\FTP_bois_sec_01		13220
 	1028693436	Commun	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB-SFX-Genade-00_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Regular\Commun		378996
-	1029656561	attacking4	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\attacking4_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Attack\Kali_Speech_Attack_RND\attacking4		321876
+	1029656561	attacking4	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\attacking4_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\Attack\Kali_Speech_Attack_RND\attacking4		321876
 	1034128009	VOICE_HB_Bear_AfterShoot_2-3_YourFaceMyBullets	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_AfterShoot_2-3_YourFaceMyBullets_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Bear Voice\Against Charlie\Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT\Bear_Speech_AgainstChalie_ContinueFight_SEQ_CONT\Bear_Speech_AgainstCharlie_DuringFight_RND_LOOP\VOICE_HB_Bear_AfterShoot_2-3_YourFaceMyBullets		430130
 	1034636194	FTP_bois_sec_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\FTP_bois_sec_03_10C4C929.wem		\Actor-Mixer Hierarchy\Alex\SFX\Footstep\Footsteps\FTP_surface_type_switch\FTP_Bois_sec_RND\FTP_bois_sec_03		12608
 	1035227437	Shell_Wood_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Shell_Wood_04_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\Shells\Wood\Shell_Wood_04		98686
@@ -702,7 +699,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1063645455	SFX-HB-PetiteBoiteMetal_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX-HB-PetiteBoiteMetal_01_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\Coffre\MIX_Coffre\MIX_Petite_Boite\RAND_Petite_Boite\SFX-HB-PetiteBoiteMetal_01		189916
 	1064636151	SF-DS Weapon Projectile 03_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SF-DS Weapon Projectile 03_04_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\MiniGun_Fire\Fire\Shoot_02\SF-DS Weapon Projectile 03_04		125664
 	1067846903	MnGn_Fire_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MnGn_Fire_02_10C4C929.wem		\Actor-Mixer Hierarchy\Ben\MiniGun\MiniGun_Fire\Fire\Shoot_01\MnGn_Fire_02		192064
-	1069007926	attacking1	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\attacking1_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\State attack\Attack\Kali_Speech_Attack_RND\attacking1		365452
+	1069007926	attacking1	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\attacking1_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Attack\Attack\Kali_Speech_Attack_RND\attacking1		365452
 	1069135617	HB_SFX_KALI_Grab_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_KALI_Grab_03_DB3A3AAB.wem		\Actor-Mixer Hierarchy\Chris\Kali Mechas\Kali Mix\Kali Grab Start ENd\Kali Grab Start\RND_Grabs\HB_SFX_KALI_Grab_03		156944
 	1069322071	are_you_prepared	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\are_you_prepared_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\VOICE\Voices Global\Kali Voice\Before Big Attack\Before Big Attack RDN\are_you_prepared		486132
 	1069671681	HB_SFX_Shotgun_Reload_In_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_Reload_In_00_6E84BCF9.wem		\Actor-Mixer Hierarchy\Simon\SFX\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\OutIn_SEQ\Reload_In\HB_SFX_Shotgun_Reload_In_00		24512
