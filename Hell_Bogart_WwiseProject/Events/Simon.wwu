@@ -1222,6 +1222,120 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Kali" ID="{90A10508-C7D2-4AF7-8699-0D8E7C6E0F29}" ShortID="786628082">
+							<ChildrenList>
+								<Event Name="E_Speech_Kali_Before_Big_Attack" ID="{6874B9C4-0495-4209-BA2A-E41DDE36FE22}">
+									<ChildrenList>
+										<Action Name="" ID="{77D80ABA-56DA-418B-BC11-8E83DC69E9FF}" ShortID="657015669">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Before Big Attack RDN" ID="{1FC4C998-E851-4EE1-B531-28E889051A0F}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_there_is_no_escape" ID="{879E93B0-8E7B-4DD7-9493-48CF7F1F6359}">
+									<ChildrenList>
+										<Action Name="" ID="{94F473E9-9F77-4634-9CCB-F39932647BDF}" ShortID="150468748">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="there_is_no_escape" ID="{D4096BB5-6F88-489D-A2A6-C361950361EA}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_the_chase_is_on" ID="{269A9003-0A06-4B40-943E-5B2EFE0BAD15}">
+									<ChildrenList>
+										<Action Name="" ID="{7825F76B-E2E7-4BF7-8685-FF4BB0205AF8}" ShortID="324783310">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="the_chase_is_on" ID="{AF63F0C0-42C3-4E1C-A598-8ECC1257F74A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_State_Voice_Track" ID="{1E4DE0CA-0A19-4663-9F04-6C377AA3D4ED}">
+									<ChildrenList>
+										<Action Name="" ID="{D8CF074D-2341-4CB4-A163-BDF2C1A4CDA9}" ShortID="582975505">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="State Voice Track" ID="{BF926BCE-199E-4AD9-84F1-41A7FDC1B15C}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_Grab" ID="{F814971F-A575-4260-83A5-60813DD2EE30}">
+									<ChildrenList>
+										<Action Name="" ID="{B4B7C8E9-4727-4CDE-B4F7-FB8AC5F7477A}" ShortID="135076971">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Grab" ID="{F9D26AD6-A72A-4783-8A69-525E8FAC01FD}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_State_attack" ID="{E99EB323-2B7C-4A1E-9771-272376756323}">
+									<ChildrenList>
+										<Action Name="" ID="{DBA2DD8A-1740-4527-9F48-9508D64F48B5}" ShortID="212533500">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="State attack" ID="{CC95C74B-68A6-48FC-8F57-AEE7769FB762}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_State_get_hit" ID="{74291BE7-7F5C-48C0-A186-A72C5DF06E0B}">
+									<ChildrenList>
+										<Action Name="" ID="{BD91FBE3-A6C2-414C-BE27-7011F02F38D6}" ShortID="220548479">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="State get hit" ID="{E2ED9D29-E463-4938-A5A7-976073D61580}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_i_will_end_your_suffering" ID="{F5AC8C9C-26C0-444C-8E18-09F7004C2CB1}">
+									<ChildrenList>
+										<Action Name="" ID="{A5E8E65F-1431-4BD7-96D5-2086955BF288}" ShortID="68119781">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="i_will_end_your_suffering" ID="{60B2BAE4-6C2F-4AAB-BB27-6D2576DD706A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_i_will_put_you_to_rest" ID="{B9B5A65A-92B7-4EC9-B686-2E89477BF927}">
+									<ChildrenList>
+										<Action Name="" ID="{06DA9B97-3F81-4EB7-A470-9EAD66E5FCDA}" ShortID="688324003">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="i_will_put_you_to_rest" ID="{D980E21E-6E9B-412E-AA59-28DCC4331CB2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_your_soul_will_be_mine" ID="{5A309616-32CE-406D-82D2-39841971695E}">
+									<ChildrenList>
+										<Action Name="" ID="{B52C57C1-98FD-48EC-9473-1A8020314FF8}" ShortID="14430455">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="your_soul_will_be_mine" ID="{45B2C95D-88DB-4265-8E46-5EE59DF99760}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
