@@ -1257,7 +1257,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Speech_Kali_State_Voice_Track" ID="{1E4DE0CA-0A19-4663-9F04-6C377AA3D4ED}">
+								<Event Name="E_Speech_Kali_Track_Spot_LOOP" ID="{1E4DE0CA-0A19-4663-9F04-6C377AA3D4ED}">
 									<ChildrenList>
 										<Action Name="" ID="{D8CF074D-2341-4CB4-A163-BDF2C1A4CDA9}" ShortID="582975505">
 											<ReferenceList>
@@ -1329,6 +1329,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="your_soul_will_be_mine" ID="{45B2C95D-88DB-4265-8E46-5EE59DF99760}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_STOP_Track_Spot_LOOP" ID="{26539762-BDB5-4127-929D-06FAF939D983}">
+									<ChildrenList>
+										<Action Name="" ID="{2A5B2793-8FA0-4387-8072-84E75A845262}" ShortID="656069878">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="State Voice Track" ID="{BF926BCE-199E-4AD9-84F1-41A7FDC1B15C}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
