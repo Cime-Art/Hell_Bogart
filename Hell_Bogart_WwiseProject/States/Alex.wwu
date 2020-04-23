@@ -3,21 +3,21 @@
 	<States>
 		<WorkUnit Name="Alex" ID="{2B589406-1478-457E-81DD-8C7EA2E34FA1}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="State_track" ID="{3DCA2689-D39E-4645-9F8C-C33098F529AF}">
+				<StateGroup Name="Kali_Track_Spot_STATE" ID="{3DCA2689-D39E-4645-9F8C-C33098F529AF}">
 					<ChildrenList>
 						<State Name="None" ID="{670CED5E-8BD5-4159-A6F1-5BFDCC82867B}"/>
 						<State Name="Track" ID="{8C33D995-A07B-471C-8513-D93B989D9CD2}"/>
 						<State Name="Spot" ID="{51213A68-3524-4206-927B-E1281ADB2A71}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="State_Gethit" ID="{65F66E03-0294-404A-98C6-3BEF70C285F5}">
+				<StateGroup Name="Kali_GetHitType_STATE" ID="{65F66E03-0294-404A-98C6-3BEF70C285F5}">
 					<ChildrenList>
 						<State Name="None" ID="{88FD3BBC-DA45-479E-800A-C9B15264D396}"/>
-						<State Name="normal" ID="{D0359902-42B8-4D68-86DF-D70D5E44C467}"/>
-						<State Name="critical" ID="{B8A584A5-DAE9-488F-9A9A-043FAC782C9A}"/>
+						<State Name="Normal" ID="{D0359902-42B8-4D68-86DF-D70D5E44C467}"/>
+						<State Name="Critical" ID="{B8A584A5-DAE9-488F-9A9A-043FAC782C9A}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="State_attack" ID="{5AF04E98-E970-4AFE-8442-1646D37B00B3}">
+				<StateGroup Name="Kali_AttackType_STATE" ID="{5AF04E98-E970-4AFE-8442-1646D37B00B3}">
 					<ChildrenList>
 						<State Name="None" ID="{30A3D9E3-6882-49DA-AB16-3D053D3CAAB5}"/>
 						<State Name="Attack" ID="{ADF6A120-4C12-45D1-9E5D-1F849A808E5B}"/>
