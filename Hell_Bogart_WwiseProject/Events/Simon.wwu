@@ -1268,12 +1268,12 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Speech_Kali_State_attack" ID="{E99EB323-2B7C-4A1E-9771-272376756323}">
+								<Event Name="E_Speech_Kali_Attack" ID="{E99EB323-2B7C-4A1E-9771-272376756323}">
 									<ChildrenList>
 										<Action Name="" ID="{DBA2DD8A-1740-4527-9F48-9508D64F48B5}" ShortID="212533500">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="State attack" ID="{CC95C74B-68A6-48FC-8F57-AEE7769FB762}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+													<ObjectRef Name="Attack" ID="{C7F4F375-C5B2-4F41-8452-7BD992B01E93}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1343,6 +1343,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Kali_Speech_Random_SEQ_LOOP" ID="{2CA907EB-DAF5-4D65-973B-667FC3F36B20}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_Hit" ID="{75FAAFBA-138D-4343-8C66-DAC7CE2B9067}">
+									<ChildrenList>
+										<Action Name="" ID="{36D77DCD-379A-4D7F-8128-DAF57C5DC47B}" ShortID="455482861">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hit" ID="{FD96A7ED-C6E6-4D25-9C61-72A090ECFD2C}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
