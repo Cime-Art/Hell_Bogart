@@ -2257,6 +2257,37 @@
 								</ActorMixer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Amb Kali Whisper" ID="{6434BE24-D45A-4C91-A2BD-B7BCC3820FB6}" ShortID="960897078">
+							<ChildrenList>
+								<Sound Name="KAli whisper 02" ID="{94AD9DC8-F257-43B2-ACF4-6CF6F879940A}" ShortID="44341792">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="KAli whisper 02" ID="{52B855C7-C588-4D9B-8708-CB6AD15CCF8D}" ShortID="716344437">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="LoopEnd" Type="Real64" Value="40.3098412698413"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>KAli whisper 02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="KAli whisper 02" ID="{52B855C7-C588-4D9B-8708-CB6AD15CCF8D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

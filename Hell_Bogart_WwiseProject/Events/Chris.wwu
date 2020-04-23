@@ -89,9 +89,9 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="HIT" ID="{D315A34E-EB9C-4649-B843-2AF50BA93FF9}" ShortID="832227846">
+						<Folder Name="GET HIT" ID="{D315A34E-EB9C-4649-B843-2AF50BA93FF9}" ShortID="832227846">
 							<ChildrenList>
-								<Event Name="E_KaliBoss_Hit" ID="{88969CA4-14DD-4841-985D-F8B504417AA9}">
+								<Event Name="E_KaliBoss_GetHit" ID="{88969CA4-14DD-4841-985D-F8B504417AA9}">
 									<ChildrenList>
 										<Action Name="" ID="{BA8581C7-DDF6-4D05-A597-6247CF8BE2A6}" ShortID="250640048">
 											<ReferenceList>

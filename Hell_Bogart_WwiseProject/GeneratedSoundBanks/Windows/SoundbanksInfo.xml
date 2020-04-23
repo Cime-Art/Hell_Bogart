@@ -841,9 +841,9 @@
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1494526797" Name="E_HPChange" ObjectPath="\Events\Simon\Character\E_HPChange"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
+				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\GET HIT\E_KaliBoss_GetHit"/>
 				<Event Id="1324023236" Name="E_KaliBoss_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_Grab"/>
 				<Event Id="2252209331" Name="E_KaliBoss_GrandEND" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_GrandEND"/>
-				<Event Id="1005491101" Name="E_KaliBoss_Hit" ObjectPath="\Events\Chris\HB_Kali Events\HIT\E_KaliBoss_Hit"/>
 				<Event Id="3318371348" Name="E_KaliBoss_Impact" ObjectPath="\Events\Chris\HB_Kali Events\JUMP IMPACT\E_KaliBoss_Impact"/>
 				<Event Id="658884810" Name="E_KaliBoss_Jump" ObjectPath="\Events\Chris\HB_Kali Events\JUMP IMPACT\E_KaliBoss_Jump"/>
 				<Event Id="1363676921" Name="E_KaliBoss_Slash" ObjectPath="\Events\Chris\HB_Kali Events\SLASHS\E_KaliBoss_Slash"/>
@@ -876,13 +876,6 @@
 				<Event Id="212888376" Name="E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP"/>
 				<Event Id="1044613943" Name="E_Speech_Bear_AgainstCharlie_EndFight_SetExplo" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_EndFight_SetExplo"/>
 				<Event Id="2655041407" Name="E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY"/>
-				<Event Id="709799615" Name="E_Speech_Bear_BOSS_AfterBigAttack" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_AfterBigAttack"/>
-				<Event Id="3541588761" Name="E_Speech_Bear_BOSS_AfterSlashCaC" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_AfterSlashCaC"/>
-				<Event Id="52447643" Name="E_Speech_Bear_BOSS_DuringFight_LOOP" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_DuringFight_LOOP"/>
-				<Event Id="3090329286" Name="E_Speech_Bear_BOSS_DuringFight_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_DuringFight_STOP_LOOP"/>
-				<Event Id="1647351970" Name="E_Speech_Bear_BOSS_GiveDmgToKali" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_GiveDmgToKali"/>
-				<Event Id="4130951651" Name="E_Speech_Bear_BOSS_LooseHerMask_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_LooseHerMask_PRIORITY"/>
-				<Event Id="2317185274" Name="E_Speech_Bear_BOSS_MySoulmate_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\BOSS\E_Speech_Bear_BOSS_MySoulmate_PRIORITY"/>
 				<Event Id="4231375772" Name="E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY"/>
 				<Event Id="2359215024" Name="E_Speech_Bear_EXPLO_Random_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_LOOP"/>
 				<Event Id="2025380871" Name="E_Speech_Bear_EXPLO_Random_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_STOP_LOOP"/>
@@ -894,16 +887,16 @@
 				<Event Id="3970556566" Name="E_Speech_Bear_Ulti_NoBoss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_NoBoss_Starter"/>
 				<Event Id="3244386490" Name="E_Speech_Kali_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Attack"/>
 				<Event Id="64626783" Name="E_Speech_Kali_Before_Big_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Before_Big_Attack"/>
+				<Event Id="2269350735" Name="E_Speech_Kali_FirstEncounter" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_FirstEncounter"/>
 				<Event Id="303195765" Name="E_Speech_Kali_GetHit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_GetHit"/>
 				<Event Id="3925619008" Name="E_Speech_Kali_Grab" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Grab"/>
 				<Event Id="2894307937" Name="E_Speech_Kali_Hit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Hit"/>
-				<Event Id="2742739284" Name="E_Speech_Kali_i_will_end_your_suffering" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_i_will_end_your_suffering"/>
-				<Event Id="2204209177" Name="E_Speech_Kali_i_will_put_you_to_rest" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_i_will_put_you_to_rest"/>
+				<Event Id="1105627200" Name="E_Speech_Kali_IntroduceMother" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_IntroduceMother"/>
+				<Event Id="2376769881" Name="E_Speech_Kali_LostHerMask" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_LostHerMask"/>
 				<Event Id="4177976852" Name="E_Speech_Kali_Random_Lines_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_LOOP"/>
 				<Event Id="3985088299" Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_STOP_LOOP"/>
-				<Event Id="2428615881" Name="E_Speech_Kali_the_chase_is_on" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_the_chase_is_on"/>
-				<Event Id="4001924455" Name="E_Speech_Kali_there_is_no_escape" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_there_is_no_escape"/>
-				<Event Id="1617862160" Name="E_Speech_Kali_your_soul_will_be_mine" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_your_soul_will_be_mine"/>
+				<Event Id="3478273789" Name="E_Speech_Kali_Speech_TheChaseIsOn" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Speech_TheChaseIsOn"/>
+				<Event Id="4237626404" Name="E_Speech_Kali_ThereIsNoEscape" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_ThereIsNoEscape"/>
 				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
 				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
 				<Event Id="658926298" Name="E_Traps_GrosseBoule" ObjectPath="\Events\Simon\Traps\E_Traps_GrosseBoule"/>
@@ -1132,7 +1125,7 @@
 				</File>
 				<File Id="153220038" Language="SFX">
 					<ShortName>i_will_end_your_suffering.WAV</ShortName>
-					<Path>SFX\i_will_end_your_suffering_10C4C929.wem</Path>
+					<Path>SFX\i_will_end_your_suffering_ECEDD4F7.wem</Path>
 				</File>
 				<File Id="154187278" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-SpearLaunch-01.wav</ShortName>
@@ -1388,7 +1381,7 @@
 				</File>
 				<File Id="280905315" Language="SFX">
 					<ShortName>come_closer.WAV</ShortName>
-					<Path>SFX\come_closer_10C4C929.wem</Path>
+					<Path>SFX\come_closer_3D4749BB.wem</Path>
 				</File>
 				<File Id="282251612" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Stone_03.wav</ShortName>
@@ -1464,7 +1457,7 @@
 				</File>
 				<File Id="314355310" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_3-2_Bouh.wav</ShortName>
-					<Path>SFX\VOICE_HB_Bear_Bossline_3-2_Bouh_10C4C929.wem</Path>
+					<Path>SFX\VOICE_HB_Bear_Bossline_3-2_Bouh_3103B8CB.wem</Path>
 				</File>
 				<File Id="320764015" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Wood_01.wav</ShortName>
@@ -1508,7 +1501,7 @@
 				</File>
 				<File Id="335086039" Language="SFX">
 					<ShortName>try_again_sweetheart.WAV</ShortName>
-					<Path>SFX\try_again_sweetheart_10C4C929.wem</Path>
+					<Path>SFX\try_again_sweetheart_1769A2FC.wem</Path>
 				</File>
 				<File Id="337804232" Language="SFX">
 					<ShortName>HB_SFX_UiWep_Equip4.wav</ShortName>
@@ -1624,7 +1617,7 @@
 				</File>
 				<File Id="384374704" Language="SFX">
 					<ShortName>i_will_put_you_to_rest.WAV</ShortName>
-					<Path>SFX\i_will_put_you_to_rest_10C4C929.wem</Path>
+					<Path>SFX\i_will_put_you_to_rest_A60F3DDB.wem</Path>
 				</File>
 				<File Id="386008256" Language="SFX">
 					<ShortName>HB-SFX-Gardian-GetHit_03.wav</ShortName>
@@ -1684,7 +1677,7 @@
 				</File>
 				<File Id="406524243" Language="SFX">
 					<ShortName>you_will_pay.WAV</ShortName>
-					<Path>SFX\you_will_pay_10C4C929.wem</Path>
+					<Path>SFX\you_will_pay_17E0F68F.wem</Path>
 				</File>
 				<File Id="407438892" Language="SFX">
 					<ShortName>MnGn_Barrel_Down.wav</ShortName>
@@ -1712,7 +1705,7 @@
 				</File>
 				<File Id="426099214" Language="SFX">
 					<ShortName>prepare_to_die.WAV</ShortName>
-					<Path>SFX\prepare_to_die_10C4C929.wem</Path>
+					<Path>SFX\prepare_to_die_70AD1049.wem</Path>
 				</File>
 				<File Id="431303083" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_StartDropShell_03.wav</ShortName>
@@ -1796,7 +1789,7 @@
 				</File>
 				<File Id="467470043" Language="SFX">
 					<ShortName>die.WAV</ShortName>
-					<Path>SFX\die_10C4C929.wem</Path>
+					<Path>SFX\die_44366E58.wem</Path>
 				</File>
 				<File Id="467856361" Language="SFX">
 					<ShortName>HB-SFX-Gardian-HitPlayer_02.wav</ShortName>
@@ -1868,7 +1861,7 @@
 				</File>
 				<File Id="504436301" Language="SFX">
 					<ShortName>suffer.WAV</ShortName>
-					<Path>SFX\suffer_10C4C929.wem</Path>
+					<Path>SFX\suffer_E9CB34E6.wem</Path>
 				</File>
 				<File Id="505838822" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-02.wav</ShortName>
@@ -1904,7 +1897,7 @@
 				</File>
 				<File Id="516664485" Language="SFX">
 					<ShortName>you_will_suffer.WAV</ShortName>
-					<Path>SFX\you_will_suffer_10C4C929.wem</Path>
+					<Path>SFX\you_will_suffer_BE544E6C.wem</Path>
 				</File>
 				<File Id="516820031" Language="SFX">
 					<ShortName>FTP_sol sec_02.wav</ShortName>
@@ -1952,7 +1945,7 @@
 				</File>
 				<File Id="545236896" Language="SFX">
 					<ShortName>laugh2.WAV</ShortName>
-					<Path>SFX\laugh2_10C4C929.wem</Path>
+					<Path>SFX\laugh2_3F1407A4.wem</Path>
 				</File>
 				<File Id="545424023" Language="SFX">
 					<ShortName>VOICE_HB_Bear_GrenadeStarter_2-2_BearStyle.wav</ShortName>
@@ -2028,7 +2021,7 @@
 				</File>
 				<File Id="579166449" Language="SFX">
 					<ShortName>laugh1.WAV</ShortName>
-					<Path>SFX\laugh1_10C4C929.wem</Path>
+					<Path>SFX\laugh1_ABECD28B.wem</Path>
 				</File>
 				<File Id="579289829" Language="SFX">
 					<ShortName>VOICE_HB_Bear_AfterShoot_3-4_RestInPeace.wav</ShortName>
@@ -2204,7 +2197,7 @@
 				</File>
 				<File Id="679519239" Language="SFX">
 					<ShortName>attacking3.WAV</ShortName>
-					<Path>SFX\attacking3_10C4C929.wem</Path>
+					<Path>SFX\attacking3_331E3675.wem</Path>
 				</File>
 				<File Id="681370907" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Exploded_02.wav</ShortName>
@@ -2268,7 +2261,7 @@
 				</File>
 				<File Id="719636920" Language="SFX">
 					<ShortName>no.WAV</ShortName>
-					<Path>SFX\no_10C4C929.wem</Path>
+					<Path>SFX\no_08AB8117.wem</Path>
 				</File>
 				<File Id="720473691" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Tronc_02.wav</ShortName>
@@ -2304,7 +2297,7 @@
 				</File>
 				<File Id="740705521" Language="SFX">
 					<ShortName>come_here.WAV</ShortName>
-					<Path>SFX\come_here_10C4C929.wem</Path>
+					<Path>SFX\come_here_03F4B300.wem</Path>
 				</File>
 				<File Id="741470113" Language="SFX">
 					<ShortName>60 - .45 auto shell single shell on hard packed dirt-03.wav</ShortName>
@@ -2348,7 +2341,7 @@
 				</File>
 				<File Id="755306815" Language="SFX">
 					<ShortName>attacking2.WAV</ShortName>
-					<Path>SFX\attacking2_10C4C929.wem</Path>
+					<Path>SFX\attacking2_FBEF48EB.wem</Path>
 				</File>
 				<File Id="756092202" Language="SFX">
 					<ShortName>HB_SFX_Other_HeartbeatSlow.wav</ShortName>
@@ -2373,6 +2366,10 @@
 				<File Id="761814132" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Spread180_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread180_01_10C4C929.wem</Path>
+				</File>
+				<File Id="764513421" Language="SFX">
+					<ShortName>SFX_HB_Traps_Explo_Grosse_Boule.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_Explo_Grosse_Boule_10C4C929.wem</Path>
 				</File>
 				<File Id="778412427" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_10-4_WifeNotApreciateThat.wav</ShortName>
@@ -2724,7 +2721,7 @@
 				</File>
 				<File Id="1029656561" Language="SFX">
 					<ShortName>attacking4.WAV</ShortName>
-					<Path>SFX\attacking4_10C4C929.wem</Path>
+					<Path>SFX\attacking4_073110C4.wem</Path>
 				</File>
 				<File Id="1034128009" Language="SFX">
 					<ShortName>VOICE_HB_Bear_AfterShoot_2-3_YourFaceMyBullets.wav</ShortName>
@@ -2796,7 +2793,7 @@
 				</File>
 				<File Id="1069007926" Language="SFX">
 					<ShortName>attacking1.WAV</ShortName>
-					<Path>SFX\attacking1_10C4C929.wem</Path>
+					<Path>SFX\attacking1_BE246A78.wem</Path>
 				</File>
 				<File Id="1069135617" Language="SFX">
 					<ShortName>HB_SFX_KALI_Grab_03.wav</ShortName>
@@ -2804,7 +2801,7 @@
 				</File>
 				<File Id="1069322071" Language="SFX">
 					<ShortName>are_you_prepared.WAV</ShortName>
-					<Path>SFX\are_you_prepared_10C4C929.wem</Path>
+					<Path>SFX\are_you_prepared_3EBDC715.wem</Path>
 				</File>
 				<File Id="1069671681" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_00.wav</ShortName>

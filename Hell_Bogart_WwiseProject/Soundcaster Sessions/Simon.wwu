@@ -199,7 +199,7 @@
 						<CurrentStateRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
 						<CurrentStateRef Name="In" ID="{F0DD71A8-59AA-4F09-9732-5FBFA0055581}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
-						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+						<CurrentStateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
 						<CurrentStateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
 					</CurrentStateList>
@@ -224,24 +224,12 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Speech_Bear_BOSS_LooseHerMask_PRIORITY" ID="{25D3E92B-4D47-4839-BDF0-CA6557963071}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="0" Y="5"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="E_Speech_Bear_BOSS_DuringFight_LOOP" ID="{D6296B8C-ECC0-4330-8F04-67EBF0A853B7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="0" Y="6"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY" ID="{70A43E76-1BE5-46F8-BF81-233B3EC8C18F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Speech_Bear_AgainstCharlie_DuringFight_LOOP" ID="{CBE7FAD7-5944-4A3C-BD9A-99E7D69F5711}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="1" Y="3"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="E_Speech_Bear_BOSS_AfterBigAttack" ID="{655D3AAC-E6F6-4E30-9963-008334AD3F11}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="1" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_SetAcoustic_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -252,16 +240,8 @@
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Speech_Bear_BOSS_AfterSlashCaC" ID="{7F181389-D435-4644-8A6F-2DB8977E4696}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="2" Y="6"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_SetAcoustic_Ruines" ID="{C353E2E9-9109-4E73-8F21-5EF93B0294A4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="E_Speech_Bear_BOSS_GiveDmgToKali" ID="{6D6A73B4-0BCD-450D-B511-FF3219C1C961}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="3" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_SetAcoustic_BossArena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -290,6 +270,123 @@
 						<Module>
 							<ObjectRef Name="E_Speech_Bear_Loot_Legendary_PRIORITY" ID="{4F5C7B85-3C0D-4811-B04C-E6EE60FA468F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="7" Y="3"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}"/>
+							<Value>10000</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
+							<Value>4500</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
+							<Value>4</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
+						<CurrentStateRef Name="Phase_1" ID="{ABAAF5E5-2CDD-4FE2-9428-D76699596B9D}"/>
+						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
+						<CurrentStateRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
+						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
+						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
+						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
+						<CurrentStateRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
+						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
+						<CurrentStateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
+						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
+						<CurrentStateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
+						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
+						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
+						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+						<CurrentSwitchRef Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Bear Kali Interaction" ID="{F458BD86-04DC-44F0-89FE-57A9FBE1FD88}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_Attack" ID="{E99EB323-2B7C-4A1E-9771-272376756323}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_Random_Lines_LOOP" ID="{B012DD18-59B5-477E-8BBE-23002959BF86}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_FirstEncounter" ID="{88568BC5-33DC-473F-9111-B5B28FFDD741}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_Before_Big_Attack" ID="{6874B9C4-0495-4209-BA2A-E41DDE36FE22}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ID="{5E8D3608-0C67-4EE7-853F-E80D576BB461}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_Speech_TheChaseIsOn" ID="{F94DAC11-AD08-43DD-BCFE-0FA4968AC8FD}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_GetHit" ID="{74291BE7-7F5C-48C0-A186-A72C5DF06E0B}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_LostHerMask" ID="{2D2970A6-07EC-4FC9-B064-C8638C9137F7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_Grab" ID="{F814971F-A575-4260-83A5-60813DD2EE30}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Bear_Ulti_Boss_Starter" ID="{26DB2B24-80C6-4FEA-BCCC-4E014F5FEE31}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_IntroduceMother" ID="{53A0BEFB-5A0C-4BC6-981B-B69E34972E6B}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_Hit" ID="{75FAAFBA-138D-4343-8C66-DAC7CE2B9067}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Kali_ThereIsNoEscape" ID="{4FE3B6F1-01BB-4DB2-A225-70175F7233AA}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="4" Y="4"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
