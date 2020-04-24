@@ -18,7 +18,7 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_KaliBoss_Hit" ID="{88969CA4-14DD-4841-985D-F8B504417AA9}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
+							<ObjectRef Name="E_KaliBoss_GetHit" ID="{88969CA4-14DD-4841-985D-F8B504417AA9}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>

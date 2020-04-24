@@ -14,6 +14,35 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_KAli_whisper_02" ID="{9DD86F80-4BB2-4607-B0C3-97D7CD0A8208}">
+					<ChildrenList>
+						<Action Name="" ID="{4F7704E3-83CB-4290-848E-7DABF4D21202}" ShortID="881436897">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KAli whisper 02" ID="{94AD9DC8-F257-43B2-ACF4-6CF6F879940A}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_KAli_whisper_02" ID="{B14A68D4-A578-4A5E-86CF-ADF5C26A948F}">
+					<ChildrenList>
+						<Action Name="" ID="{068831B9-2B0B-4818-8E5E-A16CFBDE0872}" ShortID="895223149">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KAli whisper 02" ID="{94AD9DC8-F257-43B2-ACF4-6CF6F879940A}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
