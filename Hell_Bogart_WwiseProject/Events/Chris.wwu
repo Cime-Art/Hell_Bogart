@@ -76,12 +76,12 @@
 						</Folder>
 						<Folder Name="SLASHS" ID="{6C802197-2DD5-4E12-9C72-F0542DF11975}" ShortID="351364000">
 							<ChildrenList>
-								<Event Name="E_KaliBoss_Slash" ID="{1A934DF9-900B-43EF-9E34-2FB56B53CB62}">
+								<Event Name="E_KaliBoss_Attacks" ID="{C4C49A53-9455-49D7-9A8B-EEB93982EB31}">
 									<ChildrenList>
-										<Action Name="" ID="{8386BBA4-143B-46C0-8DC1-91B27DFF216E}" ShortID="583745131">
+										<Action Name="" ID="{E6547834-84D7-4DD4-AABA-9D7746DFC4A7}" ShortID="1004493652">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Rnd_Slashs" ID="{70D23B3B-10A8-4480-9AFC-AFE6F479FD3D}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+													<ObjectRef Name="HB__kali_Attacks" ID="{4C0785C0-E2F7-4FFC-9E1A-475F48648EE6}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

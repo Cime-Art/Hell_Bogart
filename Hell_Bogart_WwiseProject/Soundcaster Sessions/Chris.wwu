@@ -49,10 +49,6 @@
 							<ObjectRef Name="E_KaliBoss_Jump" ID="{7A8CC6AE-6E9A-4D97-AB22-D45CF58F7417}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
 							<Position X="5" Y="4"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="E_KaliBoss_Slash" ID="{1A934DF9-900B-43EF-9E34-2FB56B53CB62}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
-							<Position X="6" Y="3"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -102,7 +98,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Caiss" ID="{53291F45-44D8-4058-95A8-28E8E7717593}"/>
-						<CurrentSwitchRef Name="RARE" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
+						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
