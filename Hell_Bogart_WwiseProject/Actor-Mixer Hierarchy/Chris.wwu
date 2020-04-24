@@ -843,6 +843,127 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="HB__kali_Attacks" ID="{4C0785C0-E2F7-4FFC-9E1A-475F48648EE6}" ShortID="46935367">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Whoosh_low" ID="{A3035FA4-A614-44C2-B944-9EC00FB739F3}" ShortID="1004417616">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_Kali_Attacks_whoosh_Low_01" ID="{A242CC92-2307-43E6-8C2E-6FE6F3750DBB}" ShortID="443278334">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_Low_01" ID="{8BCD1A36-C2B5-4C26-8FAD-728C302766C6}" ShortID="850319788">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_Low_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_Low_01" ID="{8BCD1A36-C2B5-4C26-8FAD-728C302766C6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Whoosh_mid" ID="{564A4900-6536-49ED-B1A0-EB2B27ABDB93}" ShortID="271487316">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{7B74E851-6E12-430E-AF4E-541DA90534D9}" ShortID="27983432">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{FC518124-7FFF-499B-8951-58FE86B9FD88}" ShortID="634338255">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_Mid_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{FC518124-7FFF-499B-8951-58FE86B9FD88}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Whoosh_high" ID="{F6947F26-6FE2-442B-B3A0-024A6D54AE9E}" ShortID="475454223">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_Kali_Attacks_whoosh_high_01" ID="{3F491390-BA02-4839-8F89-A10BCB70B09B}" ShortID="1044065149">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_high_01" ID="{0DF61530-6665-47B2-AABB-4ABC0F0A31A8}" ShortID="763308272">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_high_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_high_01" ID="{0DF61530-6665-47B2-AABB-4ABC0F0A31A8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Whoosh_low" ID="{A3035FA4-A614-44C2-B944-9EC00FB739F3}"/>
+												<ItemRef Name="Whoosh_mid" ID="{564A4900-6536-49ED-B1A0-EB2B27ABDB93}"/>
+												<ItemRef Name="Whoosh_high" ID="{F6947F26-6FE2-442B-B3A0-024A6D54AE9E}"/>
+											</Playlist>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Kali Jump" ID="{48B18AB7-0E86-4633-9CC8-D9A8C78745A5}" ShortID="201335467">
@@ -1366,7 +1487,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="HB_SFX_KALI_Grab_01" ID="{E644CBC5-D9CF-4E0F-BF7E-73CD4EBB088F}" ShortID="938551736">
+														<Sound Name="HB_SFX_KALI_Grab_01" ID="{BDD439C6-E507-441E-AE27-4BA63854C502}" ShortID="1036926784">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1376,21 +1497,23 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_KALI_Grab_01" ID="{519E737F-CB6F-4954-B00F-BD00D79CB670}" ShortID="619201376">
-																	<PropertyList>
-																		<Property Name="LoopBegin" Type="Real64" Value="0.727996246774572"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.727996246774572"/>
-																	</PropertyList>
+																<AudioFileSource Name="HB_Kali_Grab_end_01" ID="{2AC14CB6-E4D3-4925-B8D2-62B0EE52940E}" ShortID="1055694022">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_KALI_Grab_01.wav</AudioFile>
+																	<AudioFile>HB_Kali_Grab_end_01.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_KALI_Grab_01" ID="{519E737F-CB6F-4954-B00F-BD00D79CB670}" Platform="Linked"/>
+																<ActiveSource Name="HB_Kali_Grab_end_01" ID="{2AC14CB6-E4D3-4925-B8D2-62B0EE52940E}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB_SFX_KALI_Grab_02" ID="{39E3668D-53CB-4EEB-B9F8-BAFC9D816287}" ShortID="803811648">
+														<Sound Name="HB_SFX_KALI_Grab_02" ID="{DE43EE62-7CB0-4309-9007-7ADBDBCD92D7}" ShortID="670838692">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-330</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1400,21 +1523,28 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_KALI_Grab_02" ID="{BDCB2A2D-F016-4382-A80E-F3CEF18EB048}" ShortID="837634014">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="0.414688482289467"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.794403237156931"/>
-																	</PropertyList>
+																<AudioFileSource Name="HB_Kali_Grab_end_02" ID="{2062E9D0-E72C-4208-920D-8755A0E97C2B}" ShortID="684485987">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_KALI_Grab_02.wav</AudioFile>
+																	<AudioFile>HB_Kali_Grab_end_02.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_KALI_Grab_02" ID="{BDCB2A2D-F016-4382-A80E-F3CEF18EB048}" Platform="Linked"/>
+																<ActiveSource Name="HB_Kali_Grab_end_02" ID="{2062E9D0-E72C-4208-920D-8755A0E97C2B}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB_SFX_KALI_Grab_03" ID="{C0DAF562-542F-422B-B6C2-D2E32695C2E6}" ShortID="641483025">
+														<Sound Name="HB_SFX_KALI_Grab_03" ID="{2E9D3A21-8A16-404A-945C-3976C1D4624D}" ShortID="335167062">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-80</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1424,18 +1554,13 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_KALI_Grab_03" ID="{7F6BA415-6D45-4E6C-BB7D-319E4FB2D99A}" ShortID="940154793">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="0.304771053248886"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.909316912972085"/>
-																	</PropertyList>
+																<AudioFileSource Name="HB_Kali_Grab_end_03" ID="{CF15E3C4-3768-4BFE-8025-894BC09A553A}" ShortID="574396265">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_KALI_Grab_03.wav</AudioFile>
+																	<AudioFile>HB_Kali_Grab_end_03.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_KALI_Grab_03" ID="{7F6BA415-6D45-4E6C-BB7D-319E4FB2D99A}" Platform="Linked"/>
+																<ActiveSource Name="HB_Kali_Grab_end_03" ID="{CF15E3C4-3768-4BFE-8025-894BC09A553A}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -1509,7 +1634,14 @@
 																<ActiveSource Name="HB_SFX_KALI_Grab_03" ID="{85B97102-3852-47A9-B316-4C6006B29B58}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB_SFX_KALI_Grab_02" ID="{290EA263-E221-41A4-B466-CDEAA6AD30EB}" ShortID="532434711">
+														<Sound Name="HB_SFX_KALI_Grab_02" ID="{91D4326E-300D-4E8A-99E6-BF1A57DEE1D8}" ShortID="563192093">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1519,18 +1651,16 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_KALI_Grab_02" ID="{313ADC06-EB0B-4B15-BBB7-0E559A304EB3}" ShortID="610714831">
-																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.774418250058645"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="0.889331925873799"/>
-																	</PropertyList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{86340DE5-78C9-4E1E-AF1C-2AA1D2471399}" ShortID="924557125">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_KALI_Grab_02.wav</AudioFile>
+																	<AudioFile>HB_Kali_Attacks_whoosh_Mid_02.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="634338255"/>
+																	</ConvertedFileIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_KALI_Grab_02" ID="{313ADC06-EB0B-4B15-BBB7-0E559A304EB3}" Platform="Linked"/>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{86340DE5-78C9-4E1E-AF1C-2AA1D2471399}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
