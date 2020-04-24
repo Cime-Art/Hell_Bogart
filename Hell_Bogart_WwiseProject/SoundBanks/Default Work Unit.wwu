@@ -13,7 +13,6 @@
 					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="E_UI_Overlay" ID="{A629395E-107E-405D-9275-7A5C47457320}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Kali_your_soul_will_be_mine" ID="{5A309616-32CE-406D-82D2-39841971695E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_StartCharge" ID="{2D9AC109-54F9-4094-9356-2C92FC0E1726}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_Ulti_NoBoss_Starter" ID="{99729638-2CF4-4103-B8A7-139137D94378}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="HB_PickUpHealthkit" ID="{DEA28796-4AA7-4143-826C-1AE6D1E87BD7}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
@@ -26,28 +25,26 @@
 						<ObjectRef Name="E_StoneDoorRiddle_Stop" ID="{4DB9CC59-B87F-4268-8ECB-9B686D86FDA2}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Attack" ID="{5B1790E9-CFE2-42D5-A7A2-1057AE8B4497}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Stomp" ID="{664EAF6C-1D06-42DC-ABA6-425ADD82BB69}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Bear_BOSS_DuringFight_LOOP" ID="{D6296B8C-ECC0-4330-8F04-67EBF0A853B7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Kali_Hit" ID="{75FAAFBA-138D-4343-8C66-DAC7CE2B9067}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_KaliBoss_GrandEND" ID="{54295308-C493-438F-B3D0-801F61477249}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Global_SetInPauseMenu" ID="{85FBA638-4F4B-43D8-9A14-5F36F100CC3E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Initialize_Shotgun_EVENT" ID="{F61282D3-78A2-43D8-9029-A088AAE20939}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Speech_Kali_Speech_TheChaseIsOn" ID="{F94DAC11-AD08-43DD-BCFE-0FA4968AC8FD}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_KaliBoss_Slash" ID="{1A934DF9-900B-43EF-9E34-2FB56B53CB62}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_MobJungleCharlie_GetHit" ID="{EA163DFE-A0BD-443C-A2CB-34FA8A68B0F3}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Kali_i_will_end_your_suffering" ID="{F5AC8C9C-26C0-444C-8E18-09F7004C2CB1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_EXPLO_Random_LOOP" ID="{B502F958-39D1-44BA-8F1C-78E858D85097}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Traps_SpikeTrap" ID="{AEDF05AF-CCF6-44D5-BFD9-BE593DE36942}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Coffre_Loquet" ID="{75AACFDF-E334-44E1-B81F-0A7E1E96B364}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Bear_BOSS_GiveDmgToKali" ID="{6D6A73B4-0BCD-450D-B511-FF3219C1C961}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Death" ID="{807077AB-8410-4553-ADAF-BB3C2AF45B5F}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Hit" ID="{3F9B7232-704F-4590-B051-F3C8ACBF3D64}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SetAcoustic_BossArena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Bear_BOSS_AfterSlashCaC" ID="{7F181389-D435-4644-8A6F-2DB8977E4696}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SetAcoustic_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Scream" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY" ID="{70A43E76-1BE5-46F8-BF81-233B3EC8C18F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_GetHit" ID="{D9BF8027-BBB7-46F9-B23F-D99D2DB26C66}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Destroy_Object" ID="{E9974C9F-DAF8-470F-91A9-F03D4FAF4252}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Speech_Kali_FirstEncounter" ID="{88568BC5-33DC-473F-9111-B5B28FFDD741}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Coffre_Pierre" ID="{8D4B5F02-2469-4748-8778-29B256B00980}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_play_Minigun_Stop" ID="{FC36404C-7846-474D-A14C-C5DD14EAEB1A}" WorkUnitID="{7E163290-B769-42C2-AF51-FC4D4AB35C60}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Enable_Attenuation" ID="{A154F87E-5C6E-4751-A501-5E9FE4461565}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
@@ -56,7 +53,6 @@
 						<ObjectRef Name="HB_Healthkit" ID="{C652CBF4-E8CD-4807-98CA-9D58BA179795}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_Loot_Legendary_PRIORITY" ID="{4F5C7B85-3C0D-4811-B04C-E6EE60FA468F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Option" ID="{D5C449DA-7D73-482D-BA58-D5D663DB096B}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Bear_BOSS_LooseHerMask_PRIORITY" ID="{25D3E92B-4D47-4839-BDF0-CA6557963071}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_KaliBoss_GetHit" ID="{88969CA4-14DD-4841-985D-F8B504417AA9}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_LosingLife" ID="{1F7A5AEF-CDC6-4844-AEA8-BF09AEA35B97}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_KaliBoss_Whirlwind" ID="{E78BF0CF-91F1-4853-963A-272A481451CC}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
@@ -75,9 +71,8 @@
 						<ObjectRef Name="E_Speech_Bear_AgainstCharlie_DuringFight_LOOP" ID="{CBE7FAD7-5944-4A3C-BD9A-99E7D69F5711}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="HB_Heartbeat_EVENT" ID="{729E36E5-D4B9-4A41-B25C-CF4050D7BDBF}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Play" ID="{5427B47F-7A54-4A5D-9AD0-57D7448AAA1A}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Kali_the_chase_is_on" ID="{269A9003-0A06-4B40-943E-5B2EFE0BAD15}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Shotgun_EVENT" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Bear_BOSS_DuringFight_STOP_LOOP" ID="{98E5368E-2312-4BD0-95E3-212EB2A7F83E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Speech_Kali_IntroduceMother" ID="{53A0BEFB-5A0C-4BC6-981B-B69E34972E6B}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Exit" ID="{23A26257-5D58-4BE0-96D8-6A06EF162DAB}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="HB_UiWep_Equip_EVENT" ID="{908DFB87-BD81-4BEF-9E62-F13F2B12DF7C}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Iddle" ID="{0793E287-B45B-4BFB-8144-B964C70DE1BB}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
@@ -89,19 +84,16 @@
 						<ObjectRef Name="E_Traps_GrosTronc" ID="{C08EE6D2-5786-4CA0-9B9E-C905659003AC}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_HPChange" ID="{60B9462E-BFD8-4CA3-8832-15F06C4AE3DD}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Disable_Attenuation" ID="{3B8003DC-3CF3-4CAD-8C66-67B212FB57F5}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Bear_BOSS_MySoulmate_PRIORITY" ID="{4CBB17B1-2721-4CEA-8C1E-1F344E253BD7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="HB_PickUp_EVENT" ID="{93A3B8D0-3050-4D01-9BA8-EE7DCB3A369A}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_play_Minigun" ID="{E438292D-A8BD-4D70-804C-B9FC0D5CFD20}" WorkUnitID="{7E163290-B769-42C2-AF51-FC4D4AB35C60}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_AgainstCharlie_EndFight_SetExplo" ID="{4ABCEE8A-55BF-4D89-8736-3EA81BAB295F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="HB_UiAmmo_EVENT" ID="{AD36FDAF-25A9-4D91-8B9C-E63004A090FE}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_KaliBoss_Jump" ID="{7A8CC6AE-6E9A-4D97-AB22-D45CF58F7417}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Kali_there_is_no_escape" ID="{879E93B0-8E7B-4DD7-9493-48CF7F1F6359}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Speech_Kali_ThereIsNoEscape" ID="{4FE3B6F1-01BB-4DB2-A225-70175F7233AA}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Coffre_Bois" ID="{85359038-957A-4DDC-9D26-310E75F7A1EB}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Bear_BOSS_AfterBigAttack" ID="{655D3AAC-E6F6-4E30-9963-008334AD3F11}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP" ID="{CC50D25A-BAB9-4E4C-AACE-CAD37C6E0ACC}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SetAcoustic_Ruines" ID="{C353E2E9-9109-4E73-8F21-5EF93B0294A4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Valid" ID="{7A0A0B78-5601-4E81-AE97-1397EBD9DE81}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="E_Speech_Kali_i_will_put_you_to_rest" ID="{B9B5A65A-92B7-4EC9-B686-2E89477BF927}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ID="{5E8D3608-0C67-4EE7-853F-E80D576BB461}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Petite_Boite" ID="{0DFAF8F5-B5E7-4EF1-8B5D-AA5584DB35EB}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_FTP_surface_type_switch" ID="{D0B0DCD4-17EB-4EF9-91BD-BEC7676D9860}" WorkUnitID="{D109BCCB-2B16-4626-BAE8-CEC4CBAA63B7}" Filter="7" Origin="Manual"/>
@@ -111,6 +103,7 @@
 						<ObjectRef Name="E_Speech_Bear_EXPLO_Random_STOP_LOOP" ID="{2FF97DCE-5B8A-4F7D-A46E-5E469119081E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Footstep" ID="{225277E9-0838-4FB4-8AD4-8352A466578F}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Attack" ID="{0346A734-40F3-4FBE-9DE8-16112ADC1F04}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Speech_Kali_LostHerMask" ID="{2D2970A6-07EC-4FC9-B064-C8638C9137F7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_Ulti_Boss_Starter" ID="{26DB2B24-80C6-4FEA-BCCC-4E014F5FEE31}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
