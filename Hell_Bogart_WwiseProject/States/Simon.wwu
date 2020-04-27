@@ -139,6 +139,17 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Character" ID="{D715DE80-1D9B-414C-A3E6-50944EF0F19D}" ShortID="834734890">
+					<ChildrenList>
+						<StateGroup Name="Char_Health_STATE" ID="{1A3150CA-09D0-45C0-8C6A-99C350C38C74}">
+							<ChildrenList>
+								<State Name="None" ID="{8C9E6A74-9855-4904-A487-A3193C500D7B}"/>
+								<State Name="High_Medium" ID="{05E4E7C9-8409-4627-9BF1-0C3A5CD71E49}"/>
+								<State Name="Low" ID="{A904C08E-9087-4096-8F09-F2011A37F894}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

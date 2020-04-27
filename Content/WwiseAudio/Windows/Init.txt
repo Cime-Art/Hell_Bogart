@@ -16,6 +16,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	1327892362	Kali_GetHitType_STATE			\Alex\Kali_GetHitType_STATE	
 	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
 	1646215745	Kali_AttackType_STATE			\Alex\Kali_AttackType_STATE	
+	1892104236	Char_Health_STATE			\Simon\Character\Char_Health_STATE	
 	2069469294	Acoustic_STATE			\Simon\Global\Acoustic_STATE	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
 	2955909185	IsInPauseMenu_STATE			\Simon\Global\IsInPauseMenu_STATE	
@@ -56,6 +57,9 @@ State	ID	Name	State Group			Notes
 	0	None	Kali_AttackType_STATE			
 	180661997	Attack	Kali_AttackType_STATE			
 	839543372	Big_attack	Kali_AttackType_STATE			
+	0	None	Char_Health_STATE			
+	545371365	Low	Char_Health_STATE			
+	1319742345	High_Medium	Char_Health_STATE			
 	0	None	Acoustic_STATE			
 	2213992659	Exterior	Acoustic_STATE			
 	3265560855	Ruines	Acoustic_STATE			
