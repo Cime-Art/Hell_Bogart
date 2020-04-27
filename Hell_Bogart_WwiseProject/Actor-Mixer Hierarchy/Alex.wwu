@@ -2281,6 +2281,11 @@
 										<Sound Name="KAli whisper 02" ID="{94AD9DC8-F257-43B2-ACF4-6CF6F879940A}" ShortID="44341792">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
