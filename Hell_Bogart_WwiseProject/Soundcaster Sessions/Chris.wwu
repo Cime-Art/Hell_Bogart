@@ -26,16 +26,8 @@
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_HPChange" ID="{60B9462E-BFD8-4CA3-8832-15F06C4AE3DD}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_KaliBoss_GrandEND" ID="{54295308-C493-438F-B3D0-801F61477249}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
 							<Position X="3" Y="4"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="HB_Heartbeat_EVENT" ID="{729E36E5-D4B9-4A41-B25C-CF4050D7BDBF}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
-							<Position X="4" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_KaliBoss_Impact" ID="{D6C314B3-C9DB-49F7-B7D8-13DB53F2167E}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
@@ -64,6 +56,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}"/>
+							<Value>10000</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -73,7 +69,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
-							<Value>13</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
@@ -86,19 +82,22 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
-						<CurrentStateRef Name="End_Music" ID="{F98C25B7-C5CA-4858-B4D9-4136E6494696}"/>
+						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
 						<CurrentStateRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
 						<CurrentStateRef Name="None" ID="{9B0A7F4C-EC6C-4D50-B4F9-C44A88277C9E}"/>
 						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
 						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
+						<CurrentStateRef Name="Big_attack" ID="{0CE551FC-C9AF-4DB2-8131-CFB10775BC2E}"/>
 						<CurrentStateRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
 						<CurrentStateRef Name="None" ID="{513033F6-C1BC-4896-8DE5-A53FA48880AB}"/>
 						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
+						<CurrentStateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Caiss" ID="{53291F45-44D8-4058-95A8-28E8E7717593}"/>
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>

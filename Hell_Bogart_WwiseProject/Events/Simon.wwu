@@ -880,6 +880,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Traps_Explosive_Explo" ID="{9E79A82E-168E-4F0A-A1EC-FE1B27390D19}">
+							<ChildrenList>
+								<Action Name="" ID="{4DE5E496-1F91-4D0D-8374-F2D4725F0D29}" ShortID="283123729">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trap_Explosive_Explo_BLEND" ID="{90AA6AD2-501C-4161-AD56-E2B4949333B6}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_Explosive_Trigger" ID="{C371188F-936E-4A3F-BA1F-9E83BC9FC90A}">
+							<ChildrenList>
+								<Action Name="" ID="{745E40F6-E567-4781-83C1-7C2878ECE5A5}" ShortID="544063869">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB_SFX_Other_Trap_PinGrenade_01" ID="{D9641C0A-D168-4F33-8299-423EF3A90BA8}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Destructibles" ID="{E917B8D0-8FA3-47DE-B4C1-5B271665B8EC}" ShortID="163303108">
@@ -899,29 +921,37 @@
 				</Folder>
 				<Folder Name="Character" ID="{37B4B94B-9131-4558-B804-1663F42C362A}" ShortID="796136799">
 					<ChildrenList>
-						<Event Name="E_HPChange" ID="{60B9462E-BFD8-4CA3-8832-15F06C4AE3DD}">
+						<Event Name="E_Char_Heartbeat_Slow" ID="{C0C244D9-A496-494F-BB0F-CE36674CA482}">
 							<ChildrenList>
-								<Action Name="" ID="{9806DF46-BA6B-4B11-AFB0-7805912CAA11}" ShortID="559724552">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
-									</PropertyList>
+								<Action Name="" ID="{0EE5FB27-3B09-4CF9-82B5-DF8FFAA816A9}" ShortID="107161873">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+											<ObjectRef Name="SFX_HB_Character_HeartBeat_Slow" ID="{88621F7B-AC18-48EA-89FB-58577BEA2F01}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{85123B6C-8ED1-485C-B07B-3263CD072CD1}" ShortID="284971301">
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Char_Heartbeat_Fast" ID="{47384D2D-FF1E-4674-9E59-5D824BA49728}">
+							<ChildrenList>
+								<Action Name="" ID="{97AF5361-1C26-44D1-B429-1F14478E7549}" ShortID="24148725">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Character_HeartBeat_Fast" ID="{0EC2461A-32F1-4CB5-B1BD-2D84A737974B}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Stop_Heartbeat" ID="{5B26D06F-D7F6-487B-9B83-1E146E62C171}">
+							<ChildrenList>
+								<Action Name="" ID="{8ED0DAEF-8275-41D8-A016-B706B3DD0666}" ShortID="230663095">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="Delay" Type="Real64" Value="4"/>
-										<Property Name="FadeTime" Type="Real64" Value="3"/>
+										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+											<ObjectRef Name="Heartbeat" ID="{6E08BCF3-5D0A-49FE-B080-7CA14E3990BE}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1063,6 +1093,17 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Bear_Speech_EXPLO_Random_SEQ_CONT" ID="{DD5751EC-49F5-4B71-90E0-1C80B9E50299}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="E_Speech_Bear_RollingRockShit_PRIORITY" ID="{BB808F37-DF01-4842-9295-004BCB6390BF}">
+											<ChildrenList>
+												<Action Name="" ID="{CB6B4E99-BAFF-4C0B-8A2E-5119978D0575}" ShortID="503890586">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="VOICE_HB_Bear_RollingRockShit_PRIORITY" ID="{D7B15429-0E17-42D9-8A1D-FC1675C1168A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -1282,6 +1323,27 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="KaliBear_Speech_GetHitCritical_SEQ" ID="{EAF828B0-D91A-43CD-BAFF-3B6C993FCC09}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_Death" ID="{AC97EEAE-842D-4FA8-8460-A2DDAE9622C8}">
+									<ChildrenList>
+										<Action Name="" ID="{BE0ABE1E-9685-4618-850D-168A52341FA6}" ShortID="960215275">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Random Voice Lines" ID="{D96DB872-019E-4FCE-81BD-7982AFF0A1FC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{43F91769-00E2-40F6-806E-472DCD15641A}" ShortID="504549816">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB_SFX_KALI_Death" ID="{1766F1D4-A5E8-4081-A31F-2E3012571EDA}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
