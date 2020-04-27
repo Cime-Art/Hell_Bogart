@@ -1042,7 +1042,7 @@
 				</File>
 				<File Id="98705135" Language="SFX">
 					<ShortName>Hb_sfx_other_Ammo_standar.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_Ammo_standar_DDE47BA2.wem</Path>
+					<Path>SFX\Hb_sfx_other_Ammo_standar_6020A2C8.wem</Path>
 				</File>
 				<File Id="101291286" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_02.wav</ShortName>
@@ -1806,7 +1806,7 @@
 				</File>
 				<File Id="476709970" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Pickup3.wav</ShortName>
-					<Path>SFX\HB_SFX_Uiwep_Pickup3_1F95C72F.wem</Path>
+					<Path>SFX\HB_SFX_Uiwep_Pickup3_B2645BF5.wem</Path>
 				</File>
 				<File Id="479199677" Language="SFX">
 					<ShortName>HB_FTP_Flaque_03.wav</ShortName>
@@ -1814,7 +1814,7 @@
 				</File>
 				<File Id="481689103" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Pickup1.wav</ShortName>
-					<Path>SFX\HB_SFX_Uiwep_Pickup1_0062039B.wem</Path>
+					<Path>SFX\HB_SFX_Uiwep_Pickup1_EF5808D2.wem</Path>
 				</File>
 				<File Id="485068759" Language="SFX">
 					<ShortName>VOICE_HB_Bear_CombatEngage_4-2_DisneyLand.wav</ShortName>
@@ -1926,7 +1926,7 @@
 				</File>
 				<File Id="528701847" Language="SFX">
 					<ShortName>Hb_sfx_other_pickup_standar.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_pickup_standar_66C02B12.wem</Path>
+					<Path>SFX\Hb_sfx_other_pickup_standar_003E83DC.wem</Path>
 				</File>
 				<File Id="531370814" Language="SFX">
 					<ShortName>Shell_Metal_02.wav</ShortName>
@@ -2138,7 +2138,7 @@
 				</File>
 				<File Id="631731791" Language="SFX">
 					<ShortName>HB_SFX_Other_Pickup_ammo_Legendary_.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Pickup_ammo_Legendary__66C02B12.wem</Path>
+					<Path>SFX\HB_SFX_Other_Pickup_ammo_Legendary__57286D06.wem</Path>
 				</File>
 				<File Id="633385100" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Dirt_02.wav</ShortName>
@@ -2318,7 +2318,7 @@
 				</File>
 				<File Id="740162737" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Pickup2.wav</ShortName>
-					<Path>SFX\HB_SFX_Uiwep_Pickup2_796FE9DE.wem</Path>
+					<Path>SFX\HB_SFX_Uiwep_Pickup2_5AFA1C65.wem</Path>
 				</File>
 				<File Id="740705521" Language="SFX">
 					<ShortName>come_here.WAV</ShortName>
@@ -2418,7 +2418,7 @@
 				</File>
 				<File Id="794355521" Language="SFX">
 					<ShortName>HB_SFX_Other_Pickup_ammo_Rare.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Pickup_ammo_Rare_66C02B12.wem</Path>
+					<Path>SFX\HB_SFX_Other_Pickup_ammo_Rare_009F1555.wem</Path>
 				</File>
 				<File Id="795317854" Language="SFX">
 					<ShortName>SFX-HB-CoffreMetalVieux_00.wav</ShortName>
