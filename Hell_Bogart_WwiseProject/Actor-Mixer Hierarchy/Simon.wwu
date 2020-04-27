@@ -4002,30 +4002,153 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Kali_Speech_GetHit_RND" ID="{CD2598B8-D1E6-49F7-AA4F-80DD377924A3}" ShortID="887405934">
+												<RandomSequenceContainer Name="KaliBear_Speech_GetHit_SEQ" ID="{389F2553-8FC9-4E37-AD78-2FC8DAAFF8FD}" ShortID="668342115">
 													<PropertyList>
-														<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="No_Speech_Kali_GetHit" ID="{03721E22-D217-47B3-9CD5-A9D353DBECAA}" ShortID="985351962">
+														<RandomSequenceContainer Name="Bear_Speech_BOSS_GiveDmgToKali" ID="{F7690B86-B3A6-406C-BEDB-944596640ADD}" ShortID="139676019">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="VOICE_HB_Bear_Bossline_3-1_Bouh" ID="{CEE3654C-A6BB-4F43-95DF-67BB05B0FA60}" ShortID="895588190">
+																	<PropertyList>
+																		<Property Name="Priority" Type="int16">
+																			<ValueList>
+																				<Value>90</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="VOICE_HB_Bear_Bossline_3-1_Bouh" ID="{6235282F-1266-4FE7-AA3C-927F035282E1}" ShortID="351062873">
+																			<Language>SFX</Language>
+																			<AudioFile>VOICE_HB_Bear_Bossline_3-1_Bouh.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="VOICE_HB_Bear_Bossline_3-1_Bouh" ID="{6235282F-1266-4FE7-AA3C-927F035282E1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="VOICE_HB_Bear_Bossline_3-2_Bouh" ID="{F6F254EA-704E-4E98-8EAB-80ABAE6A9923}" ShortID="249141769">
+																	<PropertyList>
+																		<Property Name="Priority" Type="int16">
+																			<ValueList>
+																				<Value>90</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="VOICE_HB_Bear_Bossline_3-2_Bouh" ID="{DD7DE821-07FB-458F-B820-C621C6061C1C}" ShortID="314355310">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="2.54063926940639E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="7.81735159817343E-03"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.140712328767123"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.01430136986301"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>VOICE_HB_Bear_Bossline_3-2_Bouh.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="VOICE_HB_Bear_Bossline_3-2_Bouh" ID="{DD7DE821-07FB-458F-B820-C621C6061C1C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="Kali_Speech_GetHit_Speech_RND" ID="{0E90F11C-26C5-4FF8-B8AF-0A8D8FF315CC}" ShortID="833160870">
 															<PropertyList>
-																<Property Name="OverridePriority" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 																<Property Name="Priority" Type="int16">
 																	<ValueList>
-																		<Value>10</Value>
+																		<Value>80</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="Weight" Type="Real64">
 																	<ValueList>
-																		<Value>60</Value>
+																		<Value>40</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -4047,136 +4170,34 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<SourcePlugin Name="Wwise Silence" ID="{BBBA1DC9-BD8B-45AC-A9C4-A634B6C70843}" ShortID="899709291" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-																	<PropertyList>
-																		<Property Name="Length" Type="Real32" Value="0.2"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																</SourcePlugin>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Wwise Silence" ID="{BBBA1DC9-BD8B-45AC-A9C4-A634B6C70843}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<RandomSequenceContainer Name="KaliBear_Speech_GetHit_SEQ" ID="{389F2553-8FC9-4E37-AD78-2FC8DAAFF8FD}" ShortID="668342115">
-															<PropertyList>
-																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
-																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<RandomSequenceContainer Name="Bear_Speech_BOSS_GiveDmgToKali" ID="{F7690B86-B3A6-406C-BEDB-944596640ADD}" ShortID="139676019">
+																<Sound Name="try_again_sweetheart" ID="{8C67C936-6326-4FC1-B1DA-0415E38E39BF}" ShortID="41661380">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																		<Reference Name="UserAuxSend0">
-																			<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																		<Reference Name="UserAuxSend1">
-																			<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																		<Reference Name="UserAuxSend2">
-																			<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<Sound Name="VOICE_HB_Bear_Bossline_3-1_Bouh" ID="{CEE3654C-A6BB-4F43-95DF-67BB05B0FA60}" ShortID="895588190">
+																		<AudioFileSource Name="try_again_sweetheart" ID="{9F37FE16-B7FB-4B4B-9F05-8249FFB1DC75}" ShortID="335086039">
 																			<PropertyList>
-																				<Property Name="Priority" Type="int16">
-																					<ValueList>
-																						<Value>90</Value>
-																					</ValueList>
-																				</Property>
-																				<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-																				<Property Name="Volume" Type="Real64">
-																					<ValueList>
-																						<Value>-2</Value>
-																					</ValueList>
-																				</Property>
-																				<Property Name="Weight" Type="Real64">
-																					<ValueList>
-																						<Value>10</Value>
-																					</ValueList>
-																				</Property>
+																				<Property Name="FadeInDuration" Type="Real64" Value="1.99144223899606E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="4.97860559748986E-03"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.104550717547293"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.56896048830491"/>
 																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="VOICE_HB_Bear_Bossline_3-1_Bouh" ID="{6235282F-1266-4FE7-AA3C-927F035282E1}" ShortID="351062873">
-																					<Language>SFX</Language>
-																					<AudioFile>VOICE_HB_Bear_Bossline_3-1_Bouh.wav</AudioFile>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="VOICE_HB_Bear_Bossline_3-1_Bouh" ID="{6235282F-1266-4FE7-AA3C-927F035282E1}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="VOICE_HB_Bear_Bossline_3-2_Bouh" ID="{F6F254EA-704E-4E98-8EAB-80ABAE6A9923}" ShortID="249141769">
-																			<PropertyList>
-																				<Property Name="Priority" Type="int16">
-																					<ValueList>
-																						<Value>90</Value>
-																					</ValueList>
-																				</Property>
-																				<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-																				<Property Name="Weight" Type="Real64">
-																					<ValueList>
-																						<Value>10</Value>
-																					</ValueList>
-																				</Property>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="VOICE_HB_Bear_Bossline_3-2_Bouh" ID="{DD7DE821-07FB-458F-B820-C621C6061C1C}" ShortID="314355310">
-																					<PropertyList>
-																						<Property Name="FadeInDuration" Type="Real64" Value="2.54063926940639E-02"/>
-																						<Property Name="FadeOutDuration" Type="Real64" Value="7.81735159817343E-03"/>
-																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																						<Property Name="TrimBegin" Type="Real64" Value="0.140712328767123"/>
-																						<Property Name="TrimEnd" Type="Real64" Value="1.01430136986301"/>
-																					</PropertyList>
-																					<Language>SFX</Language>
-																					<AudioFile>VOICE_HB_Bear_Bossline_3-2_Bouh.wav</AudioFile>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="VOICE_HB_Bear_Bossline_3-2_Bouh" ID="{DD7DE821-07FB-458F-B820-C621C6061C1C}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
+																			<Language>SFX</Language>
+																			<AudioFile>try_again_sweetheart.WAV</AudioFile>
+																		</AudioFileSource>
 																	</ChildrenList>
-																</RandomSequenceContainer>
-																<RandomSequenceContainer Name="Kali_Speech_GetHit_Speech_RND" ID="{0E90F11C-26C5-4FF8-B8AF-0A8D8FF315CC}" ShortID="833160870">
+																	<ActiveSourceList>
+																		<ActiveSource Name="try_again_sweetheart" ID="{9F37FE16-B7FB-4B4B-9F05-8249FFB1DC75}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="no" ID="{B1178306-BC8B-4365-9ACA-94E23A2AE3DD}" ShortID="857404124">
 																	<PropertyList>
-																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 																		<Property Name="Priority" Type="int16">
 																			<ValueList>
 																				<Value>80</Value>
@@ -4184,12 +4205,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>3</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="Weight" Type="Real64">
-																			<ValueList>
-																				<Value>40</Value>
+																				<Value>-4</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -4211,88 +4227,29 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<Sound Name="try_again_sweetheart" ID="{8C67C936-6326-4FC1-B1DA-0415E38E39BF}" ShortID="41661380">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="try_again_sweetheart" ID="{9F37FE16-B7FB-4B4B-9F05-8249FFB1DC75}" ShortID="335086039">
-																					<PropertyList>
-																						<Property Name="FadeInDuration" Type="Real64" Value="1.99144223899606E-02"/>
-																						<Property Name="FadeOutDuration" Type="Real64" Value="4.97860559748986E-03"/>
-																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																						<Property Name="TrimBegin" Type="Real64" Value="0.104550717547293"/>
-																						<Property Name="TrimEnd" Type="Real64" Value="2.56896048830491"/>
-																					</PropertyList>
-																					<Language>SFX</Language>
-																					<AudioFile>try_again_sweetheart.WAV</AudioFile>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="try_again_sweetheart" ID="{9F37FE16-B7FB-4B4B-9F05-8249FFB1DC75}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="no" ID="{B1178306-BC8B-4365-9ACA-94E23A2AE3DD}" ShortID="857404124">
+																		<AudioFileSource Name="no" ID="{FA11EAEB-1DFF-46FF-B072-E6039AF9AA97}" ShortID="719636920">
 																			<PropertyList>
-																				<Property Name="Priority" Type="int16">
-																					<ValueList>
-																						<Value>80</Value>
-																					</ValueList>
-																				</Property>
-																				<Property Name="Volume" Type="Real64">
-																					<ValueList>
-																						<Value>-4</Value>
-																					</ValueList>
-																				</Property>
+																				<Property Name="FadeInDuration" Type="Real64" Value="2.06626828813717E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="2.47952194576462E-02"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.235554584847638"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.03320799552698"/>
 																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																				<Reference Name="UserAuxSend0">
-																					<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																				<Reference Name="UserAuxSend1">
-																					<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																				<Reference Name="UserAuxSend2">
-																					<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="no" ID="{FA11EAEB-1DFF-46FF-B072-E6039AF9AA97}" ShortID="719636920">
-																					<PropertyList>
-																						<Property Name="FadeInDuration" Type="Real64" Value="2.06626828813717E-02"/>
-																						<Property Name="FadeOutDuration" Type="Real64" Value="2.47952194576462E-02"/>
-																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																						<Property Name="TrimBegin" Type="Real64" Value="0.235554584847638"/>
-																						<Property Name="TrimEnd" Type="Real64" Value="2.03320799552698"/>
-																					</PropertyList>
-																					<Language>SFX</Language>
-																					<AudioFile>no.WAV</AudioFile>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="no" ID="{FA11EAEB-1DFF-46FF-B072-E6039AF9AA97}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
+																			<Language>SFX</Language>
+																			<AudioFile>no.WAV</AudioFile>
+																		</AudioFileSource>
 																	</ChildrenList>
-																</RandomSequenceContainer>
+																	<ActiveSourceList>
+																		<ActiveSource Name="no" ID="{FA11EAEB-1DFF-46FF-B072-E6039AF9AA97}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
 															</ChildrenList>
-															<Playlist>
-																<ItemRef Name="Bear_Speech_BOSS_GiveDmgToKali" ID="{F7690B86-B3A6-406C-BEDB-944596640ADD}"/>
-																<ItemRef Name="Kali_Speech_GetHit_Speech_RND" ID="{0E90F11C-26C5-4FF8-B8AF-0A8D8FF315CC}"/>
-															</Playlist>
 														</RandomSequenceContainer>
 													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="Bear_Speech_BOSS_GiveDmgToKali" ID="{F7690B86-B3A6-406C-BEDB-944596640ADD}"/>
+														<ItemRef Name="Kali_Speech_GetHit_Speech_RND" ID="{0E90F11C-26C5-4FF8-B8AF-0A8D8FF315CC}"/>
+													</Playlist>
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
