@@ -883,6 +883,7 @@
 				<Event Id="4064144418" Name="E_Speech_Bear_Loot_Legendary_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\Loot\E_Speech_Bear_Loot_Legendary_PRIORITY"/>
 				<Event Id="3031028797" Name="E_Speech_Bear_Loot_Normal" ObjectPath="\Events\Simon\Voice\Bear\Loot\E_Speech_Bear_Loot_Normal"/>
 				<Event Id="1655997511" Name="E_Speech_Bear_LosingLife" ObjectPath="\Events\Simon\Voice\Bear\LoosingLife\E_Speech_Bear_LosingLife"/>
+				<Event Id="2823582986" Name="E_Speech_Bear_RollingRockShit_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_RollingRockShit_PRIORITY"/>
 				<Event Id="881475495" Name="E_Speech_Bear_Ulti_Boss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_Boss_Starter"/>
 				<Event Id="3970556566" Name="E_Speech_Bear_Ulti_NoBoss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_NoBoss_Starter"/>
 				<Event Id="3244386490" Name="E_Speech_Kali_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Attack"/>
@@ -902,6 +903,8 @@
 				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
 				<Event Id="4269044702" Name="E_Traps_BigRockExplode" ObjectPath="\Events\Simon\Traps\E_Traps_BigRockExplode"/>
 				<Event Id="4230951234" Name="E_Traps_BigRockRolling" ObjectPath="\Events\Simon\Traps\E_Traps_BigRockRolling"/>
+				<Event Id="2167147008" Name="E_Traps_Explosive_Explo" ObjectPath="\Events\Simon\Traps\E_Traps_Explosive_Explo"/>
+				<Event Id="2388488922" Name="E_Traps_Explosive_Trigger" ObjectPath="\Events\Simon\Traps\E_Traps_Explosive_Trigger"/>
 				<Event Id="1936964117" Name="E_Traps_GrosTronc" ObjectPath="\Events\Simon\Traps\E_Traps_GrosTronc"/>
 				<Event Id="3391365552" Name="E_Traps_Punji" ObjectPath="\Events\Simon\Traps\E_Traps_Punji"/>
 				<Event Id="355937833" Name="E_Traps_SpikeTrap" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap"/>
@@ -1991,6 +1994,10 @@
 					<ShortName>HB_SFX_Shotgun_EndDropShell_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_EndDropShell_00_10C4C929.wem</Path>
 				</File>
+				<File Id="562151247" Language="SFX">
+					<ShortName>HB_SFX_Other_Trap_BodyExplod_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Trap_BodyExplod_01_10C4C929.wem</Path>
+				</File>
 				<File Id="564419644" Language="SFX">
 					<ShortName>FTP_bois_sec_02.wav</ShortName>
 					<Path>SFX\FTP_bois_sec_02_10C4C929.wem</Path>
@@ -2663,6 +2670,10 @@
 					<ShortName>HB_Footstep_SolPierre_03.wav</ShortName>
 					<Path>SFX\HB_Footstep_SolPierre_03_10C4C929.wem</Path>
 				</File>
+				<File Id="974466420" Language="SFX">
+					<ShortName>HB_SFX_Other_Trap_ExplGrenade_03.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Trap_ExplGrenade_03_10C4C929.wem</Path>
+				</File>
 				<File Id="975625654" Language="SFX">
 					<ShortName>HB_SFX_KALI_HIT_07.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_HIT_07_10C4C929.wem</Path>
@@ -2698,6 +2709,10 @@
 				<File Id="1002155297" Language="SFX">
 					<ShortName>SF-DS Weapon Projectile 03_02.wav</ShortName>
 					<Path>SFX\SF-DS Weapon Projectile 03_02_10C4C929.wem</Path>
+				</File>
+				<File Id="1008926846" Language="SFX">
+					<ShortName>HB_SFX_Other_Trap_PinGrenade_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Trap_PinGrenade_01_10C4C929.wem</Path>
 				</File>
 				<File Id="1014806612" Language="SFX">
 					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_02.wav</ShortName>
