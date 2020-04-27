@@ -836,12 +836,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Traps_GrosseBoule" ID="{8B4C65DF-B73F-4C6C-9BAA-9E7FCCDDD2F6}">
+						<Event Name="E_Traps_BigRockRolling" ID="{8B4C65DF-B73F-4C6C-9BAA-9E7FCCDDD2F6}">
 							<ChildrenList>
 								<Action Name="" ID="{E6BB2E33-74B2-4236-ACE8-F735C13C4F15}" ShortID="427339710">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Grosse_Boule_Trap_SEQ" ID="{E03062D2-363F-4472-ADE6-9B3B87EAC13A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+											<ObjectRef Name="Big_Rock_Rolling_SEQ" ID="{E03062D2-363F-4472-ADE6-9B3B87EAC13A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -864,6 +864,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Gros_Tronc_Trap_SEQ" ID="{29A0B0D7-27B2-4719-AAAD-964E42098D9B}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_BigRockExplode" ID="{35550C2B-55DD-4478-BF95-FF4AB6084286}">
+							<ChildrenList>
+								<Action Name="" ID="{8787752F-9C19-4ADE-BDA5-315C9BA8C893}" ShortID="498863344">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Traps_ExploBigRock" ID="{1F14BBAA-7EF8-46C7-B84F-E58982DD8A41}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1260,6 +1271,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="KaliBear_Speech_IntroduceMother_SEQ" ID="{D56CF38F-B0BF-42B6-A047-F7902D2AB5AE}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Speech_Kali_GetHitCritical" ID="{B04A346F-CA2C-476D-AC3A-51AA27E8CD2C}">
+									<ChildrenList>
+										<Action Name="" ID="{2D0D9800-DE6E-4358-ADA7-BEE558B9578D}" ShortID="641811090">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="KaliBear_Speech_GetHitCritical_SEQ" ID="{EAF828B0-D91A-43CD-BAFF-3B6C993FCC09}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
