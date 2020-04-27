@@ -1220,7 +1220,7 @@
 										<Action Name="" ID="{BD91FBE3-A6C2-414C-BE27-7011F02F38D6}" ShortID="220548479">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Kali_Speech_GetHit_RND" ID="{CD2598B8-D1E6-49F7-AA4F-80DD377924A3}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+													<ObjectRef Name="KaliBear_Speech_GetHit_SEQ" ID="{389F2553-8FC9-4E37-AD78-2FC8DAAFF8FD}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
