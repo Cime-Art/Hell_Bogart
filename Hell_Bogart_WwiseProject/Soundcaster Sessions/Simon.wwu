@@ -42,6 +42,14 @@
 							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="HB_Healthkit" ID="{C652CBF4-E8CD-4807-98CA-9D58BA179795}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
+							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Char_Heartbeat_Fast" ID="{47384D2D-FF1E-4674-9E59-5D824BA49728}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="1" Y="7"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Shotgun_EVENT" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -60,6 +68,10 @@
 						<Module>
 							<ObjectRef Name="E_SetAcoustic_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Char_Heartbeat_Slow" ID="{C0C244D9-A496-494F-BB0F-CE36674CA482}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="7"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Initialize_Shotgun_EVENT" ID="{F61282D3-78A2-43D8-9029-A088AAE20939}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -197,6 +209,7 @@
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
 						<CurrentStateRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
+						<CurrentStateRef Name="Big_attack" ID="{0CE551FC-C9AF-4DB2-8131-CFB10775BC2E}"/>
 						<CurrentStateRef Name="In" ID="{F0DD71A8-59AA-4F09-9732-5FBFA0055581}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
 						<CurrentStateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>

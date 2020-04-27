@@ -26,16 +26,8 @@
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_HPChange" ID="{60B9462E-BFD8-4CA3-8832-15F06C4AE3DD}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_KaliBoss_GrandEND" ID="{54295308-C493-438F-B3D0-801F61477249}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
 							<Position X="3" Y="4"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="HB_Heartbeat_EVENT" ID="{729E36E5-D4B9-4A41-B25C-CF4050D7BDBF}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
-							<Position X="4" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_KaliBoss_Impact" ID="{D6C314B3-C9DB-49F7-B7D8-13DB53F2167E}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
@@ -64,6 +56,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}"/>
+							<Value>10000</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -73,7 +69,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
-							<Value>13</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}"/>
@@ -101,6 +97,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Caiss" ID="{53291F45-44D8-4058-95A8-28E8E7717593}"/>
 						<CurrentSwitchRef Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>

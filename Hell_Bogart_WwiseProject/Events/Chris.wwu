@@ -170,26 +170,22 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="HB_Heartbeat_EVENT" ID="{729E36E5-D4B9-4A41-B25C-CF4050D7BDBF}">
-							<ChildrenList>
-								<Action Name="" ID="{15D1374A-A2FB-4C58-95CD-CB4A0884CDB8}" ShortID="178432711">
-									<PropertyList>
-										<Property Name="FadeInCurve" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="HeartBeat" ID="{0EA566B3-CC3A-4135-BB2A-0886B9D382B4}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="HB_Healthkit" ID="{C652CBF4-E8CD-4807-98CA-9D58BA179795}">
 							<ChildrenList>
 								<Action Name="" ID="{D9325B45-7388-4100-9C35-EF227B69427D}" ShortID="1055440013">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{29A6FA0E-D88E-4686-8CB8-34332ACFB394}" ShortID="420107807">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Heartbeat" ID="{6E08BCF3-5D0A-49FE-B080-7CA14E3990BE}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
