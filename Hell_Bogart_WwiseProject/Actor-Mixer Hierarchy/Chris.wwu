@@ -1172,10 +1172,9 @@
 								<ActorMixer Name="SFX_HB_Other_Ammo_Pickup" ID="{C971739E-34A7-4FEC-B688-2E9CFC5406AF}" ShortID="771873757">
 									<PropertyList>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>1</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -1262,6 +1261,7 @@
 															<ChildrenList>
 																<AudioFileSource Name="Hb_sfx_other_Ammo_standar" ID="{718EE022-B5A2-4C20-8E28-EE395EFEE1C1}" ShortID="98705135">
 																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="3.00172397726214E-02"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="0.795456853974466"/>
 																	</PropertyList>
@@ -1303,6 +1303,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Other_Pickup_ammo_Rare" ID="{782E7F65-9888-49D4-9E56-C7725FAF1463}" ShortID="794355521">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2.73972602739727E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.55479452054795"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Other_Pickup_ammo_Rare.wav</AudioFile>
 																</AudioFileSource>
@@ -1341,6 +1346,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Other_Pickup_ammo_Legendary_" ID="{EF051F79-F232-4320-805B-300C382FD595}" ShortID="631731791">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2.84181343770384E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.835966786257881"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Other_Pickup_ammo_Legendary_.wav</AudioFile>
 																</AudioFileSource>
@@ -1458,8 +1468,10 @@
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Uiwep_Pickup1" ID="{FC8A87EB-AE69-4C52-9556-C64234ACAFE7}" ShortID="313989002">
 																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.51062342745318E-02"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																		<Property Name="TrimBegin" Type="Real64" Value="0.242068193130911"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.553895256732832"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Uiwep_Pickup1.wav</AudioFile>
@@ -1484,9 +1496,10 @@
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Uiwep_Pickup2" ID="{0375C1E4-E69B-431B-9CDD-2BC6192908FF}" ShortID="232088301">
 																	<PropertyList>
-																		<Property Name="LoopBegin" Type="Real64" Value="0.195447652231624"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.00708228496878E-02"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																		<Property Name="TrimBegin" Type="Real64" Value="0.195447652231624"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.478364085360172"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Uiwep_Pickup2.wav</AudioFile>
@@ -1511,8 +1524,10 @@
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Uiwep_Pickup3" ID="{C72658B0-3265-4C7B-BAE9-989A34126124}" ShortID="385884009">
 																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2.01416456993757E-02"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																		<Property Name="TrimBegin" Type="Real64" Value="0.200826945412311"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.475846379647751"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Uiwep_Pickup3.wav</AudioFile>
@@ -1536,6 +1551,12 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Hb_sfx_other_pickup_standar" ID="{FBE8D696-61F9-4620-ACA8-8E8CE382A163}" ShortID="528701847">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="9.18425589413849E-03"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.65316606094493E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.404107259342092"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Hb_sfx_other_pickup_standar.wav</AudioFile>
 																</AudioFileSource>
