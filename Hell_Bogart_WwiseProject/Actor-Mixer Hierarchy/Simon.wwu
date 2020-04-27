@@ -3778,8 +3778,128 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
-										<ActorMixer Name="Grosse Boule Trap" ID="{8E6CFD79-612C-4627-9B7A-009A84101A40}" ShortID="947532004">
+										<ActorMixer Name="Big Rock Explo Trap" ID="{8E6CFD79-612C-4627-9B7A-009A84101A40}" ShortID="947532004">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+														<Attenuation Name="ATT_Traps (Custom)" ID="{FB270FC5-2E6C-4AA5-9C34-2F55E1AB794D}" ShortID="999907283">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="7000"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{16959AA7-194B-48DF-9F5D-3DC40156E6F7}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>1748.44196</XPos>
+																					<YPos>0</YPos>
+																					<Flags>0</Flags>
+																					<SegmentShape>Log2</SegmentShape>
+																				</Point>
+																				<Point>
+																					<XPos>7000</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="LowPassFilter" ID="{CA23F618-2DFD-4719-90A4-E30671BE186B}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="65537"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>7000</XPos>
+																					<YPos>29</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="HighPassFilter" ID="{DD021140-85EE-4EA8-982B-C945A333FE08}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="65537"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>7000</XPos>
+																					<YPos>29</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="Spread" ID="{F642ACAC-B39A-4874-BE05-0ABC689A5C52}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="1"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>2326.01881166667</XPos>
+																					<YPos>0</YPos>
+																					<Flags>0</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>7000</XPos>
+																					<YPos>100</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 												</Reference>
@@ -3788,7 +3908,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Grosse_Boule_Trap_SEQ" ID="{E03062D2-363F-4472-ADE6-9B3B87EAC13A}" ShortID="672272668">
+												<RandomSequenceContainer Name="Big_Rock_Rolling_SEQ" ID="{E03062D2-363F-4472-ADE6-9B3B87EAC13A}" ShortID="672272668">
 													<PropertyList>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
@@ -3810,7 +3930,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="SFX_HB_BouleRoll_V5" ID="{92068A98-17C3-463D-B68C-5899989CF417}" ShortID="590281119">
+														<Sound Name="SFX_HB_Rolling" ID="{92068A98-17C3-463D-B68C-5899989CF417}" ShortID="590281119">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3842,7 +3962,7 @@
 																<ActiveSource Name="SFX_HB_BouleRoll_V5" ID="{BA61BD4A-4F87-4C47-9AA3-DDE408C64264}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="SFX_HB_VibrationVégétale_OneShot" ID="{801C25BF-A846-4B93-9874-021BD789A891}" ShortID="1038927515">
+														<Sound Name="SFX_HB_VegetalVibrations" ID="{801C25BF-A846-4B93-9874-021BD789A891}" ShortID="1038927515">
 															<PropertyList>
 																<Property Name="InitialDelay" Type="Real64">
 																	<ValueList>
@@ -3888,32 +4008,52 @@
 																<ActiveSource Name="SFX_HB_VibrationVégétale_OneShot" ID="{0C3677E1-8671-4221-9BF8-509946536185}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="SFX_HB_Traps_Explo_Grosse_Boule" ID="{1F14BBAA-7EF8-46C7-B84F-E58982DD8A41}" ShortID="913768071">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="SFX_HB_Traps_Explo_Grosse_Boule" ID="{70A49471-ADED-4B0A-9ABA-EF69B4045338}" ShortID="764513421">
-																	<Language>SFX</Language>
-																	<AudioFile>SFX_HB_Traps_Explo_Grosse_Boule.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="SFX_HB_Traps_Explo_Grosse_Boule" ID="{70A49471-ADED-4B0A-9ABA-EF69B4045338}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 													</ChildrenList>
 													<Playlist>
-														<ItemRef Name="SFX_HB_BouleRoll_V5" ID="{92068A98-17C3-463D-B68C-5899989CF417}"/>
-														<ItemRef Name="SFX_HB_VibrationVégétale_OneShot" ID="{801C25BF-A846-4B93-9874-021BD789A891}"/>
-														<ItemRef Name="SFX_HB_Traps_Explo_Grosse_Boule" ID="{1F14BBAA-7EF8-46C7-B84F-E58982DD8A41}"/>
+														<ItemRef Name="SFX_HB_Rolling" ID="{92068A98-17C3-463D-B68C-5899989CF417}"/>
+														<ItemRef Name="SFX_HB_VegetalVibrations" ID="{801C25BF-A846-4B93-9874-021BD789A891}"/>
 													</Playlist>
 												</RandomSequenceContainer>
+												<Sound Name="SFX_HB_Traps_ExploBigRock" ID="{1F14BBAA-7EF8-46C7-B84F-E58982DD8A41}" ShortID="913768071">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_Traps" ID="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Traps_Explo_Grosse_Boule" ID="{70A49471-ADED-4B0A-9ABA-EF69B4045338}" ShortID="764513421">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Traps_Explo_Grosse_Boule.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Traps_Explo_Grosse_Boule" ID="{70A49471-ADED-4B0A-9ABA-EF69B4045338}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
@@ -11124,7 +11264,6 @@
 																				<Value>80</Value>
 																			</ValueList>
 																		</Property>
-																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
 																				<Value>3</Value>
@@ -11178,59 +11317,6 @@
 																			</ChildrenList>
 																			<ActiveSourceList>
 																				<ActiveSource Name="try_again_sweetheart" ID="{9F37FE16-B7FB-4B4B-9F05-8249FFB1DC75}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="you_will_pay" ID="{D8FB2CE3-DDAD-43A3-82E7-6B1AD8C7B26A}" ShortID="450634997">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="you_will_pay" ID="{416040AF-5E71-409D-BE8C-EAB0F75EFDA7}" ShortID="406524243">
-																					<PropertyList>
-																						<Property Name="FadeInDuration" Type="Real64" Value="2.48930279874507E-02"/>
-																						<Property Name="FadeOutDuration" Type="Real64" Value="3.48502391824312E-02"/>
-																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																						<Property Name="TrimBegin" Type="Real64" Value="8.96149007548225E-02"/>
-																						<Property Name="TrimEnd" Type="Real64" Value="2.46440977075762"/>
-																					</PropertyList>
-																					<Language>SFX</Language>
-																					<AudioFile>you_will_pay.WAV</AudioFile>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="you_will_pay" ID="{416040AF-5E71-409D-BE8C-EAB0F75EFDA7}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="you_will_suffer" ID="{25C69AC9-40C0-4FCE-A3A1-F47F65F32E78}" ShortID="1064490270">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="you_will_suffer" ID="{983688F6-C32B-4EF8-AC11-FFD52303241F}" ShortID="516664485">
-																					<PropertyList>
-																						<Property Name="FadeInDuration" Type="Real64" Value="5.42763954897028E-02"/>
-																						<Property Name="FadeOutDuration" Type="Real64" Value="2.26151647873762E-02"/>
-																						<Property Name="LoopBegin" Type="Real64" Value="0.167352219426583"/>
-																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																						<Property Name="TrimBegin" Type="Real64" Value="0.162829186469108"/>
-																						<Property Name="TrimEnd" Type="Real64" Value="2.32936197309974"/>
-																					</PropertyList>
-																					<Language>SFX</Language>
-																					<AudioFile>you_will_suffer.WAV</AudioFile>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="you_will_suffer" ID="{983688F6-C32B-4EF8-AC11-FFD52303241F}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
 																		<Sound Name="no" ID="{B1178306-BC8B-4365-9ACA-94E23A2AE3DD}" ShortID="857404124">
@@ -12837,6 +12923,253 @@
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Get Hit Critical" ID="{F0C8BF0B-18D2-4770-96ED-4DBBA8833F84}" ShortID="420095278">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="KaliBear_Speech_GetHitCritical_SEQ" ID="{EAF828B0-D91A-43CD-BAFF-3B6C993FCC09}" ShortID="1022830917">
+													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Bear_Speech_BOSS_GiveDmgToKali" ID="{56C40D19-A63E-4D34-A9B9-8EE2E213923B}" ShortID="84954330">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="VOICE_HB_Bear_Bossline_3-1_Bouh" ID="{5178A36F-083F-40CA-B86A-9ACA26D1CD42}" ShortID="100787883">
+																	<PropertyList>
+																		<Property Name="Priority" Type="int16">
+																			<ValueList>
+																				<Value>90</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="VOICE_HB_Bear_Bossline_3-1_Bouh" ID="{0891823A-E06D-4BAE-B589-CF8B104A11BD}" ShortID="535872497">
+																			<Language>SFX</Language>
+																			<AudioFile>VOICE_HB_Bear_Bossline_3-1_Bouh.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="351062873"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="VOICE_HB_Bear_Bossline_3-1_Bouh" ID="{0891823A-E06D-4BAE-B589-CF8B104A11BD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="VOICE_HB_Bear_Bossline_3-2_Bouh" ID="{C1B2C232-39F9-4706-BB2B-D32D49E66005}" ShortID="22706085">
+																	<PropertyList>
+																		<Property Name="Priority" Type="int16">
+																			<ValueList>
+																				<Value>90</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="VOICE_HB_Bear_Bossline_3-2_Bouh" ID="{DFA54399-643F-45ED-B7CB-CA743AAA6102}" ShortID="1039621180">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="2.54063926940639E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="7.81735159817343E-03"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.140712328767123"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.01430136986301"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>VOICE_HB_Bear_Bossline_3-2_Bouh.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="314355310"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="VOICE_HB_Bear_Bossline_3-2_Bouh" ID="{DFA54399-643F-45ED-B7CB-CA743AAA6102}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="Kali_Speech_GetHitCritical_Speech_RND" ID="{11F6649C-1AEB-4E35-BFA5-C7AFE680D124}" ShortID="443776445">
+															<PropertyList>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+																<Property Name="Priority" Type="int16">
+																	<ValueList>
+																		<Value>80</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="you_will_pay" ID="{D98E4FED-026C-4D9F-A131-56B5A5EF23B5}" ShortID="683638110">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="you_will_pay" ID="{93643A91-8625-42A9-9397-A17A03DA3401}" ShortID="603960058">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="2.48930279874507E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="3.48502391824312E-02"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="8.96149007548225E-02"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.46440977075762"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>you_will_pay.WAV</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="406524243"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="you_will_pay" ID="{93643A91-8625-42A9-9397-A17A03DA3401}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="you_will_suffer" ID="{FD74F3E6-0966-46F3-B3D2-3FAE727B6DFF}" ShortID="850302577">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="you_will_suffer" ID="{DA02D758-AA8F-4B04-964C-60CD0B2878AC}" ShortID="963107862">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="5.42763954897028E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="2.26151647873762E-02"/>
+																				<Property Name="LoopBegin" Type="Real64" Value="0.167352219426583"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.162829186469108"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.32936197309974"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>you_will_suffer.WAV</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="516664485"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="you_will_suffer" ID="{DA02D758-AA8F-4B04-964C-60CD0B2878AC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="Bear_Speech_BOSS_GiveDmgToKali" ID="{56C40D19-A63E-4D34-A9B9-8EE2E213923B}"/>
+														<ItemRef Name="Kali_Speech_GetHitCritical_Speech_RND" ID="{11F6649C-1AEB-4E35-BFA5-C7AFE680D124}"/>
+													</Playlist>
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
