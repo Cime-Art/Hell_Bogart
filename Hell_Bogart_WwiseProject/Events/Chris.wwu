@@ -16,10 +16,13 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{0DE71B1C-7E15-43D1-8987-54BA3947B57B}" ShortID="173126003">
+										<Action Name="" ID="{5AEFC237-6F00-4739-98E0-82A4AB20F932}" ShortID="172787568">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.5"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="HB_SFX_KALI_Jump_Loop" ID="{B25DAD9F-8946-40E6-AC4E-71C58C6AC7E9}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+													<ObjectRef Name="HB_SFX_KALI_Air_Movement_01" ID="{C25A09CA-B8E6-4ADE-88AF-9EE62D8C006B}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -27,20 +30,20 @@
 								</Event>
 								<Event Name="E_KaliBoss_Impact" ID="{D6C314B3-C9DB-49F7-B7D8-13DB53F2167E}">
 									<ChildrenList>
-										<Action Name="" ID="{53ACBE4C-808B-4ECE-92D8-DD3AFB901612}" ShortID="1025155900">
+										<Action Name="" ID="{F0019704-B057-49E0-94C0-EC0577BCA13C}" ShortID="246679090">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Impacts" ID="{CAA6A217-2512-41AE-B8E1-A66348FB2696}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{549196F4-A7A9-48EF-85FC-5B828B6251A7}" ShortID="232199417">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="HB_SFX_KALI_Jump_Loop" ID="{B25DAD9F-8946-40E6-AC4E-71C58C6AC7E9}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{F0019704-B057-49E0-94C0-EC0577BCA13C}" ShortID="246679090">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="RND_Impacts" ID="{CAA6A217-2512-41AE-B8E1-A66348FB2696}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+													<ObjectRef Name="HB_SFX_KALI_Air_Movement_01" ID="{C25A09CA-B8E6-4ADE-88AF-9EE62D8C006B}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
