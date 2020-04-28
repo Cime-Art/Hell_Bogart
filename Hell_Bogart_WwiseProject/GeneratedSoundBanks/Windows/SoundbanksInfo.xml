@@ -930,7 +930,11 @@
 			<IncludedMemoryFiles>
 				<File Id="2293263" Language="SFX">
 					<ShortName>HB_SFX_KALI_Jump_Impact_02.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Jump_Impact_02_B6F381BF.wem</Path>
+					<Path>SFX\HB_SFX_KALI_Jump_Impact_02_1BB37F05.wem</Path>
+				</File>
+				<File Id="9973633" Language="SFX">
+					<ShortName>HB_SFX_KALI_Grab_05.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_Grab_05_66C02B12.wem</Path>
 				</File>
 				<File Id="12908966" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Equip2.wav</ShortName>
@@ -947,6 +951,10 @@
 				<File Id="18450333" Language="SFX">
 					<ShortName>HB-SFX-Gardian-HitPlayer_00.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-HitPlayer_00_66C02B12.wem</Path>
+				</File>
+				<File Id="29051026" Language="SFX">
+					<ShortName>HB_SFX_Other_Ammo_03.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Ammo_03_66C02B12.wem</Path>
 				</File>
 				<File Id="37010359" Language="SFX">
 					<ShortName>HB_SFX_Other_PickUpHealthkit.wav</ShortName>
@@ -1040,9 +1048,9 @@
 					<ShortName>VOICE_HB_Bear_LosingLife_Fuck_07.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LosingLife_Fuck_07_10C4C929.wem</Path>
 				</File>
-				<File Id="98705135" Language="SFX">
-					<ShortName>Hb_sfx_other_Ammo_standar.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_Ammo_standar_6020A2C8.wem</Path>
+				<File Id="97050673" Language="SFX">
+					<ShortName>HB_SFX_Other_Ammo_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Ammo_01_66C02B12.wem</Path>
 				</File>
 				<File Id="101291286" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_02.wav</ShortName>
@@ -1202,7 +1210,7 @@
 				</File>
 				<File Id="194196140" Language="SFX">
 					<ShortName>HB_SFX_KALI_Attack_02.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Attack_02_D2A155BC.wem</Path>
+					<Path>SFX\HB_SFX_KALI_Attack_02_D39D7AA4.wem</Path>
 				</File>
 				<File Id="195010049" Language="SFX">
 					<ShortName>VOICE_HB_Bear_CombatEnd_3-4_KennedyProtectYou.wav</ShortName>
@@ -1210,7 +1218,7 @@
 				</File>
 				<File Id="196666232" Language="SFX">
 					<ShortName>HB_SFX_KALI_Jump_Impact_02.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Jump_Impact_02_251B78E4.wem</Path>
+					<Path>SFX\HB_SFX_KALI_Jump_Impact_02_BA55F8DE.wem</Path>
 				</File>
 				<File Id="196894485" Language="SFX">
 					<ShortName>FTP_sol poussiereux_01.wav</ShortName>
@@ -1230,7 +1238,7 @@
 				</File>
 				<File Id="200502162" Language="SFX">
 					<ShortName>HB_SFX_KALI_Jump_Impact_01.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Jump_Impact_01_69A1641F.wem</Path>
+					<Path>SFX\HB_SFX_KALI_Jump_Impact_01_B9F1EE23.wem</Path>
 				</File>
 				<File Id="201532359" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_01.wav</ShortName>
@@ -1806,7 +1814,7 @@
 				</File>
 				<File Id="476709970" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Pickup3.wav</ShortName>
-					<Path>SFX\HB_SFX_Uiwep_Pickup3_B2645BF5.wem</Path>
+					<Path>SFX\HB_SFX_Uiwep_Pickup3_320E4523.wem</Path>
 				</File>
 				<File Id="479199677" Language="SFX">
 					<ShortName>HB_FTP_Flaque_03.wav</ShortName>
@@ -1814,7 +1822,7 @@
 				</File>
 				<File Id="481689103" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Pickup1.wav</ShortName>
-					<Path>SFX\HB_SFX_Uiwep_Pickup1_EF5808D2.wem</Path>
+					<Path>SFX\HB_SFX_Uiwep_Pickup1_0F394BF5.wem</Path>
 				</File>
 				<File Id="485068759" Language="SFX">
 					<ShortName>VOICE_HB_Bear_CombatEngage_4-2_DisneyLand.wav</ShortName>
@@ -1842,7 +1850,7 @@
 				</File>
 				<File Id="497043436" Language="SFX">
 					<ShortName>SFX_HB_Character_HeartBeat_Fast.wav</ShortName>
-					<Path>SFX\SFX_HB_Character_HeartBeat_Fast_F5CC2DC8.wem</Path>
+					<Path>SFX\SFX_HB_Character_HeartBeat_Fast_7C7343C1.wem</Path>
 				</File>
 				<File Id="499152641" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Explo_3-3_HereWeGoAgain.wav</ShortName>
@@ -1926,7 +1934,7 @@
 				</File>
 				<File Id="528701847" Language="SFX">
 					<ShortName>Hb_sfx_other_pickup_standar.wav</ShortName>
-					<Path>SFX\Hb_sfx_other_pickup_standar_003E83DC.wem</Path>
+					<Path>SFX\Hb_sfx_other_pickup_standar_27C88C86.wem</Path>
 				</File>
 				<File Id="531370814" Language="SFX">
 					<ShortName>Shell_Metal_02.wav</ShortName>
@@ -2058,7 +2066,7 @@
 				</File>
 				<File Id="585577129" Language="SFX">
 					<ShortName>SFX_HB_Character_HeartBeat_Slow.wav</ShortName>
-					<Path>SFX\SFX_HB_Character_HeartBeat_Slow_9BD23319.wem</Path>
+					<Path>SFX\SFX_HB_Character_HeartBeat_Slow_5FB76038.wem</Path>
 				</File>
 				<File Id="585735897" Language="SFX">
 					<ShortName>FTP_gravier_03.wav</ShortName>
@@ -2108,6 +2116,10 @@
 					<ShortName>FTP_metal_02.wav</ShortName>
 					<Path>SFX\FTP_metal_02_66C02B12.wem</Path>
 				</File>
+				<File Id="610022856" Language="SFX">
+					<ShortName>HB_SFX_Other_Pickup_ammo_Rare_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Pickup_ammo_Rare_02_66C02B12.wem</Path>
+				</File>
 				<File Id="613642299" Language="SFX">
 					<ShortName>SFX-HB-CoffreBois_01.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreBois_01_66C02B12.wem</Path>
@@ -2135,10 +2147,6 @@
 				<File Id="626546830" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_66C02B12.wem</Path>
-				</File>
-				<File Id="631731791" Language="SFX">
-					<ShortName>HB_SFX_Other_Pickup_ammo_Legendary_.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Pickup_ammo_Legendary__57286D06.wem</Path>
 				</File>
 				<File Id="633385100" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Dirt_02.wav</ShortName>
@@ -2218,7 +2226,7 @@
 				</File>
 				<File Id="683326520" Language="SFX">
 					<ShortName>HB_SFX_KALI_Attack_03.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Attack_03_870E1271.wem</Path>
+					<Path>SFX\HB_SFX_KALI_Attack_03_99DEA8C4.wem</Path>
 				</File>
 				<File Id="684485987" Language="SFX">
 					<ShortName>HB_Kali_Grab_end_02.wav</ShortName>
@@ -2227,10 +2235,6 @@
 				<File Id="685052240" Language="SFX">
 					<ShortName>Shell_Wood_05.wav</ShortName>
 					<Path>SFX\Shell_Wood_05_66C02B12.wem</Path>
-				</File>
-				<File Id="685826173" Language="SFX">
-					<ShortName>HB_SFX_KALI_Grab_01.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Grab_01_AB3E3063.wem</Path>
 				</File>
 				<File Id="687750861" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LosingLife_Fuck_01.wav</ShortName>
@@ -2318,7 +2322,7 @@
 				</File>
 				<File Id="740162737" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Pickup2.wav</ShortName>
-					<Path>SFX\HB_SFX_Uiwep_Pickup2_5AFA1C65.wem</Path>
+					<Path>SFX\HB_SFX_Uiwep_Pickup2_A6AD1683.wem</Path>
 				</File>
 				<File Id="740705521" Language="SFX">
 					<ShortName>come_here.WAV</ShortName>
@@ -2372,6 +2376,10 @@
 					<ShortName>HB_SFX_Shotgun_ThunderAmmo_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_ThunderAmmo_00_DB69DF13.wem</Path>
 				</File>
+				<File Id="757153520" Language="SFX">
+					<ShortName>HB_SFX_Other_Ammo_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Ammo_02_66C02B12.wem</Path>
+				</File>
 				<File Id="758351355" Language="SFX">
 					<ShortName>HB-SFX-Gardian-HitPlayer_03.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-HitPlayer_03_66C02B12.wem</Path>
@@ -2415,10 +2423,6 @@
 				<File Id="788905969" Language="SFX">
 					<ShortName>Shell_Metal_01.wav</ShortName>
 					<Path>SFX\Shell_Metal_01_66C02B12.wem</Path>
-				</File>
-				<File Id="794355521" Language="SFX">
-					<ShortName>HB_SFX_Other_Pickup_ammo_Rare.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Pickup_ammo_Rare_009F1555.wem</Path>
 				</File>
 				<File Id="795317854" Language="SFX">
 					<ShortName>SFX-HB-CoffreMetalVieux_00.wav</ShortName>
@@ -2526,7 +2530,7 @@
 				</File>
 				<File Id="865513226" Language="SFX">
 					<ShortName>HB_SFX_KALI_Jump_Impact_03.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Jump_Impact_03_BF612039.wem</Path>
+					<Path>SFX\HB_SFX_KALI_Jump_Impact_03_90399024.wem</Path>
 				</File>
 				<File Id="866745273" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_01.wav</ShortName>
@@ -2596,6 +2600,10 @@
 					<ShortName>VOICE_HB_Bear_LootLegendary_3.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LootLegendary_3_10C4C929.wem</Path>
 				</File>
+				<File Id="924557125" Language="SFX">
+					<ShortName>HB_Kali_Attacks_whoosh_Mid_02.wav</ShortName>
+					<Path>SFX\HB_Kali_Attacks_whoosh_Mid_02_8A5B8252.wem</Path>
+				</File>
 				<File Id="931113645" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LosingLife_Fuck_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LosingLife_Fuck_02_10C4C929.wem</Path>
@@ -2662,7 +2670,7 @@
 				</File>
 				<File Id="959475863" Language="SFX">
 					<ShortName>HB_SFX_KALI_Attack_01.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Attack_01_9A75D1EC.wem</Path>
+					<Path>SFX\HB_SFX_KALI_Attack_01_09928E58.wem</Path>
 				</File>
 				<File Id="964166816" Language="SFX">
 					<ShortName>60 - .45 auto shell single shell on hard packed dirt-07.wav</ShortName>
@@ -2678,7 +2686,7 @@
 				</File>
 				<File Id="968505438" Language="SFX">
 					<ShortName>HB_SFX_KALI_Death03.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Death03_7994D666.wem</Path>
+					<Path>SFX\HB_SFX_KALI_Death03_4BF9102B.wem</Path>
 				</File>
 				<File Id="972483720" Language="SFX">
 					<ShortName>HB_Footstep_SolPierre_03.wav</ShortName>
@@ -2711,6 +2719,10 @@
 				<File Id="994240380" Language="SFX">
 					<ShortName>FTP_ossements_sol_01.wav</ShortName>
 					<Path>SFX\FTP_ossements_sol_01_66C02B12.wem</Path>
+				</File>
+				<File Id="994734768" Language="SFX">
+					<ShortName>HB_SFX_Other_Pickup_Legendary_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Pickup_Legendary_01_3E2433C5.wem</Path>
 				</File>
 				<File Id="999875653" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Dirt_00.wav</ShortName>
@@ -2835,10 +2847,6 @@
 				<File Id="1067846903" Language="SFX">
 					<ShortName>MnGn_Fire_02.wav</ShortName>
 					<Path>SFX\MnGn_Fire_02_66C02B12.wem</Path>
-				</File>
-				<File Id="1069135617" Language="SFX">
-					<ShortName>HB_SFX_KALI_Grab_03.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Grab_03_F1202360.wem</Path>
 				</File>
 				<File Id="1069322071" Language="SFX">
 					<ShortName>are_you_prepared.WAV</ShortName>
