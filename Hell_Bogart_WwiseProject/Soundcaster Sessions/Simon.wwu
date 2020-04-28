@@ -78,6 +78,10 @@
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_SpikeDoor_Begin" ID="{17E6114C-BB16-456B-B535-2CCA08B79507}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Char_Heartbeat_Slow" ID="{C0C244D9-A496-494F-BB0F-CE36674CA482}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="7"/>
 						</Module>
@@ -96,6 +100,10 @@
 						<Module>
 							<ObjectRef Name="E_SetAcoustic_Ruines" ID="{C353E2E9-9109-4E73-8F21-5EF93B0294A4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_SpikeDoor_End" ID="{DC16C2C8-8097-435A-912E-27589796E563}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="3" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT" ID="{486A7238-3CC0-4FC5-848D-CFD7048B7198}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
@@ -220,7 +228,7 @@
 						<CurrentStateRef Name="Big_attack" ID="{0CE551FC-C9AF-4DB2-8131-CFB10775BC2E}"/>
 						<CurrentStateRef Name="In" ID="{F0DD71A8-59AA-4F09-9732-5FBFA0055581}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
-						<CurrentStateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
+						<CurrentStateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
 						<CurrentStateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
 					</CurrentStateList>
