@@ -26,6 +26,7 @@
 						<ObjectRef Name="E_Mob_JungleCharlie_Attack" ID="{5B1790E9-CFE2-42D5-A7A2-1057AE8B4497}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Stomp" ID="{664EAF6C-1D06-42DC-ABA6-425ADD82BB69}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Kali_Hit" ID="{75FAAFBA-138D-4343-8C66-DAC7CE2B9067}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_SpikeDoor_End" ID="{DC16C2C8-8097-435A-912E-27589796E563}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_KaliBoss_GrandEND" ID="{54295308-C493-438F-B3D0-801F61477249}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Global_SetInPauseMenu" ID="{85FBA638-4F4B-43D8-9A14-5F36F100CC3E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Initialize_Shotgun_EVENT" ID="{F61282D3-78A2-43D8-9029-A088AAE20939}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
@@ -36,6 +37,7 @@
 						<ObjectRef Name="E_Traps_SpikeTrap" ID="{AEDF05AF-CCF6-44D5-BFD9-BE593DE36942}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Coffre_Loquet" ID="{75AACFDF-E334-44E1-B81F-0A7E1E96B364}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Death" ID="{807077AB-8410-4553-ADAF-BB3C2AF45B5F}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_SpikeDoor_Begin" ID="{17E6114C-BB16-456B-B535-2CCA08B79507}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Hit" ID="{3F9B7232-704F-4590-B051-F3C8ACBF3D64}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SetAcoustic_BossArena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_KAli_whisper_02" ID="{9DD86F80-4BB2-4607-B0C3-97D7CD0A8208}" WorkUnitID="{D109BCCB-2B16-4626-BAE8-CEC4CBAA63B7}" Filter="7" Origin="Manual"/>

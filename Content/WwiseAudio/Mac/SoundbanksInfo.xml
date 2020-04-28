@@ -901,6 +901,8 @@
 				<Event Id="3985088299" Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_STOP_LOOP"/>
 				<Event Id="3478273789" Name="E_Speech_Kali_Speech_TheChaseIsOn" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Speech_TheChaseIsOn"/>
 				<Event Id="4237626404" Name="E_Speech_Kali_ThereIsNoEscape" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_ThereIsNoEscape"/>
+				<Event Id="1851091839" Name="E_SpikeDoor_Begin" ObjectPath="\Events\Simon\Enviro\Spike Door\E_SpikeDoor_Begin"/>
+				<Event Id="3959715823" Name="E_SpikeDoor_End" ObjectPath="\Events\Simon\Enviro\Spike Door\E_SpikeDoor_End"/>
 				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
 				<Event Id="717878901" Name="E_StoneDoorRiddle_Stop" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop"/>
 				<Event Id="1602191484" Name="E_Stop_Heartbeat" ObjectPath="\Events\Simon\Character\E_Stop_Heartbeat"/>
@@ -988,6 +990,10 @@
 					<ShortName>HB-SFX-Gardian-Footstep_02.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Footstep_02_66C02B12.wem</Path>
 				</File>
+				<File Id="62953235" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_09.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_09_66C02B12.wem</Path>
+				</File>
 				<File Id="63219166" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Footstep_07.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Footstep_07_66C02B12.wem</Path>
@@ -1052,6 +1058,10 @@
 					<ShortName>HB_SFX_Other_Ammo_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_Ammo_01_66C02B12.wem</Path>
 				</File>
+				<File Id="100097236" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_03.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_03_66C02B12.wem</Path>
+				</File>
 				<File Id="101291286" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_RegularCanon_02_66C02B12.wem</Path>
@@ -1099,6 +1109,14 @@
 				<File Id="131593625" Language="SFX">
 					<ShortName>VOICE_HB_Bear_UltiStarter_1-4_KnockKnockGatling.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiStarter_1-4_KnockKnockGatling_10C4C929.wem</Path>
+				</File>
+				<File Id="131693636" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MecaClicks.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MecaClicks_C42B8C3C.wem</Path>
+				</File>
+				<File Id="133157297" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_05.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_05_66C02B12.wem</Path>
 				</File>
 				<File Id="135613566" Language="SFX">
 					<ShortName>MnGn_Fire_05.wav</ShortName>
@@ -1167,6 +1185,10 @@
 				<File Id="164532848" Language="SFX">
 					<ShortName>dont_hide.WAV</ShortName>
 					<Path>SFX\dont_hide_10C4C929.wem</Path>
+				</File>
+				<File Id="164562656" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_10.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_10_66C02B12.wem</Path>
 				</File>
 				<File Id="167945936" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_02.wav</ShortName>
@@ -1264,9 +1286,17 @@
 					<ShortName>HB_SFX_Shotgun_CanonPortee_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonPortee_02_66C02B12.wem</Path>
 				</File>
+				<File Id="211143510" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_EndKlonk_01 .wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_EndKlonk_01 _66C02B12.wem</Path>
+				</File>
 				<File Id="215037878" Language="SFX">
 					<ShortName>Shell_Gravel_02.wav</ShortName>
 					<Path>SFX\Shell_Gravel_02_66C02B12.wem</Path>
+				</File>
+				<File Id="218251719" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_01.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_01_66C02B12.wem</Path>
 				</File>
 				<File Id="218847250" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LosingLife_Fuck_06.wav</ShortName>
@@ -1500,6 +1530,10 @@
 					<ShortName>HB_SFX_Uiwep_Equip1.wav</ShortName>
 					<Path>SFX\HB_SFX_Uiwep_Equip1_66C02B12.wem</Path>
 				</File>
+				<File Id="332991869" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_BeginKlonk_03.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_BeginKlonk_03_66C02B12.wem</Path>
+				</File>
 				<File Id="333470233" Language="SFX">
 					<ShortName>MnGn_Fire_01.wav</ShortName>
 					<Path>SFX\MnGn_Fire_01_66C02B12.wem</Path>
@@ -1531,6 +1565,10 @@
 				<File Id="342182258" Language="SFX">
 					<ShortName>your_soul_will_be_mine.WAV</ShortName>
 					<Path>SFX\your_soul_will_be_mine_10C4C929.wem</Path>
+				</File>
+				<File Id="342294347" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_04.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_04_66C02B12.wem</Path>
 				</File>
 				<File Id="347316120" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Tonneau_01.wav</ShortName>
@@ -1732,6 +1770,10 @@
 					<ShortName>VOICE_HB_Bear_TamponBridge_4.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_TamponBridge_4_10C4C929.wem</Path>
 				</File>
+				<File Id="441520565" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_07.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_07_66C02B12.wem</Path>
+				</File>
 				<File Id="443141729" Language="SFX">
 					<ShortName>HB-SFX-Gardian-StartCharge.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-StartCharge_66C02B12.wem</Path>
@@ -1780,6 +1822,10 @@
 					<ShortName>HB_FTP_Flaque_02.wav</ShortName>
 					<Path>SFX\HB_FTP_Flaque_02_66C02B12.wem</Path>
 				</File>
+				<File Id="462758781" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_BeginKlonk_02.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_BeginKlonk_02_66C02B12.wem</Path>
+				</File>
 				<File Id="464167368" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_NoChamber_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_NoChamber_00_66C02B12.wem</Path>
@@ -1795,6 +1841,10 @@
 				<File Id="467856361" Language="SFX">
 					<ShortName>HB-SFX-Gardian-HitPlayer_02.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-HitPlayer_02_66C02B12.wem</Path>
+				</File>
+				<File Id="470473529" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_EndKlonk_03.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_EndKlonk_03_66C02B12.wem</Path>
 				</File>
 				<File Id="472789580" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Wood_00.wav</ShortName>
@@ -2180,6 +2230,10 @@
 					<ShortName>Shell_Metal_05.wav</ShortName>
 					<Path>SFX\Shell_Metal_05_66C02B12.wem</Path>
 				</File>
+				<File Id="656733187" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_BeginKlonk_01.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_BeginKlonk_01_66C02B12.wem</Path>
+				</File>
 				<File Id="659057326" Language="SFX">
 					<ShortName>CECK FIRE Burst Sizzle Small_01.wav</ShortName>
 					<Path>SFX\CECK FIRE Burst Sizzle Small_01_DB4B27FB.wem</Path>
@@ -2263,6 +2317,10 @@
 				<File Id="705622584" Language="SFX">
 					<ShortName>VOICE_HB_Bear_UltiShooting_1-4_SlaughterTime_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiShooting_1-4_SlaughterTime_02_10C4C929.wem</Path>
+				</File>
+				<File Id="712475117" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_06.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_06_66C02B12.wem</Path>
 				</File>
 				<File Id="715525088" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_ThunderAmmo_01.wav</ShortName>
@@ -2428,6 +2486,14 @@
 					<ShortName>SFX-HB-CoffreMetalVieux_00.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreMetalVieux_00_66C02B12.wem</Path>
 				</File>
+				<File Id="799644832" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_08.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_08_66C02B12.wem</Path>
+				</File>
+				<File Id="801069966" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_02.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_02_66C02B12.wem</Path>
+				</File>
 				<File Id="802288181" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Stone_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Stone_01_66C02B12.wem</Path>
@@ -2592,6 +2658,10 @@
 					<ShortName>HB_Footstep_HerbesSèches_01.wav</ShortName>
 					<Path>SFX\HB_Footstep_HerbesSèches_01_66C02B12.wem</Path>
 				</File>
+				<File Id="915004711" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_EndKlonk_02.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_EndKlonk_02_66C02B12.wem</Path>
+				</File>
 				<File Id="917707095" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_7-3_VoteForKennedy.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_7-3_VoteForKennedy_10C4C929.wem</Path>
@@ -2651,6 +2721,10 @@
 				<File Id="948793202" Language="SFX">
 					<ShortName>HB_SFX_UiWep_Equip5.wav</ShortName>
 					<Path>SFX\HB_SFX_UiWep_Equip5_23BA5E8F.wem</Path>
+				</File>
+				<File Id="949577968" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalScrape_01.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalScrape_01_66C02B12.wem</Path>
 				</File>
 				<File Id="956737558" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Attack_02.wav</ShortName>
@@ -2763,6 +2837,10 @@
 				<File Id="1023057183" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LosingLife_Fuck_08.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LosingLife_Fuck_08_10C4C929.wem</Path>
+				</File>
+				<File Id="1023299147" Language="SFX">
+					<ShortName>SFX_HB_SpikeDoor_MetalScrape_02.wav</ShortName>
+					<Path>SFX\SFX_HB_SpikeDoor_MetalScrape_02_66C02B12.wem</Path>
 				</File>
 				<File Id="1028175132" Language="SFX">
 					<ShortName>FTP_bois_sec_01.wav</ShortName>

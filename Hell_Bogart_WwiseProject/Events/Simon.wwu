@@ -521,6 +521,50 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Spike Door" ID="{00B964FF-BD64-415D-8E3B-972D96C4EA06}" ShortID="473216337">
+							<ChildrenList>
+								<Event Name="E_SpikeDoor_Begin" ID="{17E6114C-BB16-456B-B535-2CCA08B79507}">
+									<ChildrenList>
+										<Action Name="" ID="{A2C10B95-0903-4C75-9332-72CEDE3E04C5}" ShortID="649602851">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Spike_Door_BeginKlonk_RND" ID="{15275BD7-76FC-48E4-8C51-382CC21C1C6D}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0462AE85-7ED6-4994-A4D0-D4A3F1514124}" ShortID="157773616">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Spike_Door_Opening_BLEND_LOOP" ID="{3CD96B5B-0611-4C3D-89F4-DB4FC2764109}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_SpikeDoor_End" ID="{DC16C2C8-8097-435A-912E-27589796E563}">
+									<ChildrenList>
+										<Action Name="" ID="{5921B588-A98E-479F-B0EB-EE4FCA21724F}" ShortID="996965022">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Spike_Door_Opening_BLEND_LOOP" ID="{3CD96B5B-0611-4C3D-89F4-DB4FC2764109}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{4924A072-4FED-4C09-BBCC-42BDF5518351}" ShortID="505678918">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Spike_Door_EndKlonk_RND" ID="{D9AB3E2D-026E-4FF0-8CAD-963FCF76F897}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{CB808997-9F6A-47F6-9C31-CF9884025AE1}" ShortID="1057474070">

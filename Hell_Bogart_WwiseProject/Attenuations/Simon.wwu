@@ -278,6 +278,119 @@
 								</FocusUsage>
 							</CurveUsageInfoList>
 						</Attenuation>
+						<Attenuation Name="ATT_SpikeDoor" ID="{237EBE94-33B2-4FE5-A144-898DFF08C709}" ShortID="861585541">
+							<PropertyList>
+								<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+							</PropertyList>
+							<CurveUsageInfoList>
+								<VolumeDryUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+										<Curve Name="VolumeDry" ID="{A09897A5-49F1-4AAA-9685-212FA33F64AD}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="3"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>5</Flags>
+													<SegmentShape>Log2</SegmentShape>
+												</Point>
+												<Point>
+													<XPos>1473.35423</XPos>
+													<YPos>-0</YPos>
+													<Flags>0</Flags>
+													<SegmentShape>Log2</SegmentShape>
+												</Point>
+												<Point>
+													<XPos>5000</XPos>
+													<YPos>-200</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</CurveUsageInfo>
+								</VolumeDryUsage>
+								<VolumeWetGameUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+								</VolumeWetGameUsage>
+								<VolumeWetUserUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+										<Curve Name="VolumeWetUser" ID="{D1805DA1-F11C-4E8E-84F2-73A08AAA3F2B}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="3"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>5</Flags>
+												</Point>
+												<Point>
+													<XPos>3275.86206</XPos>
+													<YPos>-0</YPos>
+													<Flags>0</Flags>
+													<SegmentShape>Exp2</SegmentShape>
+												</Point>
+												<Point>
+													<XPos>5000</XPos>
+													<YPos>-200</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</CurveUsageInfo>
+								</VolumeWetUserUsage>
+								<LowPassFilterUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+										<Curve Name="LowPassFilter" ID="{B6688587-B0D3-44C7-948B-7947EB4ECBF0}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="65537"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>5</Flags>
+												</Point>
+												<Point>
+													<XPos>5000</XPos>
+													<YPos>54</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</CurveUsageInfo>
+								</LowPassFilterUsage>
+								<HighPassFilterUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+										<Curve Name="HighPassFilter" ID="{F2394D9A-FED4-4494-AE94-9543F149EDF2}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="65537"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>5</Flags>
+												</Point>
+												<Point>
+													<XPos>5000</XPos>
+													<YPos>55</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</CurveUsageInfo>
+								</HighPassFilterUsage>
+								<SpreadUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+								</SpreadUsage>
+								<FocusUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+								</FocusUsage>
+							</CurveUsageInfoList>
+						</Attenuation>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Trash Mobs" ID="{5FB1683D-FCB5-4310-8D9F-E11BEE1EECF9}" ShortID="262598579">
