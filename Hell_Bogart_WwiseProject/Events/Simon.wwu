@@ -863,7 +863,7 @@
 								<Action Name="" ID="{5F54EBDE-EC38-4168-B150-F6711EAFB403}" ShortID="1061119837">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Gros_Tronc_Trap_SEQ" ID="{29A0B0D7-27B2-4719-AAAD-964E42098D9B}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+											<ObjectRef Name="Balancing_Tree_Trap_SEQ" ID="{29A0B0D7-27B2-4719-AAAD-964E42098D9B}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
