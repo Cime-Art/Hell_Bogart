@@ -153,7 +153,7 @@
 								<Action Name="" ID="{524DEEEF-B013-4558-AF38-5BA3AA0524BC}" ShortID="113827074">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+											<ObjectRef Name="SFX_HB_PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

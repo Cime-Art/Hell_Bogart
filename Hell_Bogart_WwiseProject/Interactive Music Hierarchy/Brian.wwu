@@ -417,14 +417,14 @@
 							<StingerList>
 								<MusicStinger Name="" ID="{B2ACA86D-E802-4291-8DDE-C3659BE48BD3}">
 									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+										<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
 									</PropertyList>
 									<TriggerRef Name="T_Ruines_Event_Enigme" ID="{F4E22B7D-B081-4CA0-945C-DB1D8DB133B1}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
 									<SegmentRef Name="Mus_Ruin_Event_Enigme" ID="{1855623C-9ED9-4168-A14E-549592C180CC}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
 								</MusicStinger>
 								<MusicStinger Name="" ID="{EACF6FB9-FC4F-4233-B903-03CB60C16791}">
 									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+										<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
 									</PropertyList>
 									<TriggerRef Name="T_Ruines_Event_Chest" ID="{C1BBA841-F0BE-487E-BCD8-607A48945454}" WorkUnitID="{FB91E194-39E0-4627-BDA4-1F358C712049}"/>
 									<SegmentRef Name="Mus_Ruin_Event_Chest" ID="{96D23101-593B-48DA-B73F-4A9BF6400E58}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
@@ -2038,7 +2038,7 @@
 					<ChildrenList>
 						<MusicSegment Name="Mus_Ruin_Event_Enigme" ID="{1855623C-9ED9-4168-A14E-549592C180CC}" ShortID="475970454">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="42625.0340136054"/>
+								<Property Name="EndPosition" Type="Real64" Value="14083.9827922416"/>
 								<Property Name="Tempo" Type="Real64" Value="90"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2127,22 +2127,17 @@
 								</MusicTrack>
 							</ChildrenList>
 							<CueList>
-								<MusicCue Name="Entry Cue" ID="{4576094E-D14B-4104-9F41-29249CAD364F}">
-									<PropertyList>
-										<Property Name="TimeMs" Type="Real64" Value="1000"/>
-									</PropertyList>
-								</MusicCue>
+								<MusicCue Name="Entry Cue" ID="{4576094E-D14B-4104-9F41-29249CAD364F}"/>
 								<MusicCue Name="Exit Cue" ID="{A9790B53-5A3A-4899-B93E-BDF98C5AC32E}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="2500"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
 						<MusicSegment Name="Mus_Ruin_Event_Chest" ID="{96D23101-593B-48DA-B73F-4A9BF6400E58}" ShortID="578879467">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="54388.8662131519"/>
+								<Property Name="EndPosition" Type="Real64" Value="13347.2895969475"/>
 								<Property Name="Tempo" Type="Real64" Value="90"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2247,15 +2242,10 @@
 								</MusicTrack>
 							</ChildrenList>
 							<CueList>
-								<MusicCue Name="Entry Cue" ID="{7CD31F3B-3891-4230-944A-38D987111703}">
-									<PropertyList>
-										<Property Name="TimeMs" Type="Real64" Value="1000"/>
-									</PropertyList>
-								</MusicCue>
+								<MusicCue Name="Entry Cue" ID="{7CD31F3B-3891-4230-944A-38D987111703}"/>
 								<MusicCue Name="Exit Cue" ID="{EC31ACD8-7628-434A-A5FE-A295F9B640A9}">
 									<PropertyList>
 										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="2500"/>
 									</PropertyList>
 								</MusicCue>
 							</CueList>

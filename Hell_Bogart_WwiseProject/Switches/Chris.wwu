@@ -5,16 +5,16 @@
 			<ChildrenList>
 				<SwitchGroup Name="AMMO_type" ID="{BA35DEFC-0656-4AEE-A58C-4EEC74B0CE97}">
 					<ChildrenList>
-						<Switch Name="Standar" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}"/>
-						<Switch Name="Rare" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
-						<Switch Name="Epic" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+						<Switch Name="Standar_Ammo" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}"/>
+						<Switch Name="Rare_Ammo" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
+						<Switch Name="Epic_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="PickUP_type" ID="{DEBCC2DF-83A9-4206-B1CB-4C169460F450}">
 					<ChildrenList>
-						<Switch Name="Standar" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
-						<Switch Name="RARE" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
-						<Switch Name="EPIC" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<Switch Name="Standar_Pick" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
+						<Switch Name="RARE_Pick" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
+						<Switch Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
