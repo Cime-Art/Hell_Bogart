@@ -170,6 +170,21 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="KALI DEATH" ID="{C75D3E5F-1A0B-4C64-AB24-89CE9DEAC63A}" ShortID="349472679">
+							<ChildrenList>
+								<Event Name="E_KaliBoss_Death" ID="{C8D18340-B59F-422F-BA01-FDE54EE90A1B}">
+									<ChildrenList>
+										<Action Name="" ID="{42893626-78C0-4E24-9287-B2A447288064}" ShortID="367760061">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Kali_Death" ID="{1E42E91F-DD4D-44F3-B473-FA13C0236E8E}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="HB_Ui_Character" ID="{6238A0C0-DC63-40FA-BE22-55F0706986CE}" ShortID="604188379">
