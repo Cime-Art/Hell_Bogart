@@ -298,13 +298,13 @@
 												</Point>
 												<Point>
 													<XPos>1473.35423</XPos>
-													<YPos>-0</YPos>
+													<YPos>0</YPos>
 													<Flags>0</Flags>
 													<SegmentShape>Log2</SegmentShape>
 												</Point>
 												<Point>
 													<XPos>5000</XPos>
-													<YPos>-200</YPos>
+													<YPos>-12</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -327,14 +327,8 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>3275.86206</XPos>
-													<YPos>-0</YPos>
-													<Flags>0</Flags>
-													<SegmentShape>Exp2</SegmentShape>
-												</Point>
-												<Point>
 													<XPos>5000</XPos>
-													<YPos>-200</YPos>
+													<YPos>-0</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -354,8 +348,13 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
+													<XPos>3134.79623824451</XPos>
+													<YPos>34</YPos>
+													<Flags>0</Flags>
+												</Point>
+												<Point>
 													<XPos>5000</XPos>
-													<YPos>54</YPos>
+													<YPos>33</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -375,8 +374,13 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
+													<XPos>3103.44827586207</XPos>
+													<YPos>34</YPos>
+													<Flags>0</Flags>
+												</Point>
+												<Point>
 													<XPos>5000</XPos>
-													<YPos>55</YPos>
+													<YPos>34</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -643,6 +647,57 @@
 											</PointList>
 										</Curve>
 									</CurveUsageInfo>
+								</SpreadUsage>
+								<FocusUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+								</FocusUsage>
+							</CurveUsageInfoList>
+						</Attenuation>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Boss Kali" ID="{05CE3F8E-7669-4E5A-9EDF-CCFC2BBA4D28}" ShortID="870544115">
+					<ChildrenList>
+						<Attenuation Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" ShortID="414495897">
+							<PropertyList>
+								<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+							</PropertyList>
+							<CurveUsageInfoList>
+								<VolumeDryUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+										<Curve Name="VolumeDry" ID="{18C95ACC-0F11-4C27-9F94-DAD786EAEAE1}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="3"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>5</Flags>
+													<SegmentShape>Log2</SegmentShape>
+												</Point>
+												<Point>
+													<XPos>5000</XPos>
+													<YPos>-200</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</CurveUsageInfo>
+								</VolumeDryUsage>
+								<VolumeWetGameUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+								</VolumeWetGameUsage>
+								<VolumeWetUserUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+								</VolumeWetUserUsage>
+								<LowPassFilterUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+								</LowPassFilterUsage>
+								<HighPassFilterUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+								</HighPassFilterUsage>
+								<SpreadUsage>
+									<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 								</SpreadUsage>
 								<FocusUsage>
 									<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
