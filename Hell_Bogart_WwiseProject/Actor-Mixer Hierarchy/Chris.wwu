@@ -1363,6 +1363,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="kali_death" ID="{E174D6F4-7830-4E30-8D4C-B90709FE0C89}" ShortID="572850688">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="3.50822674960395"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>kali_death.wav</AudioFile>
 																</AudioFileSource>
