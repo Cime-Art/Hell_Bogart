@@ -234,7 +234,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
-						<CurrentSwitchRef Name="Standar_Pick" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
+						<CurrentSwitchRef Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
