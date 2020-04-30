@@ -472,13 +472,13 @@
 				<Event Id="156378189" Name="E_Mus_Bridge_GoToPhase2" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase2"/>
 				<Event Id="1031929396" Name="E_Mus_Jungle_End" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_Jungle_End"/>
 				<Event Id="3867560083" Name="E_Mus_Jungle_Main_Play" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_Jungle_Main_Play"/>
-				<Event Id="2386022965" Name="E_Mus_Ruin_End" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_End"/>
-				<Event Id="3396393780" Name="E_Mus_Ruin_Explo" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Explo"/>
-				<Event Id="3116078580" Name="E_Mus_Ruin_Fight" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Fight"/>
-				<Event Id="1700046390" Name="E_Mus_Ruin_GardianFight" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_GardianFight"/>
-				<Event Id="2044504258" Name="E_Mus_Ruin_Main_Play" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Main_Play"/>
-				<Event Id="3221088188" Name="E_Mus_Ruin_Trigger_Chest" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Trigger_Chest"/>
-				<Event Id="2097670358" Name="E_Mus_Ruin_Trigger_Enigme" ObjectPath="\Events\Brian\Music\E_Mus_Ruin_Trigger_Enigme"/>
+				<Event Id="2386022965" Name="E_Mus_Ruin_End" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_End"/>
+				<Event Id="3396393780" Name="E_Mus_Ruin_Explo" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_Explo"/>
+				<Event Id="3116078580" Name="E_Mus_Ruin_Fight" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_Fight"/>
+				<Event Id="1700046390" Name="E_Mus_Ruin_GardianFight" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_GardianFight"/>
+				<Event Id="2044504258" Name="E_Mus_Ruin_Main_Play" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_Main_Play"/>
+				<Event Id="3221088188" Name="E_Mus_Ruin_Trigger_Chest" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_Trigger_Chest"/>
+				<Event Id="2097670358" Name="E_Mus_Ruin_Trigger_Enigme" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_Trigger_Enigme"/>
 				<Event Id="4247850677" Name="E_Mus_SetExplorationState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetExplorationState"/>
 				<Event Id="102331918" Name="E_Mus_SetFightState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetFightState"/>
 				<Event Id="4222663323" Name="E_Mus_TriggerEnigmeChest" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_TriggerEnigmeChest"/>

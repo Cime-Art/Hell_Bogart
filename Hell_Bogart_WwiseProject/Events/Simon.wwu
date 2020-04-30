@@ -948,13 +948,6 @@
 						</Event>
 						<Event Name="E_Traps_SpikeTrap_MecaImpact" ID="{3B9A3901-D98E-476D-8950-769C31792A67}">
 							<ChildrenList>
-								<Action Name="" ID="{639B5F1C-FBBC-4DAB-AC9C-62C086660F8C}" ShortID="169708884">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SipkeTrap_MecaImpact_RND" ID="{456C6DCE-11F8-41F5-82C0-60F74A6B9DE8}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{0C27EEA5-97F3-45C6-8A6C-A7D98CADC3E8}" ShortID="720114371">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
@@ -962,6 +955,13 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SpikeTrap_Triggered_SEQ" ID="{5D24F3E6-7DF0-43C6-BB0A-609680E1F90A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{639B5F1C-FBBC-4DAB-AC9C-62C086660F8C}" ShortID="169708884">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SipkeTrap_MecaImpact_RND" ID="{456C6DCE-11F8-41F5-82C0-60F74A6B9DE8}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
