@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="Work_Test" ID="{8D86AF9B-A218-4053-BB86-4201CD9111B8}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="E_Mus_Main_Play" ID="{A382111A-B1DF-4FFA-894C-E3B1FB79EDB6}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<ObjectRef Name="E_Mus_Kali_Main_Play" ID="{A382111A-B1DF-4FFA-894C-E3B1FB79EDB6}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
