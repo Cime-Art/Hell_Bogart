@@ -1413,10 +1413,192 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Spike_Trap_SEQ" ID="{12F0FFA5-C6F7-4A3B-B631-8540EF21BC28}" ShortID="1037024258">
+										<RandomSequenceContainer Name="SpikeTrap_HitBear_RND" ID="{86693818-D935-481D-97CD-573129D7AE0D}" ShortID="743492518">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend2">
+													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_Traps_SpikeTrap_Death_01" ID="{B53B975B-4D0E-4CB3-BE84-BFAC5ECFC60B}" ShortID="372737107">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Death_01" ID="{0E2AE1E7-4AD6-4C8B-B754-6DEB76D28EA0}" ShortID="290530205">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Traps_SpikeTrap_Death_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Death_01" ID="{0E2AE1E7-4AD6-4C8B-B754-6DEB76D28EA0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Traps_SpikeTrap_Death_02" ID="{2177AE32-AA9B-47CA-8EFD-2A8754BC3E76}" ShortID="779968222">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Death_02" ID="{F42D311B-0BAD-4CDB-8A20-4D2D3F1FE206}" ShortID="895724132">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Traps_SpikeTrap_Death_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Death_02" ID="{F42D311B-0BAD-4CDB-8A20-4D2D3F1FE206}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Traps_SpikeTrap_Death_03" ID="{825B595D-09AA-461F-95A7-0316F2F52A57}" ShortID="744792642">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Death_03" ID="{15743E3E-AC2A-4D98-8958-613EF6DF170B}" ShortID="78350251">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Traps_SpikeTrap_Death_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Death_03" ID="{15743E3E-AC2A-4D98-8958-613EF6DF170B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="SipkeTrap_MecaImpact_RND" ID="{456C6DCE-11F8-41F5-82C0-60F74A6B9DE8}" ShortID="334298928">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_Traps_SpikeTrap_MecaImpact_01" ID="{8603FAB9-0E39-4A8A-A12C-48F8BEFE0F97}" ShortID="448713847">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_MecaImpact_01" ID="{590187A3-2D00-4128-9364-D1C69764D36D}" ShortID="154876514">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Traps_SpikeTrap_MecaImpact_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Traps_SpikeTrap_MecaImpact_01" ID="{590187A3-2D00-4128-9364-D1C69764D36D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Traps_SpikeTrap_MecaImpact_02" ID="{39D9178A-ED63-4DAE-8D56-9730103A6558}" ShortID="807834066">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_MecaImpact_02" ID="{7470CF81-C7B9-4502-BAA0-A96B1B6C3F41}" ShortID="675105376">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Traps_SpikeTrap_MecaImpact_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Traps_SpikeTrap_MecaImpact_02" ID="{7470CF81-C7B9-4502-BAA0-A96B1B6C3F41}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Traps_SpikeTrap_MecaImpact_03" ID="{3D540392-7F48-4896-A076-9C8642E33323}" ShortID="565302833">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_MecaImpact_03" ID="{11A9A78B-EE48-4CE1-BD6D-C8B1105669CA}" ShortID="390600002">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Traps_SpikeTrap_MecaImpact_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Traps_SpikeTrap_MecaImpact_03" ID="{11A9A78B-EE48-4CE1-BD6D-C8B1105669CA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="SpikeTrap_Triggered_SEQ" ID="{5D24F3E6-7DF0-43C6-BB0A-609680E1F90A}" ShortID="307552772">
 											<PropertyList>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 											</PropertyList>
@@ -1429,218 +1611,220 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="SpikeTrap_Triggered_RND" ID="{D89C4C57-913D-4274-A056-2A967309F02A}" ShortID="870254097">
+												<RandomSequenceContainer Name="SpikeTrap_Woosh_RND" ID="{CADD8847-0695-4920-A6D2-C08B75350C0C}" ShortID="654483642">
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="SFX_HB_Traps_SpikeTrap_Trigger_01" ID="{B21B03C5-9E53-4178-A756-C5895BA8E826}" ShortID="650008908">
+														<Sound Name="SFX_HB_Traps_SpikeTrap_Wosh_01" ID="{D8CE4FCF-53F5-4DB9-BB2B-4F79B9FE45F4}" ShortID="338108649">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Trigger_01" ID="{241D9C5D-2196-4F94-84FF-FE5C4F7EE8A0}" ShortID="201532359">
+																<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Wosh_01" ID="{2CF2A437-43AD-482B-8A9E-35E3471CD7B9}" ShortID="1052210372">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_SpikeTrap_Wosh_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Wosh_01" ID="{2CF2A437-43AD-482B-8A9E-35E3471CD7B9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_Traps_SpikeTrap_Wosh_02" ID="{8691C420-98AD-4FC3-88A9-DC6B8944D214}" ShortID="217449637">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Wosh_02" ID="{9D039F3F-7291-427D-BDD4-9662C6BF361E}" ShortID="169896162">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_SpikeTrap_Wosh_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Wosh_02" ID="{9D039F3F-7291-427D-BDD4-9662C6BF361E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_Traps_SpikeTrap_Wosh_03" ID="{2CC17EE2-0F98-41E7-8300-C4B3BCBAEB02}" ShortID="889520843">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Wosh_03" ID="{C60B5FF2-E849-4C94-888F-C7D5E96E6EF8}" ShortID="430680513">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_SpikeTrap_Wosh_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Wosh_03" ID="{C60B5FF2-E849-4C94-888F-C7D5E96E6EF8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="SpikeTrap_Trigger_RND" ID="{6FEC127E-FF5F-4067-9634-4848C13C98DF}" ShortID="838589552">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_HB_Traps_SpikeTrap_Trigger_01" ID="{275A3EA7-5678-4E8E-95CD-3D12DFBE8149}" ShortID="445271232">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Trigger_01" ID="{1D0997C7-4B6B-4C81-9882-FADDD003D0FA}" ShortID="101222397">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HB_Traps_SpikeTrap_Trigger_01.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Trigger_01" ID="{241D9C5D-2196-4F94-84FF-FE5C4F7EE8A0}" Platform="Linked"/>
+																<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Trigger_01" ID="{1D0997C7-4B6B-4C81-9882-FADDD003D0FA}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="SFX_HB_Traps_SpikeTrap_Trigger_02" ID="{C168F360-CF0C-4CDF-B82B-8D12731D4C71}" ShortID="516775842">
+														<Sound Name="SFX_HB_Traps_SpikeTrap_Trigger_02" ID="{E917F104-F23A-461B-A98D-F4E8680A43BB}" ShortID="355637481">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Trigger_02" ID="{788F2354-EA33-4B42-8986-CF1EBAF831FE}" ShortID="621841728">
+																<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Trigger_02" ID="{AE684947-AE30-4F4E-8C93-A884D28FEAF2}" ShortID="397695427">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HB_Traps_SpikeTrap_Trigger_02.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Trigger_02" ID="{788F2354-EA33-4B42-8986-CF1EBAF831FE}" Platform="Linked"/>
+																<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Trigger_02" ID="{AE684947-AE30-4F4E-8C93-A884D28FEAF2}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="SFX_HB_Traps_SpikeTrap_Trigger_03" ID="{7472D3F2-DE63-47AB-94AA-573989A8D182}" ShortID="960038344">
+														<Sound Name="SFX_HB_Traps_SpikeTrap_Trigger_03" ID="{8461AC0F-9595-4337-BB87-EED9D7399378}" ShortID="833267532">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Trigger_03" ID="{D9C4694C-82F3-432C-A50D-85D54590C1A2}" ShortID="943871921">
+																<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Trigger_03" ID="{9BB7FCC1-6C96-489B-BC17-30FBA897BD73}" ShortID="36206620">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HB_Traps_SpikeTrap_Trigger_03.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Trigger_03" ID="{D9C4694C-82F3-432C-A50D-85D54590C1A2}" Platform="Linked"/>
+																<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Trigger_03" ID="{9BB7FCC1-6C96-489B-BC17-30FBA897BD73}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
-												<SwitchContainer Name="IsInSpikeTrap_SWITCH" ID="{0512B128-9790-474E-942A-F3D000A1C491}" ShortID="355040154">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="IsInATrap_STATE" ID="{0C19F3F3-2D7D-4B36-8CE0-DAF275765A4E}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<RandomSequenceContainer Name="SpikeTrap_Death_RND" ID="{86693818-D935-481D-97CD-573129D7AE0D}" ShortID="743492518">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>3</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<Sound Name="SFX_HB_Traps_SpikeTrap_Death_01" ID="{B53B975B-4D0E-4CB3-BE84-BFAC5ECFC60B}" ShortID="372737107">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Death_01" ID="{0E2AE1E7-4AD6-4C8B-B754-6DEB76D28EA0}" ShortID="290530205">
-																			<Language>SFX</Language>
-																			<AudioFile>SFX_HB_Traps_SpikeTrap_Death_01.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Death_01" ID="{0E2AE1E7-4AD6-4C8B-B754-6DEB76D28EA0}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="SFX_HB_Traps_SpikeTrap_Death_02" ID="{2177AE32-AA9B-47CA-8EFD-2A8754BC3E76}" ShortID="779968222">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Death_02" ID="{F42D311B-0BAD-4CDB-8A20-4D2D3F1FE206}" ShortID="895724132">
-																			<Language>SFX</Language>
-																			<AudioFile>SFX_HB_Traps_SpikeTrap_Death_02.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Death_02" ID="{F42D311B-0BAD-4CDB-8A20-4D2D3F1FE206}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="SFX_HB_Traps_SpikeTrap_Death_03" ID="{825B595D-09AA-461F-95A7-0316F2F52A57}" ShortID="744792642">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="SFX_HB_Traps_SpikeTrap_Death_03" ID="{15743E3E-AC2A-4D98-8958-613EF6DF170B}" ShortID="78350251">
-																			<Language>SFX</Language>
-																			<AudioFile>SFX_HB_Traps_SpikeTrap_Death_03.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="SFX_HB_Traps_SpikeTrap_Death_03" ID="{15743E3E-AC2A-4D98-8958-613EF6DF170B}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-															</ChildrenList>
-														</RandomSequenceContainer>
-														<Sound Name="Silence" ID="{4373498D-4CD4-4BBA-AA52-E71CF5D0DD19}" ShortID="1033315326">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<SourcePlugin Name="Wwise Silence" ID="{D9CB972E-B870-4E44-AA39-45348543B499}" ShortID="413377738" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-																	<PropertyList>
-																		<Property Name="Length" Type="Real32" Value="0.2"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																</SourcePlugin>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Wwise Silence" ID="{D9CB972E-B870-4E44-AA39-45348543B499}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-													<GroupingInfo>
-														<GroupingBehaviorList>
-															<GroupingBehavior>
-																<ItemRef Name="SpikeTrap_Death_RND" ID="{86693818-D935-481D-97CD-573129D7AE0D}"/>
-															</GroupingBehavior>
-															<GroupingBehavior>
-																<ItemRef Name="Silence" ID="{4373498D-4CD4-4BBA-AA52-E71CF5D0DD19}"/>
-															</GroupingBehavior>
-														</GroupingBehaviorList>
-														<GroupingList>
-															<Grouping>
-																<SwitchRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
-																<ItemList>
-																	<ItemRef Name="Silence" ID="{4373498D-4CD4-4BBA-AA52-E71CF5D0DD19}"/>
-																</ItemList>
-															</Grouping>
-															<Grouping>
-																<SwitchRef Name="In" ID="{F0DD71A8-59AA-4F09-9732-5FBFA0055581}"/>
-																<ItemList>
-																	<ItemRef Name="SpikeTrap_Death_RND" ID="{86693818-D935-481D-97CD-573129D7AE0D}"/>
-																</ItemList>
-															</Grouping>
-														</GroupingList>
-													</GroupingInfo>
-												</SwitchContainer>
 											</ChildrenList>
 											<Playlist>
-												<ItemRef Name="SpikeTrap_Triggered_RND" ID="{D89C4C57-913D-4274-A056-2A967309F02A}"/>
-												<ItemRef Name="IsInSpikeTrap_SWITCH" ID="{0512B128-9790-474E-942A-F3D000A1C491}"/>
+												<ItemRef Name="SpikeTrap_Trigger_RND" ID="{6FEC127E-FF5F-4067-9634-4848C13C98DF}"/>
+												<ItemRef Name="SpikeTrap_Woosh_RND" ID="{CADD8847-0695-4920-A6D2-C08B75350C0C}"/>
 											</Playlist>
 										</RandomSequenceContainer>
 									</ChildrenList>
