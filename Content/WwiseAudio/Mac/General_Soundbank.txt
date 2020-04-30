@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	251601818	E_Coffre_Metal_Vieux			\Brian\Coffre\E_Coffre_Metal_Vieux	
 	301183665	E_Enable_Attenuation			\Simon\Global\GlobalEffects\E_Enable_Attenuation	
 	303195765	E_Speech_Kali_GetHit			\Simon\Voice\Kali\E_Speech_Kali_GetHit	
+	439327384	E_Traps_Punji_HitBear			\Simon\Traps\E_Traps_Punji_HitBear	
 	453363137	E_Coffre_Metal_Neuf			\Brian\Coffre\E_Coffre_Metal_Neuf	
 	517464027	E_Mob_Gardian_StartCharge			\Brian\Gardian\E_Mob_Gardian_StartCharge	
 	517697311	Stop_KAli_whisper_02			\Alex\Stop_KAli_whisper_02	
@@ -86,7 +87,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3359588815	E_SetAcoustic_BossArena			\Simon\Global\Acoustics\E_SetAcoustic_BossArena	
 	3371588653	E_Mob_JungleCharlie_Iddle_STOP			\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle_STOP	
 	3376467880	E_Play_Grenade			\Brian\Grenade\E_Play_Grenade	
-	3391365552	E_Traps_Punji			\Simon\Traps\E_Traps_Punji	
 	3400513437	E_Traps_SpikeTrap_HitBear			\Simon\Traps\E_Traps_SpikeTrap_HitBear	
 	3418847825	E_KaliBoss_GetHit			\Chris\HB_Kali Events\GET HIT\E_KaliBoss_GetHit	
 	3478273789	E_Speech_Kali_Speech_TheChaseIsOn			\Simon\Voice\Kali\E_Speech_Kali_Speech_TheChaseIsOn	
@@ -96,6 +96,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3786112473	E_Mob_JungleCharlie_Scream			\Simon\Enemies\MobJungleCharlie\Charge\E_Mob_JungleCharlie_Scream	
 	3859520409	Initialize_Shotgun_EVENT			\Simon\Weapons\Initialize_Shotgun_EVENT	
 	3887785823	HB_PickUp_EVENT			\Chris\HB_Ui_Character\HB_PickUp_EVENT	
+	3906703006	E_Traps_Punji_Triggered			\Simon\Traps\E_Traps_Punji_Triggered	
 	3910514663	E_Global_SetInPauseMenu			\Simon\Global\GlobalEffects\E_Global_SetInPauseMenu	
 	3925619008	E_Speech_Kali_Grab			\Simon\Voice\Kali\E_Speech_Kali_Grab	
 	3935073168	E_Speech_Kali_Death			\Simon\Voice\Kali\E_Speech_Kali_Death	
@@ -442,6 +443,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	415180222	HB-SFX-UImenu-Return	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-UImenu-Return_10C4C929.wem		\Actor-Mixer Hierarchy\Brian\UI\MIX_UI\HB-SFX-UImenu-Return		57696
 	415752899	SFX-HB-MobJungleCharlie-SpearLaunch-02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX-HB-MobJungleCharlie-SpearLaunch-02_66C02B12.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Mob Jungle Charlie\Launch Spear\LaunchSpear_MobJungleCharlie_RND\SFX-HB-MobJungleCharlie-SpearLaunch-02		42606
 	418805654	HB_SFX_Shotgun_CanonPortee_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Shotgun_CanonPortee_01_66C02B12.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Canon_Type_SWITCH\Canon_Portee_RND\HB_SFX_Shotgun_CanonPortee_01		28374
+	423353480	SFX_HB_Traps_PunjiTrap_Triggered	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_Traps_PunjiTrap_Triggered_66C02B12.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Traps\Punji Trap\SFX_HB_Traps_PunjiTrap_Triggered		19533
 	426099214	prepare_to_die	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\prepare_to_die_D2CCBB25.wem		\Actor-Mixer Hierarchy\Simon\Voices Global\Kali Bear Interactions\Before Big Attack\Before Big Attack RDN\prepare_to_die		432284
 	430680513	SFX_HB_Traps_SpikeTrap_Wosh_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_Traps_SpikeTrap_Wosh_03_66C02B12.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Traps\Spike Trap\SpikeTrap_Triggered_SEQ\SpikeTrap_Woosh_RND\SFX_HB_Traps_SpikeTrap_Wosh_03		21143
 	431303083	HB_SFX_Shotgun_StartDropShell_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Shotgun_StartDropShell_03_66C02B12.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\Drop_Shell_SWITCH\Drop_Shell_SEQ\Start_Drop\HB_SFX_Shotgun_StartDropShell_03		9689

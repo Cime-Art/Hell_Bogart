@@ -880,17 +880,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Traps_Punji" ID="{F2928F2B-4285-4218-99B5-F5C9BA24EDAE}">
-							<ChildrenList>
-								<Action Name="" ID="{A2C16565-7E68-4DEC-9671-F5B1FB14F777}" ShortID="534700581">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_HB_PUNJI IMPACT" ID="{5682CD94-4BBA-4651-94EC-9C9919E18462}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="E_Traps_GrosTronc" ID="{C08EE6D2-5786-4CA0-9B9E-C905659003AC}">
 							<ChildrenList>
 								<Action Name="" ID="{5F54EBDE-EC38-4168-B150-F6711EAFB403}" ShortID="1061119837">
@@ -973,6 +962,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SpikeTrap_Triggered_SEQ" ID="{5D24F3E6-7DF0-43C6-BB0A-609680E1F90A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_Punji_HitBear" ID="{728D8706-FBDC-4182-8167-E70E917CE581}">
+							<ChildrenList>
+								<Action Name="" ID="{F4C4813C-D7EF-4C70-9CAE-B9B89FB3F2AA}" ShortID="305481095">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_PUNJI IMPACT" ID="{5682CD94-4BBA-4651-94EC-9C9919E18462}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_Punji_Triggered" ID="{D5996B39-D4C8-4143-BEE4-8C93146D6F1F}">
+							<ChildrenList>
+								<Action Name="" ID="{83E4A6CA-E50F-4B5B-AADD-B38A3AB47562}" ShortID="511555666">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Traps_PunjiTrap_Triggered" ID="{C23EE455-3E14-479A-9CA1-A1B27C814D34}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
