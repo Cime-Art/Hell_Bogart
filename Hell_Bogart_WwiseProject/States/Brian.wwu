@@ -50,6 +50,33 @@
 								<State Name="Ruin_GardianFight" ID="{A093A748-6BEF-4677-BDFA-5629D3114C59}"/>
 							</ChildrenList>
 						</StateGroup>
+						<StateGroup Name="Music_Kali_STATE" ID="{B5B15649-222D-430D-838E-763DB0114CF6}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="12"/>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{DDB325A8-6659-429B-8BB7-D0E9039660E8}"/>
+								<State Name="Kali_Phase1" ID="{1DC4A0E3-7262-485C-B9AD-09F065FEA9FC}"/>
+								<State Name="Kali_Transition" ID="{5B68CB25-5280-46C1-9813-4ECF1085D002}"/>
+								<State Name="Kali_Intro" ID="{FB35FE36-366D-4F98-AA45-FCA74D2E4C0B}"/>
+								<State Name="Kali_Phase2" ID="{156D730F-C86B-469A-BA6F-A1E97F137A77}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Music_Kali_Phase_STATE" ID="{5F04AF09-C573-464D-A21F-A30EBFD54842}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{3B572813-6BBA-41E5-8279-A33F75C29FF9}"/>
+								<State Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}"/>
+								<State Name="B_Middle" ID="{54C2272B-0796-41F2-946B-04B17DC14164}"/>
+								<State Name="C_NearEnd" ID="{0ABCA14E-FBB0-449D-89E7-9CAC3B56FFFA}"/>
+							</ChildrenList>
+						</StateGroup>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
