@@ -916,7 +916,9 @@
 				<Event Id="2388488922" Name="E_Traps_Explosive_Trigger" ObjectPath="\Events\Simon\Traps\E_Traps_Explosive_Trigger"/>
 				<Event Id="1936964117" Name="E_Traps_GrosTronc" ObjectPath="\Events\Simon\Traps\E_Traps_GrosTronc"/>
 				<Event Id="3391365552" Name="E_Traps_Punji" ObjectPath="\Events\Simon\Traps\E_Traps_Punji"/>
-				<Event Id="355937833" Name="E_Traps_SpikeTrap" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap"/>
+				<Event Id="3400513437" Name="E_Traps_SpikeTrap_HitBear" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_HitBear"/>
+				<Event Id="979168612" Name="E_Traps_SpikeTrap_MecaImpact" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_MecaImpact"/>
+				<Event Id="3356086523" Name="E_Traps_SpikeTrap_Triggered" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_Triggered"/>
 				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
 				<Event Id="842152325" Name="E_UI_Option" ObjectPath="\Events\Brian\UI\E_UI_Option"/>
 				<Event Id="2920923470" Name="E_UI_Overlay" ObjectPath="\Events\Brian\UI\E_UI_Overlay"/>
@@ -961,6 +963,10 @@
 				<File Id="29051026" Language="SFX">
 					<ShortName>HB_SFX_Other_Ammo_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_Ammo_03_66C02B12.wem</Path>
+				</File>
+				<File Id="36206620" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_03.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_03_66C02B12.wem</Path>
 				</File>
 				<File Id="37010359" Language="SFX">
 					<ShortName>HB_SFX_Other_PickUpHealthkit.wav</ShortName>
@@ -1066,6 +1072,10 @@
 					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_03.wav</ShortName>
 					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_03_66C02B12.wem</Path>
 				</File>
+				<File Id="101222397" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_01.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_01_66C02B12.wem</Path>
+				</File>
 				<File Id="101291286" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_RegularCanon_02_66C02B12.wem</Path>
@@ -1166,6 +1176,10 @@
 					<ShortName>SFX-HB-MobJungleCharlie-SpearLaunch-01.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-SpearLaunch-01_66C02B12.wem</Path>
 				</File>
+				<File Id="154876514" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_MecaImpact_01.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_MecaImpact_01_66C02B12.wem</Path>
+				</File>
 				<File Id="157876437" Language="SFX">
 					<ShortName>60 - .45 auto shell single shell on hard packed dirt-11.wav</ShortName>
 					<Path>SFX\60 - .45 auto shell single shell on hard packed dirt-11_66C02B12.wem</Path>
@@ -1205,6 +1219,10 @@
 				<File Id="169729514" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_07.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_07_66C02B12.wem</Path>
+				</File>
+				<File Id="169896162" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Wosh_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Wosh_02_66C02B12.wem</Path>
 				</File>
 				<File Id="170640478" Language="SFX">
 					<ShortName>i_found_you.WAV</ShortName>
@@ -1269,10 +1287,6 @@
 				<File Id="200502162" Language="SFX">
 					<ShortName>HB_SFX_KALI_Jump_Impact_01.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_Jump_Impact_01_B9F1EE23.wem</Path>
-				</File>
-				<File Id="201532359" Language="SFX">
-					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_01.wav</ShortName>
-					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_01_66C02B12.wem</Path>
 				</File>
 				<File Id="203146354" Language="SFX">
 					<ShortName>FTP_sable_01.wav</ShortName>
@@ -1690,6 +1704,10 @@
 					<ShortName>SFX_HB_GrosTroncImpacte_V2.wav</ShortName>
 					<Path>SFX\SFX_HB_GrosTroncImpacte_V2_66C02B12.wem</Path>
 				</File>
+				<File Id="390600002" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_MecaImpact_03.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_MecaImpact_03_66C02B12.wem</Path>
+				</File>
 				<File Id="390658827" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Spread180_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread180_02_66C02B12.wem</Path>
@@ -1717,6 +1735,10 @@
 				<File Id="396871728" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_06.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_06_66C02B12.wem</Path>
+				</File>
+				<File Id="397695427" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_02_66C02B12.wem</Path>
 				</File>
 				<File Id="398942520" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_01.wav</ShortName>
@@ -1765,6 +1787,10 @@
 				<File Id="426099214" Language="SFX">
 					<ShortName>prepare_to_die.WAV</ShortName>
 					<Path>SFX\prepare_to_die_D2CCBB25.wem</Path>
+				</File>
+				<File Id="430680513" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Wosh_03.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Wosh_03_66C02B12.wem</Path>
 				</File>
 				<File Id="431303083" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_StartDropShell_03.wav</ShortName>
@@ -2210,10 +2236,6 @@
 					<ShortName>HB-SFX-Gardian-Footstep_01.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Footstep_01_66C02B12.wem</Path>
 				</File>
-				<File Id="621841728" Language="SFX">
-					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_02.wav</ShortName>
-					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_02_66C02B12.wem</Path>
-				</File>
 				<File Id="623124765" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_08.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_08_06EEE347.wem</Path>
@@ -2297,6 +2319,10 @@
 				<File Id="672905168" Language="SFX">
 					<ShortName>HB-SFX-UImenu-Exit.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Exit_10C4C929.wem</Path>
+				</File>
+				<File Id="675105376" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_MecaImpact_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_MecaImpact_02_66C02B12.wem</Path>
 				</File>
 				<File Id="676028387" Language="SFX">
 					<ShortName>VOICE_HB_Bear_GrenadeStarter_1-3_GreenBalls.wav</ShortName>
@@ -2742,10 +2768,6 @@
 					<ShortName>SFX_HB_MobJungleCharlie_GetHit_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_03_2415F25C.wem</Path>
 				</File>
-				<File Id="943871921" Language="SFX">
-					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_03.wav</ShortName>
-					<Path>SFX\SFX_HB_Traps_SpikeTrap_Trigger_03_66C02B12.wem</Path>
-				</File>
 				<File Id="944648679" Language="SFX">
 					<ShortName>SFX-HB-CoffreBois_00.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreBois_00_66C02B12.wem</Path>
@@ -2941,6 +2963,10 @@
 				<File Id="1048881042" Language="SFX">
 					<ShortName>HB-SFX-Gardian-FootstepCharge_03.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-FootstepCharge_03_66C02B12.wem</Path>
+				</File>
+				<File Id="1052210372" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Wosh_01.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Wosh_01_66C02B12.wem</Path>
 				</File>
 				<File Id="1053112222" Language="SFX">
 					<ShortName>HB_SFX_KALI_Air_Movement_01.wav</ShortName>
