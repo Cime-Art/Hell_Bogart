@@ -472,6 +472,14 @@
 				<Event Id="156378189" Name="E_Mus_Bridge_GoToPhase2" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase2"/>
 				<Event Id="1031929396" Name="E_Mus_Jungle_End" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_Jungle_End"/>
 				<Event Id="3867560083" Name="E_Mus_Jungle_Main_Play" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_Jungle_Main_Play"/>
+				<Event Id="3619357316" Name="E_Mus_Kali_100" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_100"/>
+				<Event Id="933394352" Name="E_Mus_Kali_25" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_25"/>
+				<Event Id="849506195" Name="E_Mus_Kali_75" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_75"/>
+				<Event Id="2931429659" Name="E_Mus_Kali_Intro" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Intro"/>
+				<Event Id="4274573073" Name="E_Mus_Kali_Main_Play" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Main_Play"/>
+				<Event Id="1151039993" Name="E_Mus_Kali_Phase1" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Phase1"/>
+				<Event Id="1151039994" Name="E_Mus_Kali_Phase2" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Phase2"/>
+				<Event Id="1670507430" Name="E_Mus_Kali_Transition" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Transition"/>
 				<Event Id="2386022965" Name="E_Mus_Ruin_End" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_End"/>
 				<Event Id="3396393780" Name="E_Mus_Ruin_Explo" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_Explo"/>
 				<Event Id="3116078580" Name="E_Mus_Ruin_Fight" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_Fight"/>
@@ -649,6 +657,10 @@
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_02.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_02_EA9615DC.wem</Path>
 				</File>
+				<File Id="264231872" Language="SFX">
+					<ShortName>Cykodd - Kali Theme Phase 1 (100%).wav</ShortName>
+					<Path>SFX\Cykodd - Kali Theme Phase 1 (100%)_EA9615DC.wem</Path>
+				</File>
 				<File Id="268485447" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_02.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_02_EA9615DC.wem</Path>
@@ -668,6 +680,10 @@
 				<File Id="367335765" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_04.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_04_EA9615DC.wem</Path>
+				</File>
+				<File Id="368405575" Language="SFX">
+					<ShortName>Cykodd - Intro Bossfight.wav</ShortName>
+					<Path>SFX\Cykodd - Intro Bossfight_EA9615DC.wem</Path>
 				</File>
 				<File Id="375039806" Language="SFX">
 					<ShortName>MUS_HB_Ruines_End_02.wav</ShortName>
@@ -716,6 +732,10 @@
 				<File Id="668388054" Language="SFX">
 					<ShortName>MUS_HB_Ruines_End_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_End_00_EA9615DC.wem</Path>
+				</File>
+				<File Id="709764780" Language="SFX">
+					<ShortName>Cykodd - Kali Theme Phase 1 (75%).wav</ShortName>
+					<Path>SFX\Cykodd - Kali Theme Phase 1 (75%)_EA9615DC.wem</Path>
 				</File>
 				<File Id="716610373" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Fight_MalletCymbal_01.wav</ShortName>
@@ -796,6 +816,10 @@
 				<File Id="951005522" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Tambour_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Tambour_00_EA9615DC.wem</Path>
+				</File>
+				<File Id="979926849" Language="SFX">
+					<ShortName>Cykodd - Kali Theme Phase 1 (25%).wav</ShortName>
+					<Path>SFX\Cykodd - Kali Theme Phase 1 (25%)_EA9615DC.wem</Path>
 				</File>
 				<File Id="1029166442" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Snare_01.wav</ShortName>
@@ -915,7 +939,8 @@
 				<Event Id="2167147008" Name="E_Traps_Explosive_Explo" ObjectPath="\Events\Simon\Traps\E_Traps_Explosive_Explo"/>
 				<Event Id="2388488922" Name="E_Traps_Explosive_Trigger" ObjectPath="\Events\Simon\Traps\E_Traps_Explosive_Trigger"/>
 				<Event Id="1936964117" Name="E_Traps_GrosTronc" ObjectPath="\Events\Simon\Traps\E_Traps_GrosTronc"/>
-				<Event Id="3391365552" Name="E_Traps_Punji" ObjectPath="\Events\Simon\Traps\E_Traps_Punji"/>
+				<Event Id="439327384" Name="E_Traps_Punji_HitBear" ObjectPath="\Events\Simon\Traps\E_Traps_Punji_HitBear"/>
+				<Event Id="3906703006" Name="E_Traps_Punji_Triggered" ObjectPath="\Events\Simon\Traps\E_Traps_Punji_Triggered"/>
 				<Event Id="3400513437" Name="E_Traps_SpikeTrap_HitBear" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_HitBear"/>
 				<Event Id="979168612" Name="E_Traps_SpikeTrap_MecaImpact" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_MecaImpact"/>
 				<Event Id="3356086523" Name="E_Traps_SpikeTrap_Triggered" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_Triggered"/>
@@ -1783,6 +1808,10 @@
 				<File Id="418805654" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_CanonPortee_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonPortee_01_66C02B12.wem</Path>
+				</File>
+				<File Id="423353480" Language="SFX">
+					<ShortName>SFX_HB_Traps_PunjiTrap_Triggered.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_PunjiTrap_Triggered_66C02B12.wem</Path>
 				</File>
 				<File Id="426099214" Language="SFX">
 					<ShortName>prepare_to_die.WAV</ShortName>

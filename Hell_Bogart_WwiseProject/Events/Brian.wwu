@@ -774,12 +774,32 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Mus_Main_Play" ID="{A382111A-B1DF-4FFA-894C-E3B1FB79EDB6}">
+						<Event Name="E_Mus_Kali_Main_Play" ID="{A382111A-B1DF-4FFA-894C-E3B1FB79EDB6}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
+								<Action Name="" ID="{952ADC0F-8E8F-444B-8A07-5D0EA6956ECF}" ShortID="184473079">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Kali_Intro" ID="{FB35FE36-366D-4F98-AA45-FCA74D2E4C0B}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5805D2A1-8F82-4519-AAB6-D2D3F38C3C41}" ShortID="631102463">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{7F02433D-D404-4BFD-9DE2-3E8F440E3006}" ShortID="103341220">
 									<ReferenceList>
 										<Reference Name="Target">
