@@ -209,7 +209,6 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2379719543	Total_Power_GP			\Simon\Character\Shotgun\Total_Power_GP	
-	3541389910	LOD_Iddle_Enemi			\Simon\Enemi\LOD_Iddle_Enemi	
 	4095840129	Firing_Rate_GP			\Simon\Character\Shotgun\Firing_Rate_GP	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
