@@ -869,17 +869,6 @@
 				</Folder>
 				<Folder Name="Traps" ID="{23C7724F-3F1E-4ED6-817D-50474523B8E9}" ShortID="345295909">
 					<ChildrenList>
-						<Event Name="E_Traps_SpikeTrap" ID="{AEDF05AF-CCF6-44D5-BFD9-BE593DE36942}">
-							<ChildrenList>
-								<Action Name="" ID="{FEB48356-A508-4468-8051-2E8CE1CE64FD}" ShortID="545532106">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Spike_Trap_SEQ" ID="{12F0FFA5-C6F7-4A3B-B631-8540EF21BC28}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="E_Traps_BigRockRolling" ID="{8B4C65DF-B73F-4C6C-9BAA-9E7FCCDDD2F6}">
 							<ChildrenList>
 								<Action Name="" ID="{E6BB2E33-74B2-4236-ACE8-F735C13C4F15}" ShortID="427339710">
@@ -941,6 +930,49 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="HB_SFX_Other_Trap_PinGrenade_01" ID="{D9641C0A-D168-4F33-8299-423EF3A90BA8}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_SpikeTrap_HitBear" ID="{4836BFC1-3836-4BF6-8AFE-8F5C4951E060}">
+							<ChildrenList>
+								<Action Name="" ID="{689E5AC5-65C0-4A21-B181-C265A8C5D05F}" ShortID="335861708">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpikeTrap_HitBear_RND" ID="{86693818-D935-481D-97CD-573129D7AE0D}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_SpikeTrap_MecaImpact" ID="{3B9A3901-D98E-476D-8950-769C31792A67}">
+							<ChildrenList>
+								<Action Name="" ID="{639B5F1C-FBBC-4DAB-AC9C-62C086660F8C}" ShortID="169708884">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SipkeTrap_MecaImpact_RND" ID="{456C6DCE-11F8-41F5-82C0-60F74A6B9DE8}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0C27EEA5-97F3-45C6-8A6C-A7D98CADC3E8}" ShortID="720114371">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpikeTrap_Triggered_SEQ" ID="{5D24F3E6-7DF0-43C6-BB0A-609680E1F90A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_SpikeTrap_Triggered" ID="{177D6FB5-A482-4E32-A29E-CCA106A78A0E}">
+							<ChildrenList>
+								<Action Name="" ID="{A55C106D-FD8F-402E-A8B0-A62B1E2C330C}" ShortID="409588631">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpikeTrap_Triggered_SEQ" ID="{5D24F3E6-7DF0-43C6-BB0A-609680E1F90A}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
