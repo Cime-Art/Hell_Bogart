@@ -165,10 +165,6 @@
 							<ObjectRef Name="E_Traps_BigRockRolling" ID="{8B4C65DF-B73F-4C6C-9BAA-9E7FCCDDD2F6}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="8" Y="1"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="E_Traps_Punji" ID="{F2928F2B-4285-4218-99B5-F5C9BA24EDAE}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="8" Y="2"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
