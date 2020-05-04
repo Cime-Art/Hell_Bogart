@@ -3,7 +3,8 @@
 	<Triggers>
 		<WorkUnit Name="Simon" ID="{09308728-1636-4A80-9A24-CB4B23FFE260}" PersistMode="Standalone">
 			<ChildrenList>
-				<Trigger Name="T_Jungle_Event_Enigme_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}"/>
+				<Trigger Name="T_Jungle_Event_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}"/>
+				<Trigger Name="T_Jungle_Event_Enigme" ID="{403D4763-468A-4E26-8127-CD7BEA331298}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

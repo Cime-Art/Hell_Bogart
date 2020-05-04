@@ -489,7 +489,8 @@
 				<Event Id="2097670358" Name="E_Mus_Ruin_Trigger_Enigme" ObjectPath="\Events\Brian\Music_Ruin\E_Mus_Ruin_Trigger_Enigme"/>
 				<Event Id="4247850677" Name="E_Mus_SetExplorationState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetExplorationState"/>
 				<Event Id="102331918" Name="E_Mus_SetFightState" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_SetFightState"/>
-				<Event Id="4222663323" Name="E_Mus_TriggerEnigmeChest" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_TriggerEnigmeChest"/>
+				<Event Id="152472446" Name="E_Mus_TriggerChest" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_TriggerChest"/>
+				<Event Id="2230239644" Name="E_Mus_TriggerEnigme" ObjectPath="\Events\Simon\Music\Jungle\E_Mus_TriggerEnigme"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="6554429"/>
@@ -613,6 +614,10 @@
 					<ShortName>MUS_HB_BridgeJungle_End.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_End_EA9615DC.wem</Path>
 				</File>
+				<File Id="90873216" Language="SFX">
+					<ShortName>MUS_HB_Jungle_EnigmeResolved_03.wav</ShortName>
+					<Path>SFX\MUS_HB_Jungle_EnigmeResolved_03_D79FB2B7.wem</Path>
+				</File>
 				<File Id="98029768" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Amb_05.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Amb_05_EA9615DC.wem</Path>
@@ -709,6 +714,10 @@
 					<ShortName>MUS_HB_Ruines_Choir_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Choir_00_EA9615DC.wem</Path>
 				</File>
+				<File Id="515666401" Language="SFX">
+					<ShortName>MUS_HB_Jungle_EnigmeResolved_01.wav</ShortName>
+					<Path>SFX\MUS_HB_Jungle_EnigmeResolved_01_D79FB2B7.wem</Path>
+				</File>
 				<File Id="516836356" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Choir_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Choir_01_EA9615DC.wem</Path>
@@ -724,6 +733,10 @@
 				<File Id="595572684" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Amb_02.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Amb_02_EA9615DC.wem</Path>
+				</File>
+				<File Id="639325914" Language="SFX">
+					<ShortName>MUS_HB_Jungle_EnigmeResolved_02.wav</ShortName>
+					<Path>SFX\MUS_HB_Jungle_EnigmeResolved_02_D79FB2B7.wem</Path>
 				</File>
 				<File Id="660836541" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_04.wav</ShortName>
@@ -863,6 +876,8 @@
 				<Event Id="3189034779" Name="E_FTP_surface_type_switch" ObjectPath="\Events\Alex\E_FTP_surface_type_switch"/>
 				<Event Id="3910514663" Name="E_Global_SetInPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetInPauseMenu"/>
 				<Event Id="574868710" Name="E_Global_SetOutPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetOutPauseMenu"/>
+				<Event Id="2509479530" Name="E_Global_SFXVOICE_FadeIn" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeIn"/>
+				<Event Id="4233919301" Name="E_Global_SFXVOICE_FadeOut" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeOut"/>
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>

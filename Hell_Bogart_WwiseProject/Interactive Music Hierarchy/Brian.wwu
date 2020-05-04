@@ -1286,6 +1286,28 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicSegment Name="End_Music" ID="{4D03E148-D5F6-4733-9800-0AA31BE4493A}" ShortID="868912396">
+							<PropertyList>
+								<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Music_Conversion_Settings" ID="{A41B3C03-D345-4072-9F0D-207252976325}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{976E1EE7-A479-43B7-875F-483AE6A043E1}"/>
+								<MusicCue Name="Exit Cue" ID="{ACD35D69-53C6-4CF0-B88C-DA1F9EDF4E61}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="2674.02733964248"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{25BC5F1D-B37E-4F1F-A00C-7E97FE45E7F2}">
@@ -1430,6 +1452,73 @@
 										<TransitionObjectRef Name="MUS_HB_Ruines_EndGardian" ID="{E3EAA176-3456-43A5-8D3B-FDE43D28D3A8}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{528C03B4-F688-41F3-B18F-BDADF8880BB9}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="End_Music" ID="{4D03E148-D5F6-4733-9800-0AA31BE4493A}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="MUS_Ruin_Explo_LOOP" ID="{197B58DA-CB36-4005-80E9-31E40470A918}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{CA217569-D46A-4A47-A257-3048F4E309BF}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="8"/>
+													<Property Name="FadeTime" Type="Real64" Value="8"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{CFA3C3F3-696C-4772-A973-0950509EC6D6}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="End_Music" ID="{4D03E148-D5F6-4733-9800-0AA31BE4493A}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="MUS_Ruin_Fight_LOOP" ID="{3A2C7952-E01A-4760-A4CB-92F21568D10E}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="MUS_HB_Ruines_End" ID="{FA1D9585-A587-42FD-9CD2-B6B3D177CB93}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{C1DE1D80-2D21-4ACD-9179-C5FAA9947AC8}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="End_Music" ID="{4D03E148-D5F6-4733-9800-0AA31BE4493A}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="MUS_HB_Ruines_EndGardian" ID="{E3EAA176-3456-43A5-8D3B-FDE43D28D3A8}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+									</TransitionInfo>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
@@ -1460,6 +1549,22 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="None" ID="{0A02832D-A4D8-4BC2-B6BC-0910FE4765F7}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="End_Music" ID="{4D03E148-D5F6-4733-9800-0AA31BE4493A}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Ruin_End_Music" ID="{78F6B36D-D4A0-445E-94BB-AAFA3DFA916F}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="End_Music" ID="{4D03E148-D5F6-4733-9800-0AA31BE4493A}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

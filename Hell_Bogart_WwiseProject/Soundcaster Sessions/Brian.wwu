@@ -110,6 +110,10 @@
 							<Position X="5" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Mus_Ruin_End" ID="{220C3A19-F845-4D4E-889E-AB7A99E406FB}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="5" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Initialize_Grenade" ID="{1324F38C-46B8-4F17-989C-58110C415D5C}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
 							<Position X="5" Y="6"/>
 						</Module>
@@ -161,7 +165,7 @@
 						<CurrentStateRef Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}"/>
 						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
-						<CurrentStateRef Name="Ruin_GardianFight" ID="{A093A748-6BEF-4677-BDFA-5629D3114C59}"/>
+						<CurrentStateRef Name="Ruin_End_Music" ID="{78F6B36D-D4A0-445E-94BB-AAFA3DFA916F}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
 						<CurrentStateRef Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
 						<CurrentStateRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
@@ -170,7 +174,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Caiss" ID="{53291F45-44D8-4058-95A8-28E8E7717593}"/>
 						<CurrentSwitchRef Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
-						<CurrentSwitchRef Name="Rock" ID="{83E08D94-C258-4CCC-9310-094720366146}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
 						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
