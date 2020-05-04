@@ -19,6 +19,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	3116078580	E_Mus_Ruin_Fight			\Brian\Music_Ruin\E_Mus_Ruin_Fight	
 	3221088188	E_Mus_Ruin_Trigger_Chest			\Brian\Music_Ruin\E_Mus_Ruin_Trigger_Chest	
 	3396393780	E_Mus_Ruin_Explo			\Brian\Music_Ruin\E_Mus_Ruin_Explo	
+	3454693556	E_Global_MUSIC_FadeIn			\Simon\Global\GlobalEffects\E_Global_MUSIC_FadeIn	
+	3540013779	E_Global_MUSIC_FadeOut			\Simon\Global\GlobalEffects\E_Global_MUSIC_FadeOut	
 	3619357316	E_Mus_Kali_100			\Brian\Music_Boss\E_Mus_Kali_100	
 	3685971472	E_Mus_Bridge_End			\Simon\Music\Bridge\E_Mus_Bridge_End	
 	3867560083	E_Mus_Jungle_Main_Play			\Simon\Music\Jungle\E_Mus_Jungle_Main_Play	
