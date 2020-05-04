@@ -67,6 +67,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2473679398	E_Mob_JungleCharlie_LaunchSpear			\Simon\Enemies\MobJungleCharlie\LaunchSpear\E_Mob_JungleCharlie_LaunchSpear	
 	2483986470	E_KaliBoss_Hits_Bear_Impact			\Chris\HB_Kali Events\KALI HITS BEAR\E_KaliBoss_Hits_Bear_Impact	
 	2503251047	E_BigStoneDoor_Stop			\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Stop	
+	2509479530	E_Global_SFXVOICE_FadeIn			\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeIn	
 	2655041407	E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY			\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY	
 	2759949120	HB_Healthkit			\Chris\HB_Ui_Character\HB_Healthkit	
 	2798184598	E_UI_Exit			\Brian\UI\E_UI_Exit	
@@ -108,6 +109,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	4177976852	E_Speech_Kali_Random_Lines_LOOP			\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_LOOP	
 	4230951234	E_Traps_BigRockRolling			\Simon\Traps\E_Traps_BigRockRolling	
 	4231375772	E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY			\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY	
+	4233919301	E_Global_SFXVOICE_FadeOut			\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeOut	
 	4237626404	E_Speech_Kali_ThereIsNoEscape			\Simon\Voice\Kali\E_Speech_Kali_ThereIsNoEscape	
 	4269044702	E_Traps_BigRockExplode			\Simon\Traps\E_Traps_BigRockExplode	
 

@@ -645,7 +645,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Mus_TriggerEnigmeChest" ID="{50F64845-E7BA-4DA8-912B-34F5FFE137A0}">
+								<Event Name="E_Mus_TriggerChest" ID="{50F64845-E7BA-4DA8-912B-34F5FFE137A0}">
 									<ChildrenList>
 										<Action Name="" ID="{A086E5D9-E6F0-4CD7-811C-C5CF51D35C27}" ShortID="963413561">
 											<PropertyList>
@@ -653,7 +653,21 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="T_Jungle_Event_Enigme_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
+													<ObjectRef Name="T_Jungle_Event_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Mus_TriggerEnigme" ID="{AFD9639A-4192-481A-B810-560E63BA99A7}">
+									<ChildrenList>
+										<Action Name="" ID="{A3ED72E0-77C2-45F7-82B5-D1D0389BD9BE}" ShortID="642930908">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="35"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="T_Jungle_Event_Enigme" ID="{403D4763-468A-4E26-8127-CD7BEA331298}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -858,6 +872,64 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Global_SFXVOICE_FadeOut" ID="{A0009CA5-BB0B-46A0-B3F2-A378418C721A}">
+									<ChildrenList>
+										<Action Name="" ID="{9AF96CDF-B298-4371-A806-92380A6C35ED}" ShortID="15561866">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="11"/>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8BBF7B2E-52E4-49BB-B22D-50BA854FDD9D}" ShortID="592572634">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="11"/>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Global_SFXVOICE_FadeIn" ID="{980ED31D-F61F-455A-B944-DEE9A196DDF0}">
+									<ChildrenList>
+										<Action Name="" ID="{A59F8E7A-F06D-4E79-9ED1-54D9700D37E4}" ShortID="972518335">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="11"/>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0D00BBCE-7203-4E02-B630-E851DB88D681}" ShortID="398936679">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="11"/>
+												<Property Name="FadeInCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
