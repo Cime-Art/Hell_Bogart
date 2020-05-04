@@ -3028,8 +3028,15 @@
 														<Property Name="CustomCueMatchName" Type="string" Value="Event Tresor"/>
 														<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
 													</PropertyList>
-													<TriggerRef Name="T_Jungle_Event_Enigme_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
-													<SegmentRef Name="Mus_Jungle_Event_Enigme_Chest" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+													<TriggerRef Name="T_Jungle_Event_Chest" ID="{E576A63C-C572-46A4-AAEE-06B5EF45416E}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
+													<SegmentRef Name="Mus_Jungle_Event_Found_Chest" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+												</MusicStinger>
+												<MusicStinger Name="" ID="{110339C6-2834-49D6-8FAE-2CAEA90F8D80}">
+													<PropertyList>
+														<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+													</PropertyList>
+													<TriggerRef Name="T_Jungle_Event_Enigme" ID="{403D4763-468A-4E26-8127-CD7BEA331298}" WorkUnitID="{09308728-1636-4A80-9A24-CB4B23FFE260}"/>
+													<SegmentRef Name="Mus_Jungle_Event_Enigme_Resolved" ID="{D4A151C6-45AC-4AC3-BED5-85627E3DAE46}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 												</MusicStinger>
 											</StingerList>
 											<Playlist>
@@ -4762,12 +4769,24 @@
 								</Folder>
 								<Folder Name="Events" ID="{B204658A-5DB0-4413-881C-D17C6CEC2A62}" ShortID="14594599">
 									<ChildrenList>
-										<MusicSegment Name="Mus_Jungle_Event_Enigme_Chest" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" ShortID="229941932">
+										<MusicSegment Name="Mus_Jungle_Event_Found_Chest" ID="{62AC4E97-CD24-435D-9BB5-DB89B6E755B4}" ShortID="229941932">
 											<PropertyList>
 												<Property Name="EndPosition" Type="Real64" Value="8553.31663681338"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-8</Value>
+														<Value>-11</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4967,6 +4986,121 @@
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
 														<Property Name="TimeMs" Type="Real64" Value="2500"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="Mus_Jungle_Event_Enigme_Resolved" ID="{D4A151C6-45AC-4AC3-BED5-85627E3DAE46}" ShortID="220254307">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="11750"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Jungle_Event_Enigme_Chest_BUS" ID="{42F00B64-1D6F-4A91-8B81-DBA2EB4BB424}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Enigme Resolved SEQ" ID="{E976519C-D60B-4688-84F8-0DA753FDA6DA}" ShortID="800247468">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="MUS_HB_Jungle_EnigmeResolved_01" ID="{40CBC21B-B916-4224-8DDA-9888D5E981D9}" ShortID="515666401">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_EnigmeResolved_01.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_EnigmeResolved_02" ID="{60ECA2B6-5184-4B6B-9023-400905F27D7E}" ShortID="639325914">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_EnigmeResolved_02.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="MUS_HB_Jungle_EnigmeResolved_03" ID="{35B98EAF-D143-475F-B466-BA0BFDA61826}" ShortID="90873216">
+															<Language>SFX</Language>
+															<AudioFile>MUS_HB_Jungle_EnigmeResolved_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{9ABAA9B7-A7A7-455D-81A3-142D3EBCD475}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{3B5C6A57-8A20-466E-9E11-7BEB114E0969}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_EnigmeResolved_02" ID="{09A9E8EB-A888-443A-B5E6-288167516959}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="10500"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1233.43848580442"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_EnigmeResolved_02" ID="{60ECA2B6-5184-4B6B-9023-400905F27D7E}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{EDDF3294-7FE7-4E02-A0A4-D93DB3F7A29E}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_EnigmeResolved_03" ID="{35B1CA6E-87CD-4582-B8CF-E5030C617883}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8500"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="568.349106203997"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_EnigmeResolved_03" ID="{35B98EAF-D143-475F-B466-BA0BFDA61826}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{53386C74-0F14-4012-8182-2A6F99A484BC}">
+															<ClipList>
+																<MusicClip Name="MUS_HB_Jungle_EnigmeResolved_01" ID="{1A12F755-6831-45B1-B62C-B96BDB218B48}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11500"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1015.77287066246"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="MUS_HB_Jungle_EnigmeResolved_01" ID="{40CBC21B-B916-4224-8DDA-9888D5E981D9}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{07571126-22E4-4F76-91B6-587B9B5F546C}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="500"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{4ED62D99-78BF-45A0-87E6-BB36EE86A7A7}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="4500"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>

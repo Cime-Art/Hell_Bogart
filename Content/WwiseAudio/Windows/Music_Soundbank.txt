@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	102331918	E_Mus_SetFightState			\Simon\Music\Jungle\E_Mus_SetFightState	
+	152472446	E_Mus_TriggerChest			\Simon\Music\Jungle\E_Mus_TriggerChest	
 	156378189	E_Mus_Bridge_GoToPhase2			\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase2	
 	156378190	E_Mus_Bridge_GoToPhase1			\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase1	
 	849506195	E_Mus_Kali_75			\Brian\Music_Boss\E_Mus_Kali_75	
@@ -12,6 +13,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1700046390	E_Mus_Ruin_GardianFight			\Brian\Music_Ruin\E_Mus_Ruin_GardianFight	
 	2044504258	E_Mus_Ruin_Main_Play			\Brian\Music_Ruin\E_Mus_Ruin_Main_Play	
 	2097670358	E_Mus_Ruin_Trigger_Enigme			\Brian\Music_Ruin\E_Mus_Ruin_Trigger_Enigme	
+	2230239644	E_Mus_TriggerEnigme			\Simon\Music\Jungle\E_Mus_TriggerEnigme	
 	2386022965	E_Mus_Ruin_End			\Brian\Music_Ruin\E_Mus_Ruin_End	
 	2931429659	E_Mus_Kali_Intro			\Brian\Music_Boss\E_Mus_Kali_Intro	
 	3116078580	E_Mus_Ruin_Fight			\Brian\Music_Ruin\E_Mus_Ruin_Fight	
@@ -20,7 +22,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3619357316	E_Mus_Kali_100			\Brian\Music_Boss\E_Mus_Kali_100	
 	3685971472	E_Mus_Bridge_End			\Simon\Music\Bridge\E_Mus_Bridge_End	
 	3867560083	E_Mus_Jungle_Main_Play			\Simon\Music\Jungle\E_Mus_Jungle_Main_Play	
-	4222663323	E_Mus_TriggerEnigmeChest			\Simon\Music\Jungle\E_Mus_TriggerEnigmeChest	
 	4247850677	E_Mus_SetExplorationState			\Simon\Music\Jungle\E_Mus_SetExplorationState	
 	4274573073	E_Mus_Kali_Main_Play			\Brian\Music_Boss\E_Mus_Kali_Main_Play	
 
@@ -75,12 +76,14 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Trigger	ID	Name			Wwise Object Path	Notes
 	121136919	T_Ruines_Event_Enigme			\Brian\T_Ruines_Event_Enigme	
-	1012603002	T_Jungle_Event_Enigme_Chest			\Simon\T_Jungle_Event_Enigme_Chest	
+	221815858	T_Jungle_Event_Chest			\Simon\T_Jungle_Event_Chest	
 	1723241303	T_Ruines_Event_Chest			\Brian\T_Ruines_Event_Chest	
+	3923151184	T_Jungle_Event_Enigme			\Simon\T_Jungle_Event_Enigme	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	8010806	Event Enigme Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_Enigme_Chest_Event_01_EA9615DC.wem		\Interactive Music Hierarchy\Simon\MUSIC\Jungle\Events\Mus_Jungle_Event_Enigme_Chest\Event Enigme Chest		434453
+	8010806	Event Enigme Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_Enigme_Chest_Event_01_EA9615DC.wem		\Interactive Music Hierarchy\Simon\MUSIC\Jungle\Events\Mus_Jungle_Event_Found_Chest\Event Enigme Chest		434453
 	39990194	MUS_HB_BridgeJungle_End	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_BridgeJungle_End_EA9615DC.wem		\Interactive Music Hierarchy\Simon\MUSIC\Bridge\Transitions\MUS_HB_BridgeJungle_End\MUS_HB_BridgeJungle_End		364136
+	90873216	Enigme Resolved SEQ	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_EnigmeResolved_03_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\MUSIC\Jungle\Events\Mus_Jungle_Event_Enigme_Resolved\Enigme Resolved SEQ		1632064
 	98029768	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Amb_05_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_06\MUS_HB_Ruines_Amb		1395880
 	107510737	MUS_HB_Ruines_BigVoice	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_BigVoice_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_BigVoice		582677
 	115769674	Event Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Trigger_B00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Events\Mus_Ruin_Event_Chest\Event Chest		632263
@@ -105,10 +108,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	452570176	MUS_HB_Ruines_String	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_String_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_String		651939
 	500624380	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Amb_03_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_04\MUS_HB_Ruines_Amb		1441759
 	506404397	MUS_HB_Ruines_Choir	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Choir_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_GardianFight_LOOP\MUS_Ruin_GardianFight_SEG\MUS_HB_Ruines_Choir		1260720
+	515666401	Enigme Resolved SEQ	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_EnigmeResolved_01_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\MUSIC\Jungle\Events\Mus_Jungle_Event_Enigme_Resolved\Enigme Resolved SEQ		2208064
 	516836356	MUS_HB_Ruines_Choir	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Choir_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_GardianFight_LOOP\MUS_Ruin_GardianFight_SEG\MUS_HB_Ruines_Choir		1240039
 	539506128	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Amb_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_02\MUS_HB_Ruines_Amb		1399454
 	576860599	Event Enigme	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Trigger_A01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Events\Mus_Ruin_Event_Enigme\Event Enigme		684878
 	595572684	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Amb_02_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_03\MUS_HB_Ruines_Amb		1469223
+	639325914	Enigme Resolved SEQ	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_EnigmeResolved_02_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\MUSIC\Jungle\Events\Mus_Jungle_Event_Enigme_Resolved\Enigme Resolved SEQ		2016064
 	660836541	MUS_HB_BridgeJungle_Bridge_P1_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_BridgeJungle_Bridge_P1_04_EA9615DC.wem		\Interactive Music Hierarchy\Simon\MUSIC\Bridge\Mus_Bridge_MAIN_SWITCH\Mus_Bridge_Phase1_LOOP\MUS_HB_BridgeJungle_Bridge_P1_04\MUS_HB_BridgeJungle_Bridge_P1_04		470845
 	668388054	MUS_HB_Ruines_End	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_End_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_End\MUS_HB_Ruines_End		505197
 	709764780	75	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Cykodd - Kali Theme Phase 1 (75%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\75		6668694
@@ -135,7 +140,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	979926849	25	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\Cykodd - Kali Theme Phase 1 (25%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\25		6503604
 	1029166442	MUS_HB_Ruines_Snare	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Snare_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_Snare		765889
 	1040288944	MUS_HB_Ruines_Start	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Start_02_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_Start\MUS_HB_Ruines_Start		442083
-	1042611356	Event Enigme Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_Enigme_Chest_Event_02_EA9615DC.wem		\Interactive Music Hierarchy\Simon\MUSIC\Jungle\Events\Mus_Jungle_Event_Enigme_Chest\Event Enigme Chest		434871
+	1042611356	Event Enigme Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Jungle_Enigme_Chest_Event_02_EA9615DC.wem		\Interactive Music Hierarchy\Simon\MUSIC\Jungle\Events\Mus_Jungle_Event_Found_Chest\Event Enigme Chest		434871
 	1043129415	Event Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Trigger_B01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Events\Mus_Ruin_Event_Chest\Event Chest		651120
 	1051529773	MUS_HB_Ruines_Start	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\MUS_HB_Ruines_Start_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_Start\MUS_HB_Ruines_Start		296559
 
