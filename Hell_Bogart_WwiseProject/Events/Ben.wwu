@@ -14,7 +14,7 @@
 						</Action>
 						<Action Name="" ID="{D0EDE2B2-FE27-4FFB-8081-4F5E856C1CE5}" ShortID="983921540">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="0.9"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -70,7 +70,7 @@
 						<Action Name="" ID="{F74D433A-CEFD-4928-A1C4-8290F0876620}" ShortID="904786142">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="34"/>
-								<Property Name="Delay" Type="Real64" Value="1.4"/>
+								<Property Name="Delay" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
