@@ -883,17 +883,17 @@
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
-				<Event Id="685482513" Name="E_KaliBoss_Attacks" ObjectPath="\Events\Chris\HB_Kali Events\SLASHS\E_KaliBoss_Attacks"/>
-				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\GET HIT\E_KaliBoss_GetHit"/>
-				<Event Id="1324023236" Name="E_KaliBoss_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_Grab"/>
-				<Event Id="2252209331" Name="E_KaliBoss_GrandEND" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_GrandEND"/>
+				<Event Id="685482513" Name="E_KaliBoss_Attacks" ObjectPath="\Events\Chris\HB_Kali Events\KALI SLASHS\E_KaliBoss_Attacks"/>
+				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\KALI GET HIT\E_KaliBoss_GetHit"/>
+				<Event Id="1324023236" Name="E_KaliBoss_Grab" ObjectPath="\Events\Chris\HB_Kali Events\KALI Grab\E_KaliBoss_Grab"/>
+				<Event Id="2252209331" Name="E_KaliBoss_GrandEND" ObjectPath="\Events\Chris\HB_Kali Events\KALI Grab\E_KaliBoss_GrandEND"/>
 				<Event Id="3010176894" Name="E_KaliBoss_Hits_Bear_Grab" ObjectPath="\Events\Chris\HB_Kali Events\KALI HITS BEAR\E_KaliBoss_Hits_Bear_Grab"/>
 				<Event Id="2483986470" Name="E_KaliBoss_Hits_Bear_Impact" ObjectPath="\Events\Chris\HB_Kali Events\KALI HITS BEAR\E_KaliBoss_Hits_Bear_Impact"/>
 				<Event Id="1902388067" Name="E_KaliBoss_Hits_Bear_Slash" ObjectPath="\Events\Chris\HB_Kali Events\KALI HITS BEAR\E_KaliBoss_Hits_Bear_Slash"/>
 				<Event Id="1874061798" Name="E_KaliBoss_Hits_Bear_Whirlwind" ObjectPath="\Events\Chris\HB_Kali Events\KALI HITS BEAR\E_KaliBoss_Hits_Bear_Whirlwind"/>
-				<Event Id="3318371348" Name="E_KaliBoss_Impact" ObjectPath="\Events\Chris\HB_Kali Events\JUMP IMPACT\E_KaliBoss_Impact"/>
-				<Event Id="658884810" Name="E_KaliBoss_Jump" ObjectPath="\Events\Chris\HB_Kali Events\JUMP IMPACT\E_KaliBoss_Jump"/>
-				<Event Id="1983053444" Name="E_KaliBoss_Whirlwind" ObjectPath="\Events\Chris\HB_Kali Events\Whirlwind\E_KaliBoss_Whirlwind"/>
+				<Event Id="3318371348" Name="E_KaliBoss_Impact" ObjectPath="\Events\Chris\HB_Kali Events\KALI JUMP IMPACT\E_KaliBoss_Impact"/>
+				<Event Id="658884810" Name="E_KaliBoss_Jump" ObjectPath="\Events\Chris\HB_Kali Events\KALI JUMP IMPACT\E_KaliBoss_Jump"/>
+				<Event Id="1983053444" Name="E_KaliBoss_Whirlwind" ObjectPath="\Events\Chris\HB_Kali Events\KALI Whirlwind\E_KaliBoss_Whirlwind"/>
 				<Event Id="663816717" Name="E_Mob_Gardian_Attack" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Attack"/>
 				<Event Id="1083833169" Name="E_Mob_Gardian_Death" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Death"/>
 				<Event Id="1279445176" Name="E_Mob_Gardian_EndCharge" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_EndCharge"/>
@@ -2532,7 +2532,7 @@
 				</File>
 				<File Id="754682193" Language="SFX">
 					<ShortName>SFX_OTHERS_GroundSwitch_Klonk3.wav</ShortName>
-					<Path>SFX\SFX_OTHERS_GroundSwitch_Klonk3_66C02B12.wem</Path>
+					<Path>SFX\SFX_OTHERS_GroundSwitch_Klonk3_1A3AADCA.wem</Path>
 				</File>
 				<File Id="756545490" Language="SFX">
 					<ShortName>SFX-HB-CoffrePierre.wav</ShortName>
@@ -2900,7 +2900,7 @@
 				</File>
 				<File Id="982895792" Language="SFX">
 					<ShortName>SFX_HB_GroundSwitch_Klonk.wav</ShortName>
-					<Path>SFX\SFX_HB_GroundSwitch_Klonk_66C02B12.wem</Path>
+					<Path>SFX\SFX_HB_GroundSwitch_Klonk_832EC825.wem</Path>
 				</File>
 				<File Id="991710585" Language="SFX">
 					<ShortName>SFX-HB-CoffreMetalNeuf_01.wav</ShortName>
