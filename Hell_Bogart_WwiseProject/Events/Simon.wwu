@@ -1115,6 +1115,13 @@
 					<ChildrenList>
 						<Event Name="E_Char_Heartbeat_Slow" ID="{C0C244D9-A496-494F-BB0F-CE36674CA482}">
 							<ChildrenList>
+								<Action Name="" ID="{8538AE29-B6BC-47F1-80F5-28C7CB61FD54}" ShortID="967296649">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bear_Speech_Bark_RND" ID="{EF9B265C-6930-4A1A-88CA-961CBB1D6302}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{0EE5FB27-3B09-4CF9-82B5-DF8FFAA816A9}" ShortID="107161873">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1126,6 +1133,13 @@
 						</Event>
 						<Event Name="E_Char_Heartbeat_Fast" ID="{47384D2D-FF1E-4674-9E59-5D824BA49728}">
 							<ChildrenList>
+								<Action Name="" ID="{85370EC6-BBD9-4DA1-9C1F-710FC0A32F03}" ShortID="614796573">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bear_Speech_Bark_RND" ID="{EF9B265C-6930-4A1A-88CA-961CBB1D6302}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{97AF5361-1C26-44D1-B429-1F14478E7549}" ShortID="24148725">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1363,6 +1377,21 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Bear_Speech_BOSS_Ulti_RND" ID="{E602D3BD-4D7B-441B-9267-465640B3F1F5}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Death" ID="{469C4417-DB87-416B-9E61-D18003106FFF}" ShortID="1050493591">
+									<ChildrenList>
+										<Event Name="E_Speech_Bear_Death" ID="{E5E3C83B-B47A-465B-ABBB-F2D6D1889BB9}">
+											<ChildrenList>
+												<Action Name="" ID="{46C539A5-FE3F-4D01-BFBE-C9C22B9C96CB}" ShortID="635786746">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Bear_Speech_Death_RND" ID="{E92894FF-B9DE-4AA7-B014-1EF89B9E8B33}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

@@ -1058,6 +1058,10 @@
 					<ShortName>HB-SFX-Gardian-EndCharge.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-EndCharge_66C02B12.wem</Path>
 				</File>
+				<File Id="68802126" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Release_05.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Release_05_10C4C929.wem</Path>
+				</File>
 				<File Id="70517950" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_08.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_08_2E23A712.wem</Path>
@@ -1218,6 +1222,10 @@
 					<ShortName>SFX-HB-MobJungleCharlie-SpearLaunch-01.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-SpearLaunch-01_66C02B12.wem</Path>
 				</File>
+				<File Id="154340467" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Release_03.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Release_03_10C4C929.wem</Path>
+				</File>
 				<File Id="154876514" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_MecaImpact_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_SpikeTrap_MecaImpact_01_66C02B12.wem</Path>
@@ -1254,6 +1262,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_02_66C02B12.wem</Path>
 				</File>
+				<File Id="169200186" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Bark_03.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Bark_03_10C4C929.wem</Path>
+				</File>
 				<File Id="169729514" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_07.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_07_66C02B12.wem</Path>
@@ -1269,6 +1281,10 @@
 				<File Id="172222264" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-SpearLaunch-03.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-SpearLaunch-03_66C02B12.wem</Path>
+				</File>
+				<File Id="173812590" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Bark_02.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Bark_02_10C4C929.wem</Path>
 				</File>
 				<File Id="174635952" Language="SFX">
 					<ShortName>VOICE_HB_Bear_UltiStarter_Contact_03.wav</ShortName>
@@ -2046,6 +2062,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_04_66C02B12.wem</Path>
 				</File>
+				<File Id="515824277" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Bark_04.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Bark_04_10C4C929.wem</Path>
+				</File>
 				<File Id="516143379" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularAmmo_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_RegularAmmo_00_66C02B12.wem</Path>
@@ -2086,6 +2106,10 @@
 					<ShortName>Hb_sfx_other_pickup_standar.wav</ShortName>
 					<Path>SFX\Hb_sfx_other_pickup_standar_27C88C86.wem</Path>
 				</File>
+				<File Id="529733136" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Release_06.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Release_06_10C4C929.wem</Path>
+				</File>
 				<File Id="531370814" Language="SFX">
 					<ShortName>Shell_Metal_02.wav</ShortName>
 					<Path>SFX\Shell_Metal_02_66C02B12.wem</Path>
@@ -2121,6 +2145,10 @@
 				<File Id="553183363" Language="SFX">
 					<ShortName>MnGn_Barrel_Up.wav</ShortName>
 					<Path>SFX\MnGn_Barrel_Up_66C02B12.wem</Path>
+				</File>
+				<File Id="553398320" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Bark_05.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Bark_05_10C4C929.wem</Path>
 				</File>
 				<File Id="553559462" Language="SFX">
 					<ShortName>HB_Steps_herbeshumides_03.wav</ShortName>
@@ -2173,6 +2201,10 @@
 				<File Id="568783539" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Explo_1-3_CharlieWhereAreYou.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Explo_1-3_CharlieWhereAreYou_10C4C929.wem</Path>
+				</File>
+				<File Id="568896505" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Release_02.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Release_02_10C4C929.wem</Path>
 				</File>
 				<File Id="569638965" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Slash_04.wav</ShortName>
@@ -2418,6 +2450,10 @@
 					<ShortName>VOICE_HB_Bear_Bossline_1-3_BabyMySoulmate.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_1-3_BabyMySoulmate_10C4C929.wem</Path>
 				</File>
+				<File Id="701615158" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Bark_08.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Bark_08_10C4C929.wem</Path>
+				</File>
 				<File Id="705273490" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_01_66C02B12.wem</Path>
@@ -2433,6 +2469,10 @@
 				<File Id="711370853" Language="SFX">
 					<ShortName>SFX_HB_Gatling_DropShell_Dirt_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Gatling_DropShell_Dirt_01_66C02B12.wem</Path>
+				</File>
+				<File Id="712075185" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Release_04.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Release_04_10C4C929.wem</Path>
 				</File>
 				<File Id="712475117" Language="SFX">
 					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_06.wav</ShortName>
@@ -2544,7 +2584,7 @@
 				</File>
 				<File Id="754682193" Language="SFX">
 					<ShortName>SFX_OTHERS_GroundSwitch_Klonk3.wav</ShortName>
-					<Path>SFX\SFX_OTHERS_GroundSwitch_Klonk3_1A3AADCA.wem</Path>
+					<Path>SFX\SFX_OTHERS_GroundSwitch_Klonk3_C439F4B9.wem</Path>
 				</File>
 				<File Id="756545490" Language="SFX">
 					<ShortName>SFX-HB-CoffrePierre.wav</ShortName>
@@ -2589,6 +2629,10 @@
 				<File Id="778412427" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_10-4_WifeNotApreciateThat.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_10-4_WifeNotApreciateThat_10C4C929.wem</Path>
+				</File>
+				<File Id="780287516" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Death_04.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Death_04_10C4C929.wem</Path>
 				</File>
 				<File Id="780555555" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Spread60_00.wav</ShortName>
@@ -2806,6 +2850,10 @@
 					<ShortName>VOICE_HB_Bear_Bossline_7-3_VoteForKennedy.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_7-3_VoteForKennedy_10C4C929.wem</Path>
 				</File>
+				<File Id="918052871" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Bark_07.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Bark_07_10C4C929.wem</Path>
+				</File>
 				<File Id="919466806" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LootLegendary_3.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LootLegendary_3_10C4C929.wem</Path>
@@ -2916,7 +2964,7 @@
 				</File>
 				<File Id="982895792" Language="SFX">
 					<ShortName>SFX_HB_GroundSwitch_Klonk.wav</ShortName>
-					<Path>SFX\SFX_HB_GroundSwitch_Klonk_832EC825.wem</Path>
+					<Path>SFX\SFX_HB_GroundSwitch_Klonk_99F50E37.wem</Path>
 				</File>
 				<File Id="991710585" Language="SFX">
 					<ShortName>SFX-HB-CoffreMetalNeuf_01.wav</ShortName>

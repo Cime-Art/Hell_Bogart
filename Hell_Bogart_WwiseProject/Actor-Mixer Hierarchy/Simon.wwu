@@ -11371,6 +11371,12 @@
 													<ChildrenList>
 														<RandomSequenceContainer Name="Bear_Speech_LosingLife_FuckShit_RND" ID="{D2C00AE2-E84D-4BCE-A408-E88531A8F987}" ShortID="960853605">
 															<PropertyList>
+																<Property Name="OverridePriority" Type="bool" Value="True"/>
+																<Property Name="Priority" Type="int16">
+																	<ValueList>
+																		<Value>65</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="17"/>
 																<Property Name="Weight" Type="Real64">
 																	<ValueList>
@@ -11787,6 +11793,12 @@
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="Bear_Speech_LosingLife_Line_RND" ID="{7E71977F-73AA-4E09-96E9-550374E49CAD}" ShortID="121396273">
 															<PropertyList>
+																<Property Name="OverridePriority" Type="bool" Value="True"/>
+																<Property Name="Priority" Type="int16">
+																	<ValueList>
+																		<Value>65</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 																<Property Name="Weight" Type="Real64">
@@ -12639,7 +12651,7 @@
 												<Property Name="OverridePriority" Type="bool" Value="True"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
-														<Value>100</Value>
+														<Value>90</Value>
 													</ValueList>
 												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -12667,7 +12679,7 @@
 												<Property Name="OverridePriority" Type="bool" Value="True"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
-														<Value>100</Value>
+														<Value>90</Value>
 													</ValueList>
 												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -12695,7 +12707,7 @@
 												<Property Name="OverridePriority" Type="bool" Value="True"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
-														<Value>100</Value>
+														<Value>90</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -12729,6 +12741,464 @@
 												<ActiveSource Name="VOICE_HB_Bear_LosingLife_Shit_07" ID="{01A17126-1FAB-4CA1-80E0-F4959DD3506A}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Barks" ID="{B3FB42E2-6405-428E-B354-DDEAF6B29ECE}" ShortID="306470597">
+									<ChildrenList>
+										<RandomSequenceContainer Name="Bear_Speech_Bark_RND" ID="{EF9B265C-6930-4A1A-88CA-961CBB1D6302}" ShortID="1008482154">
+											<PropertyList>
+												<Property Name="OverridePriority" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>70</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="7"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="VOICE_HB_Bear_Bark_02" ID="{3CB3045A-A3A8-4ECE-8ED5-F736C6053F01}" ShortID="690268869">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Bark_02" ID="{F0D931BB-3BD7-4F4F-9BD6-1648D463A0CE}" ShortID="173812590">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Bark_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Bark_02" ID="{F0D931BB-3BD7-4F4F-9BD6-1648D463A0CE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Bark_03" ID="{FCA19578-1653-4973-A7E7-F694508EEA6F}" ShortID="193288574">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Bark_03" ID="{D6C7330D-69D0-4451-A4EE-BCEBEEFEF121}" ShortID="169200186">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Bark_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Bark_03" ID="{D6C7330D-69D0-4451-A4EE-BCEBEEFEF121}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Bark_04" ID="{A599B148-7570-4A85-AB15-F51323685005}" ShortID="951070448">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Bark_04" ID="{A493ECE1-5C5D-44F9-A070-C51C7E809026}" ShortID="515824277">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Bark_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Bark_04" ID="{A493ECE1-5C5D-44F9-A070-C51C7E809026}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Bark_05" ID="{A4D45EDC-0525-4F0F-84C2-985E9E26CF27}" ShortID="560018635">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Bark_05" ID="{4E4AD192-F16D-4AEC-9947-95AE468DF895}" ShortID="553398320">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Bark_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Bark_05" ID="{4E4AD192-F16D-4AEC-9947-95AE468DF895}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Bark_07" ID="{D8C09C2E-43EF-4D63-9F40-8D4B0C98B676}" ShortID="874522914">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Bark_07" ID="{EC455D3A-C578-4C87-A0F0-A72F885CB50D}" ShortID="918052871">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Bark_07.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Bark_07" ID="{EC455D3A-C578-4C87-A0F0-A72F885CB50D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Bark_08" ID="{61DB3475-9808-4C32-A069-1936808CECEF}" ShortID="442167450">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Bark_08" ID="{335BA7DF-7851-420B-9A75-9AC135BF27BD}" ShortID="701615158">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Bark_08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Bark_08" ID="{335BA7DF-7851-420B-9A75-9AC135BF27BD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Death_04" ID="{11934CFD-84C4-4105-849A-170ACA406A73}" ShortID="584522296">
+													<PropertyList>
+														<Property Name="CenterPercentage" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Death_04" ID="{175B8F4D-A7C0-4B27-80F6-470863931FB8}" ShortID="780287516">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Death_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Death_04" ID="{175B8F4D-A7C0-4B27-80F6-470863931FB8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Death" ID="{0C7D2655-F851-4343-8333-96DE1C323B89}" ShortID="41090865">
+									<ChildrenList>
+										<RandomSequenceContainer Name="Bear_Speech_Death_RND" ID="{E92894FF-B9DE-4AA7-B014-1EF89B9E8B33}" ShortID="973001722">
+											<PropertyList>
+												<Property Name="OverridePriority" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="VOICE_HB_Bear_Death_01" ID="{A63AEA59-FBEC-41D6-9731-586B98B47C8F}" ShortID="418058595">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Death_01" ID="{20BE1A77-C885-4357-ABD4-145E2F719A2D}" ShortID="317136000">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Death_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Death_01" ID="{20BE1A77-C885-4357-ABD4-145E2F719A2D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Death_02" ID="{88E71E00-41C3-4EF1-9C51-3DB6915AD827}" ShortID="491474619">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Death_02" ID="{3D42F001-140A-4A8B-8598-032C2291E6D3}" ShortID="473764662">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Death_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Death_02" ID="{3D42F001-140A-4A8B-8598-032C2291E6D3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Death_03" ID="{E09DC30E-CD7C-47FF-81E3-7C74CAC579DF}" ShortID="525128836">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Death_03" ID="{9D98C0D2-5D88-4F82-8C19-C5212EDEB3DF}" ShortID="583057972">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Death_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Death_03" ID="{9D98C0D2-5D88-4F82-8C19-C5212EDEB3DF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Death_05" ID="{BD33BB4B-4240-4F17-98B0-3353CEFDC5E1}" ShortID="108162738">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Death_05" ID="{704FAD30-6C97-4306-BFE5-EE72AE7CAF0D}" ShortID="235273799">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Death_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Death_05" ID="{704FAD30-6C97-4306-BFE5-EE72AE7CAF0D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Death_06" ID="{27752E01-B7D7-4609-B1B3-7706ABE1F252}" ShortID="369151959">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Death_06" ID="{50653E6D-25E5-436A-BE96-B47BD85E7276}" ShortID="73726998">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Death_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Death_06" ID="{50653E6D-25E5-436A-BE96-B47BD85E7276}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Death_07" ID="{F4BECF97-317C-49CD-AB90-D3E1ECA738F9}" ShortID="655311181">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Death_07" ID="{1A317918-EF2E-4AAF-8ABB-F7B9F74E05D6}" ShortID="1037808850">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Death_07.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Death_07" ID="{1A317918-EF2E-4AAF-8ABB-F7B9F74E05D6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Death_08" ID="{3015653F-0825-49D8-8BF5-B53E7107BC71}" ShortID="427543191">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Death_08" ID="{A64637C9-9E31-4EA3-A790-9A41EEC5DF7A}" ShortID="544783372">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Death_08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Death_08" ID="{A64637C9-9E31-4EA3-A790-9A41EEC5DF7A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Release" ID="{324D878D-7C7C-4D84-8F90-C9EB95647CDF}" ShortID="180112750">
+									<ChildrenList>
+										<RandomSequenceContainer Name="Bear_Speech_Release_RND" ID="{1B369575-D772-4A22-A4C6-CBEF3F0D3DDC}" ShortID="185906991">
+											<PropertyList>
+												<Property Name="OverridePriority" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="VOICE_HB_Bear_Release_02" ID="{C4B0408C-CBDA-41E3-B6F2-EB7008E4C63B}" ShortID="135934036">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Release_02" ID="{FD7221A8-3913-474A-AAD8-233E9E605C57}" ShortID="568896505">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Release_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Release_02" ID="{FD7221A8-3913-474A-AAD8-233E9E605C57}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Release_03" ID="{BAFA7570-4858-4C4D-9816-B3A6482AF11F}" ShortID="244356808">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Release_03" ID="{4F1A4EAF-5FE6-43C8-863C-6E34FF75F54E}" ShortID="154340467">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Release_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Release_03" ID="{4F1A4EAF-5FE6-43C8-863C-6E34FF75F54E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Release_04" ID="{821379B7-8F9C-437F-A8BF-9E6510EC7955}" ShortID="382238532">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Release_04" ID="{3BED07D0-9561-4829-88D9-3CB0E646FED2}" ShortID="712075185">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Release_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Release_04" ID="{3BED07D0-9561-4829-88D9-3CB0E646FED2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Release_05" ID="{05535B1D-B143-405E-887D-A13FA5A4DCB8}" ShortID="518118514">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Release_05" ID="{712C32EE-8FAF-4652-8D30-5AFC7377EA3E}" ShortID="68802126">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Release_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Release_05" ID="{712C32EE-8FAF-4652-8D30-5AFC7377EA3E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VOICE_HB_Bear_Release_06" ID="{B2F0278F-4AD7-4527-AECE-EDA4BF72F426}" ShortID="335251201">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VOICE_HB_Bear_Release_06" ID="{85570438-2594-4EBB-A596-0FC68A0A1DAA}" ShortID="529733136">
+															<Language>SFX</Language>
+															<AudioFile>VOICE_HB_Bear_Release_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VOICE_HB_Bear_Release_06" ID="{85570438-2594-4EBB-A596-0FC68A0A1DAA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
@@ -13549,7 +14019,6 @@
 											<ChildrenList>
 												<Sound Name="VOICE_HB_Bear_Bossline_1-3_BabyMySoulmate_PRIORITY" ID="{F650CBFE-E52A-423E-91B2-C377946F0EB7}" ShortID="709836883">
 													<PropertyList>
-														<Property Name="OverridePriority" Type="bool" Value="True"/>
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>100</Value>
@@ -13691,7 +14160,6 @@
 												</Sound>
 												<Sound Name="VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_PRIORITY" ID="{716A7BFD-58D1-4905-A25A-9289DD7EA1F9}" ShortID="59519566">
 													<PropertyList>
-														<Property Name="OverridePriority" Type="bool" Value="True"/>
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>100</Value>
@@ -13792,7 +14260,6 @@
 												</Sound>
 												<Sound Name="VOICE_HB_Bear_Bossline_2-2_GhostCheating" ID="{B426697B-36D4-4B7D-B5D0-FE1B00BBEE99}" ShortID="111560607">
 													<PropertyList>
-														<Property Name="OverridePriority" Type="bool" Value="True"/>
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
@@ -13872,7 +14339,6 @@
 											<ChildrenList>
 												<Sound Name="VOICE_HB_Bear_Bossline_4-2_GetCloserIntroduceMother" ID="{A0E7BB4E-548C-4501-8CE8-317301FE7A46}" ShortID="136025644">
 													<PropertyList>
-														<Property Name="OverridePriority" Type="bool" Value="True"/>
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
@@ -16196,7 +16662,7 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="Death" ID="{AE0AA27A-36BF-4555-A927-2F74C4F626D9}" ShortID="61017127">
+								<ActorMixer Name="Death Kali" ID="{AE0AA27A-36BF-4555-A927-2F74C4F626D9}" ShortID="61017127">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
