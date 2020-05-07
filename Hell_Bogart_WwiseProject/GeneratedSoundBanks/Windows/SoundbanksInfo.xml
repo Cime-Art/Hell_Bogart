@@ -1222,10 +1222,6 @@
 					<ShortName>SFX_HB_Traps_SpikeTrap_MecaImpact_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_SpikeTrap_MecaImpact_01_66C02B12.wem</Path>
 				</File>
-				<File Id="157876437" Language="SFX">
-					<ShortName>60 - .45 auto shell single shell on hard packed dirt-11.wav</ShortName>
-					<Path>SFX\60 - .45 auto shell single shell on hard packed dirt-11_66C02B12.wem</Path>
-				</File>
 				<File Id="157876821" Language="SFX">
 					<ShortName>MnGn_Barrel_Loop.wav</ShortName>
 					<Path>SFX\MnGn_Barrel_Loop_C42B8C3C.wem</Path>
@@ -1530,6 +1526,10 @@
 					<ShortName>FTP_sol sec_03.wav</ShortName>
 					<Path>SFX\FTP_sol sec_03_66C02B12.wem</Path>
 				</File>
+				<File Id="303898892" Language="SFX">
+					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_03.wav</ShortName>
+					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_03_66C02B12.wem</Path>
+				</File>
 				<File Id="304778144" Language="SFX">
 					<ShortName>HB_SFX_KALI_HIT_05.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_HIT_05_66C02B12.wem</Path>
@@ -1734,6 +1734,10 @@
 					<ShortName>FTP_sol sec_01.wav</ShortName>
 					<Path>SFX\FTP_sol sec_01_66C02B12.wem</Path>
 				</File>
+				<File Id="381809507" Language="SFX">
+					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_04.wav</ShortName>
+					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_04_66C02B12.wem</Path>
+				</File>
 				<File Id="384374704" Language="SFX">
 					<ShortName>i_will_put_you_to_rest.WAV</ShortName>
 					<Path>SFX\i_will_put_you_to_rest_E1929ED0.wem</Path>
@@ -1878,10 +1882,6 @@
 					<ShortName>HB_SFX_Shotgun_IceAmmo_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_IceAmmo_00_66C02B12.wem</Path>
 				</File>
-				<File Id="447496301" Language="SFX">
-					<ShortName>60 - .45 auto shell single shell on hard packed dirt-15.wav</ShortName>
-					<Path>SFX\60 - .45 auto shell single shell on hard packed dirt-15_66C02B12.wem</Path>
-				</File>
 				<File Id="448891017" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Whirlwind_01.wav</ShortName>
 					<Path>SFX\Kali_BEAR_Hits_Whirlwind_01_66C02B12.wem</Path>
@@ -2001,6 +2001,10 @@
 				<File Id="499152641" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Explo_3-3_HereWeGoAgain.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Explo_3-3_HereWeGoAgain_10C4C929.wem</Path>
+				</File>
+				<File Id="499555350" Language="SFX">
+					<ShortName>SFX_HB_Gatling_DropShell_Dirt_04.wav</ShortName>
+					<Path>SFX\SFX_HB_Gatling_DropShell_Dirt_04_66C02B12.wem</Path>
 				</File>
 				<File Id="500196847" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Jarre_02.wav</ShortName>
@@ -2177,6 +2181,10 @@
 				<File Id="570978224" Language="SFX">
 					<ShortName>HB-SFX-GenadeFire-00.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeFire-00_66C02B12.wem</Path>
+				</File>
+				<File Id="572723576" Language="SFX">
+					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_05.wav</ShortName>
+					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_05_66C02B12.wem</Path>
 				</File>
 				<File Id="574396265" Language="SFX">
 					<ShortName>HB_Kali_Grab_end_03.wav</ShortName>
@@ -2422,6 +2430,10 @@
 					<ShortName>VOICE_HB_Bear_UltiShooting_1-4_SlaughterTime_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiShooting_1-4_SlaughterTime_02_10C4C929.wem</Path>
 				</File>
+				<File Id="711370853" Language="SFX">
+					<ShortName>SFX_HB_Gatling_DropShell_Dirt_01.wav</ShortName>
+					<Path>SFX\SFX_HB_Gatling_DropShell_Dirt_01_66C02B12.wem</Path>
+				</File>
 				<File Id="712475117" Language="SFX">
 					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_06.wav</ShortName>
 					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_06_66C02B12.wem</Path>
@@ -2458,6 +2470,10 @@
 					<ShortName>HB_Footstep_HerbesSèches_02.wav</ShortName>
 					<Path>SFX\HB_Footstep_HerbesSèches_02_66C02B12.wem</Path>
 				</File>
+				<File Id="725146219" Language="SFX">
+					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_01.wav</ShortName>
+					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_01_66C02B12.wem</Path>
+				</File>
 				<File Id="728468316" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_StartDropShell_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_StartDropShell_02_66C02B12.wem</Path>
@@ -2493,10 +2509,6 @@
 				<File Id="740705521" Language="SFX">
 					<ShortName>come_here.WAV</ShortName>
 					<Path>SFX\come_here_ED3A9569.wem</Path>
-				</File>
-				<File Id="741470113" Language="SFX">
-					<ShortName>60 - .45 auto shell single shell on hard packed dirt-03.wav</ShortName>
-					<Path>SFX\60 - .45 auto shell single shell on hard packed dirt-03_66C02B12.wem</Path>
 				</File>
 				<File Id="742319399" Language="SFX">
 					<ShortName>HB-SFX-Other-OpenBigStoneDoor.wav</ShortName>
@@ -2722,6 +2734,10 @@
 					<ShortName>Grenade_SFX_Ground_Rock_01.wav</ShortName>
 					<Path>SFX\Grenade_SFX_Ground_Rock_01_66C02B12.wem</Path>
 				</File>
+				<File Id="873927343" Language="SFX">
+					<ShortName>SFX_HB_Gatling_DropShell_Dirt_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Gatling_DropShell_Dirt_02_66C02B12.wem</Path>
+				</File>
 				<File Id="876834070" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LootLegendary_5-bis-2.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LootLegendary_5-bis-2_10C4C929.wem</Path>
@@ -2777,6 +2793,10 @@
 				<File Id="914170520" Language="SFX">
 					<ShortName>HB_Footstep_HerbesSèches_01.wav</ShortName>
 					<Path>SFX\HB_Footstep_HerbesSèches_01_66C02B12.wem</Path>
+				</File>
+				<File Id="914753790" Language="SFX">
+					<ShortName>SFX_HB_Gatling_DropShell_Dirt_03.wav</ShortName>
+					<Path>SFX\SFX_HB_Gatling_DropShell_Dirt_03_66C02B12.wem</Path>
 				</File>
 				<File Id="915004711" Language="SFX">
 					<ShortName>SFX_HB_SpikeDoor_EndKlonk_02.wav</ShortName>
@@ -2862,10 +2882,6 @@
 					<ShortName>HB_SFX_KALI_Attack_01.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_Attack_01_09928E58.wem</Path>
 				</File>
-				<File Id="964166816" Language="SFX">
-					<ShortName>60 - .45 auto shell single shell on hard packed dirt-07.wav</ShortName>
-					<Path>SFX\60 - .45 auto shell single shell on hard packed dirt-07_66C02B12.wem</Path>
-				</File>
 				<File Id="967666203" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_4-3_LooseLifeLooseHair.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_RC_4-3_LooseLifeLooseHair_10C4C929.wem</Path>
@@ -2929,6 +2945,10 @@
 				<File Id="1008926846" Language="SFX">
 					<ShortName>HB_SFX_Other_Trap_PinGrenade_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_Trap_PinGrenade_01_66C02B12.wem</Path>
+				</File>
+				<File Id="1014298941" Language="SFX">
+					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_02_66C02B12.wem</Path>
 				</File>
 				<File Id="1014806612" Language="SFX">
 					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_02.wav</ShortName>
