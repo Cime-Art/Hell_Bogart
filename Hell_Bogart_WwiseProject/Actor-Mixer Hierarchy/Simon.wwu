@@ -162,6 +162,21 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="SFX_HB_GroundSwitch_Klonk" ID="{0FE95116-15B5-4E07-82B3-18B36614EDA3}" ShortID="1055882802">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -172,6 +187,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_HB_GroundSwitch_Klonk" ID="{89114DF9-63D5-4563-A6E6-DAC982660711}" ShortID="982895792">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.66010273972603E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.626284246575341"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_HB_GroundSwitch_Klonk.wav</AudioFile>
 										</AudioFileSource>
@@ -182,6 +202,14 @@
 								</Sound>
 								<Sound Name="SFX_OTHERS_GroundSwitch_Klonk3" ID="{89F737E4-4422-4C25-8FA3-9D8021585138}" ShortID="23790599">
 									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -195,6 +223,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -206,6 +239,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_OTHERS_GroundSwitch_Klonk3" ID="{347E10AC-5557-4B45-B5BB-65326C44E18E}" ShortID="754682193">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="6.16438356164384E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.929794520547944"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_OTHERS_GroundSwitch_Klonk3.wav</AudioFile>
 										</AudioFileSource>
@@ -269,11 +307,6 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>4</Value>
@@ -308,11 +341,6 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -343,11 +371,6 @@
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
@@ -8107,6 +8130,9 @@
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="FTP_Herbes_seches_switch" ID="{43B444AE-B802-41C4-9A13-4F39F9506A72}" WorkUnitID="{7130362E-D281-4CAD-90E5-8B25E6F92FDE}"/>
+														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
@@ -8698,11 +8724,13 @@
 														<RandomSequenceContainer Name="Dirt" ID="{7F0511E2-ED69-4F9C-9C96-D3297FC60EDE}" ShortID="465524708">
 															<PropertyList>
 																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -8790,6 +8818,14 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
+															<PositioningInfo>
+																<Panner Name="" ID="{9A94421B-3C42-4C77-9D92-B29A646252EC}">
+																	<PropertyList>
+																		<Property Name="PanX" Type="Real64" Value="33.3333333333333"/>
+																		<Property Name="PanY" Type="Real64" Value="64.6808510638298"/>
+																	</PropertyList>
+																</Panner>
+															</PositioningInfo>
 														</RandomSequenceContainer>
 													</ChildrenList>
 													<GroupingInfo>
@@ -9000,7 +9036,20 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Spike_Door_BeginKlonk_RND" ID="{15275BD7-76FC-48E4-8C51-382CC21C1C6D}" ShortID="913173306">
 									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -9099,7 +9148,20 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Spike_Door_EndKlonk_RND" ID="{D9AB3E2D-026E-4FF0-8CAD-963FCF76F897}" ShortID="903966056">
 									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -9199,6 +9261,19 @@
 								<BlendContainer Name="Spike_Door_Opening_BLEND_LOOP" ID="{3CD96B5B-0611-4C3D-89F4-DB4FC2764109}" ShortID="756212490">
 									<PropertyList>
 										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -14156,7 +14231,7 @@
 														</Property>
 														<Property Name="Weight" Type="Real64">
 															<ValueList>
-																<Value>60</Value>
+																<Value>40</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -14196,6 +14271,11 @@
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>60</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
