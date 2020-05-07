@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	64626783	E_Speech_Kali_Before_Big_Attack			\Simon\Voice\Kali\E_Speech_Kali_Before_Big_Attack	
 	212888376	E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP			\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP	
 	251601818	E_Coffre_Metal_Vieux			\Brian\Coffre\E_Coffre_Metal_Vieux	
+	255191678	E_Kali_UltiScream			\Simon\Voice\Kali\E_Kali_UltiScream	
 	301183665	E_Enable_Attenuation			\Simon\Global\GlobalEffects\E_Enable_Attenuation	
 	303195765	E_Speech_Kali_GetHit			\Simon\Voice\Kali\E_Speech_Kali_GetHit	
 	439327384	E_Traps_Punji_HitBear			\Simon\Traps\E_Traps_Punji_HitBear	
@@ -639,6 +640,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	745202616	HB-SFX-Gardian-Footstep_06	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-Gardian-Footstep_06_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Stone_Gardian\MIX_StoneGardian\MIX_Footstep\SWITCH_Footstep\RND_Footstep\HB-SFX-Gardian-Footstep_06		46751
 	746337883	HB-SFX-Other-LoopBigStoneDoorOpening	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-Other-LoopBigStoneDoorOpening_C42B8C3C.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Big Stone Door\HB-SFX-Other-LoopBigStoneDoorOpening		262980
 	747661496	HB-SFX-Gardian-Death_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-Gardian-Death_01_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Stone_Gardian\MIX_StoneGardian\MIX_Death\RND_Death\HB-SFX-Gardian-Death_01		153411
+	749596691	HB_SFX_KALI_ultimatescream_05	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_KALI_ultimatescream_05_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Voices Global\Kali Bear Interactions\Ulti Scream\HB_SFX_KALI_ultimatescream_05		1550120
 	749607470	Epic	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-GenadeFire-01_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Fire\Epic		123313
 	750198670	SFX-HB-CoffreMetalVieux_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX-HB-CoffreMetalVieux_01_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Coffre\MIX_Coffre\MIX_Coffre_Metal_Vieux\RAND_Coffre_Metal_Vieux\SFX-HB-CoffreMetalVieux_01		44194
 	751258681	Grenade_SFX_Ground_Dirt_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Grenade_SFX_Ground_Dirt_01_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Grenade\MIX_Grenade\Ground_SWITCH\Dirt\Grenade_SFX_Ground_Dirt_01		80394

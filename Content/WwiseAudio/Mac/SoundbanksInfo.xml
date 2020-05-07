@@ -883,6 +883,7 @@
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
+				<Event Id="255191678" Name="E_Kali_UltiScream" ObjectPath="\Events\Simon\Voice\Kali\E_Kali_UltiScream"/>
 				<Event Id="685482513" Name="E_KaliBoss_Attacks" ObjectPath="\Events\Chris\HB_Kali Events\KALI SLASHS\E_KaliBoss_Attacks"/>
 				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\KALI GET HIT\E_KaliBoss_GetHit"/>
 				<Event Id="1324023236" Name="E_KaliBoss_Grab" ObjectPath="\Events\Chris\HB_Kali Events\KALI Grab\E_KaliBoss_Grab"/>
@@ -2594,6 +2595,10 @@
 				<File Id="747661496" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Death_01.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Death_01_66C02B12.wem</Path>
+				</File>
+				<File Id="749596691" Language="SFX">
+					<ShortName>HB_SFX_KALI_ultimatescream_05.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_ultimatescream_05_10C4C929.wem</Path>
 				</File>
 				<File Id="749607470" Language="SFX">
 					<ShortName>HB-SFX-GenadeFire-01.wav</ShortName>

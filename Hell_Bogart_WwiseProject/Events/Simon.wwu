@@ -1570,6 +1570,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_Kali_UltiScream" ID="{71106536-EE12-488D-ACD0-422037C8027C}">
+									<ChildrenList>
+										<Action Name="" ID="{F89B8A1E-50C7-49B3-80B2-58F5E7E4E9E0}" ShortID="1073624797">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB_SFX_KALI_ultimatescream_05" ID="{4BDBDB5C-BA48-4DB5-8F8D-819DBF7BDC77}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

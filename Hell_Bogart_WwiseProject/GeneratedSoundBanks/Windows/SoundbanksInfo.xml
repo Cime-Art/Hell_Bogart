@@ -883,6 +883,7 @@
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
+				<Event Id="255191678" Name="E_Kali_UltiScream" ObjectPath="\Events\Simon\Voice\Kali\E_Kali_UltiScream"/>
 				<Event Id="685482513" Name="E_KaliBoss_Attacks" ObjectPath="\Events\Chris\HB_Kali Events\KALI SLASHS\E_KaliBoss_Attacks"/>
 				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\KALI GET HIT\E_KaliBoss_GetHit"/>
 				<Event Id="1324023236" Name="E_KaliBoss_Grab" ObjectPath="\Events\Chris\HB_Kali Events\KALI Grab\E_KaliBoss_Grab"/>
@@ -922,6 +923,7 @@
 				<Event Id="212888376" Name="E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP"/>
 				<Event Id="1044613943" Name="E_Speech_Bear_AgainstCharlie_EndFight_SetExplo" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_EndFight_SetExplo"/>
 				<Event Id="2655041407" Name="E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY"/>
+				<Event Id="2245991475" Name="E_Speech_Bear_Death" ObjectPath="\Events\Simon\Voice\Bear\Death\E_Speech_Bear_Death"/>
 				<Event Id="4231375772" Name="E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY"/>
 				<Event Id="2359215024" Name="E_Speech_Bear_EXPLO_Random_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_LOOP"/>
 				<Event Id="2025380871" Name="E_Speech_Bear_EXPLO_Random_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_STOP_LOOP"/>
@@ -1069,6 +1071,10 @@
 				<File Id="71933835" Language="SFX">
 					<ShortName>VOICE_HB_Bear_GrenadeEnd_1-2_SweetSound.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_GrenadeEnd_1-2_SweetSound_10C4C929.wem</Path>
+				</File>
+				<File Id="73726998" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Death_06.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Death_06_10C4C929.wem</Path>
 				</File>
 				<File Id="75956231" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_5-2_KnockKnockWhosThere.wav</ShortName>
@@ -1406,6 +1412,10 @@
 					<ShortName>Shell_Wood_01.wav</ShortName>
 					<Path>SFX\Shell_Wood_01_66C02B12.wem</Path>
 				</File>
+				<File Id="235273799" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Death_05.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Death_05_10C4C929.wem</Path>
+				</File>
 				<File Id="237015842" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LootNormal_2-1_MoreHoles.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LootNormal_2-1_MoreHoles_10C4C929.wem</Path>
@@ -1581,6 +1591,10 @@
 				<File Id="314355310" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_3-2_Bouh.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_3-2_Bouh_3BD70655.wem</Path>
+				</File>
+				<File Id="317136000" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Death_01.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Death_01_10C4C929.wem</Path>
 				</File>
 				<File Id="320764015" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Wood_01.wav</ShortName>
@@ -1962,6 +1976,10 @@
 					<ShortName>Grenade_SFX_Ground_Wood_00.wav</ShortName>
 					<Path>SFX\Grenade_SFX_Ground_Wood_00_66C02B12.wem</Path>
 				</File>
+				<File Id="473764662" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Death_02.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Death_02_10C4C929.wem</Path>
+				</File>
 				<File Id="475995238" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-00.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-00_66C02B12.wem</Path>
@@ -2126,6 +2144,10 @@
 					<ShortName>HB-SFX-Gardian-GetHit_00.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-GetHit_00_66C02B12.wem</Path>
 				</File>
+				<File Id="544783372" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Death_08.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Death_08_10C4C929.wem</Path>
+				</File>
 				<File Id="545236896" Language="SFX">
 					<ShortName>laugh2.WAV</ShortName>
 					<Path>SFX\laugh2_5411A0D7.wem</Path>
@@ -2237,6 +2259,10 @@
 				<File Id="581784882" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_CanonTranspercant_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonTranspercant_01_66C02B12.wem</Path>
+				</File>
+				<File Id="583057972" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Death_03.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Death_03_10C4C929.wem</Path>
 				</File>
 				<File Id="584368452" Language="SFX">
 					<ShortName>Shell_Water_01.wav</ShortName>
@@ -2569,6 +2595,10 @@
 				<File Id="747661496" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Death_01.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Death_01_66C02B12.wem</Path>
+				</File>
+				<File Id="749596691" Language="SFX">
+					<ShortName>HB_SFX_KALI_ultimatescream_05.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_ultimatescream_05_10C4C929.wem</Path>
 				</File>
 				<File Id="749607470" Language="SFX">
 					<ShortName>HB-SFX-GenadeFire-01.wav</ShortName>
@@ -3049,6 +3079,10 @@
 				<File Id="1035227437" Language="SFX">
 					<ShortName>Shell_Wood_04.wav</ShortName>
 					<Path>SFX\Shell_Wood_04_66C02B12.wem</Path>
+				</File>
+				<File Id="1037808850" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Death_07.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Death_07_10C4C929.wem</Path>
 				</File>
 				<File Id="1038108509" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_9_4_GetOutSandwitch.wav</ShortName>

@@ -16726,6 +16726,70 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
+								<ActorMixer Name="Ulti Scream" ID="{CB938039-EC76-4529-A033-4E0FF024719C}" ShortID="131110071">
+									<PropertyList>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>99</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HB_SFX_KALI_ultimatescream_05" ID="{4BDBDB5C-BA48-4DB5-8F8D-819DBF7BDC77}" ShortID="753403510">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend2">
+													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_KALI_ultimatescream_05" ID="{5A376B0A-158D-4C00-B3EA-A9E46A99EBF2}" ShortID="749596691">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_KALI_ultimatescream_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_KALI_ultimatescream_05" ID="{5A376B0A-158D-4C00-B3EA-A9E46A99EBF2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
