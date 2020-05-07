@@ -222,6 +222,21 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="KALI ULTI SCREAM" ID="{4BB07E0E-8BDF-4BDE-A98E-E999396FBF10}" ShortID="256384669">
+							<ChildrenList>
+								<Event Name="E_KaliBoss_UltiScream" ID="{2FBCA700-F151-4B24-BB4A-73DFE46091EA}">
+									<ChildrenList>
+										<Action Name="" ID="{CA88ACA7-BDB2-4C31-BB2C-633A8E5F5CCC}" ShortID="627571783">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Kali_Scream_01" ID="{26080F68-EC1A-4763-98E9-1AECBD56AC0D}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="HB_Ui_Character" ID="{6238A0C0-DC63-40FA-BE22-55F0706986CE}" ShortID="604188379">
