@@ -10,9 +10,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	517697311	Stop_KAli_whisper_02			\Alex\Stop_KAli_whisper_02	
 	574868710	E_Global_SetOutPauseMenu			\Simon\Global\GlobalEffects\E_Global_SetOutPauseMenu	
 	593671754	E_Mob_Gardian_GetHit			\Brian\Gardian\E_Mob_Gardian_GetHit	
-	658884810	E_KaliBoss_Jump			\Chris\HB_Kali Events\JUMP IMPACT\E_KaliBoss_Jump	
+	658884810	E_KaliBoss_Jump			\Chris\HB_Kali Events\KALI JUMP IMPACT\E_KaliBoss_Jump	
 	663816717	E_Mob_Gardian_Attack			\Brian\Gardian\E_Mob_Gardian_Attack	
-	685482513	E_KaliBoss_Attacks			\Chris\HB_Kali Events\SLASHS\E_KaliBoss_Attacks	
+	685482513	E_KaliBoss_Attacks			\Chris\HB_Kali Events\KALI SLASHS\E_KaliBoss_Attacks	
 	694853374	E_Mob_JungleCharlie_Attack			\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack	
 	717878901	E_StoneDoorRiddle_Stop			\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Stop	
 	762198780	E_UI_Play			\Brian\UI\E_UI_Play	
@@ -33,7 +33,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1279445176	E_Mob_Gardian_EndCharge			\Brian\Gardian\E_Mob_Gardian_EndCharge	
 	1306962266	E_play_Minigun_Stop			\Ben\E_play_Minigun_Stop	
 	1319469614	E_Mob_JungleCharlie_Iddle			\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle	
-	1324023236	E_KaliBoss_Grab			\Chris\HB_Kali Events\Grab\E_KaliBoss_Grab	
+	1324023236	E_KaliBoss_Grab			\Chris\HB_Kali Events\KALI Grab\E_KaliBoss_Grab	
 	1415895540	E_Char_Heartbeat_Slow			\Simon\Character\E_Char_Heartbeat_Slow	
 	1418412915	E_SetAcoustic_Ruines			\Simon\Global\Acoustics\E_SetAcoustic_Ruines	
 	1482865096	E_Coffre_Pierre			\Brian\Coffre\E_Coffre_Pierre	
@@ -51,12 +51,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	1942792786	E_GroundSwitch_Medium			\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium	
 	1971253356	E_UI_Return			\Brian\UI\E_UI_Return	
 	1975484871	E_SetAcoustic_Exterior			\Simon\Global\Acoustics\E_SetAcoustic_Exterior	
-	1983053444	E_KaliBoss_Whirlwind			\Chris\HB_Kali Events\Whirlwind\E_KaliBoss_Whirlwind	
+	1983053444	E_KaliBoss_Whirlwind			\Chris\HB_Kali Events\KALI Whirlwind\E_KaliBoss_Whirlwind	
 	2025380871	E_Speech_Bear_EXPLO_Random_STOP_LOOP			\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_STOP_LOOP	
 	2055309167	E_play_Minigun			\Ben\E_play_Minigun	
 	2112280100	E_Mob_JungleCharlie_Death			\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death	
 	2167147008	E_Traps_Explosive_Explo			\Simon\Traps\E_Traps_Explosive_Explo	
-	2252209331	E_KaliBoss_GrandEND			\Chris\HB_Kali Events\Grab\E_KaliBoss_GrandEND	
+	2252209331	E_KaliBoss_GrandEND			\Chris\HB_Kali Events\KALI Grab\E_KaliBoss_GrandEND	
 	2256907290	E_Speech_Kali_GetHitCritical			\Simon\Voice\Kali\E_Speech_Kali_GetHitCritical	
 	2269350735	E_Speech_Kali_FirstEncounter			\Simon\Voice\Kali\E_Speech_Kali_FirstEncounter	
 	2359215024	E_Speech_Bear_EXPLO_Random_LOOP			\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_LOOP	
@@ -83,13 +83,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	3189034779	E_FTP_surface_type_switch			\Alex\E_FTP_surface_type_switch	
 	3244386490	E_Speech_Kali_Attack			\Simon\Voice\Kali\E_Speech_Kali_Attack	
 	3284918817	Play_Shotgun_EVENT			\Simon\Weapons\Play_Shotgun_EVENT	
-	3318371348	E_KaliBoss_Impact			\Chris\HB_Kali Events\JUMP IMPACT\E_KaliBoss_Impact	
+	3318371348	E_KaliBoss_Impact			\Chris\HB_Kali Events\KALI JUMP IMPACT\E_KaliBoss_Impact	
 	3356086523	E_Traps_SpikeTrap_Triggered			\Simon\Traps\E_Traps_SpikeTrap_Triggered	
 	3359588815	E_SetAcoustic_BossArena			\Simon\Global\Acoustics\E_SetAcoustic_BossArena	
 	3371588653	E_Mob_JungleCharlie_Iddle_STOP			\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle_STOP	
 	3376467880	E_Play_Grenade			\Brian\Grenade\E_Play_Grenade	
 	3400513437	E_Traps_SpikeTrap_HitBear			\Simon\Traps\E_Traps_SpikeTrap_HitBear	
-	3418847825	E_KaliBoss_GetHit			\Chris\HB_Kali Events\GET HIT\E_KaliBoss_GetHit	
+	3418847825	E_KaliBoss_GetHit			\Chris\HB_Kali Events\KALI GET HIT\E_KaliBoss_GetHit	
 	3478273789	E_Speech_Kali_Speech_TheChaseIsOn			\Simon\Voice\Kali\E_Speech_Kali_Speech_TheChaseIsOn	
 	3546449532	HB_PickUpHealthkit			\Chris\HB_Ui_Character\HB_PickUpHealthkit	
 	3689389172	HB_UiWep_Equip_EVENT			\Chris\HB_Ui_Character\HB_UiWep_Equip_EVENT	
@@ -621,7 +621,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	749607470	Epic	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-GenadeFire-01_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Fire\Epic		123313
 	750198670	SFX-HB-CoffreMetalVieux_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX-HB-CoffreMetalVieux_01_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Coffre\MIX_Coffre\MIX_Coffre_Metal_Vieux\RAND_Coffre_Metal_Vieux\SFX-HB-CoffreMetalVieux_01		44194
 	751258681	Grenade_SFX_Ground_Dirt_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Grenade_SFX_Ground_Dirt_01_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Grenade\MIX_Grenade\Ground_SWITCH\Dirt\Grenade_SFX_Ground_Dirt_01		80394
-	754682193	SFX_OTHERS_GroundSwitch_Klonk3	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_OTHERS_GroundSwitch_Klonk3_66C02B12.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Ground Stone Switch\SFX_OTHERS_GroundSwitch_Klonk3		61298
+	754682193	SFX_OTHERS_GroundSwitch_Klonk3	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_OTHERS_GroundSwitch_Klonk3_C439F4B9.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Ground Stone Switch\SFX_OTHERS_GroundSwitch_Klonk3		36198
 	756545490	SFX-HB-CoffrePierre	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX-HB-CoffrePierre_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Coffre\MIX_Coffre\MIX_Coffre_Pierre\RAND_Coffre_Pierre\SFX-HB-CoffrePierre		117898
 	756586809	HB_SFX_Shotgun_ThunderAmmo_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Shotgun_ThunderAmmo_00_DB69DF13.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_SWITCH\Ammo_Type_SWITCH\Thunder_Ammo_RND\HB_SFX_Shotgun_ThunderAmmo_00		26235
 	757153520	HB_SFX_Other_Ammo_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Other_Ammo_02_66C02B12.wem		\Actor-Mixer Hierarchy\Chris\SFX Chris\UIweps\Pickup\SFX_HB_Other_Ammo_Pickup\Ammo_Switch\RND_SFX_standar\HB_SFX_Other_Ammo_02		58397
@@ -713,7 +713,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	975625654	HB_SFX_KALI_HIT_07	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_KALI_HIT_07_66C02B12.wem		\Actor-Mixer Hierarchy\Chris\SFX Chris\Kali Mechas\Kali Mix\Kali Hit\RND_Hits\HB_SFX_KALI_HIT_07		60472
 	978071521	Epic	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-GenadeElec-01_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Grenade\MIX_Grenade\Level_SWITCH\Elm_Thunder\Epic		98034
 	982738312	VOICE_HB_Bear_Bossline_6-3_PieceOfMe	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\VOICE_HB_Bear_Bossline_6-3_PieceOfMe_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Voices Global\Kali Bear Interactions\Random Voice Lines\KaliBear_Speech_Random_SEQ_LOOP\KaliBear_SpeechRandom_SEQ\Bear_Speech_BOSS_DuringFight_RND\VOICE_HB_Bear_Bossline_6-3_PieceOfMe		223678
-	982895792	SFX_HB_GroundSwitch_Klonk	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_GroundSwitch_Klonk_66C02B12.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Ground Stone Switch\SFX_HB_GroundSwitch_Klonk		54967
+	982895792	SFX_HB_GroundSwitch_Klonk	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX_HB_GroundSwitch_Klonk_99F50E37.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Ground Stone Switch\SFX_HB_GroundSwitch_Klonk		24195
 	991710585	SFX-HB-CoffreMetalNeuf_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\SFX-HB-CoffreMetalNeuf_01_66C02B12.wem		\Actor-Mixer Hierarchy\Brian\SFX Brian\Coffre\MIX_Coffre\MIX_Coffre_Metal_Neuf\RAND_Coffre_Metal_Neuf\SFX-HB-CoffreMetalNeuf_01		65909
 	994240380	FTP_ossements_sol_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\FTP_ossements_sol_01_66C02B12.wem		\Actor-Mixer Hierarchy\Alex\SFX Alex\SFX\Footstep\Footsteps\FTP_surface_type_switch\FTP_Ossements_sol_RND\FTP_ossements_sol_01		11283
 	994734768	HB_SFX_Other_Pickup_Legendary_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB_SFX_Other_Pickup_Legendary_01_3E2433C5.wem		\Actor-Mixer Hierarchy\Chris\SFX Chris\UIweps\Pickup\SFX_HB_Other_Pickup\SFX_HB_PickUP_Switch\RDN_SFX_Legendary\HB_SFX_Other_Pickup_Legendary_01		153557

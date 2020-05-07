@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="HB_Kali Events" ID="{F45B69E4-EC02-4C40-A9AD-7E207F69F6BC}" ShortID="28818909">
 					<ChildrenList>
-						<Folder Name="JUMP IMPACT" ID="{198B1FF5-1A6E-472A-B46D-0278AA527908}" ShortID="903520121">
+						<Folder Name="KALI JUMP IMPACT" ID="{198B1FF5-1A6E-472A-B46D-0278AA527908}" ShortID="903520121">
 							<ChildrenList>
 								<Event Name="E_KaliBoss_Jump" ID="{7A8CC6AE-6E9A-4D97-AB22-D45CF58F7417}">
 									<ChildrenList>
@@ -51,7 +51,7 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Grab" ID="{6BF9F0EC-ED2C-49D7-A0B0-7BDCB43D66FE}" ShortID="643994177">
+						<Folder Name="KALI Grab" ID="{6BF9F0EC-ED2C-49D7-A0B0-7BDCB43D66FE}" ShortID="643994177">
 							<ChildrenList>
 								<Event Name="E_KaliBoss_Grab" ID="{978E3028-B223-48EC-8E63-1717348C77A2}">
 									<ChildrenList>
@@ -77,7 +77,7 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="SLASHS" ID="{6C802197-2DD5-4E12-9C72-F0542DF11975}" ShortID="351364000">
+						<Folder Name="KALI SLASHS" ID="{6C802197-2DD5-4E12-9C72-F0542DF11975}" ShortID="351364000">
 							<ChildrenList>
 								<Event Name="E_KaliBoss_Attacks" ID="{C4C49A53-9455-49D7-9A8B-EEB93982EB31}">
 									<ChildrenList>
@@ -92,7 +92,7 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="GET HIT" ID="{D315A34E-EB9C-4649-B843-2AF50BA93FF9}" ShortID="832227846">
+						<Folder Name="KALI GET HIT" ID="{D315A34E-EB9C-4649-B843-2AF50BA93FF9}" ShortID="832227846">
 							<ChildrenList>
 								<Event Name="E_KaliBoss_GetHit" ID="{88969CA4-14DD-4841-985D-F8B504417AA9}">
 									<ChildrenList>
@@ -107,7 +107,7 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Whirlwind" ID="{D78D618B-8A61-42E9-997B-9BBCD6949ED7}" ShortID="773926583">
+						<Folder Name="KALI Whirlwind" ID="{D78D618B-8A61-42E9-997B-9BBCD6949ED7}" ShortID="773926583">
 							<ChildrenList>
 								<Event Name="E_KaliBoss_Whirlwind" ID="{E78BF0CF-91F1-4853-963A-272A481451CC}">
 									<ChildrenList>
@@ -163,6 +163,58 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="RND_BEAR_HITS_Whirlwind" ID="{134E1003-1744-4347-AF1D-1EBD9AF7305B}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_KaliBoss_Hits_Bear_Shockwave" ID="{E3BE06B5-8D16-4D9B-9BE2-789E16BC4438}">
+									<ChildrenList>
+										<Action Name="" ID="{E8CDD5AD-894D-423B-A429-3DC94548DED2}" ShortID="815534241">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_BEAR_HITS_Shockwave" ID="{F60CBDA6-C7E3-4BBA-A89A-697580ACC7AC}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="KALI DEATH FIRE" ID="{21204BA1-27BF-447F-9B34-8B05DDD58CC1}" ShortID="857207415">
+							<ChildrenList>
+								<Event Name="E_KaliBoss_deathfire" ID="{76442229-EFB8-42E6-B813-649C7E09C244}">
+									<ChildrenList>
+										<Action Name="" ID="{EA3E8F69-472F-4B0A-AE99-D78114F9CC81}" ShortID="729522038">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB_SFX_KALI_Deadfire_01" ID="{0A95FEA5-695F-431B-918C-F3AC0D83626E}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="KALI ULTI" ID="{DB1188E8-1C09-434B-8230-2D9A3100D178}" ShortID="37561050">
+							<ChildrenList>
+								<Event Name="E_Kaliboss_Ulti_cast" ID="{9185B806-821D-41EE-93E2-E8C6A8BF7932}">
+									<ChildrenList>
+										<Action Name="" ID="{3ADB7537-39D8-47FC-83DB-431D0A2477EC}" ShortID="243884124">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Kali_Ultimate_cast" ID="{C1BE945F-A09B-40A1-95CE-A25CF11F4B7C}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Kaliboss_Ulti_Shockwave" ID="{A1911FF7-30B8-470E-9825-AF20C36CCEF0}">
+									<ChildrenList>
+										<Action Name="" ID="{ABB9F5C4-CB5E-4EC4-9B47-42F947D805C1}" ShortID="954276626">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Kali_Ultimate_Shockwave" ID="{B75A3B6F-0120-4ADF-BC03-19558FB31C74}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
