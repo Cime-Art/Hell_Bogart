@@ -7283,6 +7283,13 @@
 																			</Playlist>
 																		</RandomSequenceContainer>
 																		<SwitchContainer Name="Drop_Shell_SWITCH" ID="{B2CE82AC-B821-40D1-AF3A-F44162E99B30}" ShortID="876551565">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -7295,7 +7302,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<RandomSequenceContainer Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}" ShortID="404432548">
+																				<RandomSequenceContainer Name="Drop_Shell_Concrete_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}" ShortID="404432548">
 																					<PropertyList>
 																						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 																						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -7561,33 +7568,280 @@
 																						<ActiveSource Name="Wwise Silence" ID="{A51E055D-6962-4800-8145-6477B368D974}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
+																				<RandomSequenceContainer Name="Drop_Shell_Dirt_RND" ID="{45AE420A-CFF7-400C-88F0-73A1A178AC62}" ShortID="414080026">
+																					<PropertyList>
+																						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+																						<Property Name="Volume" Type="Real64">
+																							<ValueList>
+																								<Value>-19</Value>
+																							</ValueList>
+																						</Property>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<Sound Name="SFX_HB_Shotgun_DropShell_Dirt_01" ID="{FAB8568F-2CA6-40F9-BFB5-87F80551CA6B}" ShortID="822782113">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend0">
+																									<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend1">
+																									<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend2">
+																									<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="SFX_HB_Shotgun_DropShell_Dirt_01" ID="{DFD9F6C1-F2C2-4430-B3F1-569BF472CD6B}" ShortID="725146219">
+																									<Language>SFX</Language>
+																									<AudioFile>SFX_HB_Shotgun_DropShell_Dirt_01.wav</AudioFile>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="SFX_HB_Shotgun_DropShell_Dirt_01" ID="{DFD9F6C1-F2C2-4430-B3F1-569BF472CD6B}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="SFX_HB_Shotgun_DropShell_Dirt_02" ID="{4957BD2F-1BCC-4D1F-BD4F-7BAF1F886ABE}" ShortID="190478492">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend0">
+																									<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend1">
+																									<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend2">
+																									<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="SFX_HB_Shotgun_DropShell_Dirt_02" ID="{B891CF4D-A791-4DDE-8558-A91F42E9FB1B}" ShortID="1014298941">
+																									<Language>SFX</Language>
+																									<AudioFile>SFX_HB_Shotgun_DropShell_Dirt_02.wav</AudioFile>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="SFX_HB_Shotgun_DropShell_Dirt_02" ID="{B891CF4D-A791-4DDE-8558-A91F42E9FB1B}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="SFX_HB_Shotgun_DropShell_Dirt_03" ID="{75B96606-DC7B-48FA-9D97-4BDE0501A823}" ShortID="48920577">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend0">
+																									<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend1">
+																									<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend2">
+																									<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="SFX_HB_Shotgun_DropShell_Dirt_03" ID="{561CDE01-8259-44AE-BD40-85524105B3B1}" ShortID="303898892">
+																									<Language>SFX</Language>
+																									<AudioFile>SFX_HB_Shotgun_DropShell_Dirt_03.wav</AudioFile>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="SFX_HB_Shotgun_DropShell_Dirt_03" ID="{561CDE01-8259-44AE-BD40-85524105B3B1}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="SFX_HB_Shotgun_DropShell_Dirt_04" ID="{C4C1F269-9F6F-47B1-8A15-E3917F8CA904}" ShortID="427515737">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend0">
+																									<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend1">
+																									<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend2">
+																									<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="SFX_HB_Shotgun_DropShell_Dirt_04" ID="{21D32500-A61B-4D61-8777-0C1E92107326}" ShortID="381809507">
+																									<Language>SFX</Language>
+																									<AudioFile>SFX_HB_Shotgun_DropShell_Dirt_04.wav</AudioFile>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="SFX_HB_Shotgun_DropShell_Dirt_04" ID="{21D32500-A61B-4D61-8777-0C1E92107326}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="SFX_HB_Shotgun_DropShell_Dirt_05" ID="{F2BA0921-ABEE-497D-A109-A78E965A5B19}" ShortID="1010036494">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend0">
+																									<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend1">
+																									<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																								<Reference Name="UserAuxSend2">
+																									<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="SFX_HB_Shotgun_DropShell_Dirt_05" ID="{6F9A6297-1804-4B53-9FA7-1B661961EF68}" ShortID="572723576">
+																									<Language>SFX</Language>
+																									<AudioFile>SFX_HB_Shotgun_DropShell_Dirt_05.wav</AudioFile>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="SFX_HB_Shotgun_DropShell_Dirt_05" ID="{6F9A6297-1804-4B53-9FA7-1B661961EF68}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																					</ChildrenList>
+																				</RandomSequenceContainer>
 																			</ChildrenList>
 																			<GroupingInfo>
 																				<GroupingBehaviorList>
 																					<GroupingBehavior>
+																						<ItemRef Name="Drop_Shell_Dirt_RND" ID="{45AE420A-CFF7-400C-88F0-73A1A178AC62}"/>
+																					</GroupingBehavior>
+																					<GroupingBehavior>
 																						<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
 																					</GroupingBehavior>
 																					<GroupingBehavior>
-																						<ItemRef Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																						<ItemRef Name="Drop_Shell_Concrete_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
 																					</GroupingBehavior>
 																				</GroupingBehaviorList>
 																				<GroupingList>
 																					<Grouping>
+																						<SwitchRef Name="FTP_Sol_sec_switch" ID="{18141E01-FFC4-41D2-BE4F-0742BB1606E8}"/>
+																						<ItemList>
+																							<ItemRef Name="Drop_Shell_Dirt_RND" ID="{45AE420A-CFF7-400C-88F0-73A1A178AC62}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Eau_switch" ID="{81B24A04-B222-474D-9BDF-B4A2ECE4990B}"/>
+																						<ItemList>
+																							<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Flaques_switch" ID="{7254AC06-F331-4106-9713-5EA7B28D8641}"/>
+																						<ItemList>
+																							<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
 																						<SwitchRef Name="FTP_Metal_switch" ID="{C017C313-7D52-4206-92EB-EA5C848B44F9}"/>
 																						<ItemList>
-																							<ItemRef Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																							<ItemRef Name="Drop_Shell_Concrete_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
 																						</ItemList>
 																					</Grouping>
 																					<Grouping>
 																						<SwitchRef Name="FTP_Dalles_pierre_switch" ID="{A784672B-87AF-4B4C-80A2-62022ECE904A}"/>
 																						<ItemList>
-																							<ItemRef Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																							<ItemRef Name="Drop_Shell_Concrete_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Bridge" ID="{1DCC363B-AA5F-495C-8B67-A2EFAC2BB453}"/>
+																						<ItemList>
+																							<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Ossements_sol_switch" ID="{66E03050-3797-4780-B57B-8D61679CE18B}"/>
+																						<ItemList>
+																							<ItemRef Name="Drop_Shell_Concrete_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Sol_poussiereux_switch" ID="{AA037956-C904-4615-B36A-2F1670DF7E50}"/>
+																						<ItemList>
+																							<ItemRef Name="Drop_Shell_Dirt_RND" ID="{45AE420A-CFF7-400C-88F0-73A1A178AC62}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+																						<ItemList>
+																							<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Bois_sec_switch" ID="{FCCF7992-4DE1-455B-B60D-7C074635855E}"/>
+																						<ItemList>
+																							<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Sable_switch" ID="{3D29F59B-0B2C-4073-9F6E-95F78A55DAFE}"/>
+																						<ItemList>
+																							<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
 																						</ItemList>
 																					</Grouping>
 																					<Grouping>
 																						<SwitchRef Name="FTP_Sol_pierre_switch" ID="{51CC2FA8-C8F2-4C58-B589-BD2C24D255B0}"/>
 																						<ItemList>
-																							<ItemRef Name="Drop_Shell_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																							<ItemRef Name="Drop_Shell_Concrete_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Herbes_seches_switch" ID="{43B444AE-B802-41C4-9A13-4F39F9506A72}"/>
+																						<ItemList>
+																							<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Boue_switch" ID="{DD3810C4-FAEB-4C1E-B4F3-E2E42D04349A}"/>
+																						<ItemList>
+																							<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Herbes_humides_switch" ID="{165C79C4-6625-43EB-9DFC-B5A80533831B}"/>
+																						<ItemList>
+																							<ItemRef Name="Silence" ID="{A5CD6283-FA5C-46A1-A6F3-B4BDB3A2113F}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Sol_gravier_switch" ID="{8E77F3CA-3AF9-475D-BA31-7B2C550D55D2}"/>
+																						<ItemList>
+																							<ItemRef Name="Drop_Shell_Dirt_RND" ID="{45AE420A-CFF7-400C-88F0-73A1A178AC62}"/>
+																						</ItemList>
+																					</Grouping>
+																					<Grouping>
+																						<SwitchRef Name="FTP_Ossements_pierre_switch" ID="{7DD390D7-243E-4E17-9E0F-F8658D3558E2}"/>
+																						<ItemList>
+																							<ItemRef Name="Drop_Shell_Concrete_SEQ" ID="{566BBEF0-82AF-4A58-8753-023757A972AC}"/>
 																						</ItemList>
 																					</Grouping>
 																				</GroupingList>
@@ -8150,6 +8404,11 @@
 																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -8730,7 +8989,11 @@
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-																<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>9</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -8741,7 +9004,14 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="Shell_Dirt_01" ID="{F4B0434C-609A-46B8-A55C-44F458A2060E}" ShortID="679267024">
+																<Sound Name="SFX_HB_Gatling_DropShell_Dirt_01" ID="{52A60428-89D6-4722-9412-751500146839}" ShortID="922648508">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>6</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -8751,16 +9021,23 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="60 - _45 auto shell single shell on hard packed dirt-03" ID="{53E964F4-5071-466A-8C6E-87CC1C848F48}" ShortID="741470113">
+																		<AudioFileSource Name="SFX_HB_Gatling_DropShell_Dirt_01" ID="{0F99D1AF-2D0D-4BA4-A87E-4190F65EB227}" ShortID="711370853">
 																			<Language>SFX</Language>
-																			<AudioFile>60 - .45 auto shell single shell on hard packed dirt-03.wav</AudioFile>
+																			<AudioFile>SFX_HB_Gatling_DropShell_Dirt_01.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="60 - _45 auto shell single shell on hard packed dirt-03" ID="{53E964F4-5071-466A-8C6E-87CC1C848F48}" Platform="Linked"/>
+																		<ActiveSource Name="SFX_HB_Gatling_DropShell_Dirt_01" ID="{0F99D1AF-2D0D-4BA4-A87E-4190F65EB227}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="Shell_Dirt_02" ID="{4B09CBBF-03AB-45A7-A15D-4C389E970BF7}" ShortID="203045386">
+																<Sound Name="SFX_HB_Gatling_DropShell_Dirt_02" ID="{C38BE6A3-7769-4714-9B35-B2F06D24A49A}" ShortID="833694064">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>6</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -8770,16 +9047,23 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="60 - _45 auto shell single shell on hard packed dirt-07" ID="{28D60D2E-C5D2-40C2-9809-A68ADCDE119A}" ShortID="964166816">
+																		<AudioFileSource Name="SFX_HB_Gatling_DropShell_Dirt_02" ID="{DBC75C04-3AF5-4B82-87A2-D6050E643B42}" ShortID="873927343">
 																			<Language>SFX</Language>
-																			<AudioFile>60 - .45 auto shell single shell on hard packed dirt-07.wav</AudioFile>
+																			<AudioFile>SFX_HB_Gatling_DropShell_Dirt_02.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="60 - _45 auto shell single shell on hard packed dirt-07" ID="{28D60D2E-C5D2-40C2-9809-A68ADCDE119A}" Platform="Linked"/>
+																		<ActiveSource Name="SFX_HB_Gatling_DropShell_Dirt_02" ID="{DBC75C04-3AF5-4B82-87A2-D6050E643B42}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="Shell_Dirt_03" ID="{6B63CAE3-EFBF-431E-86DE-DA5E034F134A}" ShortID="918501710">
+																<Sound Name="SFX_HB_Gatling_DropShell_Dirt_03" ID="{83A50BEF-B6EA-4D17-BA68-986F14FFF5B1}" ShortID="304035971">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>6</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -8789,16 +9073,23 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="60 - _45 auto shell single shell on hard packed dirt-11" ID="{1F8AEA90-0C3F-4E99-9B3D-90A7D146E02A}" ShortID="157876437">
+																		<AudioFileSource Name="SFX_HB_Gatling_DropShell_Dirt_03" ID="{B3F544BA-54F7-4C99-B470-5F37FCE57B16}" ShortID="914753790">
 																			<Language>SFX</Language>
-																			<AudioFile>60 - .45 auto shell single shell on hard packed dirt-11.wav</AudioFile>
+																			<AudioFile>SFX_HB_Gatling_DropShell_Dirt_03.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="60 - _45 auto shell single shell on hard packed dirt-11" ID="{1F8AEA90-0C3F-4E99-9B3D-90A7D146E02A}" Platform="Linked"/>
+																		<ActiveSource Name="SFX_HB_Gatling_DropShell_Dirt_03" ID="{B3F544BA-54F7-4C99-B470-5F37FCE57B16}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="Shell_Dirt_04" ID="{693DE197-F6C2-43FD-AA18-5E0DABE121E1}" ShortID="569228305">
+																<Sound Name="SFX_HB_Gatling_DropShell_Dirt_04" ID="{5F0C65B3-283F-4F46-A3A3-A2759C80C447}" ShortID="88759850">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>6</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -8808,13 +9099,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="60 - _45 auto shell single shell on hard packed dirt-15" ID="{52A53B96-6611-4DD9-9033-ACB162FA331F}" ShortID="447496301">
+																		<AudioFileSource Name="SFX_HB_Gatling_DropShell_Dirt_04" ID="{14438C9B-A47F-4FFE-B00F-F76FF2F9755D}" ShortID="499555350">
 																			<Language>SFX</Language>
-																			<AudioFile>60 - .45 auto shell single shell on hard packed dirt-15.wav</AudioFile>
+																			<AudioFile>SFX_HB_Gatling_DropShell_Dirt_04.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="60 - _45 auto shell single shell on hard packed dirt-15" ID="{52A53B96-6611-4DD9-9033-ACB162FA331F}" Platform="Linked"/>
+																		<ActiveSource Name="SFX_HB_Gatling_DropShell_Dirt_04" ID="{14438C9B-A47F-4FFE-B00F-F76FF2F9755D}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -8878,6 +9169,12 @@
 																<SwitchRef Name="FTP_Dalles_pierre_switch" ID="{A784672B-87AF-4B4C-80A2-62022ECE904A}"/>
 																<ItemList>
 																	<ItemRef Name="Concrete" ID="{EB9C340E-D3A3-44FE-BFC6-7EBD1297C582}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="FTP_Bridge" ID="{1DCC363B-AA5F-495C-8B67-A2EFAC2BB453}"/>
+																<ItemList>
+																	<ItemRef Name="Wood" ID="{1F1988BE-555B-40FE-B21F-0AF6E0273AF1}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
