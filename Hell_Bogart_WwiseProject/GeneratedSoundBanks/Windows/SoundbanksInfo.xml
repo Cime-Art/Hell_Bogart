@@ -963,6 +963,8 @@
 				<Event Id="3400513437" Name="E_Traps_SpikeTrap_HitBear" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_HitBear"/>
 				<Event Id="979168612" Name="E_Traps_SpikeTrap_MecaImpact" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_MecaImpact"/>
 				<Event Id="3356086523" Name="E_Traps_SpikeTrap_Triggered" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_Triggered"/>
+				<Event Id="891897872" Name="E_UI_Deny" ObjectPath="\Events\Simon\UI\E_UI_Deny"/>
+				<Event Id="218571927" Name="E_UI_Deny_Grenade" ObjectPath="\Events\Simon\UI\E_UI_Deny_Grenade"/>
 				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
 				<Event Id="842152325" Name="E_UI_Option" ObjectPath="\Events\Brian\UI\E_UI_Option"/>
 				<Event Id="2920923470" Name="E_UI_Overlay" ObjectPath="\Events\Brian\UI\E_UI_Overlay"/>
@@ -1007,6 +1009,10 @@
 				<File Id="29051026" Language="SFX">
 					<ShortName>HB_SFX_Other_Ammo_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_Ammo_03_66C02B12.wem</Path>
+				</File>
+				<File Id="33959053" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Buzz_02.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Buzz_02_10C4C929.wem</Path>
 				</File>
 				<File Id="36206620" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_03.wav</ShortName>
@@ -1134,7 +1140,7 @@
 				</File>
 				<File Id="102112840" Language="SFX">
 					<ShortName>HB_SFX_Foley_7.wav</ShortName>
-					<Path>SFX\HB_SFX_Foley_7_B33BC0C2.wem</Path>
+					<Path>SFX\HB_SFX_Foley_7_4A3F2F28.wem</Path>
 				</File>
 				<File Id="104514832" Language="SFX">
 					<ShortName>HB-SFX-GenadeIce-01.wav</ShortName>
@@ -1308,6 +1314,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_07.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_07_F5910222.wem</Path>
 				</File>
+				<File Id="184033634" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Click_01.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Click_01_10C4C929.wem</Path>
+				</File>
 				<File Id="184821387" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Explo_HolyShit_04.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Explo_HolyShit_04_10C4C929.wem</Path>
@@ -1330,7 +1340,7 @@
 				</File>
 				<File Id="196406919" Language="SFX">
 					<ShortName>HB_SFX_Foley_6.wav</ShortName>
-					<Path>SFX\HB_SFX_Foley_6_627F4C23.wem</Path>
+					<Path>SFX\HB_SFX_Foley_6_3DB04093.wem</Path>
 				</File>
 				<File Id="196666232" Language="SFX">
 					<ShortName>HB_SFX_KALI_Jump_Impact_02.wav</ShortName>
@@ -1423,6 +1433,10 @@
 				<File Id="235273799" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Death_05.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Death_05_10C4C929.wem</Path>
+				</File>
+				<File Id="236590077" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Click_02.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Click_02_10C4C929.wem</Path>
 				</File>
 				<File Id="237015842" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LootNormal_2-1_MoreHoles.wav</ShortName>
@@ -1606,7 +1620,7 @@
 				</File>
 				<File Id="320571513" Language="SFX">
 					<ShortName>HB_SFX_Foley_3.wav</ShortName>
-					<Path>SFX\HB_SFX_Foley_3_A0F0ABE9.wem</Path>
+					<Path>SFX\HB_SFX_Foley_3_82D59DCF.wem</Path>
 				</File>
 				<File Id="320764015" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Wood_01.wav</ShortName>
@@ -1683,6 +1697,10 @@
 				<File Id="347316120" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Tonneau_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Tonneau_01_66C02B12.wem</Path>
+				</File>
+				<File Id="349159635" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Click_03.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Click_03_10C4C929.wem</Path>
 				</File>
 				<File Id="351062873" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_3-1_Bouh.wav</ShortName>
@@ -1782,7 +1800,7 @@
 				</File>
 				<File Id="382670636" Language="SFX">
 					<ShortName>HB_SFX_Foley_2.wav</ShortName>
-					<Path>SFX\HB_SFX_Foley_2_2B0E2AC5.wem</Path>
+					<Path>SFX\HB_SFX_Foley_2_B8196996.wem</Path>
 				</File>
 				<File Id="384374704" Language="SFX">
 					<ShortName>i_will_put_you_to_rest.WAV</ShortName>
@@ -2460,6 +2478,10 @@
 					<ShortName>VOICE_HB_Bear_GrenadeStarter_1-3_GreenBalls.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_GrenadeStarter_1-3_GreenBalls_10C4C929.wem</Path>
 				</File>
+				<File Id="676777772" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Buzz_01.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Buzz_01_10C4C929.wem</Path>
+				</File>
 				<File Id="681370907" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Exploded_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_02_66C02B12.wem</Path>
@@ -2514,7 +2536,7 @@
 				</File>
 				<File Id="707658214" Language="SFX">
 					<ShortName>HB_SFX_Foley_1.wav</ShortName>
-					<Path>SFX\HB_SFX_Foley_1_2159B1E4.wem</Path>
+					<Path>SFX\HB_SFX_Foley_1_968FF367.wem</Path>
 				</File>
 				<File Id="711370853" Language="SFX">
 					<ShortName>SFX_HB_Gatling_DropShell_Dirt_01.wav</ShortName>
@@ -2542,7 +2564,7 @@
 				</File>
 				<File Id="718550392" Language="SFX">
 					<ShortName>HB_SFX_Foley_5.wav</ShortName>
-					<Path>SFX\HB_SFX_Foley_5_6D9C272B.wem</Path>
+					<Path>SFX\HB_SFX_Foley_5_355E7C02.wem</Path>
 				</File>
 				<File Id="718659218" Language="SFX">
 					<ShortName>FTP_sol poussiereux_03.wav</ShortName>
@@ -2682,7 +2704,7 @@
 				</File>
 				<File Id="764313955" Language="SFX">
 					<ShortName>HB_SFX_Foley_8.wav</ShortName>
-					<Path>SFX\HB_SFX_Foley_8_E33674C9.wem</Path>
+					<Path>SFX\HB_SFX_Foley_8_36ECEB91.wem</Path>
 				</File>
 				<File Id="764513421" Language="SFX">
 					<ShortName>SFX_HB_Traps_Explo_Grosse_Boule.wav</ShortName>
@@ -2830,7 +2852,7 @@
 				</File>
 				<File Id="864790076" Language="SFX">
 					<ShortName>HB_SFX_Foley_9.wav</ShortName>
-					<Path>SFX\HB_SFX_Foley_9_82D9D1FE.wem</Path>
+					<Path>SFX\HB_SFX_Foley_9_2087615C.wem</Path>
 				</File>
 				<File Id="865513226" Language="SFX">
 					<ShortName>HB_SFX_KALI_Jump_Impact_03.wav</ShortName>
@@ -3132,6 +3154,10 @@
 					<ShortName>FTP_boue_01.wav</ShortName>
 					<Path>SFX\FTP_boue_01_66C02B12.wem</Path>
 				</File>
+				<File Id="1039087859" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Buzz_03.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Buzz_03_10C4C929.wem</Path>
+				</File>
 				<File Id="1042924671" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Attack_00.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Attack_00_66C02B12.wem</Path>
@@ -3186,7 +3212,7 @@
 				</File>
 				<File Id="1065164990" Language="SFX">
 					<ShortName>HB_SFX_Foley_4.wav</ShortName>
-					<Path>SFX\HB_SFX_Foley_4_EF2E3EA8.wem</Path>
+					<Path>SFX\HB_SFX_Foley_4_CAE678DD.wem</Path>
 				</File>
 				<File Id="1067846903" Language="SFX">
 					<ShortName>MnGn_Fire_02.wav</ShortName>

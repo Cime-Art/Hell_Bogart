@@ -16794,6 +16794,187 @@
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="UI Simon" ID="{33B24B8A-5E0F-4A5C-A08B-1FC8F9C8C3C2}" ShortID="554314179">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="UI Deny" ID="{B6C77085-F8F4-411D-BDA1-0A2D5D413B64}" ShortID="831249115">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="UI_Deny_BLEND_STEP" ID="{4CE5A3A5-4070-4C33-AF05-8934074E9EFC}" ShortID="447093226">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="UI_Deny_Click_RND" ID="{BB3942F9-DDBA-428B-AAB3-C0A87338F2FD}" ShortID="116401665">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_UI_DenyEffect_Click_01" ID="{51DF03FB-4CBD-44DF-B882-674F759707B3}" ShortID="1010493882">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_UI_DenyEffect_Click_01" ID="{C3A72A7E-0E5E-4676-B5DD-E4DF00A0810A}" ShortID="184033634">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_UI_DenyEffect_Click_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_UI_DenyEffect_Click_01" ID="{C3A72A7E-0E5E-4676-B5DD-E4DF00A0810A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_UI_DenyEffect_Click_02" ID="{FCF416AB-7A07-4C06-8C46-CF1C4E4E72CB}" ShortID="805970552">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_UI_DenyEffect_Click_02" ID="{D34946E6-043D-4657-9952-5958DAC7F025}" ShortID="236590077">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_UI_DenyEffect_Click_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_UI_DenyEffect_Click_02" ID="{D34946E6-043D-4657-9952-5958DAC7F025}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_UI_DenyEffect_Click_03" ID="{18E1DD9A-D8A6-4BB6-A452-CDD35485736D}" ShortID="194959387">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_UI_DenyEffect_Click_03" ID="{A9617E42-EF0B-4DEB-A8DB-3D0889321251}" ShortID="349159635">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_UI_DenyEffect_Click_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_UI_DenyEffect_Click_03" ID="{A9617E42-EF0B-4DEB-A8DB-3D0889321251}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="UI_Deny_Buzz_RND" ID="{7232840C-047E-4EF2-ADA4-C38DAF52DC89}" ShortID="798248150">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_UI_DenyEffect_Buzz_01" ID="{EB7B7E4A-0535-4C73-91A6-75EC52AEB1D5}" ShortID="987894599">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_UI_DenyEffect_Buzz_01" ID="{B1FAE5A9-AA07-4707-9A0D-EB0CC551898D}" ShortID="676777772">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_UI_DenyEffect_Buzz_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_UI_DenyEffect_Buzz_01" ID="{B1FAE5A9-AA07-4707-9A0D-EB0CC551898D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_UI_DenyEffect_Buzz_02" ID="{050E9D9E-BBA0-49B3-AFF5-A76A892F95B6}" ShortID="606303846">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_UI_DenyEffect_Buzz_02" ID="{63CB15B4-607C-44D9-B806-8F57E806B346}" ShortID="33959053">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_UI_DenyEffect_Buzz_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_UI_DenyEffect_Buzz_02" ID="{63CB15B4-607C-44D9-B806-8F57E806B346}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_UI_DenyEffect_Buzz_03" ID="{3EF1DF10-C06C-47BA-BB34-056D9B009F7A}" ShortID="950476861">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_UI_DenyEffect_Buzz_03" ID="{EEF96AEA-6D54-45C6-8982-B6026BF48A3A}" ShortID="1039087859">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_UI_DenyEffect_Buzz_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_UI_DenyEffect_Buzz_03" ID="{EEF96AEA-6D54-45C6-8982-B6026BF48A3A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

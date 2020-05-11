@@ -963,6 +963,8 @@
 				<Event Id="3400513437" Name="E_Traps_SpikeTrap_HitBear" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_HitBear"/>
 				<Event Id="979168612" Name="E_Traps_SpikeTrap_MecaImpact" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_MecaImpact"/>
 				<Event Id="3356086523" Name="E_Traps_SpikeTrap_Triggered" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_Triggered"/>
+				<Event Id="891897872" Name="E_UI_Deny" ObjectPath="\Events\Simon\UI\E_UI_Deny"/>
+				<Event Id="218571927" Name="E_UI_Deny_Grenade" ObjectPath="\Events\Simon\UI\E_UI_Deny_Grenade"/>
 				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
 				<Event Id="842152325" Name="E_UI_Option" ObjectPath="\Events\Brian\UI\E_UI_Option"/>
 				<Event Id="2920923470" Name="E_UI_Overlay" ObjectPath="\Events\Brian\UI\E_UI_Overlay"/>
@@ -1007,6 +1009,10 @@
 				<File Id="29051026" Language="SFX">
 					<ShortName>HB_SFX_Other_Ammo_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_Ammo_03_66C02B12.wem</Path>
+				</File>
+				<File Id="33959053" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Buzz_02.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Buzz_02_10C4C929.wem</Path>
 				</File>
 				<File Id="36206620" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Trigger_03.wav</ShortName>
@@ -1308,6 +1314,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_07.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_07_F5910222.wem</Path>
 				</File>
+				<File Id="184033634" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Click_01.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Click_01_10C4C929.wem</Path>
+				</File>
 				<File Id="184821387" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Explo_HolyShit_04.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Explo_HolyShit_04_10C4C929.wem</Path>
@@ -1423,6 +1433,10 @@
 				<File Id="235273799" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Death_05.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Death_05_10C4C929.wem</Path>
+				</File>
+				<File Id="236590077" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Click_02.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Click_02_10C4C929.wem</Path>
 				</File>
 				<File Id="237015842" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LootNormal_2-1_MoreHoles.wav</ShortName>
@@ -1683,6 +1697,10 @@
 				<File Id="347316120" Language="SFX">
 					<ShortName>SFX_HB_Destructibles_Tonneau_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Tonneau_01_66C02B12.wem</Path>
+				</File>
+				<File Id="349159635" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Click_03.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Click_03_10C4C929.wem</Path>
 				</File>
 				<File Id="351062873" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_3-1_Bouh.wav</ShortName>
@@ -2460,6 +2478,10 @@
 					<ShortName>VOICE_HB_Bear_GrenadeStarter_1-3_GreenBalls.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_GrenadeStarter_1-3_GreenBalls_10C4C929.wem</Path>
 				</File>
+				<File Id="676777772" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Buzz_01.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Buzz_01_10C4C929.wem</Path>
+				</File>
 				<File Id="681370907" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Exploded_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_02_66C02B12.wem</Path>
@@ -3131,6 +3153,10 @@
 				<File Id="1038223983" Language="SFX">
 					<ShortName>FTP_boue_01.wav</ShortName>
 					<Path>SFX\FTP_boue_01_66C02B12.wem</Path>
+				</File>
+				<File Id="1039087859" Language="SFX">
+					<ShortName>SFX_HB_UI_DenyEffect_Buzz_03.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_DenyEffect_Buzz_03_10C4C929.wem</Path>
 				</File>
 				<File Id="1042924671" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Attack_00.wav</ShortName>
