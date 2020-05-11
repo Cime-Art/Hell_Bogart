@@ -3055,7 +3055,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>12</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -3131,7 +3131,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>10</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -3145,6 +3145,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="HB_SFX_FoleyShotgun_1" ID="{235B46D6-B764-4BAF-973A-D3B8CA1928CE}" ShortID="62586056">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3164,6 +3171,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="HB_SFX_FoleyShotgun_2" ID="{B62F642C-7FA9-40AC-BEAC-D9609F4FB216}" ShortID="818074247">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3183,6 +3197,13 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="HB_SFX_FoleyShotgun_3" ID="{0BBC5BE8-23D4-49B6-85A9-6D3BDEA3E5EF}" ShortID="941647712">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
