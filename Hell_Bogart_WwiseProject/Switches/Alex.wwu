@@ -26,7 +26,6 @@
 										<Switch Name="FTP_Metal_switch" ID="{C017C313-7D52-4206-92EB-EA5C848B44F9}"/>
 										<Switch Name="FTP_Ossements_pierre_switch" ID="{7DD390D7-243E-4E17-9E0F-F8658D3558E2}"/>
 										<Switch Name="FTP_Bridge" ID="{1DCC363B-AA5F-495C-8B67-A2EFAC2BB453}"/>
-										<Switch Name="Foley_Bear" ID="{464FC2E7-7B50-4836-89BE-D2A92BFE0638}"/>
 									</ChildrenList>
 								</SwitchGroup>
 							</ChildrenList>
