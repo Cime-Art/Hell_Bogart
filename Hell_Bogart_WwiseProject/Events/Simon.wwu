@@ -576,7 +576,7 @@
 										<Action Name="" ID="{AE9C4A74-1BF2-4B37-A513-F118B0E78F7E}" ShortID="508062970">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="GameParameterValue" Type="Real64" Value="4500"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="6000"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
