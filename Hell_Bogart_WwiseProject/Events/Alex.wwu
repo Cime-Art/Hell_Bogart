@@ -12,6 +12,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{1F6873D6-8B0A-4398-9173-60BFF5ACC9ED}" ShortID="916201024">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Foley_RND" ID="{9148D01B-7ED1-4C7F-B641-7BBA9C11AC6C}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_KAli_whisper_02" ID="{9DD86F80-4BB2-4607-B0C3-97D7CD0A8208}">

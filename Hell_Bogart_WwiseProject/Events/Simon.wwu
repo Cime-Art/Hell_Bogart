@@ -1143,7 +1143,7 @@
 								<Action Name="" ID="{97AF5361-1C26-44D1-B429-1F14478E7549}" ShortID="24148725">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_HB_Character_HeartBeat_Fast" ID="{0EC2461A-32F1-4CB5-B1BD-2D84A737974B}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+											<ObjectRef Name="Heartbeat_Fast_SEQ" ID="{B3722E34-3780-4093-90B0-2527D15414F1}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1583,6 +1583,43 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{1F21B6F4-15B8-46FB-AAB4-64BCF476CFA1}" ShortID="1023477244">
+					<ChildrenList>
+						<Event Name="E_UI_Deny_Grenade" ID="{7CE37D0E-A923-4120-8E45-501A7C68C3BD}">
+							<ChildrenList>
+								<Action Name="" ID="{A94F74A2-946C-4A9B-A5B2-8D1BD4F76405}" ShortID="600327507">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Deny_BLEND_STEP" ID="{4CE5A3A5-4070-4C33-AF05-8934074E9EFC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A65B9D7C-FD2C-4E58-B15D-52D1913584B0}" ShortID="316076778">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+										<Property Name="Probability" Type="Real64" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bear_Speech_LosingLife_FuckShit_RND" ID="{D2C00AE2-E84D-4BCE-A408-E88531A8F987}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Deny" ID="{B2B322CC-2F63-4375-846E-35FF192EC8DB}">
+							<ChildrenList>
+								<Action Name="" ID="{DDBAB3D6-8632-4A11-AB9F-14D64D3BEF15}" ShortID="578152786">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Deny_BLEND_STEP" ID="{4CE5A3A5-4070-4C33-AF05-8934074E9EFC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
