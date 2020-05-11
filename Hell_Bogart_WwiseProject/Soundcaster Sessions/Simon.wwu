@@ -294,6 +294,14 @@
 							<Position X="4" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_FTP_surface_type_switch" ID="{D0B0DCD4-17EB-4EF9-91BD-BEC7676D9860}" WorkUnitID="{D109BCCB-2B16-4626-BAE8-CEC4CBAA63B7}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_UI_Deny_Grenade" ID="{7CE37D0E-A923-4120-8E45-501A7C68C3BD}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="4" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Speech_Bear_Ulti_NoBoss_Starter" ID="{99729638-2CF4-4103-B8A7-139137D94378}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="6" Y="0"/>
 						</Module>

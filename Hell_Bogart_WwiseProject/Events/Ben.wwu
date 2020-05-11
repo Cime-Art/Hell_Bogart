@@ -5,7 +5,17 @@
 			<ChildrenList>
 				<Event Name="E_play_Minigun" ID="{E438292D-A8BD-4D70-804C-B9FC0D5CFD20}">
 					<ChildrenList>
+						<Action Name="" ID="{0DB076D9-2538-451E-8CBA-E597649950A5}" ShortID="187423832">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Foley_Gaitling" ID="{836D3997-AC5A-4FE5-AF55-27A314A4C1E2}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{0D1977CD-66D3-42AB-8983-43DBDF9F89CB}" ShortID="187906799">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Minigun_Barrel_Start" ID="{CAC3A58B-3B7E-41F3-90CD-C3C16368D9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
@@ -85,6 +95,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Sizzel" ID="{055E0944-9FEE-4EBA-A5C5-9D6DC226F41B}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FAD66FBF-E457-4AB3-8894-51AFDB4EBFF5}" ShortID="1048370646">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Foley_Shotgun" ID="{5BA2BC69-FC0F-493B-B681-325C3B4D71C5}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
