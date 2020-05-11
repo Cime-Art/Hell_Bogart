@@ -1143,7 +1143,7 @@
 								<Action Name="" ID="{97AF5361-1C26-44D1-B429-1F14478E7549}" ShortID="24148725">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_HB_Character_HeartBeat_Fast" ID="{0EC2461A-32F1-4CB5-B1BD-2D84A737974B}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+											<ObjectRef Name="Heartbeat_Fast_SEQ" ID="{B3722E34-3780-4093-90B0-2527D15414F1}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
