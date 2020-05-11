@@ -1132,6 +1132,10 @@
 					<ShortName>HB_SFX_Shotgun_RegularCanon_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_RegularCanon_02_66C02B12.wem</Path>
 				</File>
+				<File Id="102112840" Language="SFX">
+					<ShortName>HB_SFX_Foley_7.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_7_B33BC0C2.wem</Path>
+				</File>
 				<File Id="104514832" Language="SFX">
 					<ShortName>HB-SFX-GenadeIce-01.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeIce-01_66C02B12.wem</Path>
@@ -1323,6 +1327,10 @@
 				<File Id="195010049" Language="SFX">
 					<ShortName>VOICE_HB_Bear_CombatEnd_3-4_KennedyProtectYou.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_CombatEnd_3-4_KennedyProtectYou_10C4C929.wem</Path>
+				</File>
+				<File Id="196406919" Language="SFX">
+					<ShortName>HB_SFX_Foley_6.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_6_627F4C23.wem</Path>
 				</File>
 				<File Id="196666232" Language="SFX">
 					<ShortName>HB_SFX_KALI_Jump_Impact_02.wav</ShortName>
@@ -1596,6 +1604,10 @@
 					<ShortName>VOICE_HB_Bear_Death_01.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Death_01_10C4C929.wem</Path>
 				</File>
+				<File Id="320571513" Language="SFX">
+					<ShortName>HB_SFX_Foley_3.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_3_A0F0ABE9.wem</Path>
+				</File>
 				<File Id="320764015" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Wood_01.wav</ShortName>
 					<Path>SFX\Grenade_SFX_Ground_Wood_01_66C02B12.wem</Path>
@@ -1767,6 +1779,10 @@
 				<File Id="381809507" Language="SFX">
 					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_04.wav</ShortName>
 					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_04_66C02B12.wem</Path>
+				</File>
+				<File Id="382670636" Language="SFX">
+					<ShortName>HB_SFX_Foley_2.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_2_2B0E2AC5.wem</Path>
 				</File>
 				<File Id="384374704" Language="SFX">
 					<ShortName>i_will_put_you_to_rest.WAV</ShortName>
@@ -2332,6 +2348,10 @@
 					<ShortName>HB_SFX_Other_Pickup_ammo_Rare_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_Pickup_ammo_Rare_02_66C02B12.wem</Path>
 				</File>
+				<File Id="610024286" Language="SFX">
+					<ShortName>HB_SFX_Foley_10.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_10_66C02B12.wem</Path>
+				</File>
 				<File Id="613642299" Language="SFX">
 					<ShortName>SFX-HB-CoffreBois_01.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreBois_01_66C02B12.wem</Path>
@@ -2492,6 +2512,10 @@
 					<ShortName>VOICE_HB_Bear_UltiShooting_1-4_SlaughterTime_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiShooting_1-4_SlaughterTime_02_10C4C929.wem</Path>
 				</File>
+				<File Id="707658214" Language="SFX">
+					<ShortName>HB_SFX_Foley_1.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_1_2159B1E4.wem</Path>
+				</File>
 				<File Id="711370853" Language="SFX">
 					<ShortName>SFX_HB_Gatling_DropShell_Dirt_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Gatling_DropShell_Dirt_01_66C02B12.wem</Path>
@@ -2515,6 +2539,10 @@
 				<File Id="716344437" Language="SFX">
 					<ShortName>KAli whisper 02.wav</ShortName>
 					<Path>SFX\KAli whisper 02_BDB9979C.wem</Path>
+				</File>
+				<File Id="718550392" Language="SFX">
+					<ShortName>HB_SFX_Foley_5.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_5_6D9C272B.wem</Path>
 				</File>
 				<File Id="718659218" Language="SFX">
 					<ShortName>FTP_sol poussiereux_03.wav</ShortName>
@@ -2651,6 +2679,10 @@
 				<File Id="764299771" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Grab_01.wav</ShortName>
 					<Path>SFX\Kali_BEAR_Hits_Grab_01_66C02B12.wem</Path>
+				</File>
+				<File Id="764313955" Language="SFX">
+					<ShortName>HB_SFX_Foley_8.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_8_E33674C9.wem</Path>
 				</File>
 				<File Id="764513421" Language="SFX">
 					<ShortName>SFX_HB_Traps_Explo_Grosse_Boule.wav</ShortName>
@@ -2795,6 +2827,10 @@
 				<File Id="864636949" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_CanonTranspercant_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonTranspercant_00_66C02B12.wem</Path>
+				</File>
+				<File Id="864790076" Language="SFX">
+					<ShortName>HB_SFX_Foley_9.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_9_82D9D1FE.wem</Path>
 				</File>
 				<File Id="865513226" Language="SFX">
 					<ShortName>HB_SFX_KALI_Jump_Impact_03.wav</ShortName>
@@ -3147,6 +3183,10 @@
 				<File Id="1064636151" Language="SFX">
 					<ShortName>SF-DS Weapon Projectile 03_04.wav</ShortName>
 					<Path>SFX\SF-DS Weapon Projectile 03_04_66C02B12.wem</Path>
+				</File>
+				<File Id="1065164990" Language="SFX">
+					<ShortName>HB_SFX_Foley_4.wav</ShortName>
+					<Path>SFX\HB_SFX_Foley_4_EF2E3EA8.wem</Path>
 				</File>
 				<File Id="1067846903" Language="SFX">
 					<ShortName>MnGn_Fire_02.wav</ShortName>

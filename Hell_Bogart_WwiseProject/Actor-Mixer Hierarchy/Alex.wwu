@@ -213,6 +213,13 @@
 								<Folder Name="Footstep" ID="{F2E07DDC-936A-4AB4-A718-D48B3BA97547}" ShortID="936372034">
 									<ChildrenList>
 										<ActorMixer Name="Footsteps" ID="{9213D2EF-5ABB-4D38-AD52-5F061E980016}" ShortID="970353491">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -2316,7 +2323,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-22</Value>
+														<Value>-25</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2330,6 +2337,19 @@
 											</ReferenceList>
 											<ChildrenList>
 												<RandomSequenceContainer Name="Foley_RND" ID="{9148D01B-7ED1-4C7F-B641-7BBA9C11AC6C}" ShortID="115672354">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="7"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -2359,6 +2379,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Foley_1" ID="{DA33B2F1-3932-4107-B0E3-42188AF82B07}" ShortID="707658214">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.00875966825086E-02"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Foley_1.wav</AudioFile>
 																</AudioFileSource>
@@ -2378,6 +2403,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Foley_2" ID="{3A97D92E-43F5-4DCA-A4C7-C63AEAFA33CE}" ShortID="382670636">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="4.15948342807443E-03"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.57887972540614E-02"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Foley_2.wav</AudioFile>
 																</AudioFileSource>
@@ -2397,6 +2427,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Foley_3" ID="{7AFC9168-3EB9-4858-839E-4FED751A3F7A}" ShortID="320571513">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.62302363867922E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="5.31171372658653E-02"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Foley_3.wav</AudioFile>
 																</AudioFileSource>
@@ -2416,6 +2451,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Foley_4" ID="{9E8C600D-AE05-4F68-920A-78441C5A25D4}" ShortID="1065164990">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.18620507563756E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="5.20105302394931E-02"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Foley_4.wav</AudioFile>
 																</AudioFileSource>
@@ -2435,6 +2475,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Foley_5" ID="{DB1F086F-3779-4F71-90F0-296BD7D77503}" ShortID="718550392">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.02506756127108E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="3.44795452427547E-02"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Foley_5.wav</AudioFile>
 																</AudioFileSource>
@@ -2454,6 +2499,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Foley_6" ID="{8314055D-9882-4950-A755-BC1EFFB878C5}" ShortID="196406919">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="5.10980647966949E-03"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.38694747305315E-02"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Foley_6.wav</AudioFile>
 																</AudioFileSource>
@@ -2473,6 +2523,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Foley_7" ID="{222A4747-7305-41BC-87F3-47C4B59A62E2}" ShortID="102112840">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="7.12887894883981E-03"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="3.08918087783058E-02"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Foley_7.wav</AudioFile>
 																</AudioFileSource>
@@ -2492,6 +2547,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Foley_8" ID="{2AC1CCF1-BC59-4021-9661-A5D565C34E6B}" ShortID="764313955">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="5.31171372658653E-03"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.18370453204113E-02"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Foley_8.wav</AudioFile>
 																</AudioFileSource>
@@ -2511,6 +2571,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_Foley_9" ID="{1209776B-9471-40AB-A87C-08D0B6C5491E}" ShortID="864790076">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.34811915633833E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="3.08141521448762E-02"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_Foley_9.wav</AudioFile>
 																</AudioFileSource>
