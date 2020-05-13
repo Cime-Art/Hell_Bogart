@@ -30,10 +30,15 @@
 								<State Name="Spread_180" ID="{FC55DF69-7C23-4C99-9025-1D3267E6E6A5}"/>
 							</ChildrenList>
 						</StateGroup>
-						<StateGroup Name="Shotgun_Equiped_STATE" ID="{8FB916D5-E8AE-4E49-8C0A-0B2F5F122240}">
+						<StateGroup Name="Ammo_Rarity_STATE" ID="{7F861A28-0BB4-4C7E-9A87-06B006D74647}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
-								<State Name="None" ID="{AC1DEA53-B294-4EF1-BC43-204DB946B111}"/>
-								<State Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}"/>
+								<State Name="None" ID="{AEAC5A91-B72F-44A1-9026-C89B1E68E264}"/>
+								<State Name="Ammo_1" ID="{542C4DF4-2B9C-4572-BAB9-2F0F978BB21B}"/>
+								<State Name="Ammo_2" ID="{1FC90ABA-0653-4C4A-893E-415242A6FBD0}"/>
+								<State Name="Ammo_3" ID="{E5A7726C-0E8A-483F-BF05-D6478B276421}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>

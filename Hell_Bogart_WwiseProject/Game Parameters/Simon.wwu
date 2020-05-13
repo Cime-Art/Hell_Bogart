@@ -12,13 +12,6 @@
 										<Property Name="InitialValue" Type="Real64" Value="0"/>
 									</PropertyList>
 								</GameParameter>
-								<GameParameter Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}">
-									<PropertyList>
-										<Property Name="InitialValue" Type="Real64" Value="4"/>
-										<Property Name="Max" Type="Real64" Value="12"/>
-										<Property Name="Min" Type="Real64" Value="4"/>
-									</PropertyList>
-								</GameParameter>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Health" ID="{855CB847-4389-4130-9442-8E3BCDE3E061}" ShortID="312986348">

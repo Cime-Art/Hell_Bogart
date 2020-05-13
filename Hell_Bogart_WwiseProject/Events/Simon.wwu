@@ -55,24 +55,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{523A206D-C6F7-4BDC-AD11-4E411C07B90E}" ShortID="932739069">
+								<Action Name="" ID="{925C3151-3A35-49CF-BB0D-019187E6926F}" ShortID="947485581">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Yes" ID="{31EC1184-D0D5-4FF4-BC0B-2DC0954279C9}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{25785CDD-41A7-4020-A750-7AF5715ABBDD}" ShortID="956546380">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="4"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Total_Power_GP" ID="{A2578F4B-3DF6-4D8A-A276-793AFE4A3B21}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+											<ObjectRef Name="Ammo_1" ID="{542C4DF4-2B9C-4572-BAB9-2F0F978BB21B}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -206,6 +195,53 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{26B54924-5DCA-42F1-A311-089A68CA40E0}" ShortID="597603773">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Exploded_Bones_MobJungleCharlie_RND" ID="{090D44BB-BD78-4D83-BC3D-872B64C372FA}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{045D8567-5D74-40CA-8739-04FD349893A1}" ShortID="304776457">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Element_Explosion_SWITCH" ID="{1E697BBE-64CE-4D69-9831-1CD0D38BA599}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{FD328F2F-77A3-48C9-AD18-7570FFF600F3}" ShortID="137139226">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Dot_Fire_BLEND" ID="{05A5530B-AA52-4C8A-86F0-9134A1FCC8BD}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{49AF8CFA-50EC-401C-A7C5-ED34282262C5}" ShortID="1053538150">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Dot_Ice_RND_LOOP" ID="{A0E39BFB-A09F-4346-834E-D1E32794DFA3}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{79751AE9-5D94-4AD6-B149-F04E60451DBE}" ShortID="800283300">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Dot_Thunder_RND_LOOP" ID="{26EB783D-999E-4277-8548-50D479C96DFC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -387,6 +423,109 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Hit_MobJungleCharlie" ID="{BB1C446F-554E-4A89-BDCC-5C343DA2E9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Dots Elements" ID="{A0C8CACA-FED8-4C49-9AF9-546FC30B49E3}" ShortID="340487853">
+									<ChildrenList>
+										<Event Name="E_DotElement_Ice_Begin" ID="{E79C3FA0-2EF7-445D-B5C3-9AB635214A16}">
+											<ChildrenList>
+												<Action Name="" ID="{881A9D7F-C91A-4E8C-AB5A-0F8B75352680}" ShortID="403986115">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_GetHit_Ice_RND" ID="{35F7CBFC-1C8C-46F7-85D3-1223D7CFDAB0}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{FA1C9C17-43BB-417C-9A49-A9D6B7705668}" ShortID="514342577">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Dot_Ice_RND_LOOP" ID="{A0E39BFB-A09F-4346-834E-D1E32794DFA3}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="E_DotElement_Ice_End" ID="{AF93D242-4E7A-427D-9050-1B89023E025B}">
+											<ChildrenList>
+												<Action Name="" ID="{0711B280-4D68-4A03-84E7-9968B2C2B355}" ShortID="210628481">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Dot_Ice_RND_LOOP" ID="{A0E39BFB-A09F-4346-834E-D1E32794DFA3}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="E_DotElement_Thunder_Begin" ID="{C745399E-DDE5-4940-A505-CFF213D4563C}">
+											<ChildrenList>
+												<Action Name="" ID="{F7DE1FDA-EAC3-45C5-A100-EE2DA48CB042}" ShortID="300179656">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_GetHit_Thunder_RND" ID="{3AC9039A-6FCB-425E-A930-F6AD21DC9C85}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{5156C24A-96F3-4C49-A908-2355F467FB48}" ShortID="756487606">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Dot_Thunder_RND_LOOP" ID="{26EB783D-999E-4277-8548-50D479C96DFC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="E_DotElement_Thunder_End" ID="{89C86CCB-3DAA-4289-8046-BC642CC1D69C}">
+											<ChildrenList>
+												<Action Name="" ID="{2E62FCAE-4B2D-43A4-9001-8E1AC4F7F353}" ShortID="833015401">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Dot_Thunder_RND_LOOP" ID="{26EB783D-999E-4277-8548-50D479C96DFC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="E_DotElement_Fire_Begin" ID="{825F3DB5-C669-4CAC-B8C0-66789F833FAA}">
+											<ChildrenList>
+												<Action Name="" ID="{C90B0FD0-B478-4C58-A9FC-B594CC598B62}" ShortID="713047227">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_GetHit_Fire_RND" ID="{51B028D0-AEC0-4BDC-9ED3-A477507BFDA6}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{0C364D9B-A53A-4EE4-BD50-F40A553246CA}" ShortID="223976047">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Dot_Fire_BLEND" ID="{05A5530B-AA52-4C8A-86F0-9134A1FCC8BD}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="E_DotElement_Fire_End" ID="{9EBAB146-A2C5-4CF0-AFC6-3681C99C3972}">
+											<ChildrenList>
+												<Action Name="" ID="{7D397B69-893F-4CF8-8054-7F6F9848894C}" ShortID="389087614">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Dot_Fire_BLEND" ID="{05A5530B-AA52-4C8A-86F0-9134A1FCC8BD}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
