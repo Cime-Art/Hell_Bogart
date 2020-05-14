@@ -533,6 +533,32 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Folder Name="Spear Hit" ID="{191B6B1C-3B09-4BCE-85D1-479DE97A8D41}" ShortID="814413629">
+									<ChildrenList>
+										<Event Name="E_Spear_Hit_Ground" ID="{CA19D1E9-7878-4C12-A730-AC2D7E0742A8}">
+											<ChildrenList>
+												<Action Name="" ID="{5C6369CE-260A-4F92-9E71-156AEFFAB63F}" ShortID="380633839">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Spear_Hit_Ground_RND" ID="{FAE87687-440A-4957-9A90-A6ABF5A2B823}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="E_Spear_Hit_Bear" ID="{522BAE5F-E1E6-4F38-99E7-8D48CA0250B9}">
+											<ChildrenList>
+												<Action Name="" ID="{89CFD10B-7D69-4F48-A1B2-EB10A012A1DF}" ShortID="54623956">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Spear_Hit_Bear_RND" ID="{B25026C6-D7D4-4B8C-9F12-6AAA4ED0BEC8}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -938,7 +964,7 @@
 										<Action Name="" ID="{9DA2FADD-3135-4105-85F8-8DC5B63C2B8F}" ShortID="469254412">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="80"/>
 											</PropertyList>
 											<ReferenceList>
@@ -951,12 +977,36 @@
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
 												<Property Name="Delay" Type="Real64" Value="0.3"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="-3000"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{C0936163-55EB-4C19-8569-AA1E0F7AF9C2}" ShortID="400261806">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{BDCD5E63-2AF5-49AE-AF8E-4103100F0501}" ShortID="185049769">
+											<PropertyList>
+												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MiniGun" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -983,6 +1033,28 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0B79537A-B533-49EC-8B64-CBEA86D0B67B}" ShortID="4586448">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2C20BA22-A342-424B-9B7D-35014E2BBB0F}" ShortID="296158103">
+											<PropertyList>
+												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MiniGun" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

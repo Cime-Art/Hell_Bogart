@@ -2056,11 +2056,6 @@
 														<Value>3</Value>
 													</ValueList>
 												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-4</Value>
@@ -2103,6 +2098,8 @@
 													<ChildrenList>
 														<RandomSequenceContainer Name="RND_SFX_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}" ShortID="235240877">
 															<PropertyList>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 																<Property Name="Lowpass" Type="int16">
 																	<ValueList>
 																		<Value>100</Value>
@@ -2113,9 +2110,19 @@
 																		</ModifierInfo>
 																	</ModifierList>
 																</Property>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-2</Value>
+																		<Value>4</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -2128,7 +2135,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="HB_SFX_Other_Ammo_01" ID="{BABC6460-34D7-4101-96A8-96C6386B9E5D}" ShortID="319985305">
+																<Sound Name="HB_SFX_Other_Ammo_01" ID="{42A6EDA6-92FC-4693-BBBC-D005BD78721D}" ShortID="841077084">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -2138,16 +2145,16 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_SFX_Other_Ammo_01" ID="{1EF1AAEF-2975-4399-B83F-0CCCB1261601}" ShortID="97050673">
+																		<AudioFileSource Name="HB_SFX_Other_Ammo_01" ID="{E3EB3D6A-F036-4249-9419-41C923F3D8E9}" ShortID="791536665">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_SFX_Other_Ammo_01.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_SFX_Other_Ammo_01" ID="{1EF1AAEF-2975-4399-B83F-0CCCB1261601}" Platform="Linked"/>
+																		<ActiveSource Name="HB_SFX_Other_Ammo_01" ID="{E3EB3D6A-F036-4249-9419-41C923F3D8E9}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="HB_SFX_Other_Ammo_02" ID="{EC06DC5A-2D34-4AC7-B7AA-5157CC32A8F2}" ShortID="489419701">
+																<Sound Name="HB_SFX_Other_Ammo_02" ID="{B1E3E14A-A83F-4DC2-BD50-EE5330481D33}" ShortID="668768183">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -2157,16 +2164,16 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_SFX_Other_Ammo_02" ID="{7EE34604-D66C-4AC0-805C-1BC484B95C85}" ShortID="757153520">
+																		<AudioFileSource Name="HB_SFX_Other_Ammo_02" ID="{23CB0C18-2304-4C0B-B22E-73BFD3361744}" ShortID="131068961">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_SFX_Other_Ammo_02.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_SFX_Other_Ammo_02" ID="{7EE34604-D66C-4AC0-805C-1BC484B95C85}" Platform="Linked"/>
+																		<ActiveSource Name="HB_SFX_Other_Ammo_02" ID="{23CB0C18-2304-4C0B-B22E-73BFD3361744}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="HB_SFX_Other_Ammo_03" ID="{E6386360-1D04-457C-8776-2F66DBF7CF86}" ShortID="486999590">
+																<Sound Name="HB_SFX_Other_Ammo_03" ID="{CAFCE035-CC50-4381-9A2E-48CA012C17BE}" ShortID="213081247">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -2176,19 +2183,32 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_SFX_Other_Ammo_03" ID="{13000EBC-ACC3-456B-A771-E82A377BF8C2}" ShortID="29051026">
+																		<AudioFileSource Name="HB_SFX_Other_Ammo_03" ID="{A1B4D384-AF83-4525-9981-599170BC5137}" ShortID="63248405">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_SFX_Other_Ammo_03.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_SFX_Other_Ammo_03" ID="{13000EBC-ACC3-456B-A771-E82A377BF8C2}" Platform="Linked"/>
+																		<ActiveSource Name="HB_SFX_Other_Ammo_03" ID="{A1B4D384-AF83-4525-9981-599170BC5137}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="RND_SFX_Rare" ID="{849BEEF9-A6AF-464D-9E41-0E2FD1E21762}" ShortID="491977799">
 															<PropertyList>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-5</Value>
@@ -2215,8 +2235,16 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="HB_SFX_Other_Pickup_ammo_Rare_02" ID="{90F49180-1C1D-4563-938F-AB0CA9164D59}" ShortID="610022856">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="6.16438356164384E-02"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.66438356164384"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>HB_SFX_Other_Pickup_ammo_Rare_02.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="826842973"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -2227,6 +2255,19 @@
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="RND_SFX_Pickup" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}" ShortID="986440601">
 															<PropertyList>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-2</Value>
@@ -2364,6 +2405,18 @@
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="RDN_SFX_Legendary" ID="{EA3FAC55-8C6B-455D-BC79-2E1C4DD50323}" ShortID="610050083">
 															<PropertyList>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-2</Value>
@@ -2392,8 +2445,10 @@
 																		<AudioFileSource Name="HB_SFX_Other_Pickup_Legendary_01" ID="{604D8CED-5F70-4E46-9A2D-4FA957B66971}" ShortID="994734768">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="7.00396825396825E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="8.50481859410431E-02"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																				<Property Name="TrimBegin" Type="Real64" Value="0.135076530612245"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.26571712018141"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>HB_SFX_Other_Pickup_Legendary_01.wav</AudioFile>
@@ -2477,11 +2532,6 @@
 																<Value>3</Value>
 															</ValueList>
 														</Property>
-														<Property Name="UseMaxSoundPerInstance" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -2508,6 +2558,21 @@
 													</ReferenceList>
 													<ChildrenList>
 														<RandomSequenceContainer Name="RND_SFX_Pickup_" ID="{2E154A8B-F5A3-4362-A14C-4DAE362EC5FC}" ShortID="626394569">
+															<PropertyList>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -2643,6 +2708,18 @@
 														<RandomSequenceContainer Name="RDN_SFX_Legendary" ID="{506B8CFF-B98D-4233-A88A-EDFA14CADFD0}" ShortID="899258723">
 															<PropertyList>
 																<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-3</Value>
@@ -2680,14 +2757,13 @@
 																		<AudioFileSource Name="HB_SFX_Other_Pickup_Legendary_01" ID="{C61B6786-248B-4061-9932-DE5E3F441BE4}" ShortID="835581257">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="7.00396825396825E-02"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.225127551020408"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																				<Property Name="TrimBegin" Type="Real64" Value="0.135076530612245"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.37077664399093"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>HB_SFX_Other_Pickup_Legendary_01.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="994734768"/>
-																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -2698,6 +2774,19 @@
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="RND_SFX_Rare" ID="{80262840-7BEB-47ED-8FD6-7B9409F8C080}" ShortID="912735882">
 															<PropertyList>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+																<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-7</Value>
@@ -2733,6 +2822,11 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="HB_SFX_Other_Pickup_ammo_Rare_02" ID="{2EFA7A02-ED89-427D-BBB2-387C58F94BB0}" ShortID="826842973">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="7.53424657534245E-02"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.72260273972603"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>HB_SFX_Other_Pickup_ammo_Rare_02.wav</AudioFile>
 																			<ConvertedFileIDList>
