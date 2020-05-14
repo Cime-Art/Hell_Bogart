@@ -16,7 +16,6 @@
 						<ActorMixer Name="MIX_UI" ID="{810A6A64-7B85-4880-9440-2E720F49A893}" ShortID="91547332">
 							<PropertyList>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
