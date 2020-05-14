@@ -865,6 +865,7 @@
 			<IncludedEvents>
 				<Event Id="2368673453" Name="E_BigStoneDoor_Opening" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Opening"/>
 				<Event Id="2503251047" Name="E_BigStoneDoor_Stop" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Stop"/>
+				<Event Id="1672275366" Name="E_Char_Foley_Grenade" ObjectPath="\Events\Simon\Weapons\E_Char_Foley_Grenade"/>
 				<Event Id="1061445993" Name="E_Char_Heartbeat_Fast" ObjectPath="\Events\Simon\Character\E_Char_Heartbeat_Fast"/>
 				<Event Id="1415895540" Name="E_Char_Heartbeat_Slow" ObjectPath="\Events\Simon\Character\E_Char_Heartbeat_Slow"/>
 				<Event Id="825092078" Name="E_Coffre_Bois" ObjectPath="\Events\Brian\Coffre\E_Coffre_Bois"/>
@@ -1475,6 +1476,10 @@
 					<ShortName>Shell_Gravel_02.wav</ShortName>
 					<Path>SFX\Shell_Gravel_02_66C02B12.wem</Path>
 				</File>
+				<File Id="217476674" Language="SFX">
+					<ShortName>HB_SFX_FoleyGrenade_2.wav</ShortName>
+					<Path>SFX\HB_SFX_FoleyGrenade_2_66C02B12.wem</Path>
+				</File>
 				<File Id="218251719" Language="SFX">
 					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_01.wav</ShortName>
 					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_01_66C02B12.wem</Path>
@@ -2002,6 +2007,10 @@
 				<File Id="405943385" Language="SFX">
 					<ShortName>SFX-HB-MobJungleCharlie-Hit-02.wav</ShortName>
 					<Path>SFX\SFX-HB-MobJungleCharlie-Hit-02_66C02B12.wem</Path>
+				</File>
+				<File Id="406393532" Language="SFX">
+					<ShortName>HB_SFX_FoleyGrenade_1.wav</ShortName>
+					<Path>SFX\HB_SFX_FoleyGrenade_1_66C02B12.wem</Path>
 				</File>
 				<File Id="406524243" Language="SFX">
 					<ShortName>you_will_pay.WAV</ShortName>
@@ -2710,6 +2719,10 @@
 				<File Id="701615158" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bark_08.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bark_08_10C4C929.wem</Path>
+				</File>
+				<File Id="702648119" Language="SFX">
+					<ShortName>HB_SFX_FoleyGrenade_3.wav</ShortName>
+					<Path>SFX\HB_SFX_FoleyGrenade_3_66C02B12.wem</Path>
 				</File>
 				<File Id="705273490" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_01.wav</ShortName>
