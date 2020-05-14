@@ -3224,6 +3224,215 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Foley_Grenade" ID="{54034332-EDCD-4FEA-AFF8-8962EC9B74D5}" ShortID="143678926">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_SFX_FoleyGrenade_1" ID="{68C18FB6-73DC-4494-8D51-41C642281EE8}" ShortID="299679840">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_FoleyGrenade_1" ID="{45EEE7A8-BEB8-498B-977C-34B68D9345A7}" ShortID="406393532">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_FoleyGrenade_1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_FoleyGrenade_1" ID="{45EEE7A8-BEB8-498B-977C-34B68D9345A7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_FoleyGrenade_2" ID="{29373B52-8965-4B84-9B9E-7F8BF93A4637}" ShortID="585707439">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_FoleyGrenade_2" ID="{998A2245-8B28-4984-996C-6784792017CE}" ShortID="217476674">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_FoleyGrenade_2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_FoleyGrenade_2" ID="{998A2245-8B28-4984-996C-6784792017CE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_FoleyGrenade_3" ID="{CAEF6275-E4D1-4F77-AA32-5628B196177F}" ShortID="911832781">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_FoleyGrenade_3" ID="{84FF312C-113B-4AB4-B544-7C728567539F}" ShortID="702648119">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_FoleyGrenade_3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_FoleyGrenade_3" ID="{84FF312C-113B-4AB4-B544-7C728567539F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Grenade" ID="{B0B79B4D-5638-4174-9970-50BABC3E399A}" ShortID="163577315">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_SFX_ImpactGrenade_1" ID="{DE368230-3461-4F0C-BB03-020BE7BE5346}" ShortID="237398254">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_1" ID="{98A04F54-C3F0-4C2F-8DED-945B819919E2}" ShortID="113519767">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_ImpactGrenade_1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_1" ID="{98A04F54-C3F0-4C2F-8DED-945B819919E2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_ImpactGrenade_2" ID="{80C46683-E1AD-4930-9767-2ECEE2C8D814}" ShortID="30020058">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_2" ID="{B8840AAB-DDDF-4376-A999-BF9E5CA073DB}" ShortID="67952844">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_ImpactGrenade_2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_2" ID="{B8840AAB-DDDF-4376-A999-BF9E5CA073DB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_ImpactGrenade_3" ID="{A83B8129-0262-4CC6-A8BE-D6733E00CE55}" ShortID="1066119222">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_3" ID="{0CDAF853-49FF-4636-887E-34BDB62EE11E}" ShortID="706886597">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_ImpactGrenade_3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_3" ID="{0CDAF853-49FF-4636-887E-34BDB62EE11E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_ImpactGrenade_4" ID="{21CA1D54-249E-4DFA-8B55-BF31D9E03D67}" ShortID="497808878">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_4" ID="{8D016FE0-80EE-48E1-A4A9-B7848F752A31}" ShortID="263253723">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_ImpactGrenade_4.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_4" ID="{8D016FE0-80EE-48E1-A4A9-B7848F752A31}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_ImpactGrenade_5" ID="{F0876459-58F0-4DDC-B5FC-C4A33BE0A0BA}" ShortID="843958794">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_5" ID="{B9784453-E2A4-4AC2-9B00-8BB583D3FC4C}" ShortID="517615606">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_ImpactGrenade_5.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_5" ID="{B9784453-E2A4-4AC2-9B00-8BB583D3FC4C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_ImpactGrenade_6" ID="{C279F3AC-CBCB-4B7B-93B4-22E423075774}" ShortID="979024274">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_6" ID="{FB455405-2F72-47B8-9C3D-F326AD5E793E}" ShortID="651805665">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_ImpactGrenade_6.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_6" ID="{FB455405-2F72-47B8-9C3D-F326AD5E793E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>

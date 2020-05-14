@@ -7409,6 +7409,240 @@
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
+								<ActorMixer Name="Desintegration" ID="{3A15F8DE-5A82-4D84-87FA-42E2C2F92A8B}" ShortID="1056698338">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="MobJungleCharlie_Desintegration_RND" ID="{3DC34199-C808-4221-86FC-FF5BED6D2715}" ShortID="296219959">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_HB_MobJungleCharlie_Desintegration_01" ID="{CDB6155F-FDB7-4776-BC29-DF3F1A6DC35D}" ShortID="353642836">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Desintegration_01" ID="{1F3383F7-EF9C-40DD-B3F9-AA86B47601A0}" ShortID="17320695">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_MobJungleCharlie_Desintegration_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Desintegration_01" ID="{1F3383F7-EF9C-40DD-B3F9-AA86B47601A0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_MobJungleCharlie_Desintegration_02" ID="{E131F506-6806-4AB6-8BFD-7A48398FA2CE}" ShortID="248325675">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Desintegration_02" ID="{5641102E-3866-4D96-A766-C35A73A2F189}" ShortID="818820714">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_MobJungleCharlie_Desintegration_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Desintegration_02" ID="{5641102E-3866-4D96-A766-C35A73A2F189}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_MobJungleCharlie_Desintegration_03" ID="{63269261-DEAD-4847-AE02-FD4469B85C84}" ShortID="403487262">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Desintegration_03" ID="{B969EE7C-C7FD-4338-A403-8EDF3BFA8BFF}" ShortID="457225260">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_MobJungleCharlie_Desintegration_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Desintegration_03" ID="{B969EE7C-C7FD-4338-A403-8EDF3BFA8BFF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_MobJungleCharlie_Desintegration_04" ID="{2F46BB19-0F41-4E5E-8D93-6F07911631BD}" ShortID="720398987">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Desintegration_04" ID="{5C448626-5E2C-4D3B-BD93-803419AC3532}" ShortID="1032428023">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_MobJungleCharlie_Desintegration_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Desintegration_04" ID="{5C448626-5E2C-4D3B-BD93-803419AC3532}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_MobJungleCharlie_Desintegration_05" ID="{4EE36283-74D0-4C14-9E64-75F4F0D2C162}" ShortID="307216702">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Desintegration_05" ID="{EB8CD6FF-7AF5-4898-8196-446DA666DBC0}" ShortID="30701032">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_MobJungleCharlie_Desintegration_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Desintegration_05" ID="{EB8CD6FF-7AF5-4898-8196-446DA666DBC0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_MobJungleCharlie_Desintegration_06" ID="{5174F289-0FD3-4EA1-86ED-10404644278F}" ShortID="737263028">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_MobJungleCharlie_Desintegration_06" ID="{CB1AE0ED-6CDA-4D45-8937-2843B7D34940}" ShortID="304599855">
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_MobJungleCharlie_Desintegration_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_MobJungleCharlie_Desintegration_06" ID="{CB1AE0ED-6CDA-4D45-8937-2843B7D34940}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 							<StateInfo>
 								<StatePropertyList>

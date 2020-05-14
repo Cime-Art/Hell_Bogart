@@ -77,6 +77,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Char_Foley_Grenade" ID="{B355C011-0495-493E-8A6C-BCC014630CE4}">
+							<ChildrenList>
+								<Action Name="" ID="{B6B55DE6-F402-4950-A861-15A6FD82A742}" ShortID="342398360">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Foley_Grenade" ID="{54034332-EDCD-4FEA-AFF8-8962EC9B74D5}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{0E1AB6DB-6E19-4EF1-8B50-B136E7CF3931}" ShortID="380634297">
@@ -242,6 +253,17 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="MobJungleCharlie_Dot_Thunder_RND_LOOP" ID="{26EB783D-999E-4277-8548-50D479C96DFC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="E_MobJungleCharlie_Desintegration" ID="{1884760D-DB63-4C34-A081-747A2A6C5D7A}">
+											<ChildrenList>
+												<Action Name="" ID="{9A8CEF2C-957C-41F5-B347-2749A6822D71}" ShortID="972518825">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="MobJungleCharlie_Desintegration_RND" ID="{3DC34199-C808-4221-86FC-FF5BED6D2715}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
