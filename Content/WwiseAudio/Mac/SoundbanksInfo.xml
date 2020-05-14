@@ -925,6 +925,8 @@
 				<Event Id="3359588815" Name="E_SetAcoustic_BossArena" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_BossArena"/>
 				<Event Id="1975484871" Name="E_SetAcoustic_Exterior" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Exterior"/>
 				<Event Id="1418412915" Name="E_SetAcoustic_Ruines" ObjectPath="\Events\Simon\Global\Acoustics\E_SetAcoustic_Ruines"/>
+				<Event Id="2522968455" Name="E_Spear_Hit_Bear" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Spear Hit\E_Spear_Hit_Bear"/>
+				<Event Id="2932680992" Name="E_Spear_Hit_Ground" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Spear Hit\E_Spear_Hit_Ground"/>
 				<Event Id="3765570229" Name="E_Speech_Bear_AgainstCharlie_DuringFight_LOOP" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_DuringFight_LOOP"/>
 				<Event Id="212888376" Name="E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP"/>
 				<Event Id="1044613943" Name="E_Speech_Bear_AgainstCharlie_EndFight_SetExplo" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_EndFight_SetExplo"/>
@@ -992,6 +994,10 @@
 					<ShortName>HB_SFX_KALI_Jump_Impact_02.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_Jump_Impact_02_1BB37F05.wem</Path>
 				</File>
+				<File Id="4027434" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitGround_02.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitGround_02_66C02B12.wem</Path>
+				</File>
 				<File Id="6306775" Language="SFX">
 					<ShortName>SFX_HB_MobjungleCharlie_Dot_Fire_BurnLoop.wav</ShortName>
 					<Path>SFX\SFX_HB_MobjungleCharlie_Dot_Fire_BurnLoop_C42B8C3C.wem</Path>
@@ -1024,10 +1030,6 @@
 					<ShortName>SFX_HB_MobjungleCharlie_Dot_Fire_Crackling_05.wav</ShortName>
 					<Path>SFX\SFX_HB_MobjungleCharlie_Dot_Fire_Crackling_05_66C02B12.wem</Path>
 				</File>
-				<File Id="29051026" Language="SFX">
-					<ShortName>HB_SFX_Other_Ammo_03.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Ammo_03_66C02B12.wem</Path>
-				</File>
 				<File Id="33959053" Language="SFX">
 					<ShortName>SFX_HB_UI_DenyEffect_Buzz_02.wav</ShortName>
 					<Path>SFX\SFX_HB_UI_DenyEffect_Buzz_02_10C4C929.wem</Path>
@@ -1051,6 +1053,10 @@
 				<File Id="44332466" Language="SFX">
 					<ShortName>VOICE_HB_Bear_ComplexShot_4_HelloGoodbye.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_ComplexShot_4_HelloGoodbye_10C4C929.wem</Path>
+				</File>
+				<File Id="44916560" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitGround_06.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitGround_06_66C02B12.wem</Path>
 				</File>
 				<File Id="48319379" Language="SFX">
 					<ShortName>Shell_Wood_03.wav</ShortName>
@@ -1080,6 +1086,10 @@
 					<ShortName>HB-SFX-Gardian-Footstep_07.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Footstep_07_66C02B12.wem</Path>
 				</File>
+				<File Id="63248405" Language="SFX">
+					<ShortName>HB_SFX_Other_Ammo_03.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Ammo_03_66C02B12.wem</Path>
+				</File>
 				<File Id="64327808" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_04_66C02B12.wem</Path>
@@ -1103,6 +1113,10 @@
 				<File Id="70517950" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_08.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_08_2E23A712.wem</Path>
+				</File>
+				<File Id="71317642" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitGround_01.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitGround_01_66C02B12.wem</Path>
 				</File>
 				<File Id="71933835" Language="SFX">
 					<ShortName>VOICE_HB_Bear_GrenadeEnd_1-2_SweetSound.wav</ShortName>
@@ -1155,10 +1169,6 @@
 				<File Id="96271413" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LosingLife_Fuck_07.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LosingLife_Fuck_07_10C4C929.wem</Path>
-				</File>
-				<File Id="97050673" Language="SFX">
-					<ShortName>HB_SFX_Other_Ammo_01.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Ammo_01_66C02B12.wem</Path>
 				</File>
 				<File Id="100097236" Language="SFX">
 					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_03.wav</ShortName>
@@ -1219,6 +1229,10 @@
 				<File Id="128255007" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_4-2_GetCloserIntroduceMother.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_4-2_GetCloserIntroduceMother_10C4C929.wem</Path>
+				</File>
+				<File Id="131068961" Language="SFX">
+					<ShortName>HB_SFX_Other_Ammo_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Ammo_02_66C02B12.wem</Path>
 				</File>
 				<File Id="131298312" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_00.wav</ShortName>
@@ -1323,6 +1337,10 @@
 				<File Id="167945936" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_02_66C02B12.wem</Path>
+				</File>
+				<File Id="168140728" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitBear_03.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitBear_03_66C02B12.wem</Path>
 				</File>
 				<File Id="169200186" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bark_03.wav</ShortName>
@@ -1584,6 +1602,14 @@
 					<ShortName>SFX_HB_MobJungleCharlie_GetHit_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_04_8B2C76DE.wem</Path>
 				</File>
+				<File Id="271735372" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitGround_04.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitGround_04_66C02B12.wem</Path>
+				</File>
+				<File Id="272255681" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitBear_05.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitBear_05_66C02B12.wem</Path>
+				</File>
 				<File Id="273333574" Language="SFX">
 					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_01.wav</ShortName>
 					<Path>SFX\SFX_HB_PetiteCaisseBoisExplosion_01_66C02B12.wem</Path>
@@ -1836,6 +1862,10 @@
 					<ShortName>SFX_HB_Destructibles_Tonneau_02.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Tonneau_02_66C02B12.wem</Path>
 				</File>
+				<File Id="362647663" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitBear_02.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitBear_02_66C02B12.wem</Path>
+				</File>
 				<File Id="364918110" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_01_E08E0B03.wem</Path>
@@ -1943,6 +1973,10 @@
 				<File Id="398942520" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_EndDropShell_01_66C02B12.wem</Path>
+				</File>
+				<File Id="400946862" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitBear_06.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitBear_06_66C02B12.wem</Path>
 				</File>
 				<File Id="404359000" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_8-1_AssHole_01.wav</ShortName>
@@ -2486,7 +2520,7 @@
 				</File>
 				<File Id="610022856" Language="SFX">
 					<ShortName>HB_SFX_Other_Pickup_ammo_Rare_02.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Pickup_ammo_Rare_02_66C02B12.wem</Path>
+					<Path>SFX\HB_SFX_Other_Pickup_ammo_Rare_02_1ED2C266.wem</Path>
 				</File>
 				<File Id="610024286" Language="SFX">
 					<ShortName>HB_SFX_Foley_10.wav</ShortName>
@@ -2543,6 +2577,10 @@
 				<File Id="643377963" Language="SFX">
 					<ShortName>SFX_HB_CaisseExplosive_01.wav</ShortName>
 					<Path>SFX\SFX_HB_CaisseExplosive_01_66C02B12.wem</Path>
+				</File>
+				<File Id="643407698" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitBear_04.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitBear_04_66C02B12.wem</Path>
 				</File>
 				<File Id="646026284" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_02.wav</ShortName>
@@ -2760,6 +2798,10 @@
 					<ShortName>HB_SFX_Shotgun_Spread60_02.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread60_02_66C02B12.wem</Path>
 				</File>
+				<File Id="740076700" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitGround_05.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitGround_05_66C02B12.wem</Path>
+				</File>
 				<File Id="740162737" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Pickup2.wav</ShortName>
 					<Path>SFX\HB_SFX_Uiwep_Pickup2_A6AD1683.wem</Path>
@@ -2824,10 +2866,6 @@
 					<ShortName>HB_SFX_Shotgun_ThunderAmmo_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_ThunderAmmo_00_DB69DF13.wem</Path>
 				</File>
-				<File Id="757153520" Language="SFX">
-					<ShortName>HB_SFX_Other_Ammo_02.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Ammo_02_66C02B12.wem</Path>
-				</File>
 				<File Id="758351355" Language="SFX">
 					<ShortName>HB-SFX-Gardian-HitPlayer_03.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-HitPlayer_03_66C02B12.wem</Path>
@@ -2888,6 +2926,10 @@
 					<ShortName>Shell_Metal_01.wav</ShortName>
 					<Path>SFX\Shell_Metal_01_66C02B12.wem</Path>
 				</File>
+				<File Id="791536665" Language="SFX">
+					<ShortName>HB_SFX_Other_Ammo_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Ammo_01_66C02B12.wem</Path>
+				</File>
 				<File Id="795317854" Language="SFX">
 					<ShortName>SFX-HB-CoffreMetalVieux_00.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreMetalVieux_00_66C02B12.wem</Path>
@@ -2912,6 +2954,10 @@
 					<ShortName>VOICE_HB_Bear_CombatEngage_3-3_WassupDudes.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_CombatEngage_3-3_WassupDudes_10C4C929.wem</Path>
 				</File>
+				<File Id="807104420" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitBear_01.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitBear_01_66C02B12.wem</Path>
+				</File>
 				<File Id="811391564" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_PowerLayer_03_66C02B12.wem</Path>
@@ -2932,6 +2978,10 @@
 					<ShortName>VOICE_HB_Bear_LosingLife_Shit_04.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LosingLife_Shit_04_10C4C929.wem</Path>
 				</File>
+				<File Id="826842973" Language="SFX">
+					<ShortName>HB_SFX_Other_Pickup_ammo_Rare_02.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Pickup_ammo_Rare_02_A41CDFC5.wem</Path>
+				</File>
 				<File Id="828195427" Language="SFX">
 					<ShortName>VOICE_HB_Bear_UltiShooting_Holes-1.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiShooting_Holes-1_10C4C929.wem</Path>
@@ -2939,6 +2989,10 @@
 				<File Id="828265285" Language="SFX">
 					<ShortName>VOICE_HB_Bear_UltiShooting_Houhou_04.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiShooting_Houhou_04_10C4C929.wem</Path>
+				</File>
+				<File Id="835581257" Language="SFX">
+					<ShortName>HB_SFX_Other_Pickup_Legendary_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Other_Pickup_Legendary_01_3D3B80CE.wem</Path>
 				</File>
 				<File Id="836753407" Language="SFX">
 					<ShortName>Shell_Water_04.wav</ShortName>
@@ -3228,6 +3282,10 @@
 					<ShortName>HB-SFX-GenadeElec-01.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-01_66C02B12.wem</Path>
 				</File>
+				<File Id="982534890" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitGround_03.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitGround_03_66C02B12.wem</Path>
+				</File>
 				<File Id="982738312" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_6-3_PieceOfMe.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_6-3_PieceOfMe_10C4C929.wem</Path>
@@ -3250,7 +3308,7 @@
 				</File>
 				<File Id="994734768" Language="SFX">
 					<ShortName>HB_SFX_Other_Pickup_Legendary_01.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Pickup_Legendary_01_3E2433C5.wem</Path>
+					<Path>SFX\HB_SFX_Other_Pickup_Legendary_01_CC9AA52A.wem</Path>
 				</File>
 				<File Id="999875653" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Dirt_00.wav</ShortName>
