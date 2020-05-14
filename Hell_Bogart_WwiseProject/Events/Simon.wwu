@@ -998,7 +998,6 @@
 										<Action Name="" ID="{5B5988F4-F4F0-43A5-A114-CE002CF7AED3}" ShortID="488796526">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="Delay" Type="Real64" Value="0.3"/>
 												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="-3000"/>
 											</PropertyList>
