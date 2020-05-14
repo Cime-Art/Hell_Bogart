@@ -103,6 +103,7 @@
 						<ObjectRef Name="E_Spear_Hit_Ground" ID="{CA19D1E9-7878-4C12-A730-AC2D7E0742A8}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Global_SetOutPauseMenu" ID="{82C7AD9A-A115-4C13-AF34-10F51C0D829F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY" ID="{E0B71501-C79A-4C34-A2EF-A687E54E2A39}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_MobJungleCharlie_Desintegration" ID="{1884760D-DB63-4C34-A081-747A2A6C5D7A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Return" ID="{2C9450D2-541B-4C5F-954F-92BA0BD0C994}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Traps_BigRockRolling" ID="{8B4C65DF-B73F-4C6C-9BAA-9E7FCCDDD2F6}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Coffre_Metal_Vieux" ID="{EECF2E2E-B139-4C97-9236-1AD99BE11B5B}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>

@@ -916,6 +916,7 @@
 				<Event Id="3371588653" Name="E_Mob_JungleCharlie_Iddle_STOP" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Iddle\E_Mob_JungleCharlie_Iddle_STOP"/>
 				<Event Id="2473679398" Name="E_Mob_JungleCharlie_LaunchSpear" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\LaunchSpear\E_Mob_JungleCharlie_LaunchSpear"/>
 				<Event Id="3786112473" Name="E_Mob_JungleCharlie_Scream" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Charge\E_Mob_JungleCharlie_Scream"/>
+				<Event Id="3258442665" Name="E_MobJungleCharlie_Desintegration" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Death\E_MobJungleCharlie_Desintegration"/>
 				<Event Id="3156110896" Name="E_MobJungleCharlie_GetHit" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\GetHit\E_MobJungleCharlie_GetHit"/>
 				<Event Id="1166618678" Name="E_MobJungleCharlie_Hit" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Hit\E_MobJungleCharlie_Hit"/>
 				<Event Id="850917734" Name="E_Petite_Boite" ObjectPath="\Events\Brian\Coffre\E_Petite_Boite"/>
@@ -1022,6 +1023,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Thunder_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_04_66C02B12.wem</Path>
 				</File>
+				<File Id="17320695" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_01.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Desintegration_01_66C02B12.wem</Path>
+				</File>
 				<File Id="18450333" Language="SFX">
 					<ShortName>HB-SFX-Gardian-HitPlayer_00.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-HitPlayer_00_66C02B12.wem</Path>
@@ -1029,6 +1034,10 @@
 				<File Id="19097474" Language="SFX">
 					<ShortName>SFX_HB_MobjungleCharlie_Dot_Fire_Crackling_05.wav</ShortName>
 					<Path>SFX\SFX_HB_MobjungleCharlie_Dot_Fire_Crackling_05_66C02B12.wem</Path>
+				</File>
+				<File Id="30701032" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_05.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Desintegration_05_66C02B12.wem</Path>
 				</File>
 				<File Id="33959053" Language="SFX">
 					<ShortName>SFX_HB_UI_DenyEffect_Buzz_02.wav</ShortName>
@@ -1682,6 +1691,10 @@
 					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_03.wav</ShortName>
 					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_03_66C02B12.wem</Path>
 				</File>
+				<File Id="304599855" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_06.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Desintegration_06_66C02B12.wem</Path>
+				</File>
 				<File Id="304778144" Language="SFX">
 					<ShortName>HB_SFX_KALI_HIT_05.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_HIT_05_66C02B12.wem</Path>
@@ -2097,6 +2110,10 @@
 				<File Id="455107736" Language="SFX">
 					<ShortName>Grenade_SFX_Ground_Wood_02.wav</ShortName>
 					<Path>SFX\Grenade_SFX_Ground_Wood_02_66C02B12.wem</Path>
+				</File>
+				<File Id="457225260" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_03.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Desintegration_03_66C02B12.wem</Path>
 				</File>
 				<File Id="457581505" Language="SFX">
 					<ShortName>HB_WoodCringe_04.wav</ShortName>
@@ -2970,6 +2987,10 @@
 					<ShortName>FTP_metal_01.wav</ShortName>
 					<Path>SFX\FTP_metal_01_66C02B12.wem</Path>
 				</File>
+				<File Id="818820714" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_02.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Desintegration_02_66C02B12.wem</Path>
+				</File>
 				<File Id="820229064" Language="SFX">
 					<ShortName>VOICE_HB_Bear_UltiShooting_Houhou_01.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiShooting_Houhou_01_10C4C929.wem</Path>
@@ -3389,6 +3410,10 @@
 				<File Id="1028693436" Language="SFX">
 					<ShortName>HB-SFX-Genade-00.wav</ShortName>
 					<Path>SFX\HB-SFX-Genade-00_66C02B12.wem</Path>
+				</File>
+				<File Id="1032428023" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_04.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_Desintegration_04_66C02B12.wem</Path>
 				</File>
 				<File Id="1034128009" Language="SFX">
 					<ShortName>VOICE_HB_Bear_AfterShoot_2-3_YourFaceMyBullets.wav</ShortName>
