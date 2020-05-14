@@ -255,7 +255,6 @@
 							</StateInfo>
 						</Bus>
 						<Bus Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}">
-							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="Acoustics_VOICE_BUS" ID="{D6909AB2-2B1D-4885-B516-56F5EC250DEE}">
 									<ChildrenList>
@@ -370,6 +369,26 @@
 									</ChildrenList>
 								</Bus>
 							</ChildrenList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}"/>
+									<DuckingParam>
+										<Volume>-3</Volume>
+										<FadeInTime>1.5</FadeInTime>
+										<FadeOutTime>0.5</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
+									<DuckingParam>
+										<Volume>-3</Volume>
+										<FadeInTime>1.5</FadeInTime>
+										<FadeOutTime>0.5</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
 						</Bus>
 						<Bus Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}"/>
 					</ChildrenList>
