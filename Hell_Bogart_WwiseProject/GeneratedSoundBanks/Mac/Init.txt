@@ -19,6 +19,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	1646215745	Kali_AttackType_STATE			\Alex\Kali_AttackType_STATE	
 	1892104236	Char_Health_STATE			\Simon\Character\Char_Health_STATE	
 	2069469294	Acoustic_STATE			\Simon\Global\Acoustic_STATE	
+	2133914708	TempDilatation			\Simon\Global\TempDilatation	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
 	2638733338	Music_Kali_Phase_STATE			\Brian\Music\Music_Kali_Phase_STATE	
 	2955909185	IsInPauseMenu_STATE			\Simon\Global\IsInPauseMenu_STATE	
@@ -70,6 +71,9 @@ State	ID	Name	State Group			Notes
 	2213992659	Exterior	Acoustic_STATE			
 	3265560855	Ruines	Acoustic_STATE			
 	4129822198	Boss_Arena	Acoustic_STATE			
+	0	None	TempDilatation			
+	787604482	slow	TempDilatation			
+	1160234136	normal	TempDilatation			
 	0	None	Chamber_Type_STATE			
 	252199009	Spread_60	Chamber_Type_STATE			
 	419409252	Spread_180	Chamber_Type_STATE			
@@ -105,6 +109,7 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	53983401	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Ruines_Reverb_VOICE_AUX		
+	171006256	In_PauseMenu	IsInPauseMenu_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS		
 	199726813	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Boss_Arena_Reverb_VOICE_AUX		
 	227948264	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Boss_Arena_Reverb_VOICE_AUX		
 	253057875	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_BUS\Boss_Arena_Reverb_SFX_AUX		
@@ -113,6 +118,10 @@ Custom State	ID	Name	State Group	Owner		Notes
 	593548003	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_BUS\Ruines_Reverb_SFX_AUX		
 	634032679	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Exterior_Delay_VOICE_AUX		
 	676774401	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Exterior_Delay_VOICE_AUX		
+	690595162	In_PauseMenu	IsInPauseMenu_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS		
+	693720903	slow	TempDilatation	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS		
+	725784089	slow	TempDilatation	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MUS_BUS		
+	795241229	slow	TempDilatation	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS		
 	879075251	In_PauseMenu	IsInPauseMenu_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MUS_BUS		
 	898817968	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_BUS\Boss_Arena_Reverb_SFX_AUX		
 	901687306	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Ruines_Reverb_VOICE_AUX		
