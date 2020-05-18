@@ -37,6 +37,7 @@ State	ID	Name	State Group			Notes
 	1428057472	End_Music	Bridge_Music_STATE			
 	1622949421	Phase_2	Bridge_Music_STATE			
 	1622949422	Phase_1	Bridge_Music_STATE			
+	3767268120	No_Music	Bridge_Music_STATE			
 	4130461444	Begin_Music	Bridge_Music_STATE			
 	0	None	Footstep_Charge			
 	529726532	End	Footstep_Charge			

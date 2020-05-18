@@ -876,13 +876,6 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{17910376-F844-4924-BFEC-BED154D14C32}" ShortID="396362655">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Mus_Bridge_MAIN_SWITCH" ID="{22EC1E07-9954-41C0-B37A-A58D94A07C83}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_Mus_Bridge_GoToPhase1" ID="{E23198FE-C61C-465D-94F4-72A13BDEE57C}">
@@ -922,6 +915,27 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="End_Music" ID="{3A466E4D-077D-4216-B554-EE3DCDF3C5FF}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_Mus_Bridge_Initiate" ID="{33252DEC-794B-4192-B3D3-4895544BA0E7}">
+									<ChildrenList>
+										<Action Name="" ID="{43296248-F8EA-4285-9BB3-C34760CA6B56}" ShortID="341847117">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="No_Music" ID="{675D24E3-C054-48C2-9E47-2EC0AE39CA0F}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F2800118-739A-4264-89A8-DD710FCBEBB1}" ShortID="854592360">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Mus_Bridge_MAIN_SWITCH" ID="{22EC1E07-9954-41C0-B37A-A58D94A07C83}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

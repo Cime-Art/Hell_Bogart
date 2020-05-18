@@ -155,6 +155,7 @@
 						<ObjectRef Name="E_Global_MUSIC_FadeOut" ID="{3BEC8916-856D-40B7-A207-FB2F7A246131}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Global_MUSIC_FadeIn" ID="{B0171ABB-CC5F-40DD-8604-6EC3F8CE374A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Bridge_Begin" ID="{0EBFBCBD-E095-4142-AC92-B52939AADE0A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Mus_Bridge_Initiate" ID="{33252DEC-794B-4192-B3D3-4895544BA0E7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Kali_Phase2" ID="{D3081E59-3D20-427C-9104-58A4BDB66316}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Kali_Transition" ID="{73F76A83-5CF3-4289-AEF2-276A369B4C6D}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_SetExplorationState" ID="{134BEA16-70AF-42BC-BAA0-FD3E12D72846}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
