@@ -3317,7 +3317,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="HB_SFX_ImpactGrenade_1" ID="{DE368230-3461-4F0C-BB03-020BE7BE5346}" ShortID="237398254">
+														<Sound Name="HB_SFX_ImpactGrenade_1" ID="{5699EDAD-64BC-4F83-8BA3-C1CA51DEF78D}" ShortID="435510633">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3327,16 +3327,16 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_1" ID="{98A04F54-C3F0-4C2F-8DED-945B819919E2}" ShortID="113519767">
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_1 (1)" ID="{ECF225F7-5B3C-48FF-BE60-A0D3C6D65138}" ShortID="428839544">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_1.wav</AudioFile>
+																	<AudioFile>HB_SFX_ImpactGrenade_1 (1).wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_1" ID="{98A04F54-C3F0-4C2F-8DED-945B819919E2}" Platform="Linked"/>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_1 (1)" ID="{ECF225F7-5B3C-48FF-BE60-A0D3C6D65138}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_2" ID="{80C46683-E1AD-4930-9767-2ECEE2C8D814}" ShortID="30020058">
+														<Sound Name="HB_SFX_ImpactGrenade_2" ID="{F00C2FCE-3ABF-4973-BD6B-BC3FCE23F016}" ShortID="154898713">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3346,16 +3346,16 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_2" ID="{B8840AAB-DDDF-4376-A999-BF9E5CA073DB}" ShortID="67952844">
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_2 (1)" ID="{6AD2B9BC-63CB-4C6E-8381-949AA389FCEA}" ShortID="549376740">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_2.wav</AudioFile>
+																	<AudioFile>HB_SFX_ImpactGrenade_2 (1).wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_2" ID="{B8840AAB-DDDF-4376-A999-BF9E5CA073DB}" Platform="Linked"/>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_2 (1)" ID="{6AD2B9BC-63CB-4C6E-8381-949AA389FCEA}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_3" ID="{A83B8129-0262-4CC6-A8BE-D6733E00CE55}" ShortID="1066119222">
+														<Sound Name="HB_SFX_ImpactGrenade_3" ID="{831EE707-E896-4E93-BF36-FA3DB2249220}" ShortID="681805740">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3365,16 +3365,16 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_3" ID="{0CDAF853-49FF-4636-887E-34BDB62EE11E}" ShortID="706886597">
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_3 (1)" ID="{6A6C0389-A81E-41FA-B90D-6B03AF7DCD66}" ShortID="940991722">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_3.wav</AudioFile>
+																	<AudioFile>HB_SFX_ImpactGrenade_3 (1).wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_3" ID="{0CDAF853-49FF-4636-887E-34BDB62EE11E}" Platform="Linked"/>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_3 (1)" ID="{6A6C0389-A81E-41FA-B90D-6B03AF7DCD66}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_4" ID="{21CA1D54-249E-4DFA-8B55-BF31D9E03D67}" ShortID="497808878">
+														<Sound Name="HB_SFX_ImpactGrenade_4" ID="{C12427DC-37ED-4ECC-B83F-7FC73A547CAD}" ShortID="706551424">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3384,16 +3384,16 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_4" ID="{8D016FE0-80EE-48E1-A4A9-B7848F752A31}" ShortID="263253723">
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_4 (1)" ID="{3ACDD533-92E8-409A-9080-E0241EC3C923}" ShortID="123962430">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_4.wav</AudioFile>
+																	<AudioFile>HB_SFX_ImpactGrenade_4 (1).wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_4" ID="{8D016FE0-80EE-48E1-A4A9-B7848F752A31}" Platform="Linked"/>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_4 (1)" ID="{3ACDD533-92E8-409A-9080-E0241EC3C923}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_5" ID="{F0876459-58F0-4DDC-B5FC-C4A33BE0A0BA}" ShortID="843958794">
+														<Sound Name="HB_SFX_ImpactGrenade_5" ID="{A9145144-48DB-4381-BDB1-A7BDBBD07B9D}" ShortID="475937736">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3403,16 +3403,16 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_5" ID="{B9784453-E2A4-4AC2-9B00-8BB583D3FC4C}" ShortID="517615606">
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_5 (1)" ID="{3AD0E0C1-3729-4FC4-AA1D-88ACFE88D0AD}" ShortID="85509097">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_5.wav</AudioFile>
+																	<AudioFile>HB_SFX_ImpactGrenade_5 (1).wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_5" ID="{B9784453-E2A4-4AC2-9B00-8BB583D3FC4C}" Platform="Linked"/>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_5 (1)" ID="{3AD0E0C1-3729-4FC4-AA1D-88ACFE88D0AD}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_6" ID="{C279F3AC-CBCB-4B7B-93B4-22E423075774}" ShortID="979024274">
+														<Sound Name="HB_SFX_ImpactGrenade_6" ID="{1C094F3C-ABB9-4CE3-9161-FC9BD7DE97E4}" ShortID="132206414">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3422,13 +3422,13 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_6" ID="{FB455405-2F72-47B8-9C3D-F326AD5E793E}" ShortID="651805665">
+																<AudioFileSource Name="HB_SFX_ImpactGrenade_6 (1)" ID="{2EC19608-F299-4CDB-B188-E8D653B30310}" ShortID="350112094">
 																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_6.wav</AudioFile>
+																	<AudioFile>HB_SFX_ImpactGrenade_6 (1).wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_6" ID="{FB455405-2F72-47B8-9C3D-F326AD5E793E}" Platform="Linked"/>
+																<ActiveSource Name="HB_SFX_ImpactGrenade_6 (1)" ID="{2EC19608-F299-4CDB-B188-E8D653B30310}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
