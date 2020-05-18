@@ -153,6 +153,7 @@
 								<State Name="Phase_1" ID="{ABAAF5E5-2CDD-4FE2-9428-D76699596B9D}"/>
 								<State Name="Phase_2" ID="{A3F081EA-75E4-404A-BF9B-CC890B6BFD91}"/>
 								<State Name="End_Music" ID="{3A466E4D-077D-4216-B554-EE3DCDF3C5FF}"/>
+								<State Name="No_Music" ID="{675D24E3-C054-48C2-9E47-2EC0AE39CA0F}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>

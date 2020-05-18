@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	152472446	E_Mus_TriggerChest			\Simon\Music\Jungle\E_Mus_TriggerChest	
 	156378189	E_Mus_Bridge_GoToPhase2			\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase2	
 	156378190	E_Mus_Bridge_GoToPhase1			\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase1	
+	447361772	E_Mus_Bridge_Initiate			\Simon\Music\Bridge\E_Mus_Bridge_Initiate	
 	849506195	E_Mus_Kali_75			\Brian\Music_Boss\E_Mus_Kali_75	
 	933394352	E_Mus_Kali_25			\Brian\Music_Boss\E_Mus_Kali_25	
 	1031929396	E_Mus_Jungle_End			\Simon\Music\Jungle\E_Mus_Jungle_End	
@@ -39,6 +40,7 @@ State	ID	Name	State Group			Notes
 	1428057472	End_Music	Bridge_Music_STATE			
 	1622949421	Phase_2	Bridge_Music_STATE			
 	1622949422	Phase_1	Bridge_Music_STATE			
+	3767268120	No_Music	Bridge_Music_STATE			
 	4130461444	Begin_Music	Bridge_Music_STATE			
 	0	None	Music_Ruin_STATE			
 	45878617	Ruin_Exploration	Music_Ruin_STATE			

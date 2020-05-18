@@ -306,6 +306,9 @@
 							</StateInfo>
 						</Bus>
 						<Bus Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}">
+							<PropertyList>
+								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Acoustics_VOICE_BUS" ID="{D6909AB2-2B1D-4885-B516-56F5EC250DEE}">
 									<ChildrenList>
@@ -421,6 +424,10 @@
 								</Bus>
 							</ChildrenList>
 							<StateInfo>
+								<StatePropertyList>
+									<Property Name="Lowpass"/>
+									<Property Name="Pitch"/>
+								</StatePropertyList>
 								<StateGroupList>
 									<StateGroupInfo>
 										<StateGroupRef Name="IsInPauseMenu_STATE" ID="{55E0B01A-C453-41AF-B874-EAB6C752182A}"/>
