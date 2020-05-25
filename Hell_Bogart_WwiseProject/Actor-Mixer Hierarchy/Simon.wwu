@@ -188,9 +188,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="SFX_HB_GroundSwitch_Klonk" ID="{89114DF9-63D5-4563-A6E6-DAC982660711}" ShortID="982895792">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="7.72688356164384E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.105736301369863"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.573416095890409"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.382277397260272"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_HB_GroundSwitch_Klonk.wav</AudioFile>
@@ -11299,7 +11299,7 @@
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-7.5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
