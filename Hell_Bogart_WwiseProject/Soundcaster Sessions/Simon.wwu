@@ -229,12 +229,12 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="normal" ID="{CBF3AD21-3794-465E-A4F8-F097A7B1B724}"/>
+						<CurrentStateRef Name="None" ID="{1CA5B48B-F0FC-4591-ACD6-AE98FA1679C0}"/>
 						<CurrentStateRef Name="None" ID="{01EE7C62-5AF8-43A5-857B-EC55BB689B66}"/>
 						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
 						<CurrentStateRef Name="None" ID="{04CE5BAF-8754-4B51-9EF3-1C8F06557891}"/>
 						<CurrentStateRef Name="None" ID="{DDB325A8-6659-429B-8BB7-D0E9039660E8}"/>
-						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
+						<CurrentStateRef Name="None" ID="{711F642A-D061-406A-A43C-7DFCFA603C38}"/>
 						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
 						<CurrentStateRef Name="None" ID="{3B572813-6BBA-41E5-8279-A33F75C29FF9}"/>
 						<CurrentStateRef Name="None" ID="{9B0A7F4C-EC6C-4D50-B4F9-C44A88277C9E}"/>
@@ -243,7 +243,7 @@
 						<CurrentStateRef Name="None" ID="{30A3D9E3-6882-49DA-AB16-3D053D3CAAB5}"/>
 						<CurrentStateRef Name="None" ID="{A062BEF1-9176-42B0-96D8-9A8B90BBB40C}"/>
 						<CurrentStateRef Name="None" ID="{513033F6-C1BC-4896-8DE5-A53FA48880AB}"/>
-						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+						<CurrentStateRef Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
 						<CurrentStateRef Name="None" ID="{AEAC5A91-B72F-44A1-9026-C89B1E68E264}"/>
 						<CurrentStateRef Name="None" ID="{99508074-D0B5-4286-8BF2-BD358242ADBE}"/>
 					</CurrentStateList>

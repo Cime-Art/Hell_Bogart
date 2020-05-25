@@ -3689,6 +3689,7 @@
 														<Value>4</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="OverridePriority" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -3728,6 +3729,19 @@
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{90143244-78A3-497A-A502-58BA78A4D2BB}" ShortID="912264229" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand2" Type="Real32" Value="419"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="892"/>
+																<Property Name="GainBand2" Type="Real32" Value="-12"/>
+																<Property Name="GainBand3" Type="Real32" Value="6"/>
+																<Property Name="QFactorBand2" Type="Real32" Value="2"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>

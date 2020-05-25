@@ -112,7 +112,7 @@
 												<Action Name="" ID="{8911BDBB-55DB-4722-9E6E-42304FBB70B3}" ShortID="302603654">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Iddle_MobJungleCharlie_Voice_SEQ" ID="{66C0A785-2861-4147-851F-CD1DC426EDBF}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+															<ObjectRef Name="Iddle_MobJungleCharlie_SEQ" ID="{CEF368F9-F5FA-46E7-9013-EE709C5D8278}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

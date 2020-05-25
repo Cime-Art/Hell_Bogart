@@ -257,6 +257,9 @@ Custom State	ID	Name	State Group	Owner		Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	4095840129	Firing_Rate_GP			\Simon\Character\Shotgun\Firing_Rate_GP	
 
+Effect plug-ins	ID	Name	Type				Notes
+	912264229	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	27802617	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\Voices Global\Kali Bear Interactions\Grab\Kali_Speech_Grab_RND\No_Speech_Kali_Grab\Wwise Silence	
 	31875089	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\Voices Global\Bear Voice\Against Charlie\Bear_Speech_Endfight_RND\No_Speech_EndFight\Wwise Silence	
@@ -271,6 +274,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	428473403	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\Voices Global\Kali Bear Interactions\Before Big Attack\Before Big Attack RDN\No_Speech_Kali_BeforeBigAttack\Wwise Silence	
 	472964278	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\Voices Global\Kali Bear Interactions\Random Voice Lines\KaliBear_Speech_Random_SEQ_LOOP\No_Speech_KaliBear_Random\Wwise Silence	
 	597886035	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Reload_SEQ\Drop_Shell_SWITCH\Silence\Wwise Silence	
+	621608583	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\SFX Simon\Mob Jungle Charlie\Iddle\Iddle_MobJungleCharlie_SEQ\Silence\Wwise Silence	
 	744030259	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Heartbeat\Heartbeat_Fast_SEQ\Silence_HeartbeatFast\Wwise Silence	
 	752133274	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\Voices Global\Bear Voice\Losing Life\Bear_Speech_LosingLife_RND\No_Speech_LosingLife\Wwise Silence	
 	926351302	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Simon\Voices Global\Bear Voice\Against Charlie\Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT\Bear_Speech_AgainstCharlie_EngageFight_RND\No_Speech_AgainstCharlie_EngageFight\Wwise Silence	
