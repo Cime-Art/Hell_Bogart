@@ -2086,13 +2086,13 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Standar_Ammo" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+															<ObjectRef Name="Regular_Ammo" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="AMMO_type" ID="{BA35DEFC-0656-4AEE-A58C-4EEC74B0CE97}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+															<ObjectRef Name="Pickup_Ammo_Rarity_SWITCH" ID="{BA35DEFC-0656-4AEE-A58C-4EEC74B0CE97}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2478,14 +2478,14 @@
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
-																<SwitchRef Name="Standar_Ammo" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}"/>
+																<SwitchRef Name="Regular_Ammo" ID="{B775C10A-7ECE-46F1-BC66-491345E893D5}"/>
 																<ItemList>
 																	<ItemRef Name="RND_SFX_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}"/>
 																	<ItemRef Name="RND_SFX_Pickup" ID="{AC794043-9DDF-4F8D-870B-2F9A80DCC111}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Epic_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+																<SwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 																<ItemList>
 																	<ItemRef Name="RND_SFX_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}"/>
 																	<ItemRef Name="RDN_SFX_Legendary" ID="{EA3FAC55-8C6B-455D-BC79-2E1C4DD50323}"/>
@@ -2493,7 +2493,7 @@
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Rare_Ammo" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
+																<SwitchRef Name="Epic_Ammo" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
 																<ItemList>
 																	<ItemRef Name="RND_SFX_standar" ID="{5CE32ADF-CACE-426D-9E06-68E3D5A3E177}"/>
 																	<ItemRef Name="RND_SFX_Rare" ID="{849BEEF9-A6AF-464D-9E41-0E2FD1E21762}"/>
@@ -2538,13 +2538,13 @@
 															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Standar_Pick" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+															<ObjectRef Name="Regular_Other" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="PickUP_type" ID="{DEBCC2DF-83A9-4206-B1CB-4C169460F450}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
+															<ObjectRef Name="Pickup_Other_Rarity_SWITCH" ID="{DEBCC2DF-83A9-4206-B1CB-4C169460F450}" WorkUnitID="{D2E4DC98-FECC-4D6C-9BC3-B5598F7AB8E7}"/>
 														</Reference>
 														<Reference Name="UserAuxSend0">
 															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -2855,21 +2855,21 @@
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
-																<SwitchRef Name="RARE_Pick" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
+																<SwitchRef Name="Epic_Other" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
 																<ItemList>
 																	<ItemRef Name="RND_SFX_Pickup_" ID="{2E154A8B-F5A3-4362-A14C-4DAE362EC5FC}"/>
 																	<ItemRef Name="RND_SFX_Rare" ID="{80262840-7BEB-47ED-8FD6-7B9409F8C080}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+																<SwitchRef Name="Legendary_Other" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 																<ItemList>
 																	<ItemRef Name="RND_SFX_Pickup_" ID="{2E154A8B-F5A3-4362-A14C-4DAE362EC5FC}"/>
 																	<ItemRef Name="RDN_SFX_Legendary" ID="{506B8CFF-B98D-4233-A88A-EDFA14CADFD0}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Standar_Pick" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
+																<SwitchRef Name="Regular_Other" ID="{244BCFCF-2BD3-4109-AD8B-D87695E8B62D}"/>
 																<ItemList>
 																	<ItemRef Name="RND_SFX_Pickup_" ID="{2E154A8B-F5A3-4362-A14C-4DAE362EC5FC}"/>
 																</ItemList>

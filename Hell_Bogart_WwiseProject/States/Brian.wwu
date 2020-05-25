@@ -9,7 +9,7 @@
 			<ChildrenList>
 				<Folder Name="Grenade" ID="{B1D618B2-39D1-4949-9F5A-2583FAC39355}" ShortID="366745188">
 					<ChildrenList>
-						<StateGroup Name="Element" ID="{127802BB-8D2B-4686-824E-EE1E762107B9}">
+						<StateGroup Name="Equiped_Grenade_Type_STATE" ID="{127802BB-8D2B-4686-824E-EE1E762107B9}">
 							<ChildrenList>
 								<State Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
 								<State Name="Fire" ID="{B0A5DC31-2D63-455C-9EE3-E19F3029E000}"/>
