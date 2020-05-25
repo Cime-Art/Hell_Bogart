@@ -110,7 +110,6 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	53983401	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Ruines_Reverb_VOICE_AUX		
-	171006256	In_PauseMenu	IsInPauseMenu_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS		
 	199726813	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Boss_Arena_Reverb_VOICE_AUX		
 	227948264	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Boss_Arena_Reverb_VOICE_AUX		
 	253057875	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_BUS\Boss_Arena_Reverb_SFX_AUX		
@@ -119,11 +118,8 @@ Custom State	ID	Name	State Group	Owner		Notes
 	593548003	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_BUS\Ruines_Reverb_SFX_AUX		
 	634032679	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Exterior_Delay_VOICE_AUX		
 	676774401	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Exterior_Delay_VOICE_AUX		
-	690595162	In_PauseMenu	IsInPauseMenu_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS		
 	693720903	slow	TempDilatation	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS		
-	725784089	slow	TempDilatation	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MUS_BUS		
 	795241229	slow	TempDilatation	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS		
-	879075251	In_PauseMenu	IsInPauseMenu_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MUS_BUS		
 	898817968	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_BUS\Boss_Arena_Reverb_SFX_AUX		
 	901687306	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_BUS\Ruines_Reverb_VOICE_AUX		
 	929591680	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_BUS\Ruines_Reverb_SFX_AUX		

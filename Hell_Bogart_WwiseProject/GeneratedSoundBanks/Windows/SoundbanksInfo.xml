@@ -905,6 +905,8 @@
 				<Event Id="574868710" Name="E_Global_SetOutPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetOutPauseMenu"/>
 				<Event Id="2509479530" Name="E_Global_SFXVOICE_FadeIn" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeIn"/>
 				<Event Id="4233919301" Name="E_Global_SFXVOICE_FadeOut" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeOut"/>
+				<Event Id="2197374297" Name="E_Global_TimeDilatation_Off" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_TimeDilatation_Off"/>
+				<Event Id="3233130797" Name="E_Global_TimeDilatation_On" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_TimeDilatation_On"/>
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
@@ -955,7 +957,16 @@
 				<Event Id="212888376" Name="E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_DuringFight_STOP_LOOP"/>
 				<Event Id="1044613943" Name="E_Speech_Bear_AgainstCharlie_EndFight_SetExplo" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_EndFight_SetExplo"/>
 				<Event Id="2655041407" Name="E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\AgainstCharlie\E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY"/>
+				<Event Id="2431207348" Name="E_Speech_Bear_Beuar" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_Beuar"/>
+				<Event Id="1916725238" Name="E_Speech_Bear_BossSecondeHealthBar" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_BossSecondeHealthBar"/>
+				<Event Id="2380953084" Name="E_Speech_Bear_BrickInTheWall" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_BrickInTheWall"/>
+				<Event Id="2572423430" Name="E_Speech_Bear_BridgeFight" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_BridgeFight"/>
+				<Event Id="1386471086" Name="E_Speech_Bear_CrashZone_1" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_CrashZone_1"/>
+				<Event Id="1386471085" Name="E_Speech_Bear_CrashZone_2" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_CrashZone_2"/>
 				<Event Id="2245991475" Name="E_Speech_Bear_Death" ObjectPath="\Events\Simon\Voice\Bear\Death\E_Speech_Bear_Death"/>
+				<Event Id="2660447742" Name="E_Speech_Bear_DocsCorpse" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_DocsCorpse"/>
+				<Event Id="1983623934" Name="E_Speech_Bear_Ending" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_Ending"/>
+				<Event Id="2424670666" Name="E_Speech_Bear_EnteringRuins" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_EnteringRuins"/>
 				<Event Id="4231375772" Name="E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY"/>
 				<Event Id="2359215024" Name="E_Speech_Bear_EXPLO_Random_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_LOOP"/>
 				<Event Id="2025380871" Name="E_Speech_Bear_EXPLO_Random_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_STOP_LOOP"/>
@@ -963,7 +974,9 @@
 				<Event Id="4064144418" Name="E_Speech_Bear_Loot_Legendary_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\Loot\E_Speech_Bear_Loot_Legendary_PRIORITY"/>
 				<Event Id="3031028797" Name="E_Speech_Bear_Loot_Normal" ObjectPath="\Events\Simon\Voice\Bear\Loot\E_Speech_Bear_Loot_Normal"/>
 				<Event Id="1655997511" Name="E_Speech_Bear_LosingLife" ObjectPath="\Events\Simon\Voice\Bear\LoosingLife\E_Speech_Bear_LosingLife"/>
+				<Event Id="3948817919" Name="E_Speech_Bear_RockHit" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_RockHit"/>
 				<Event Id="2823582986" Name="E_Speech_Bear_RollingRockShit_PRIORITY" ObjectPath="\Events\Simon\Voice\Bear\EXPLO\E_Speech_Bear_RollingRockShit_PRIORITY"/>
+				<Event Id="2263673887" Name="E_Speech_Bear_StoneGuardian" ObjectPath="\Events\Simon\Voice\Bear\Special Lines\E_Speech_Bear_StoneGuardian"/>
 				<Event Id="881475495" Name="E_Speech_Bear_Ulti_Boss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_Boss_Starter"/>
 				<Event Id="3970556566" Name="E_Speech_Bear_Ulti_NoBoss_Starter" ObjectPath="\Events\Simon\Voice\Bear\Ulti\E_Speech_Bear_Ulti_NoBoss_Starter"/>
 				<Event Id="3244386490" Name="E_Speech_Kali_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Attack"/>
@@ -1174,6 +1187,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Exploded_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Exploded_02_66C02B12.wem</Path>
 				</File>
+				<File Id="86919969" Language="SFX">
+					<ShortName>VOICE_HB_Bear_BossSecondeHealthBar.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_BossSecondeHealthBar_10C4C929.wem</Path>
+				</File>
 				<File Id="89815110" Language="SFX">
 					<ShortName>HB-SFX-Genade-02.wav</ShortName>
 					<Path>SFX\HB-SFX-Genade-02_66C02B12.wem</Path>
@@ -1245,6 +1262,10 @@
 				<File Id="115950250" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_4_ExtraHaha.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_RC_4_ExtraHaha_10C4C929.wem</Path>
+				</File>
+				<File Id="122922419" Language="SFX">
+					<ShortName>VOICE_HB_Bear_CrashZone_2.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_CrashZone_2_10C4C929.wem</Path>
 				</File>
 				<File Id="123138846" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_5-3_NeedAPlan.wav</ShortName>
@@ -1425,6 +1446,10 @@
 				<File Id="175927279" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_IceAmmo_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_IceAmmo_01_66C02B12.wem</Path>
+				</File>
+				<File Id="177090906" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Beuar.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Beuar_10C4C929.wem</Path>
 				</File>
 				<File Id="178280742" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_07.wav</ShortName>
@@ -2002,6 +2027,10 @@
 					<ShortName>SFX_HB_GrosTroncImpacte_V2.wav</ShortName>
 					<Path>SFX\SFX_HB_GrosTroncImpacte_V2_66C02B12.wem</Path>
 				</File>
+				<File Id="390235417" Language="SFX">
+					<ShortName>VOICE_HB_Bear_StoneGuardian.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_StoneGuardian_10C4C929.wem</Path>
+				</File>
 				<File Id="390600002" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_MecaImpact_03.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_SpikeTrap_MecaImpact_03_66C02B12.wem</Path>
@@ -2117,6 +2146,10 @@
 				<File Id="431303083" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_StartDropShell_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_StartDropShell_03_66C02B12.wem</Path>
+				</File>
+				<File Id="431812565" Language="SFX">
+					<ShortName>VOICE_HB_Bear_RockHit.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_RockHit_10C4C929.wem</Path>
 				</File>
 				<File Id="432770256" Language="SFX">
 					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_00.wav</ShortName>
@@ -2334,6 +2367,10 @@
 					<ShortName>FTP_boue_02.wav</ShortName>
 					<Path>SFX\FTP_boue_02_66C02B12.wem</Path>
 				</File>
+				<File Id="511936340" Language="SFX">
+					<ShortName>VOICE_HB_Bear_DocsCorpse.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_DocsCorpse_10C4C929.wem</Path>
+				</File>
 				<File Id="515025119" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_04_66C02B12.wem</Path>
@@ -2462,6 +2499,10 @@
 					<ShortName>Shell_Concrete_05.wav</ShortName>
 					<Path>SFX\Shell_Concrete_05_66C02B12.wem</Path>
 				</File>
+				<File Id="561196504" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Drinking.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Drinking_10C4C929.wem</Path>
+				</File>
 				<File Id="561276187" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LifeLost90_2_LuckNotSkill.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LifeLost90_2_LuckNotSkill_10C4C929.wem</Path>
@@ -2510,9 +2551,17 @@
 					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_05.wav</ShortName>
 					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_05_66C02B12.wem</Path>
 				</File>
+				<File Id="573204000" Language="SFX">
+					<ShortName>VOICE_HB_Bear_Ending.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_Ending_10C4C929.wem</Path>
+				</File>
 				<File Id="574396265" Language="SFX">
 					<ShortName>HB_Kali_Grab_end_03.wav</ShortName>
 					<Path>SFX\HB_Kali_Grab_end_03_66C02B12.wem</Path>
+				</File>
+				<File Id="577510002" Language="SFX">
+					<ShortName>VOICE_HB_Bear_BrickInTheWall.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_BrickInTheWall_10C4C929.wem</Path>
 				</File>
 				<File Id="579166449" Language="SFX">
 					<ShortName>laugh1.WAV</ShortName>
@@ -2541,6 +2590,10 @@
 				<File Id="584699736" Language="SFX">
 					<ShortName>SFX_HB_CaisseExplosive_00.wav</ShortName>
 					<Path>SFX\SFX_HB_CaisseExplosive_00_66C02B12.wem</Path>
+				</File>
+				<File Id="584887747" Language="SFX">
+					<ShortName>VOICE_HB_Bear_EnteringRuins.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_EnteringRuins_10C4C929.wem</Path>
 				</File>
 				<File Id="585423988" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_03.wav</ShortName>
@@ -3158,6 +3211,10 @@
 					<ShortName>VOICE_HB_Bear_FirstEncounter_5.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_FirstEncounter_5_10C4C929.wem</Path>
 				</File>
+				<File Id="858882433" Language="SFX">
+					<ShortName>SFX_HB_Amb_LowTimeDilatation.wav</ShortName>
+					<Path>SFX\SFX_HB_Amb_LowTimeDilatation_D79FB2B7.wem</Path>
+				</File>
 				<File Id="862182120" Language="SFX">
 					<ShortName>HB_WoodCringe_03.wav</ShortName>
 					<Path>SFX\HB_WoodCringe_03_47A4618C.wem</Path>
@@ -3270,6 +3327,10 @@
 					<ShortName>VOICE_HB_Bear_Bark_07.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bark_07_10C4C929.wem</Path>
 				</File>
+				<File Id="919070175" Language="SFX">
+					<ShortName>VOICE_HB_Bear_BridgeFight.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_BridgeFight_10C4C929.wem</Path>
+				</File>
 				<File Id="919466806" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LootLegendary_3.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LootLegendary_3_10C4C929.wem</Path>
@@ -3381,6 +3442,10 @@
 				<File Id="975625654" Language="SFX">
 					<ShortName>HB_SFX_KALI_HIT_07.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_HIT_07_66C02B12.wem</Path>
+				</File>
+				<File Id="976699597" Language="SFX">
+					<ShortName>VOICE_HB_Bear_CrashZone_1.wav</ShortName>
+					<Path>SFX\VOICE_HB_Bear_CrashZone_1_10C4C929.wem</Path>
 				</File>
 				<File Id="978071521" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-01.wav</ShortName>
