@@ -3276,14 +3276,6 @@
 								<AudioNodeRef Name="MUS_Boss_Transition" ID="{971264A8-B71B-48FE-B87A-212BA179BDDB}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Kali_Phase2" ID="{156D730F-C86B-469A-BA6F-A1E97F137A77}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="MUS_Boss_Phase2" ID="{1ECAD069-0170-4536-A5B5-7AE1A7659E89}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
 					</EntryList>
 				</MusicSwitchContainer>
 			</ChildrenList>

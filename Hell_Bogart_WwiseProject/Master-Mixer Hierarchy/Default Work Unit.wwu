@@ -269,6 +269,9 @@
 								</Bus>
 							</ChildrenList>
 							<StateInfo>
+								<StatePropertyList>
+									<Property Name="Lowpass"/>
+								</StatePropertyList>
 								<StateGroupList>
 									<StateGroupInfo>
 										<StateGroupRef Name="IsInPauseMenu_STATE" ID="{55E0B01A-C453-41AF-B874-EAB6C752182A}"/>
@@ -298,7 +301,7 @@
 										<StateRef Name="slow" ID="{8C60F85A-74B1-497B-8892-4EA74289AED5}"/>
 										<CustomState Name="" ID="{9B2A65E8-AF34-4D03-AAB3-F79E47794B3B}" ShortID="725784089">
 											<PropertyList>
-												<Property Name="Pitch" Type="int32" Value="-1300"/>
+												<Property Name="Lowpass" Type="int16" Value="70"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>

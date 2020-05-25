@@ -26,16 +26,12 @@
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_KaliBoss_GrandEND" ID="{54295308-C493-438F-B3D0-801F61477249}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
+							<ObjectRef Name="E_KaliBoss_GrabEnd" ID="{54295308-C493-438F-B3D0-801F61477249}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
 							<Position X="3" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_KaliBoss_Impact" ID="{D6C314B3-C9DB-49F7-B7D8-13DB53F2167E}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
 							<Position X="4" Y="3"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="E_KaliBoss_Whirlwind" ID="{E78BF0CF-91F1-4853-963A-272A481451CC}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
-							<Position X="4" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_KaliBoss_Jump" ID="{7A8CC6AE-6E9A-4D97-AB22-D45CF58F7417}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>

@@ -88,6 +88,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Char_Impact_Grenade" ID="{FCF4A756-8F7D-409F-B340-3D8F829B3B72}">
+							<ChildrenList>
+								<Action Name="" ID="{1C411380-8DEB-4FCB-8B5B-4FAA5745587F}" ShortID="121783502">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Impact_Grenade" ID="{B0B79B4D-5638-4174-9970-50BABC3E399A}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{0E1AB6DB-6E19-4EF1-8B50-B136E7CF3931}" ShortID="380634297">

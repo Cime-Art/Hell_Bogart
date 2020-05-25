@@ -216,7 +216,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2256,6 +2256,275 @@
 														</GroupingList>
 													</GroupingInfo>
 												</SwitchContainer>
+												<RandomSequenceContainer Name="Foley_RND" ID="{9148D01B-7ED1-4C7F-B641-7BBA9C11AC6C}" ShortID="115672354">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="7"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-22</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_SFX_Foley_1" ID="{37C38F74-B345-47C5-8BB4-4CD20955A171}" ShortID="120883385">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_1" ID="{DA33B2F1-3932-4107-B0E3-42188AF82B07}" ShortID="707658214">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.00875966825086E-02"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_1" ID="{DA33B2F1-3932-4107-B0E3-42188AF82B07}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_Foley_2" ID="{2757DB63-C8FD-47B7-AAC0-2D2FEEAFB150}" ShortID="854423441">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_2" ID="{3A97D92E-43F5-4DCA-A4C7-C63AEAFA33CE}" ShortID="382670636">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="4.15948342807443E-03"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.57887972540614E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_2" ID="{3A97D92E-43F5-4DCA-A4C7-C63AEAFA33CE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_Foley_3" ID="{E59F7AB7-EF70-4684-9807-910704E68C65}" ShortID="679265571">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_3" ID="{7AFC9168-3EB9-4858-839E-4FED751A3F7A}" ShortID="320571513">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.62302363867922E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="5.31171372658653E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_3" ID="{7AFC9168-3EB9-4858-839E-4FED751A3F7A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_Foley_4" ID="{1BDCD651-F49B-4542-9C24-4F30194E0704}" ShortID="770908089">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_4" ID="{9E8C600D-AE05-4F68-920A-78441C5A25D4}" ShortID="1065164990">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.18620507563756E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="5.20105302394931E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_4.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_4" ID="{9E8C600D-AE05-4F68-920A-78441C5A25D4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_Foley_5" ID="{D18B98CC-77F7-46F3-97BB-18FE313E3F04}" ShortID="70001757">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_5" ID="{DB1F086F-3779-4F71-90F0-296BD7D77503}" ShortID="718550392">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.02506756127108E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="3.44795452427547E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_5.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_5" ID="{DB1F086F-3779-4F71-90F0-296BD7D77503}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_Foley_6" ID="{1BE6D6B9-6B3F-43DA-9E8B-68119A75836F}" ShortID="489042013">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_6" ID="{8314055D-9882-4950-A755-BC1EFFB878C5}" ShortID="196406919">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="5.10980647966949E-03"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.38694747305315E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_6.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_6" ID="{8314055D-9882-4950-A755-BC1EFFB878C5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_Foley_7" ID="{2526AECD-691E-4DC5-A8D7-DE66A25487D4}" ShortID="606311799">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_7" ID="{222A4747-7305-41BC-87F3-47C4B59A62E2}" ShortID="102112840">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="7.12887894883981E-03"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="3.08918087783058E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_7.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_7" ID="{222A4747-7305-41BC-87F3-47C4B59A62E2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_Foley_8" ID="{76E19CBD-E55C-4F2A-9D82-456FE6CE083F}" ShortID="641804403">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_8" ID="{2AC1CCF1-BC59-4021-9661-A5D565C34E6B}" ShortID="764313955">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="5.31171372658653E-03"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.18370453204113E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_8.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_8" ID="{2AC1CCF1-BC59-4021-9661-A5D565C34E6B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_Foley_9" ID="{E9F3AE5F-8A38-4287-BF74-4D0C1FC7AE52}" ShortID="339033681">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_9" ID="{1209776B-9471-40AB-A87C-08D0B6C5491E}" ShortID="864790076">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.34811915633833E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="3.08141521448762E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_9.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_9" ID="{1209776B-9471-40AB-A87C-08D0B6C5491E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_Foley_10" ID="{50B322CE-8AA3-42F8-A1F4-B7D2C7771BAC}" ShortID="389258675">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_Foley_10" ID="{8E748BDC-6C20-4286-AD35-D90C2CECCAD0}" ShortID="610024286">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_Foley_10.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_Foley_10" ID="{8E748BDC-6C20-4286-AD35-D90C2CECCAD0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
@@ -2782,275 +3051,6 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Foley_RND" ID="{9148D01B-7ED1-4C7F-B641-7BBA9C11AC6C}" ShortID="115672354">
-													<PropertyList>
-														<Property Name="Highpass" Type="int16">
-															<ValueList>
-																<Value>12</Value>
-															</ValueList>
-														</Property>
-														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="7"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-3</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend1">
-															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend2">
-															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="HB_SFX_Foley_1" ID="{37C38F74-B345-47C5-8BB4-4CD20955A171}" ShortID="120883385">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_1" ID="{DA33B2F1-3932-4107-B0E3-42188AF82B07}" ShortID="707658214">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="1.00875966825086E-02"/>
-																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_1.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_1" ID="{DA33B2F1-3932-4107-B0E3-42188AF82B07}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_Foley_2" ID="{2757DB63-C8FD-47B7-AAC0-2D2FEEAFB150}" ShortID="854423441">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_2" ID="{3A97D92E-43F5-4DCA-A4C7-C63AEAFA33CE}" ShortID="382670636">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="4.15948342807443E-03"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="2.57887972540614E-02"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_2.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_2" ID="{3A97D92E-43F5-4DCA-A4C7-C63AEAFA33CE}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_Foley_3" ID="{E59F7AB7-EF70-4684-9807-910704E68C65}" ShortID="679265571">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_3" ID="{7AFC9168-3EB9-4858-839E-4FED751A3F7A}" ShortID="320571513">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="1.62302363867922E-02"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="5.31171372658653E-02"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_3.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_3" ID="{7AFC9168-3EB9-4858-839E-4FED751A3F7A}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_Foley_4" ID="{1BDCD651-F49B-4542-9C24-4F30194E0704}" ShortID="770908089">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_4" ID="{9E8C600D-AE05-4F68-920A-78441C5A25D4}" ShortID="1065164990">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="1.18620507563756E-02"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="5.20105302394931E-02"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_4.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_4" ID="{9E8C600D-AE05-4F68-920A-78441C5A25D4}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_Foley_5" ID="{D18B98CC-77F7-46F3-97BB-18FE313E3F04}" ShortID="70001757">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_5" ID="{DB1F086F-3779-4F71-90F0-296BD7D77503}" ShortID="718550392">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="1.02506756127108E-02"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="3.44795452427547E-02"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_5.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_5" ID="{DB1F086F-3779-4F71-90F0-296BD7D77503}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_Foley_6" ID="{1BE6D6B9-6B3F-43DA-9E8B-68119A75836F}" ShortID="489042013">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_6" ID="{8314055D-9882-4950-A755-BC1EFFB878C5}" ShortID="196406919">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="5.10980647966949E-03"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="1.38694747305315E-02"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_6.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_6" ID="{8314055D-9882-4950-A755-BC1EFFB878C5}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_Foley_7" ID="{2526AECD-691E-4DC5-A8D7-DE66A25487D4}" ShortID="606311799">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_7" ID="{222A4747-7305-41BC-87F3-47C4B59A62E2}" ShortID="102112840">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="7.12887894883981E-03"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="3.08918087783058E-02"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_7.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_7" ID="{222A4747-7305-41BC-87F3-47C4B59A62E2}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_Foley_8" ID="{76E19CBD-E55C-4F2A-9D82-456FE6CE083F}" ShortID="641804403">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_8" ID="{2AC1CCF1-BC59-4021-9661-A5D565C34E6B}" ShortID="764313955">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="5.31171372658653E-03"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="2.18370453204113E-02"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_8.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_8" ID="{2AC1CCF1-BC59-4021-9661-A5D565C34E6B}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_Foley_9" ID="{E9F3AE5F-8A38-4287-BF74-4D0C1FC7AE52}" ShortID="339033681">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_9" ID="{1209776B-9471-40AB-A87C-08D0B6C5491E}" ShortID="864790076">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="1.34811915633833E-02"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="3.08141521448762E-02"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_9.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_9" ID="{1209776B-9471-40AB-A87C-08D0B6C5491E}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_Foley_10" ID="{50B322CE-8AA3-42F8-A1F4-B7D2C7771BAC}" ShortID="389258675">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_Foley_10" ID="{8E748BDC-6C20-4286-AD35-D90C2CECCAD0}" ShortID="610024286">
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_Foley_10.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_Foley_10" ID="{8E748BDC-6C20-4286-AD35-D90C2CECCAD0}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="Foley_Gaitling" ID="{836D3997-AC5A-4FE5-AF55-27A314A4C1E2}" ShortID="330442213">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
@@ -3252,6 +3252,13 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_FoleyGrenade_1" ID="{45EEE7A8-BEB8-498B-977C-34B68D9345A7}" ShortID="406393532">
+																	<PropertyList>
+																		<Property Name="VolumeOffset" Type="Real64">
+																			<ValueList>
+																				<Value>3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_FoleyGrenade_1.wav</AudioFile>
 																</AudioFileSource>
@@ -3271,6 +3278,13 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_FoleyGrenade_2" ID="{998A2245-8B28-4984-996C-6784792017CE}" ShortID="217476674">
+																	<PropertyList>
+																		<Property Name="VolumeOffset" Type="Real64">
+																			<ValueList>
+																				<Value>3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_FoleyGrenade_2.wav</AudioFile>
 																</AudioFileSource>
@@ -3290,145 +3304,19 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="HB_SFX_FoleyGrenade_3" ID="{84FF312C-113B-4AB4-B544-7C728567539F}" ShortID="702648119">
+																	<PropertyList>
+																		<Property Name="VolumeOffset" Type="Real64">
+																			<ValueList>
+																				<Value>3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>HB_SFX_FoleyGrenade_3.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
 																<ActiveSource Name="HB_SFX_FoleyGrenade_3" ID="{84FF312C-113B-4AB4-B544-7C728567539F}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Impact_Grenade" ID="{B0B79B4D-5638-4174-9970-50BABC3E399A}" ShortID="163577315">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>12</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="HB_SFX_ImpactGrenade_1" ID="{5699EDAD-64BC-4F83-8BA3-C1CA51DEF78D}" ShortID="435510633">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_1 (1)" ID="{ECF225F7-5B3C-48FF-BE60-A0D3C6D65138}" ShortID="428839544">
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_1 (1).wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_1 (1)" ID="{ECF225F7-5B3C-48FF-BE60-A0D3C6D65138}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_2" ID="{F00C2FCE-3ABF-4973-BD6B-BC3FCE23F016}" ShortID="154898713">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_2 (1)" ID="{6AD2B9BC-63CB-4C6E-8381-949AA389FCEA}" ShortID="549376740">
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_2 (1).wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_2 (1)" ID="{6AD2B9BC-63CB-4C6E-8381-949AA389FCEA}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_3" ID="{831EE707-E896-4E93-BF36-FA3DB2249220}" ShortID="681805740">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_3 (1)" ID="{6A6C0389-A81E-41FA-B90D-6B03AF7DCD66}" ShortID="940991722">
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_3 (1).wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_3 (1)" ID="{6A6C0389-A81E-41FA-B90D-6B03AF7DCD66}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_4" ID="{C12427DC-37ED-4ECC-B83F-7FC73A547CAD}" ShortID="706551424">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_4 (1)" ID="{3ACDD533-92E8-409A-9080-E0241EC3C923}" ShortID="123962430">
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_4 (1).wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_4 (1)" ID="{3ACDD533-92E8-409A-9080-E0241EC3C923}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_5" ID="{A9145144-48DB-4381-BDB1-A7BDBBD07B9D}" ShortID="475937736">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_5 (1)" ID="{3AD0E0C1-3729-4FC4-AA1D-88ACFE88D0AD}" ShortID="85509097">
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_5 (1).wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_5 (1)" ID="{3AD0E0C1-3729-4FC4-AA1D-88ACFE88D0AD}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="HB_SFX_ImpactGrenade_6" ID="{1C094F3C-ABB9-4CE3-9161-FC9BD7DE97E4}" ShortID="132206414">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="HB_SFX_ImpactGrenade_6 (1)" ID="{2EC19608-F299-4CDB-B188-E8D653B30310}" ShortID="350112094">
-																	<Language>SFX</Language>
-																	<AudioFile>HB_SFX_ImpactGrenade_6 (1).wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="HB_SFX_ImpactGrenade_6 (1)" ID="{2EC19608-F299-4CDB-B188-E8D653B30310}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
