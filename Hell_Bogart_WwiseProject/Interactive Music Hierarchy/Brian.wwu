@@ -769,6 +769,11 @@
 						<MusicPlaylistContainer Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" ShortID="359888686">
 							<PropertyList>
 								<Property Name="Tempo" Type="Real64" Value="90"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1584,7 +1589,7 @@
 								<Property Name="Tempo" Type="Real64" Value="90"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-20</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2047,7 +2052,7 @@
 								<Property Name="Tempo" Type="Real64" Value="90"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-20</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

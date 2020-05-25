@@ -1273,7 +1273,7 @@
 				</File>
 				<File Id="123962430" Language="SFX">
 					<ShortName>HB_SFX_ImpactGrenade_4 (1).wav</ShortName>
-					<Path>SFX\HB_SFX_ImpactGrenade_4 (1)_6CF772BE.wem</Path>
+					<Path>SFX\HB_SFX_ImpactGrenade_4 (1)_743787BA.wem</Path>
 				</File>
 				<File Id="124705329" Language="SFX">
 					<ShortName>HB_rope_moving_3.wav</ShortName>
@@ -1905,7 +1905,7 @@
 				</File>
 				<File Id="350112094" Language="SFX">
 					<ShortName>HB_SFX_ImpactGrenade_6 (1).wav</ShortName>
-					<Path>SFX\HB_SFX_ImpactGrenade_6 (1)_92065D86.wem</Path>
+					<Path>SFX\HB_SFX_ImpactGrenade_6 (1)_A625CE96.wem</Path>
 				</File>
 				<File Id="351062873" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_3-1_Bouh.wav</ShortName>
@@ -2137,7 +2137,7 @@
 				</File>
 				<File Id="428839544" Language="SFX">
 					<ShortName>HB_SFX_ImpactGrenade_1 (1).wav</ShortName>
-					<Path>SFX\HB_SFX_ImpactGrenade_1 (1)_5660423E.wem</Path>
+					<Path>SFX\HB_SFX_ImpactGrenade_1 (1)_6627A555.wem</Path>
 				</File>
 				<File Id="430680513" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Wosh_03.wav</ShortName>
@@ -2461,7 +2461,7 @@
 				</File>
 				<File Id="549376740" Language="SFX">
 					<ShortName>HB_SFX_ImpactGrenade_2 (1).wav</ShortName>
-					<Path>SFX\HB_SFX_ImpactGrenade_2 (1)_158CF6D7.wem</Path>
+					<Path>SFX\HB_SFX_ImpactGrenade_2 (1)_D7655494.wem</Path>
 				</File>
 				<File Id="552564079" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_RegularCanon_01.wav</ShortName>
@@ -3361,7 +3361,7 @@
 				</File>
 				<File Id="940991722" Language="SFX">
 					<ShortName>HB_SFX_ImpactGrenade_3 (1).wav</ShortName>
-					<Path>SFX\HB_SFX_ImpactGrenade_3 (1)_043889F9.wem</Path>
+					<Path>SFX\HB_SFX_ImpactGrenade_3 (1)_38D3B844.wem</Path>
 				</File>
 				<File Id="944648679" Language="SFX">
 					<ShortName>SFX-HB-CoffreBois_00.wav</ShortName>
@@ -3461,7 +3461,7 @@
 				</File>
 				<File Id="982895792" Language="SFX">
 					<ShortName>SFX_HB_GroundSwitch_Klonk.wav</ShortName>
-					<Path>SFX\SFX_HB_GroundSwitch_Klonk_41B7F14F.wem</Path>
+					<Path>SFX\SFX_HB_GroundSwitch_Klonk_6D7A40BD.wem</Path>
 				</File>
 				<File Id="985776297" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_02.wav</ShortName>
