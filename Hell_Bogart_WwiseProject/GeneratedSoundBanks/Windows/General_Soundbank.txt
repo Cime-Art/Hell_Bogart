@@ -68,6 +68,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2055309167	E_play_Minigun			\Ben\E_play_Minigun	
 	2112280100	E_Mob_JungleCharlie_Death			\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death	
 	2167147008	E_Traps_Explosive_Explo			\Simon\Traps\E_Traps_Explosive_Explo	
+	2197374297	E_Global_TimeDilatation_Off			\Simon\Global\GlobalEffects\E_Global_TimeDilatation_Off	
 	2245991475	E_Speech_Bear_Death			\Simon\Voice\Bear\Death\E_Speech_Bear_Death	
 	2256907290	E_Speech_Kali_GetHitCritical			\Simon\Voice\Kali\E_Speech_Kali_GetHitCritical	
 	2269350735	E_Speech_Kali_FirstEncounter			\Simon\Voice\Kali\E_Speech_Kali_FirstEncounter	
@@ -99,6 +100,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3105411141	E_Coffre_Loquet			\Brian\Coffre\E_Coffre_Loquet	
 	3156110896	E_MobJungleCharlie_GetHit			\Simon\Enemies\MobJungleCharlie\GetHit\E_MobJungleCharlie_GetHit	
 	3189034779	E_FTP_surface_type_switch			\Alex\E_FTP_surface_type_switch	
+	3233130797	E_Global_TimeDilatation_On			\Simon\Global\GlobalEffects\E_Global_TimeDilatation_On	
 	3244386490	E_Speech_Kali_Attack			\Simon\Voice\Kali\E_Speech_Kali_Attack	
 	3258442665	E_MobJungleCharlie_Desintegration			\Simon\Enemies\MobJungleCharlie\Death\E_MobJungleCharlie_Desintegration	
 	3284918817	Play_Shotgun_EVENT			\Simon\Weapons\Play_Shotgun_EVENT	
@@ -799,6 +801,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	855272960	HB_SFX_Shotgun_CanonPortee_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_CanonPortee_00_66C02B12.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_BLEND_STEP\Canon_Type_SWITCH\Canon_Portee_RND\HB_SFX_Shotgun_CanonPortee_00		29463
 	855410270	HB_SFX_FoleyGaitling_2	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_FoleyGaitling_2_66C02B12.wem		\Actor-Mixer Hierarchy\Alex\SFX Alex\SFX\Foley\Foley_Bear\Foley_Gaitling\HB_SFX_FoleyGaitling_2		21786
 	855451656	VOICE_HB_Bear_FirstEncounter_5_PRIORITY	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\VOICE_HB_Bear_FirstEncounter_5_10C4C929.wem		\Actor-Mixer Hierarchy\Simon\Voices Global\Bear Voice\PRIORITY Special Lines\VOICE_HB_Bear_FirstEncounter_5_PRIORITY		183632
+	858882433	SFX_HB_Amb_LowTimeDilatation	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\SFX_HB_Amb_LowTimeDilatation_D79FB2B7.wem		\Actor-Mixer Hierarchy\Simon\UI Simon\Time Dilatation Atmosphere\SFX_HB_Amb_LowTimeDilatation		1908620
 	862182120	HB_WoodCringe_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_WoodCringe_03_47A4618C.wem		\Actor-Mixer Hierarchy\Alex\SFX Alex\SFX\Footstep\Footsteps\FTP_surface_type_switch\FTP_Wood_Bridge_RND\Cringe Wood\HB_WoodCringe_03		99792
 	864222219	HB_Steps_herbeshumides	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_Steps_herbeshumides_66C02B12.wem		\Actor-Mixer Hierarchy\Alex\SFX Alex\SFX\Footstep\Footsteps\FTP_surface_type_switch\FTP_Herbes_humides_RND\HB_Steps_herbeshumides		33869
 	864636949	HB_SFX_Shotgun_CanonTranspercant_00	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Windows\SFX\HB_SFX_Shotgun_CanonTranspercant_00_66C02B12.wem		\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_BLEND_STEP\Canon_Type_SWITCH\Canon_Transpercant_RND\HB_SFX_Shotgun_CanonTranspercant_00		22619

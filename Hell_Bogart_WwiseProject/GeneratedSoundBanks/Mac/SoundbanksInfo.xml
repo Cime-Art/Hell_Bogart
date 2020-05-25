@@ -905,6 +905,8 @@
 				<Event Id="574868710" Name="E_Global_SetOutPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetOutPauseMenu"/>
 				<Event Id="2509479530" Name="E_Global_SFXVOICE_FadeIn" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeIn"/>
 				<Event Id="4233919301" Name="E_Global_SFXVOICE_FadeOut" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeOut"/>
+				<Event Id="2197374297" Name="E_Global_TimeDilatation_Off" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_TimeDilatation_Off"/>
+				<Event Id="3233130797" Name="E_Global_TimeDilatation_On" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_TimeDilatation_On"/>
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
@@ -3157,6 +3159,10 @@
 				<File Id="855451656" Language="SFX">
 					<ShortName>VOICE_HB_Bear_FirstEncounter_5.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_FirstEncounter_5_10C4C929.wem</Path>
+				</File>
+				<File Id="858882433" Language="SFX">
+					<ShortName>SFX_HB_Amb_LowTimeDilatation.wav</ShortName>
+					<Path>SFX\SFX_HB_Amb_LowTimeDilatation_D79FB2B7.wem</Path>
 				</File>
 				<File Id="862182120" Language="SFX">
 					<ShortName>HB_WoodCringe_03.wav</ShortName>
