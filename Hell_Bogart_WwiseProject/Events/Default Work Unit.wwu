@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A5EED9D8-8846-4160-A94B-A2051695A28A}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{A5EED9D8-8846-4160-A94B-A2051695A28A}" PersistMode="Standalone">
-			<ChildrenList>
-				<Event Name="Break_SFX_BUS" ID="{C0B0CBF3-8EB5-4C9B-8E33-6422EE946237}"/>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{A5EED9D8-8846-4160-A94B-A2051695A28A}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>

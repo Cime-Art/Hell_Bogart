@@ -195,11 +195,7 @@
 								<CustomStateList>
 									<CustomState>
 										<StateRef Name="In_PauseMenu" ID="{B4EFAD2A-5FF1-402E-9474-C250EC641DBF}"/>
-										<CustomState Name="" ID="{0DB00192-63BD-454B-B63E-E3654B807E11}" ShortID="690595162">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="70"/>
-											</PropertyList>
-										</CustomState>
+										<CustomState Name="" ID="{0DB00192-63BD-454B-B63E-E3654B807E11}" ShortID="690595162"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
@@ -269,40 +265,9 @@
 								</Bus>
 							</ChildrenList>
 							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="IsInPauseMenu_STATE" ID="{55E0B01A-C453-41AF-B874-EAB6C752182A}"/>
-									</StateGroupInfo>
-									<StateGroupInfo>
-										<StateGroupRef Name="TempDilatation" ID="{BCE10E53-435A-4100-863D-D699C9644A02}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="In_PauseMenu" ID="{B4EFAD2A-5FF1-402E-9474-C250EC641DBF}"/>
-										<CustomState Name="" ID="{2C02DAA1-22C4-477F-B5EB-A0243A898FB0}" ShortID="879075251">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="70"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
-										<CustomState Name="" ID="{D8298D71-6F36-44BF-AA07-F09E6C9A52FC}" ShortID="356874205"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="normal" ID="{CBF3AD21-3794-465E-A4F8-F097A7B1B724}"/>
-										<CustomState Name="" ID="{68AB6DFE-82CC-4479-AB29-7BC6DE4C0C90}" ShortID="469216230"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="slow" ID="{8C60F85A-74B1-497B-8892-4EA74289AED5}"/>
-										<CustomState Name="" ID="{9B2A65E8-AF34-4D03-AAB3-F79E47794B3B}" ShortID="725784089">
-											<PropertyList>
-												<Property Name="Pitch" Type="int32" Value="-1300"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-								</CustomStateList>
+								<StatePropertyList>
+									<Property Name="Lowpass"/>
+								</StatePropertyList>
 							</StateInfo>
 						</Bus>
 						<Bus Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}">
@@ -430,25 +395,10 @@
 								</StatePropertyList>
 								<StateGroupList>
 									<StateGroupInfo>
-										<StateGroupRef Name="IsInPauseMenu_STATE" ID="{55E0B01A-C453-41AF-B874-EAB6C752182A}"/>
-									</StateGroupInfo>
-									<StateGroupInfo>
 										<StateGroupRef Name="TempDilatation" ID="{BCE10E53-435A-4100-863D-D699C9644A02}"/>
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
-									<CustomState>
-										<StateRef Name="In_PauseMenu" ID="{B4EFAD2A-5FF1-402E-9474-C250EC641DBF}"/>
-										<CustomState Name="" ID="{D10A085D-3A09-4FCF-8024-6AD92CCAC743}" ShortID="171006256">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="70"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
-										<CustomState Name="" ID="{302D74F9-A5DB-456F-8904-4F8930BA02D5}" ShortID="689021762"/>
-									</CustomState>
 									<CustomState>
 										<StateRef Name="normal" ID="{CBF3AD21-3794-465E-A4F8-F097A7B1B724}"/>
 										<CustomState Name="" ID="{FC3413DC-6507-4430-93E2-61CA8C4BD254}" ShortID="6600961"/>
