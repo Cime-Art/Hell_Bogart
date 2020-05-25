@@ -2512,7 +2512,7 @@
 							<ChildrenList>
 								<MusicSegment Name="Phase1" ID="{D11FDBCE-B9BF-49F4-B0B3-73FA11B38C57}" ShortID="839237165">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="130645.827664399"/>
+										<Property Name="EndPosition" Type="Real64" Value="154855.262897724"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2534,14 +2534,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Cykodd - Kali Theme Phase 1 (100_)" ID="{EFB16289-739A-483D-960D-B927B26E69D4}" ShortID="264231872">
+												<AudioFileSource Name="Cykodd - Kali Theme Phase 1 (100_)" ID="{D5E1E367-C3A1-49CE-ADF7-10370CD48EFB}" ShortID="945653896">
 													<Language>SFX</Language>
 													<AudioFile>Cykodd - Kali Theme Phase 1 (100%).wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="1">
+													<StateGroupInfo MusicSyncType="2">
 														<StateGroupRef Name="Music_Kali_Phase_STATE" ID="{5F04AF09-C573-464D-A21F-A30EBFD54842}"/>
 													</StateGroupInfo>
 												</StateGroupList>
@@ -2579,13 +2579,13 @@
 											<SequenceList>
 												<MusicTrackSequence Name="" ID="{846CDCCE-6295-4D86-A9BB-DBFAAD7FA7B2}">
 													<ClipList>
-														<MusicClip Name="Cykodd - Kali Theme Phase 1 (100_)" ID="{91592E3F-710B-4A9A-BF84-261686218DDE}">
+														<MusicClip Name="Cykodd - Kali Theme Phase 1 (100_)" ID="{97E0FD0B-7979-4A4F-9F5C-8869BAB03E9C}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="113045.827664399"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="112962.494331066"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Cykodd - Kali Theme Phase 1 (100_)" ID="{EFB16289-739A-483D-960D-B927B26E69D4}"/>
+															<AudioSourceRef Name="Cykodd - Kali Theme Phase 1 (100_)" ID="{D5E1E367-C3A1-49CE-ADF7-10370CD48EFB}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -2605,14 +2605,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Cykodd - Kali Theme Phase 1 (75_)" ID="{E1656927-B405-4B2C-9560-2C96051635BD}" ShortID="709764780">
+												<AudioFileSource Name="Cykodd - Kali Theme Phase 1 (75_)" ID="{269F1BDB-0B2D-41FF-B800-F21315713AFE}" ShortID="594926696">
 													<Language>SFX</Language>
 													<AudioFile>Cykodd - Kali Theme Phase 1 (75%).wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="1">
+													<StateGroupInfo MusicSyncType="2">
 														<StateGroupRef Name="Music_Kali_Phase_STATE" ID="{5F04AF09-C573-464D-A21F-A30EBFD54842}"/>
 													</StateGroupInfo>
 												</StateGroupList>
@@ -2650,13 +2650,13 @@
 											<SequenceList>
 												<MusicTrackSequence Name="" ID="{664CDB09-DBA1-42A8-848D-BDFE599D1991}">
 													<ClipList>
-														<MusicClip Name="Cykodd - Kali Theme Phase 1 (75_)" ID="{24520B36-1AD6-4B35-A4F4-F1DDDC2BB4EA}">
+														<MusicClip Name="Cykodd - Kali Theme Phase 1 (75_)" ID="{5BC67BC1-F6F6-468E-A17B-387B226FC55C}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="112820.839002268"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="112962.494331066"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Cykodd - Kali Theme Phase 1 (75_)" ID="{E1656927-B405-4B2C-9560-2C96051635BD}"/>
+															<AudioSourceRef Name="Cykodd - Kali Theme Phase 1 (75_)" ID="{269F1BDB-0B2D-41FF-B800-F21315713AFE}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -2676,14 +2676,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Cykodd - Kali Theme Phase 1 (25_)" ID="{5FD7A7AC-DD86-4F25-8CE3-A95645D3CC48}" ShortID="979926849">
+												<AudioFileSource Name="Cykodd - Kali Theme Phase 1 (25_)" ID="{6B5A2533-84E8-498E-99CC-AA7986A2234A}" ShortID="945315478">
 													<Language>SFX</Language>
 													<AudioFile>Cykodd - Kali Theme Phase 1 (25%).wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="1">
+													<StateGroupInfo MusicSyncType="2">
 														<StateGroupRef Name="Music_Kali_Phase_STATE" ID="{5F04AF09-C573-464D-A21F-A30EBFD54842}"/>
 													</StateGroupInfo>
 												</StateGroupList>
@@ -2721,13 +2721,13 @@
 											<SequenceList>
 												<MusicTrackSequence Name="" ID="{74CE09FD-4833-46C4-B652-4CF3CF9C69F3}">
 													<ClipList>
-														<MusicClip Name="Cykodd - Kali Theme Phase 1 (25_)" ID="{93705CD0-E4EB-4509-B9B9-1187A9DD9642}">
+														<MusicClip Name="Cykodd - Kali Theme Phase 1 (25_)" ID="{88910F7C-14B1-4AE0-AB52-3056648C276B}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="110500"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="110541.678004535"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Cykodd - Kali Theme Phase 1 (25_)" ID="{5FD7A7AC-DD86-4F25-8CE3-A95645D3CC48}"/>
+															<AudioSourceRef Name="Cykodd - Kali Theme Phase 1 (25_)" ID="{6B5A2533-84E8-498E-99CC-AA7986A2234A}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -2772,9 +2772,9 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="MUS_Boss_Phase2" ID="{1ECAD069-0170-4536-A5B5-7AE1A7659E89}" ShortID="626326859">
+						<MusicPlaylistContainer Name="MUS_Boss_Transition" ID="{971264A8-B71B-48FE-B87A-212BA179BDDB}" ShortID="892408868">
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="Color" Type="int16" Value="23"/>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="150"/>
@@ -2788,13 +2788,176 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="Phase2" ID="{B2C0C84A-1409-4626-8F45-B43BC96EE403}" ShortID="115752111">
+								<MusicSegment Name="Transition" ID="{F2F8DF81-06F4-46B6-A002-F23F80EF885D}" ShortID="251150938">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="130645.827664399"/>
+										<Property Name="EndPosition" Type="Real64" Value="38500"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Intro" ID="{4DD52A04-A1ED-463E-B468-6E16F266F7B5}" ShortID="79326719">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cykodd - Intro 2 Bossfight" ID="{BB75FD07-F758-4F0A-B89A-216C5EAA9F56}" ShortID="992734597">
+													<Language>SFX</Language>
+													<AudioFile>Cykodd - Intro 2 Bossfight.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AADB9B1C-C9CB-43FA-9401-69857CA55CBE}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{2AE74B4A-1126-4D07-9268-F81EF39AEA05}">
+													<ClipList>
+														<MusicClip Name="Cykodd - Intro 2 Bossfight" ID="{4EE419FC-C899-4844-9CAC-B9DDE0C65655}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="12108.3446712018"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="1600"/>
+															</PropertyList>
+															<AudioSourceRef Name="Cykodd - Intro 2 Bossfight" ID="{BB75FD07-F758-4F0A-B89A-216C5EAA9F56}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Sweep" ID="{D3945B26-80D9-48FF-9675-B5639D5D88E5}" ShortID="456201721">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Ruines_Start_00" ID="{0BB6E2C6-13CC-422D-A043-0E3C6B240447}" ShortID="1004012198">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Ruines_Start_00.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="1051529773"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{0638F092-B356-43F4-BB0C-C5DCEF274A49}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{F138A4A6-4E5F-4E21-AC0C-2C8F2AD57212}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Ruines_Start_00" ID="{33BDA225-1201-40ED-919A-043D828326C0}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="834.727503168565"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="7201.38321995465"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="-834.727503168565"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Ruines_Start_00" ID="{0BB6E2C6-13CC-422D-A043-0E3C6B240447}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{6878954C-F991-49AD-A55D-B4ED2641C147}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.83473</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>7.20138321995465</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{6C4408BB-92D7-4E70-8832-84D98A8FE268}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.83473</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>7.20138321995465</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{55CF1EFF-AB8B-4AA4-AEF7-619285272F2D}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.83473</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>7.20138321995465</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{D9265EA5-9245-4F6C-96A7-F826D8F5E0A9}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="1600"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{733981F4-1C54-4F17-ACA9-8DF090CA167C}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="8000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="Phase2" ID="{B2C0C84A-1409-4626-8F45-B43BC96EE403}" ShortID="115752111">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="149861.985808265"/>
+										<Property Name="Tempo" Type="Real64" Value="150"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Music_Conversion_Settings" ID="{A41B3C03-D345-4072-9F0D-207252976325}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -2812,17 +2975,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Cykodd - Kali Theme Phase 1 (100_)" ID="{9FAC974E-F8CE-4039-A726-AA35F8EC82FA}" ShortID="124192236">
+												<AudioFileSource Name="Cykodd - Kali Theme Phase 2 (100_)" ID="{CDF07D74-A4CE-4657-A7F0-3221FCC4BA3C}" ShortID="651096681">
 													<Language>SFX</Language>
-													<AudioFile>Cykodd - Kali Theme Phase 1 (100%).wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="264231872"/>
-													</ConvertedFileIDList>
+													<AudioFile>Cykodd - Kali Theme Phase 2 (100%).wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="1">
+													<StateGroupInfo MusicSyncType="2">
 														<StateGroupRef Name="Music_Kali_Phase_STATE" ID="{5F04AF09-C573-464D-A21F-A30EBFD54842}"/>
 													</StateGroupInfo>
 												</StateGroupList>
@@ -2860,13 +3020,13 @@
 											<SequenceList>
 												<MusicTrackSequence Name="" ID="{6AA5F00C-72FF-4D7F-BB2A-50D96891267A}">
 													<ClipList>
-														<MusicClip Name="Cykodd - Kali Theme Phase 1 (100_)" ID="{7049F8D6-129B-4FF1-B213-971741E0FADF}">
+														<MusicClip Name="Cykodd - Kali Theme Phase 2 (100_)" ID="{1ABE30D1-C11A-4EA2-BFF7-F7548599A39C}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="113045.827664399"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="114095.827664399"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Cykodd - Kali Theme Phase 1 (100_)" ID="{9FAC974E-F8CE-4039-A726-AA35F8EC82FA}"/>
+															<AudioSourceRef Name="Cykodd - Kali Theme Phase 2 (100_)" ID="{CDF07D74-A4CE-4657-A7F0-3221FCC4BA3C}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -2886,17 +3046,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Cykodd - Kali Theme Phase 1 (75_)" ID="{5429795E-BC46-4DEB-81EE-AA124814779A}" ShortID="686021421">
+												<AudioFileSource Name="Cykodd - Kali Theme Phase 2 (75_)" ID="{EAA3ED84-7F35-40AC-AAEB-345B85867517}" ShortID="437382272">
 													<Language>SFX</Language>
-													<AudioFile>Cykodd - Kali Theme Phase 1 (75%).wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="709764780"/>
-													</ConvertedFileIDList>
+													<AudioFile>Cykodd - Kali Theme Phase 2 (75%).wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="1">
+													<StateGroupInfo MusicSyncType="2">
 														<StateGroupRef Name="Music_Kali_Phase_STATE" ID="{5F04AF09-C573-464D-A21F-A30EBFD54842}"/>
 													</StateGroupInfo>
 												</StateGroupList>
@@ -2934,13 +3091,13 @@
 											<SequenceList>
 												<MusicTrackSequence Name="" ID="{13805372-B67E-4200-AF15-E2722DDF1B16}">
 													<ClipList>
-														<MusicClip Name="Cykodd - Kali Theme Phase 1 (75_)" ID="{09D06B7E-872B-4643-AA21-048930070586}">
+														<MusicClip Name="Cykodd - Kali Theme Phase 2 (75_)" ID="{1BF12EDC-86EE-4C9E-AF67-F7690D61717C}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="112820.839002268"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="114500"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Cykodd - Kali Theme Phase 1 (75_)" ID="{5429795E-BC46-4DEB-81EE-AA124814779A}"/>
+															<AudioSourceRef Name="Cykodd - Kali Theme Phase 2 (75_)" ID="{EAA3ED84-7F35-40AC-AAEB-345B85867517}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -2960,17 +3117,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Cykodd - Kali Theme Phase 1 (25_)" ID="{FC3F6B29-3243-4B87-A429-BBEB75268A04}" ShortID="97324103">
+												<AudioFileSource Name="Cykodd - Kali Theme Phase 2 (25_)" ID="{78A82D5B-4221-44E5-980F-4F4E4C5C6F59}" ShortID="693127027">
 													<Language>SFX</Language>
-													<AudioFile>Cykodd - Kali Theme Phase 1 (25%).wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="979926849"/>
-													</ConvertedFileIDList>
+													<AudioFile>Cykodd - Kali Theme Phase 2 (25%).wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="1">
+													<StateGroupInfo MusicSyncType="2">
 														<StateGroupRef Name="Music_Kali_Phase_STATE" ID="{5F04AF09-C573-464D-A21F-A30EBFD54842}"/>
 													</StateGroupInfo>
 												</StateGroupList>
@@ -3008,13 +3162,13 @@
 											<SequenceList>
 												<MusicTrackSequence Name="" ID="{451750BC-F99D-4F6C-82BB-9CC2104DC28B}">
 													<ClipList>
-														<MusicClip Name="Cykodd - Kali Theme Phase 1 (25_)" ID="{A8924284-FA14-436B-ADB1-904B54863E01}">
+														<MusicClip Name="Cykodd - Kali Theme Phase 2 (25_)" ID="{7489F62D-D4A3-4639-8A46-F80D1094C291}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="110500"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="108266.666666667"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Cykodd - Kali Theme Phase 1 (25_)" ID="{FC3F6B29-3243-4B87-A429-BBEB75268A04}"/>
+															<AudioSourceRef Name="Cykodd - Kali Theme Phase 2 (25_)" ID="{78A82D5B-4221-44E5-980F-4F4E4C5C6F59}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -3027,116 +3181,6 @@
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
 												<Property Name="TimeMs" Type="Real64" Value="102400"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{F1F8A3D7-5036-439B-8394-6B6315749AB6}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{8CE40A24-E651-411E-B317-3FCE401A853F}">
-											<TransitionInfo/>
-										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{EC7A8767-365A-47CA-87E3-FB494843EF8B}" ShortID="280815629">
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{2EB8C376-64D2-4CB6-B8F1-7867FE333DD9}" ShortID="92994908">
-											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="0"/>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="Phase2" ID="{B2C0C84A-1409-4626-8F45-B43BC96EE403}"/>
-										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="MUS_Boss_Transition" ID="{971264A8-B71B-48FE-B87A-212BA179BDDB}" ShortID="892408868">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="23"/>
-								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="Tempo" Type="Real64" Value="150"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicSegment Name="Transition" ID="{F2F8DF81-06F4-46B6-A002-F23F80EF885D}" ShortID="251150938">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="38500"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Intro" ID="{4DD52A04-A1ED-463E-B468-6E16F266F7B5}" ShortID="79326719">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Cykodd - Intro Bossfight" ID="{B1629B49-2B05-4FC2-9C37-F47593EAFCCA}" ShortID="106826068">
-													<Language>SFX</Language>
-													<AudioFile>Cykodd - Intro Bossfight.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="368405575"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{AADB9B1C-C9CB-43FA-9401-69857CA55CBE}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{2AE74B4A-1126-4D07-9268-F81EF39AEA05}">
-													<ClipList>
-														<MusicClip Name="Cykodd - Intro Bossfight" ID="{285FFEB0-4EBB-44E0-B3DA-E9BA13BF9F34}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="36204.1723356009"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Cykodd - Intro Bossfight" ID="{B1629B49-2B05-4FC2-9C37-F47593EAFCCA}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{D9265EA5-9245-4F6C-96A7-F826D8F5E0A9}">
-											<PropertyList>
-												<Property Name="TimeMs" Type="Real64" Value="4800"/>
-											</PropertyList>
-										</MusicCue>
-										<MusicCue Name="Exit Cue" ID="{733981F4-1C54-4F17-ACA9-8DF090CA167C}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="25600"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
@@ -3160,10 +3204,16 @@
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{C2D9EA74-AACD-4A48-8924-452F10D21160}" ShortID="267500902">
 											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="0"/>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
 											<SegmentRef Name="Transition" ID="{F2F8DF81-06F4-46B6-A002-F23F80EF885D}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{B4A22F9A-4D84-4664-8C45-59F0E54E1092}" ShortID="91950593">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Phase2" ID="{B2C0C84A-1409-4626-8F45-B43BC96EE403}"/>
 										</MusicPlaylistItem>
 									</ChildrenList>
 								</MusicPlaylistItem>
