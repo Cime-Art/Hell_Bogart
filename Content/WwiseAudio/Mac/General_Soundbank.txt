@@ -148,23 +148,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	4269044702	E_Traps_BigRockExplode			\Simon\Traps\E_Traps_BigRockExplode	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
-	754284858	AMMO_type			\Chris\AMMO_type	
-	1075172584	PickUP_type			\Chris\PickUP_type	
-	2782712965	Level			\Brian\Grenade\Level	
+	205697103	Pickup_Other_Rarity_SWITCH			\Chris\Pickup_Other_Rarity_SWITCH	
+	549062251	Pickup_Ammo_Rarity_SWITCH			\Chris\Pickup_Ammo_Rarity_SWITCH	
 	3115761674	Destroyed_Object_Type_SWITCH			\Simon\Destructibles\Destroyed_Object_Type_SWITCH	
 	3211962897	Surface_type_FTP_switch			\Alex\Character\Surface type\Surface_type_FTP_switch	
 	4040317175	Ground_Type			\Brian\Grenade\Ground_Type	
+	4255484302	Equiped_Grenade_Rarity_SWITCH			\Brian\Grenade\Equiped_Grenade_Rarity_SWITCH	
 
 Switch	ID	Name	Switch Group			Notes
-	606837675	Epic_Ammo	AMMO_type			
-	3258913579	Standar_Ammo	AMMO_type			
-	3337127178	Rare_Ammo	AMMO_type			
-	2000055714	Standar_Pick	PickUP_type			
-	2354370739	RARE_Pick	PickUP_type			
-	3642947106	EPIC_Pick	PickUP_type			
-	564986154	Epic	Level			
-	2831895476	Commun	Level			
-	3816150932	Legendary	Level			
+	534678803	Legendary_Other	Pickup_Other_Rarity_SWITCH			
+	1695741424	Regular_Other	Pickup_Other_Rarity_SWITCH			
+	4071981973	Epic_Other	Pickup_Other_Rarity_SWITCH			
+	606837675	Epic_Ammo	Pickup_Ammo_Rarity_SWITCH			
+	2172546460	Regular_Ammo	Pickup_Ammo_Rarity_SWITCH			
+	2740863065	Legendary_Ammo	Pickup_Ammo_Rarity_SWITCH			
 	108719488	Caiss	Destroyed_Object_Type_SWITCH			
 	114672787	Plank	Destroyed_Object_Type_SWITCH			
 	615606603	Jarre	Destroyed_Object_Type_SWITCH			
@@ -194,15 +191,18 @@ Switch	ID	Name	Switch Group			Notes
 	2144363834	Rock	Ground_Type			
 	2195636714	Dirt	Ground_Type			
 	2654748154	Water	Ground_Type			
+	92994609	Epic_Grenade	Equiped_Grenade_Rarity_SWITCH			
+	1836430984	Regular_Grenade	Equiped_Grenade_Rarity_SWITCH			
+	2681168715	Legendary_Grenade	Equiped_Grenade_Rarity_SWITCH			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	283398981	Attenuation_STATE			\Simon\Global\Attenuation_STATE	
 	393509290	Footstep_Charge			\Brian\Guardian\Footstep_Charge	
-	916310236	Ammo_Type_STATE			\Simon\Items\Ammo_Type_STATE	
-	1241374221	Ammo_Rarity_STATE			\Simon\Items\Ammo_Rarity_STATE	
+	1375197171	Equiped_Ammo_Rarity_STATE			\Simon\Items\Equiped_Ammo_Rarity_STATE	
 	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
+	1824285356	Equiped_Grenade_Type_STATE			\Brian\Grenade\Equiped_Grenade_Type_STATE	
 	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
-	4135068155	Element			\Brian\Grenade\Element	
+	2498027786	Equiped_Ammo_Type_STATE			\Simon\Items\Equiped_Ammo_Type_STATE	
 	4261493451	Canon_Type_STATE			\Simon\Items\Canon_Type_STATE	
 
 State	ID	Name	State Group			Notes
@@ -212,45 +212,45 @@ State	ID	Name	State Group			Notes
 	0	None	Footstep_Charge			
 	529726532	End	Footstep_Charge			
 	1281810935	Start	Footstep_Charge			
-	0	None	Ammo_Type_STATE			
-	186852181	Thunder	Ammo_Type_STATE			
-	344481046	Ice	Ammo_Type_STATE			
-	2628937827	Regular	Ammo_Type_STATE			
-	2678880713	Fire	Ammo_Type_STATE			
-	0	None	Ammo_Rarity_STATE			
-	46531484	Ammo_2	Ammo_Rarity_STATE			
-	46531485	Ammo_3	Ammo_Rarity_STATE			
-	46531487	Ammo_1	Ammo_Rarity_STATE			
+	0	None	Equiped_Ammo_Rarity_STATE			
+	46531484	Ammo_2	Equiped_Ammo_Rarity_STATE			
+	46531485	Ammo_3	Equiped_Ammo_Rarity_STATE			
+	46531487	Ammo_1	Equiped_Ammo_Rarity_STATE			
 	0	None	IsInATrap_STATE			
 	645492555	Out	IsInATrap_STATE			
 	1752637612	In	IsInATrap_STATE			
+	0	None	Equiped_Grenade_Type_STATE			
+	186852181	Thunder	Equiped_Grenade_Type_STATE			
+	344481046	Ice	Equiped_Grenade_Type_STATE			
+	433216386	Explosive	Equiped_Grenade_Type_STATE			
+	2678880713	Fire	Equiped_Grenade_Type_STATE			
 	0	None	Chamber_Type_STATE			
 	252199009	Spread_60	Chamber_Type_STATE			
 	419409252	Spread_180	Chamber_Type_STATE			
 	2572109827	Regular_Spread	Chamber_Type_STATE			
-	0	None	Element			
-	186852181	Thunder	Element			
-	344481046	Ice	Element			
-	433216386	Explosive	Element			
-	2678880713	Fire	Element			
+	0	None	Equiped_Ammo_Type_STATE			
+	186852181	Thunder	Equiped_Ammo_Type_STATE			
+	344481046	Ice	Equiped_Ammo_Type_STATE			
+	2628937827	Regular	Equiped_Ammo_Type_STATE			
+	2678880713	Fire	Equiped_Ammo_Type_STATE			
 	0	None	Canon_Type_STATE			
 	2815114540	Transpercant	Canon_Type_STATE			
 	3185142962	Portee	Canon_Type_STATE			
 	3626681980	Regular_Chamber	Canon_Type_STATE			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	36876674	Ammo_3	Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_BLEND_STEP\Ammo_Type_SWITCH		
+	36876674	Ammo_3	Equiped_Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_BLEND_STEP\Ammo_Type_SWITCH		
 	121088226	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Brian\SFX Brian\Grenade\MIX_Grenade		
 	185936182	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Mob Jungle Charlie\Dot Element		
 	216675186	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Brian\SFX Brian\Grenade\MIX_Grenade		
-	353109436	Ammo_2	Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Power_Layer_RND		
+	353109436	Ammo_2	Equiped_Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Power_Layer_RND		
 	491515353	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Mob Jungle Charlie\Desintegration		
 	510064631	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\MiniGun		
 	559629018	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Mob Jungle Charlie		
 	573580414	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Mob Jungle Charlie\Iddle		
-	585106276	Ammo_1	Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Power_Layer_RND		
+	585106276	Ammo_1	Equiped_Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Power_Layer_RND		
 	636145736	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Mob Jungle Charlie		
-	839981864	Ammo_2	Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_BLEND_STEP\Ammo_Type_SWITCH		
+	839981864	Ammo_2	Equiped_Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun\Loop_Shotgun_SEQ\Shotgun_SEQ\Shotgun_BLEND_STEP\Ammo_Type_SWITCH		
 	867669233	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Mob Jungle Charlie\Iddle		
 	872028081	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Simon\SFX Simon\Character\Weapons\Shotgun		
 

@@ -105,7 +105,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+											<ObjectRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Items" ID="{8F2BADD0-F656-449B-B33E-0899089CB237}" ShortID="974916730">
 					<ChildrenList>
-						<StateGroup Name="Ammo_Type_STATE" ID="{DC8CE865-7803-420C-9365-226A284C6C30}">
+						<StateGroup Name="Equiped_Ammo_Type_STATE" ID="{DC8CE865-7803-420C-9365-226A284C6C30}">
 							<ChildrenList>
 								<State Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
 								<State Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
@@ -30,7 +30,7 @@
 								<State Name="Spread_180" ID="{FC55DF69-7C23-4C99-9025-1D3267E6E6A5}"/>
 							</ChildrenList>
 						</StateGroup>
-						<StateGroup Name="Ammo_Rarity_STATE" ID="{7F861A28-0BB4-4C7E-9A87-06B006D74647}">
+						<StateGroup Name="Equiped_Ammo_Rarity_STATE" ID="{7F861A28-0BB4-4C7E-9A87-06B006D74647}">
 							<PropertyList>
 								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
 							</PropertyList>

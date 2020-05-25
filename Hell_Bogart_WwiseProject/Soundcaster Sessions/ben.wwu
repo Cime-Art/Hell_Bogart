@@ -30,10 +30,10 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
-						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+						<CurrentSwitchRef Name="Legendary_Other" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Dalles_pierre_switch" ID="{A784672B-87AF-4B4C-80A2-62022ECE904A}"/>
-						<CurrentSwitchRef Name="Epic_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+						<CurrentSwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

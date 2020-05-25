@@ -249,12 +249,12 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
-						<CurrentSwitchRef Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Legendary_Other" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
-						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+						<CurrentSwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
-						<CurrentSwitchRef Name="Epic_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+						<CurrentSwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Bear Speech" ID="{125AFAD9-A3F0-4AA5-A259-A0C091EB0017}">
@@ -385,12 +385,12 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
-						<CurrentSwitchRef Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Legendary_Other" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
-						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+						<CurrentSwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
-						<CurrentSwitchRef Name="Epic_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+						<CurrentSwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Bear Kali Interaction" ID="{F458BD86-04DC-44F0-89FE-57A9FBE1FD88}">
@@ -497,12 +497,12 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
-						<CurrentSwitchRef Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Legendary_Other" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
-						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+						<CurrentSwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
-						<CurrentSwitchRef Name="Epic_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+						<CurrentSwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Dot Elements" ID="{9663EEA8-A3F4-4934-93F0-ADD78343D6BC}">
@@ -592,12 +592,12 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
-						<CurrentSwitchRef Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Legendary_Other" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
-						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+						<CurrentSwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
-						<CurrentSwitchRef Name="Epic_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+						<CurrentSwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Music" ID="{A3CDF18F-816E-4D2C-82C7-63BA758DA7D4}">
@@ -697,12 +697,12 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
-						<CurrentSwitchRef Name="EPIC_Pick" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
+						<CurrentSwitchRef Name="Legendary_Other" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
-						<CurrentSwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+						<CurrentSwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
-						<CurrentSwitchRef Name="Epic_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+						<CurrentSwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

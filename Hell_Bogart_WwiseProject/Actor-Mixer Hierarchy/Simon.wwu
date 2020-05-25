@@ -4754,7 +4754,7 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="Ammo_Type_STATE" ID="{DC8CE865-7803-420C-9365-226A284C6C30}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+													<ObjectRef Name="Equiped_Ammo_Type_STATE" ID="{DC8CE865-7803-420C-9365-226A284C6C30}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -8922,7 +8922,7 @@
 																					<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 																				</Reference>
 																				<Reference Name="SwitchGroupOrStateGroup">
-																					<ObjectRef Name="Ammo_Type_STATE" ID="{DC8CE865-7803-420C-9365-226A284C6C30}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+																					<ObjectRef Name="Equiped_Ammo_Type_STATE" ID="{DC8CE865-7803-420C-9365-226A284C6C30}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
 																				</Reference>
 																				<Reference Name="UserAuxSend0">
 																					<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -9231,7 +9231,7 @@
 																			<StateInfo>
 																				<StateGroupList>
 																					<StateGroupInfo>
-																						<StateGroupRef Name="Ammo_Rarity_STATE" ID="{7F861A28-0BB4-4C7E-9A87-06B006D74647}"/>
+																						<StateGroupRef Name="Equiped_Ammo_Rarity_STATE" ID="{7F861A28-0BB4-4C7E-9A87-06B006D74647}"/>
 																					</StateGroupInfo>
 																				</StateGroupList>
 																				<CustomStateList>
@@ -9925,7 +9925,7 @@
 													<StateInfo>
 														<StateGroupList>
 															<StateGroupInfo>
-																<StateGroupRef Name="Ammo_Rarity_STATE" ID="{7F861A28-0BB4-4C7E-9A87-06B006D74647}"/>
+																<StateGroupRef Name="Equiped_Ammo_Rarity_STATE" ID="{7F861A28-0BB4-4C7E-9A87-06B006D74647}"/>
 															</StateGroupInfo>
 														</StateGroupList>
 														<CustomStateList>

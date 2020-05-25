@@ -10,11 +10,11 @@
 				<Folder Name="Guardian" ID="{465D3D43-AF1A-47F5-A248-2F0332DC7F8A}" ShortID="895560278"/>
 				<Folder Name="Grenade" ID="{89A8CA87-853E-47B9-98AC-FFF6CCDCDED5}" ShortID="26514163">
 					<ChildrenList>
-						<SwitchGroup Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}">
+						<SwitchGroup Name="Equiped_Grenade_Rarity_SWITCH" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}">
 							<ChildrenList>
-								<Switch Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
-								<Switch Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
-								<Switch Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+								<Switch Name="Epic_Grenade" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+								<Switch Name="Legendary_Grenade" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+								<Switch Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 							</ChildrenList>
 						</SwitchGroup>
 						<SwitchGroup Name="Ground_Type" ID="{81C89495-82DB-427E-B3AE-CE7E12E186E6}">

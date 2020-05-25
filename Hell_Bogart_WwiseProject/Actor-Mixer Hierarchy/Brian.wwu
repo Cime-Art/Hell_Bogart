@@ -324,7 +324,7 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="Element" ID="{127802BB-8D2B-4686-824E-EE1E762107B9}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+													<ObjectRef Name="Equiped_Grenade_Type_STATE" ID="{127802BB-8D2B-4686-824E-EE1E762107B9}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -338,13 +338,13 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+															<ObjectRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+															<ObjectRef Name="Equiped_Grenade_Rarity_SWITCH" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -420,19 +420,19 @@
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
-																<SwitchRef Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+																<SwitchRef Name="Epic_Grenade" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
 																<ItemList>
 																	<ItemRef Name="Epic" ID="{640453AA-CF68-42F0-8002-C2544937F88E}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+																<SwitchRef Name="Legendary_Grenade" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
 																<ItemList>
 																	<ItemRef Name="Legendary" ID="{E1707B98-7D09-444B-922B-1655196DBA31}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+																<SwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 																<ItemList>
 																	<ItemRef Name="Commun" ID="{6FCEA347-5618-4134-B859-77236C5CDF6B}"/>
 																</ItemList>
@@ -450,13 +450,13 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+															<ObjectRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+															<ObjectRef Name="Equiped_Grenade_Rarity_SWITCH" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -532,19 +532,19 @@
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
-																<SwitchRef Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+																<SwitchRef Name="Epic_Grenade" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
 																<ItemList>
 																	<ItemRef Name="Epic" ID="{45B49742-FC2E-434A-9881-682DFB72F213}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+																<SwitchRef Name="Legendary_Grenade" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
 																<ItemList>
 																	<ItemRef Name="Legendary" ID="{9017703E-F69B-4D32-A9A2-0EE2CDB1D0D4}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+																<SwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 																<ItemList>
 																	<ItemRef Name="Commun" ID="{94424C85-2F36-44A7-A4D2-729D6C3098C7}"/>
 																</ItemList>
@@ -562,13 +562,13 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+															<ObjectRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+															<ObjectRef Name="Equiped_Grenade_Rarity_SWITCH" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -644,19 +644,19 @@
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
-																<SwitchRef Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+																<SwitchRef Name="Epic_Grenade" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
 																<ItemList>
 																	<ItemRef Name="Epic" ID="{7FE2488A-1077-4742-ACF3-AEF0A633286B}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+																<SwitchRef Name="Legendary_Grenade" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
 																<ItemList>
 																	<ItemRef Name="Legendary" ID="{F3A287DC-DEE9-4962-A0BF-80D3F9E50FD3}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+																<SwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 																<ItemList>
 																	<ItemRef Name="Commun" ID="{DB0A8C47-89B3-456B-AC89-3ED2AD0AA42A}"/>
 																</ItemList>
@@ -674,13 +674,13 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+															<ObjectRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="Level" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
+															<ObjectRef Name="Equiped_Grenade_Rarity_SWITCH" ID="{15BE4C2E-492F-488E-9B33-179AA675320A}" WorkUnitID="{466BC292-8B66-42B9-8FBD-6B21B462FDBB}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -756,19 +756,19 @@
 														</GroupingBehaviorList>
 														<GroupingList>
 															<Grouping>
-																<SwitchRef Name="Epic" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+																<SwitchRef Name="Epic_Grenade" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
 																<ItemList>
 																	<ItemRef Name="Epic" ID="{967DD1D9-F0CA-454B-A8DA-C5D25738FEA5}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Legendary" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
+																<SwitchRef Name="Legendary_Grenade" ID="{D5B90BA3-7A0C-4619-BDAE-D2A17D5C1716}"/>
 																<ItemList>
 																	<ItemRef Name="Legendary" ID="{2AB006B9-A7EB-4BF5-88D4-FF170594C061}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
-																<SwitchRef Name="Commun" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+																<SwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 																<ItemList>
 																	<ItemRef Name="Commun" ID="{68B77280-7ADF-4177-8BC7-94CB063E235E}"/>
 																</ItemList>
