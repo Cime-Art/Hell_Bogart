@@ -148,17 +148,6 @@
 						</Folder>
 						<Folder Name="Ulti" ID="{DB1188E8-1C09-434B-8230-2D9A3100D178}" ShortID="37561050">
 							<ChildrenList>
-								<Event Name="E_Kaliboss_Ulti_cast" ID="{9185B806-821D-41EE-93E2-E8C6A8BF7932}">
-									<ChildrenList>
-										<Action Name="" ID="{3ADB7537-39D8-47FC-83DB-431D0A2477EC}" ShortID="243884124">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="RND_Kali_Invoc_slam" ID="{C1BE945F-A09B-40A1-95CE-A25CF11F4B7C}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="E_Kaliboss_Ulti_Shockwave" ID="{A1911FF7-30B8-470E-9825-AF20C36CCEF0}">
 									<ChildrenList>
 										<Action Name="" ID="{ABB9F5C4-CB5E-4EC4-9B47-42F947D805C1}" ShortID="954276626">
@@ -207,21 +196,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="HB_SFX_KALI_Air_Movement_01" ID="{C25A09CA-B8E6-4ADE-88AF-9EE62D8C006B}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Scream" ID="{4BB07E0E-8BDF-4BDE-A98E-E999396FBF10}" ShortID="256384669">
-							<ChildrenList>
-								<Event Name="E_KaliBoss_Scream" ID="{2FBCA700-F151-4B24-BB4A-73DFE46091EA}">
-									<ChildrenList>
-										<Action Name="" ID="{CA88ACA7-BDB2-4C31-BB2C-633A8E5F5CCC}" ShortID="627571783">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="RND_Kali_Scream_01" ID="{26080F68-EC1A-4763-98E9-1AECBD56AC0D}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
