@@ -29,6 +29,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_KaliBossh_Whoosh" ID="{C2E2EBE0-B73E-4FF9-9A16-096BCA1858EB}">
+									<ChildrenList>
+										<Action Name="" ID="{7165BB72-48A9-4E18-B7D0-F8476F4BED07}" ShortID="1072445499">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Grab_Whoosh" ID="{93E62783-1F2C-48FC-97CA-F85D8798F0AD}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Attack" ID="{6C802197-2DD5-4E12-9C72-F0542DF11975}" ShortID="351364000">
