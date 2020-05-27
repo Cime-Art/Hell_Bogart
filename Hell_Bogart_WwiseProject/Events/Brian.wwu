@@ -124,13 +124,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{604C8A2B-4731-45FA-B964-79250AB531C0}" ShortID="602100249">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Ground_SWITCH" ID="{E7987704-D43E-44C5-8B6E-F23D4627BB5D}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

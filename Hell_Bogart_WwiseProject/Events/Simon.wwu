@@ -1251,7 +1251,7 @@
 										<Action Name="" ID="{8C5C7B85-CA7D-45A7-B25E-494C4237E4E2}" ShortID="993602314">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="80"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1276,7 +1276,7 @@
 										<Action Name="" ID="{1810DE5A-6817-40AB-811B-B6BB0CEF0293}" ShortID="443545599">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="-3000"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1287,7 +1287,7 @@
 										</Action>
 										<Action Name="" ID="{4F2AC194-018C-4478-AD4E-28766D986658}" ShortID="939760897">
 											<PropertyList>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -1541,6 +1541,30 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{7E65B53B-8B45-45A4-A352-4922E9BA44DA}" ShortID="293057395">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="70"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{11759FB9-69D4-419F-9A1F-A2C242B4BF7E}" ShortID="190566420">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="E_Char_Heartbeat_Fast" ID="{47384D2D-FF1E-4674-9E59-5D824BA49728}">
@@ -1556,6 +1580,30 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Heartbeat_Fast_SEQ" ID="{B3722E34-3780-4093-90B0-2527D15414F1}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3721D51B-399F-4B15-A3C0-94B9520EAEBC}" ShortID="190453015">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="80"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{01958C68-DC0C-44F5-87C9-5D0D373C9471}" ShortID="238007343">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
