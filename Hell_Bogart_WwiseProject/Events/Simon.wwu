@@ -1251,7 +1251,7 @@
 										<Action Name="" ID="{8C5C7B85-CA7D-45A7-B25E-494C4237E4E2}" ShortID="993602314">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="80"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1276,7 +1276,7 @@
 										<Action Name="" ID="{1810DE5A-6817-40AB-811B-B6BB0CEF0293}" ShortID="443545599">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="-3000"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1287,7 +1287,7 @@
 										</Action>
 										<Action Name="" ID="{4F2AC194-018C-4478-AD4E-28766D986658}" ShortID="939760897">
 											<PropertyList>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
