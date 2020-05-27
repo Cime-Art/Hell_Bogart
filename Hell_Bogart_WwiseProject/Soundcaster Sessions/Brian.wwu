@@ -46,7 +46,7 @@
 							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Elm_Thunder" ID="{E88FC537-22E0-4BC9-9C7A-0525FC7975AD}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+							<ObjectRef Name="Elm_Thunder" ID="{E88FC537-22E0-4BC9-9C7A-0525FC7975AD}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 							<Position X="1" Y="6"/>
 						</Module>
 						<Module>
@@ -66,7 +66,7 @@
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Elm_Fire" ID="{7AC10C4F-9836-4700-A3C7-988C84840253}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+							<ObjectRef Name="Elm_Fire" ID="{7AC10C4F-9836-4700-A3C7-988C84840253}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 							<Position X="2" Y="6"/>
 						</Module>
 						<Module>
@@ -86,7 +86,7 @@
 							<Position X="3" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Elm_Ice" ID="{8ADAB159-AF9D-4AE6-8772-5F73904ACBC1}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+							<ObjectRef Name="Elm_Ice" ID="{8ADAB159-AF9D-4AE6-8772-5F73904ACBC1}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 							<Position X="3" Y="6"/>
 						</Module>
 						<Module>
@@ -102,7 +102,7 @@
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Elm_Regular" ID="{5C91A112-5143-4FC2-A2B4-73EB11CCBC56}" WorkUnitID="{4EF4EBEF-ABF2-4B71-8D56-E58DD646B13C}"/>
+							<ObjectRef Name="Elm_Regular" ID="{5C91A112-5143-4FC2-A2B4-73EB11CCBC56}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 							<Position X="4" Y="6"/>
 						</Module>
 						<Module>

@@ -8,14 +8,14 @@
 						<Action Name="" ID="{6E2E307E-D35B-4002-878A-0ED7EECAA5E4}" ShortID="772450416">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="FTP_surface_type_switch" ID="{29EE7E0A-1940-4DF7-B1DA-61575C7B6D63}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+									<ObjectRef Name="FTP_surface_type_switch" ID="{29EE7E0A-1940-4DF7-B1DA-61575C7B6D63}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{1F6873D6-8B0A-4398-9173-60BFF5ACC9ED}" ShortID="916201024">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Foley_RND" ID="{9148D01B-7ED1-4C7F-B641-7BBA9C11AC6C}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+									<ObjectRef Name="Foley_RND" ID="{9148D01B-7ED1-4C7F-B641-7BBA9C11AC6C}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -29,7 +29,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="KAli whisper 02" ID="{94AD9DC8-F257-43B2-ACF4-6CF6F879940A}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+									<ObjectRef Name="SFX_HB_AMB_Kali_Map" ID="{94AD9DC8-F257-43B2-ACF4-6CF6F879940A}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -44,7 +44,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="KAli whisper 02" ID="{94AD9DC8-F257-43B2-ACF4-6CF6F879940A}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+									<ObjectRef Name="SFX_HB_AMB_Kali_Map" ID="{94AD9DC8-F257-43B2-ACF4-6CF6F879940A}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

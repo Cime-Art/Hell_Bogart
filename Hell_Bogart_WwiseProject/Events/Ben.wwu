@@ -8,7 +8,7 @@
 						<Action Name="" ID="{0DB076D9-2538-451E-8CBA-E597649950A5}" ShortID="187423832">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Foley_Gaitling" ID="{836D3997-AC5A-4FE5-AF55-27A314A4C1E2}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+									<ObjectRef Name="Foley_Gaitling" ID="{836D3997-AC5A-4FE5-AF55-27A314A4C1E2}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -18,7 +18,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Minigun_Barrel_Start" ID="{CAC3A58B-3B7E-41F3-90CD-C3C16368D9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+									<ObjectRef Name="Minigun_Barrel_Start" ID="{CAC3A58B-3B7E-41F3-90CD-C3C16368D9A7}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -28,7 +28,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Fire" ID="{E749DD99-3F0B-43B8-B797-8E747830D6A2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+									<ObjectRef Name="Fire" ID="{E749DD99-3F0B-43B8-B797-8E747830D6A2}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -38,7 +38,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Shells" ID="{AFA343D5-B7C4-462C-9BFD-77B1C5846FF1}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+									<ObjectRef Name="Shells" ID="{AFA343D5-B7C4-462C-9BFD-77B1C5846FF1}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -52,7 +52,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MnGn_Barrel_Down" ID="{25A6CDC0-ACEB-4A2B-A892-F6CD42D11428}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+									<ObjectRef Name="MnGn_Barrel_Down" ID="{25A6CDC0-ACEB-4A2B-A892-F6CD42D11428}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -63,7 +63,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Minigun_Barrel_Start" ID="{CAC3A58B-3B7E-41F3-90CD-C3C16368D9A7}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+									<ObjectRef Name="Minigun_Barrel_Start" ID="{CAC3A58B-3B7E-41F3-90CD-C3C16368D9A7}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -73,7 +73,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Fire" ID="{E749DD99-3F0B-43B8-B797-8E747830D6A2}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+									<ObjectRef Name="Fire" ID="{E749DD99-3F0B-43B8-B797-8E747830D6A2}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -84,7 +84,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Shells" ID="{AFA343D5-B7C4-462C-9BFD-77B1C5846FF1}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+									<ObjectRef Name="Shells" ID="{AFA343D5-B7C4-462C-9BFD-77B1C5846FF1}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -94,14 +94,14 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Sizzel" ID="{055E0944-9FEE-4EBA-A5C5-9D6DC226F41B}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+									<ObjectRef Name="Sizzel" ID="{055E0944-9FEE-4EBA-A5C5-9D6DC226F41B}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{FAD66FBF-E457-4AB3-8894-51AFDB4EBFF5}" ShortID="1048370646">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Foley_Shotgun" ID="{5BA2BC69-FC0F-493B-B681-325C3B4D71C5}" WorkUnitID="{EC744BF8-9C43-4EC0-B18F-F8E5E0882063}"/>
+									<ObjectRef Name="Foley_Shotgun" ID="{5BA2BC69-FC0F-493B-B681-325C3B4D71C5}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

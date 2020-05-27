@@ -29,6 +29,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_KaliBossh_Whoosh" ID="{C2E2EBE0-B73E-4FF9-9A16-096BCA1858EB}">
+									<ChildrenList>
+										<Action Name="" ID="{7165BB72-48A9-4E18-B7D0-F8476F4BED07}" ShortID="1072445499">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Grab_Whoosh" ID="{93E62783-1F2C-48FC-97CA-F85D8798F0AD}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Attack" ID="{6C802197-2DD5-4E12-9C72-F0542DF11975}" ShortID="351364000">
@@ -137,17 +148,6 @@
 						</Folder>
 						<Folder Name="Ulti" ID="{DB1188E8-1C09-434B-8230-2D9A3100D178}" ShortID="37561050">
 							<ChildrenList>
-								<Event Name="E_Kaliboss_Ulti_cast" ID="{9185B806-821D-41EE-93E2-E8C6A8BF7932}">
-									<ChildrenList>
-										<Action Name="" ID="{3ADB7537-39D8-47FC-83DB-431D0A2477EC}" ShortID="243884124">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="RND_Kali_Ultimate_cast" ID="{C1BE945F-A09B-40A1-95CE-A25CF11F4B7C}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="E_Kaliboss_Ulti_Shockwave" ID="{A1911FF7-30B8-470E-9825-AF20C36CCEF0}">
 									<ChildrenList>
 										<Action Name="" ID="{ABB9F5C4-CB5E-4EC4-9B47-42F947D805C1}" ShortID="954276626">
@@ -203,14 +203,25 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Scream" ID="{4BB07E0E-8BDF-4BDE-A98E-E999396FBF10}" ShortID="256384669">
+						<Folder Name="Invocation" ID="{9DF2193B-68E6-44FD-8ED1-5F2670AE92D5}" ShortID="929450349">
 							<ChildrenList>
-								<Event Name="E_KaliBoss_Scream" ID="{2FBCA700-F151-4B24-BB4A-73DFE46091EA}">
+								<Event Name="E_KaliBoss_Invocation" ID="{DB466EA2-CC1B-47A5-BC85-55CCF7CD5F6A}">
 									<ChildrenList>
-										<Action Name="" ID="{CA88ACA7-BDB2-4C31-BB2C-633A8E5F5CCC}" ShortID="627571783">
+										<Action Name="" ID="{52DAF6F5-D42B-4235-AE11-351C03C0FFE9}" ShortID="948786484">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="RND_Kali_Scream_01" ID="{26080F68-EC1A-4763-98E9-1AECBD56AC0D}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+													<ObjectRef Name="RND_Kali_Invocs" ID="{860A526A-F3AC-4B5F-94A7-D8F1D81C5719}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_KaliBoss_Invocation_slam" ID="{994DA86A-20BF-4BC3-BE3E-344E9B265442}">
+									<ChildrenList>
+										<Action Name="" ID="{6E06FF0F-38E1-405C-8346-927F1B6517FE}" ShortID="110630724">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Kali_Invoc_slam" ID="{C1BE945F-A09B-40A1-95CE-A25CF11F4B7C}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -227,7 +238,7 @@
 								<Action Name="" ID="{38FA9B56-248E-4A09-BE9D-577EE14B037B}" ShortID="169404089">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Ammo_Switch" ID="{C59307DC-5951-4B50-AD6E-0BC1E0A57BDA}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+											<ObjectRef Name="Ammo_Switch" ID="{C59307DC-5951-4B50-AD6E-0BC1E0A57BDA}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -249,7 +260,7 @@
 								<Action Name="" ID="{524DEEEF-B013-4558-AF38-5BA3AA0524BC}" ShortID="113827074">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_HB_PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+											<ObjectRef Name="SFX_HB_PickUP_Switch" ID="{182B2775-A0A7-4B06-AA1B-B7D12C0E2CC8}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -260,7 +271,7 @@
 								<Action Name="" ID="{DE0025EE-8798-48AA-B71C-0C20284C5C5E}" ShortID="811428973">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="HB_PickUpHealthkit" ID="{1044A179-EF22-4B37-B9B5-CDDF96349B22}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+											<ObjectRef Name="HB_PickUpHealthkit" ID="{1044A179-EF22-4B37-B9B5-CDDF96349B22}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -271,7 +282,7 @@
 								<Action Name="" ID="{D9325B45-7388-4100-9C35-EF227B69427D}" ShortID="1055440013">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+											<ObjectRef Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -281,7 +292,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Heartbeat" ID="{6E08BCF3-5D0A-49FE-B080-7CA14E3990BE}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+											<ObjectRef Name="Heartbeat" ID="{6E08BCF3-5D0A-49FE-B080-7CA14E3990BE}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -291,7 +302,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Bear_Speech_Release_RND" ID="{1B369575-D772-4A22-A4C6-CBEF3F0D3DDC}" WorkUnitID="{04788302-CB53-42AD-B232-0F75BFE795DC}"/>
+											<ObjectRef Name="Bear_Speech_Release_RND" ID="{1B369575-D772-4A22-A4C6-CBEF3F0D3DDC}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
