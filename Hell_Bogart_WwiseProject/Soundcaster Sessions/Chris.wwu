@@ -10,10 +10,6 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="HB_UiWep_Equip_EVENT" ID="{908DFB87-BD81-4BEF-9E62-F13F2B12DF7C}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="HB_PickUp_EVENT" ID="{93A3B8D0-3050-4D01-9BA8-EE7DCB3A369A}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
 							<Position X="1" Y="0"/>
 						</Module>
