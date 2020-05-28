@@ -229,6 +229,21 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Reflect" ID="{F7816E5E-23BB-440B-AD3A-214CB237B3F7}" ShortID="364435846">
+							<ChildrenList>
+								<Event Name="E_KaliBoss_Reflect" ID="{094417B2-A50F-4EBC-968B-92F724E5D510}">
+									<ChildrenList>
+										<Action Name="" ID="{A5CFDFD6-1FF6-4804-82B8-76B73D3EC6DD}" ShortID="744964337">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RND_Kali_Reflects" ID="{9A375CD2-E8FB-480A-9B6D-685AB3595707}" WorkUnitID="{167FE7F0-E450-4B9D-A53B-E00B18C115FE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="HB_Ui_Character" ID="{6238A0C0-DC63-40FA-BE22-55F0706986CE}" ShortID="604188379">
