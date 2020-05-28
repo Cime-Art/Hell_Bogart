@@ -2165,6 +2165,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="New Music Track" ID="{1E4589F0-C25E-4D80-8906-BADB1663964D}" ShortID="399567547">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -2194,6 +2201,7 @@
 													<PropertyList>
 														<Property Name="BeginTrimOffset" Type="Real64" Value="1452.97567835105"/>
 														<Property Name="EndTrimOffset" Type="Real64" Value="7201.38321995465"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="518.495616176487"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 														<Property Name="PlayAt" Type="Real64" Value="-1452.97567835105"/>
 													</PropertyList>
@@ -2622,7 +2630,11 @@
 									</PropertyList>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{CA6901EF-6028-4671-9810-C04C57FFA5A6}">
-											<TransitionInfo/>
+											<TransitionInfo>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{BFED1B93-D70F-4CD9-85E0-250386FB2206}"/>
+												</DestinationFadeIn>
+											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
@@ -2648,6 +2660,11 @@
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="150"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2926,6 +2943,11 @@
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="150"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2977,7 +2999,7 @@
 																<Property Name="EndTrimOffset" Type="Real64" Value="9545.82766439909"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="1001.8121341234"/>
+																<Property Name="PlayAt" Type="Real64" Value="800"/>
 															</PropertyList>
 															<AudioSourceRef Name="Cykodd - Transition Boss" ID="{2B9D2735-81AA-4554-9ED0-8D9B77DCCA48}"/>
 														</MusicClip>
@@ -3015,6 +3037,7 @@
 															<PropertyList>
 																<Property Name="BeginTrimOffset" Type="Real64" Value="1469.07477820025"/>
 																<Property Name="EndTrimOffset" Type="Real64" Value="7201.38321995465"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="440.419447092468"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																<Property Name="PlayAt" Type="Real64" Value="-1469.07477820025"/>
 															</PropertyList>
@@ -3087,13 +3110,13 @@
 									<CueList>
 										<MusicCue Name="Entry Cue" ID="{D9265EA5-9245-4F6C-96A7-F826D8F5E0A9}">
 											<PropertyList>
-												<Property Name="TimeMs" Type="Real64" Value="1001.8121341234"/>
+												<Property Name="TimeMs" Type="Real64" Value="800"/>
 											</PropertyList>
 										</MusicCue>
 										<MusicCue Name="Exit Cue" ID="{733981F4-1C54-4F17-ACA9-8DF090CA167C}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="7401.8121341234"/>
+												<Property Name="TimeMs" Type="Real64" Value="7200"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
@@ -3385,6 +3408,11 @@
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="38500"/>
 										<Property Name="Tempo" Type="Real64" Value="150"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3606,7 +3634,11 @@
 										</MusicTrack>
 									</ChildrenList>
 									<CueList>
-										<MusicCue Name="Entry Cue" ID="{F9099E4A-9414-4041-A0A4-C85957D63D66}"/>
+										<MusicCue Name="Entry Cue" ID="{F9099E4A-9414-4041-A0A4-C85957D63D66}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="1600"/>
+											</PropertyList>
+										</MusicCue>
 										<MusicCue Name="Exit Cue" ID="{1DF6A878-EE97-4BFD-8254-3BFF44A6FC84}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
@@ -3623,7 +3655,19 @@
 									</PropertyList>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{29304C23-3BA3-4B4B-AC38-8076E8400836}">
-											<TransitionInfo/>
+											<PropertyList>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{B33747A4-89BA-46C9-A7D3-5CB85838A226}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="-4"/>
+															<Property Name="FadeTime" Type="Real64" Value="4"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
@@ -3678,7 +3722,7 @@
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
 									</PropertyList>
