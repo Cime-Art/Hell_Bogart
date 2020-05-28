@@ -2206,6 +2206,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_UI_Switch_Ammo" ID="{04B67AE7-0941-468D-BF68-3AF0CE38AA58}">
+							<ChildrenList>
+								<Action Name="" ID="{B90B57B9-A17D-4DF6-9AA2-42AA84B6A34B}" ShortID="236994682">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_Switch_Ammo_RND" ID="{C4898286-BDB5-441C-A800-C0EF39FA6DEF}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_Switch_Grenade" ID="{DBC79303-4D0E-4D77-B6D7-684D587CEA07}">
+							<ChildrenList>
+								<Action Name="" ID="{C1F41F5C-737A-42DB-9FD3-752E8EE4EC43}" ShortID="607819114">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HUD_Switch_Grenade_RND" ID="{C24C9B78-348D-48B7-8549-D737EAA66A81}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

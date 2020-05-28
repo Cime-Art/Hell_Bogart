@@ -1017,6 +1017,8 @@
 				<Event Id="2920923470" Name="E_UI_Overlay" ObjectPath="\Events\Brian\UI\E_UI_Overlay"/>
 				<Event Id="762198780" Name="E_UI_Play" ObjectPath="\Events\Brian\UI\E_UI_Play"/>
 				<Event Id="1971253356" Name="E_UI_Return" ObjectPath="\Events\Brian\UI\E_UI_Return"/>
+				<Event Id="621307263" Name="E_UI_Switch_Ammo" ObjectPath="\Events\Simon\UI\E_UI_Switch_Ammo"/>
+				<Event Id="2979668013" Name="E_UI_Switch_Grenade" ObjectPath="\Events\Simon\UI\E_UI_Switch_Grenade"/>
 				<Event Id="1254674964" Name="E_UI_Valid" ObjectPath="\Events\Brian\UI\E_UI_Valid"/>
 				<Event Id="2759949120" Name="HB_Healthkit" ObjectPath="\Events\Chris\HB_Ui_Character\HB_Healthkit"/>
 				<Event Id="3887785823" Name="HB_PickUp_EVENT" ObjectPath="\Events\Chris\HB_Ui_Character\HB_PickUp_EVENT"/>
@@ -1295,6 +1297,10 @@
 				<File Id="128255007" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_4-2_GetCloserIntroduceMother.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_4-2_GetCloserIntroduceMother_10C4C929.wem</Path>
+				</File>
+				<File Id="129847404" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchGrenade_01.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchGrenade_01_10C4C929.wem</Path>
 				</File>
 				<File Id="131068961" Language="SFX">
 					<ShortName>HB_SFX_Other_Ammo_02.wav</ShortName>
@@ -1984,6 +1990,10 @@
 					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_04.wav</ShortName>
 					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_04_66C02B12.wem</Path>
 				</File>
+				<File Id="382431942" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchGrenade_02.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchGrenade_02_10C4C929.wem</Path>
+				</File>
 				<File Id="382670636" Language="SFX">
 					<ShortName>HB_SFX_Foley_2.wav</ShortName>
 					<Path>SFX\HB_SFX_Foley_2_B8196996.wem</Path>
@@ -2187,6 +2197,10 @@
 				<File Id="454462908" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Spread60_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread60_01_66C02B12.wem</Path>
+				</File>
+				<File Id="456000760" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchAmmo_02.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchAmmo_02_10C4C929.wem</Path>
 				</File>
 				<File Id="457225260" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_03.wav</ShortName>
@@ -2784,6 +2798,10 @@
 					<ShortName>HB_Kali_Attacks_whoosh_Mid_02.wav</ShortName>
 					<Path>SFX\HB_Kali_Attacks_whoosh_Mid_02_8A436430.wem</Path>
 				</File>
+				<File Id="681361430" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchGrenade_03.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchGrenade_03_10C4C929.wem</Path>
+				</File>
 				<File Id="682102811" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_8-3_BodyIsReady.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_8-3_BodyIsReady_10C4C929.wem</Path>
@@ -3212,6 +3230,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleOUT_01_66C02B12.wem</Path>
 				</File>
+				<File Id="868334332" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchAmmo_01.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchAmmo_01_10C4C929.wem</Path>
+				</File>
 				<File Id="872149081" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Dot_Thunder_06.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Dot_Thunder_06_66C02B12.wem</Path>
@@ -3375,6 +3397,10 @@
 				<File Id="959475863" Language="SFX">
 					<ShortName>HB_SFX_KALI_Attack_01.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_Attack_01_09928E58.wem</Path>
+				</File>
+				<File Id="962354330" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchAmmo_03.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchAmmo_03_10C4C929.wem</Path>
 				</File>
 				<File Id="964309945" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Dot_Thunder_02.wav</ShortName>
