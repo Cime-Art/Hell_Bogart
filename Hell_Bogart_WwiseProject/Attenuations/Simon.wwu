@@ -328,7 +328,7 @@
 												</Point>
 												<Point>
 													<XPos>5000</XPos>
-													<YPos>-0</YPos>
+													<YPos>0</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -659,7 +659,7 @@
 					<ChildrenList>
 						<Attenuation Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" ShortID="414495897">
 							<PropertyList>
-								<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+								<Property Name="RadiusMax" Type="Real64" Value="8000"/>
 							</PropertyList>
 							<CurveUsageInfoList>
 								<VolumeDryUsage>
@@ -676,7 +676,7 @@
 													<SegmentShape>Log2</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>5000</XPos>
+													<XPos>8000</XPos>
 													<YPos>-200</YPos>
 													<Flags>37</Flags>
 												</Point>

@@ -910,7 +910,6 @@
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
-				<Event Id="255191678" Name="E_Kali_UltiScream" ObjectPath="\Events\Simon\Voice\Kali\E_Kali_UltiScream"/>
 				<Event Id="685482513" Name="E_KaliBoss_Attacks" ObjectPath="\Events\Chris\HB_Kali Events\Attack\E_KaliBoss_Attacks"/>
 				<Event Id="452971736" Name="E_KaliBoss_deathfire" ObjectPath="\Events\Chris\HB_Kali Events\Death\E_KaliBoss_deathfire"/>
 				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\Get Hit\E_KaliBoss_GetHit"/>
@@ -922,8 +921,12 @@
 				<Event Id="1902388067" Name="E_KaliBoss_Hits_Bear_Slash" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Slash"/>
 				<Event Id="1874061798" Name="E_KaliBoss_Hits_Bear_Whirlwind" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Whirlwind"/>
 				<Event Id="3318371348" Name="E_KaliBoss_Impact" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_KaliBoss_Impact"/>
+				<Event Id="192942780" Name="E_KaliBoss_Invocation" ObjectPath="\Events\Chris\HB_Kali Events\Invocation\E_KaliBoss_Invocation"/>
+				<Event Id="2973010912" Name="E_KaliBoss_Invocation_slam" ObjectPath="\Events\Chris\HB_Kali Events\Invocation\E_KaliBoss_Invocation_slam"/>
 				<Event Id="658884810" Name="E_KaliBoss_Jump" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_KaliBoss_Jump"/>
+				<Event Id="844121353" Name="E_KaliBoss_Reflect" ObjectPath="\Events\Chris\HB_Kali Events\Reflect\E_KaliBoss_Reflect"/>
 				<Event Id="987842344" Name="E_Kaliboss_Ulti_Shockwave" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_Kaliboss_Ulti_Shockwave"/>
+				<Event Id="1788047770" Name="E_KaliBossh_Whoosh" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBossh_Whoosh"/>
 				<Event Id="663816717" Name="E_Mob_Gardian_Attack" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Attack"/>
 				<Event Id="1083833169" Name="E_Mob_Gardian_Death" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Death"/>
 				<Event Id="1279445176" Name="E_Mob_Gardian_EndCharge" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_EndCharge"/>
@@ -989,6 +992,7 @@
 				<Event Id="2376769881" Name="E_Speech_Kali_LostHerMask" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_LostHerMask"/>
 				<Event Id="4177976852" Name="E_Speech_Kali_Random_Lines_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_LOOP"/>
 				<Event Id="3985088299" Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_STOP_LOOP"/>
+				<Event Id="1561586025" Name="E_Speech_Kali_ScreamSpell" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_ScreamSpell"/>
 				<Event Id="3478273789" Name="E_Speech_Kali_Speech_TheChaseIsOn" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Speech_TheChaseIsOn"/>
 				<Event Id="4237626404" Name="E_Speech_Kali_ThereIsNoEscape" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_ThereIsNoEscape"/>
 				<Event Id="1851091839" Name="E_SpikeDoor_Begin" ObjectPath="\Events\Simon\Enviro\Spike Door\E_SpikeDoor_Begin"/>
@@ -1251,6 +1255,10 @@
 				<File Id="114633403" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_HitIce_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_HitIce_01_66C02B12.wem</Path>
+				</File>
+				<File Id="115469655" Language="SFX">
+					<ShortName>HB_SFX_KALI_ULTI_Cast_01.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_ULTI_Cast_01_66C02B12.wem</Path>
 				</File>
 				<File Id="115950250" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_4_ExtraHaha.wav</ShortName>
@@ -1528,6 +1536,10 @@
 					<ShortName>FTP_gravier_01.wav</ShortName>
 					<Path>SFX\FTP_gravier_01_66C02B12.wem</Path>
 				</File>
+				<File Id="225195992" Language="SFX">
+					<ShortName>HB_SFX_KALI_GrabWhoosh_02.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_GrabWhoosh_02_66C02B12.wem</Path>
+				</File>
 				<File Id="225519632" Language="SFX">
 					<ShortName>HB_rope_moving_1.wav</ShortName>
 					<Path>SFX\HB_rope_moving_1_66C02B12.wem</Path>
@@ -1583,6 +1595,10 @@
 				<File Id="237414432" Language="SFX">
 					<ShortName>i_can_hear_you.WAV</ShortName>
 					<Path>SFX\i_can_hear_you_10C4C929.wem</Path>
+				</File>
+				<File Id="239840268" Language="SFX">
+					<ShortName>HB_SFX_KALI_ULTI_Cast_02.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_ULTI_Cast_02_66C02B12.wem</Path>
 				</File>
 				<File Id="240532853" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_HitThunder_02.wav</ShortName>
@@ -1832,6 +1848,10 @@
 					<ShortName>VOICE_HB_Bear_LosingLife_Shit_08.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LosingLife_Shit_08_10C4C929.wem</Path>
 				</File>
+				<File Id="341562079" Language="SFX">
+					<ShortName>HB_SFX_KALI_Invocation_01.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_Invocation_01_66C02B12.wem</Path>
+				</File>
 				<File Id="342182258" Language="SFX">
 					<ShortName>your_soul_will_be_mine.WAV</ShortName>
 					<Path>SFX\your_soul_will_be_mine_10C4C929.wem</Path>
@@ -1851,6 +1871,10 @@
 				<File Id="349159635" Language="SFX">
 					<ShortName>SFX_HB_UI_DenyEffect_Click_03.wav</ShortName>
 					<Path>SFX\SFX_HB_UI_DenyEffect_Click_03_10C4C929.wem</Path>
+				</File>
+				<File Id="349168813" Language="SFX">
+					<ShortName>HB_SFX_KALI_Reflect_04.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_Reflect_04_66C02B12.wem</Path>
 				</File>
 				<File Id="350112094" Language="SFX">
 					<ShortName>HB_SFX_ImpactGrenade_6 (1).wav</ShortName>
@@ -1942,7 +1966,7 @@
 				</File>
 				<File Id="379540692" Language="SFX">
 					<ShortName>HB_SFX_Other_Healthkit.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_Healthkit_B0C5A309.wem</Path>
+					<Path>SFX\HB_SFX_Other_Healthkit_149C83B2.wem</Path>
 				</File>
 				<File Id="379879356" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-004.wav</ShortName>
@@ -1991,6 +2015,10 @@
 				<File Id="390888805" Language="SFX">
 					<ShortName>dont_be_shy.WAV</ShortName>
 					<Path>SFX\dont_be_shy_10C4C929.wem</Path>
+				</File>
+				<File Id="391255860" Language="SFX">
+					<ShortName>HB_SFX_KALI_Reflect_05.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_Reflect_05_66C02B12.wem</Path>
 				</File>
 				<File Id="393304929" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_00.wav</ShortName>
@@ -2492,6 +2520,10 @@
 					<ShortName>HB-SFX-GenadeFire-00.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeFire-00_66C02B12.wem</Path>
 				</File>
+				<File Id="571860504" Language="SFX">
+					<ShortName>HB_SFX_KALI_Invocation_03.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_Invocation_03_66C02B12.wem</Path>
+				</File>
 				<File Id="572723576" Language="SFX">
 					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_05.wav</ShortName>
 					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_05_66C02B12.wem</Path>
@@ -2580,6 +2612,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_FireHit_03_66C02B12.wem</Path>
 				</File>
+				<File Id="599003458" Language="SFX">
+					<ShortName>HB_SFX_KALI_Invocation_02.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_Invocation_02_66C02B12.wem</Path>
+				</File>
 				<File Id="599006176" Language="SFX">
 					<ShortName>VOICE_HB_Bear_CombatEnd_4-3_BlowYourBalls.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_CombatEnd_4-3_BlowYourBalls_10C4C929.wem</Path>
@@ -2655,6 +2691,10 @@
 				<File Id="637723326" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_04_0CE06A6E.wem</Path>
+				</File>
+				<File Id="641751413" Language="SFX">
+					<ShortName>HB_SFX_KALI_Reflect_06.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_Reflect_06_66C02B12.wem</Path>
 				</File>
 				<File Id="643377963" Language="SFX">
 					<ShortName>SFX_HB_CaisseExplosive_01.wav</ShortName>
@@ -2914,7 +2954,7 @@
 				</File>
 				<File Id="749596691" Language="SFX">
 					<ShortName>HB_SFX_KALI_ultimatescream_05.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_ultimatescream_05_10C4C929.wem</Path>
+					<Path>SFX\HB_SFX_KALI_ultimatescream_05_4A9934EE.wem</Path>
 				</File>
 				<File Id="749607470" Language="SFX">
 					<ShortName>HB-SFX-GenadeFire-01.wav</ShortName>
@@ -3311,6 +3351,10 @@
 				<File Id="949577968" Language="SFX">
 					<ShortName>SFX_HB_SpikeDoor_MetalScrape_01.wav</ShortName>
 					<Path>SFX\SFX_HB_SpikeDoor_MetalScrape_01_66C02B12.wem</Path>
+				</File>
+				<File Id="953900687" Language="SFX">
+					<ShortName>HB_SFX_KALI_GrabWhoosh_01.wav</ShortName>
+					<Path>SFX\HB_SFX_KALI_GrabWhoosh_01_66C02B12.wem</Path>
 				</File>
 				<File Id="956737558" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Attack_02.wav</ShortName>

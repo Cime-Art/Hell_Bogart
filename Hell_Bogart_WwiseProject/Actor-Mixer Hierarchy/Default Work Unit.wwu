@@ -824,6 +824,58 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
+								<ActorMixer Name="Use Healthkit" ID="{853C7734-7636-4F53-B7BA-DC7DB3997F67}" ShortID="682818835">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" ShortID="596721459">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_Other_Healthkit" ID="{218DC6D9-2FF3-4570-B5C2-96CEA497104D}" ShortID="379540692">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.14768427919113"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.23999782561426"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_Other_Healthkit.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_Other_Healthkit" ID="{218DC6D9-2FF3-4570-B5C2-96CEA497104D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
@@ -1726,7 +1778,7 @@
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="Mob Stealer" ID="{A7937A28-42B9-44C7-9827-E334F746D306}" ShortID="602540758">
+								<ActorMixer Name="Stealer" ID="{A7937A28-42B9-44C7-9827-E334F746D306}" ShortID="602540758">
 									<PropertyList>
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
@@ -11123,26 +11175,16 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 								</Reference>
 							</ReferenceList>
-						</ActorMixer>
-						<ActorMixer Name="Bear" ID="{36CD4D2B-8C53-47B9-953F-A7C3A58419F2}" ShortID="714758427">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-								</Reference>
-							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="Use Healthkit" ID="{853C7734-7636-4F53-B7BA-DC7DB3997F67}" ShortID="682818835">
+								<ActorMixer Name="GetHit" ID="{A674A26A-C7D9-49C6-8B27-39FC52FFBDDE}" ShortID="974007837">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 										</Reference>
@@ -11160,7 +11202,10 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="HB_Healthkit" ID="{668056D9-CA5D-4F6D-93E1-D1795D3E9AB5}" ShortID="596721459">
+										<RandomSequenceContainer Name="RND_Hits" ID="{A2B93BB2-6439-46A2-9B13-5904ACFBE49E}" ShortID="292696961">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -11170,22 +11215,1930 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Other_Healthkit" ID="{218DC6D9-2FF3-4570-B5C2-96CEA497104D}" ShortID="379540692">
+												<Sound Name="HB_SFX_KALI_HIT_04" ID="{D7463EAB-4C6F-4D06-A8B9-AA5FDB31C27D}" ShortID="617812760">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_HIT_04" ID="{FD9C8EDF-0368-45B5-AA7F-52E9CFC7134E}" ShortID="204319519">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_HIT_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_HIT_04" ID="{FD9C8EDF-0368-45B5-AA7F-52E9CFC7134E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_HIT_05" ID="{F97B438B-EAF6-43EB-B1E3-F117707AE6F4}" ShortID="668866692">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_HIT_05" ID="{7BDF6AAE-1BF7-493B-92E4-8DAB9ACD46BB}" ShortID="304778144">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_HIT_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_HIT_05" ID="{7BDF6AAE-1BF7-493B-92E4-8DAB9ACD46BB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_HIT_06" ID="{711F21A2-58E3-4A76-AAB7-5BB1A77575B7}" ShortID="183595732">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_HIT_06" ID="{5FFE7B77-12AF-441B-A0E8-A98666497FC5}" ShortID="739091931">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.69325699298652E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_HIT_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_HIT_06" ID="{5FFE7B77-12AF-441B-A0E8-A98666497FC5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_HIT_07" ID="{9BBDE132-539E-4C59-B88C-55D2AE3A3097}" ShortID="886905728">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_HIT_07" ID="{22D7AC7D-8910-41E5-8B91-939E8EE2491C}" ShortID="975625654">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="5.86577993216793E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.86577993216793E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_HIT_07.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_HIT_07" ID="{22D7AC7D-8910-41E5-8B91-939E8EE2491C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_HIT_08" ID="{B35A5ECC-45BC-4F9F-A023-4B1F86798215}" ShortID="241677389">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.14768427919113"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>13</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_HIT_08" ID="{5081D580-E9BB-4040-9D8A-F701A776E210}" ShortID="814327214">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="6.03830287134934E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.03830287134934E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_HIT_08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_HIT_08" ID="{5081D580-E9BB-4040-9D8A-F701A776E210}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Death Fire Effect" ID="{B4B598B7-EF15-4EA0-B153-10A61B565239}" ShortID="431853417">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HB_SFX_KALI_Deadfire_01" ID="{0A95FEA5-695F-431B-918C-F3AC0D83626E}" ShortID="1010375431">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_KALI_Deadfire_01" ID="{73EC1AF5-2EBD-46C5-A9B4-0ED290BF7F0E}" ShortID="380057625">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.504500606897951"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.23999782561426"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Other_Healthkit.wav</AudioFile>
+													<AudioFile>HB_SFX_KALI_Deadfire_01.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Other_Healthkit" ID="{218DC6D9-2FF3-4570-B5C2-96CEA497104D}" Platform="Linked"/>
+												<ActiveSource Name="HB_SFX_KALI_Deadfire_01" ID="{73EC1AF5-2EBD-46C5-A9B4-0ED290BF7F0E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
+								<ActorMixer Name="Hit Bear" ID="{085E59D3-AC23-4962-B004-CFB1933AFD62}" ShortID="341225918">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_BEAR_HITS_Slashs" ID="{04A3505E-1D2A-41EC-9039-D702E59B95DA}" ShortID="12592811">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Kali_BEAR_Hits_Slash_01" ID="{8B7B5B3F-D61D-424B-994D-F0B38394CC36}" ShortID="1032599901">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-80</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Slash_01" ID="{A6B46EE6-E928-4A8D-AB19-DD41869AFC9C}" ShortID="124977952">
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Slash_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Slash_01" ID="{A6B46EE6-E928-4A8D-AB19-DD41869AFC9C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_BEAR_Hits_Slash_02" ID="{0ED6E898-5CB6-47BE-800D-440E2F70562A}" ShortID="724076254">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Slash_02" ID="{026A29ED-9E35-4976-BDF3-4ADA0FA74BFD}" ShortID="733538719">
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Slash_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Slash_02" ID="{026A29ED-9E35-4976-BDF3-4ADA0FA74BFD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_BEAR_Hits_Slash_03" ID="{2B7B9253-6C9E-4A3D-94E5-38693880B62F}" ShortID="656182182">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Slash_03" ID="{845F23AB-BC07-442B-9EDA-F0D712E6D263}" ShortID="1022057532">
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Slash_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Slash_03" ID="{845F23AB-BC07-442B-9EDA-F0D712E6D263}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_BEAR_Hits_Slash_04" ID="{8863F0BD-5102-4998-998C-82FE395AFABA}" ShortID="793667198">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Slash_04" ID="{156EA3EF-084C-429C-B577-AF43625C6799}" ShortID="569638965">
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Slash_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Slash_04" ID="{156EA3EF-084C-429C-B577-AF43625C6799}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RND_BEAR_HITS_Grab" ID="{49BAA7BB-0095-4638-B166-CC89E3E8F604}" ShortID="997747192">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend2">
+													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Kali_BEAR_Hits_Grab_01" ID="{C63C0D88-D729-41C3-BE40-6E8CF295BB67}" ShortID="755608663">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Grab_01" ID="{ED9E69A5-3BBD-4548-940C-5CAFF84D3AC2}" ShortID="764299771">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.44867907002158E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Grab_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Grab_01" ID="{ED9E69A5-3BBD-4548-940C-5CAFF84D3AC2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_BEAR_Hits_Grab_02" ID="{B34A9B33-B743-4618-9687-614E29D628D8}" ShortID="426404873">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Grab_02" ID="{FD98DE0D-90A4-40B3-9827-D0914B51F535}" ShortID="887097839">
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Grab_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Grab_02" ID="{FD98DE0D-90A4-40B3-9827-D0914B51F535}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_BEAR_Hits_Grab_03" ID="{D4525B28-1D3E-4039-BB94-5E55805FAB4D}" ShortID="424085116">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Grab_03" ID="{8ACC116B-53C8-4B04-AD0D-EBDAFC62AA52}" ShortID="651831661">
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Grab_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Grab_03" ID="{8ACC116B-53C8-4B04-AD0D-EBDAFC62AA52}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RND_BEAR_HITS_Impact" ID="{23DAB9D1-E47A-47F4-BB0A-12A5EC88CEE9}" ShortID="804534431">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend2">
+													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Kali_BEAR_Hits_Impact_01" ID="{2441D6FA-411D-4B32-B657-0D97F6EC0403}" ShortID="157844303">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>100</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Impact_01" ID="{0B875122-8B3A-4D1C-B457-A183490900F3}" ShortID="450633544">
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Impact_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Impact_01" ID="{0B875122-8B3A-4D1C-B457-A183490900F3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_BEAR_Hits_Impact_02" ID="{B7A917D0-76FC-4DD8-94F5-994DA5E0F050}" ShortID="917222747">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Impact_02" ID="{DF754C23-9659-4AC2-9C23-60D1049842C5}" ShortID="269198521">
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Impact_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Impact_02" ID="{DF754C23-9659-4AC2-9C23-60D1049842C5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RND_BEAR_HITS_Whirlwind" ID="{134E1003-1744-4347-AF1D-1EBD9AF7305B}" ShortID="159142501">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend2">
+													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Kali_BEAR_Hits_Whirlwind_01" ID="{8683CF2C-A1C6-4984-9A97-2F5892647417}" ShortID="37208911">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Whirlwind_01" ID="{5BD96CEA-C391-4FFF-A0C3-6AD775A89C8D}" ShortID="448891017">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="1.48069830341775E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.48069830341775E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Whirlwind_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Whirlwind_01" ID="{5BD96CEA-C391-4FFF-A0C3-6AD775A89C8D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_BEAR_Hits_Whirlwind_02" ID="{057558F8-F617-4AF5-8AD3-17D737B15239}" ShortID="295033495">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Whirlwind_02" ID="{AEC7CACA-F582-479E-9D33-6F5D90FFDED3}" ShortID="618929226">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.53833994871615E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Whirlwind_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Whirlwind_02" ID="{AEC7CACA-F582-479E-9D33-6F5D90FFDED3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_BEAR_Hits_Whirlwind_03" ID="{88368A31-66B8-4141-80B5-2819C3D3B8D1}" ShortID="735668846">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_BEAR_Hits_Whirlwind_03" ID="{0B0815BF-6E7A-44ED-AC92-640BA8EF4A79}" ShortID="370686884">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="2.53833994871615E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.53833994871615E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Kali_BEAR_Hits_Whirlwind_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_BEAR_Hits_Whirlwind_03" ID="{0B0815BF-6E7A-44ED-AC92-640BA8EF4A79}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RND_BEAR_HITS_Shockwave" ID="{F60CBDA6-C7E3-4BBA-A89A-697580ACC7AC}" ShortID="334518997">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_SFX_KALI_BearHit_shockwave_01" ID="{38BC4A04-52C9-4492-8E0E-F3809E770135}" ShortID="862936430">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_BearHit_shockwave_01" ID="{94411E4E-B499-47CE-8BE4-388A5415903F}" ShortID="113702887">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_BearHit_shockwave_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_BearHit_shockwave_01" ID="{94411E4E-B499-47CE-8BE4-388A5415903F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_BearHit_shockwave_02" ID="{06C1FA20-F5B7-4593-B72F-AD29EA9CAFED}" ShortID="522531797">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_BearHit_shockwave_02" ID="{3BC34145-3011-4017-A1EA-CE966DA9979B}" ShortID="634478828">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.72618169470886E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_BearHit_shockwave_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_BearHit_shockwave_02" ID="{3BC34145-3011-4017-A1EA-CE966DA9979B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_BearHit_shockwave_03" ID="{2D9F53D0-D0F2-4F0C-A926-9C90178E60D4}" ShortID="399806087">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_BearHit_shockwave_03" ID="{A03C74EE-32B3-4020-A7B2-3BA909D6AA60}" ShortID="754337996">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="4.03105131897854E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.03105131897854E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_BearHit_shockwave_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_BearHit_shockwave_03" ID="{A03C74EE-32B3-4020-A7B2-3BA909D6AA60}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Reflect" ID="{E7BE8EF8-38C1-4E34-9582-58CD82CCF937}" ShortID="178947320">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_Kali_Reflects" ID="{9A375CD2-E8FB-480A-9B6D-685AB3595707}" ShortID="177606688">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_SFX_KALI_Reflect_03" ID="{1D32EDEE-01FF-4562-9783-35429A8C0322}" ShortID="747090130">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Reflect_04" ID="{39C8DAFF-038C-4B17-A1F9-FC416660A8C0}" ShortID="349168813">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Reflect_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Reflect_04" ID="{39C8DAFF-038C-4B17-A1F9-FC416660A8C0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_Reflect_02" ID="{521F4A63-B99C-4507-B656-727109FB2EC5}" ShortID="770142666">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Reflect_05" ID="{AE85100E-9C01-4A4C-B9FD-DCDB618E8AC0}" ShortID="391255860">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Reflect_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Reflect_05" ID="{AE85100E-9C01-4A4C-B9FD-DCDB618E8AC0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_Reflect_01" ID="{5FCCD981-F4A2-4ACA-BB3D-DE0F04D39AC5}" ShortID="914435860">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Reflect_06" ID="{60FCBA41-4432-47D8-BBA0-3E904C0732BD}" ShortID="641751413">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Reflect_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Reflect_06" ID="{60FCBA41-4432-47D8-BBA0-3E904C0732BD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Impact" ID="{B6573586-86ED-4474-87C1-C57646981671}" ShortID="924480641">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_Impacts" ID="{CAA6A217-2512-41AE-B8E1-A66348FB2696}" ShortID="908064800">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_SFX_KALI_Impact_01" ID="{B68B6BF9-83D7-4727-86D7-061ED9118BF1}" ShortID="685172808">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Impact_01" ID="{E61E8ECA-81E6-4167-B6D0-B22506D61460}" ShortID="410483608">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Impact_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Impact_01" ID="{E61E8ECA-81E6-4167-B6D0-B22506D61460}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_Impact_02" ID="{F27D46EB-E945-4BC6-81AB-6902409CE02E}" ShortID="927829042">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Impact_02" ID="{D4CE6963-5486-4686-8ACD-1032B64824D9}" ShortID="49701756">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Impact_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Impact_02" ID="{D4CE6963-5486-4686-8ACD-1032B64824D9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_Impact_03" ID="{C30F8B8E-BEFD-41EE-93F7-F8ED7A5F51EE}" ShortID="516530817">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Impact_03" ID="{69AA8260-6320-4410-A9AE-C8B1A09E2F68}" ShortID="495772797">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Impact_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Impact_03" ID="{69AA8260-6320-4410-A9AE-C8B1A09E2F68}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Ultimate" ID="{A2B40B30-C4FB-41BE-AD3E-EB2825AF8110}" ShortID="659978321">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_Kali_Ultimate_Shockwave" ID="{B75A3B6F-0120-4ADF-BC03-19558FB31C74}" ShortID="135230618">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_SFX_KALI_Shockwave_03" ID="{88099759-674D-4AD9-93BC-F122D58A2C5F}" ShortID="689786827">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Shockwave_03" ID="{3B4ABE44-EDA1-4C22-800C-FC6AB4B73FDE}" ShortID="70127912">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Shockwave_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Shockwave_03" ID="{3B4ABE44-EDA1-4C22-800C-FC6AB4B73FDE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Grab" ID="{1038112A-D176-42E2-B6BA-49500A61EC37}" ShortID="600594594">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Kali Grab END" ID="{D676AC11-6737-437C-8FD5-463BB3CAF885}" ShortID="713641579">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="RND_Grabs ENDS" ID="{EB41FD6C-4EFA-44AC-BCB0-C5BEB895FD4E}" ShortID="906694943">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_SFX_KALI_GrabEnd_01" ID="{4F13A796-8F34-4BEA-AE4C-8F214B6FD412}" ShortID="192409337">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_KALI_GrabEnd_01" ID="{629E0F54-4B39-4DAC-971D-22DF93ECBAE5}" ShortID="372362230">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_KALI_GrabEnd_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_KALI_GrabEnd_01" ID="{629E0F54-4B39-4DAC-971D-22DF93ECBAE5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_KALI_GrabEnd_02" ID="{41A0C806-8A10-4799-8237-47F0C58A26BA}" ShortID="761140538">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_KALI_GrabEnd_02" ID="{8962722C-0913-4918-943B-CA86223752CC}" ShortID="813986872">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_KALI_GrabEnd_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_KALI_GrabEnd_02" ID="{8962722C-0913-4918-943B-CA86223752CC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_KALI_GrabEnd_03" ID="{E7CF004F-D0F2-4044-BCD5-27963424941E}" ShortID="697029691">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_KALI_GrabEnd_03" ID="{060C50A1-E04E-43CF-995C-8196C4896C58}" ShortID="965970737">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_KALI_GrabEnd_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_KALI_GrabEnd_03" ID="{060C50A1-E04E-43CF-995C-8196C4896C58}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Kali Grab Start" ID="{1BF9A549-F6EA-4524-8470-7E6A5208AEE9}" ShortID="896975121">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="RND_Grabs" ID="{FE9E0E51-6C95-4C1C-8C0F-5F1EC20C424D}" ShortID="789323835">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_SFX_KALI_Grab_01" ID="{91D4326E-300D-4E8A-99E6-BF1A57DEE1D8}" ShortID="563192093">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{86340DE5-78C9-4E1E-AF1C-2AA1D2471399}" ShortID="924557125">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.118916845276924"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_Mid_02.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="678020565"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{86340DE5-78C9-4E1E-AF1C-2AA1D2471399}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_KALI_Grab_02" ID="{20596C7C-CDD6-4922-BD57-2BD0A5F77CC4}" ShortID="502912391">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-230</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{80EB4762-7ECE-45B5-B5A0-8C2483BA390E}" ShortID="678020565">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.118916845276924"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_Mid_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{80EB4762-7ECE-45B5-B5A0-8C2483BA390E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_KALI_Grab_03" ID="{60AFF7B6-D5A6-45DF-B69D-980E844BA976}" ShortID="486961740">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_KALI_Grab_05" ID="{5524819B-E85C-4B10-844B-17C4BE1A59F5}" ShortID="9973633">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_KALI_Grab_05.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_KALI_Grab_05" ID="{5524819B-E85C-4B10-844B-17C4BE1A59F5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Kali Grab whoosh" ID="{56D4F85F-1580-432B-B190-9ECDC5FE2C84}" ShortID="262363759">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="RND_Grab_Whoosh" ID="{93E62783-1F2C-48FC-97CA-F85D8798F0AD}" ShortID="739329300">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_SFX_KALI_GrabWhoosh_01" ID="{CC152F2A-CEA1-4218-9357-45F0DF706203}" ShortID="155666528">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_KALI_GrabWhoosh_01" ID="{9D41D9CE-E2D3-42FE-9ED5-BCC864FD3C72}" ShortID="953900687">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_KALI_GrabWhoosh_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_KALI_GrabWhoosh_01" ID="{9D41D9CE-E2D3-42FE-9ED5-BCC864FD3C72}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_SFX_KALI_GrabWhoosh_02" ID="{CCBABABB-0AEE-4871-AD6B-F59C38102F94}" ShortID="640813496">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_KALI_GrabWhoosh_02" ID="{12B8950B-813E-4454-8D7F-4DF85A9CAE3B}" ShortID="225195992">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_KALI_GrabWhoosh_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_KALI_GrabWhoosh_02" ID="{12B8950B-813E-4454-8D7F-4DF85A9CAE3B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Invocation" ID="{1C114EFC-5080-4EB8-AED0-7FBC546F179B}" ShortID="929725821">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_Kali_Invocs" ID="{860A526A-F3AC-4B5F-94A7-D8F1D81C5719}" ShortID="571517298">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_SFX_KALI_Invocation_01" ID="{387A7ACB-BD3C-4A80-B973-728356C534A1}" ShortID="735784808">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Invocation_01" ID="{8C122B77-C3FF-42CE-A09F-546A7CD78D98}" ShortID="341562079">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Invocation_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Invocation_01" ID="{8C122B77-C3FF-42CE-A09F-546A7CD78D98}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_Invocation_02" ID="{FB8B6189-FBE0-44F3-BA74-DC07A6803011}" ShortID="16946810">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Invocation_02" ID="{0F1A344C-55FF-472C-82DC-728CD6152AA4}" ShortID="599003458">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Invocation_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Invocation_02" ID="{0F1A344C-55FF-472C-82DC-728CD6152AA4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_Invocation_03" ID="{324CCEBC-E656-4440-A2F4-321135B510DC}" ShortID="74524143">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Invocation_03" ID="{8C4DE12A-6201-47BD-9BAF-9DA9F661BBE6}" ShortID="571860504">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Invocation_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Invocation_03" ID="{8C4DE12A-6201-47BD-9BAF-9DA9F661BBE6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RND_Kali_Invoc_slam" ID="{C1BE945F-A09B-40A1-95CE-A25CF11F4B7C}" ShortID="279957170">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend2">
+													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_SFX_KALI_ULTI_Cast_01" ID="{47B84112-DF16-4984-9558-72FF1F4DE720}" ShortID="633573177">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_ULTI_Cast_01" ID="{FD3CFFEA-9275-42EB-B8D0-7EE46A422DAE}" ShortID="115469655">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_ULTI_Cast_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_ULTI_Cast_01" ID="{FD3CFFEA-9275-42EB-B8D0-7EE46A422DAE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_ULTI_Cast_02" ID="{3CF3DD3D-2278-44CA-BC51-BA8DB7BF9DFA}" ShortID="375978995">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_ULTI_Cast_02" ID="{99670CCE-A929-4BA6-8ECF-AA2E72784027}" ShortID="239840268">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_ULTI_Cast_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_ULTI_Cast_02" ID="{99670CCE-A929-4BA6-8ECF-AA2E72784027}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_ULTI_Cast_03" ID="{4A188BC5-2231-4018-9CBB-997FEADA7B37}" ShortID="652548711">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_ULTI_Cast_01" ID="{D9AB09C5-3B88-41EB-BAE7-EC3F6964CB2B}" ShortID="1071153899">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_ULTI_Cast_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="115469655"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_ULTI_Cast_01" ID="{D9AB09C5-3B88-41EB-BAE7-EC3F6964CB2B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_ULTI_Cast_04" ID="{BF9539CD-354B-431D-934D-573C707B73DC}" ShortID="619116400">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>130</Value>
+															</ValueList>
+														</Property>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_ULTI_Cast_01" ID="{936163E4-2284-49D6-BD00-9F2F710C28E6}" ShortID="304142128">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_ULTI_Cast_01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="115469655"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_ULTI_Cast_01" ID="{936163E4-2284-49D6-BD00-9F2F710C28E6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Attack" ID="{9D74BF71-95F1-4C11-80D1-6D5FB595CE08}" ShortID="49372603">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="HB__kali_Attacks" ID="{4C0785C0-E2F7-4FFC-9E1A-475F48648EE6}" ShortID="46935367">
+											<PropertyList>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Whoosh_low" ID="{A3035FA4-A614-44C2-B944-9EC00FB739F3}" ShortID="1004417616">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_Kali_Attacks_whoosh_Low_01" ID="{A242CC92-2307-43E6-8C2E-6FE6F3750DBB}" ShortID="443278334">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_Low_01" ID="{8BCD1A36-C2B5-4C26-8FAD-728C302766C6}" ShortID="850319788">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_Low_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_Low_01" ID="{8BCD1A36-C2B5-4C26-8FAD-728C302766C6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_Kali_Attacks_whoosh_Low_02" ID="{EF4DA48E-E775-4969-A9BE-48EA8BDB2FAC}" ShortID="477375985">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_Low_02" ID="{0C828389-426E-4F84-AC48-0A08B6E4A2CC}" ShortID="762685621">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="1.71042186237662E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.71042186237662E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_Low_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_Low_02" ID="{0C828389-426E-4F84-AC48-0A08B6E4A2CC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Whoosh_mid" ID="{564A4900-6536-49ED-B1A0-EB2B27ABDB93}" ShortID="271487316">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{7B74E851-6E12-430E-AF4E-541DA90534D9}" ShortID="27983432">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{FC518124-7FFF-499B-8951-58FE86B9FD88}" ShortID="634338255">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="8.03742082030747E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.105104733804021"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_Mid_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_Mid_02" ID="{FC518124-7FFF-499B-8951-58FE86B9FD88}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_Kali_Attacks_whoosh_Mid_03" ID="{300553C6-643F-47E5-8C1F-4118877518E6}" ShortID="586903531">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_Mid_03" ID="{657DFFF3-0EEF-4F2E-BA08-E9D5ECFEF4B2}" ShortID="491936651">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="5.70140620792207E-03"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="3.13577341435714E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_Mid_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_Mid_03" ID="{657DFFF3-0EEF-4F2E-BA08-E9D5ECFEF4B2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Whoosh_high" ID="{F6947F26-6FE2-442B-B3A0-024A6D54AE9E}" ShortID="475454223">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_Kali_Attacks_whoosh_high_01" ID="{3F491390-BA02-4839-8F89-A10BCB70B09B}" ShortID="1044065149">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_high_01" ID="{0DF61530-6665-47B2-AABB-4ABC0F0A31A8}" ShortID="763308272">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_high_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_high_01" ID="{0DF61530-6665-47B2-AABB-4ABC0F0A31A8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB_Kali_Attacks_whoosh_high_02" ID="{80074FFA-6DBB-4114-9971-7F9561F0EF98}" ShortID="421322481">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_Kali_Attacks_whoosh_high_02" ID="{C77A02DF-BB3C-4E5D-A914-7B1FF033C46D}" ShortID="1017218228">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="2.56563279356493E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.56563279356493E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>HB_Kali_Attacks_whoosh_high_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_Kali_Attacks_whoosh_high_02" ID="{C77A02DF-BB3C-4E5D-A914-7B1FF033C46D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Whoosh_low" ID="{A3035FA4-A614-44C2-B944-9EC00FB739F3}"/>
+												<ItemRef Name="Whoosh_mid" ID="{564A4900-6536-49ED-B1A0-EB2B27ABDB93}"/>
+												<ItemRef Name="Whoosh_high" ID="{F6947F26-6FE2-442B-B3A0-024A6D54AE9E}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Jump" ID="{48B18AB7-0E86-4633-9CC8-D9A8C78745A5}" ShortID="201335467">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend1">
+											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+										<Reference Name="UserAuxSend2">
+											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RND_Jump" ID="{8A9F5EB6-B111-41F7-AFA7-60C9B683A7A5}" ShortID="574902203">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_SFX_KALI_Jump_01" ID="{64885B85-CFC8-4A51-8620-A90D22587AE8}" ShortID="992721908">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Jump_01" ID="{15CE5210-40A1-4B14-BB0F-5D5CCD7C7FA7}" ShortID="675937673">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Jump_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Jump_01" ID="{15CE5210-40A1-4B14-BB0F-5D5CCD7C7FA7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_Jump_02" ID="{DBA72A5C-44EF-4ED5-86BD-D34FFB5F1A94}" ShortID="1039151495">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Jump_02" ID="{676DAE4E-B100-46A6-826B-481040131BD5}" ShortID="940280664">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Jump_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Jump_02" ID="{676DAE4E-B100-46A6-826B-481040131BD5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_KALI_Jump_03" ID="{E9F54D88-744E-4852-9D62-1EE02F8866EC}" ShortID="745932657">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_KALI_Jump_03" ID="{E7EBDB92-821C-434F-96F9-2E68A82286D1}" ShortID="853156339">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_KALI_Jump_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_KALI_Jump_03" ID="{E7EBDB92-821C-434F-96F9-2E68A82286D1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="HB_SFX_KALI_Air_Movement_01" ID="{C25A09CA-B8E6-4ADE-88AF-9EE62D8C006B}" ShortID="847454205">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HB_SFX_KALI_Air_Movement_01" ID="{1188247E-AB10-419E-8740-ADA86E2A0CDE}" ShortID="1053112222">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.0027820100643"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.720561923399497"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.750585336874476"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HB_SFX_KALI_Air_Movement_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HB_SFX_KALI_Air_Movement_01" ID="{1188247E-AB10-419E-8740-ADA86E2A0CDE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Bear" ID="{36CD4D2B-8C53-47B9-953F-A7C3A58419F2}" ShortID="714758427">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
 								<ActorMixer Name="Foleys" ID="{EAB9F293-3FAB-4B63-9ED5-999254B75916}" ShortID="141183818">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
@@ -26367,8 +28320,10 @@
 													<ChildrenList>
 														<AudioFileSource Name="HB_SFX_KALI_ultimatescream_05" ID="{5A376B0A-158D-4C00-B3EA-A9E46A99EBF2}" ShortID="749596691">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.315976842791911"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.48267519336502"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.62046718230671"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>HB_SFX_KALI_ultimatescream_05.wav</AudioFile>
