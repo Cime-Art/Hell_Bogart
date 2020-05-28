@@ -2549,7 +2549,7 @@
 							<ChildrenList>
 								<MusicSegment Name="Intro_Fight" ID="{97FD2B5C-1EC3-4AB6-987B-8C7294FC97BA}" ShortID="133707585">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="40895.8276643991"/>
+										<Property Name="EndPosition" Type="Real64" Value="42007.8537371856"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>5</Value>
@@ -2572,9 +2572,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Cykodd - Intro Boss" ID="{B3846432-CCAF-414C-B0FD-70FA1039F253}" ShortID="758953969">
+												<AudioFileSource Name="Cykodd - Intro Boss" ID="{62F562F7-A721-4058-8A44-A1E003352E5B}" ShortID="794513614">
 													<Language>SFX</Language>
 													<AudioFile>Cykodd - Intro Boss.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="758953969"/>
+													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -2588,13 +2591,13 @@
 											<SequenceList>
 												<MusicTrackSequence Name="" ID="{5CDFB294-815D-4D3A-9F03-A6D3A143C76D}">
 													<ClipList>
-														<MusicClip Name="Cykodd - Intro Boss" ID="{8503AD36-FE63-481A-A288-64E620A20971}">
+														<MusicClip Name="Cykodd - Intro Boss" ID="{D1A7F2EF-5BB8-4780-9D77-D0E7FC6227F8}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="32895.8276643991"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="33095.8276643991"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Cykodd - Intro Boss" ID="{B3846432-CCAF-414C-B0FD-70FA1039F253}"/>
+															<AudioSourceRef Name="Cykodd - Intro Boss" ID="{62F562F7-A721-4058-8A44-A1E003352E5B}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -3546,8 +3549,13 @@
 								</MusicSegment>
 								<MusicSegment Name="Intro_Fight" ID="{6716B00C-00C9-4AA2-AFDF-9195B0F8A3D7}" ShortID="4515318">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="40895.8276643991"/>
+										<Property Name="EndPosition" Type="Real64" Value="42695.8276643991"/>
 										<Property Name="Tempo" Type="Real64" Value="150"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3565,7 +3573,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Cykodd - Intro Boss" ID="{31E10DC9-0EF3-4D12-9721-52AFE920C67B}" ShortID="673301365">
+												<AudioFileSource Name="Cykodd - Intro Boss" ID="{BA5738EF-73C2-4719-899C-B7FB7E705BDC}" ShortID="851715771">
 													<Language>SFX</Language>
 													<AudioFile>Cykodd - Intro Boss.wav</AudioFile>
 													<ConvertedFileIDList>
@@ -3584,13 +3592,13 @@
 											<SequenceList>
 												<MusicTrackSequence Name="" ID="{E7DE5181-7C76-4D72-8BC4-F39CF7612046}">
 													<ClipList>
-														<MusicClip Name="Cykodd - Intro Boss" ID="{64D1422B-18AB-41C7-AA6F-C1442A8A1233}">
+														<MusicClip Name="Cykodd - Intro Boss" ID="{742853EA-A477-4070-9B94-0D157CC89DAA}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="32895.8276643991"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="33095.8276643991"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Cykodd - Intro Boss" ID="{31E10DC9-0EF3-4D12-9721-52AFE920C67B}"/>
+															<AudioSourceRef Name="Cykodd - Intro Boss" ID="{BA5738EF-73C2-4719-899C-B7FB7E705BDC}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
