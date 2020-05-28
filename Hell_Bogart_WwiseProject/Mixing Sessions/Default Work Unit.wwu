@@ -48,7 +48,7 @@
 				<MixingSession Name="Mix Mobs" ID="{F9D4B15C-11AA-4BD2-9A71-224ADCC36855}">
 					<ObjectList>
 						<ObjectRef Name="Jungle Charlie" ID="{6EE7D6E0-7D4C-4A47-9979-A4B49B6981B9}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-						<ObjectRef Name="Mob Stealer" ID="{A7937A28-42B9-44C7-9827-E334F746D306}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+						<ObjectRef Name="Stealer" ID="{A7937A28-42B9-44C7-9827-E334F746D306}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 						<ObjectRef Name="Stone Gardian" ID="{B7A23354-FE61-4838-BD9B-3C3C0E393138}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 					</ObjectList>
 				</MixingSession>

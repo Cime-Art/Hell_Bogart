@@ -2156,7 +2156,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Kali_UltiScream" ID="{71106536-EE12-488D-ACD0-422037C8027C}">
+								<Event Name="E_Speech_Kali_ScreamSpell" ID="{71106536-EE12-488D-ACD0-422037C8027C}">
 									<ChildrenList>
 										<Action Name="" ID="{F89B8A1E-50C7-49B3-80B2-58F5E7E4E9E0}" ShortID="1073624797">
 											<ReferenceList>
