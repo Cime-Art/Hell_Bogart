@@ -481,6 +481,11 @@
 										<Sound Name="SFX_HB_Amb_LowTimeDilatation" ID="{AB1C3B6A-1237-4C0A-BC54-6530C4031503}" ShortID="231453348">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -495,7 +500,7 @@
 													<PropertyList>
 														<Property Name="VolumeOffset" Type="Real64">
 															<ValueList>
-																<Value>3</Value>
+																<Value>6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -874,6 +879,238 @@
 												<ActiveSource Name="HB_SFX_Other_Healthkit" ID="{218DC6D9-2FF3-4570-B5C2-96CEA497104D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Switch Equipment" ID="{68180675-87FC-4413-B7EC-480AFAAA14F7}" ShortID="274058596">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Switch Ammo" ID="{724871B3-3F3C-41E0-9FE7-1C2D6FBCAC78}" ShortID="1048394959">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="HUD_Switch_Ammo_RND" ID="{C4898286-BDB5-441C-A800-C0EF39FA6DEF}" ShortID="27227366">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{E62A0033-E2B8-4D69-A94B-4AB00EE7FE2A}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="50"/>
+																			<Property Name="Min" Type="Real64" Value="-50"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_HB_HUD_SwitchAmmo_01" ID="{C337993E-D219-474F-9DAD-14380313A1A0}" ShortID="122201143">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_HUD_SwitchAmmo_01" ID="{677E1C6E-B51A-4465-929F-DAB5A9DCF727}" ShortID="868334332">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_HUD_SwitchAmmo_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_HUD_SwitchAmmo_01" ID="{677E1C6E-B51A-4465-929F-DAB5A9DCF727}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_HUD_SwitchAmmo_02" ID="{A7AAB0B9-C793-4264-A392-9A02CBFCCFE3}" ShortID="726816350">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_HUD_SwitchAmmo_02" ID="{A8CE5BC1-11BF-4B86-B862-9D79063C7913}" ShortID="456000760">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_HUD_SwitchAmmo_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_HUD_SwitchAmmo_02" ID="{A8CE5BC1-11BF-4B86-B862-9D79063C7913}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_HUD_SwitchAmmo_03" ID="{FA29F602-BDD6-4740-B02B-28D123303C0D}" ShortID="358311154">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_HUD_SwitchAmmo_03" ID="{E12F9CDA-C41C-4AC4-8CF0-DB0BB7B25991}" ShortID="962354330">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_HUD_SwitchAmmo_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_HUD_SwitchAmmo_03" ID="{E12F9CDA-C41C-4AC4-8CF0-DB0BB7B25991}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Switch Grenade" ID="{B0D9B508-9CD9-443A-873A-20EA54985086}" ShortID="632502485">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="HUD_Switch_Grenade_RND" ID="{C24C9B78-348D-48B7-8549-D737EAA66A81}" ShortID="681946519">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{2DFBE592-6A6F-4496-9248-6421FFC40320}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="50"/>
+																			<Property Name="Min" Type="Real64" Value="-50"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_HB_HUD_SwitchGrenade_01" ID="{9756229F-C106-45CB-8689-11BDB04ABB51}" ShortID="755085644">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_HUD_SwitchGrenade_01" ID="{986DF293-9D7F-47B7-8BE5-4A7443AB813C}" ShortID="129847404">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_HUD_SwitchGrenade_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_HUD_SwitchGrenade_01" ID="{986DF293-9D7F-47B7-8BE5-4A7443AB813C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_HUD_SwitchGrenade_02" ID="{B0AB8706-7114-4675-BCAF-49886FBAD102}" ShortID="658364606">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_HUD_SwitchGrenade_02" ID="{147F6332-51D2-40B8-8861-BEC6877EF87C}" ShortID="382431942">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_HUD_SwitchGrenade_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_HUD_SwitchGrenade_02" ID="{147F6332-51D2-40B8-8861-BEC6877EF87C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_HUD_SwitchGrenade_03" ID="{2D0901E6-30DF-40C7-B141-D5B91FB11E2F}" ShortID="821521112">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_HUD_SwitchGrenade_03" ID="{21261B74-429E-468F-8EA8-865667C5EC6B}" ShortID="681361430">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_HUD_SwitchGrenade_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_HUD_SwitchGrenade_03" ID="{21261B74-429E-468F-8EA8-865667C5EC6B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
@@ -11204,7 +11441,17 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="RND_Hits" ID="{A2B93BB2-6439-46A2-9B13-5904ACFBE49E}" ShortID="292696961">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -12516,7 +12763,7 @@
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>3</Value>
+														<Value>8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

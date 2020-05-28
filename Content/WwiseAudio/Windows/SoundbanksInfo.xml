@@ -466,6 +466,8 @@
 			<ShortName>Music_Soundbank</ShortName>
 			<Path>Music_Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3454693556" Name="E_Global_MUSIC_FadeIn" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_MUSIC_FadeIn"/>
+				<Event Id="3540013779" Name="E_Global_MUSIC_FadeOut" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_MUSIC_FadeOut"/>
 				<Event Id="1316302252" Name="E_Mus_Bridge_Begin" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_Begin"/>
 				<Event Id="3685971472" Name="E_Mus_Bridge_End" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_End"/>
 				<Event Id="156378190" Name="E_Mus_Bridge_GoToPhase1" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase1"/>
@@ -476,6 +478,7 @@
 				<Event Id="3619357316" Name="E_Mus_Kali_100" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_100"/>
 				<Event Id="933394352" Name="E_Mus_Kali_25" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_25"/>
 				<Event Id="849506195" Name="E_Mus_Kali_75" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_75"/>
+				<Event Id="2658569566" Name="E_Mus_Kali_End" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_End"/>
 				<Event Id="2931429659" Name="E_Mus_Kali_Intro" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Intro"/>
 				<Event Id="4274573073" Name="E_Mus_Kali_Main_Play" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Main_Play"/>
 				<Event Id="1151039993" Name="E_Mus_Kali_Phase1" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Phase1"/>
@@ -683,17 +686,13 @@
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_04.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_04_EA9615DC.wem</Path>
 				</File>
-				<File Id="368405575" Language="SFX">
-					<ShortName>Cykodd - Intro Bossfight.wav</ShortName>
-					<Path>SFX\Cykodd - Intro Bossfight_EA9615DC.wem</Path>
-				</File>
 				<File Id="375039806" Language="SFX">
 					<ShortName>MUS_HB_Ruines_End_02.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_End_02_EA9615DC.wem</Path>
 				</File>
-				<File Id="437382272" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 2 (75%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 2 (75%)_EA9615DC.wem</Path>
+				<File Id="378460750" Language="SFX">
+					<ShortName>Cykodd - Phase 2 (100%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 2 (100%)_EA9615DC.wem</Path>
 				</File>
 				<File Id="440069006" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Trigger_B02.wav</ShortName>
@@ -715,6 +714,10 @@
 					<ShortName>MUS_HB_Ruines_Choir_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Choir_00_EA9615DC.wem</Path>
 				</File>
+				<File Id="515424361" Language="SFX">
+					<ShortName>Cykodd - Phase 2 (75%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 2 (75%)_EA9615DC.wem</Path>
+				</File>
 				<File Id="515666401" Language="SFX">
 					<ShortName>MUS_HB_Jungle_EnigmeResolved_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_EnigmeResolved_01_D79FB2B7.wem</Path>
@@ -731,9 +734,9 @@
 					<ShortName>MUS_HB_Ruines_Trigger_A01.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Trigger_A01_EA9615DC.wem</Path>
 				</File>
-				<File Id="594926696" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 1 (75%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 1 (75%)_EA9615DC.wem</Path>
+				<File Id="592506828" Language="SFX">
+					<ShortName>Cykodd - Phase 1 (25%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 1 (25%)_EA9615DC.wem</Path>
 				</File>
 				<File Id="595572684" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Amb_02.wav</ShortName>
@@ -743,10 +746,6 @@
 					<ShortName>MUS_HB_Jungle_EnigmeResolved_02.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_EnigmeResolved_02_D79FB2B7.wem</Path>
 				</File>
-				<File Id="651096681" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 2 (100%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 2 (100%)_EA9615DC.wem</Path>
-				</File>
 				<File Id="660836541" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_04.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_04_EA9615DC.wem</Path>
@@ -755,9 +754,9 @@
 					<ShortName>MUS_HB_Ruines_End_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_End_00_EA9615DC.wem</Path>
 				</File>
-				<File Id="693127027" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 2 (25%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 2 (25%)_EA9615DC.wem</Path>
+				<File Id="685315389" Language="SFX">
+					<ShortName>Cykodd - Phase 2 (25%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 2 (25%)_EA9615DC.wem</Path>
 				</File>
 				<File Id="716610373" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Fight_MalletCymbal_01.wav</ShortName>
@@ -778,6 +777,10 @@
 				<File Id="757816540" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Transi_P1ToP2.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Transi_P1ToP2_EA9615DC.wem</Path>
+				</File>
+				<File Id="758953969" Language="SFX">
+					<ShortName>Cykodd - Intro Boss.wav</ShortName>
+					<Path>SFX\Cykodd - Intro Boss_EA9615DC.wem</Path>
 				</File>
 				<File Id="763074539" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Tambour_02.wav</ShortName>
@@ -807,6 +810,10 @@
 					<ShortName>MUS_HB_Ruines_Start_03.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Start_03_EA9615DC.wem</Path>
 				</File>
+				<File Id="846685009" Language="SFX">
+					<ShortName>Cykodd - End Boss.wav</ShortName>
+					<Path>SFX\Cykodd - End Boss_EA9615DC.wem</Path>
+				</File>
 				<File Id="866325847" Language="SFX">
 					<ShortName>MUS_HB_Ruines_BigVoice_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_BigVoice_00_EA9615DC.wem</Path>
@@ -831,13 +838,13 @@
 					<ShortName>MUS_HB_Ruines_Amb_04.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Amb_04_EA9615DC.wem</Path>
 				</File>
-				<File Id="945315478" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 1 (25%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 1 (25%)_EA9615DC.wem</Path>
+				<File Id="916474184" Language="SFX">
+					<ShortName>Cykodd - Phase 1 (75%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 1 (75%)_EA9615DC.wem</Path>
 				</File>
-				<File Id="945653896" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 1 (100%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 1 (100%)_EA9615DC.wem</Path>
+				<File Id="930171474" Language="SFX">
+					<ShortName>Cykodd - Transition Boss.wav</ShortName>
+					<Path>SFX\Cykodd - Transition Boss_EA9615DC.wem</Path>
 				</File>
 				<File Id="947932089" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Amb_00.wav</ShortName>
@@ -846,10 +853,6 @@
 				<File Id="951005522" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Tambour_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Tambour_00_EA9615DC.wem</Path>
-				</File>
-				<File Id="992734597" Language="SFX">
-					<ShortName>Cykodd - Intro 2 Bossfight.wav</ShortName>
-					<Path>SFX\Cykodd - Intro 2 Bossfight_EA9615DC.wem</Path>
 				</File>
 				<File Id="1029166442" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Snare_01.wav</ShortName>
@@ -870,6 +873,10 @@
 				<File Id="1051529773" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Start_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Start_00_EA9615DC.wem</Path>
+				</File>
+				<File Id="1053432098" Language="SFX">
+					<ShortName>Cykodd - Phase 1 (100%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 1 (100%)_EA9615DC.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -1017,6 +1024,8 @@
 				<Event Id="2920923470" Name="E_UI_Overlay" ObjectPath="\Events\Brian\UI\E_UI_Overlay"/>
 				<Event Id="762198780" Name="E_UI_Play" ObjectPath="\Events\Brian\UI\E_UI_Play"/>
 				<Event Id="1971253356" Name="E_UI_Return" ObjectPath="\Events\Brian\UI\E_UI_Return"/>
+				<Event Id="621307263" Name="E_UI_Switch_Ammo" ObjectPath="\Events\Simon\UI\E_UI_Switch_Ammo"/>
+				<Event Id="2979668013" Name="E_UI_Switch_Grenade" ObjectPath="\Events\Simon\UI\E_UI_Switch_Grenade"/>
 				<Event Id="1254674964" Name="E_UI_Valid" ObjectPath="\Events\Brian\UI\E_UI_Valid"/>
 				<Event Id="2759949120" Name="HB_Healthkit" ObjectPath="\Events\Chris\HB_Ui_Character\HB_Healthkit"/>
 				<Event Id="3887785823" Name="HB_PickUp_EVENT" ObjectPath="\Events\Chris\HB_Ui_Character\HB_PickUp_EVENT"/>
@@ -1295,6 +1304,10 @@
 				<File Id="128255007" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_4-2_GetCloserIntroduceMother.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_4-2_GetCloserIntroduceMother_10C4C929.wem</Path>
+				</File>
+				<File Id="129847404" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchGrenade_01.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchGrenade_01_10C4C929.wem</Path>
 				</File>
 				<File Id="131068961" Language="SFX">
 					<ShortName>HB_SFX_Other_Ammo_02.wav</ShortName>
@@ -1984,6 +1997,10 @@
 					<ShortName>SFX_HB_Shotgun_DropShell_Dirt_04.wav</ShortName>
 					<Path>SFX\SFX_HB_Shotgun_DropShell_Dirt_04_66C02B12.wem</Path>
 				</File>
+				<File Id="382431942" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchGrenade_02.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchGrenade_02_10C4C929.wem</Path>
+				</File>
 				<File Id="382670636" Language="SFX">
 					<ShortName>HB_SFX_Foley_2.wav</ShortName>
 					<Path>SFX\HB_SFX_Foley_2_B8196996.wem</Path>
@@ -2187,6 +2204,10 @@
 				<File Id="454462908" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Spread60_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Spread60_01_66C02B12.wem</Path>
+				</File>
+				<File Id="456000760" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchAmmo_02.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchAmmo_02_10C4C929.wem</Path>
 				</File>
 				<File Id="457225260" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_03.wav</ShortName>
@@ -2784,6 +2805,10 @@
 					<ShortName>HB_Kali_Attacks_whoosh_Mid_02.wav</ShortName>
 					<Path>SFX\HB_Kali_Attacks_whoosh_Mid_02_8A436430.wem</Path>
 				</File>
+				<File Id="681361430" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchGrenade_03.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchGrenade_03_10C4C929.wem</Path>
+				</File>
 				<File Id="682102811" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_8-3_BodyIsReady.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_8-3_BodyIsReady_10C4C929.wem</Path>
@@ -3212,6 +3237,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleOUT_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleOUT_01_66C02B12.wem</Path>
 				</File>
+				<File Id="868334332" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchAmmo_01.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchAmmo_01_10C4C929.wem</Path>
+				</File>
 				<File Id="872149081" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Dot_Thunder_06.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Dot_Thunder_06_66C02B12.wem</Path>
@@ -3375,6 +3404,10 @@
 				<File Id="959475863" Language="SFX">
 					<ShortName>HB_SFX_KALI_Attack_01.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_Attack_01_09928E58.wem</Path>
+				</File>
+				<File Id="962354330" Language="SFX">
+					<ShortName>SFX_HB_HUD_SwitchAmmo_03.wav</ShortName>
+					<Path>SFX\SFX_HB_HUD_SwitchAmmo_03_10C4C929.wem</Path>
 				</File>
 				<File Id="964309945" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Dot_Thunder_02.wav</ShortName>

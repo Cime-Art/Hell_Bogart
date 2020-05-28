@@ -16,6 +16,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2097670358	E_Mus_Ruin_Trigger_Enigme			\Brian\Music_Ruin\E_Mus_Ruin_Trigger_Enigme	
 	2230239644	E_Mus_TriggerEnigme			\Simon\Music\Jungle\E_Mus_TriggerEnigme	
 	2386022965	E_Mus_Ruin_End			\Brian\Music_Ruin\E_Mus_Ruin_End	
+	2658569566	E_Mus_Kali_End			\Brian\Music_Boss\E_Mus_Kali_End	
 	2931429659	E_Mus_Kali_Intro			\Brian\Music_Boss\E_Mus_Kali_Intro	
 	3116078580	E_Mus_Ruin_Fight			\Brian\Music_Ruin\E_Mus_Ruin_Fight	
 	3221088188	E_Mus_Ruin_Trigger_Chest			\Brian\Music_Ruin\E_Mus_Ruin_Trigger_Chest	
@@ -53,6 +54,7 @@ State	ID	Name	State Group			Notes
 	2261316454	Kali_Transition	Music_Kali_STATE			
 	2615845689	Kali_Phase1	Music_Kali_STATE			
 	2615845690	Kali_Phase2	Music_Kali_STATE			
+	2910148894	Kali_End	Music_Kali_STATE			
 	3696252379	Kali_Intro	Music_Kali_STATE			
 	0	None	Jungle_Music_STATE			
 	514064485	Fight	Jungle_Music_STATE			
@@ -60,17 +62,17 @@ State	ID	Name	State Group			Notes
 	2582085496	Exploration	Jungle_Music_STATE			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	95182730	A_Full	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Phase2\75		
+	95182730	A_Full	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Phase2\75		
 	123289184	C_NearEnd	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\100		
-	352487341	B_Middle	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Phase2\25		
+	352487341	B_Middle	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Phase2\25		
 	665828089	C_NearEnd	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\75		
 	781590032	A_Full	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\75		
-	791245526	A_Full	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Phase2\25		
+	791245526	A_Full	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Phase2\25		
 	896826423	B_Middle	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\100		
 	907364710	B_Middle	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\25		
-	927247593	C_NearEnd	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Phase2\100		
-	958714930	C_NearEnd	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Phase2\75		
-	984809105	B_Middle	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Phase2\100		
+	927247593	C_NearEnd	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Phase2\100		
+	958714930	C_NearEnd	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Phase2\75		
+	984809105	B_Middle	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Phase2\100		
 	1039231329	A_Full	Music_Kali_Phase_STATE	\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\25		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -102,30 +104,30 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	310030802	MUS_HB_Ruines_String	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_String_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_String		647329
 	363699513	MUS_HB_Ruines_EndGardian	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_EndGardian_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_EndGardian\MUS_HB_Ruines_EndGardian		414765
 	367335765	MUS_HB_BridgeJungle_Bridge_P2_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_BridgeJungle_Bridge_P2_04_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Bridge\Mus_Bridge_MAIN_SWITCH\Mus_Bridge_Phase2_LOOP\MUS_HB_BridgeJungle_Bridge_P2_04\MUS_HB_BridgeJungle_Bridge_P2_04		470888
-	368405575	Intro	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Intro Bossfight_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Intro\Intro_Fight\Intro		1642422
 	375039806	MUS_HB_Ruines_End	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_End_02_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_End\MUS_HB_Ruines_End		404086
-	437382272	75	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Kali Theme Phase 2 (75%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Phase2\75		7247636
+	378460750	100	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Phase 2 (100%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Phase2\100		7067434
 	440069006	Event Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Trigger_B02_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Events\Mus_Ruin_Event_Chest\Event Chest		637991
 	445581775	MUS_HB_Ruines_EndGardian	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_EndGardian_02_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_EndGardian\MUS_HB_Ruines_EndGardian		453472
 	452570176	MUS_HB_Ruines_String	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_String_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_String		651939
 	500624380	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Amb_03_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_04\MUS_HB_Ruines_Amb		1441759
 	506404397	MUS_HB_Ruines_Choir	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Choir_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_GardianFight_LOOP\MUS_Ruin_GardianFight_SEG\MUS_HB_Ruines_Choir		1260720
+	515424361	75	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Phase 2 (75%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Phase2\75		7105428
 	515666401	Enigme Resolved SEQ	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Jungle_EnigmeResolved_01_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\Jungle\Events\Mus_Jungle_Event_Enigme_Resolved\Enigme Resolved SEQ		2208064
 	516836356	MUS_HB_Ruines_Choir	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Choir_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_GardianFight_LOOP\MUS_Ruin_GardianFight_SEG\MUS_HB_Ruines_Choir		1240039
 	539506128	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Amb_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_02\MUS_HB_Ruines_Amb		1399454
 	576860599	Event Enigme	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Trigger_A01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Events\Mus_Ruin_Event_Enigme\Event Enigme		684878
-	594926696	75	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Kali Theme Phase 1 (75%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\75		6853989
+	592506828	25	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Phase 1 (25%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\25		6742923
 	595572684	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Amb_02_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_03\MUS_HB_Ruines_Amb		1469223
 	639325914	Enigme Resolved SEQ	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Jungle_EnigmeResolved_02_D79FB2B7.wem		\Interactive Music Hierarchy\Simon\Jungle\Events\Mus_Jungle_Event_Enigme_Resolved\Enigme Resolved SEQ		2016064
-	651096681	100	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Kali Theme Phase 2 (100%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Phase2\100		7268875
 	660836541	MUS_HB_BridgeJungle_Bridge_P1_04	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_BridgeJungle_Bridge_P1_04_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Bridge\Mus_Bridge_MAIN_SWITCH\Mus_Bridge_Phase1_LOOP\MUS_HB_BridgeJungle_Bridge_P1_04\MUS_HB_BridgeJungle_Bridge_P1_04		470845
 	668388054	MUS_HB_Ruines_End	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_End_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_End\MUS_HB_Ruines_End		505197
-	693127027	25	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Kali Theme Phase 2 (25%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Phase2\25		7052010
+	685315389	25	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Phase 2 (25%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Phase2\25		6956720
 	716610373	MUS_HB_Jungle_Fight_MalletCymbal_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Jungle_Fight_MalletCymbal_01_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Jungle\Transitions\Mus_Jungle_Transi_BeginFight\MUS_HB_Jungle_Fight_MalletCymbal_01		470342
 	718109556	MUS_HB_BridgeJungle_Bridge_P2_01	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_BridgeJungle_Bridge_P2_01_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Bridge\Mus_Bridge_MAIN_SWITCH\Mus_Bridge_Phase2_LOOP\MUS_HB_BridgeJungle_Bridge_P2_01\MUS_HB_BridgeJungle_Bridge_P2_01		474316
 	726862209	MUS_HB_Ruines_Tambour	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Tambour_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_Tambour		1654620
 	726920984	MUS_HB_BridgeJungle_DownhillSegment	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_BridgeJungle_DownhillSegment_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Bridge\Mus_Bridge_MAIN_SWITCH\Mus_Bridge_Downhill_LOOP\MUS_HB_BridgeJungle_DownhillSegment\MUS_HB_BridgeJungle_DownhillSegment		2400178
 	757816540	MUS_HB_BridgeJungle_Transi_P1ToP2	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_BridgeJungle_Transi_P1ToP2_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Bridge\Transitions\MUS_HB_BridgeJungle_Transi_P1ToP2\MUS_HB_BridgeJungle_Transi_P1ToP2		549641
+	758953969	Intro	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Intro Boss_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Intro\Intro_Fight\Intro		1546641
 	763074539	MUS_HB_Ruines_Tambour	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Tambour_02_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_GardianFight_LOOP\MUS_Ruin_GardianFight_SEG\MUS_HB_Ruines_Tambour		1609550
 	765855572	MUS_HB_Ruines_Snare	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Snare_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_Snare		715738
 	788627694	MUS_HB_Ruines_TambourAdd	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_TambourAdd_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_GardianFight_LOOP\MUS_Ruin_GardianFight_SEG\MUS_HB_Ruines_TambourAdd		692052
@@ -133,22 +135,23 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	803568545	MUS_HB_Ruines_Start	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Start_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_Start\MUS_HB_Ruines_Start		285178
 	817692512	Big Drum End	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Jungle_Fight_BigDrums_End_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Jungle\Transitions\Mus_Jungle_Transi_EndFight\Big Drum End		131989
 	839996953	MUS_HB_Ruines_Start	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Start_03_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_Start\MUS_HB_Ruines_Start		421281
+	846685009	Transition	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - End Boss_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Outro\Outro_Fight\Transition		406799
 	866325847	MUS_HB_Ruines_BigVoice	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_BigVoice_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_BigVoice		578759
 	877113610	MUS_HB_BridgeJungle_BeginJingle	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_BridgeJungle_BeginJingle_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Bridge\Mus_Bridge_MAIN_SWITCH\Mus_Bridge_Downhill_LOOP\MUS_HB_BridgeJungle_BeginJingle\MUS_HB_BridgeJungle_BeginJingle		489321
 	879127390	Low Boom End	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_JUNGLE_BigDrum_EndFight_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Jungle\Transitions\Mus_Jungle_Transi_EndFight\Low Boom End		193596
 	900343963	MUS_HB_Ruines_End	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_End_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_End\MUS_HB_Ruines_End		377337
 	909569087	MUS_HB_Jungle_Fight_TransitionBegin	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Jungle_Fight_TransitionBegin_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Jungle\Transitions\Mus_Jungle_Transi_BeginFight\MUS_HB_Jungle_Fight_TransitionBegin		347868
 	916412374	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Amb_04_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_05\MUS_HB_Ruines_Amb		1449141
-	945315478	25	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Kali Theme Phase 1 (25%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\25		6799563
-	945653896	100	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Kali Theme Phase 1 (100%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\100		6942508
+	916474184	75	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Phase 1 (75%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\75		6834804
+	930171474	Transition	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Transition Boss_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Transition\Transition		544121
 	947932089	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Amb_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_01\MUS_HB_Ruines_Amb		1479809
 	951005522	MUS_HB_Ruines_Tambour	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Tambour_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_Tambour		1775244
-	992734597	Intro	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Intro 2 Bossfight_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Transition\Transition\Intro		638793
 	1029166442	MUS_HB_Ruines_Snare	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Snare_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_Snare		765889
 	1040288944	MUS_HB_Ruines_Start	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Start_02_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_Start\MUS_HB_Ruines_Start		442083
 	1042611356	Event Enigme Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Jungle_Enigme_Chest_Event_02_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Jungle\Events\Mus_Jungle_Event_Found_Chest\Event Enigme Chest		434871
 	1043129415	Event Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Trigger_B01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Events\Mus_Ruin_Event_Chest\Event Chest		651120
 	1051529773	MUS_HB_Ruines_Start	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Start_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_Start\MUS_HB_Ruines_Start		296559
+	1053432098	100	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Phase 1 (100%)_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase1\Phase1\100		6801139
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	6554429	Mysterious Element	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Jungle_Fight_MysteriousElement_01_EA9615DC.wem	6554429.wem	\Interactive Music Hierarchy\Simon\Jungle\Mus_Jungle_MAIN_SWITCH\Mus_Jungle_Fight_LOOP\Mus_Jungle_Fight_v2_SEG\Mysterious Element	

@@ -106,6 +106,10 @@
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Global_TimeDilatation_Off" ID="{0CC26995-B2E8-4B66-B66F-D7A2F4A8DA12}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="4" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Elm_Regular" ID="{5C91A112-5143-4FC2-A2B4-73EB11CCBC56}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 							<Position X="4" Y="6"/>
 						</Module>
@@ -116,6 +120,10 @@
 						<Module>
 							<ObjectRef Name="E_Mus_Ruin_End" ID="{220C3A19-F845-4D4E-889E-AB7A99E406FB}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
 							<Position X="5" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Global_TimeDilatation_On" ID="{25C283D2-E5CE-4BAD-87B3-9FE094E8B9B9}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="5" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Initialize_Grenade" ID="{1324F38C-46B8-4F17-989C-58110C415D5C}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
@@ -157,6 +165,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="normal" ID="{CBF3AD21-3794-465E-A4F8-F097A7B1B724}"/>
 						<CurrentStateRef Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
 						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
 						<CurrentStateRef Name="Phase_1" ID="{ABAAF5E5-2CDD-4FE2-9428-D76699596B9D}"/>
