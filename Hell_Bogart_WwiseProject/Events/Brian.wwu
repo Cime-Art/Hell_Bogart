@@ -812,6 +812,30 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Mus_Kali_End" ID="{3D331523-0561-44B5-8CAC-BD08E7F0564A}">
+							<ChildrenList>
+								<Action Name="" ID="{8BEE8A35-7094-4D47-B672-94438731C449}" ShortID="468829567">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Kali_End" ID="{CBDFEF37-2E50-4219-B041-A24E68676549}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{74A68951-0739-4154-B127-55DB6A4CB91D}" ShortID="319276468">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
