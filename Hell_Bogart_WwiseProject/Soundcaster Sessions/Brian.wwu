@@ -153,7 +153,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
-							<Value>4500</Value>
+							<Value>6000</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>

@@ -883,6 +883,7 @@
 			<ShortName>General_Soundbank</ShortName>
 			<Path>General_Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="704601462" Name="E_Amb_IddleMobCharlie" ObjectPath="\Events\Simon\Enviro\Amb Iddle Charlie\E_Amb_IddleMobCharlie"/>
 				<Event Id="2368673453" Name="E_BigStoneDoor_Opening" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Opening"/>
 				<Event Id="2503251047" Name="E_BigStoneDoor_Stop" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Stop"/>
 				<Event Id="1672275366" Name="E_Char_Foley_Grenade" ObjectPath="\Events\Simon\Weapons\E_Char_Foley_Grenade"/>
