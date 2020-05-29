@@ -774,6 +774,28 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Amb Iddle Charlie" ID="{C81319F2-3D01-4485-94B3-ADA5E11E6534}" ShortID="941630410">
+							<ChildrenList>
+								<Event Name="E_Amb_IddleMobCharlie" ID="{DF6D0A87-B17C-44F5-9458-B66706621B0D}">
+									<ChildrenList>
+										<Action Name="" ID="{FF63A4C2-2D13-4C8E-B162-FDE2D3CB2A05}" ShortID="395863477">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Iddle_MobJungleCharlie_SEQ" ID="{5E20513A-A719-4375-89DF-75093C37289F}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{BFDC985F-51DF-405D-AF57-78F75095F952}" ShortID="732935756">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Iddle_MobJungleCharlie_Foleys_RND" ID="{AFC9227F-1371-4DC2-A498-5C85644C88A1}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{CB808997-9F6A-47F6-9C31-CF9884025AE1}" ShortID="1057474070">
@@ -1838,7 +1860,7 @@
 												<Action Name="" ID="{80151D57-9733-4D00-A474-8F61198322B4}" ShortID="665161861">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_BOSS_Ulti_RND" ID="{E602D3BD-4D7B-441B-9267-465640B3F1F5}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+															<ObjectRef Name="VOICE_HB_Bear_Bossline_5-3_BigCanon" ID="{804B22F5-D4CB-48EE-A23F-9E24D185DC6B}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

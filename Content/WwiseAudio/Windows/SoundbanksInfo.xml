@@ -466,8 +466,6 @@
 			<ShortName>Music_Soundbank</ShortName>
 			<Path>Music_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3454693556" Name="E_Global_MUSIC_FadeIn" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_MUSIC_FadeIn"/>
-				<Event Id="3540013779" Name="E_Global_MUSIC_FadeOut" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_MUSIC_FadeOut"/>
 				<Event Id="1316302252" Name="E_Mus_Bridge_Begin" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_Begin"/>
 				<Event Id="3685971472" Name="E_Mus_Bridge_End" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_End"/>
 				<Event Id="156378190" Name="E_Mus_Bridge_GoToPhase1" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase1"/>
@@ -885,6 +883,7 @@
 			<ShortName>General_Soundbank</ShortName>
 			<Path>General_Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="704601462" Name="E_Amb_IddleMobCharlie" ObjectPath="\Events\Simon\Enviro\Amb Iddle Charlie\E_Amb_IddleMobCharlie"/>
 				<Event Id="2368673453" Name="E_BigStoneDoor_Opening" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Opening"/>
 				<Event Id="2503251047" Name="E_BigStoneDoor_Stop" ObjectPath="\Events\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Stop"/>
 				<Event Id="1672275366" Name="E_Char_Foley_Grenade" ObjectPath="\Events\Simon\Weapons\E_Char_Foley_Grenade"/>
