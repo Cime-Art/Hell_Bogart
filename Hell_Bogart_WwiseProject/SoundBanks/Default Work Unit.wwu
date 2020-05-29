@@ -182,6 +182,7 @@
 						<ObjectRef Name="E_Mus_SetExplorationState" ID="{134BEA16-70AF-42BC-BAA0-FD3E12D72846}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Jungle_Main_Play" ID="{1BB4E9C1-06DA-4333-935C-F4418EBAFDE0}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Kali_25" ID="{762AD58F-9210-440A-B956-BEB28FBE2D73}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Mus_Kali_End" ID="{3D331523-0561-44B5-8CAC-BD08E7F0564A}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Bridge_GoToPhase1" ID="{E23198FE-C61C-465D-94F4-72A13BDEE57C}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Bridge_GoToPhase2" ID="{FDF36D42-84ED-4690-B6A8-4107FEE6DAE0}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Ruin_Main_Play" ID="{5C2483EA-55EB-4719-8F4C-669398336ECE}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>

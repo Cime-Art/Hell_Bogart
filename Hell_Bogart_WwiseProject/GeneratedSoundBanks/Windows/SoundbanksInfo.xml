@@ -476,6 +476,7 @@
 				<Event Id="3619357316" Name="E_Mus_Kali_100" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_100"/>
 				<Event Id="933394352" Name="E_Mus_Kali_25" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_25"/>
 				<Event Id="849506195" Name="E_Mus_Kali_75" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_75"/>
+				<Event Id="2658569566" Name="E_Mus_Kali_End" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_End"/>
 				<Event Id="2931429659" Name="E_Mus_Kali_Intro" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Intro"/>
 				<Event Id="4274573073" Name="E_Mus_Kali_Main_Play" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Main_Play"/>
 				<Event Id="1151039993" Name="E_Mus_Kali_Phase1" ObjectPath="\Events\Brian\Music_Boss\E_Mus_Kali_Phase1"/>
@@ -683,17 +684,13 @@
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P2_04.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P2_04_EA9615DC.wem</Path>
 				</File>
-				<File Id="368405575" Language="SFX">
-					<ShortName>Cykodd - Intro Bossfight.wav</ShortName>
-					<Path>SFX\Cykodd - Intro Bossfight_EA9615DC.wem</Path>
-				</File>
 				<File Id="375039806" Language="SFX">
 					<ShortName>MUS_HB_Ruines_End_02.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_End_02_EA9615DC.wem</Path>
 				</File>
-				<File Id="437382272" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 2 (75%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 2 (75%)_EA9615DC.wem</Path>
+				<File Id="378460750" Language="SFX">
+					<ShortName>Cykodd - Phase 2 (100%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 2 (100%)_EA9615DC.wem</Path>
 				</File>
 				<File Id="440069006" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Trigger_B02.wav</ShortName>
@@ -715,6 +712,10 @@
 					<ShortName>MUS_HB_Ruines_Choir_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Choir_00_EA9615DC.wem</Path>
 				</File>
+				<File Id="515424361" Language="SFX">
+					<ShortName>Cykodd - Phase 2 (75%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 2 (75%)_EA9615DC.wem</Path>
+				</File>
 				<File Id="515666401" Language="SFX">
 					<ShortName>MUS_HB_Jungle_EnigmeResolved_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_EnigmeResolved_01_D79FB2B7.wem</Path>
@@ -731,9 +732,9 @@
 					<ShortName>MUS_HB_Ruines_Trigger_A01.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Trigger_A01_EA9615DC.wem</Path>
 				</File>
-				<File Id="594926696" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 1 (75%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 1 (75%)_EA9615DC.wem</Path>
+				<File Id="592506828" Language="SFX">
+					<ShortName>Cykodd - Phase 1 (25%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 1 (25%)_EA9615DC.wem</Path>
 				</File>
 				<File Id="595572684" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Amb_02.wav</ShortName>
@@ -743,10 +744,6 @@
 					<ShortName>MUS_HB_Jungle_EnigmeResolved_02.wav</ShortName>
 					<Path>SFX\MUS_HB_Jungle_EnigmeResolved_02_D79FB2B7.wem</Path>
 				</File>
-				<File Id="651096681" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 2 (100%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 2 (100%)_EA9615DC.wem</Path>
-				</File>
 				<File Id="660836541" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Bridge_P1_04.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Bridge_P1_04_EA9615DC.wem</Path>
@@ -755,9 +752,9 @@
 					<ShortName>MUS_HB_Ruines_End_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_End_00_EA9615DC.wem</Path>
 				</File>
-				<File Id="693127027" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 2 (25%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 2 (25%)_EA9615DC.wem</Path>
+				<File Id="685315389" Language="SFX">
+					<ShortName>Cykodd - Phase 2 (25%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 2 (25%)_EA9615DC.wem</Path>
 				</File>
 				<File Id="716610373" Language="SFX">
 					<ShortName>MUS_HB_Jungle_Fight_MalletCymbal_01.wav</ShortName>
@@ -778,6 +775,10 @@
 				<File Id="757816540" Language="SFX">
 					<ShortName>MUS_HB_BridgeJungle_Transi_P1ToP2.wav</ShortName>
 					<Path>SFX\MUS_HB_BridgeJungle_Transi_P1ToP2_EA9615DC.wem</Path>
+				</File>
+				<File Id="758953969" Language="SFX">
+					<ShortName>Cykodd - Intro Boss.wav</ShortName>
+					<Path>SFX\Cykodd - Intro Boss_EA9615DC.wem</Path>
 				</File>
 				<File Id="763074539" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Tambour_02.wav</ShortName>
@@ -807,6 +808,10 @@
 					<ShortName>MUS_HB_Ruines_Start_03.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Start_03_EA9615DC.wem</Path>
 				</File>
+				<File Id="846685009" Language="SFX">
+					<ShortName>Cykodd - End Boss.wav</ShortName>
+					<Path>SFX\Cykodd - End Boss_EA9615DC.wem</Path>
+				</File>
 				<File Id="866325847" Language="SFX">
 					<ShortName>MUS_HB_Ruines_BigVoice_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_BigVoice_00_EA9615DC.wem</Path>
@@ -831,13 +836,13 @@
 					<ShortName>MUS_HB_Ruines_Amb_04.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Amb_04_EA9615DC.wem</Path>
 				</File>
-				<File Id="945315478" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 1 (25%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 1 (25%)_EA9615DC.wem</Path>
+				<File Id="916474184" Language="SFX">
+					<ShortName>Cykodd - Phase 1 (75%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 1 (75%)_EA9615DC.wem</Path>
 				</File>
-				<File Id="945653896" Language="SFX">
-					<ShortName>Cykodd - Kali Theme Phase 1 (100%).wav</ShortName>
-					<Path>SFX\Cykodd - Kali Theme Phase 1 (100%)_EA9615DC.wem</Path>
+				<File Id="930171474" Language="SFX">
+					<ShortName>Cykodd - Transition Boss.wav</ShortName>
+					<Path>SFX\Cykodd - Transition Boss_EA9615DC.wem</Path>
 				</File>
 				<File Id="947932089" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Amb_00.wav</ShortName>
@@ -846,10 +851,6 @@
 				<File Id="951005522" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Tambour_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Tambour_00_EA9615DC.wem</Path>
-				</File>
-				<File Id="992734597" Language="SFX">
-					<ShortName>Cykodd - Intro 2 Bossfight.wav</ShortName>
-					<Path>SFX\Cykodd - Intro 2 Bossfight_EA9615DC.wem</Path>
 				</File>
 				<File Id="1029166442" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Snare_01.wav</ShortName>
@@ -870,6 +871,10 @@
 				<File Id="1051529773" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Start_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Start_00_EA9615DC.wem</Path>
+				</File>
+				<File Id="1053432098" Language="SFX">
+					<ShortName>Cykodd - Phase 1 (100%).wav</ShortName>
+					<Path>SFX\Cykodd - Phase 1 (100%)_EA9615DC.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

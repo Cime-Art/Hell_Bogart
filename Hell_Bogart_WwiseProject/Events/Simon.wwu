@@ -1251,7 +1251,8 @@
 										<Action Name="" ID="{8C5C7B85-CA7D-45A7-B25E-494C4237E4E2}" ShortID="993602314">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+												<Property Name="FadeInCurve" Type="int16" Value="0"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
 												<Property Name="GameParameterValue" Type="Real64" Value="80"/>
 											</PropertyList>
 											<ReferenceList>
