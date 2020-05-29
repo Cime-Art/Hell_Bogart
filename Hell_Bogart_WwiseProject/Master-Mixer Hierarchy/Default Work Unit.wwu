@@ -70,7 +70,7 @@
 								</Property>
 							</PropertyList>
 							<ChildrenList>
-								<Bus Name="Acoustics_SFX_BUS" ID="{D0A15373-28FF-4CA5-9B3B-21597792E936}">
+								<Bus Name="Acoustics_SFX_AUX" ID="{D0A15373-28FF-4CA5-9B3B-21597792E936}">
 									<ChildrenList>
 										<AuxBus Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}">
 											<ReferenceList>
@@ -182,6 +182,49 @@
 										</AuxBus>
 									</ChildrenList>
 								</Bus>
+								<Bus Name="KaliBoss_SFX_SUBBUS" ID="{7D0627CF-1A3F-4EF7-8384-9C5D96CD90EA}">
+									<PropertyList>
+										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<AuxBus Name="Kali_BigAddRev_AUX" ID="{2BA2055F-3BDF-4DA1-ABE3-B8462D0C01FB}">
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}">
+														<Effect Name="Room_Large_(Custom)" ID="{33AB0A8F-A749-4099-A111-CA888B2EE6ED}" ShortID="221328566" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="CenterLevel" Type="Real32" Value="-96"/>
+																<Property Name="DecayTime" Type="Real32" Value="9"/>
+																<Property Name="Density" Type="Real32" Value="70"/>
+																<Property Name="Diffusion" Type="Real32" Value="10"/>
+																<Property Name="ERLevel" Type="Real32" Value="-23"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+																<Property Name="HFDamping" Type="Real32" Value="3"/>
+																<Property Name="PreDelay" Type="Real32" Value="0"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="RoomShape" Type="Real32" Value="6"/>
+																<Property Name="RoomSize" Type="Real32" Value="15"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
+											<DuckingParam>
+												<Volume>-2</Volume>
+												<FadeInTime>0.100000001490116</FadeInTime>
+												<FadeOutTime>0.100000001490116</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
@@ -275,7 +318,7 @@
 								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 							</PropertyList>
 							<ChildrenList>
-								<Bus Name="Acoustics_VOICE_BUS" ID="{D6909AB2-2B1D-4885-B516-56F5EC250DEE}">
+								<Bus Name="Acoustics_VOICE_AUX" ID="{D6909AB2-2B1D-4885-B516-56F5EC250DEE}">
 									<ChildrenList>
 										<AuxBus Name="Exterior_Delay_VOICE_AUX" ID="{AE6EEE7F-6759-4F48-8955-3846835DDBFA}">
 											<ReferenceList>
@@ -387,6 +430,47 @@
 										</AuxBus>
 									</ChildrenList>
 								</Bus>
+								<Bus Name="Normal_Voices_SUBBUS" ID="{AEF54904-2C81-431E-B3FC-3A0EFE3A93B8}">
+									<PropertyList>
+										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+									</PropertyList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
+											<DuckingParam>
+												<Volume>-3</Volume>
+												<FadeInTime>1.5</FadeInTime>
+												<FadeOutTime>0.5</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}"/>
+											<DuckingParam>
+												<Volume>-1.5</Volume>
+												<FadeInTime>1.5</FadeInTime>
+												<FadeOutTime>0.5</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+								<Bus Name="Special_Voices_SUBBUS" ID="{0E3486CD-D4F7-4D67-AA1D-C7C7B775A186}">
+									<PropertyList>
+										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+									</PropertyList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1.5</FadeInTime>
+												<FadeOutTime>0.5</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
 							</ChildrenList>
 							<StateInfo>
 								<StatePropertyList>
@@ -413,26 +497,6 @@
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}"/>
-									<DuckingParam>
-										<Volume>-3</Volume>
-										<FadeInTime>1.5</FadeInTime>
-										<FadeOutTime>0.5</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-								<DuckItem>
-									<BusRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
-									<DuckingParam>
-										<Volume>-3</Volume>
-										<FadeInTime>1.5</FadeInTime>
-										<FadeOutTime>0.5</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
 						</Bus>
 						<Bus Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}"/>
 					</ChildrenList>
