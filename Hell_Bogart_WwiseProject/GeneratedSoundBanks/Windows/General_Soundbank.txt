@@ -257,6 +257,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4095840129	Firing_Rate_GP			\Simon\Character\Shotgun\Firing_Rate_GP	
 
 Effect plug-ins	ID	Name	Type				Notes
+	24173830	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	786542490	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	912264229	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 

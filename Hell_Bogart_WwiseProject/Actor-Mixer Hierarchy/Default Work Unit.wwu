@@ -3376,7 +3376,7 @@
 														<Value>-20</Value>
 													</ValueList>
 												</Property>
-												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3405,7 +3405,13 @@
 																					<SegmentShape>Exp2</SegmentShape>
 																				</Point>
 																				<Point>
-																					<XPos>1473.35424</XPos>
+																					<XPos>1600</XPos>
+																					<YPos>-3</YPos>
+																					<Flags>0</Flags>
+																					<SegmentShape>Log2</SegmentShape>
+																				</Point>
+																				<Point>
+																					<XPos>2600</XPos>
 																					<YPos>-16.30476</YPos>
 																					<Flags>0</Flags>
 																					<SegmentShape>Exp2</SegmentShape>
@@ -3582,10 +3588,22 @@
 														</Property>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverridePriority" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8CC70A9D-AF65-4207-803B-910EE0FB819C}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="15">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{324F77CE-B150-46A6-BF0B-BFB45DCD4AD3}">
@@ -3640,6 +3658,21 @@
 													</ReferenceList>
 													<ChildrenList>
 														<Sound Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_01" ID="{B030E7BE-53FC-4C7B-89F2-75E59BFC89F7}" ShortID="657269772">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{DF6FD1C2-DB32-4319-8491-07E328982B35}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="200"/>
+																					<Property Name="Min" Type="Real64" Value="-200"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3659,6 +3692,21 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_02" ID="{2B523EFF-A514-4CDA-9912-9F2612E7E02E}" ShortID="267905868">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{E4FC6457-67D5-43A5-B404-A1D1E8EC2B0E}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="200"/>
+																					<Property Name="Min" Type="Real64" Value="-200"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3678,6 +3726,21 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_03" ID="{E91048C5-E14E-42D4-84D6-6544D5F5B418}" ShortID="718920050">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{5BF773C9-BEB6-40F7-AA39-A02A643489B0}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="200"/>
+																					<Property Name="Min" Type="Real64" Value="-200"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3697,6 +3760,21 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_04" ID="{735141CE-A1F9-4B64-8309-982F28DDC49F}" ShortID="357027481">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{F09060EE-7EC3-4962-AB94-D2B9AAA48E3C}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="200"/>
+																					<Property Name="Min" Type="Real64" Value="-200"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3716,6 +3794,21 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_05" ID="{9EAFD432-77C2-4F29-BE3A-892DFB28B89C}" ShortID="441946410">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{6D05E055-C259-4A9B-AFE3-0B1C7906A97E}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="200"/>
+																					<Property Name="Min" Type="Real64" Value="-200"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -3789,6 +3882,19 @@
 														<RandomSequenceContainer Name="Iddle_MobJungleCharlie_Voice_SEQ" ID="{66C0A785-2861-4147-851F-CD1DC426EDBF}" ShortID="182420336">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{816D45F5-47D3-42C4-AC5C-E43CDE81B982}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="200"/>
+																					<Property Name="Min" Type="Real64" Value="-200"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
@@ -6646,6 +6752,7 @@
 																				<Value>6</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																		<Property Name="OverridePriority" Type="bool" Value="True"/>
 																		<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
 																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
@@ -6661,6 +6768,19 @@
 																		</Reference>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="Effect0">
+																			<Custom>
+																				<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{0687910A-3F64-4396-A7F2-11932E80C1B9}" ShortID="24173830" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																					<PropertyList>
+																						<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+																						<Property Name="FrequencyBand2" Type="Real32" Value="175"/>
+																						<Property Name="FrequencyBand3" Type="Real32" Value="462"/>
+																						<Property Name="GainBand2" Type="Real32" Value="-7"/>
+																						<Property Name="GainBand3" Type="Real32" Value="-4"/>
+																					</PropertyList>
+																				</Effect>
+																			</Custom>
 																		</Reference>
 																		<Reference Name="OutputBus">
 																			<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -22054,11 +22174,6 @@
 														<Value>90</Value>
 													</ValueList>
 												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>3</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -22083,6 +22198,11 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22153,6 +22273,11 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22295,6 +22420,11 @@
 																<Value>90</Value>
 															</ValueList>
 														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -22363,6 +22493,11 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22506,6 +22641,11 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
