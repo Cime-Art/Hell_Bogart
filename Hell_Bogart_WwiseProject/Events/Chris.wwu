@@ -74,20 +74,20 @@
 						</Folder>
 						<Folder Name="Hit Bear" ID="{214A24FD-7BAB-4EC4-98FA-A0A8054E9E27}" ShortID="523037786">
 							<ChildrenList>
-								<Event Name="E_KaliBoss_Hits_Bear_Slash" ID="{CD58770D-3D1D-450A-96BC-7FEC4F625980}">
+								<Event Name="E_Kaliboss_HitBear_Attack" ID="{58795FF2-2AD6-41CA-9D16-8CF5FE54872C}">
 									<ChildrenList>
-										<Action Name="" ID="{357DAD4A-0033-4968-93A8-FAEBE696B1C7}" ShortID="358404239">
+										<Action Name="" ID="{78A34CC3-D0CB-4296-8C49-74C152CA8A22}" ShortID="126684641">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="RND_BEAR_HITS_Slashs" ID="{04A3505E-1D2A-41EC-9039-D702E59B95DA}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+													<ObjectRef Name="RND_BEAR_HITS_Attack" ID="{134E1003-1744-4347-AF1D-1EBD9AF7305B}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_KaliBoss_Hits_Bear_Grab" ID="{235498DB-FCE2-40E3-A3BC-EB803FB23845}">
+								<Event Name="E_Kaliboss_HitBear_Grab" ID="{23120CF8-ECE1-4F32-A543-8407AB542E35}">
 									<ChildrenList>
-										<Action Name="" ID="{EB591DC4-051D-406E-A15D-596ACE6BD6D5}" ShortID="841734684">
+										<Action Name="" ID="{79AE5C2C-BAC7-4BE6-B3F1-63D1A3192948}" ShortID="795988343">
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="RND_BEAR_HITS_Grab" ID="{49BAA7BB-0095-4638-B166-CC89E3E8F604}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
@@ -96,34 +96,23 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_KaliBoss_Hits_Bear_Impact" ID="{0FFFAE1B-277E-4D92-B916-95010B6A0B31}">
+								<Event Name="E_Kaliboss_HitBear_Scream" ID="{CA089737-256D-4FD1-B2F6-6DD16955476E}">
 									<ChildrenList>
-										<Action Name="" ID="{E26AC746-25FC-4A2F-83BD-63D54F462016}" ShortID="849948071">
+										<Action Name="" ID="{02D57F2E-FD9C-4A0A-B71F-86B9205DC182}" ShortID="149074875">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="RND_BEAR_HITS_Impact" ID="{23DAB9D1-E47A-47F4-BB0A-12A5EC88CEE9}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+													<ObjectRef Name="RND_BEAR_HITS_Scream" ID="{F60CBDA6-C7E3-4BBA-A89A-697580ACC7AC}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_KaliBoss_Hits_Bear_Whirlwind" ID="{AEFD04F2-7437-4F09-9207-009622A275EC}">
+								<Event Name="E_Kaliboss_HitBear_UltiImpact" ID="{CCF6C7EE-9094-473C-8EC5-2977DD55E881}">
 									<ChildrenList>
-										<Action Name="" ID="{B6A3781C-9BE7-4ECF-AF3B-488B93D3DB64}" ShortID="1067786477">
+										<Action Name="" ID="{8D4A6C9D-7A49-4852-BF08-F29D4CC46570}" ShortID="920870866">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="RND_BEAR_HITS_Whirlwind" ID="{134E1003-1744-4347-AF1D-1EBD9AF7305B}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="E_KaliBoss_Hits_Bear_Shockwave" ID="{E3BE06B5-8D16-4D9B-9BE2-789E16BC4438}">
-									<ChildrenList>
-										<Action Name="" ID="{E8CDD5AD-894D-423B-A429-3DC94548DED2}" ShortID="815534241">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="RND_BEAR_HITS_Shockwave" ID="{F60CBDA6-C7E3-4BBA-A89A-697580ACC7AC}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+													<ObjectRef Name="RND_BEAR_HITS_UltiImpact" ID="{04A3505E-1D2A-41EC-9039-D702E59B95DA}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

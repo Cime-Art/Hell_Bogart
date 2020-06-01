@@ -4401,7 +4401,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -12469,7 +12469,13 @@
 								<ActorMixer Name="Hit Bear" ID="{085E59D3-AC23-4962-B004-CFB1933AFD62}" ShortID="341225918">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="UserAuxSendVolume2" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -12492,12 +12498,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="RND_BEAR_HITS_Slashs" ID="{04A3505E-1D2A-41EC-9039-D702E59B95DA}" ShortID="12592811">
+										<RandomSequenceContainer Name="RND_BEAR_HITS_UltiImpact" ID="{04A3505E-1D2A-41EC-9039-D702E59B95DA}" ShortID="12592811">
 											<PropertyList>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>3</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -12604,7 +12610,19 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="RND_BEAR_HITS_Grab" ID="{49BAA7BB-0095-4638-B166-CC89E3E8F604}" ShortID="997747192">
 											<PropertyList>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CB795235-5FD1-45D1-BF29-DAE70D50A275}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -12638,6 +12656,11 @@
 															<PropertyList>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="3.44867907002158E-02"/>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Kali_BEAR_Hits_Grab_01.wav</AudioFile>
@@ -12648,13 +12671,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Kali_BEAR_Hits_Grab_02" ID="{B34A9B33-B743-4618-9687-614E29D628D8}" ShortID="426404873">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>2</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -12694,73 +12710,39 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="RND_BEAR_HITS_Impact" ID="{23DAB9D1-E47A-47F4-BB0A-12A5EC88CEE9}" ShortID="804534431">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-												<Reference Name="UserAuxSend1">
-													<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-												<Reference Name="UserAuxSend2">
-													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Kali_BEAR_Hits_Impact_01" ID="{2441D6FA-411D-4B32-B657-0D97F6EC0403}" ShortID="157844303">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ValueList>
-																<Value>100</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Kali_BEAR_Hits_Impact_01" ID="{0B875122-8B3A-4D1C-B457-A183490900F3}" ShortID="450633544">
-															<Language>SFX</Language>
-															<AudioFile>Kali_BEAR_Hits_Impact_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Kali_BEAR_Hits_Impact_01" ID="{0B875122-8B3A-4D1C-B457-A183490900F3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Kali_BEAR_Hits_Impact_02" ID="{B7A917D0-76FC-4DD8-94F5-994DA5E0F050}" ShortID="917222747">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Kali_BEAR_Hits_Impact_02" ID="{DF754C23-9659-4AC2-9C23-60D1049842C5}" ShortID="269198521">
-															<Language>SFX</Language>
-															<AudioFile>Kali_BEAR_Hits_Impact_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Kali_BEAR_Hits_Impact_02" ID="{DF754C23-9659-4AC2-9C23-60D1049842C5}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="RND_BEAR_HITS_Whirlwind" ID="{134E1003-1744-4347-AF1D-1EBD9AF7305B}" ShortID="159142501">
+										<RandomSequenceContainer Name="RND_BEAR_HITS_Attack" ID="{134E1003-1744-4347-AF1D-1EBD9AF7305B}" ShortID="159142501">
+											<PropertyList>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CDE4CBCC-BB71-4097-B6AE-ECBC18010622}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3CD8BE13-2F49-4D55-A532-4B0EF3D43E3C}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -12791,9 +12773,9 @@
 													<ChildrenList>
 														<AudioFileSource Name="Kali_BEAR_Hits_Whirlwind_01" ID="{5BD96CEA-C391-4FFF-A0C3-6AD775A89C8D}" ShortID="448891017">
 															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.10441710930948E-03"/>
 																<Property Name="LoopBegin" Type="Real64" Value="1.48069830341775E-02"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="1.48069830341775E-02"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Kali_BEAR_Hits_Whirlwind_01.wav</AudioFile>
@@ -12815,8 +12797,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="Kali_BEAR_Hits_Whirlwind_02" ID="{AEC7CACA-F582-479E-9D33-6F5D90FFDED3}" ShortID="618929226">
 															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="8.41766843723791E-03"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="2.53833994871615E-02"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Kali_BEAR_Hits_Whirlwind_02.wav</AudioFile>
@@ -12827,6 +12809,20 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Kali_BEAR_Hits_Whirlwind_03" ID="{88368A31-66B8-4141-80B5-2819C3D3B8D1}" ShortID="735668846">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{4E66C6EA-61B0-402C-AE9C-87523AB784D3}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -12838,9 +12834,9 @@
 													<ChildrenList>
 														<AudioFileSource Name="Kali_BEAR_Hits_Whirlwind_03" ID="{0B0815BF-6E7A-44ED-AC92-640BA8EF4A79}" ShortID="370686884">
 															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="9.46987699189265E-03"/>
 																<Property Name="LoopBegin" Type="Real64" Value="2.53833994871615E-02"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="2.53833994871615E-02"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Kali_BEAR_Hits_Whirlwind_03.wav</AudioFile>
@@ -12852,11 +12848,24 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="RND_BEAR_HITS_Shockwave" ID="{F60CBDA6-C7E3-4BBA-A89A-697580ACC7AC}" ShortID="334518997">
+										<RandomSequenceContainer Name="RND_BEAR_HITS_Scream" ID="{F60CBDA6-C7E3-4BBA-A89A-697580ACC7AC}" ShortID="334518997">
 											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{83F4E671-8E7C-47E7-9CF7-FA63D3F222B5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-7</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

@@ -921,11 +921,10 @@
 				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\Get Hit\E_KaliBoss_GetHit"/>
 				<Event Id="1324023236" Name="E_KaliBoss_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_Grab"/>
 				<Event Id="2370216155" Name="E_KaliBoss_GrabEnd" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_GrabEnd"/>
-				<Event Id="3010176894" Name="E_KaliBoss_Hits_Bear_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Grab"/>
-				<Event Id="2483986470" Name="E_KaliBoss_Hits_Bear_Impact" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Impact"/>
-				<Event Id="912237145" Name="E_KaliBoss_Hits_Bear_Shockwave" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Shockwave"/>
-				<Event Id="1902388067" Name="E_KaliBoss_Hits_Bear_Slash" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Slash"/>
-				<Event Id="1874061798" Name="E_KaliBoss_Hits_Bear_Whirlwind" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Whirlwind"/>
+				<Event Id="2556791462" Name="E_Kaliboss_HitBear_Attack" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_Kaliboss_HitBear_Attack"/>
+				<Event Id="143199924" Name="E_Kaliboss_HitBear_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_Kaliboss_HitBear_Grab"/>
+				<Event Id="1835334881" Name="E_Kaliboss_HitBear_Scream" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_Kaliboss_HitBear_Scream"/>
+				<Event Id="3767913630" Name="E_Kaliboss_HitBear_UltiImpact" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_Kaliboss_HitBear_UltiImpact"/>
 				<Event Id="3318371348" Name="E_KaliBoss_Impact" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_KaliBoss_Impact"/>
 				<Event Id="192942780" Name="E_KaliBoss_Invocation" ObjectPath="\Events\Chris\HB_Kali Events\Invocation\E_KaliBoss_Invocation"/>
 				<Event Id="2973010912" Name="E_KaliBoss_Invocation_slam" ObjectPath="\Events\Chris\HB_Kali Events\Invocation\E_KaliBoss_Invocation_slam"/>
@@ -1672,10 +1671,6 @@
 					<ShortName>VOICE_HB_Bear_LifeLost20_2-3_NotSoClose.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LifeLost20_2-3_NotSoClose_10C4C929.wem</Path>
 				</File>
-				<File Id="269198521" Language="SFX">
-					<ShortName>Kali_BEAR_Hits_Impact_02.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Impact_02_66C02B12.wem</Path>
-				</File>
 				<File Id="271455945" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GetHit_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GetHit_04_8B2C76DE.wem</Path>
@@ -1958,7 +1953,7 @@
 				</File>
 				<File Id="370686884" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Whirlwind_03.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Whirlwind_03_B28631FD.wem</Path>
+					<Path>SFX\Kali_BEAR_Hits_Whirlwind_03_CB50B625.wem</Path>
 				</File>
 				<File Id="372362230" Language="SFX">
 					<ShortName>HB_SFX_KALI_GrabEnd_01.wav</ShortName>
@@ -2182,11 +2177,7 @@
 				</File>
 				<File Id="448891017" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Whirlwind_01.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Whirlwind_01_EF217A85.wem</Path>
-				</File>
-				<File Id="450633544" Language="SFX">
-					<ShortName>Kali_BEAR_Hits_Impact_01.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Impact_01_66C02B12.wem</Path>
+					<Path>SFX\Kali_BEAR_Hits_Whirlwind_01_1D6A1E0A.wem</Path>
 				</File>
 				<File Id="452050017" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_05.wav</ShortName>
@@ -2678,7 +2669,7 @@
 				</File>
 				<File Id="618929226" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Whirlwind_02.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Whirlwind_02_B28631FD.wem</Path>
+					<Path>SFX\Kali_BEAR_Hits_Whirlwind_02_88D473C6.wem</Path>
 				</File>
 				<File Id="619914566" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Footstep_01.wav</ShortName>
