@@ -127,7 +127,7 @@
 										<Action Name="" ID="{EA3E8F69-472F-4B0A-AE99-D78114F9CC81}" ShortID="729522038">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="HB_SFX_KALI_Deadfire_01" ID="{0A95FEA5-695F-431B-918C-F3AC0D83626E}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+													<ObjectRef Name="Hb_KaliBoss_DeathFIRE_01" ID="{24AAAD8F-C743-44F9-97A0-61A384060EA2}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -1629,6 +1629,69 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Char_LevelUP" ID="{C3631A1D-07FF-44B0-8FA6-0863D8716C96}">
+							<ChildrenList>
+								<Action Name="" ID="{7E94D43E-BD67-477E-92CC-FAD0FE342ADB}" ShortID="949564424">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Bear_LevelUp" ID="{8227D241-FDAF-4CAB-98C5-133E5E954F88}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{712F5033-DDDF-4E71-B27D-72E2BABF5D16}" ShortID="728934396">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Volume" Type="Real64" Value="-3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D31672D7-2413-4DD6-B00C-077D53DF6EF9}" ShortID="474439256">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="16"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B81E0E47-0930-4A4E-B92A-CF3BB2F6B223}" ShortID="519019645">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Volume" Type="Real64" Value="-3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BC5ACE5F-21A0-4B8D-8F2E-8D6BD49DD10E}" ShortID="201570497">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="16"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Voice" ID="{39239B00-206B-468C-9AEA-EAB4A2E461E8}" ShortID="311957001">
@@ -2156,7 +2219,7 @@
 										<Action Name="" ID="{43F91769-00E2-40F6-806E-472DCD15641A}" ShortID="504549816">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="HB_SFX_KALI_Death" ID="{1766F1D4-A5E8-4081-A31F-2E3012571EDA}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+													<ObjectRef Name="Hb_KaliBoss_Death_scream_01" ID="{797A6E1B-3B5F-43FB-976C-0ADA70DCE29C}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

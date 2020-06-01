@@ -1113,6 +1113,56 @@
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
+								<ActorMixer Name="Level Up" ID="{88A3EF95-EF27-4A0F-9F04-D0EA83E86029}" ShortID="516774301">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_HB_Bear_LevelUp" ID="{8227D241-FDAF-4CAB-98C5-133E5E954F88}" ShortID="797052938">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HB_Bear_LevelUp" ID="{6ED81F0E-9011-42B9-A5C9-5067695EA4F2}" ShortID="684571765">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HB_Bear_LevelUp.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HB_Bear_LevelUp" ID="{6ED81F0E-9011-42B9-A5C9-5067695EA4F2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
@@ -2542,7 +2592,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-9</Value>
+														<Value>-6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3376,13 +3426,29 @@
 														<Value>-20</Value>
 													</ValueList>
 												</Property>
-												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
 													<Custom CreatedFrom="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}">
 														<Attenuation Name="Att_Trash_Mob (Custom)" ID="{DD15CB9B-1A90-477C-991C-EE5F5DF725E2}" ShortID="365076783">
 															<PropertyList>
+																<Property Name="ConeAttenuation" Type="Real64">
+																	<ValueList>
+																		<Value>-12</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="ConeHighPassFilterValue" Type="int32">
+																	<ValueList>
+																		<Value>30</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="ConeLowPassFilterValue" Type="int32">
+																	<ValueList>
+																		<Value>50</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="ConeOuterAngle" Type="int32" Value="180"/>
 																<Property Name="ConeUse" Type="bool">
 																	<ValueList>
 																		<Value>True</Value>
@@ -3402,16 +3468,16 @@
 																					<XPos>0</XPos>
 																					<YPos>0</YPos>
 																					<Flags>5</Flags>
-																					<SegmentShape>Exp2</SegmentShape>
+																					<SegmentShape>Exp3</SegmentShape>
 																				</Point>
 																				<Point>
-																					<XPos>1600</XPos>
-																					<YPos>-3</YPos>
+																					<XPos>1498.11912</XPos>
+																					<YPos>-4</YPos>
 																					<Flags>0</Flags>
 																					<SegmentShape>Log2</SegmentShape>
 																				</Point>
 																				<Point>
-																					<XPos>2600</XPos>
+																					<XPos>3000</XPos>
 																					<YPos>-16.30476</YPos>
 																					<Flags>0</Flags>
 																					<SegmentShape>Exp2</SegmentShape>
@@ -12417,11 +12483,59 @@
 								<ActorMixer Name="Death Fire Effect" ID="{B4B598B7-EF15-4EA0-B153-10A61B565239}" ShortID="431853417">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+											<Custom CreatedFrom="{24416D51-33A7-45F6-9CC3-3798885084F1}">
+												<Attenuation Name="ATT_BossKaliSFX (Custom)" ID="{CCC0F9FF-F3E0-4E6A-916F-D212286BDC22}" ShortID="638920445">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="8000"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{AC826FC0-1353-412F-BF49-6924AB0C8DF8}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>8000</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -12440,7 +12554,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="HB_SFX_KALI_Deadfire_01" ID="{0A95FEA5-695F-431B-918C-F3AC0D83626E}" ShortID="1010375431">
+										<Sound Name="Hb_KaliBoss_DeathFIRE_01" ID="{24AAAD8F-C743-44F9-97A0-61A384060EA2}" ShortID="929517311">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -12450,18 +12571,13 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_KALI_Deadfire_01" ID="{73EC1AF5-2EBD-46C5-A9B4-0ED290BF7F0E}" ShortID="380057625">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.504500606897951"/>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
+												<AudioFileSource Name="Hb_KaliBoss_DeathFIRE_01" ID="{42853099-A9D9-4468-8D56-FF1F2E30047B}" ShortID="16395196">
 													<Language>SFX</Language>
-													<AudioFile>HB_SFX_KALI_Deadfire_01.wav</AudioFile>
+													<AudioFile>Hb_KaliBoss_DeathFIRE_01.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_KALI_Deadfire_01" ID="{73EC1AF5-2EBD-46C5-A9B4-0ED290BF7F0E}" Platform="Linked"/>
+												<ActiveSource Name="Hb_KaliBoss_DeathFIRE_01" ID="{42853099-A9D9-4468-8D56-FF1F2E30047B}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -18686,7 +18802,11 @@
 												<CustomStateList>
 													<CustomState>
 														<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
-														<CustomState Name="" ID="{BF91BADA-E8B2-4E92-9D7F-5EBEA2A8C343}" ShortID="121088226"/>
+														<CustomState Name="" ID="{BF91BADA-E8B2-4E92-9D7F-5EBEA2A8C343}" ShortID="121088226">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-3"/>
+															</PropertyList>
+														</CustomState>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
@@ -28801,6 +28921,14 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="Bear Ulti" ID="{61F5E7E8-E893-45A7-96DC-CBC45A0305CD}" ShortID="720454221">
+											<PropertyList>
+												<Property Name="OverridePriority" Type="bool" Value="True"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>55</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -28812,6 +28940,11 @@
 											<ChildrenList>
 												<Sound Name="VOICE_HB_Bear_Bossline_5-3_BigCanon" ID="{804B22F5-D4CB-48EE-A23F-9E24D185DC6B}" ShortID="678132900">
 													<PropertyList>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>55</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Weight" Type="Real64">
 															<ValueList>
 																<Value>100</Value>
@@ -29260,9 +29393,15 @@
 										<ActorMixer Name="Death Kali" ID="{AE0AA27A-36BF-4555-A927-2F74C4F626D9}" ShortID="61017127">
 											<PropertyList>
 												<Property Name="OverridePriority" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
 														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UserAuxSendVolume3" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -29282,52 +29421,35 @@
 												<Reference Name="UserAuxSend2">
 													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
+												<Reference Name="UserAuxSend3">
+													<ObjectRef Name="Kali_BigAddRev_AUX" ID="{2BA2055F-3BDF-4DA1-ABE3-B8462D0C01FB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="HB_SFX_KALI_Death" ID="{1766F1D4-A5E8-4081-A31F-2E3012571EDA}" ShortID="537206706">
-													<PropertyList>
-														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-														<Property Name="Priority" Type="int16">
-															<ValueList>
-																<Value>100</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
+												<Sound Name="Hb_KaliBoss_Death_scream_01" ID="{797A6E1B-3B5F-43FB-976C-0ADA70DCE29C}" ShortID="166462534">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend1">
-															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend2">
-															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="UserAuxSend3">
-															<ObjectRef Name="Kali_BigAddRev_AUX" ID="{2BA2055F-3BDF-4DA1-ABE3-B8462D0C01FB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="HB_SFX_KALI_Death03" ID="{38885944-E524-4FAD-A9DE-71F610040543}" ShortID="968505438">
+														<AudioFileSource Name="Hb_KaliBoss_Death_scream_01" ID="{3120D3F2-636E-4432-A8E9-FB46809A45C4}" ShortID="133905397">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="2.42877333581835E-02"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.115366733451372"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="8.84582051998882E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.412804957599478"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.425035333768211"/>
-																<Property Name="TrimEnd" Type="Real64" Value="2.55628393594881"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.32434675239959"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.68323222439663"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>HB_SFX_KALI_Death03.wav</AudioFile>
+															<AudioFile>Hb_KaliBoss_Death_scream_01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="HB_SFX_KALI_Death03" ID="{38885944-E524-4FAD-A9DE-71F610040543}" Platform="Linked"/>
+														<ActiveSource Name="Hb_KaliBoss_Death_scream_01" ID="{3120D3F2-636E-4432-A8E9-FB46809A45C4}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>

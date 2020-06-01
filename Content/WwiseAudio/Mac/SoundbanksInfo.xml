@@ -890,6 +890,7 @@
 				<Event Id="1061445993" Name="E_Char_Heartbeat_Fast" ObjectPath="\Events\Simon\Character\E_Char_Heartbeat_Fast"/>
 				<Event Id="1415895540" Name="E_Char_Heartbeat_Slow" ObjectPath="\Events\Simon\Character\E_Char_Heartbeat_Slow"/>
 				<Event Id="1626845793" Name="E_Char_Impact_Grenade" ObjectPath="\Events\Simon\Weapons\E_Char_Impact_Grenade"/>
+				<Event Id="3092399269" Name="E_Char_LevelUP" ObjectPath="\Events\Simon\Character\E_Char_LevelUP"/>
 				<Event Id="825092078" Name="E_Coffre_Bois" ObjectPath="\Events\Brian\Coffre\E_Coffre_Bois"/>
 				<Event Id="3105411141" Name="E_Coffre_Loquet" ObjectPath="\Events\Brian\Coffre\E_Coffre_Loquet"/>
 				<Event Id="453363137" Name="E_Coffre_Metal_Neuf" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Neuf"/>
@@ -1058,6 +1059,10 @@
 				<File Id="16371881" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Thunder_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_04_66C02B12.wem</Path>
+				</File>
+				<File Id="16395196" Language="SFX">
+					<ShortName>Hb_KaliBoss_DeathFIRE_01.wav</ShortName>
+					<Path>SFX\Hb_KaliBoss_DeathFIRE_01_66C02B12.wem</Path>
 				</File>
 				<File Id="17320695" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_01.wav</ShortName>
@@ -1326,6 +1331,10 @@
 				<File Id="133157297" Language="SFX">
 					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_05.wav</ShortName>
 					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_05_66C02B12.wem</Path>
+				</File>
+				<File Id="133905397" Language="SFX">
+					<ShortName>Hb_KaliBoss_Death_scream_01.wav</ShortName>
+					<Path>SFX\Hb_KaliBoss_Death_scream_01_809D7EF3.wem</Path>
 				</File>
 				<File Id="135613566" Language="SFX">
 					<ShortName>MnGn_Fire_05.wav</ShortName>
@@ -1978,10 +1987,6 @@
 				<File Id="379879356" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-004.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GenericBodyFall_01-004_66C02B12.wem</Path>
-				</File>
-				<File Id="380057625" Language="SFX">
-					<ShortName>HB_SFX_KALI_Deadfire_01.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Deadfire_01_A9934828.wem</Path>
 				</File>
 				<File Id="380168037" Language="SFX">
 					<ShortName>FTP_sol sec_01.wav</ShortName>
@@ -2807,6 +2812,10 @@
 					<ShortName>HB_SFX_KALI_Attack_03.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_Attack_03_99DEA8C4.wem</Path>
 				</File>
+				<File Id="684571765" Language="SFX">
+					<ShortName>SFX_HB_Bear_LevelUp.wav</ShortName>
+					<Path>SFX\SFX_HB_Bear_LevelUp_10C4C929.wem</Path>
+				</File>
 				<File Id="685052240" Language="SFX">
 					<ShortName>Shell_Wood_05.wav</ShortName>
 					<Path>SFX\Shell_Wood_05_66C02B12.wem</Path>
@@ -3414,10 +3423,6 @@
 				<File Id="968294555" Language="SFX">
 					<ShortName>VOICE_HB_Bear_AfterShoot_1-9_ThreePoints_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_AfterShoot_1-9_ThreePoints_02_10C4C929.wem</Path>
-				</File>
-				<File Id="968505438" Language="SFX">
-					<ShortName>HB_SFX_KALI_Death03.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Death03_4BF9102B.wem</Path>
 				</File>
 				<File Id="968792438" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Dot_Ice_02.wav</ShortName>

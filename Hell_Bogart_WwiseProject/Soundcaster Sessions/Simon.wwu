@@ -235,7 +235,7 @@
 						<CurrentStateRef Name="None" ID="{30A3D9E3-6882-49DA-AB16-3D053D3CAAB5}"/>
 						<CurrentStateRef Name="None" ID="{A062BEF1-9176-42B0-96D8-9A8B90BBB40C}"/>
 						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
-						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+						<CurrentStateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
 						<CurrentStateRef Name="Ammo_2" ID="{1FC90ABA-0653-4C4A-893E-415242A6FBD0}"/>
 						<CurrentStateRef Name="None" ID="{99508074-D0B5-4286-8BF2-BD358242ADBE}"/>
 					</CurrentStateList>
@@ -244,9 +244,9 @@
 						<CurrentSwitchRef Name="Epic_Other" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
-						<CurrentSwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
-						<CurrentSwitchRef Name="FTP_Dalles_pierre_switch" ID="{A784672B-87AF-4B4C-80A2-62022ECE904A}"/>
-						<CurrentSwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+						<CurrentSwitchRef Name="Epic_Grenade" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+						<CurrentSwitchRef Name="Epic_Ammo" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Bear Speech" ID="{125AFAD9-A3F0-4AA5-A259-A0C091EB0017}">
