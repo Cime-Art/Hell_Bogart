@@ -2033,7 +2033,7 @@
 				</File>
 				<File Id="393304929" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_00.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_Out_00_66C02B12.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_Out_00_44A5FB52.wem</Path>
 				</File>
 				<File Id="394235374" Language="SFX">
 					<ShortName>SFX_HB_BouleRoll_V5.wav</ShortName>
@@ -2717,7 +2717,7 @@
 				</File>
 				<File Id="646026284" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_02.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_In_02_CB63095C.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_In_02_16C84015.wem</Path>
 				</File>
 				<File Id="646470638" Language="SFX">
 					<ShortName>Shell_Concrete_01.wav</ShortName>
@@ -3289,7 +3289,7 @@
 				</File>
 				<File Id="910590706" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_01.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_Out_01_66C02B12.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_Out_01_BF58B340.wem</Path>
 				</File>
 				<File Id="914170520" Language="SFX">
 					<ShortName>HB_Footstep_HerbesSèches_01.wav</ShortName>
@@ -3385,7 +3385,7 @@
 				</File>
 				<File Id="956980184" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_02.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_Out_02_C0941AD0.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_Out_02_FF39E824.wem</Path>
 				</File>
 				<File Id="957855330" Language="SFX">
 					<ShortName>FTP_ossements_sol_03.wav</ShortName>
@@ -3593,7 +3593,7 @@
 				</File>
 				<File Id="1045122310" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_01.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_In_01_66C02B12.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_In_01_FFA753FE.wem</Path>
 				</File>
 				<File Id="1048881042" Language="SFX">
 					<ShortName>HB-SFX-Gardian-FootstepCharge_03.wav</ShortName>
@@ -3649,7 +3649,7 @@
 				</File>
 				<File Id="1069671681" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_00.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_In_00_71D1C65E.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_In_00_8FEBD0F8.wem</Path>
 				</File>
 				<File Id="1070432713" Language="SFX">
 					<ShortName>SFX-HB-CoffreLoquet_01.wav</ShortName>

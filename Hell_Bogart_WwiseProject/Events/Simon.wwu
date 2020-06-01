@@ -10,7 +10,7 @@
 								<Action Name="" ID="{8EFDCB69-4254-4477-B255-9A53961A4ED1}" ShortID="337429708">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Loop_Shotgun_SEQ" ID="{06DB8CBC-D670-42DE-AF71-6BD3A587BA96}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+											<ObjectRef Name="Shotgun_SEQ" ID="{A07AFC5B-AC94-4116-AC28-795C5EE5B734}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -18,6 +18,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Power_Layer_RND" ID="{A0C64617-BE32-4C2A-9E3F-E49C609375D4}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AAAA2BF2-FA46-44B7-8895-2099324D0544}" ShortID="132866854">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OutIn_SEQ" ID="{A525F487-3454-498D-A9D5-5CA41AD2A7E6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -35,26 +45,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{2FFDE923-A2E2-4288-B0AE-EEE657A473C3}" ShortID="265915014">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{539F0313-2EDD-4743-9F1C-6150C5B864E4}" ShortID="110811263">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{925C3151-3A35-49CF-BB0D-019187E6926F}" ShortID="947485581">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
@@ -62,16 +52,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Ammo_1" ID="{542C4DF4-2B9C-4572-BAB9-2F0F978BB21B}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{09EB0F95-1A2A-4D50-8564-82CCC7C74945}" ShortID="101477981">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
