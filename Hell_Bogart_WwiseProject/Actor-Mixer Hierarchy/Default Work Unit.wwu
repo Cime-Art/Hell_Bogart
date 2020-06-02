@@ -267,6 +267,13 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Intro Texte Helico" ID="{58EAAD2B-15D4-4E46-BE92-E44B8DF4805A}" ShortID="47544341">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -284,177 +291,6 @@
 											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<BlendContainer Name="Amb Helico" ID="{22290980-D2A2-4168-A3C5-9D07A176DDC8}" ShortID="7043855">
-											<PropertyList>
-												<Property Name="BlendBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SwitchContainer Name="Helico" ID="{F26FE782-FEFF-4085-83A6-BAE1333F5F01}" ShortID="22369127">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="HelicoNormal" ID="{48BD85EA-F05E-4430-82FD-6DECE4BDA3A6}" WorkUnitID="{7130362E-D281-4CAD-90E5-8B25E6F92FDE}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="Helico_Switch" ID="{E4DBD005-758C-481B-BCD2-C3B4C843ACB2}" WorkUnitID="{7130362E-D281-4CAD-90E5-8B25E6F92FDE}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="SFX_HelicoCrash" ID="{299ADA7F-485B-4741-9F74-BD18628FBFAC}" ShortID="570792119">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-														</Sound>
-														<Sound Name="SFX_HelicoCasse" ID="{FF1886B7-E3CD-474F-AB73-C9FA2A07E4A0}" ShortID="832229221">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-														</Sound>
-														<Sound Name="SFX_HelicoPalmier" ID="{E618A183-B5A9-4073-A283-9621A595F80E}" ShortID="254257236">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-														</Sound>
-														<Sound Name="SFX_HelicoNormal" ID="{FF6200A3-B007-40DC-98A3-90DB6EE7E858}" ShortID="655653098">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-														</Sound>
-													</ChildrenList>
-													<GroupingInfo>
-														<GroupingBehaviorList>
-															<GroupingBehavior>
-																<ItemRef Name="SFX_HelicoCrash" ID="{299ADA7F-485B-4741-9F74-BD18628FBFAC}"/>
-															</GroupingBehavior>
-															<GroupingBehavior>
-																<ItemRef Name="SFX_HelicoPalmier" ID="{E618A183-B5A9-4073-A283-9621A595F80E}"/>
-															</GroupingBehavior>
-															<GroupingBehavior>
-																<ItemRef Name="SFX_HelicoNormal" ID="{FF6200A3-B007-40DC-98A3-90DB6EE7E858}"/>
-															</GroupingBehavior>
-															<GroupingBehavior>
-																<ItemRef Name="SFX_HelicoCasse" ID="{FF1886B7-E3CD-474F-AB73-C9FA2A07E4A0}"/>
-															</GroupingBehavior>
-														</GroupingBehaviorList>
-														<GroupingList>
-															<Grouping>
-																<SwitchRef Name="HelicoCrash" ID="{10AE2020-53FB-4BC5-B60B-865BFE694BBB}"/>
-																<ItemList>
-																	<ItemRef Name="SFX_HelicoCrash" ID="{299ADA7F-485B-4741-9F74-BD18628FBFAC}"/>
-																</ItemList>
-															</Grouping>
-															<Grouping>
-																<SwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
-																<ItemList>
-																	<ItemRef Name="SFX_HelicoCasse" ID="{FF1886B7-E3CD-474F-AB73-C9FA2A07E4A0}"/>
-																</ItemList>
-															</Grouping>
-															<Grouping>
-																<SwitchRef Name="HelicoPalmier" ID="{7CEFFAD0-AAC9-4108-AC9E-4D9CE94E776A}"/>
-																<ItemList>
-																	<ItemRef Name="SFX_HelicoPalmier" ID="{E618A183-B5A9-4073-A283-9621A595F80E}"/>
-																</ItemList>
-															</Grouping>
-															<Grouping>
-																<SwitchRef Name="HelicoNormal" ID="{48BD85EA-F05E-4430-82FD-6DECE4BDA3A6}"/>
-																<ItemList>
-																	<ItemRef Name="SFX_HelicoNormal" ID="{FF6200A3-B007-40DC-98A3-90DB6EE7E858}"/>
-																</ItemList>
-															</Grouping>
-														</GroupingList>
-													</GroupingInfo>
-												</SwitchContainer>
-												<Sound Name="SFX_Impact" ID="{48F17984-E7A5-4B50-AF7A-6BE5C3424834}" ShortID="1038082709">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-														</Reference>
-													</ReferenceList>
-												</Sound>
-											</ChildrenList>
-											<BlendTrackList>
-												<BlendTrack Name="Amb Helico" ID="{196A997D-35C1-4259-9CAA-E69DEB83186F}" ShortID="830853203">
-													<PropertyList>
-														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="LayerCrossFadeControlInput">
-															<ObjectRef Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}" WorkUnitID="{68C923B5-1F32-49EF-AEA4-570BEC8414CA}"/>
-														</Reference>
-													</ReferenceList>
-													<BlendTrackAssocList>
-														<BlendTrackAssoc>
-															<ItemRef Name="Helico" ID="{F26FE782-FEFF-4085-83A6-BAE1333F5F01}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>0</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>60</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-													</BlendTrackAssocList>
-												</BlendTrack>
-												<BlendTrack Name="Impact" ID="{73DE1EAC-2645-48AB-B86F-C7F1FED6F67B}" ShortID="27539588">
-													<PropertyList>
-														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="LayerCrossFadeControlInput">
-															<ObjectRef Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}" WorkUnitID="{68C923B5-1F32-49EF-AEA4-570BEC8414CA}"/>
-														</Reference>
-													</ReferenceList>
-													<BlendTrackAssocList>
-														<BlendTrackAssoc>
-															<ItemRef Name="SFX_Impact" ID="{48F17984-E7A5-4B50-AF7A-6BE5C3424834}"/>
-															<CrossfadingInfo>
-																<LeftEdgePos>0</LeftEdgePos>
-																<LeftFadingMode>Automatic</LeftFadingMode>
-																<RightEdgePos>60</RightEdgePos>
-																<RightFadingMode>Automatic</RightFadingMode>
-															</CrossfadingInfo>
-														</BlendTrackAssoc>
-													</BlendTrackAssocList>
-												</BlendTrack>
-											</BlendTrackList>
-										</BlendContainer>
-									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
@@ -1625,6 +1461,12 @@
 															</GroupingBehavior>
 														</GroupingBehaviorList>
 														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
+																<ItemList>
+																	<ItemRef Name="RND_Footstep" ID="{B985DF9C-7781-4C05-9295-1420F26BC071}"/>
+																</ItemList>
+															</Grouping>
 															<Grouping>
 																<SwitchRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
 																<ItemList>
@@ -3690,6 +3532,11 @@
 															</ValueList>
 														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="RenderEffect0" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
 																<Value>True</Value>
@@ -3751,6 +3598,9 @@
 																<AudioFileSource Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_01" ID="{55ED56D2-CF8F-4F34-B62B-83FFE5C3C0ED}" ShortID="932358588">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HB_MobJungleCharlie_v2_IddleFoley_01.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="949935143"/>
+																	</ConvertedFileIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3785,6 +3635,9 @@
 																<AudioFileSource Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_02" ID="{69A943B3-4EB2-4D5B-BB77-FFC690757996}" ShortID="167945936">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HB_MobJungleCharlie_v2_IddleFoley_02.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="665412269"/>
+																	</ConvertedFileIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3819,6 +3672,9 @@
 																<AudioFileSource Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_03" ID="{2404FF88-164D-41CD-BF6E-C02057ECCC54}" ShortID="626546830">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HB_MobJungleCharlie_v2_IddleFoley_03.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="214276993"/>
+																	</ConvertedFileIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3853,6 +3709,9 @@
 																<AudioFileSource Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_04" ID="{62DDFCBB-AA30-4A84-A286-98189C27D2F5}" ShortID="515025119">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HB_MobJungleCharlie_v2_IddleFoley_04.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="734299401"/>
+																	</ConvertedFileIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -3887,6 +3746,9 @@
 																<AudioFileSource Name="SFX_HB_MobJungleCharlie_v2_IddleFoley_05" ID="{743FC0F3-DBB5-48FB-934D-D11F8486E89A}" ShortID="360541133">
 																	<Language>SFX</Language>
 																	<AudioFile>SFX_HB_MobJungleCharlie_v2_IddleFoley_05.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="420739508"/>
+																	</ConvertedFileIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
@@ -5144,6 +5006,12 @@
 																<SwitchRef Name="Thunder" ID="{08B6B359-539F-4C36-9B2E-5359AEA8CEFF}"/>
 																<ItemList>
 																	<ItemRef Name="Explo_Thunder_RND" ID="{5AD0DA74-4F08-4DF3-8127-6D6501C47A8A}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
+																<ItemList>
+																	<ItemRef Name="Explo_Regular_RND" ID="{EA1FF379-F110-4E5C-A0FF-4BE09DE570F6}"/>
 																</ItemList>
 															</Grouping>
 															<Grouping>
@@ -6821,6 +6689,11 @@
 																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																		<Property Name="OverridePriority" Type="bool" Value="True"/>
 																		<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+																		<Property Name="RenderEffect0" Type="bool">
+																			<ValueList>
+																				<Value>True</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 																		<Property Name="UseMaxSoundPerInstance" Type="bool">
 																			<ValueList>
@@ -8521,6 +8394,11 @@
 															</ValueList>
 														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="RenderEffect0" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
 																<Value>True</Value>
@@ -11789,11 +11667,6 @@
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -16101,6 +15974,13 @@
 													</ChildrenList>
 												</RandomSequenceContainer>
 												<BlendContainer Name="FTP_Wood_Bridge_RND" ID="{4E89B50E-C59D-44EB-80FD-2D26B44F7E27}" ShortID="15061776">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -18435,6 +18315,12 @@
 																	<ItemRef Name="Elm_Ice" ID="{8ADAB159-AF9D-4AE6-8772-5F73904ACBC1}"/>
 																</ItemList>
 															</Grouping>
+															<Grouping>
+																<SwitchRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
+																<ItemList>
+																	<ItemRef Name="Elm_Regular" ID="{5C91A112-5143-4FC2-A2B4-73EB11CCBC56}"/>
+																</ItemList>
+															</Grouping>
 														</GroupingList>
 													</GroupingInfo>
 												</SwitchContainer>
@@ -18802,11 +18688,7 @@
 												<CustomStateList>
 													<CustomState>
 														<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
-														<CustomState Name="" ID="{BF91BADA-E8B2-4E92-9D7F-5EBEA2A8C343}" ShortID="121088226">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-3"/>
-															</PropertyList>
-														</CustomState>
+														<CustomState Name="" ID="{BF91BADA-E8B2-4E92-9D7F-5EBEA2A8C343}" ShortID="121088226"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
@@ -18850,7 +18732,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-18</Value>
+																<Value>-15</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -18960,7 +18842,7 @@
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -20177,6 +20059,12 @@
 																				</ItemList>
 																			</Grouping>
 																			<Grouping>
+																				<SwitchRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
+																				<ItemList>
+																					<ItemRef Name="Regular_Ammo_RND" ID="{F56E91DF-03D2-462C-9594-A7190B7FC65D}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
 																				<SwitchRef Name="Ice" ID="{7C508EA3-3FD9-422A-9C0C-6AA513A2FAE3}"/>
 																				<ItemList>
 																					<ItemRef Name="Ice _Ammo_RND" ID="{CFEAFBF5-D24D-4B39-A614-0D320E97BFEE}"/>
@@ -20921,7 +20809,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22194,11 +22082,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -22242,11 +22125,6 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22317,11 +22195,6 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22464,11 +22337,6 @@
 																<Value>90</Value>
 															</ValueList>
 														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -22537,11 +22405,6 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22685,11 +22548,6 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>

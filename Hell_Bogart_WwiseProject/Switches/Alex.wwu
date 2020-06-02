@@ -32,41 +32,6 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Helico" ID="{CF31E79F-9C25-4E62-A8D5-BFF091233949}" ShortID="378056683">
-					<ChildrenList>
-						<SwitchGroup Name="Helico_Switch" ID="{E4DBD005-758C-481B-BCD2-C3B4C843ACB2}">
-							<PropertyList>
-								<Property Name="UseGameParameter" Type="bool" Value="True"/>
-							</PropertyList>
-							<ChildrenList>
-								<Switch Name="HelicoNormal" ID="{48BD85EA-F05E-4430-82FD-6DECE4BDA3A6}"/>
-								<Switch Name="HelicoPalmier" ID="{7CEFFAD0-AAC9-4108-AC9E-4D9CE94E776A}"/>
-								<Switch Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
-								<Switch Name="HelicoCrash" ID="{10AE2020-53FB-4BC5-B60B-865BFE694BBB}"/>
-							</ChildrenList>
-							<SwitchOnRTPC>
-								<GameParameterRef Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}"/>
-								<Curve Name="" ID="{DC5365CE-7BBE-488E-B8CC-41825C29EFD9}">
-									<PropertyList>
-										<Property Name="Flags" Type="int32" Value="65537"/>
-									</PropertyList>
-									<PointList>
-										<Point>
-											<XPos>0</XPos>
-											<YPos>0</YPos>
-											<Flags>5</Flags>
-										</Point>
-										<Point>
-											<XPos>60</XPos>
-											<YPos>0</YPos>
-											<Flags>37</Flags>
-										</Point>
-									</PointList>
-								</Curve>
-							</SwitchOnRTPC>
-						</SwitchGroup>
-					</ChildrenList>
-				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

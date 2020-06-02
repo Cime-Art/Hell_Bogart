@@ -2560,7 +2560,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="42007.8537371856"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>5</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3581,7 +3581,7 @@
 										<Property Name="Tempo" Type="Real64" Value="150"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>5</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
