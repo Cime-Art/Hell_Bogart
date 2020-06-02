@@ -17,14 +17,6 @@
 								<Switch Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 							</ChildrenList>
 						</SwitchGroup>
-						<SwitchGroup Name="Ground_Type" ID="{81C89495-82DB-427E-B3AE-CE7E12E186E6}">
-							<ChildrenList>
-								<Switch Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
-								<Switch Name="Water" ID="{FE96BE5C-C581-445B-9C45-A10291E68ECE}"/>
-								<Switch Name="Wood" ID="{0960797E-48A0-424C-B2F8-3EB092BD46F2}"/>
-								<Switch Name="Rock" ID="{83E08D94-C258-4CCC-9310-094720366146}"/>
-							</ChildrenList>
-						</SwitchGroup>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
