@@ -11789,11 +11789,6 @@
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -18802,11 +18797,7 @@
 												<CustomStateList>
 													<CustomState>
 														<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
-														<CustomState Name="" ID="{BF91BADA-E8B2-4E92-9D7F-5EBEA2A8C343}" ShortID="121088226">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-3"/>
-															</PropertyList>
-														</CustomState>
+														<CustomState Name="" ID="{BF91BADA-E8B2-4E92-9D7F-5EBEA2A8C343}" ShortID="121088226"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
@@ -18850,7 +18841,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-18</Value>
+																<Value>-15</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -18960,7 +18951,7 @@
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22194,11 +22185,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -22242,11 +22228,6 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22317,11 +22298,6 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22464,11 +22440,6 @@
 																<Value>90</Value>
 															</ValueList>
 														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -22537,11 +22508,6 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -22685,11 +22651,6 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
