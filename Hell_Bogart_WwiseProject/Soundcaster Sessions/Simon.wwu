@@ -204,14 +204,6 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}"/>
-							<Value>10000</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -231,20 +223,20 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{1CA5B48B-F0FC-4591-ACD6-AE98FA1679C0}"/>
 						<CurrentStateRef Name="None" ID="{01EE7C62-5AF8-43A5-857B-EC55BB689B66}"/>
-						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
+						<CurrentStateRef Name="Fire" ID="{50764EF1-8C40-4B5A-8672-41C948DE7270}"/>
 						<CurrentStateRef Name="None" ID="{04CE5BAF-8754-4B51-9EF3-1C8F06557891}"/>
 						<CurrentStateRef Name="None" ID="{DDB325A8-6659-429B-8BB7-D0E9039660E8}"/>
 						<CurrentStateRef Name="None" ID="{711F642A-D061-406A-A43C-7DFCFA603C38}"/>
 						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
 						<CurrentStateRef Name="None" ID="{3B572813-6BBA-41E5-8279-A33F75C29FF9}"/>
-						<CurrentStateRef Name="None" ID="{9B0A7F4C-EC6C-4D50-B4F9-C44A88277C9E}"/>
+						<CurrentStateRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}"/>
 						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
 						<CurrentStateRef Name="None" ID="{0A02832D-A4D8-4BC2-B6BC-0910FE4765F7}"/>
 						<CurrentStateRef Name="None" ID="{30A3D9E3-6882-49DA-AB16-3D053D3CAAB5}"/>
 						<CurrentStateRef Name="None" ID="{A062BEF1-9176-42B0-96D8-9A8B90BBB40C}"/>
-						<CurrentStateRef Name="None" ID="{513033F6-C1BC-4896-8DE5-A53FA48880AB}"/>
-						<CurrentStateRef Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
-						<CurrentStateRef Name="None" ID="{AEAC5A91-B72F-44A1-9026-C89B1E68E264}"/>
+						<CurrentStateRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}"/>
+						<CurrentStateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
+						<CurrentStateRef Name="Ammo_2" ID="{1FC90ABA-0653-4C4A-893E-415242A6FBD0}"/>
 						<CurrentStateRef Name="None" ID="{99508074-D0B5-4286-8BF2-BD358242ADBE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -252,9 +244,9 @@
 						<CurrentSwitchRef Name="Epic_Other" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{64839167-9DB5-4C97-BBE6-53F50A4EB1F4}"/>
 						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
-						<CurrentSwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
+						<CurrentSwitchRef Name="Epic_Grenade" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
-						<CurrentSwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
+						<CurrentSwitchRef Name="Epic_Ammo" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Bear Speech" ID="{125AFAD9-A3F0-4AA5-A259-A0C091EB0017}">
@@ -344,14 +336,6 @@
 						<RTPCValue>
 							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
 							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}"/>
-							<Value>10000</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
@@ -458,14 +442,6 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}"/>
-							<Value>10000</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -552,14 +528,6 @@
 						<RTPCValue>
 							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
 							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}"/>
-							<Value>10000</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
@@ -659,14 +627,6 @@
 						<RTPCValue>
 							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
 							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}"/>
-							<Value>10000</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>

@@ -10,7 +10,7 @@
 								<Action Name="" ID="{8EFDCB69-4254-4477-B255-9A53961A4ED1}" ShortID="337429708">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Loop_Shotgun_SEQ" ID="{06DB8CBC-D670-42DE-AF71-6BD3A587BA96}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+											<ObjectRef Name="Shotgun_SEQ" ID="{A07AFC5B-AC94-4116-AC28-795C5EE5B734}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -18,6 +18,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Power_Layer_RND" ID="{A0C64617-BE32-4C2A-9E3F-E49C609375D4}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AAAA2BF2-FA46-44B7-8895-2099324D0544}" ShortID="132866854">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OutIn_SEQ" ID="{A525F487-3454-498D-A9D5-5CA41AD2A7E6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -35,26 +45,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{2FFDE923-A2E2-4288-B0AE-EEE657A473C3}" ShortID="265915014">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Regular_Chamber" ID="{C584E03D-045C-4BC2-81DE-DFD8256336EC}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{539F0313-2EDD-4743-9F1C-6150C5B864E4}" ShortID="110811263">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Regular_Spread" ID="{C44D8E54-8D5C-412E-A208-A9A2A1107943}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{925C3151-3A35-49CF-BB0D-019187E6926F}" ShortID="947485581">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
@@ -62,16 +52,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Ammo_1" ID="{542C4DF4-2B9C-4572-BAB9-2F0F978BB21B}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{09EB0F95-1A2A-4D50-8564-82CCC7C74945}" ShortID="101477981">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -117,6 +97,9 @@
 													</ReferenceList>
 												</Action>
 												<Action Name="" ID="{0E944265-E052-4C67-9177-2905638C0A44}" ShortID="4714120">
+													<PropertyList>
+														<Property Name="Probability" Type="Real64" Value="20"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Iddle_MobJungleCharlie_Foleys_RND" ID="{A94A54C9-1C4F-4569-81D2-570FDFC9A432}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
@@ -145,7 +128,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Iddle_MobJungleCharlie_Voice_SEQ" ID="{66C0A785-2861-4147-851F-CD1DC426EDBF}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+															<ObjectRef Name="Iddle_MobJungleCharlie_SEQ" ID="{CEF368F9-F5FA-46E7-9013-EE709C5D8278}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -179,24 +162,10 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
-												<Action Name="" ID="{3482EA0A-AC20-40A2-9638-EC0F398565BE}" ShortID="586941345">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="2"/>
-														<Property Name="FadeTime" Type="Real64" Value="1"/>
-													</PropertyList>
+												<Action Name="" ID="{26B54924-5DCA-42F1-A311-089A68CA40E0}" ShortID="597603773">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Attack_MobJungleCharlie_RND" ID="{AB487345-B0D3-4BDC-A3D8-1A39493CD6F7}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{62DEFA87-36FE-4941-9AFE-90EAD35C7201}" ShortID="541509145">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="41"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+															<ObjectRef Name="Exploded_Bones_MobJungleCharlie_RND" ID="{090D44BB-BD78-4D83-BC3D-872B64C372FA}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -210,27 +179,31 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
-												<Action Name="" ID="{6E304F49-2F0B-442E-BE1A-C2ED0D4343EC}" ShortID="574693201">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="2"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{26B54924-5DCA-42F1-A311-089A68CA40E0}" ShortID="597603773">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Exploded_Bones_MobJungleCharlie_RND" ID="{090D44BB-BD78-4D83-BC3D-872B64C372FA}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
 												<Action Name="" ID="{045D8567-5D74-40CA-8739-04FD349893A1}" ShortID="304776457">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Element_Explosion_SWITCH" ID="{1E697BBE-64CE-4D69-9831-1CD0D38BA599}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{62DEFA87-36FE-4941-9AFE-90EAD35C7201}" ShortID="541509145">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="41"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{3482EA0A-AC20-40A2-9638-EC0F398565BE}" ShortID="586941345">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Attack_MobJungleCharlie_RND" ID="{AB487345-B0D3-4BDC-A3D8-1A39493CD6F7}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -267,6 +240,26 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
+												<Action Name="" ID="{6E304F49-2F0B-442E-BE1A-C2ED0D4343EC}" ShortID="574693201">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Charge_MobJungleCharlie_RND" ID="{FB73ECB7-CE9F-4EF0-A796-E66A154DCDE2}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{CC47079C-5128-45C5-88A3-4855864B215A}" ShortID="12468579">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="LaunchSpear_MobJungleCharlie_RND" ID="{7C2EE2C1-7E7B-4385-95B2-5EA2C05E42E2}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 											</ChildrenList>
 										</Event>
 										<Event Name="E_MobJungleCharlie_Desintegration" ID="{1884760D-DB63-4C34-A081-747A2A6C5D7A}">
@@ -300,16 +293,6 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Attack_MobJungleCharlie_RND" ID="{AB487345-B0D3-4BDC-A3D8-1A39493CD6F7}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{BD6F6764-7CC9-4478-8A88-AB4ACDBEA890}" ShortID="338177808">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="41"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -377,7 +360,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Iddle_MobJungleCharlie_Voice_SEQ" ID="{66C0A785-2861-4147-851F-CD1DC426EDBF}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+															<ObjectRef Name="Iddle_MobJungleCharlie_SEQ" ID="{CEF368F9-F5FA-46E7-9013-EE709C5D8278}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -1646,6 +1629,69 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Char_LevelUP" ID="{C3631A1D-07FF-44B0-8FA6-0863D8716C96}">
+							<ChildrenList>
+								<Action Name="" ID="{7E94D43E-BD67-477E-92CC-FAD0FE342ADB}" ShortID="949564424">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Bear_LevelUp" ID="{8227D241-FDAF-4CAB-98C5-133E5E954F88}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{712F5033-DDDF-4E71-B27D-72E2BABF5D16}" ShortID="728934396">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Volume" Type="Real64" Value="-3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D31672D7-2413-4DD6-B00C-077D53DF6EF9}" ShortID="474439256">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="16"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B81E0E47-0930-4A4E-B92A-CF3BB2F6B223}" ShortID="519019645">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Volume" Type="Real64" Value="-3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BC5ACE5F-21A0-4B8D-8F2E-8D6BD49DD10E}" ShortID="201570497">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="16"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Voice" ID="{39239B00-206B-468C-9AEA-EAB4A2E461E8}" ShortID="311957001">
@@ -2173,7 +2219,7 @@
 										<Action Name="" ID="{43F91769-00E2-40F6-806E-472DCD15641A}" ShortID="504549816">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="HB_SFX_KALI_Death" ID="{1766F1D4-A5E8-4081-A31F-2E3012571EDA}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+													<ObjectRef Name="Hb_KaliBoss_Death_scream_01" ID="{797A6E1B-3B5F-43FB-976C-0ADA70DCE29C}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
