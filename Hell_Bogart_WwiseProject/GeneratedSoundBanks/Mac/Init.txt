@@ -1,33 +1,18 @@
-Switch Group	ID	Name			Wwise Object Path	Notes
-	1063787454	Helico_Switch			\Alex\Helico\Helico_Switch	
-
-Switch	ID	Name	Switch Group			Notes
-	681198242	HelicoNormal	Helico_Switch			
-	1596370716	HelicoCrash	Helico_Switch			
-	2351582869	HelicoPalmier	Helico_Switch			
-	3477598558	HelicoCasse	Helico_Switch			
-
 State Group	ID	Name			Wwise Object Path	Notes
 	283398981	Attenuation_STATE			\Simon\Global\Attenuation_STATE	
 	334651340	Bridge_Music_STATE			\Simon\Music\Bridge_Music_STATE	
 	393509290	Footstep_Charge			\Brian\Guardian\Footstep_Charge	
 	1321818117	Music_Ruin_STATE			\Brian\Music\Music_Ruin_STATE	
-	1327892362	Kali_GetHitType_STATE			\Alex\Kali_GetHitType_STATE	
 	1375197171	Equiped_Ammo_Rarity_STATE			\Simon\Items\Equiped_Ammo_Rarity_STATE	
 	1594161750	IsInATrap_STATE			\Simon\Traps\IsInATrap_STATE	
-	1646215745	Kali_AttackType_STATE			\Alex\Kali_AttackType_STATE	
 	1824285356	Equiped_Grenade_Type_STATE			\Brian\Grenade\Equiped_Grenade_Type_STATE	
-	1892104236	Char_Health_STATE			\Simon\Character\Char_Health_STATE	
 	2069469294	Acoustic_STATE			\Simon\Global\Acoustic_STATE	
 	2133914708	TempDilatation			\Simon\Global\TempDilatation	
-	2243093414	Chamber_Type_STATE			\Simon\Items\Chamber_Type_STATE	
 	2498027786	Equiped_Ammo_Type_STATE			\Simon\Items\Equiped_Ammo_Type_STATE	
 	2638733338	Music_Kali_Phase_STATE			\Brian\Music\Music_Kali_Phase_STATE	
 	2955909185	IsInPauseMenu_STATE			\Simon\Global\IsInPauseMenu_STATE	
 	3018964570	Music_Kali_STATE			\Brian\Music\Music_Kali_STATE	
-	3424336725	Kali_Track_Spot_STATE			\Alex\Kali_Track_Spot_STATE	
 	3469316424	Jungle_Music_STATE			\Simon\Music\Jungle_Music_STATE	
-	4261493451	Canon_Type_STATE			\Simon\Items\Canon_Type_STATE	
 
 State	ID	Name	State Group			Notes
 	0	None	Attenuation_STATE			
@@ -47,9 +32,6 @@ State	ID	Name	State Group			Notes
 	446637814	Ruin_GardianFight	Music_Ruin_STATE			
 	757299892	Ruin_Fight	Music_Ruin_STATE			
 	2034030177	Ruin_End_Music	Music_Ruin_STATE			
-	0	None	Kali_GetHitType_STATE			
-	1160234136	Normal	Kali_GetHitType_STATE			
-	2534871658	Critical	Kali_GetHitType_STATE			
 	0	None	Equiped_Ammo_Rarity_STATE			
 	46531484	Ammo_2	Equiped_Ammo_Rarity_STATE			
 	46531485	Ammo_3	Equiped_Ammo_Rarity_STATE			
@@ -57,17 +39,11 @@ State	ID	Name	State Group			Notes
 	0	None	IsInATrap_STATE			
 	645492555	Out	IsInATrap_STATE			
 	1752637612	In	IsInATrap_STATE			
-	0	None	Kali_AttackType_STATE			
-	180661997	Attack	Kali_AttackType_STATE			
-	839543372	Big_attack	Kali_AttackType_STATE			
 	0	None	Equiped_Grenade_Type_STATE			
 	186852181	Thunder	Equiped_Grenade_Type_STATE			
 	344481046	Ice	Equiped_Grenade_Type_STATE			
 	433216386	Explosive	Equiped_Grenade_Type_STATE			
 	2678880713	Fire	Equiped_Grenade_Type_STATE			
-	0	None	Char_Health_STATE			
-	545371365	Low	Char_Health_STATE			
-	1319742345	High_Medium	Char_Health_STATE			
 	0	None	Acoustic_STATE			
 	2213992659	Exterior	Acoustic_STATE			
 	3265560855	Ruines	Acoustic_STATE			
@@ -75,10 +51,6 @@ State	ID	Name	State Group			Notes
 	0	None	TempDilatation			
 	787604482	slow	TempDilatation			
 	1160234136	normal	TempDilatation			
-	0	None	Chamber_Type_STATE			
-	252199009	Spread_60	Chamber_Type_STATE			
-	419409252	Spread_180	Chamber_Type_STATE			
-	2572109827	Regular_Spread	Chamber_Type_STATE			
 	0	None	Equiped_Ammo_Type_STATE			
 	186852181	Thunder	Equiped_Ammo_Type_STATE			
 	344481046	Ice	Equiped_Ammo_Type_STATE			
@@ -97,17 +69,10 @@ State	ID	Name	State Group			Notes
 	2615845690	Kali_Phase2	Music_Kali_STATE			
 	2910148894	Kali_End	Music_Kali_STATE			
 	3696252379	Kali_Intro	Music_Kali_STATE			
-	0	None	Kali_Track_Spot_STATE			
-	789576189	Spot	Kali_Track_Spot_STATE			
-	3579833626	Track	Kali_Track_Spot_STATE			
 	0	None	Jungle_Music_STATE			
 	514064485	Fight	Jungle_Music_STATE			
 	1428057472	End_Music	Jungle_Music_STATE			
 	2582085496	Exploration	Jungle_Music_STATE			
-	0	None	Canon_Type_STATE			
-	2815114540	Transpercant	Canon_Type_STATE			
-	3185142962	Portee	Canon_Type_STATE			
-	3626681980	Regular_Chamber	Canon_Type_STATE			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	53983401	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Ruines_Reverb_VOICE_AUX		
