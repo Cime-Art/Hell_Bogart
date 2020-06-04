@@ -52,8 +52,10 @@
 						<ObjectRef Name="E_Speech_Bear_EXPLO_Random_LOOP" ID="{B502F958-39D1-44BA-8F1C-78E858D85097}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Coffre_Loquet" ID="{75AACFDF-E334-44E1-B81F-0A7E1E96B364}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Amb_IddleMobCharlie" ID="{DF6D0A87-B17C-44F5-9458-B66706621B0D}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Speech_Kali_Rage" ID="{312F2364-F165-4511-B23D-8A47B1D07A80}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Death" ID="{807077AB-8410-4553-ADAF-BB3C2AF45B5F}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Global_SFXVOICE_FadeIn" ID="{980ED31D-F61F-455A-B944-DEE9A196DDF0}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Speech_Kali_Exhaust" ID="{EF4EF3D4-3368-4566-9074-1798716FA282}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SpikeDoor_Begin" ID="{17E6114C-BB16-456B-B535-2CCA08B79507}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Hit" ID="{3F9B7232-704F-4590-B051-F3C8ACBF3D64}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SetAcoustic_BossArena" ID="{D90152CD-39D3-45D7-8A1B-1B908F5C45E4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
