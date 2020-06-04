@@ -211,18 +211,18 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{1CA5B48B-F0FC-4591-ACD6-AE98FA1679C0}"/>
 						<CurrentStateRef Name="None" ID="{01EE7C62-5AF8-43A5-857B-EC55BB689B66}"/>
-						<CurrentStateRef Name="Fire" ID="{50764EF1-8C40-4B5A-8672-41C948DE7270}"/>
-						<CurrentStateRef Name="None" ID="{04CE5BAF-8754-4B51-9EF3-1C8F06557891}"/>
-						<CurrentStateRef Name="None" ID="{DDB325A8-6659-429B-8BB7-D0E9039660E8}"/>
+						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
+						<CurrentStateRef Name="End_Music" ID="{3A466E4D-077D-4216-B554-EE3DCDF3C5FF}"/>
+						<CurrentStateRef Name="Kali_Intro" ID="{FB35FE36-366D-4F98-AA45-FCA74D2E4C0B}"/>
 						<CurrentStateRef Name="None" ID="{711F642A-D061-406A-A43C-7DFCFA603C38}"/>
 						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
-						<CurrentStateRef Name="None" ID="{3B572813-6BBA-41E5-8279-A33F75C29FF9}"/>
-						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
+						<CurrentStateRef Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}"/>
+						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
 						<CurrentStateRef Name="None" ID="{0A02832D-A4D8-4BC2-B6BC-0910FE4765F7}"/>
 						<CurrentStateRef Name="None" ID="{A062BEF1-9176-42B0-96D8-9A8B90BBB40C}"/>
-						<CurrentStateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
+						<CurrentStateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
 						<CurrentStateRef Name="Ammo_2" ID="{1FC90ABA-0653-4C4A-893E-415242A6FBD0}"/>
-						<CurrentStateRef Name="None" ID="{99508074-D0B5-4286-8BF2-BD358242ADBE}"/>
+						<CurrentStateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
