@@ -40,18 +40,6 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Firing_Rate_GP" ID="{B0DFC10A-3D2F-4232-9BA0-E2F82061B484}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Volume_Heartbeat" ID="{60736D08-4513-4475-944A-83304B64E919}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="LOD_Iddle_Enemi" ID="{5C427F42-DE05-4507-93D1-08964849494A}"/>
-							<Value>10000</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -59,33 +47,20 @@
 							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
 							<Value>4500</Value>
 						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Player_Health" ID="{06C9789F-83EE-4C8E-94EA-9C5F193A595C}"/>
-							<Value>100</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="Duree_helico" ID="{868A07C5-B51B-4E0B-A202-654C7916032B}"/>
-							<Value>0</Value>
-						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
 						<CurrentStateRef Name="None" ID="{711F642A-D061-406A-A43C-7DFCFA603C38}"/>
 						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
-						<CurrentStateRef Name="None" ID="{9B0A7F4C-EC6C-4D50-B4F9-C44A88277C9E}"/>
 						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
 						<CurrentStateRef Name="None" ID="{0A02832D-A4D8-4BC2-B6BC-0910FE4765F7}"/>
-						<CurrentStateRef Name="None" ID="{30A3D9E3-6882-49DA-AB16-3D053D3CAAB5}"/>
 						<CurrentStateRef Name="None" ID="{A062BEF1-9176-42B0-96D8-9A8B90BBB40C}"/>
-						<CurrentStateRef Name="None" ID="{513033F6-C1BC-4896-8DE5-A53FA48880AB}"/>
 						<CurrentStateRef Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
 						<CurrentStateRef Name="None" ID="{99508074-D0B5-4286-8BF2-BD358242ADBE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Stone" ID="{1A092FB0-3C81-4E82-B338-2045227D7034}"/>
 						<CurrentSwitchRef Name="Legendary_Other" ID="{24791397-77A6-4040-85D4-6750F0BFA886}"/>
-						<CurrentSwitchRef Name="Wood" ID="{0960797E-48A0-424C-B2F8-3EB092BD46F2}"/>
-						<CurrentSwitchRef Name="HelicoCasse" ID="{CDE71E8B-4217-4EF2-ABCE-9FE7164588E6}"/>
 						<CurrentSwitchRef Name="Regular_Grenade" ID="{D457FCE0-D0A8-468A-9048-B3B031EE4650}"/>
 						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
 						<CurrentSwitchRef Name="Epic_Ammo" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>

@@ -890,6 +890,7 @@
 				<Event Id="1061445993" Name="E_Char_Heartbeat_Fast" ObjectPath="\Events\Simon\Character\E_Char_Heartbeat_Fast"/>
 				<Event Id="1415895540" Name="E_Char_Heartbeat_Slow" ObjectPath="\Events\Simon\Character\E_Char_Heartbeat_Slow"/>
 				<Event Id="1626845793" Name="E_Char_Impact_Grenade" ObjectPath="\Events\Simon\Weapons\E_Char_Impact_Grenade"/>
+				<Event Id="3092399269" Name="E_Char_LevelUP" ObjectPath="\Events\Simon\Character\E_Char_LevelUP"/>
 				<Event Id="825092078" Name="E_Coffre_Bois" ObjectPath="\Events\Brian\Coffre\E_Coffre_Bois"/>
 				<Event Id="3105411141" Name="E_Coffre_Loquet" ObjectPath="\Events\Brian\Coffre\E_Coffre_Loquet"/>
 				<Event Id="453363137" Name="E_Coffre_Metal_Neuf" ObjectPath="\Events\Brian\Coffre\E_Coffre_Metal_Neuf"/>
@@ -921,11 +922,10 @@
 				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\Get Hit\E_KaliBoss_GetHit"/>
 				<Event Id="1324023236" Name="E_KaliBoss_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_Grab"/>
 				<Event Id="2370216155" Name="E_KaliBoss_GrabEnd" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_GrabEnd"/>
-				<Event Id="3010176894" Name="E_KaliBoss_Hits_Bear_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Grab"/>
-				<Event Id="2483986470" Name="E_KaliBoss_Hits_Bear_Impact" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Impact"/>
-				<Event Id="912237145" Name="E_KaliBoss_Hits_Bear_Shockwave" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Shockwave"/>
-				<Event Id="1902388067" Name="E_KaliBoss_Hits_Bear_Slash" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Slash"/>
-				<Event Id="1874061798" Name="E_KaliBoss_Hits_Bear_Whirlwind" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_KaliBoss_Hits_Bear_Whirlwind"/>
+				<Event Id="2556791462" Name="E_Kaliboss_HitBear_Attack" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_Kaliboss_HitBear_Attack"/>
+				<Event Id="143199924" Name="E_Kaliboss_HitBear_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_Kaliboss_HitBear_Grab"/>
+				<Event Id="1835334881" Name="E_Kaliboss_HitBear_Scream" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_Kaliboss_HitBear_Scream"/>
+				<Event Id="3767913630" Name="E_Kaliboss_HitBear_UltiImpact" ObjectPath="\Events\Chris\HB_Kali Events\Hit Bear\E_Kaliboss_HitBear_UltiImpact"/>
 				<Event Id="3318371348" Name="E_KaliBoss_Impact" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_KaliBoss_Impact"/>
 				<Event Id="192942780" Name="E_KaliBoss_Invocation" ObjectPath="\Events\Chris\HB_Kali Events\Invocation\E_KaliBoss_Invocation"/>
 				<Event Id="2973010912" Name="E_KaliBoss_Invocation_slam" ObjectPath="\Events\Chris\HB_Kali Events\Invocation\E_KaliBoss_Invocation_slam"/>
@@ -1042,7 +1042,7 @@
 				</File>
 				<File Id="6306775" Language="SFX">
 					<ShortName>SFX_HB_MobjungleCharlie_Dot_Fire_BurnLoop.wav</ShortName>
-					<Path>SFX\SFX_HB_MobjungleCharlie_Dot_Fire_BurnLoop_C42B8C3C.wem</Path>
+					<Path>SFX\SFX_HB_MobjungleCharlie_Dot_Fire_BurnLoop_C42B8C3C_0375917C.wem</Path>
 				</File>
 				<File Id="9973633" Language="SFX">
 					<ShortName>HB_SFX_KALI_Grab_05.wav</ShortName>
@@ -1059,6 +1059,10 @@
 				<File Id="16371881" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Thunder_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Thunder_04_66C02B12.wem</Path>
+				</File>
+				<File Id="16395196" Language="SFX">
+					<ShortName>Hb_KaliBoss_DeathFIRE_01.wav</ShortName>
+					<Path>SFX\Hb_KaliBoss_DeathFIRE_01_66C02B12.wem</Path>
 				</File>
 				<File Id="17320695" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Desintegration_01.wav</ShortName>
@@ -1328,6 +1332,10 @@
 					<ShortName>SFX_HB_SpikeDoor_MetalSqueak_05.wav</ShortName>
 					<Path>SFX\SFX_HB_SpikeDoor_MetalSqueak_05_66C02B12.wem</Path>
 				</File>
+				<File Id="133905397" Language="SFX">
+					<ShortName>Hb_KaliBoss_Death_scream_01.wav</ShortName>
+					<Path>SFX\Hb_KaliBoss_Death_scream_01_809D7EF3.wem</Path>
+				</File>
 				<File Id="135613566" Language="SFX">
 					<ShortName>MnGn_Fire_05.wav</ShortName>
 					<Path>SFX\MnGn_Fire_05_66C02B12.wem</Path>
@@ -1410,7 +1418,7 @@
 				</File>
 				<File Id="167945936" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_02.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_02_66C02B12.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_02_66C02B12_0D328E0E.wem</Path>
 				</File>
 				<File Id="168140728" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitBear_03.wav</ShortName>
@@ -1527,6 +1535,10 @@
 				<File Id="211143510" Language="SFX">
 					<ShortName>SFX_HB_SpikeDoor_EndKlonk_01 .wav</ShortName>
 					<Path>SFX\SFX_HB_SpikeDoor_EndKlonk_01 _66C02B12.wem</Path>
+				</File>
+				<File Id="214276993" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_03.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_66C02B12_72095081.wem</Path>
 				</File>
 				<File Id="215037878" Language="SFX">
 					<ShortName>Shell_Gravel_02.wav</ShortName>
@@ -1671,10 +1683,6 @@
 				<File Id="268419596" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LifeLost20_2-3_NotSoClose.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LifeLost20_2-3_NotSoClose_10C4C929.wem</Path>
-				</File>
-				<File Id="269198521" Language="SFX">
-					<ShortName>Kali_BEAR_Hits_Impact_02.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Impact_02_66C02B12.wem</Path>
 				</File>
 				<File Id="271455945" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GetHit_04.wav</ShortName>
@@ -1922,7 +1930,7 @@
 				</File>
 				<File Id="360541133" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_05.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_05_66C02B12.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_05_66C02B12_0D328E0E.wem</Path>
 				</File>
 				<File Id="360845496" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GetHit_01.wav</ShortName>
@@ -1958,7 +1966,7 @@
 				</File>
 				<File Id="370686884" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Whirlwind_03.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Whirlwind_03_B28631FD.wem</Path>
+					<Path>SFX\Kali_BEAR_Hits_Whirlwind_03_0455E117.wem</Path>
 				</File>
 				<File Id="372362230" Language="SFX">
 					<ShortName>HB_SFX_KALI_GrabEnd_01.wav</ShortName>
@@ -1983,10 +1991,6 @@
 				<File Id="379879356" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-004.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GenericBodyFall_01-004_66C02B12.wem</Path>
-				</File>
-				<File Id="380057625" Language="SFX">
-					<ShortName>HB_SFX_KALI_Deadfire_01.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Deadfire_01_A9934828.wem</Path>
 				</File>
 				<File Id="380168037" Language="SFX">
 					<ShortName>FTP_sol sec_01.wav</ShortName>
@@ -2038,7 +2042,7 @@
 				</File>
 				<File Id="393304929" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_00.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_Out_00_66C02B12.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_Out_00_44A5FB52.wem</Path>
 				</File>
 				<File Id="394235374" Language="SFX">
 					<ShortName>SFX_HB_BouleRoll_V5.wav</ShortName>
@@ -2120,6 +2124,10 @@
 					<ShortName>HB_SFX_Shotgun_CanonPortee_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_CanonPortee_01_66C02B12.wem</Path>
 				</File>
+				<File Id="420739508" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_05.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_05_66C02B12_72095081.wem</Path>
+				</File>
 				<File Id="423353480" Language="SFX">
 					<ShortName>SFX_HB_Traps_PunjiTrap_Triggered.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_PunjiTrap_Triggered_66C02B12.wem</Path>
@@ -2182,11 +2190,7 @@
 				</File>
 				<File Id="448891017" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Whirlwind_01.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Whirlwind_01_EF217A85.wem</Path>
-				</File>
-				<File Id="450633544" Language="SFX">
-					<ShortName>Kali_BEAR_Hits_Impact_01.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Impact_01_66C02B12.wem</Path>
+					<Path>SFX\Kali_BEAR_Hits_Whirlwind_01_119E46E8.wem</Path>
 				</File>
 				<File Id="452050017" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_05.wav</ShortName>
@@ -2370,7 +2374,7 @@
 				</File>
 				<File Id="515025119" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_04.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_04_66C02B12.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_04_66C02B12_0D328E0E.wem</Path>
 				</File>
 				<File Id="515824277" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bark_04.wav</ShortName>
@@ -2678,7 +2682,7 @@
 				</File>
 				<File Id="618929226" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Whirlwind_02.wav</ShortName>
-					<Path>SFX\Kali_BEAR_Hits_Whirlwind_02_B28631FD.wem</Path>
+					<Path>SFX\Kali_BEAR_Hits_Whirlwind_02_E059CB89.wem</Path>
 				</File>
 				<File Id="619914566" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Footstep_01.wav</ShortName>
@@ -2694,7 +2698,7 @@
 				</File>
 				<File Id="626546830" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_03.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_66C02B12.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_66C02B12_0D328E0E.wem</Path>
 				</File>
 				<File Id="628955542" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_IceHit_03.wav</ShortName>
@@ -2726,7 +2730,7 @@
 				</File>
 				<File Id="646026284" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_02.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_In_02_CB63095C.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_In_02_16C84015.wem</Path>
 				</File>
 				<File Id="646470638" Language="SFX">
 					<ShortName>Shell_Concrete_01.wav</ShortName>
@@ -2763,6 +2767,10 @@
 				<File Id="661955203" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_EndDropShell_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_EndDropShell_03_66C02B12.wem</Path>
+				</File>
+				<File Id="665412269" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_02.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_02_66C02B12_72095081.wem</Path>
 				</File>
 				<File Id="667437582" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_03.wav</ShortName>
@@ -2815,6 +2823,10 @@
 				<File Id="683326520" Language="SFX">
 					<ShortName>HB_SFX_KALI_Attack_03.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_Attack_03_99DEA8C4.wem</Path>
+				</File>
+				<File Id="684571765" Language="SFX">
+					<ShortName>SFX_HB_Bear_LevelUp.wav</ShortName>
+					<Path>SFX\SFX_HB_Bear_LevelUp_10C4C929.wem</Path>
 				</File>
 				<File Id="685052240" Language="SFX">
 					<ShortName>Shell_Wood_05.wav</ShortName>
@@ -2931,6 +2943,10 @@
 				<File Id="734237910" Language="SFX">
 					<ShortName>VOICE_HB_Bear_GrenadeEnd_2_3_PopCorn.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_GrenadeEnd_2_3_PopCorn_10C4C929.wem</Path>
+				</File>
+				<File Id="734299401" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_04.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_04_66C02B12_72095081.wem</Path>
 				</File>
 				<File Id="736914018" Language="SFX">
 					<ShortName>VOICE_HB_Bear_UltiShooting_1-1_SlaughterTime_01.wav</ShortName>
@@ -3298,7 +3314,7 @@
 				</File>
 				<File Id="910590706" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_01.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_Out_01_66C02B12.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_Out_01_BF58B340.wem</Path>
 				</File>
 				<File Id="914170520" Language="SFX">
 					<ShortName>HB_Footstep_HerbesSèches_01.wav</ShortName>
@@ -3334,7 +3350,7 @@
 				</File>
 				<File Id="932358588" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_01.wav</ShortName>
-					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_01_66C02B12.wem</Path>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_01_66C02B12_0D328E0E.wem</Path>
 				</File>
 				<File Id="937418768" Language="SFX">
 					<ShortName>HB_Footstep_SolPierre_02.wav</ShortName>
@@ -3380,6 +3396,10 @@
 					<ShortName>SFX_HB_SpikeDoor_MetalScrape_01.wav</ShortName>
 					<Path>SFX\SFX_HB_SpikeDoor_MetalScrape_01_66C02B12.wem</Path>
 				</File>
+				<File Id="949935143" Language="SFX">
+					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_01.wav</ShortName>
+					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_01_66C02B12_72095081.wem</Path>
+				</File>
 				<File Id="953900687" Language="SFX">
 					<ShortName>HB_SFX_KALI_GrabWhoosh_01.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_GrabWhoosh_01_66C02B12.wem</Path>
@@ -3394,7 +3414,7 @@
 				</File>
 				<File Id="956980184" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_02.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_Out_02_C0941AD0.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_Out_02_FF39E824.wem</Path>
 				</File>
 				<File Id="957855330" Language="SFX">
 					<ShortName>FTP_ossements_sol_03.wav</ShortName>
@@ -3423,10 +3443,6 @@
 				<File Id="968294555" Language="SFX">
 					<ShortName>VOICE_HB_Bear_AfterShoot_1-9_ThreePoints_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_AfterShoot_1-9_ThreePoints_02_10C4C929.wem</Path>
-				</File>
-				<File Id="968505438" Language="SFX">
-					<ShortName>HB_SFX_KALI_Death03.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Death03_4BF9102B.wem</Path>
 				</File>
 				<File Id="968792438" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Dot_Ice_02.wav</ShortName>
@@ -3602,7 +3618,11 @@
 				</File>
 				<File Id="1045122310" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_01.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_In_01_66C02B12.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_In_01_FFA753FE.wem</Path>
+				</File>
+				<File Id="1047528893" Language="SFX">
+					<ShortName>SFX_HB_Traps_SpikeTrap_Death_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_SpikeTrap_Death_02_DA82345B.wem</Path>
 				</File>
 				<File Id="1048881042" Language="SFX">
 					<ShortName>HB-SFX-Gardian-FootstepCharge_03.wav</ShortName>
@@ -3658,7 +3678,7 @@
 				</File>
 				<File Id="1069671681" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_In_00.wav</ShortName>
-					<Path>SFX\HB_SFX_Shotgun_Reload_In_00_71D1C65E.wem</Path>
+					<Path>SFX\HB_SFX_Shotgun_Reload_In_00_8FEBD0F8.wem</Path>
 				</File>
 				<File Id="1070432713" Language="SFX">
 					<ShortName>SFX-HB-CoffreLoquet_01.wav</ShortName>
