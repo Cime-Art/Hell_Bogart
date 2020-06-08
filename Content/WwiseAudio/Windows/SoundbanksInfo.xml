@@ -989,6 +989,7 @@
 				<Event Id="3244386490" Name="E_Speech_Kali_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Attack"/>
 				<Event Id="64626783" Name="E_Speech_Kali_Before_Big_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Before_Big_Attack"/>
 				<Event Id="3935073168" Name="E_Speech_Kali_Death" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Death"/>
+				<Event Id="198535572" Name="E_Speech_Kali_Exhaust" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Exhaust"/>
 				<Event Id="2269350735" Name="E_Speech_Kali_FirstEncounter" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_FirstEncounter"/>
 				<Event Id="303195765" Name="E_Speech_Kali_GetHit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_GetHit"/>
 				<Event Id="2256907290" Name="E_Speech_Kali_GetHitCritical" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_GetHitCritical"/>
@@ -996,6 +997,7 @@
 				<Event Id="2894307937" Name="E_Speech_Kali_Hit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Hit"/>
 				<Event Id="1105627200" Name="E_Speech_Kali_IntroduceMother" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_IntroduceMother"/>
 				<Event Id="2376769881" Name="E_Speech_Kali_LostHerMask" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_LostHerMask"/>
+				<Event Id="1924424297" Name="E_Speech_Kali_Rage" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Rage"/>
 				<Event Id="4177976852" Name="E_Speech_Kali_Random_Lines_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_LOOP"/>
 				<Event Id="3985088299" Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_STOP_LOOP"/>
 				<Event Id="1561586025" Name="E_Speech_Kali_ScreamSpell" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_ScreamSpell"/>
@@ -1179,6 +1181,10 @@
 				<File Id="71933835" Language="SFX">
 					<ShortName>VOICE_HB_Bear_GrenadeEnd_1-2_SweetSound.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_GrenadeEnd_1-2_SweetSound_10C4C929.wem</Path>
+				</File>
+				<File Id="73201851" Language="SFX">
+					<ShortName>HB_SFX_Kaliboss_Exhaust.wav</ShortName>
+					<Path>SFX\HB_SFX_Kaliboss_Exhaust_10C4C929.wem</Path>
 				</File>
 				<File Id="73726998" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Death_06.wav</ShortName>
@@ -1648,10 +1654,6 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_01_C9C2AA9A.wem</Path>
 				</File>
-				<File Id="248132464" Language="SFX">
-					<ShortName>HB_Steps_Dalles_2.wav</ShortName>
-					<Path>SFX\HB_Steps_Dalles_2_66C02B12.wem</Path>
-				</File>
 				<File Id="251862085" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_05.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_05_3A7995D6.wem</Path>
@@ -1812,6 +1814,10 @@
 					<ShortName>VOICE_HB_Bear_Death_01.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Death_01_10C4C929.wem</Path>
 				</File>
+				<File Id="320429296" Language="SFX">
+					<ShortName>HB_Steps_Dalles_3.wav</ShortName>
+					<Path>SFX\HB_Steps_Dalles_3_66C02B12.wem</Path>
+				</File>
 				<File Id="320571513" Language="SFX">
 					<ShortName>HB_SFX_Foley_3.wav</ShortName>
 					<Path>SFX\HB_SFX_Foley_3_82D59DCF.wem</Path>
@@ -1903,10 +1909,6 @@
 				<File Id="351062873" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_3-1_Bouh.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_3-1_Bouh_10C4C929.wem</Path>
-				</File>
-				<File Id="353586372" Language="SFX">
-					<ShortName>HB_Steps_Dalles_1.wav</ShortName>
-					<Path>SFX\HB_Steps_Dalles_1_66C02B12.wem</Path>
 				</File>
 				<File Id="355370330" Language="SFX">
 					<ShortName>HB_Steps_herbeshumides_02.wav</ShortName>
@@ -2232,6 +2234,10 @@
 					<ShortName>HB_SFX_Shotgun_NoChamber_00.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_NoChamber_00_66C02B12.wem</Path>
 				</File>
+				<File Id="464574482" Language="SFX">
+					<ShortName>HB_Steps_Dalles_2.wav</ShortName>
+					<Path>SFX\HB_Steps_Dalles_2_66C02B12.wem</Path>
+				</File>
 				<File Id="464707944" Language="SFX">
 					<ShortName>HB-SFX-UImenu-Play.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Play_10C4C929.wem</Path>
@@ -2283,10 +2289,6 @@
 				<File Id="485068759" Language="SFX">
 					<ShortName>VOICE_HB_Bear_CombatEngage_4-2_DisneyLand.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_CombatEngage_4-2_DisneyLand_10C4C929.wem</Path>
-				</File>
-				<File Id="487019024" Language="SFX">
-					<ShortName>HB_Steps_Dalles_3.wav</ShortName>
-					<Path>SFX\HB_Steps_Dalles_3_66C02B12.wem</Path>
 				</File>
 				<File Id="489172454" Language="SFX">
 					<ShortName>Shell_Concrete_04.wav</ShortName>
@@ -2643,6 +2645,10 @@
 				<File Id="599006176" Language="SFX">
 					<ShortName>VOICE_HB_Bear_CombatEnd_4-3_BlowYourBalls.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_CombatEnd_4-3_BlowYourBalls_10C4C929.wem</Path>
+				</File>
+				<File Id="599110218" Language="SFX">
+					<ShortName>HB_Steps_Dalles_1.wav</ShortName>
+					<Path>SFX\HB_Steps_Dalles_1_66C02B12.wem</Path>
 				</File>
 				<File Id="600255511" Language="SFX">
 					<ShortName>HB-SFX-Gardian-GetHit_01.wav</ShortName>
@@ -3111,6 +3117,10 @@
 				<File Id="807104420" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitBear_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitBear_01_66C02B12.wem</Path>
+				</File>
+				<File Id="811267661" Language="SFX">
+					<ShortName>HB_SFX_Kaliboss_Colere.wav</ShortName>
+					<Path>SFX\HB_SFX_Kaliboss_Colere_10C4C929.wem</Path>
 				</File>
 				<File Id="811391564" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_03.wav</ShortName>
