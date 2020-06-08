@@ -328,6 +328,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{71B34C21-DFA4-45EE-9A8F-393CF0C35C2C}" ShortID="619849228">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Iddle" ID="{826BE3DC-18D1-4402-810F-0E83CA99FF25}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="E_Mob_Gardian_GetHit" ID="{D9BF8027-BBB7-46F9-B23F-D99D2DB26C66}">
@@ -377,6 +387,43 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Charge" ID="{84A2DD00-4B1D-4A3E-8B9C-A8C78113EACB}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mob_Guardian_PrepareAttack" ID="{9D98764E-2197-4764-B90E-118CEC579A90}">
+							<ChildrenList>
+								<Action Name="" ID="{7CDF9530-24A6-44E0-BDC1-FF6EB5C732B1}" ShortID="973298834">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MobStoneGuardian_PrepareAttack_RND" ID="{315EB025-16D5-4654-84A9-EA62B376DB9C}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mob_Guardian_Iddle" ID="{A606C9D4-FD51-4FD8-98B3-91AB54860FD4}">
+							<ChildrenList>
+								<Action Name="" ID="{FF3450F7-D54D-4A35-82C0-E06E98E34193}" ShortID="86944113">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MobStoneGuardian_Iddle_BLEND" ID="{8A09F1FD-5312-4E68-80AB-8C94E81B4E05}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mob_Guardian_Iddle_STOP" ID="{D0062268-9E95-4395-BED0-66872B98068E}">
+							<ChildrenList>
+								<Action Name="" ID="{C702DAE4-7E98-4054-A53A-45C6E0A5252B}" ShortID="189933994">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MobStoneGuardian_Iddle_BLEND" ID="{8A09F1FD-5312-4E68-80AB-8C94E81B4E05}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
