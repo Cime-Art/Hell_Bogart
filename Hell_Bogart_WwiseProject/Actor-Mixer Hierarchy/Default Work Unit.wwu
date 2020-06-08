@@ -11444,7 +11444,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -11479,7 +11479,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>2</Value>
+																<Value>4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -15170,7 +15170,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>2</Value>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -15193,13 +15193,13 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_Steps_Dalles_1" ID="{8E6BFAF4-6A95-43F1-98AF-86CE4AED126C}" ShortID="353586372">
+																<AudioFileSource Name="HB_Steps_Dalles_1" ID="{814F1D22-67AA-4216-9A3F-8742B94F7FC6}" ShortID="599110218">
 																	<Language>SFX</Language>
 																	<AudioFile>HB_Steps_Dalles_1.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_Steps_Dalles_1" ID="{8E6BFAF4-6A95-43F1-98AF-86CE4AED126C}" Platform="Linked"/>
+																<ActiveSource Name="HB_Steps_Dalles_1" ID="{814F1D22-67AA-4216-9A3F-8742B94F7FC6}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="HB_Steps_Dalles_2" ID="{5223B7C4-620E-4369-9FA3-26AD50416503}" ShortID="1028272334">
@@ -15212,13 +15212,13 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_Steps_Dalles_2" ID="{117BE215-1BDF-4FFA-9E38-DCB0EAC702B1}" ShortID="248132464">
+																<AudioFileSource Name="HB_Steps_Dalles_2" ID="{F363E9BC-476E-4693-AC33-DE79C373C78D}" ShortID="464574482">
 																	<Language>SFX</Language>
 																	<AudioFile>HB_Steps_Dalles_2.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_Steps_Dalles_2" ID="{117BE215-1BDF-4FFA-9E38-DCB0EAC702B1}" Platform="Linked"/>
+																<ActiveSource Name="HB_Steps_Dalles_2" ID="{F363E9BC-476E-4693-AC33-DE79C373C78D}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="HB_Steps_Dalles_3" ID="{CEDBB277-BCE4-4257-9E15-518028A5B7F2}" ShortID="808766770">
@@ -15231,13 +15231,13 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB_Steps_Dalles_3" ID="{3740C777-0B70-49E4-92A6-D203C3FF0F44}" ShortID="487019024">
+																<AudioFileSource Name="HB_Steps_Dalles_3" ID="{5CD2FC10-0F85-43D9-8C98-A9A6DD42D88F}" ShortID="320429296">
 																	<Language>SFX</Language>
 																	<AudioFile>HB_Steps_Dalles_3.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB_Steps_Dalles_3" ID="{3740C777-0B70-49E4-92A6-D203C3FF0F44}" Platform="Linked"/>
+																<ActiveSource Name="HB_Steps_Dalles_3" ID="{5CD2FC10-0F85-43D9-8C98-A9A6DD42D88F}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
