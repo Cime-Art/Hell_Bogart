@@ -469,6 +469,15 @@
 												<FadeCurve>FadeLinear</FadeCurve>
 											</DuckingParam>
 										</DuckItem>
+										<DuckItem>
+											<BusRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}"/>
+											<DuckingParam>
+												<Volume>-2</Volume>
+												<FadeInTime>1.5</FadeInTime>
+												<FadeOutTime>0.5</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
 									</DuckingList>
 								</Bus>
 							</ChildrenList>

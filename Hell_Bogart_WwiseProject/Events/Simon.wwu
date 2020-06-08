@@ -2167,39 +2167,6 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Speech_Kali_ThereIsNoEscape" ID="{4FE3B6F1-01BB-4DB2-A225-70175F7233AA}">
-									<ChildrenList>
-										<Action Name="" ID="{3E092106-1245-4135-AA1C-A71A06D51B88}" ShortID="644889272">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="KaliBear_Speech_ThereIsNoEscape_SEQ" ID="{98B714E0-975B-4AB1-907C-64C8697C820A}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="E_Speech_Kali_Speech_TheChaseIsOn" ID="{F94DAC11-AD08-43DD-BCFE-0FA4968AC8FD}">
-									<ChildrenList>
-										<Action Name="" ID="{D5F9B9E1-21A5-4454-813D-41CBF634A400}" ShortID="1019499594">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Kali_Speech_TheChaseIsOn" ID="{AF63F0C0-42C3-4E1C-A598-8ECC1257F74A}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="E_Speech_Kali_IntroduceMother" ID="{53A0BEFB-5A0C-4BC6-981B-B69E34972E6B}">
-									<ChildrenList>
-										<Action Name="" ID="{A7F0F375-5E7A-4ECB-995C-BF79959D382B}" ShortID="645326727">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="KaliBear_Speech_IntroduceMother_SEQ" ID="{D56CF38F-B0BF-42B6-A047-F7902D2AB5AE}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="E_Speech_Kali_GetHitCritical" ID="{B04A346F-CA2C-476D-AC3A-51AA27E8CD2C}">
 									<ChildrenList>
 										<Action Name="" ID="{2D0D9800-DE6E-4358-ADA7-BEE558B9578D}" ShortID="641811090">
@@ -2243,23 +2210,12 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_Speech_Kali_Exhaust" ID="{EF4EF3D4-3368-4566-9074-1798716FA282}">
+								<Event Name="E_Speech_Kali_ExhaustRage" ID="{EF4EF3D4-3368-4566-9074-1798716FA282}">
 									<ChildrenList>
 										<Action Name="" ID="{67541F6F-B6E6-4433-92F1-2F81E32FEFDB}" ShortID="1028111298">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="HB_SFX_Kaliboss_Exhaust" ID="{2BB2FA67-5BAC-4AEA-860F-4651284BDED7}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="E_Speech_Kali_Rage" ID="{312F2364-F165-4511-B23D-8A47B1D07A80}">
-									<ChildrenList>
-										<Action Name="" ID="{5C6D7863-2BEA-4EBC-BC90-EBF41D10EC8E}" ShortID="1046623332">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="HB_SFX_Kaliboss_Rage" ID="{685B8E35-D7C4-4C00-B34E-993AA26FC782}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+													<ObjectRef Name="HB_SFX_Kaliboss_ExhaustRage" ID="{2BB2FA67-5BAC-4AEA-860F-4651284BDED7}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

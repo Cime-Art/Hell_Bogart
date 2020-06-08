@@ -215,7 +215,7 @@
 						<CurrentStateRef Name="End_Music" ID="{3A466E4D-077D-4216-B554-EE3DCDF3C5FF}"/>
 						<CurrentStateRef Name="Kali_Intro" ID="{FB35FE36-366D-4F98-AA45-FCA74D2E4C0B}"/>
 						<CurrentStateRef Name="None" ID="{711F642A-D061-406A-A43C-7DFCFA603C38}"/>
-						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
+						<CurrentStateRef Name="Start" ID="{220B4154-EBE4-4C51-9B3A-924E2597A8F3}"/>
 						<CurrentStateRef Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}"/>
 						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
 						<CurrentStateRef Name="None" ID="{0A02832D-A4D8-4BC2-B6BC-0910FE4765F7}"/>
@@ -367,10 +367,6 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Speech_Kali_Speech_TheChaseIsOn" ID="{F94DAC11-AD08-43DD-BCFE-0FA4968AC8FD}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="1" Y="4"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_Speech_Kali_GetHit" ID="{74291BE7-7F5C-48C0-A186-A72C5DF06E0B}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -387,16 +383,8 @@
 							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Speech_Kali_IntroduceMother" ID="{53A0BEFB-5A0C-4BC6-981B-B69E34972E6B}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="3" Y="4"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_Speech_Kali_Hit" ID="{75FAAFBA-138D-4343-8C66-DAC7CE2B9067}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="4" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="E_Speech_Kali_ThereIsNoEscape" ID="{4FE3B6F1-01BB-4DB2-A225-70175F7233AA}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
-							<Position X="4" Y="4"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
