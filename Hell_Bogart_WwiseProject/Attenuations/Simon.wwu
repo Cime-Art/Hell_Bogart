@@ -114,7 +114,7 @@
 						</Attenuation>
 						<Attenuation Name="ATT_StoneDoorRiddle" ID="{9581B568-8E07-4582-A9A9-DECB23E00378}" ShortID="136678456">
 							<PropertyList>
-								<Property Name="RadiusMax" Type="Real64" Value="6000"/>
+								<Property Name="RadiusMax" Type="Real64" Value="3000"/>
 							</PropertyList>
 							<CurveUsageInfoList>
 								<VolumeDryUsage>
@@ -131,14 +131,14 @@
 													<SegmentShape>Log3</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>5004.7728</XPos>
-													<YPos>-14.00433</YPos>
+													<XPos>1500</XPos>
+													<YPos>-12</YPos>
 													<Flags>0</Flags>
-													<SegmentShape>Exp3</SegmentShape>
+													<SegmentShape>Log1</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>6000</XPos>
-													<YPos>-200</YPos>
+													<XPos>3000</XPos>
+													<YPos>-16</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -162,14 +162,14 @@
 													<SegmentShape>Log3</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>4546.539</XPos>
+													<XPos>2273.2695</XPos>
 													<YPos>-1.16475</YPos>
 													<Flags>0</Flags>
 													<SegmentShape>Exp3</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>6000</XPos>
-													<YPos>-200</YPos>
+													<XPos>3000</XPos>
+													<YPos>-0</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -304,7 +304,7 @@
 												</Point>
 												<Point>
 													<XPos>5000</XPos>
-													<YPos>-12</YPos>
+													<YPos>-6</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -348,13 +348,13 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>3134.79623824451</XPos>
-													<YPos>34</YPos>
+													<XPos>3111.28527</XPos>
+													<YPos>25</YPos>
 													<Flags>0</Flags>
 												</Point>
 												<Point>
 													<XPos>5000</XPos>
-													<YPos>33</YPos>
+													<YPos>24</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
@@ -374,13 +374,13 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>3103.44827586207</XPos>
-													<YPos>34</YPos>
+													<XPos>3126.95925</XPos>
+													<YPos>19</YPos>
 													<Flags>0</Flags>
 												</Point>
 												<Point>
 													<XPos>5000</XPos>
-													<YPos>34</YPos>
+													<YPos>19</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>
