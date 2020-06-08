@@ -918,6 +918,7 @@
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
 				<Event Id="685482513" Name="E_KaliBoss_Attacks" ObjectPath="\Events\Chris\HB_Kali Events\Attack\E_KaliBoss_Attacks"/>
+				<Event Id="2446081459" Name="E_Kaliboss_CastingUlti" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_Kaliboss_CastingUlti"/>
 				<Event Id="452971736" Name="E_KaliBoss_deathfire" ObjectPath="\Events\Chris\HB_Kali Events\Death\E_KaliBoss_deathfire"/>
 				<Event Id="3418847825" Name="E_KaliBoss_GetHit" ObjectPath="\Events\Chris\HB_Kali Events\Get Hit\E_KaliBoss_GetHit"/>
 				<Event Id="1324023236" Name="E_KaliBoss_Grab" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBoss_Grab"/>
@@ -930,6 +931,7 @@
 				<Event Id="192942780" Name="E_KaliBoss_Invocation" ObjectPath="\Events\Chris\HB_Kali Events\Invocation\E_KaliBoss_Invocation"/>
 				<Event Id="2973010912" Name="E_KaliBoss_Invocation_slam" ObjectPath="\Events\Chris\HB_Kali Events\Invocation\E_KaliBoss_Invocation_slam"/>
 				<Event Id="658884810" Name="E_KaliBoss_Jump" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_KaliBoss_Jump"/>
+				<Event Id="889626561" Name="E_Kaliboss_RageSlams" ObjectPath="\Events\Chris\HB_Kali Events\Rage Slams\E_Kaliboss_RageSlams"/>
 				<Event Id="844121353" Name="E_KaliBoss_Reflect" ObjectPath="\Events\Chris\HB_Kali Events\Reflect\E_KaliBoss_Reflect"/>
 				<Event Id="987842344" Name="E_Kaliboss_Ulti_Shockwave" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_Kaliboss_Ulti_Shockwave"/>
 				<Event Id="1788047770" Name="E_KaliBossh_Whoosh" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBossh_Whoosh"/>
@@ -989,20 +991,16 @@
 				<Event Id="3244386490" Name="E_Speech_Kali_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Attack"/>
 				<Event Id="64626783" Name="E_Speech_Kali_Before_Big_Attack" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Before_Big_Attack"/>
 				<Event Id="3935073168" Name="E_Speech_Kali_Death" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Death"/>
-				<Event Id="198535572" Name="E_Speech_Kali_Exhaust" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Exhaust"/>
+				<Event Id="3093706567" Name="E_Speech_Kali_ExhaustRage" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_ExhaustRage"/>
 				<Event Id="2269350735" Name="E_Speech_Kali_FirstEncounter" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_FirstEncounter"/>
 				<Event Id="303195765" Name="E_Speech_Kali_GetHit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_GetHit"/>
 				<Event Id="2256907290" Name="E_Speech_Kali_GetHitCritical" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_GetHitCritical"/>
 				<Event Id="3925619008" Name="E_Speech_Kali_Grab" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Grab"/>
 				<Event Id="2894307937" Name="E_Speech_Kali_Hit" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Hit"/>
-				<Event Id="1105627200" Name="E_Speech_Kali_IntroduceMother" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_IntroduceMother"/>
 				<Event Id="2376769881" Name="E_Speech_Kali_LostHerMask" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_LostHerMask"/>
-				<Event Id="1924424297" Name="E_Speech_Kali_Rage" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Rage"/>
 				<Event Id="4177976852" Name="E_Speech_Kali_Random_Lines_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_LOOP"/>
 				<Event Id="3985088299" Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Random_Lines_STOP_LOOP"/>
 				<Event Id="1561586025" Name="E_Speech_Kali_ScreamSpell" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_ScreamSpell"/>
-				<Event Id="3478273789" Name="E_Speech_Kali_Speech_TheChaseIsOn" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_Speech_TheChaseIsOn"/>
-				<Event Id="4237626404" Name="E_Speech_Kali_ThereIsNoEscape" ObjectPath="\Events\Simon\Voice\Kali\E_Speech_Kali_ThereIsNoEscape"/>
 				<Event Id="1851091839" Name="E_SpikeDoor_Begin" ObjectPath="\Events\Simon\Enviro\Spike Door\E_SpikeDoor_Begin"/>
 				<Event Id="3959715823" Name="E_SpikeDoor_End" ObjectPath="\Events\Simon\Enviro\Spike Door\E_SpikeDoor_End"/>
 				<Event Id="1614602739" Name="E_StoneDoorRiddle_Openning" ObjectPath="\Events\Simon\Enviro\Stone Door Riddle\E_StoneDoorRiddle_Openning"/>
@@ -1545,6 +1543,10 @@
 				<File Id="214276993" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_03_66C02B12_72095081.wem</Path>
+				</File>
+				<File Id="214435035" Language="SFX">
+					<ShortName>magic_kami.wav</ShortName>
+					<Path>SFX\magic_kami_66C02B12.wem</Path>
 				</File>
 				<File Id="215037878" Language="SFX">
 					<ShortName>Shell_Gravel_02.wav</ShortName>
@@ -2346,6 +2348,10 @@
 					<ShortName>suffer.WAV</ShortName>
 					<Path>SFX\suffer_EC886278.wem</Path>
 				</File>
+				<File Id="504930716" Language="SFX">
+					<ShortName>HB_SFX_Kaliboss_Slams.wav</ShortName>
+					<Path>SFX\HB_SFX_Kaliboss_Slams_66C02B12.wem</Path>
+				</File>
 				<File Id="505838822" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-02.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-02_66C02B12.wem</Path>
@@ -3117,10 +3123,6 @@
 				<File Id="807104420" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitBear_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitBear_01_66C02B12.wem</Path>
-				</File>
-				<File Id="811267661" Language="SFX">
-					<ShortName>HB_SFX_Kaliboss_Colere.wav</ShortName>
-					<Path>SFX\HB_SFX_Kaliboss_Colere_10C4C929.wem</Path>
 				</File>
 				<File Id="811391564" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_03.wav</ShortName>

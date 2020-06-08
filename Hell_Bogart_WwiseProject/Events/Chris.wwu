@@ -190,6 +190,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="E_Kaliboss_CastingUlti" ID="{0DEBE642-8880-4255-9DB9-4EFADB02DB2A}">
+									<ChildrenList>
+										<Action Name="" ID="{D70907CF-018A-466A-ACF1-DAD0D8621D34}" ShortID="80840027">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Kali_CastingUlti" ID="{6D8A9EDE-1C0F-4022-BB90-E16896E973EA}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Invocation" ID="{9DF2193B-68E6-44FD-8ED1-5F2670AE92D5}" ShortID="929450349">
@@ -226,6 +237,21 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="RND_Kali_Reflects" ID="{9A375CD2-E8FB-480A-9B6D-685AB3595707}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Rage Slams" ID="{F1877467-BC3B-4B02-95C8-C462803AC960}" ShortID="991627215">
+							<ChildrenList>
+								<Event Name="E_Kaliboss_RageSlams" ID="{81F7112B-A103-4F78-AA51-8CC8915D1CDD}">
+									<ChildrenList>
+										<Action Name="" ID="{B8E1C467-EA97-4990-B218-D2AFBC33B5E7}" ShortID="583187041">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HB_SFX_Kaliboss_Slams" ID="{6225F7CD-9549-4F99-B7E5-1809E1855456}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
