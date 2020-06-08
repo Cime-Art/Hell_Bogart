@@ -574,6 +574,46 @@
 						<CurrentSwitchRef Name="Legendary_Ammo" ID="{A454E1D6-5193-4A86-8072-B9AE734495D2}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Mecas 2" ID="{69694599-8916-43E2-9909-D9322B1DEC8E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="E_Traps_Punji_Closed" ID="{1FA1169D-848D-4143-8F64-EA98E6A4DEAB}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Traps_Punji_Closing" ID="{48990ED0-60FA-4D10-8C37-6693812E9DC4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Traps_Punji_Triggered" ID="{D5996B39-D4C8-4143-BEE4-8C93146D6F1F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
+							<Value>6000</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Start" ID="{220B4154-EBE4-4C51-9B3A-924E2597A8F3}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
+						<CurrentSwitchRef Name="Epic_Other" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
+						<CurrentSwitchRef Name="Epic_Grenade" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+						<CurrentSwitchRef Name="Epic_Ammo" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

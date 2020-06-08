@@ -1513,7 +1513,43 @@
 								<Action Name="" ID="{83E4A6CA-E50F-4B5B-AADD-B38A3AB47562}" ShortID="511555666">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_HB_Traps_PunjiTrap_Triggered" ID="{C23EE455-3E14-479A-9CA1-A1B27C814D34}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+											<ObjectRef Name="Trap_Punji_Triggered_RND" ID="{259AAFE2-96C3-40A9-8634-ECAC5826F361}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_Punji_Closing" ID="{48990ED0-60FA-4D10-8C37-6693812E9DC4}">
+							<ChildrenList>
+								<Action Name="" ID="{5628724F-4C4A-4922-A543-1BB68434A1B2}" ShortID="893135785">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trap_Punji_Closing_BLEND" ID="{FFDD14DF-33EF-486D-8019-053F2F2CE450}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Traps_Punji_Closed" ID="{1FA1169D-848D-4143-8F64-EA98E6A4DEAB}">
+							<ChildrenList>
+								<Action Name="" ID="{4A9D3F17-F85F-4748-8470-244875971FA2}" ShortID="147067498">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trap_Punji_Closed_RND" ID="{D42CFB7A-B552-48BE-AD41-E6576F7D8FE3}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F95BD55C-D91D-4412-8861-48E2F6CE2876}" ShortID="221554829">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trap_Punji_Closing_BLEND" ID="{FFDD14DF-33EF-486D-8019-053F2F2CE450}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

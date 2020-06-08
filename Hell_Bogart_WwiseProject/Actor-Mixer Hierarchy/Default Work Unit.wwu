@@ -13790,11 +13790,11 @@
 														<ActiveSource Name="SFX_HB_PUNJI IMPACT" ID="{7FC69E73-6829-4142-A97D-C45448734B01}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="SFX_HB_Traps_PunjiTrap_Triggered" ID="{C23EE455-3E14-479A-9CA1-A1B27C814D34}" ShortID="932150416">
+												<BlendContainer Name="Trap_Punji_Closing_BLEND" ID="{FFDD14DF-33EF-486D-8019-053F2F2CE450}" ShortID="579605693">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>4</Value>
+																<Value>-2</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -13807,15 +13807,1284 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_Triggered" ID="{C5DE31CB-0AD5-4AB5-AD8D-24776A204B75}" ShortID="423353480">
-															<Language>SFX</Language>
-															<AudioFile>SFX_HB_Traps_PunjiTrap_Triggered.wav</AudioFile>
-														</AudioFileSource>
+														<RandomSequenceContainer Name="Trap_Punji_RockScrape_SEQ_LOOP" ID="{F81F667F-EEF7-4599-8321-937152F6D61B}" ShortID="945296485">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																		<Attenuation Name="ATT_Traps (Custom)" ID="{1E60F2BF-15CC-4165-8AF9-E8FD9F496790}" ShortID="1068979922">
+																			<PropertyList>
+																				<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																			</PropertyList>
+																			<CurveUsageInfoList>
+																				<VolumeDryUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="VolumeDry" ID="{1260D0F2-8BF9-4A49-BEC6-5DF088B5CD59}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>992.8401</XPos>
+																									<YPos>0</YPos>
+																									<Flags>0</Flags>
+																									<SegmentShape>Log2</SegmentShape>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>-200</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</VolumeDryUsage>
+																				<VolumeWetGameUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetGameUsage>
+																				<VolumeWetUserUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetUserUsage>
+																				<LowPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="LowPassFilter" ID="{A072A6BB-9488-4D18-8660-476E52F1AC20}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</LowPassFilterUsage>
+																				<HighPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="HighPassFilter" ID="{365D961A-7FF3-4203-A828-EC3077DBF399}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</HighPassFilterUsage>
+																				<SpreadUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</SpreadUsage>
+																				<FocusUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</FocusUsage>
+																			</CurveUsageInfoList>
+																		</Attenuation>
+																	</Custom>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="SFX_HB_Traps_PunjiTrap_ClosingScrapRock_02" ID="{1F21A004-8FB3-4238-B789-35166BE70CDC}" ShortID="245394128">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																				<Attenuation Name="ATT_Traps (Custom)" ID="{30809E2D-7E7A-424E-9F63-8130BD77AAF3}" ShortID="661006694">
+																					<PropertyList>
+																						<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																					</PropertyList>
+																					<CurveUsageInfoList>
+																						<VolumeDryUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																								<Curve Name="VolumeDry" ID="{8E371A13-10CE-4A94-AD49-CABCD4AD4F0F}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="3"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>992.8401</XPos>
+																											<YPos>0</YPos>
+																											<Flags>0</Flags>
+																											<SegmentShape>Log2</SegmentShape>
+																										</Point>
+																										<Point>
+																											<XPos>4000</XPos>
+																											<YPos>-200</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</CurveUsageInfo>
+																						</VolumeDryUsage>
+																						<VolumeWetGameUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																						</VolumeWetGameUsage>
+																						<VolumeWetUserUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																						</VolumeWetUserUsage>
+																						<LowPassFilterUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																								<Curve Name="LowPassFilter" ID="{97690186-9DB4-4B25-948F-BF50519771DC}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="65537"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>4000</XPos>
+																											<YPos>29</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</CurveUsageInfo>
+																						</LowPassFilterUsage>
+																						<HighPassFilterUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																								<Curve Name="HighPassFilter" ID="{323B3F5A-02F9-4A1F-90A6-2D0E7D6DB745}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="65537"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>4000</XPos>
+																											<YPos>29</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</CurveUsageInfo>
+																						</HighPassFilterUsage>
+																						<SpreadUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																						</SpreadUsage>
+																						<FocusUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																						</FocusUsage>
+																					</CurveUsageInfoList>
+																				</Attenuation>
+																			</Custom>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend2">
+																			<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_ClosingScrapRock" ID="{9B7E8252-0FBA-4242-B0FE-92751ACB0280}" ShortID="796163661">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HB_Traps_PunjiTrap_ClosingScrapRock.wav</AudioFile>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HB_Traps_PunjiTrap_ClosingScrapRock" ID="{9B7E8252-0FBA-4242-B0FE-92751ACB0280}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="SFX_HB_Traps_PunjiTrap_ClosingScrapRock_01" ID="{895953CE-84DD-41A1-B9BC-36D739471407}" ShortID="895335858">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																				<Attenuation Name="ATT_Traps (Custom)" ID="{C06DAF18-CA6F-4631-901E-E4EB355655F3}" ShortID="113217479">
+																					<PropertyList>
+																						<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																					</PropertyList>
+																					<CurveUsageInfoList>
+																						<VolumeDryUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																								<Curve Name="VolumeDry" ID="{FB7EB553-C87D-49C2-BDB0-9129EF44EA80}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="3"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>992.8401</XPos>
+																											<YPos>0</YPos>
+																											<Flags>0</Flags>
+																											<SegmentShape>Log2</SegmentShape>
+																										</Point>
+																										<Point>
+																											<XPos>4000</XPos>
+																											<YPos>-200</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</CurveUsageInfo>
+																						</VolumeDryUsage>
+																						<VolumeWetGameUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																						</VolumeWetGameUsage>
+																						<VolumeWetUserUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																						</VolumeWetUserUsage>
+																						<LowPassFilterUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																								<Curve Name="LowPassFilter" ID="{849FADFE-F984-4870-97F6-F595F4F9DAF6}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="65537"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>4000</XPos>
+																											<YPos>29</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</CurveUsageInfo>
+																						</LowPassFilterUsage>
+																						<HighPassFilterUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																								<Curve Name="HighPassFilter" ID="{8D6301C9-59EF-45E8-A35A-050507E9BC9B}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="65537"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>4000</XPos>
+																											<YPos>29</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</CurveUsageInfo>
+																						</HighPassFilterUsage>
+																						<SpreadUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																						</SpreadUsage>
+																						<FocusUsage>
+																							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																						</FocusUsage>
+																					</CurveUsageInfoList>
+																				</Attenuation>
+																			</Custom>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend0">
+																			<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend1">
+																			<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																		<Reference Name="UserAuxSend2">
+																			<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_ClosingScrapRock" ID="{DA89CFED-B702-4862-B686-5E9619D8DD95}" ShortID="788286445">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_HB_Traps_PunjiTrap_ClosingScrapRock.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="796163661"/>
+																			</ConvertedFileIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_HB_Traps_PunjiTrap_ClosingScrapRock" ID="{DA89CFED-B702-4862-B686-5E9619D8DD95}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<Playlist>
+																<ItemRef Name="SFX_HB_Traps_PunjiTrap_ClosingScrapRock_01" ID="{895953CE-84DD-41A1-B9BC-36D739471407}"/>
+																<ItemRef Name="SFX_HB_Traps_PunjiTrap_ClosingScrapRock_02" ID="{1F21A004-8FB3-4238-B789-35166BE70CDC}"/>
+															</Playlist>
+														</RandomSequenceContainer>
+														<Sound Name="SFX_HB_Traps_PunjiTrap_Closing_MecaLoop" ID="{F5FFB1AC-05F5-42E0-B06F-9A847267F71D}" ShortID="736867046">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																		<Attenuation Name="ATT_Traps (Custom)" ID="{17A59D1B-A033-4DC1-A902-B0D5733D23BD}" ShortID="209311978">
+																			<PropertyList>
+																				<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																			</PropertyList>
+																			<CurveUsageInfoList>
+																				<VolumeDryUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="VolumeDry" ID="{C01D1395-15F6-4321-8667-A336140514B4}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>992.8401</XPos>
+																									<YPos>0</YPos>
+																									<Flags>0</Flags>
+																									<SegmentShape>Log2</SegmentShape>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>-200</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</VolumeDryUsage>
+																				<VolumeWetGameUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetGameUsage>
+																				<VolumeWetUserUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetUserUsage>
+																				<LowPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="LowPassFilter" ID="{96AA298F-BA6D-4EC6-BDAE-6E4607DCE70D}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</LowPassFilterUsage>
+																				<HighPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="HighPassFilter" ID="{AEEA5C0A-4FE3-4DDE-9F08-99C9CB9C375C}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</HighPassFilterUsage>
+																				<SpreadUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</SpreadUsage>
+																				<FocusUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</FocusUsage>
+																			</CurveUsageInfoList>
+																		</Attenuation>
+																	</Custom>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_Closing_MecaLoop" ID="{A752136D-CC68-4F6A-805C-9833DE456C94}" ShortID="408223615">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_PunjiTrap_Closing_MecaLoop.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_PunjiTrap_Closing_MecaLoop" ID="{A752136D-CC68-4F6A-805C-9833DE456C94}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_HB_Traps_PunjiTrap_Triggered" ID="{C5DE31CB-0AD5-4AB5-AD8D-24776A204B75}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												</BlendContainer>
+												<RandomSequenceContainer Name="Trap_Punji_Closed_RND" ID="{D42CFB7A-B552-48BE-AD41-E6576F7D8FE3}" ShortID="966871526">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_HB_Traps_PunjiTrap_Closed_01" ID="{9D7C5EAC-8C4C-493E-AF06-E717C190DD69}" ShortID="409823462">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																		<Attenuation Name="ATT_Traps (Custom)" ID="{B948D076-2AB3-4BF3-8A71-E80447ED35FD}" ShortID="462736738">
+																			<PropertyList>
+																				<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																			</PropertyList>
+																			<CurveUsageInfoList>
+																				<VolumeDryUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="VolumeDry" ID="{9C258E32-6A92-49BC-BB87-A72967649507}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>992.8401</XPos>
+																									<YPos>0</YPos>
+																									<Flags>0</Flags>
+																									<SegmentShape>Log2</SegmentShape>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>-200</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</VolumeDryUsage>
+																				<VolumeWetGameUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetGameUsage>
+																				<VolumeWetUserUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetUserUsage>
+																				<LowPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="LowPassFilter" ID="{FDA18D44-A63A-42FA-BA45-1BD3EA5C6C6E}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</LowPassFilterUsage>
+																				<HighPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="HighPassFilter" ID="{E6A784E5-4CFC-4B5E-992D-C982E66D928C}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</HighPassFilterUsage>
+																				<SpreadUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</SpreadUsage>
+																				<FocusUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</FocusUsage>
+																			</CurveUsageInfoList>
+																		</Attenuation>
+																	</Custom>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_Closed_01" ID="{BFA3FBAE-E5D8-411D-A1C7-DB5A7D8D9E48}" ShortID="407832002">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_PunjiTrap_Closed_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_PunjiTrap_Closed_01" ID="{BFA3FBAE-E5D8-411D-A1C7-DB5A7D8D9E48}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_Traps_PunjiTrap_Closed_02" ID="{4873ED4D-2E1D-4511-BD9A-1679441D6D9B}" ShortID="782708519">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																		<Attenuation Name="ATT_Traps (Custom)" ID="{4FBA0797-79A8-411A-B58E-11A50EE4BD7F}" ShortID="785815668">
+																			<PropertyList>
+																				<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																			</PropertyList>
+																			<CurveUsageInfoList>
+																				<VolumeDryUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="VolumeDry" ID="{89BFCFEA-C340-4D8E-A7DC-BD5E225714E8}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>992.8401</XPos>
+																									<YPos>0</YPos>
+																									<Flags>0</Flags>
+																									<SegmentShape>Log2</SegmentShape>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>-200</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</VolumeDryUsage>
+																				<VolumeWetGameUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetGameUsage>
+																				<VolumeWetUserUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetUserUsage>
+																				<LowPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="LowPassFilter" ID="{917B115C-9566-46C2-B9AE-431C6C2DA869}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</LowPassFilterUsage>
+																				<HighPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="HighPassFilter" ID="{6853D5C0-C688-43B8-9658-1621B7496D5F}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</HighPassFilterUsage>
+																				<SpreadUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</SpreadUsage>
+																				<FocusUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</FocusUsage>
+																			</CurveUsageInfoList>
+																		</Attenuation>
+																	</Custom>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_Closed_02" ID="{479982B4-7748-4938-9121-DDBDB421D66E}" ShortID="429132062">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_PunjiTrap_Closed_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_PunjiTrap_Closed_02" ID="{479982B4-7748-4938-9121-DDBDB421D66E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_Traps_PunjiTrap_Closed_03" ID="{53C332BC-15C7-4ED3-84A8-FBEB8F07181C}" ShortID="986980582">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																		<Attenuation Name="ATT_Traps (Custom)" ID="{ADB688D5-C7BF-484B-8BB4-6DC2CFC84774}" ShortID="466394980">
+																			<PropertyList>
+																				<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																			</PropertyList>
+																			<CurveUsageInfoList>
+																				<VolumeDryUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="VolumeDry" ID="{606BDA84-94BA-44F0-AAA4-CB0B14CCF07B}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>992.8401</XPos>
+																									<YPos>0</YPos>
+																									<Flags>0</Flags>
+																									<SegmentShape>Log2</SegmentShape>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>-200</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</VolumeDryUsage>
+																				<VolumeWetGameUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetGameUsage>
+																				<VolumeWetUserUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetUserUsage>
+																				<LowPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="LowPassFilter" ID="{01F88D51-02CA-4B89-A153-4F36751A2B4F}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</LowPassFilterUsage>
+																				<HighPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="HighPassFilter" ID="{7120EFAC-A27E-47DE-9A05-BDAFEB8D3D0C}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</HighPassFilterUsage>
+																				<SpreadUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</SpreadUsage>
+																				<FocusUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</FocusUsage>
+																			</CurveUsageInfoList>
+																		</Attenuation>
+																	</Custom>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_Closed_03" ID="{2DE6E582-4702-40D2-B5FB-F2D7DF40D175}" ShortID="683003207">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_PunjiTrap_Closed_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_PunjiTrap_Closed_03" ID="{2DE6E582-4702-40D2-B5FB-F2D7DF40D175}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Trap_Punji_Triggered_RND" ID="{259AAFE2-96C3-40A9-8634-ECAC5826F361}" ShortID="710466760">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_HB_Traps_PunjiTrap_Triggered_01" ID="{5985314D-FE18-4E19-AD40-5E55B7971693}" ShortID="713672727">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																		<Attenuation Name="ATT_Traps (Custom)" ID="{DE5CC0AE-1DCE-4C4A-AAF1-54FE0282CD88}" ShortID="1006974382">
+																			<PropertyList>
+																				<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																			</PropertyList>
+																			<CurveUsageInfoList>
+																				<VolumeDryUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="VolumeDry" ID="{6D72A3B2-8660-41B7-ADB2-B31268C92FC7}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>992.8401</XPos>
+																									<YPos>0</YPos>
+																									<Flags>0</Flags>
+																									<SegmentShape>Log2</SegmentShape>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>-200</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</VolumeDryUsage>
+																				<VolumeWetGameUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetGameUsage>
+																				<VolumeWetUserUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetUserUsage>
+																				<LowPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="LowPassFilter" ID="{BCD5F9A5-DC2C-48CD-8F59-FEF808522208}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</LowPassFilterUsage>
+																				<HighPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="HighPassFilter" ID="{DC4FB66D-583D-42EA-BA8B-03B2E74CE2F2}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</HighPassFilterUsage>
+																				<SpreadUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</SpreadUsage>
+																				<FocusUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</FocusUsage>
+																			</CurveUsageInfoList>
+																		</Attenuation>
+																	</Custom>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_Triggered_01" ID="{A2A8E371-318F-4951-81B3-5A8D24DDAE0D}" ShortID="629587560">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_PunjiTrap_Triggered_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_PunjiTrap_Triggered_01" ID="{A2A8E371-318F-4951-81B3-5A8D24DDAE0D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_Traps_PunjiTrap_Triggered_02" ID="{FD987EA9-31A9-4D88-A834-1028B0432485}" ShortID="247924879">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																		<Attenuation Name="ATT_Traps (Custom)" ID="{5FCB3F52-67B1-4987-BA42-0E98F07E1AD4}" ShortID="773609127">
+																			<PropertyList>
+																				<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																			</PropertyList>
+																			<CurveUsageInfoList>
+																				<VolumeDryUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="VolumeDry" ID="{45CEBD0C-357A-4A25-A8A1-D3A0CF407FD5}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>992.8401</XPos>
+																									<YPos>0</YPos>
+																									<Flags>0</Flags>
+																									<SegmentShape>Log2</SegmentShape>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>-200</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</VolumeDryUsage>
+																				<VolumeWetGameUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetGameUsage>
+																				<VolumeWetUserUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetUserUsage>
+																				<LowPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="LowPassFilter" ID="{DF994917-303B-4FF7-BEF8-D0966E5BFB95}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</LowPassFilterUsage>
+																				<HighPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="HighPassFilter" ID="{17E7CC16-BB70-441C-8D33-5219C5B26D1B}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</HighPassFilterUsage>
+																				<SpreadUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</SpreadUsage>
+																				<FocusUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</FocusUsage>
+																			</CurveUsageInfoList>
+																		</Attenuation>
+																	</Custom>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_Triggered_02" ID="{F6130ED9-C1DF-4B34-8080-C056B088B143}" ShortID="1850838">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_PunjiTrap_Triggered_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_PunjiTrap_Triggered_02" ID="{F6130ED9-C1DF-4B34-8080-C056B088B143}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_Traps_PunjiTrap_Triggered_03" ID="{69B3FDA9-D4C3-4198-BD7C-CA109A6DD13A}" ShortID="677888027">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<Custom CreatedFrom="{0BBBC32A-0587-43CC-9B46-BD13429CD8FC}">
+																		<Attenuation Name="ATT_Traps (Custom)" ID="{9450DCD8-B915-4913-AA82-FC2AB10F8B2C}" ShortID="831886400">
+																			<PropertyList>
+																				<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+																			</PropertyList>
+																			<CurveUsageInfoList>
+																				<VolumeDryUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="VolumeDry" ID="{43AFCB4B-44B1-4F66-B52B-47C739ACAE28}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="3"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>992.8401</XPos>
+																									<YPos>0</YPos>
+																									<Flags>0</Flags>
+																									<SegmentShape>Log2</SegmentShape>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>-200</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</VolumeDryUsage>
+																				<VolumeWetGameUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetGameUsage>
+																				<VolumeWetUserUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																				</VolumeWetUserUsage>
+																				<LowPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="LowPassFilter" ID="{E4790DEA-0BBB-4751-9C19-33D7AE87889F}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</LowPassFilterUsage>
+																				<HighPassFilterUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																						<Curve Name="HighPassFilter" ID="{0A5B3B04-99AA-48BD-9B88-BD01996D0DB0}">
+																							<PropertyList>
+																								<Property Name="Flags" Type="int32" Value="65537"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>0</XPos>
+																									<YPos>0</YPos>
+																									<Flags>5</Flags>
+																								</Point>
+																								<Point>
+																									<XPos>4000</XPos>
+																									<YPos>29</YPos>
+																									<Flags>37</Flags>
+																								</Point>
+																							</PointList>
+																						</Curve>
+																					</CurveUsageInfo>
+																				</HighPassFilterUsage>
+																				<SpreadUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</SpreadUsage>
+																				<FocusUsage>
+																					<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																				</FocusUsage>
+																			</CurveUsageInfoList>
+																		</Attenuation>
+																	</Custom>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_Traps_PunjiTrap_Triggered_03" ID="{41B40277-A260-43EC-A99C-38D2631C752E}" ShortID="390183182">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_Traps_PunjiTrap_Triggered_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_Traps_PunjiTrap_Triggered_03" ID="{41B40277-A260-43EC-A99C-38D2631C752E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="Balancing Tree Trap" ID="{8E2A000D-3E82-4A5A-9BA8-C44E971FE0E9}" ShortID="555689119">

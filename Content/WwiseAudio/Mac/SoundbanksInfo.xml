@@ -1014,6 +1014,8 @@
 				<Event Id="2167147008" Name="E_Traps_Explosive_Explo" ObjectPath="\Events\Simon\Traps\E_Traps_Explosive_Explo"/>
 				<Event Id="2388488922" Name="E_Traps_Explosive_Trigger" ObjectPath="\Events\Simon\Traps\E_Traps_Explosive_Trigger"/>
 				<Event Id="1936964117" Name="E_Traps_GrosTronc" ObjectPath="\Events\Simon\Traps\E_Traps_GrosTronc"/>
+				<Event Id="3646577807" Name="E_Traps_Punji_Closed" ObjectPath="\Events\Simon\Traps\E_Traps_Punji_Closed"/>
+				<Event Id="3459702020" Name="E_Traps_Punji_Closing" ObjectPath="\Events\Simon\Traps\E_Traps_Punji_Closing"/>
 				<Event Id="439327384" Name="E_Traps_Punji_HitBear" ObjectPath="\Events\Simon\Traps\E_Traps_Punji_HitBear"/>
 				<Event Id="3906703006" Name="E_Traps_Punji_Triggered" ObjectPath="\Events\Simon\Traps\E_Traps_Punji_Triggered"/>
 				<Event Id="3400513437" Name="E_Traps_SpikeTrap_HitBear" ObjectPath="\Events\Simon\Traps\E_Traps_SpikeTrap_HitBear"/>
@@ -1039,6 +1041,10 @@
 				<Event Id="517697311" Name="Stop_KAli_whisper_02" ObjectPath="\Events\Alex\Stop_KAli_whisper_02"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="1850838" Language="SFX">
+					<ShortName>SFX_HB_Traps_PunjiTrap_Triggered_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_PunjiTrap_Triggered_02_66C02B12.wem</Path>
+				</File>
 				<File Id="4027434" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Spear_HitGround_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Spear_HitGround_02_66C02B12.wem</Path>
@@ -2035,6 +2041,10 @@
 					<ShortName>SFX_HB_GrosTroncImpacte_V2.wav</ShortName>
 					<Path>SFX\SFX_HB_GrosTroncImpacte_V2_66C02B12.wem</Path>
 				</File>
+				<File Id="390183182" Language="SFX">
+					<ShortName>SFX_HB_Traps_PunjiTrap_Triggered_03.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_PunjiTrap_Triggered_03_66C02B12.wem</Path>
+				</File>
 				<File Id="390235417" Language="SFX">
 					<ShortName>VOICE_HB_Bear_StoneGuardian.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_StoneGuardian_10C4C929.wem</Path>
@@ -2115,6 +2125,14 @@
 					<ShortName>MnGn_Barrel_Down.wav</ShortName>
 					<Path>SFX\MnGn_Barrel_Down_66C02B12.wem</Path>
 				</File>
+				<File Id="407832002" Language="SFX">
+					<ShortName>SFX_HB_Traps_PunjiTrap_Closed_01.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_PunjiTrap_Closed_01_66C02B12.wem</Path>
+				</File>
+				<File Id="408223615" Language="SFX">
+					<ShortName>SFX_HB_Traps_PunjiTrap_Closing_MecaLoop.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_PunjiTrap_Closing_MecaLoop_C42B8C3C.wem</Path>
+				</File>
 				<File Id="408430445" Language="SFX">
 					<ShortName>Shell_Gravel_04.wav</ShortName>
 					<Path>SFX\Shell_Gravel_04_66C02B12.wem</Path>
@@ -2151,10 +2169,6 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_05.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_05_66C02B12_72095081.wem</Path>
 				</File>
-				<File Id="423353480" Language="SFX">
-					<ShortName>SFX_HB_Traps_PunjiTrap_Triggered.wav</ShortName>
-					<Path>SFX\SFX_HB_Traps_PunjiTrap_Triggered_66C02B12.wem</Path>
-				</File>
 				<File Id="424095351" Language="SFX">
 					<ShortName>HB_SFX_FoleyShotgun_2.wav</ShortName>
 					<Path>SFX\HB_SFX_FoleyShotgun_2_66C02B12.wem</Path>
@@ -2166,6 +2180,10 @@
 				<File Id="428839544" Language="SFX">
 					<ShortName>HB_SFX_ImpactGrenade_1 (1).wav</ShortName>
 					<Path>SFX\HB_SFX_ImpactGrenade_1 (1)_6627A555.wem</Path>
+				</File>
+				<File Id="429132062" Language="SFX">
+					<ShortName>SFX_HB_Traps_PunjiTrap_Closed_02.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_PunjiTrap_Closed_02_66C02B12.wem</Path>
 				</File>
 				<File Id="430680513" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Wosh_03.wav</ShortName>
@@ -2735,6 +2753,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_IceHit_03.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_IceHit_03_66C02B12.wem</Path>
 				</File>
+				<File Id="629587560" Language="SFX">
+					<ShortName>SFX_HB_Traps_PunjiTrap_Triggered_01.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_PunjiTrap_Triggered_01_66C02B12.wem</Path>
+				</File>
 				<File Id="634338255" Language="SFX">
 					<ShortName>HB_Kali_Attacks_whoosh_Mid_02.wav</ShortName>
 					<Path>SFX\HB_Kali_Attacks_whoosh_Mid_02_CB2BFB6F.wem</Path>
@@ -2850,6 +2872,10 @@
 				<File Id="682102811" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_8-3_BodyIsReady.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_8-3_BodyIsReady_10C4C929.wem</Path>
+				</File>
+				<File Id="683003207" Language="SFX">
+					<ShortName>SFX_HB_Traps_PunjiTrap_Closed_03.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_PunjiTrap_Closed_03_66C02B12.wem</Path>
 				</File>
 				<File Id="683326520" Language="SFX">
 					<ShortName>HB_SFX_KALI_Attack_03.wav</ShortName>
@@ -3122,6 +3148,10 @@
 				<File Id="795317854" Language="SFX">
 					<ShortName>SFX-HB-CoffreMetalVieux_00.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreMetalVieux_00_66C02B12.wem</Path>
+				</File>
+				<File Id="796163661" Language="SFX">
+					<ShortName>SFX_HB_Traps_PunjiTrap_ClosingScrapRock.wav</ShortName>
+					<Path>SFX\SFX_HB_Traps_PunjiTrap_ClosingScrapRock_66C02B12.wem</Path>
 				</File>
 				<File Id="798374029" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_HitFire_01.wav</ShortName>
