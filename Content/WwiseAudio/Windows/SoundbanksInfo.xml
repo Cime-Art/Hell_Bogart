@@ -943,6 +943,9 @@
 				<Event Id="3949203104" Name="E_Mob_Gardian_Hit" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Hit"/>
 				<Event Id="517464027" Name="E_Mob_Gardian_StartCharge" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_StartCharge"/>
 				<Event Id="1937325648" Name="E_Mob_Gardian_Stomp" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Stomp"/>
+				<Event Id="4067224636" Name="E_Mob_Guardian_Iddle" ObjectPath="\Events\Brian\Gardian\E_Mob_Guardian_Iddle"/>
+				<Event Id="478423499" Name="E_Mob_Guardian_Iddle_STOP" ObjectPath="\Events\Brian\Gardian\E_Mob_Guardian_Iddle_STOP"/>
+				<Event Id="1336675845" Name="E_Mob_Guardian_PrepareAttack" ObjectPath="\Events\Brian\Gardian\E_Mob_Guardian_PrepareAttack"/>
 				<Event Id="694853374" Name="E_Mob_JungleCharlie_Attack" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Attack\E_Mob_JungleCharlie_Attack"/>
 				<Event Id="2112280100" Name="E_Mob_JungleCharlie_Death" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death"/>
 				<Event Id="1638544743" Name="E_Mob_JungleCharlie_Exploded" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Exploded\E_Mob_JungleCharlie_Exploded"/>
@@ -1047,10 +1050,6 @@
 				<File Id="9973633" Language="SFX">
 					<ShortName>HB_SFX_KALI_Grab_05.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_Grab_05_66C02B12.wem</Path>
-				</File>
-				<File Id="13826524" Language="SFX">
-					<ShortName>HB-SFX-Gardian-Death_00.wav</ShortName>
-					<Path>SFX\HB-SFX-Gardian-Death_00_66C02B12.wem</Path>
 				</File>
 				<File Id="14777753" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_05.wav</ShortName>
@@ -1400,6 +1399,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_IceHit_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_IceHit_01_66C02B12.wem</Path>
 				</File>
+				<File Id="160931836" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Idle-02.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Idle-02_66C02B12.wem</Path>
+				</File>
 				<File Id="161375808" Language="SFX">
 					<ShortName>SFX_HB_MobjungleCharlie_Dot_Fire_Crackling_04.wav</ShortName>
 					<Path>SFX\SFX_HB_MobjungleCharlie_Dot_Fire_Crackling_04_66C02B12.wem</Path>
@@ -1684,6 +1687,10 @@
 					<ShortName>VOICE_HB_Bear_UltiEnd_1-1_HeyLook.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiEnd_1-1_HeyLook_10C4C929.wem</Path>
 				</File>
+				<File Id="264357186" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Stun-00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Stun-00_66C02B12.wem</Path>
+				</File>
 				<File Id="268419596" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LifeLost20_2-3_NotSoClose.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LifeLost20_2-3_NotSoClose_10C4C929.wem</Path>
@@ -1847,6 +1854,10 @@
 				<File Id="327491523" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_07.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_07_1EDFD29F.wem</Path>
+				</File>
+				<File Id="330349463" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Fire-01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Fire-01_66C02B12.wem</Path>
 				</File>
 				<File Id="332991869" Language="SFX">
 					<ShortName>SFX_HB_SpikeDoor_BeginKlonk_03.wav</ShortName>
@@ -2115,6 +2126,14 @@
 				<File Id="410803926" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Explo_HolyShit_03.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Explo_HolyShit_03_10C4C929.wem</Path>
+				</File>
+				<File Id="413108942" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Woosh-02.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Woosh-02_66C02B12.wem</Path>
+				</File>
+				<File Id="413450282" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Fire-03.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Fire-03_66C02B12.wem</Path>
 				</File>
 				<File Id="415180222" Language="SFX">
 					<ShortName>HB-SFX-UImenu-Return.wav</ShortName>
@@ -2980,6 +2999,10 @@
 					<ShortName>HB_SFX_Uiwep_Pickup2.wav</ShortName>
 					<Path>SFX\HB_SFX_Uiwep_Pickup2_A6AD1683.wem</Path>
 				</File>
+				<File Id="740259509" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Idle-01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Idle-01_66C02B12.wem</Path>
+				</File>
 				<File Id="740705521" Language="SFX">
 					<ShortName>come_here.WAV</ShortName>
 					<Path>SFX\come_here_ED3A9569.wem</Path>
@@ -2999,10 +3022,6 @@
 				<File Id="746337883" Language="SFX">
 					<ShortName>HB-SFX-Other-LoopBigStoneDoorOpening.wav</ShortName>
 					<Path>SFX\HB-SFX-Other-LoopBigStoneDoorOpening_C42B8C3C.wem</Path>
-				</File>
-				<File Id="747661496" Language="SFX">
-					<ShortName>HB-SFX-Gardian-Death_01.wav</ShortName>
-					<Path>SFX\HB-SFX-Gardian-Death_01_66C02B12.wem</Path>
 				</File>
 				<File Id="749596691" Language="SFX">
 					<ShortName>HB_SFX_KALI_ultimatescream_05.wav</ShortName>
@@ -3083,6 +3102,10 @@
 				<File Id="781049257" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Explo_HolyShit_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Explo_HolyShit_02_10C4C929.wem</Path>
+				</File>
+				<File Id="781926998" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Woosh-01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Woosh-01_66C02B12.wem</Path>
 				</File>
 				<File Id="782075629" Language="SFX">
 					<ShortName>Shell_Gravel_01.wav</ShortName>
@@ -3168,6 +3191,10 @@
 					<ShortName>HB_SFX_Other_Pickup_Legendary_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_Pickup_Legendary_01_3D3B80CE.wem</Path>
 				</File>
+				<File Id="835822962" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Fire-02.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Fire-02_16B83FFF.wem</Path>
+				</File>
 				<File Id="836753407" Language="SFX">
 					<ShortName>Shell_Water_04.wav</ShortName>
 					<Path>SFX\Shell_Water_04_66C02B12.wem</Path>
@@ -3203,6 +3230,10 @@
 				<File Id="847911976" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Bossline_2-2_GhostCheating.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Bossline_2-2_GhostCheating_10C4C929.wem</Path>
+				</File>
+				<File Id="848272566" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Stun-02.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Stun-02_66C02B12.wem</Path>
 				</File>
 				<File Id="849695572" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_StartDropShell_01.wav</ShortName>
@@ -3308,6 +3339,10 @@
 					<ShortName>VOICE_HB_Bear_UltiShooting_Houhou_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiShooting_Houhou_02_10C4C929.wem</Path>
 				</File>
+				<File Id="893114441" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Idle-00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Idle-00_66C02B12.wem</Path>
+				</File>
 				<File Id="895724132" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Death_02.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_SpikeTrap_Death_02_66C02B12.wem</Path>
@@ -3355,6 +3390,10 @@
 				<File Id="919466806" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LootLegendary_3.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LootLegendary_3_10C4C929.wem</Path>
+				</File>
+				<File Id="924351504" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Stun-01.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Stun-01_66C02B12.wem</Path>
 				</File>
 				<File Id="931113645" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LosingLife_Fuck_02.wav</ShortName>
@@ -3415,6 +3454,10 @@
 				<File Id="953900687" Language="SFX">
 					<ShortName>HB_SFX_KALI_GrabWhoosh_01.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_GrabWhoosh_01_66C02B12.wem</Path>
+				</File>
+				<File Id="954780723" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Fire-00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Fire-00_66C02B12.wem</Path>
 				</File>
 				<File Id="956737558" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Attack_02.wav</ShortName>
@@ -3660,6 +3703,10 @@
 					<ShortName>MnGn_Fire_04.wav</ShortName>
 					<Path>SFX\MnGn_Fire_04_66C02B12.wem</Path>
 				</File>
+				<File Id="1062931980" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Idle-03.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Idle-03_66C02B12.wem</Path>
+				</File>
 				<File Id="1063326116" Language="SFX">
 					<ShortName>SF-DS Weapon Projectile 03_03.wav</ShortName>
 					<Path>SFX\SF-DS Weapon Projectile 03_03_66C02B12.wem</Path>
@@ -3695,6 +3742,10 @@
 				<File Id="1070432713" Language="SFX">
 					<ShortName>SFX-HB-CoffreLoquet_01.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreLoquet_01_66C02B12.wem</Path>
+				</File>
+				<File Id="1070880648" Language="SFX">
+					<ShortName>HB-SFX-Gardian-Woosh-00.wav</ShortName>
+					<Path>SFX\HB-SFX-Gardian-Woosh-00_66C02B12.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
