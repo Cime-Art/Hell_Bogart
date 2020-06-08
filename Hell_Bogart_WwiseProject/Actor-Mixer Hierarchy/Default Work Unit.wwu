@@ -1043,7 +1043,15 @@
 							</ReferenceList>
 							<ChildrenList>
 								<ActorMixer Name="Stone Gardian" ID="{B7A23354-FE61-4838-BD9B-3C3C0E393138}" ShortID="167636211">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 										</Reference>
@@ -1912,6 +1920,32 @@
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
+									<StateInfo>
+										<StatePropertyList>
+											<Property Name="EnableAttenuation"/>
+											<Property Name="Volume"/>
+										</StatePropertyList>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+												<CustomState Name="" ID="{5B080043-5A7A-42F0-B795-14A6C3662EB3}" ShortID="915371895"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+												<CustomState Name="" ID="{947438EC-4589-47B2-9150-64B06D1C7103}" ShortID="558616319">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Volume" Type="Real64" Value="-3"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</ActorMixer>
 								<ActorMixer Name="Stealer" ID="{A7937A28-42B9-44C7-9827-E334F746D306}" ShortID="602540758">
 									<PropertyList>
@@ -29124,10 +29158,16 @@
 										</ActorMixer>
 										<ActorMixer Name="Bear Ulti" ID="{61F5E7E8-E893-45A7-96DC-CBC45A0305CD}" ShortID="720454221">
 											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="OverridePriority" Type="bool" Value="True"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
 														<Value>55</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -29136,7 +29176,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+													<ObjectRef Name="Special_Voices_SUBBUS" ID="{0E3486CD-D4F7-4D67-AA1D-C7C7B775A186}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>

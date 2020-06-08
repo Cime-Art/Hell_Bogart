@@ -237,6 +237,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	353109436	Ammo_2	Equiped_Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Shotgun\Power_Layer_RND		
 	491515353	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Jungle Charlie\Desintegration		
 	510064631	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Gatling		
+	558616319	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Stone Gardian		
 	559629018	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Jungle Charlie		
 	573580414	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Jungle Charlie\Iddle		
 	585106276	Ammo_1	Equiped_Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Shotgun\Power_Layer_RND		
@@ -244,6 +245,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	839981864	Ammo_2	Equiped_Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Shotgun\Shotgun_SEQ\Shotgun_BLEND_STEP\Ammo_Type_SWITCH		
 	867669233	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Jungle Charlie\Iddle		
 	872028081	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Shotgun		
+	915371895	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Stone Gardian		
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	27802617	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Voices Global System\Kali Bear Interactions\Grab\Kali_Speech_Grab_RND\No_Speech_Kali_Grab\Wwise Silence	
