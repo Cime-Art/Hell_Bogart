@@ -1019,7 +1019,7 @@
 							<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+							<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -1238,6 +1238,7 @@
 										<ActorMixer Name="Attack" ID="{AAD89A9C-D56E-442B-BDA7-324C3D2BE336}" ShortID="744155569">
 											<PropertyList>
 												<Property Name="Color" Type="int16" Value="2"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1261,7 +1262,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="HB-SFX-Gardian-Attack_00" ID="{0F55A7EA-34AE-47D0-A5EF-BD843FA8AACB}" ShortID="877556041">
+														<Sound Name="HB-SFX-Gardian-Attack_00" ID="{3B2EF677-2F35-4190-9824-09B48E29C414}" ShortID="387840031">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1271,16 +1272,16 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB-SFX-Gardian-Attack_00" ID="{3EA1B080-185E-4D9B-85E7-19A7907D0B26}" ShortID="1042924671">
+																<AudioFileSource Name="HB-SFX-Gardian-Attack_00" ID="{21D8E882-D885-4297-94C6-46F765F36CFC}" ShortID="429967879">
 																	<Language>SFX</Language>
 																	<AudioFile>HB-SFX-Gardian-Attack_00.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB-SFX-Gardian-Attack_00" ID="{3EA1B080-185E-4D9B-85E7-19A7907D0B26}" Platform="Linked"/>
+																<ActiveSource Name="HB-SFX-Gardian-Attack_00" ID="{21D8E882-D885-4297-94C6-46F765F36CFC}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB-SFX-Gardian-Attack_01" ID="{CE69CA53-46CA-43A1-AF5F-194420F41324}" ShortID="653047315">
+														<Sound Name="HB-SFX-Gardian-Attack_01" ID="{693B52DA-A38C-4CC3-8087-43DA4026814B}" ShortID="360516462">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1290,16 +1291,16 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB-SFX-Gardian-Attack_01" ID="{F8864C80-29AA-4BFB-AFC2-537E8047BE85}" ShortID="126948374">
+																<AudioFileSource Name="HB-SFX-Gardian-Attack_01" ID="{B6FE65D3-5851-444A-8B4B-A193DCA52D6D}" ShortID="262449193">
 																	<Language>SFX</Language>
 																	<AudioFile>HB-SFX-Gardian-Attack_01.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB-SFX-Gardian-Attack_01" ID="{F8864C80-29AA-4BFB-AFC2-537E8047BE85}" Platform="Linked"/>
+																<ActiveSource Name="HB-SFX-Gardian-Attack_01" ID="{B6FE65D3-5851-444A-8B4B-A193DCA52D6D}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB-SFX-Gardian-Attack_02" ID="{DF47D54C-87FE-4E6A-9152-E0BE00861AB3}" ShortID="503149913">
+														<Sound Name="HB-SFX-Gardian-Attack_02" ID="{E82B9144-D1FE-49D7-A742-D8583A0FF40D}" ShortID="413425642">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1309,16 +1310,16 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB-SFX-Gardian-Attack_02" ID="{D1C58E95-81CC-4283-94BB-6883DD42AAB0}" ShortID="956737558">
+																<AudioFileSource Name="HB-SFX-Gardian-Attack_02" ID="{8733CC96-5AC9-42C3-A529-DD4ADC2E8E98}" ShortID="518186452">
 																	<Language>SFX</Language>
 																	<AudioFile>HB-SFX-Gardian-Attack_02.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB-SFX-Gardian-Attack_02" ID="{D1C58E95-81CC-4283-94BB-6883DD42AAB0}" Platform="Linked"/>
+																<ActiveSource Name="HB-SFX-Gardian-Attack_02" ID="{8733CC96-5AC9-42C3-A529-DD4ADC2E8E98}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="HB-SFX-Gardian-Attack_03" ID="{CC2A38F4-4A29-449C-BA95-A673A13E4F30}" ShortID="453000194">
+														<Sound Name="HB-SFX-Gardian-Attack_03" ID="{7F2755FB-8387-443F-8C84-D49D6CD035A9}" ShortID="182951133">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1328,13 +1329,13 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB-SFX-Gardian-Attack_03" ID="{952E32E0-FA13-4BE5-9558-F56C66BD06D2}" ShortID="1016390998">
+																<AudioFileSource Name="HB-SFX-Gardian-Attack_03" ID="{E7ECD5FA-7ED6-460A-9F8C-6A764AACBD28}" ShortID="190925181">
 																	<Language>SFX</Language>
 																	<AudioFile>HB-SFX-Gardian-Attack_03.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB-SFX-Gardian-Attack_03" ID="{952E32E0-FA13-4BE5-9558-F56C66BD06D2}" Platform="Linked"/>
+																<ActiveSource Name="HB-SFX-Gardian-Attack_03" ID="{E7ECD5FA-7ED6-460A-9F8C-6A764AACBD28}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -1356,7 +1357,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>3</Value>
+																<Value>-3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1379,13 +1380,13 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB-SFX-Gardian-Woosh-00" ID="{7FE6D6D5-6A63-4133-9D7B-45731BA61476}" ShortID="1070880648">
+																<AudioFileSource Name="HB-SFX-Gardian-Woosh-00" ID="{B58DD19F-42F1-445D-A08C-7815757CD168}" ShortID="485561304">
 																	<Language>SFX</Language>
 																	<AudioFile>HB-SFX-Gardian-Woosh-00.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB-SFX-Gardian-Woosh-00" ID="{7FE6D6D5-6A63-4133-9D7B-45731BA61476}" Platform="Linked"/>
+																<ActiveSource Name="HB-SFX-Gardian-Woosh-00" ID="{B58DD19F-42F1-445D-A08C-7815757CD168}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="HB-SFX-Gardian-Woosh-01" ID="{3FE98DE5-E4C8-41E9-AAFF-9569C6BF49B4}" ShortID="566416224">
@@ -1398,13 +1399,13 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB-SFX-Gardian-Woosh-01" ID="{E19DF42D-C066-49F2-85BA-B87B02A20F3A}" ShortID="781926998">
+																<AudioFileSource Name="HB-SFX-Gardian-Woosh-01" ID="{5429F4BF-88A9-47C1-87A4-019918DA8481}" ShortID="510822351">
 																	<Language>SFX</Language>
 																	<AudioFile>HB-SFX-Gardian-Woosh-01.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB-SFX-Gardian-Woosh-01" ID="{E19DF42D-C066-49F2-85BA-B87B02A20F3A}" Platform="Linked"/>
+																<ActiveSource Name="HB-SFX-Gardian-Woosh-01" ID="{5429F4BF-88A9-47C1-87A4-019918DA8481}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="HB-SFX-Gardian-Woosh-02" ID="{726C80B5-3943-4BDB-A7D6-FA1F95F1D980}" ShortID="339852321">
@@ -1417,13 +1418,13 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="HB-SFX-Gardian-Woosh-02" ID="{D45B87F3-B8F3-42EE-82AF-F6E8415599EB}" ShortID="413108942">
+																<AudioFileSource Name="HB-SFX-Gardian-Woosh-02" ID="{071337EF-11CC-432C-9FA6-D95DFA1F2E3C}" ShortID="94582669">
 																	<Language>SFX</Language>
 																	<AudioFile>HB-SFX-Gardian-Woosh-02.wav</AudioFile>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="HB-SFX-Gardian-Woosh-02" ID="{D45B87F3-B8F3-42EE-82AF-F6E8415599EB}" Platform="Linked"/>
+																<ActiveSource Name="HB-SFX-Gardian-Woosh-02" ID="{071337EF-11CC-432C-9FA6-D95DFA1F2E3C}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -2009,6 +2010,7 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="RND_Stomp" ID="{3CDD4C14-1A06-4725-B578-7CD7085F0370}" ShortID="328637155">
 													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 													</PropertyList>
 													<ReferenceList>
@@ -2016,7 +2018,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2084,22 +2086,28 @@
 										<ActorMixer Name="HitPlayer" ID="{1840DBCB-2828-4119-A859-B0B1371937D1}" ShortID="624315903">
 											<PropertyList>
 												<Property Name="Color" Type="int16" Value="15"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Acoustics_SFX_AUX" ID="{D0A15373-28FF-4CA5-9B3B-21597792E936}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+													<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 												<Reference Name="UserAuxSend0">
 													<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="RND_HitPlayer" ID="{AB535604-D4A1-4BBC-8387-4D82C381F3F6}" ShortID="650526185">
+												<RandomSequenceContainer Name="RND_HitPlayer_Charge" ID="{AB535604-D4A1-4BBC-8387-4D82C381F3F6}" ShortID="650526185">
 													<PropertyList>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -2184,6 +2192,277 @@
 															</ChildrenList>
 															<ActiveSourceList>
 																<ActiveSource Name="HB-SFX-Gardian-HitPlayer_03" ID="{68A6C7AF-BEA5-4046-B402-AD3B8429EF16}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RND_HitPlayer_Attacks" ID="{87E1E01E-B231-4845-ADD4-44E5B71EE539}" ShortID="629267785">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}">
+																<Attenuation Name="Att_Trash_Mob (Custom)" ID="{FD0DC437-D6EA-4770-880F-A73FA971BF6E}" ShortID="10268094">
+																	<PropertyList>
+																		<Property Name="RadiusMax" Type="Real64" Value="3500"/>
+																	</PropertyList>
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{1182E5DC-F70D-46F7-974D-592152D542BF}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																							<SegmentShape>Log2</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>1503.1348</XPos>
+																							<YPos>-8.99028</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Exp2</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>3500</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry">
+																				<Curve Name="VolumeWetGame" ID="{ADFE3E3D-D2AF-4A05-BA0B-923822E2A59B}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>3500</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeWetUser" ID="{0FD5DE86-F39B-4AB5-8C5E-D26BC5A1D42B}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>-11.85148</YPos>
+																							<Flags>5</Flags>
+																							<SegmentShape>Log2</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>1887.82816</XPos>
+																							<YPos>0</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>2132.04861</XPos>
+																							<YPos>-0.05497</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Exp2</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>3500</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="LowPassFilter" ID="{608973A9-BAB6-4052-BADA-0CED5A9C5170}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="65537"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>2144.984338</XPos>
+																							<YPos>24</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>3500</XPos>
+																							<YPos>34</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="HighPassFilter" ID="{9F129643-C1B0-4ABF-A542-B3D1B74D0481}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="65537"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>3500</XPos>
+																							<YPos>34</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None">
+																				<Curve Name="Spread" ID="{BBF14251-1FF1-4128-8ECC-78D1201CF6D6}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>49.72678</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>3500</XPos>
+																							<YPos>100</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB-SFX-Gardian-HitPlayerHeavy-00" ID="{4616FB5C-4857-4DA0-8CC3-BF2F209FEF91}" ShortID="315320350">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-HitPlayerHeavy-00" ID="{6A3648A2-EDE7-4366-AF4B-CDBFF998961D}" ShortID="949462923">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-HitPlayerHeavy-00.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-HitPlayerHeavy-00" ID="{6A3648A2-EDE7-4366-AF4B-CDBFF998961D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-HitPlayerHeavy-01" ID="{0FD002BC-C471-4871-9EC0-4DA6DCCA06F0}" ShortID="576907276">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-HitPlayerHeavy-01" ID="{2B5BF9BD-37EB-40A0-B225-5EFE061B4C52}" ShortID="576503346">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-HitPlayerHeavy-01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-HitPlayerHeavy-01" ID="{2B5BF9BD-37EB-40A0-B225-5EFE061B4C52}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-HitPlayerHeavy-02" ID="{D69CB72E-18A4-4649-B531-458FFB5BF18B}" ShortID="281977008">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-HitPlayerHeavy-02" ID="{B9EAC0A2-024E-4A4C-82EA-F9E375C61BCB}" ShortID="248178384">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-HitPlayerHeavy-02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-HitPlayerHeavy-02" ID="{B9EAC0A2-024E-4A4C-82EA-F9E375C61BCB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="HB-SFX-Gardian-HitPlayerHeavy-03" ID="{B6D0FA0D-7F12-4773-BCCC-3D82771B5F52}" ShortID="442593061">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB-SFX-Gardian-HitPlayerHeavy-03" ID="{076AC361-86BC-43DB-8B92-AD3BC819DFFE}" ShortID="611154650">
+																	<Language>SFX</Language>
+																	<AudioFile>HB-SFX-Gardian-HitPlayerHeavy-03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB-SFX-Gardian-HitPlayerHeavy-03" ID="{076AC361-86BC-43DB-8B92-AD3BC819DFFE}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -6642,6 +6921,7 @@
 														<Value>3</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
@@ -6659,7 +6939,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+													<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -9425,12 +9705,15 @@
 													</ChildrenList>
 												</ActorMixer>
 												<ActorMixer Name="Hit Bear" ID="{1934F942-59F6-49A9-8A8A-6068C346148B}" ShortID="938906270">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -13331,6 +13614,7 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="SpikeTrap_HitBear_RND" ID="{86693818-D935-481D-97CD-573129D7AE0D}" ShortID="743492518">
 													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>3</Value>
@@ -13342,7 +13626,7 @@
 															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 														<Reference Name="UserAuxSend0">
 															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -13757,6 +14041,7 @@
 											<ChildrenList>
 												<Sound Name="SFX_HB_PUNJI IMPACT" ID="{5682CD94-4BBA-4651-94EC-9C9919E18462}" ShortID="770575382">
 													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-4</Value>
@@ -13768,7 +14053,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 														<Reference Name="UserAuxSend0">
 															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -15163,12 +15448,15 @@
 															</ReferenceList>
 															<ChildrenList>
 																<Sound Name="SFX_HB_GrosTroncImpacte_V2" ID="{A2209707-9B00-492C-AA85-CB0FEA88BF09}" ShortID="782280649">
+																	<PropertyList>
+																		<Property Name="OverrideOutput" Type="bool" Value="True"/>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																			<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 																		</Reference>
 																		<Reference Name="UserAuxSend0">
 																			<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -15254,7 +15542,6 @@
 										<ActorMixer Name="Big Rock Explo Trap" ID="{8E6CFD79-612C-4627-9B7A-009A84101A40}" ShortID="947532004">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
 											</PropertyList>
@@ -15491,6 +15778,7 @@
 												<Sound Name="SFX_HB_Traps_ExploBigRock" ID="{1F14BBAA-7EF8-46C7-B84F-E58982DD8A41}" ShortID="913768071">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -15506,7 +15794,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 														<Reference Name="UserAuxSend0">
 															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -15535,6 +15823,7 @@
 																<Value>20</Value>
 															</ValueList>
 														</Property>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>3</Value>
@@ -15546,7 +15835,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+															<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -15679,6 +15968,7 @@
 																<Sound Name="HB_SFX_Other_Trap_BodyExplod_01" ID="{79229CF5-DDAD-42BA-9D3E-29FAC7D49705}" ShortID="904635780">
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																		<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
@@ -15694,7 +15984,7 @@
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																			<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 																		</Reference>
 																		<Reference Name="UserAuxSend0">
 																			<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -16085,6 +16375,7 @@
 								<ActorMixer Name="Hit Bear" ID="{085E59D3-AC23-4962-B004-CFB1933AFD62}" ShortID="341225918">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 										<Property Name="UserAuxSendVolume2" Type="Real64">
@@ -16101,7 +16392,7 @@
 											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+											<ObjectRef Name="SFX_Hits_SUBBUS" ID="{656B5BBB-64FC-4921-A07F-D0A3D8F21FCB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
@@ -17911,37 +18202,94 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="HB_SFX_Kaliboss_Slams" ID="{6225F7CD-9549-4F99-B7E5-1809E1855456}" ShortID="40396581">
+										<Sound Name="HB_SFX_Kaliboss_RageSlams" ID="{D98F957C-2EA7-43FF-9FE9-7E3468A5EDF1}" ShortID="781004313">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<Custom CreatedFrom="{24416D51-33A7-45F6-9CC3-3798885084F1}">
+														<Attenuation Name="ATT_BossKaliSFX (Custom)" ID="{8D3318C6-2FCA-4296-A11D-21DC7CDA8731}" ShortID="472742283">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="8000"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{151A3B70-264A-451E-BD06-AB3931D7EAD2}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																					<SegmentShape>Log2</SegmentShape>
+																				</Point>
+																				<Point>
+																					<XPos>8000</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
+												</Reference>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+													<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+													<ObjectRef Name="KaliBoss_SFX_SUBBUS" ID="{7D0627CF-1A3F-4EF7-8384-9C5D96CD90EA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend2">
+													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="HB_SFX_Kaliboss_Slams" ID="{FCAC51B1-9EE3-4BE7-8042-DA4DFFCE283D}" ShortID="504930716">
+												<AudioFileSource Name="HB_SFX_Kali_Foley_Slam_01" ID="{749A3EE5-43EC-4BDF-B1BE-57B29AF02D58}" ShortID="73747994">
 													<PropertyList>
-														<Property Name="VolumeOffset" Type="Real64">
-															<ValueList>
-																<Value>6</Value>
-															</ValueList>
-														</Property>
+														<Property Name="FadeInDuration" Type="Real64" Value="9.68196890628397E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="8.29883049110052E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.13972420246637"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.37212775292766"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>HB_SFX_Kaliboss_Slams.wav</AudioFile>
+													<AudioFile>HB_SFX_Kali_Foley_Slam_01.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="HB_SFX_Kaliboss_Slams" ID="{FCAC51B1-9EE3-4BE7-8042-DA4DFFCE283D}" Platform="Linked"/>
+												<ActiveSource Name="HB_SFX_Kali_Foley_Slam_01" ID="{749A3EE5-43EC-4BDF-B1BE-57B29AF02D58}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -31384,8 +31732,11 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="HB_SFX_Kaliboss_Exhaust" ID="{593452F9-C5B8-4A39-A97A-32668F07C755}" ShortID="73201851">
+														<AudioFileSource Name="HB_SFX_Kali_Exhaust_Colere_01" ID="{4300788D-E4A2-4282-9EC7-9E377BB9B114}" ShortID="913558526">
 															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.70568384431398"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="8.53436399217222"/>
 																<Property Name="VolumeOffset" Type="Real64">
 																	<ValueList>
 																		<Value>3</Value>
@@ -31393,11 +31744,11 @@
 																</Property>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>HB_SFX_Kaliboss_Exhaust.wav</AudioFile>
+															<AudioFile>HB_SFX_Kali_Exhaust_Colere_01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="HB_SFX_Kaliboss_Exhaust" ID="{593452F9-C5B8-4A39-A97A-32668F07C755}" Platform="Linked"/>
+														<ActiveSource Name="HB_SFX_Kali_Exhaust_Colere_01" ID="{4300788D-E4A2-4282-9EC7-9E377BB9B114}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>

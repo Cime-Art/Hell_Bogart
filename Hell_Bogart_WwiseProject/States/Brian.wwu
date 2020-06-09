@@ -63,6 +63,7 @@
 								<State Name="Kali_Intro" ID="{FB35FE36-366D-4F98-AA45-FCA74D2E4C0B}"/>
 								<State Name="Kali_Phase2" ID="{156D730F-C86B-469A-BA6F-A1E97F137A77}"/>
 								<State Name="Kali_End" ID="{CBDFEF37-2E50-4219-B041-A24E68676549}"/>
+								<State Name="Kali_Break" ID="{10D79A9F-A293-4755-8D82-F5F6AC200627}"/>
 							</ChildrenList>
 						</StateGroup>
 						<StateGroup Name="Music_Kali_Phase_STATE" ID="{5F04AF09-C573-464D-A21F-A30EBFD54842}">

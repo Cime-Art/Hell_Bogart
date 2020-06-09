@@ -1024,30 +1024,6 @@
 							<ChildrenList>
 								<Event Name="E_Global_SetInPauseMenu" ID="{85FBA638-4F4B-43D8-9A14-5F36F100CC3E}">
 									<ChildrenList>
-										<Action Name="" ID="{9DA2FADD-3135-4105-85F8-8DC5B63C2B8F}" ShortID="469254412">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-												<Property Name="GameParameterValue" Type="Real64" Value="80"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{5B5988F4-F4F0-43A5-A114-CE002CF7AED3}" ShortID="488796526">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-												<Property Name="GameParameterValue" Type="Real64" Value="-3000"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{C0936163-55EB-4C19-8569-AA1E0F7AF9C2}" ShortID="400261806">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="12"/>
@@ -1060,44 +1036,10 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{BDCD5E63-2AF5-49AE-AF8E-4103100F0501}" ShortID="185049769">
-											<PropertyList>
-												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-												<Property Name="Volume" Type="Real64" Value="-10"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Gatling" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_Global_SetOutPauseMenu" ID="{82C7AD9A-A115-4C13-AF34-10F51C0D829F}">
 									<ChildrenList>
-										<Action Name="" ID="{2334CC6B-47DF-4892-B378-BFFFD2788D6E}" ShortID="560335640">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{71A4E0F7-B818-4C1D-A318-2A1788FC3850}" ShortID="262703622">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{0B79537A-B533-49EC-8B64-CBEA86D0B67B}" ShortID="4586448">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="12"/>
@@ -1106,17 +1048,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{2C20BA22-A342-424B-9B7D-35014E2BBB0F}" ShortID="296158103">
-											<PropertyList>
-												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Gatling" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1243,54 +1174,6 @@
 								</Event>
 								<Event Name="E_Global_TimeDilatation_On" ID="{25C283D2-E5CE-4BAD-87B3-9FE094E8B9B9}">
 									<ChildrenList>
-										<Action Name="" ID="{ED5B92B4-07E2-4F47-B31F-711FBD019C7A}" ShortID="485893211">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="22"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="slow" ID="{8C60F85A-74B1-497B-8892-4EA74289AED5}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{8C5C7B85-CA7D-45A7-B25E-494C4237E4E2}" ShortID="993602314">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeInCurve" Type="int16" Value="0"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-												<Property Name="GameParameterValue" Type="Real64" Value="80"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{31DEA7F5-6F69-4CFB-A934-FFADD09AE9C3}" ShortID="363035221">
-											<PropertyList>
-												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-												<Property Name="Volume" Type="Real64" Value="-10"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Gatling" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{1810DE5A-6817-40AB-811B-B6BB0CEF0293}" ShortID="443545599">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-												<Property Name="GameParameterValue" Type="Real64" Value="-3000"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{4F2AC194-018C-4478-AD4E-28766D986658}" ShortID="939760897">
 											<PropertyList>
 												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
@@ -1317,50 +1200,6 @@
 								</Event>
 								<Event Name="E_Global_TimeDilatation_Off" ID="{0CC26995-B2E8-4B66-B66F-D7A2F4A8DA12}">
 									<ChildrenList>
-										<Action Name="" ID="{C73AC545-A6AF-43B2-9A45-E9028083F30E}" ShortID="311435412">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="22"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="normal" ID="{CBF3AD21-3794-465E-A4F8-F097A7B1B724}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{59E2CBEC-D058-4420-8004-21590A927899}" ShortID="33095763">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{79D79CC0-7850-47D5-9484-915829AB2938}" ShortID="374577550">
-											<PropertyList>
-												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Gatling" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{78944982-FE0C-4F6E-BDD2-B43C01FDD884}" ShortID="839456596">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{A56753F8-9544-4C79-84D4-C3D77AD54F1A}" ShortID="941071599">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
@@ -1590,30 +1429,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{7E65B53B-8B45-45A4-A352-4922E9BA44DA}" ShortID="293057395">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="70"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{11759FB9-69D4-419F-9A1F-A2C242B4BF7E}" ShortID="190566420">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="Delay" Type="Real64" Value="0.3"/>
-										<Property Name="FadeTime" Type="Real64" Value="3.7"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="E_Char_Heartbeat_Fast" ID="{47384D2D-FF1E-4674-9E59-5D824BA49728}">
@@ -1629,30 +1444,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Heartbeat_Fast_SEQ" ID="{B3722E34-3780-4093-90B0-2527D15414F1}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{3721D51B-399F-4B15-A3C0-94B9520EAEBC}" ShortID="190453015">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="80"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{01958C68-DC0C-44F5-87C9-5D0D373C9471}" ShortID="238007343">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="Delay" Type="Real64" Value="0.3"/>
-										<Property Name="FadeTime" Type="Real64" Value="3.7"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1678,6 +1469,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_HB_Bear_LevelUp" ID="{8227D241-FDAF-4CAB-98C5-133E5E954F88}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DA15D262-F0C2-4ED7-B474-BE373D3526AD}" ShortID="242536928">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Heartbeat" ID="{6E08BCF3-5D0A-49FE-B080-7CA14E3990BE}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
