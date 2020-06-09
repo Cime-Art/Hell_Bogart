@@ -854,6 +854,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_Mus_Kali_Break" ID="{F3AE12E9-2250-4163-8372-6E25FB0349C2}">
+							<ChildrenList>
+								<Action Name="" ID="{FDEA642D-78EF-4460-8A45-F31C1ED10AE3}" ShortID="969830746">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Kali_Break" ID="{10D79A9F-A293-4755-8D82-F5F6AC200627}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

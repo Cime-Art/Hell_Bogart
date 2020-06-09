@@ -30,10 +30,6 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Mus_Kali_Transition" ID="{73F76A83-5CF3-4289-AEF2-276A369B4C6D}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="E_Mus_Ruin_Explo" ID="{22387EE2-54A7-4AE8-B56E-324C42EC398B}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
 							<Position X="1" Y="2"/>
 						</Module>
@@ -74,7 +70,7 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="E_Mus_Kali_End" ID="{3D331523-0561-44B5-8CAC-BD08E7F0564A}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<ObjectRef Name="E_Mus_Kali_Break" ID="{F3AE12E9-2250-4163-8372-6E25FB0349C2}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
@@ -98,6 +94,10 @@
 							<Position X="4" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Mus_Kali_Transition" ID="{73F76A83-5CF3-4289-AEF2-276A369B4C6D}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Mus_Ruin_Trigger_Enigme" ID="{55D2C921-5B75-4C90-AF98-03202E416C1F}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
 							<Position X="4" Y="2"/>
 						</Module>
@@ -116,6 +116,10 @@
 						<Module>
 							<ObjectRef Name="E_Mus_Kali_25" ID="{762AD58F-9210-440A-B956-BEB28FBE2D73}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
 							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Kali_End" ID="{3D331523-0561-44B5-8CAC-BD08E7F0564A}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="5" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Mus_Ruin_End" ID="{220C3A19-F845-4D4E-889E-AB7A99E406FB}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
@@ -149,10 +153,10 @@
 						<CurrentStateRef Name="Out_PauseMenu" ID="{D3DEFC42-BF01-445F-8801-EF3B0EDA0F15}"/>
 						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
 						<CurrentStateRef Name="Phase_1" ID="{ABAAF5E5-2CDD-4FE2-9428-D76699596B9D}"/>
-						<CurrentStateRef Name="Kali_Phase1" ID="{1DC4A0E3-7262-485C-B9AD-09F065FEA9FC}"/>
+						<CurrentStateRef Name="Kali_Transition" ID="{5B68CB25-5280-46C1-9813-4ECF1085D002}"/>
 						<CurrentStateRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}"/>
 						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
-						<CurrentStateRef Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}"/>
+						<CurrentStateRef Name="C_NearEnd" ID="{0ABCA14E-FBB0-449D-89E7-9CAC3B56FFFA}"/>
 						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
 						<CurrentStateRef Name="Ruin_End_Music" ID="{78F6B36D-D4A0-445E-94BB-AAFA3DFA916F}"/>
 						<CurrentStateRef Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
