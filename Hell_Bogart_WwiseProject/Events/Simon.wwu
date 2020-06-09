@@ -1060,18 +1060,6 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{BDCD5E63-2AF5-49AE-AF8E-4103100F0501}" ShortID="185049769">
-											<PropertyList>
-												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-												<Property Name="Volume" Type="Real64" Value="-10"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Gatling" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_Global_SetOutPauseMenu" ID="{82C7AD9A-A115-4C13-AF34-10F51C0D829F}">
@@ -1106,17 +1094,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{2C20BA22-A342-424B-9B7D-35014E2BBB0F}" ShortID="296158103">
-											<PropertyList>
-												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Gatling" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1266,19 +1243,6 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{31DEA7F5-6F69-4CFB-A934-FFADD09AE9C3}" ShortID="363035221">
-											<PropertyList>
-												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-												<Property Name="Volume" Type="Real64" Value="-10"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Gatling" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{1810DE5A-6817-40AB-811B-B6BB0CEF0293}" ShortID="443545599">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="38"/>
@@ -1335,18 +1299,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{79D79CC0-7850-47D5-9484-915829AB2938}" ShortID="374577550">
-											<PropertyList>
-												<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Gatling" ID="{A02D0656-64C3-4546-809E-A9171BDAB479}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1678,6 +1630,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_HB_Bear_LevelUp" ID="{8227D241-FDAF-4CAB-98C5-133E5E954F88}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DA15D262-F0C2-4ED7-B474-BE373D3526AD}" ShortID="242536928">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Heartbeat" ID="{6E08BCF3-5D0A-49FE-B080-7CA14E3990BE}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

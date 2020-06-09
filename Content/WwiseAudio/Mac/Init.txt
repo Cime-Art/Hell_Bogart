@@ -92,7 +92,12 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	613965330	LowPassGlobalSFX_GP			\Simon\Global\LowPassGlobalSFX_GP	
+	1130989983	SFX_Volume_GP			\Simon\Global\SFX_Volume_GP	
+	1986689900	Dialog_Volume_GP			\Simon\Global\Dialog_Volume_GP	
+	2093986695	Music_Volume_GP			\Simon\Global\Music_Volume_GP	
+	2518588078	UI_Volume_GP			\Simon\Global\UI_Volume_GP	
 	3039232389	PitchGlobalSFX_GP			\Simon\Global\PitchGlobalSFX_GP	
+	3931204830	Master_Volume_GP			\Simon\Global\Master_Volume_GP	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	213475909	SFX_BUS			\Default Work Unit\Master Audio Bus\SFX_BUS	

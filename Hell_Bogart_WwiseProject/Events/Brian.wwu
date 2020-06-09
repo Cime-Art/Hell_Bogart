@@ -351,42 +351,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="E_Mob_Gardian_Hit" ID="{3F9B7232-704F-4590-B051-F3C8ACBF3D64}">
+						<Event Name="E_Mob_Gardian_HitPlayer_Charge" ID="{3F9B7232-704F-4590-B051-F3C8ACBF3D64}">
 							<ChildrenList>
 								<Action Name="" ID="{8448244F-1E97-42AC-92F9-552A1B5B8B9F}" ShortID="857513772">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="RND_HitPlayer" ID="{AB535604-D4A1-4BBC-8387-4D82C381F3F6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{91D081DD-F13C-4B59-9023-3D92BA0D781D}" ShortID="519529367">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Stomp" ID="{124A9806-9A2B-4EE3-B0EE-453B248BB831}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{DE4FAC43-D0F9-4AEC-B71E-BC91EC40B543}" ShortID="848359300">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Footstep" ID="{7335A19C-0C1D-458F-BEBE-17341190BCB4}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{1E27AE6A-1E47-4F28-96BE-5AA53D5733E5}" ShortID="38476389">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Charge" ID="{84A2DD00-4B1D-4A3E-8B9C-A8C78113EACB}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+											<ObjectRef Name="RND_HitPlayer_Charge" ID="{AB535604-D4A1-4BBC-8387-4D82C381F3F6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -424,6 +394,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MobStoneGuardian_Iddle_BLEND" ID="{8A09F1FD-5312-4E68-80AB-8C94E81B4E05}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Mob_Gardian_HitPlayer_Attacks" ID="{130FA529-0708-4218-870A-94203D290661}">
+							<ChildrenList>
+								<Action Name="" ID="{69600D04-D262-463C-92FC-4C59EEB103AF}" ShortID="194772287">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RND_HitPlayer_Attacks" ID="{87E1E01E-B231-4845-ADD4-44E5B71EE539}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
