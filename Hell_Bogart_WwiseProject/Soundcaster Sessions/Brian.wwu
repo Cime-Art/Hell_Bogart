@@ -132,11 +132,11 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
+							<GameParameterRef Name="PitchGlobal_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
+							<GameParameterRef Name="LowPassGlobal_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
