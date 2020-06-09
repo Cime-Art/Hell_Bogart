@@ -1186,13 +1186,13 @@
 					<ShortName>VOICE_HB_Bear_GrenadeEnd_1-2_SweetSound.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_GrenadeEnd_1-2_SweetSound_10C4C929.wem</Path>
 				</File>
-				<File Id="73201851" Language="SFX">
-					<ShortName>HB_SFX_Kaliboss_Exhaust.wav</ShortName>
-					<Path>SFX\HB_SFX_Kaliboss_Exhaust_10C4C929.wem</Path>
-				</File>
 				<File Id="73726998" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Death_06.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_Death_06_10C4C929.wem</Path>
+				</File>
+				<File Id="73747994" Language="SFX">
+					<ShortName>HB_SFX_Kali_Foley_Slam_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Kali_Foley_Slam_01_595CFAF0.wem</Path>
 				</File>
 				<File Id="75956231" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_5-2_KnockKnockWhosThere.wav</ShortName>
@@ -2402,10 +2402,6 @@
 					<ShortName>suffer.WAV</ShortName>
 					<Path>SFX\suffer_EC886278.wem</Path>
 				</File>
-				<File Id="504930716" Language="SFX">
-					<ShortName>HB_SFX_Kaliboss_Slams.wav</ShortName>
-					<Path>SFX\HB_SFX_Kaliboss_Slams_66C02B12.wem</Path>
-				</File>
 				<File Id="505838822" Language="SFX">
 					<ShortName>HB-SFX-GenadeElec-02.wav</ShortName>
 					<Path>SFX\HB-SFX-GenadeElec-02_66C02B12.wem</Path>
@@ -3421,6 +3417,10 @@
 				<File Id="910590706" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Reload_Out_01_BF58B340.wem</Path>
+				</File>
+				<File Id="913558526" Language="SFX">
+					<ShortName>HB_SFX_Kali_Exhaust_Colere_01.wav</ShortName>
+					<Path>SFX\HB_SFX_Kali_Exhaust_Colere_01_39FCC92C.wem</Path>
 				</File>
 				<File Id="914170520" Language="SFX">
 					<ShortName>HB_Footstep_HerbesSèches_01.wav</ShortName>

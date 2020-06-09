@@ -251,7 +251,7 @@
 										<Action Name="" ID="{B8E1C467-EA97-4990-B218-D2AFBC33B5E7}" ShortID="583187041">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="HB_SFX_Kaliboss_Slams" ID="{6225F7CD-9549-4F99-B7E5-1809E1855456}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+													<ObjectRef Name="HB_SFX_Kaliboss_RageSlams" ID="{D98F957C-2EA7-43FF-9FE9-7E3468A5EDF1}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
