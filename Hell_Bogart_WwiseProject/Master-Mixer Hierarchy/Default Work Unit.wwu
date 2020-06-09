@@ -48,7 +48,7 @@
 										<RTPC Name="" ID="{9766EEA9-308E-40E7-99EA-6596B7D0F4E5}" ShortID="94013435">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+													<ObjectRef Name="LowPassGlobal_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{A06ADE73-8C97-4150-B534-FAE6F429051D}">
@@ -76,7 +76,7 @@
 										<RTPC Name="" ID="{611018F1-A4EF-4270-A6F5-4061FBEEFEC3}" ShortID="668974941">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="PitchGlobalSFX_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+													<ObjectRef Name="PitchGlobal_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{838B9381-0EF1-427B-ADDF-44E9C6FCDDC4}">
@@ -326,7 +326,7 @@
 										<RTPC Name="" ID="{DAE1F710-6A91-443C-9F27-61D79B74985E}" ShortID="712695300">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="LowPassGlobalSFX_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+													<ObjectRef Name="LowPassGlobal_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{40E00B61-8521-4B00-94E1-06176520C004}">
