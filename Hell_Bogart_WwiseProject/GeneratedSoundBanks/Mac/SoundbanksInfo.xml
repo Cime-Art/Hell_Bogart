@@ -852,6 +852,10 @@
 					<ShortName>MUS_HB_Ruines_Tambour_00.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Tambour_00_EA9615DC.wem</Path>
 				</File>
+				<File Id="998443040" Language="SFX">
+					<ShortName>Cykodd - End Phase 1.wav</ShortName>
+					<Path>SFX\Cykodd - End Phase 1_EA9615DC.wem</Path>
+				</File>
 				<File Id="1029166442" Language="SFX">
 					<ShortName>MUS_HB_Ruines_Snare_01.wav</ShortName>
 					<Path>SFX\MUS_HB_Ruines_Snare_01_EA9615DC.wem</Path>
@@ -1192,7 +1196,7 @@
 				</File>
 				<File Id="73747994" Language="SFX">
 					<ShortName>HB_SFX_Kali_Foley_Slam_01.wav</ShortName>
-					<Path>SFX\HB_SFX_Kali_Foley_Slam_01_595CFAF0.wem</Path>
+					<Path>SFX\HB_SFX_Kali_Foley_Slam_01_D5A7F552.wem</Path>
 				</File>
 				<File Id="75956231" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_5-2_KnockKnockWhosThere.wav</ShortName>
@@ -3420,7 +3424,7 @@
 				</File>
 				<File Id="913558526" Language="SFX">
 					<ShortName>HB_SFX_Kali_Exhaust_Colere_01.wav</ShortName>
-					<Path>SFX\HB_SFX_Kali_Exhaust_Colere_01_39FCC92C.wem</Path>
+					<Path>SFX\HB_SFX_Kali_Exhaust_Colere_01_283679A3.wem</Path>
 				</File>
 				<File Id="914170520" Language="SFX">
 					<ShortName>HB_Footstep_HerbesSèches_01.wav</ShortName>

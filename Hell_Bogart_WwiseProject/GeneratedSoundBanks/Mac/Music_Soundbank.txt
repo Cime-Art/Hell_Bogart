@@ -51,6 +51,7 @@ State	ID	Name	State Group			Notes
 	2908770792	C_NearEnd	Music_Kali_Phase_STATE			
 	4072653359	B_Middle	Music_Kali_Phase_STATE			
 	0	None	Music_Kali_STATE			
+	1398255096	Kali_Break	Music_Kali_STATE			
 	2261316454	Kali_Transition	Music_Kali_STATE			
 	2615845689	Kali_Phase1	Music_Kali_STATE			
 	2615845690	Kali_Phase2	Music_Kali_STATE			
@@ -146,6 +147,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	930171474	Transition	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - Transition Boss_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_Boss_Phase2\Transition\Transition		544121
 	947932089	MUS_HB_Ruines_Amb	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Amb_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Explo_LOOP\MUS_Ruin_Amb_01\MUS_HB_Ruines_Amb		1479809
 	951005522	MUS_HB_Ruines_Tambour	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Tambour_00_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_Tambour		1775244
+	998443040	Cykodd - End Phase 1	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Cykodd - End Phase 1_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Kali_Fight_MAIN_SWITCH\MUS_HB_Kali_Break\Break\Cykodd - End Phase 1		212839
 	1029166442	MUS_HB_Ruines_Snare	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Snare_01_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Music_Ruin_MAIN_SWITCH\MUS_Ruin_Fight_LOOP\MUS_Ruin_Fight_SEG\MUS_HB_Ruines_Snare		765889
 	1040288944	MUS_HB_Ruines_Start	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Ruines_Start_02_EA9615DC.wem		\Interactive Music Hierarchy\Brian\Transition\MUS_HB_Ruines_Start\MUS_HB_Ruines_Start		442083
 	1042611356	Event Enigme Chest	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\MUS_HB_Jungle_Enigme_Chest_Event_02_EA9615DC.wem		\Interactive Music Hierarchy\Simon\Jungle\Events\Mus_Jungle_Event_Found_Chest\Event Enigme Chest		434871

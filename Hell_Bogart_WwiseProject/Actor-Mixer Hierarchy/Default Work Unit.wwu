@@ -31717,11 +31717,6 @@
 																<Value>89</Value>
 															</ValueList>
 														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -32238,7 +32233,7 @@
 													<PropertyList>
 														<Property Name="InitialDelay" Type="Real64">
 															<ValueList>
-																<Value>1</Value>
+																<Value>0.5</Value>
 															</ValueList>
 														</Property>
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>

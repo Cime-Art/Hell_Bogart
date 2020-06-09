@@ -136,12 +136,36 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Master_Volume_GP" ID="{FDC7E319-4A9F-4140-9767-9860AAFC4119}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PitchGlobal_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Music_Volume_GP" ID="{2058B59F-F96C-426F-941E-7D3E119AA616}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LowPassNoHit_GP" ID="{72064AAB-5DA6-4378-BD83-A679CF1787F9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Dialog_Volume_GP" ID="{B3D601AC-9ED8-44FC-815E-0875E9E41F09}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume_GP" ID="{6BB572BF-943A-47CC-892E-05ECAC428636}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobal_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="UI_Volume_GP" ID="{762B362E-3A2E-4879-9E24-41940E280A3C}"/>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
@@ -156,7 +180,7 @@
 						<CurrentStateRef Name="Kali_Transition" ID="{5B68CB25-5280-46C1-9813-4ECF1085D002}"/>
 						<CurrentStateRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}"/>
 						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
-						<CurrentStateRef Name="C_NearEnd" ID="{0ABCA14E-FBB0-449D-89E7-9CAC3B56FFFA}"/>
+						<CurrentStateRef Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}"/>
 						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
 						<CurrentStateRef Name="Ruin_End_Music" ID="{78F6B36D-D4A0-445E-94BB-AAFA3DFA916F}"/>
 						<CurrentStateRef Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
