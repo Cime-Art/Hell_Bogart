@@ -31,6 +31,11 @@
 								<Property Name="Min" Type="Real64" Value="-4800"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="LowPassNoHit_GP" ID="{72064AAB-5DA6-4378-BD83-A679CF1787F9}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Volumes" ID="{9151C3E9-6BD8-4ADE-A615-243C3224915E}" ShortID="917275972">

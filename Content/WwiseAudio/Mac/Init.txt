@@ -78,19 +78,18 @@ Custom State	ID	Name	State Group	Owner		Notes
 	53983401	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Ruines_Reverb_VOICE_AUX		
 	199726813	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Boss_Arena_Reverb_VOICE_AUX		
 	227948264	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Boss_Arena_Reverb_VOICE_AUX		
-	253057875	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX		
-	382833313	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX\Exterior_Delay_SFX_AUX		
-	490763632	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX\Exterior_Delay_SFX_AUX		
-	593548003	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX		
+	253057875	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX		
+	382833313	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Exterior_Delay_SFX_AUX		
+	490763632	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Exterior_Delay_SFX_AUX		
+	593548003	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX		
 	634032679	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Exterior_Delay_VOICE_AUX		
 	676774401	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Exterior_Delay_VOICE_AUX		
-	693720903	slow	TempDilatation	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS		
-	795241229	slow	TempDilatation	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS		
-	898817968	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX		
+	898817968	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX		
 	901687306	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Ruines_Reverb_VOICE_AUX		
-	929591680	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX		
+	929591680	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	127213604	LowPassNoHit_GP			\Simon\Global\LowPassNoHit_GP	
 	1130989983	SFX_Volume_GP			\Simon\Volumes\SFX_Volume_GP	
 	1986689900	Dialog_Volume_GP			\Simon\Volumes\Dialog_Volume_GP	
 	2093986695	Music_Volume_GP			\Simon\Volumes\Music_Volume_GP	
@@ -102,25 +101,27 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	213475909	SFX_BUS			\Default Work Unit\Master Audio Bus\SFX_BUS	
 	287439398	VOICE_BUS			\Default Work Unit\Master Audio Bus\VOICE_BUS	
+	678306714	SFX_Hits_SUBBUS			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Hits_SUBBUS	
 	816404173	Normal_Voices_SUBBUS			\Default Work Unit\Master Audio Bus\VOICE_BUS\Normal_Voices_SUBBUS	
+	838997239	SFX_Global_SUBBUS			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS	
 	940753649	MUS_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS	
 	1063822303	Special_Voices_SUBBUS			\Default Work Unit\Master Audio Bus\VOICE_BUS\Special_Voices_SUBBUS	
 	1614488460	Jungle_Explo_Melodic_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS\Jungle_Explo_Melodic_BUS	
-	1705288062	KaliBoss_SFX_SUBBUS			\Default Work Unit\Master Audio Bus\SFX_BUS\KaliBoss_SFX_SUBBUS	
+	1705288062	KaliBoss_SFX_SUBBUS			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\KaliBoss_SFX_SUBBUS	
 	2897849027	Acoustics_VOICE_AUX			\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX	
 	3119335404	Jungle_Event_Enigme_Chest_BUS			\Default Work Unit\Master Audio Bus\MUS_BUS\Jungle_Event_Enigme_Chest_BUS	
 	3247222208	UI_BUS			\Default Work Unit\Master Audio Bus\UI_BUS	
-	3345619404	Acoustics_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX	
+	3345619404	Acoustics_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	551895716	Exterior_Delay_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX\Exterior_Delay_SFX_AUX	
+	551895716	Exterior_Delay_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Exterior_Delay_SFX_AUX	
 	1014541758	Ruines_Reverb_VOICE_AUX			\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Ruines_Reverb_VOICE_AUX	
-	1935262472	Kali_BigAddRev_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\KaliBoss_SFX_SUBBUS\Kali_BigAddRev_AUX	
+	1935262472	Kali_BigAddRev_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\KaliBoss_SFX_SUBBUS\Kali_BigAddRev_AUX	
 	2020712413	Boss_Arena_Reverb_VOICE_AUX			\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Boss_Arena_Reverb_VOICE_AUX	
 	2085982635	Exterior_Delay_VOICE_AUX			\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Exterior_Delay_VOICE_AUX	
-	3470633618	Boss_Arena_Reverb_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX	
-	3808842621	Ruines_Reverb_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX	
+	3470633618	Boss_Arena_Reverb_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX	
+	3808842621	Ruines_Reverb_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
