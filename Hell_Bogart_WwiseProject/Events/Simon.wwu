@@ -1724,7 +1724,7 @@
 												<Action Name="" ID="{79EF9A97-E06B-4DE9-BDD8-505785B754B7}" ShortID="489673713">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_LosingLife_RND" ID="{63F64CA7-D750-4E21-95B4-5FE02F64C31D}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+															<ObjectRef Name="Bear_Speech_LosingLife_Speech_RND" ID="{6FF02BEA-821F-465A-BA9A-5583F01E5A68}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
