@@ -539,26 +539,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{900993A0-580B-4555-B180-F47ACECC3916}" ShortID="789069707">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MUS_Ruin_Fight_LOOP" ID="{3A2C7952-E01A-4760-A4CB-92F21568D10E}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{62C4D1D5-085B-42DB-89A7-4F7ECFA4C661}" ShortID="182994061">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MUS_Ruin_GardianFight_LOOP" ID="{569E862E-21CB-4C45-80A0-A251E5E981F2}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="E_Mus_Ruin_Fight" ID="{8A0C29B6-59E4-4F08-8889-8A4A4A1A84EE}">
@@ -584,26 +564,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Ruin_GardianFight" ID="{A093A748-6BEF-4677-BDFA-5629D3114C59}" WorkUnitID="{D3551A93-4F65-41C2-A253-AAD55A43CF82}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{F7A4A967-6602-4EFB-80C5-DF8D52C639FD}" ShortID="31847554">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MUS_Ruin_Explo_LOOP" ID="{197B58DA-CB36-4005-80E9-31E40470A918}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{58A20BC2-B253-4799-A52F-28B1F67D9A01}" ShortID="998987383">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MUS_Ruin_Fight_LOOP" ID="{3A2C7952-E01A-4760-A4CB-92F21568D10E}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

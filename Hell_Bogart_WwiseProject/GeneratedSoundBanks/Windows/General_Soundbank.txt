@@ -267,7 +267,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	621608583	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Jungle Charlie\Iddle\Iddle_MobJungleCharlie_SEQ\Silence\Wwise Silence	
 	686320853	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviro\AMB\Iddle Charlie Amb\Iddle_MobJungleCharlie_SEQ\Silence\Wwise Silence	
 	744030259	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\UI\HUD\Heartbeat\Heartbeat_Fast_SEQ\Silence_HeartbeatFast\Wwise Silence	
-	752133274	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Voices Global System\Bear Voice\Loosing Life\Bear_Speech_LosingLife_RND\No_Speech_LosingLife\Wwise Silence	
 	926351302	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Voices Global System\Bear Voice\Against Charlie\Bear_Speach_AgainstCharlie_DuringFight_SEQ_CONT\Bear_Speech_AgainstCharlie_EngageFight_RND\No_Speech_AgainstCharlie_EngageFight\Wwise Silence	
 	1009282840	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Voices Global System\Bear Voice\Loot\Bear_Speech_Loot_Legendary_RND\No_Speech_Loot_Legendary\Wwise Silence	
 
