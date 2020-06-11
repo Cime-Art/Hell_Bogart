@@ -1049,7 +1049,7 @@
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2154,6 +2154,11 @@
 												<Property Name="Color" Type="int16" Value="15"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -4602,7 +4607,7 @@
 												<CustomState Name="" ID="{947438EC-4589-47B2-9150-64B06D1C7103}" ShortID="558616319">
 													<PropertyList>
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-														<Property Name="MakeUpGain" Type="Real64" Value="-3"/>
+														<Property Name="MakeUpGain" Type="Real64" Value="-9"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
