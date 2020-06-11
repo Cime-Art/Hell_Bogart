@@ -1049,7 +1049,7 @@
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1445,6 +1445,20 @@
 											</ReferenceList>
 											<ChildrenList>
 												<SwitchContainer Name="SWITCH_Footstep" ID="{E4AABB5D-7B01-4808-96F5-2FD77EDC6110}" ShortID="681068716">
+													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1849,7 +1863,19 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="RND_GetHit" ID="{702339D9-7B41-4D6B-85FD-1E60BD8580CA}" ShortID="440840681">
 													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-4</Value>
@@ -1956,6 +1982,20 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="HB-SFX-Gardian-EndCharge" ID="{101704A1-4FEA-4291-8512-AEAA29B44E34}" ShortID="833070667">
+													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1975,6 +2015,20 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="HB-SFX-Gardian-StartCharge" ID="{F4DE4257-C3EF-42EB-9B96-E614F4566D71}" ShortID="964600918">
+													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -2010,8 +2064,20 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="RND_Stomp" ID="{3CDD4C14-1A06-4725-B578-7CD7085F0370}" ShortID="328637155">
 													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -2087,6 +2153,12 @@
 											<PropertyList>
 												<Property Name="Color" Type="int16" Value="15"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2102,7 +2174,19 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="RND_HitPlayer_Charge" ID="{AB535604-D4A1-4BBC-8387-4D82C381F3F6}" ShortID="650526185">
 													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-3</Value>
@@ -2199,8 +2283,20 @@
 												<RandomSequenceContainer Name="RND_HitPlayer_Attacks" ID="{87E1E01E-B231-4845-ADD4-44E5B71EE539}" ShortID="629267785">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-3</Value>
@@ -2481,7 +2577,24 @@
 											<ChildrenList>
 												<BlendContainer Name="MobStoneGuardian_Iddle_BLEND" ID="{8A09F1FD-5312-4E68-80AB-8C94E81B4E05}" ShortID="787628285">
 													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="BlendBehavior" Type="int16" Value="1"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="OverridePriority" Type="bool" Value="True"/>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+														<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -4494,7 +4607,7 @@
 												<CustomState Name="" ID="{947438EC-4589-47B2-9150-64B06D1C7103}" ShortID="558616319">
 													<PropertyList>
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-														<Property Name="MakeUpGain" Type="Real64" Value="-3"/>
+														<Property Name="MakeUpGain" Type="Real64" Value="-9"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -26330,7 +26443,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>3</Value>
+																<Value>6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
