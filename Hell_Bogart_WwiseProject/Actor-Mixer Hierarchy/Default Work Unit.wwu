@@ -4627,7 +4627,11 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
-												<CustomState Name="" ID="{5B080043-5A7A-42F0-B795-14A6C3662EB3}" ShortID="915371895"/>
+												<CustomState Name="" ID="{5B080043-5A7A-42F0-B795-14A6C3662EB3}" ShortID="915371895">
+													<PropertyList>
+														<Property Name="MakeUpGain" Type="Real64" Value="4"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
@@ -26802,6 +26806,11 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>

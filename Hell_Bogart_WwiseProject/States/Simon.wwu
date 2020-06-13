@@ -59,7 +59,7 @@
 								<Transition>
 									<StartState Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
 									<EndState Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
-									<Time>0.2</Time>
+									<Time>0.1</Time>
 									<IsShared>true</IsShared>
 								</Transition>
 							</TransitionList>
@@ -95,6 +95,9 @@
 							</TransitionList>
 						</StateGroup>
 						<StateGroup Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<State Name="None" ID="{99508074-D0B5-4286-8BF2-BD358242ADBE}"/>
 								<State Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
