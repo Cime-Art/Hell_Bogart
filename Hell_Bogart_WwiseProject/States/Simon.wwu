@@ -35,6 +35,7 @@
 								<State Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
 								<State Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
 								<State Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
+								<State Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
 							</ChildrenList>
 							<TransitionList>
 								<Transition>
@@ -53,6 +54,12 @@
 									<StartState Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
 									<EndState Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
 									<Time>1</Time>
+									<IsShared>true</IsShared>
+								</Transition>
+								<Transition>
+									<StartState Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+									<EndState Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+									<Time>0.2</Time>
 									<IsShared>true</IsShared>
 								</Transition>
 							</TransitionList>

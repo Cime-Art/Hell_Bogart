@@ -207,8 +207,31 @@
 											<ChildrenList>
 												<AuxBus Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}">
 													<ReferenceList>
-														<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-															<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
+																<Effect Name="Have_U_Ever_Been_Outside_(Custom)" ID="{B9A8AE25-7B2F-48D4-A93D-D4C978BF3078}" ShortID="772888565" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DecayTime" Type="Real32" Value="1"/>
+																		<Property Name="Density" Type="Real32" Value="91"/>
+																		<Property Name="ERLevel" Type="Real32" Value="-18"/>
+																		<Property Name="ERPattern" Type="int32" Value="29"/>
+																		<Property Name="EnableToneControls" Type="bool" Value="True"/>
+																		<Property Name="Filter1Freq" Type="Real32" Value="830"/>
+																		<Property Name="Filter1Gain" Type="Real32" Value="-24"/>
+																		<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
+																		<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
+																		<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
+																		<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+																		<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
+																		<Property Name="HFDamping" Type="Real32" Value="3.3"/>
+																		<Property Name="PreDelay" Type="Real32" Value="103"/>
+																		<Property Name="Quality" Type="int32" Value="12"/>
+																		<Property Name="ReverbLevel" Type="Real32" Value="-28"/>
+																		<Property Name="RoomShape" Type="Real32" Value="59"/>
+																		<Property Name="RoomSize" Type="Real32" Value="-100"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
 														</Reference>
 													</ReferenceList>
 													<StateInfo>
@@ -233,6 +256,14 @@
 															<CustomState>
 																<StateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
 																<CustomState Name="" ID="{6BB64FD5-7AD8-4817-8CE3-FA7C1A50F605}" ShortID="382833313">
+																	<PropertyList>
+																		<Property Name="BusVolume" Type="Real64" Value="-108"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+																<CustomState Name="" ID="{C81C6E40-B9FF-43E3-9913-2EDF46406DFC}" ShortID="512479576">
 																	<PropertyList>
 																		<Property Name="BusVolume" Type="Real64" Value="-108"/>
 																	</PropertyList>
@@ -274,6 +305,14 @@
 																	</PropertyList>
 																</CustomState>
 															</CustomState>
+															<CustomState>
+																<StateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+																<CustomState Name="" ID="{9543C984-C6C9-4E19-B439-CD6BA1CC569D}" ShortID="411571426">
+																	<PropertyList>
+																		<Property Name="BusVolume" Type="Real64" Value="-108"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
 														</CustomStateList>
 													</StateInfo>
 												</AuxBus>
@@ -309,6 +348,93 @@
 															<CustomState>
 																<StateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
 																<CustomState Name="" ID="{FDB9B328-3DC2-410B-9173-C31239EF8D35}" ShortID="427383939"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+																<CustomState Name="" ID="{AF7AC260-1E0D-47E6-AEB4-928B8FEFDF22}" ShortID="472765332">
+																	<PropertyList>
+																		<Property Name="BusVolume" Type="Real64" Value="-108"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+												</AuxBus>
+												<AuxBus Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}">
+													<ReferenceList>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Stereo_Delay_(Custom)" ID="{F2C1C6F0-D2C6-4294-BFD2-E1CC0CC64FF9}" ShortID="460801095" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32" Value="-96"/>
+																		<Property Name="RightDelayTime" Type="Real32" Value="0.12"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-12"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="Effect1">
+															<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
+																<Effect Name="Have_U_Ever_Been_Outside_(Custom)" ID="{DBF848AD-D606-4C68-BC63-8333EBFCAEA6}" ShortID="526505807" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DecayTime" Type="Real32" Value="2"/>
+																		<Property Name="Density" Type="Real32" Value="91"/>
+																		<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																		<Property Name="ERLevel" Type="Real32" Value="-18"/>
+																		<Property Name="ERPattern" Type="int32" Value="29"/>
+																		<Property Name="EnableToneControls" Type="bool" Value="True"/>
+																		<Property Name="Filter1Freq" Type="Real32" Value="3370"/>
+																		<Property Name="Filter1Gain" Type="Real32" Value="-24"/>
+																		<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
+																		<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
+																		<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
+																		<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+																		<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
+																		<Property Name="HFDamping" Type="Real32" Value="3.3"/>
+																		<Property Name="PreDelay" Type="Real32" Value="103"/>
+																		<Property Name="Quality" Type="int32" Value="12"/>
+																		<Property Name="ReverbLevel" Type="Real32" Value="-7"/>
+																		<Property Name="RoomShape" Type="Real32" Value="59"/>
+																		<Property Name="RoomSize" Type="Real32" Value="-100"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="Acoustic_STATE" ID="{ADEED407-5BAD-4BFD-8E19-6306DBDB07C6}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+																<CustomState Name="" ID="{B235D5DD-EFBD-4396-B1A6-D54964EF9944}" ShortID="640146320">
+																	<PropertyList>
+																		<Property Name="BusVolume" Type="Real64" Value="-108"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
+																<CustomState Name="" ID="{BFA7CF52-4399-4BC2-A1D8-F8B4065CF602}" ShortID="565954907">
+																	<PropertyList>
+																		<Property Name="BusVolume" Type="Real64" Value="-108"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
+																<CustomState Name="" ID="{750CB277-1104-4EB5-B1AB-28F9F9FF44F9}" ShortID="731664157">
+																	<PropertyList>
+																		<Property Name="BusVolume" Type="Real64" Value="-108"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+																<CustomState Name="" ID="{D98ADAA2-DBE2-4732-A2FC-DBB9AD2729B4}" ShortID="940141083"/>
 															</CustomState>
 														</CustomStateList>
 													</StateInfo>
@@ -529,6 +655,14 @@
 															</PropertyList>
 														</CustomState>
 													</CustomState>
+													<CustomState>
+														<StateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+														<CustomState Name="" ID="{13D74832-7CEA-49CC-A14B-DAEF75C3EC30}" ShortID="12690218">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
 												</CustomStateList>
 											</StateInfo>
 										</AuxBus>
@@ -560,6 +694,14 @@
 													<CustomState>
 														<StateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
 														<CustomState Name="" ID="{03CEC49C-7B1D-4027-BDB6-D33D56E3A9AF}" ShortID="901687306">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+														<CustomState Name="" ID="{79EE6688-E290-48AB-8773-AB589718506F}" ShortID="956051545">
 															<PropertyList>
 																<Property Name="BusVolume" Type="Real64" Value="-108"/>
 															</PropertyList>
@@ -600,6 +742,100 @@
 													<CustomState>
 														<StateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
 														<CustomState Name="" ID="{3880339C-3926-4865-A16E-42191BB5140F}" ShortID="694662357"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+														<CustomState Name="" ID="{73EAFA73-F894-4A70-9D7F-2C7936F740E0}" ShortID="686997410">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+										</AuxBus>
+										<AuxBus Name="Bridge_Voices_AUX" ID="{F59E8F53-5CC2-48BF-BF89-3B6B2DD406DD}">
+											<PropertyList>
+												<Property Name="BypassEffect1" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Stereo_Delay_(Custom)" ID="{99221D25-3D2C-4352-8DDA-33FFABEB958C}" ShortID="316662969" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+															<PropertyList>
+																<Property Name="DryLevel" Type="Real32" Value="-96"/>
+																<Property Name="RightDelayTime" Type="Real32" Value="0.12"/>
+																<Property Name="WetLevel" Type="Real32" Value="-12"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
+														<Effect Name="Have_U_Ever_Been_Outside_(Custom)" ID="{B2A7A836-4D72-43BC-8C52-7C09CDA7B630}" ShortID="621182314" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="2"/>
+																<Property Name="Density" Type="Real32" Value="91"/>
+																<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-18"/>
+																<Property Name="ERPattern" Type="int32" Value="29"/>
+																<Property Name="EnableToneControls" Type="bool" Value="True"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="3370"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-24"/>
+																<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
+																<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
+																<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.3"/>
+																<Property Name="PreDelay" Type="Real32" Value="103"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-7"/>
+																<Property Name="RoomShape" Type="Real32" Value="59"/>
+																<Property Name="RoomSize" Type="Real32" Value="-100"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Acoustic_STATE" ID="{ADEED407-5BAD-4BFD-8E19-6306DBDB07C6}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+														<CustomState Name="" ID="{30381FDE-2DA6-4B37-B480-2D40D379AC2A}" ShortID="511591900">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Ruines" ID="{51BECB04-EC61-428F-B59A-AC8130FA55F6}"/>
+														<CustomState Name="" ID="{9E4DCA08-599A-4D06-AC7C-A2E7F30F003F}" ShortID="351975188">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
+														<CustomState Name="" ID="{8079B9EC-FCFD-4FF8-9CF4-27785E146520}" ShortID="1015811239">
+															<PropertyList>
+																<Property Name="BusVolume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+														<CustomState Name="" ID="{B6CE54CF-7B74-4850-985A-8F7A538A0A10}" ShortID="420612908"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>

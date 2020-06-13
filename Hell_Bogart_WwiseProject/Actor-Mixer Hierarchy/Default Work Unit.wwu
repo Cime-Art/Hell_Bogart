@@ -1030,6 +1030,9 @@
 						<Reference Name="UserAuxSend2">
 							<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 						</Reference>
+						<Reference Name="UserAuxSend3">
+							<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Mobs" ID="{51EE8A80-79CB-4C09-968E-4ADAC41C930B}" ShortID="752623611">
@@ -4585,6 +4588,30 @@
 													</ChildrenList>
 												</BlendContainer>
 											</ChildrenList>
+											<StateInfo>
+												<StatePropertyList>
+													<Property Name="Volume"/>
+												</StatePropertyList>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+														<CustomState Name="" ID="{2D141BE6-17AD-4D4C-94FC-44918DBC236F}" ShortID="702410254"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+														<CustomState Name="" ID="{02C12B79-A61B-437B-8917-2E9992D7B70B}" ShortID="307412873">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</ActorMixer>
 									</ChildrenList>
 									<StateInfo>
@@ -26248,6 +26275,9 @@
 						</Reference>
 						<Reference Name="UserAuxSend2">
 							<ObjectRef Name="Boss_Arena_Reverb_VOICE_AUX" ID="{F04BB13B-4325-4956-B546-36D7D50240B3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+						</Reference>
+						<Reference Name="UserAuxSend3">
+							<ObjectRef Name="Bridge_Voices_AUX" ID="{F59E8F53-5CC2-48BF-BF89-3B6B2DD406DD}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

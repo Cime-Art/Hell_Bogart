@@ -45,6 +45,7 @@ State	ID	Name	State Group			Notes
 	433216386	Explosive	Equiped_Grenade_Type_STATE			
 	2678880713	Fire	Equiped_Grenade_Type_STATE			
 	0	None	Acoustic_STATE			
+	2068062714	Bridge	Acoustic_STATE			
 	2213992659	Exterior	Acoustic_STATE			
 	3265560855	Ruines	Acoustic_STATE			
 	4129822198	Boss_Arena	Acoustic_STATE			
@@ -76,18 +77,30 @@ State	ID	Name	State Group			Notes
 	2582085496	Exploration	Jungle_Music_STATE			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	12690218	Bridge	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Exterior_Delay_VOICE_AUX		
 	53983401	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Ruines_Reverb_VOICE_AUX		
 	199726813	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Boss_Arena_Reverb_VOICE_AUX		
 	227948264	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Boss_Arena_Reverb_VOICE_AUX		
 	253057875	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX		
+	351975188	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Bridge_Voices_AUX		
 	382833313	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Exterior_Delay_SFX_AUX		
+	411571426	Bridge	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX		
+	472765332	Bridge	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX		
 	490763632	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Exterior_Delay_SFX_AUX		
+	511591900	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Bridge_Voices_AUX		
+	512479576	Bridge	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Exterior_Delay_SFX_AUX		
+	565954907	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Bridge_SFX_AUX		
 	593548003	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX		
 	634032679	Ruines	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Exterior_Delay_VOICE_AUX		
+	640146320	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Bridge_SFX_AUX		
 	676774401	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Exterior_Delay_VOICE_AUX		
+	686997410	Bridge	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Boss_Arena_Reverb_VOICE_AUX		
+	731664157	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Bridge_SFX_AUX		
 	898817968	Exterior	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX		
 	901687306	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Ruines_Reverb_VOICE_AUX		
 	929591680	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX		
+	956051545	Bridge	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Ruines_Reverb_VOICE_AUX		
+	1015811239	Boss_Arena	Acoustic_STATE	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Bridge_Voices_AUX		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	127213604	LowPassNoHit_GP			\Simon\Global\LowPassNoHit_GP	
@@ -121,12 +134,19 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1935262472	Kali_BigAddRev_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\KaliBoss_SFX_SUBBUS\Kali_BigAddRev_AUX	
 	2020712413	Boss_Arena_Reverb_VOICE_AUX			\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Boss_Arena_Reverb_VOICE_AUX	
 	2085982635	Exterior_Delay_VOICE_AUX			\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Exterior_Delay_VOICE_AUX	
+	3302912223	Bridge_Voices_AUX			\Default Work Unit\Master Audio Bus\VOICE_BUS\Acoustics_VOICE_AUX\Bridge_Voices_AUX	
 	3470633618	Boss_Arena_Reverb_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Boss_Arena_Reverb_SFX_AUX	
 	3808842621	Ruines_Reverb_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Ruines_Reverb_SFX_AUX	
+	3877409713	Bridge_SFX_AUX			\Default Work Unit\Master Audio Bus\SFX_BUS\SFX_Global_SUBBUS\Acoustics_SFX_AUX\Bridge_SFX_AUX	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	221328566	Room_Large_(Custom)	Wwise RoomVerb			
+	316662969	Wwise_Stereo_Delay_(Custom)	Wwise Stereo Delay			
+	460801095	Wwise_Stereo_Delay_(Custom)	Wwise Stereo Delay			
+	526505807	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
+	621182314	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
+	772888565	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
 	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
 	3442768367	Hall_Large_Dark	Wwise RoomVerb			
 

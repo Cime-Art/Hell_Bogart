@@ -238,6 +238,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	121088226	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Grenade		
 	185936182	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Jungle Charlie\Dot Element		
 	216675186	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Grenade		
+	307412873	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Stone Gardian\Iddle		
 	353109436	Ammo_2	Equiped_Ammo_Rarity_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Shotgun\Power_Layer_RND		
 	491515353	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Jungle Charlie\Desintegration		
 	510064631	Disable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Gatling		

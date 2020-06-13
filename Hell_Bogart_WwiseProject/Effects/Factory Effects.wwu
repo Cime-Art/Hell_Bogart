@@ -154,6 +154,10 @@
 										<StateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
 										<CustomState Name="" ID="{3D1CD346-F802-4525-A46E-02A7FE2C71C5}" ShortID="728941519"/>
 									</CustomState>
+									<CustomState>
+										<StateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+										<CustomState Name="" ID="{C4EF3F3C-D4F3-42E2-BE6D-63FB8CE625E0}" ShortID="301014520"/>
+									</CustomState>
 								</CustomStateList>
 							</StateInfo>
 						</Effect>
