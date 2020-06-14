@@ -7103,6 +7103,388 @@
 										</MusicCue>
 									</CueList>
 								</MusicSegment>
+								<MusicSegment Name="Mus_Jungle_Event_Begin_Intro" ID="{B7E3FF1E-E4ED-488C-95B8-CEA4C48CC8B9}" ShortID="965229655">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="18375"/>
+										<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Music_Conversion_Settings" ID="{A41B3C03-D345-4072-9F0D-207252976325}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Block" ID="{B1BE2069-DE80-42DD-8565-3D45EF8BAB08}" ShortID="435971469">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LookAheadTime" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Block_02" ID="{C591AE95-3CEF-4652-B39F-FC7231E65094}" ShortID="290753521">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Block_02.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="186279050"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{1CC6A8F3-92F0-4390-95DD-FC7C3DECA120}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{C4EC56CD-9019-4AAC-8397-228EA6D38A5F}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Block_02" ID="{E711E183-43AF-4B4F-AE6E-EDFF3549CCC1}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Block_02" ID="{C591AE95-3CEF-4652-B39F-FC7231E65094}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Flutes" ID="{1251725E-4A11-47C7-A35A-E24D9C7CFC8F}" ShortID="859024176">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LookAheadTime" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_High_04" ID="{EB901A12-98EB-4925-BF7D-D73EEAB7F61B}" ShortID="61174385">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_High_04.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="441090510"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{EABE638B-AECA-45A9-A2D2-A83BB5097C81}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{3B68AE5E-7407-4C2F-89DC-296BA42E9249}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_High_04" ID="{AD57CEFA-9143-4072-9081-A5D93D6607E2}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_High_04" ID="{EB901A12-98EB-4925-BF7D-D73EEAB7F61B}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="TamTam_Explo" ID="{25F6C702-E8DE-4D20-AA13-FBD51F1B7E6D}" ShortID="231211137">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LookAheadTime" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_TamTamExplo_03" ID="{59110CEE-1369-4FE9-8918-A8C81515CE9C}" ShortID="538389708">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_TamTamExplo_03.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="1056294472"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{A42594D0-7A6C-43B7-A3C1-7601DA2F4802}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{D98A515F-66DB-4AEE-A42D-9F169F20F4A2}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_TamTamExplo_03" ID="{9B1A600A-C8DA-4711-8E11-8175EB2F3008}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_TamTamExplo_03" ID="{59110CEE-1369-4FE9-8918-A8C81515CE9C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Guitar" ID="{C085FBD4-08EC-41CA-9F6D-76BCACF61A1A}" ShortID="362772809">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LookAheadTime" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_Guitar_01" ID="{ED529B34-4EA9-4A09-B186-1B44B20EE97A}" ShortID="686500950">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_Guitar_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="928032918"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{482E6248-0567-4A07-B61B-4B1B676CAF9E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{4F2CB9D1-5882-49F1-A215-52D94C41CEA1}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_Guitar_01" ID="{2C8F33C4-2759-42AA-884A-B7966EFCADA4}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="1.53477230924182E-12"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_Guitar_01" ID="{ED529B34-4EA9-4A09-B186-1B44B20EE97A}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="MysteriousElement" ID="{CCA08FA7-5ACE-41B2-A480-C2C6448F2546}" ShortID="960302640">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="LookAheadTime" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="PreFetchLength" Type="int16">
+													<ValueList>
+														<Value>200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Jungle_Explo_Melodic_BUS" ID="{0E93FBA2-BD47-415E-9CF2-481CC69641B4}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_HB_Jungle_MysteriousElement_02" ID="{AA245CCE-1529-4C7B-9D14-BAFD523AF76C}" ShortID="979416833">
+													<Language>SFX</Language>
+													<AudioFile>MUS_HB_Jungle_MysteriousElement_02.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="757968752"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{38966EB1-B299-407F-B622-1C25B8F89D4D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{2AAECFF6-F3BF-4A6F-8F0C-C4579C2236AE}">
+													<ClipList>
+														<MusicClip Name="MUS_HB_Jungle_MysteriousElement_02" ID="{B5171B76-B376-4BE2-AE69-A48A66E50FB7}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="2000"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="-2000"/>
+															</PropertyList>
+															<AudioSourceRef Name="MUS_HB_Jungle_MysteriousElement_02" ID="{AA245CCE-1529-4C7B-9D14-BAFD523AF76C}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{623729D4-6FD6-428E-84A6-77DC7EB95554}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>12</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{4ABCFEB0-FE12-46FE-BBCF-FEEA6743E9AA}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>12</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{E952DF47-B3E6-4F34-9280-424F9A29FE24}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>12</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{96F4425F-E17E-429C-A224-DE804456E682}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="1.53477230924182E-12"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{06A3EA97-41F7-4972-9F10-E9D56B859DEF}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="4000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

@@ -17,6 +17,7 @@
 						<ObjectRef Name="E_Mob_Gardian_StartCharge" ID="{2D9AC109-54F9-4094-9356-2C92FC0E1726}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Char_Impact_Grenade" ID="{FCF4A756-8F7D-409F-B340-3D8F829B3B72}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Global_MUSIC_FadeOut" ID="{3BEC8916-856D-40B7-A207-FB2F7A246131}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Intro_Pass" ID="{146F7417-61A5-40BB-AC32-405A02D508E7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_Ending" ID="{43A0AAEC-12E9-40D4-958E-D0785EB4C032}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_Beuar" ID="{B234994A-EAD3-40DC-AE5A-01750676215E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Global_MUSIC_FadeIn" ID="{B0171ABB-CC5F-40DD-8604-6EC3F8CE374A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
@@ -69,6 +70,7 @@
 						<ObjectRef Name="E_SetAcoustic_Exterior" ID="{FB529311-F05E-46A5-9E9B-F031FCBBED6A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Iddle_STOP" ID="{FEDB476D-D14B-46B0-8CF1-E097E11F804F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_JungleCharlie_Scream" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Intro_02_Boom" ID="{D1E57BCA-5217-46DE-8FA2-B1F56BAE3E88}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY" ID="{70A43E76-1BE5-46F8-BF81-233B3EC8C18F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_GetHit" ID="{D9BF8027-BBB7-46F9-B23F-D99D2DB26C66}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Kaliboss_Ulti_Shockwave" ID="{A1911FF7-30B8-470E-9825-AF20C36CCEF0}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
@@ -127,6 +129,7 @@
 						<ObjectRef Name="E_Global_SetOutPauseMenu" ID="{82C7AD9A-A115-4C13-AF34-10F51C0D829F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_AgainstCharlie_FirstEncounter_PRIORITY" ID="{E0B71501-C79A-4C34-A2EF-A687E54E2A39}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_MobJungleCharlie_Desintegration" ID="{1884760D-DB63-4C34-A081-747A2A6C5D7A}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Intro_04_End" ID="{A187E79D-3B7B-4C3D-A30F-9AEB0D57E7DE}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Return" ID="{2C9450D2-541B-4C5F-954F-92BA0BD0C994}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Traps_BigRockRolling" ID="{8B4C65DF-B73F-4C6C-9BAA-9E7FCCDDD2F6}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Coffre_Metal_Vieux" ID="{EECF2E2E-B139-4C97-9236-1AD99BE11B5B}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
@@ -149,6 +152,7 @@
 						<ObjectRef Name="E_SetAcoustic_Ruines" ID="{C353E2E9-9109-4E73-8F21-5EF93B0294A4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Valid" ID="{7A0A0B78-5601-4E81-AE97-1397EBD9DE81}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_KaliBoss_Reflect" ID="{094417B2-A50F-4EBC-968B-92F724E5D510}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Intro_01_Start" ID="{FEA52953-CD7A-4EDB-93C2-03E6A039D858}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Kali_Random_Lines_STOP_LOOP" ID="{5E8D3608-0C67-4EE7-853F-E80D576BB461}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Petite_Boite" ID="{0DFAF8F5-B5E7-4EF1-8B5D-AA5584DB35EB}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_FTP_surface_type_switch" ID="{D0B0DCD4-17EB-4EF9-91BD-BEC7676D9860}" WorkUnitID="{D109BCCB-2B16-4626-BAE8-CEC4CBAA63B7}" Filter="7" Origin="Manual"/>
@@ -163,6 +167,7 @@
 						<ObjectRef Name="E_Speech_Bear_EXPLO_Random_STOP_LOOP" ID="{2FF97DCE-5B8A-4F7D-A46E-5E469119081E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Kali_Death" ID="{AC97EEAE-842D-4FA8-8460-A2DDAE9622C8}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Footstep" ID="{225277E9-0838-4FB4-8AD4-8352A466578F}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Intro_03_Crash" ID="{968164A5-488C-4FBB-A21C-EF06F17B840E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Attack" ID="{0346A734-40F3-4FBE-9DE8-16112ADC1F04}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Kali_LostHerMask" ID="{2D2970A6-07EC-4FC9-B064-C8638C9137F7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Kaliboss_HitBear_Scream" ID="{CA089737-256D-4FD1-B2F6-6DD16955476E}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
