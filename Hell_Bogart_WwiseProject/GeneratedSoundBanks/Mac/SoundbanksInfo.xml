@@ -920,6 +920,8 @@
 				<Event Id="3233130797" Name="E_Global_TimeDilatation_On" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_TimeDilatation_On"/>
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
+				<Event Id="1801901601" Name="E_HUD_CloseMap" ObjectPath="\Events\Simon\UI\E_HUD_CloseMap"/>
+				<Event Id="2709253799" Name="E_HUD_OpenMap" ObjectPath="\Events\Simon\UI\E_HUD_OpenMap"/>
 				<Event Id="1058217336" Name="E_Initialize_Grenade" ObjectPath="\Events\Brian\Grenade\E_Initialize_Grenade"/>
 				<Event Id="504876040" Name="E_Intro_01_Start" ObjectPath="\Events\Simon\Intro\E_Intro_01_Start"/>
 				<Event Id="3551122644" Name="E_Intro_02_Boom" ObjectPath="\Events\Simon\Intro\E_Intro_02_Boom"/>
@@ -1034,6 +1036,10 @@
 				<Event Id="891897872" Name="E_UI_Deny" ObjectPath="\Events\Simon\UI\E_UI_Deny"/>
 				<Event Id="218571927" Name="E_UI_Deny_Grenade" ObjectPath="\Events\Simon\UI\E_UI_Deny_Grenade"/>
 				<Event Id="2798184598" Name="E_UI_Exit" ObjectPath="\Events\Brian\UI\E_UI_Exit"/>
+				<Event Id="1924738873" Name="E_UI_MainMenu_Click" ObjectPath="\Events\Simon\UI\E_UI_MainMenu_Click"/>
+				<Event Id="2179743809" Name="E_UI_MainMenu_Over" ObjectPath="\Events\Simon\UI\E_UI_MainMenu_Over"/>
+				<Event Id="1043188285" Name="E_UI_MainMenu_Play" ObjectPath="\Events\Simon\UI\E_UI_MainMenu_Play"/>
+				<Event Id="151582053" Name="E_UI_MainMenu_Validate" ObjectPath="\Events\Simon\UI\E_UI_MainMenu_Validate"/>
 				<Event Id="842152325" Name="E_UI_Option" ObjectPath="\Events\Brian\UI\E_UI_Option"/>
 				<Event Id="2920923470" Name="E_UI_Overlay" ObjectPath="\Events\Brian\UI\E_UI_Overlay"/>
 				<Event Id="762198780" Name="E_UI_Play" ObjectPath="\Events\Brian\UI\E_UI_Play"/>
@@ -1058,6 +1064,10 @@
 				<File Id="1056294472"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
+				<File Id="1625441" Language="SFX">
+					<ShortName>SFX_HB_UI_MainMenu_Validate_01.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_MainMenu_Validate_01_10C4C929.wem</Path>
+				</File>
 				<File Id="1850838" Language="SFX">
 					<ShortName>SFX_HB_Traps_PunjiTrap_Triggered_02.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_PunjiTrap_Triggered_02_66C02B12.wem</Path>
@@ -1100,7 +1110,7 @@
 				</File>
 				<File Id="23582690" Language="SFX">
 					<ShortName>HB_SFX_radio cassé_2.wav</ShortName>
-					<Path>SFX\HB_SFX_radio cassé_2_EC7F0A02.wem</Path>
+					<Path>SFX\HB_SFX_radio cassé_2_77A902E9.wem</Path>
 				</File>
 				<File Id="25403474" Language="SFX">
 					<ShortName>HB_SFX_etincelle_2.wav</ShortName>
@@ -1173,6 +1183,10 @@
 				<File Id="63248405" Language="SFX">
 					<ShortName>HB_SFX_Other_Ammo_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Other_Ammo_03_66C02B12.wem</Path>
+				</File>
+				<File Id="63561248" Language="SFX">
+					<ShortName>HB_UI_PassageSouris_1.wav</ShortName>
+					<Path>SFX\HB_UI_PassageSouris_1_10C4C929.wem</Path>
 				</File>
 				<File Id="64327808" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_FireHit_04.wav</ShortName>
@@ -1914,6 +1928,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_07.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_07_1EDFD29F.wem</Path>
 				</File>
+				<File Id="328155764" Language="SFX">
+					<ShortName>SFX_HB_UI_MainMenu_Play.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_MainMenu_Play_10C4C929.wem</Path>
+				</File>
 				<File Id="330349463" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Fire-01.wav</ShortName>
 					<Path>SFX\HB-SFX-Gardian-Fire-01_66C02B12.wem</Path>
@@ -2192,7 +2210,7 @@
 				</File>
 				<File Id="409644461" Language="SFX">
 					<ShortName>SFX_HB_Intro_EngineShutDown.wav</ShortName>
-					<Path>SFX\SFX_HB_Intro_EngineShutDown_2936FE2D.wem</Path>
+					<Path>SFX\SFX_HB_Intro_EngineShutDown_386F0D9A.wem</Path>
 				</File>
 				<File Id="410483608" Language="SFX">
 					<ShortName>HB_SFX_KALI_Impact_01.wav</ShortName>
@@ -2377,6 +2395,10 @@
 				<File Id="479199677" Language="SFX">
 					<ShortName>HB_FTP_Flaque_03.wav</ShortName>
 					<Path>SFX\HB_FTP_Flaque_03_66C02B12.wem</Path>
+				</File>
+				<File Id="480094241" Language="SFX">
+					<ShortName>SFX_HB_UI_MainMenu_Validate_02.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_MainMenu_Validate_02_10C4C929.wem</Path>
 				</File>
 				<File Id="481689103" Language="SFX">
 					<ShortName>HB_SFX_Uiwep_Pickup1.wav</ShortName>
@@ -2932,7 +2954,7 @@
 				</File>
 				<File Id="674876544" Language="SFX">
 					<ShortName>HB_SFX_Other_BigFire.wav</ShortName>
-					<Path>SFX\HB_SFX_Other_BigFire_234E5AD3.wem</Path>
+					<Path>SFX\HB_SFX_Other_BigFire_B96CFB10.wem</Path>
 				</File>
 				<File Id="675105376" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_MecaImpact_02.wav</ShortName>
@@ -2985,6 +3007,10 @@
 				<File Id="687750861" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LosingLife_Fuck_01.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_LosingLife_Fuck_01_10C4C929.wem</Path>
+				</File>
+				<File Id="689126564" Language="SFX">
+					<ShortName>SFX_HB_UI_MainMenu_Validate_03.wav</ShortName>
+					<Path>SFX\SFX_HB_UI_MainMenu_Validate_03_10C4C929.wem</Path>
 				</File>
 				<File Id="698178078" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_04.wav</ShortName>
@@ -3270,6 +3296,10 @@
 					<ShortName>HB_SFX_Shotgun_PowerLayer_03.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_PowerLayer_03_66C02B12.wem</Path>
 				</File>
+				<File Id="811640083" Language="SFX">
+					<ShortName>HB_UI_ClicSouris_1.wav</ShortName>
+					<Path>SFX\HB_UI_ClicSouris_1_10C4C929.wem</Path>
+				</File>
 				<File Id="813986872" Language="SFX">
 					<ShortName>HB_SFX_KALI_GrabEnd_02.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_GrabEnd_02_66C02B12.wem</Path>
@@ -3442,13 +3472,17 @@
 					<ShortName>VOICE_HB_Bear_UltiShooting_Houhou_03.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_UltiShooting_Houhou_03_10C4C929.wem</Path>
 				</File>
+				<File Id="878183569" Language="SFX">
+					<ShortName>HB_UI_ClicSouris_3.wav</ShortName>
+					<Path>SFX\HB_UI_ClicSouris_3_10C4C929.wem</Path>
+				</File>
 				<File Id="879344485" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Charge_02.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Charge_02_90F2456F.wem</Path>
 				</File>
 				<File Id="885302166" Language="SFX">
 					<ShortName>HB_AMB_JUNGLE_3.wav</ShortName>
-					<Path>SFX\HB_AMB_JUNGLE_3_200249C7.wem</Path>
+					<Path>SFX\HB_AMB_JUNGLE_3_BE43ED06.wem</Path>
 				</File>
 				<File Id="885843304" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LosingLife_Shit_03.wav</ShortName>
@@ -3473,6 +3507,10 @@
 				<File Id="895724132" Language="SFX">
 					<ShortName>SFX_HB_Traps_SpikeTrap_Death_02.wav</ShortName>
 					<Path>SFX\SFX_HB_Traps_SpikeTrap_Death_02_66C02B12.wem</Path>
+				</File>
+				<File Id="898333790" Language="SFX">
+					<ShortName>HB_UI_PassageSouris_2.wav</ShortName>
+					<Path>SFX\HB_UI_PassageSouris_2_10C4C929.wem</Path>
 				</File>
 				<File Id="898344652" Language="SFX">
 					<ShortName>VOICE_HB_Bear_LosingLife_Fuck_03.wav</ShortName>
@@ -3524,7 +3562,7 @@
 				</File>
 				<File Id="923505764" Language="SFX">
 					<ShortName>Chute_Helico_V3.wav</ShortName>
-					<Path>SFX\Chute_Helico_V3_7CE59D2D.wem</Path>
+					<Path>SFX\Chute_Helico_V3_1B5B4D61.wem</Path>
 				</File>
 				<File Id="924351504" Language="SFX">
 					<ShortName>HB-SFX-Gardian-Stun-01.wav</ShortName>
@@ -3558,6 +3596,10 @@
 					<ShortName>HB_SFX_ImpactGrenade_3 (1).wav</ShortName>
 					<Path>SFX\HB_SFX_ImpactGrenade_3 (1)_38D3B844.wem</Path>
 				</File>
+				<File Id="943239123" Language="SFX">
+					<ShortName>HB_SFX_OpenMap.wav</ShortName>
+					<Path>SFX\HB_SFX_OpenMap_10C4C929.wem</Path>
+				</File>
 				<File Id="944648679" Language="SFX">
 					<ShortName>SFX-HB-CoffreBois_00.wav</ShortName>
 					<Path>SFX\SFX-HB-CoffreBois_00_66C02B12.wem</Path>
@@ -3588,7 +3630,7 @@
 				</File>
 				<File Id="949601953" Language="SFX">
 					<ShortName>Impact_V4.wav</ShortName>
-					<Path>SFX\Impact_V4_D19F0545.wem</Path>
+					<Path>SFX\Impact_V4_42137B66.wem</Path>
 				</File>
 				<File Id="949935143" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_01.wav</ShortName>
@@ -3721,6 +3763,10 @@
 				<File Id="1014806612" Language="SFX">
 					<ShortName>SFX_HB_PetiteCaisseBoisExplosion_02.wav</ShortName>
 					<Path>SFX\SFX_HB_PetiteCaisseBoisExplosion_02_66C02B12.wem</Path>
+				</File>
+				<File Id="1016517154" Language="SFX">
+					<ShortName>HB_SFX_CloseMap.wav</ShortName>
+					<Path>SFX\HB_SFX_CloseMap_10C4C929.wem</Path>
 				</File>
 				<File Id="1017218228" Language="SFX">
 					<ShortName>HB_Kali_Attacks_whoosh_high_02.wav</ShortName>
