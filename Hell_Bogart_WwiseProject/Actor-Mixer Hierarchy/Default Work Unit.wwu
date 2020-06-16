@@ -20745,18 +20745,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_WoodCringe_01" ID="{E71C1AE7-8961-4C2E-99E8-393E4EDCC003}" ShortID="305427602">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="3.12996614170783E-02"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="1.17975646879756"/>
-																			</PropertyList>
+																		<AudioFileSource Name="HB_WoodCringe_01" ID="{F12DC815-3D4F-4854-B0F5-9F4FFFC6A99B}" ShortID="717261915">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_WoodCringe_01.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_WoodCringe_01" ID="{E71C1AE7-8961-4C2E-99E8-393E4EDCC003}" Platform="Linked"/>
+																		<ActiveSource Name="HB_WoodCringe_01" ID="{F12DC815-3D4F-4854-B0F5-9F4FFFC6A99B}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_WoodCringe_02" ID="{B2DC3485-0518-4660-8531-066993820B96}" ShortID="84015614">
@@ -20769,18 +20764,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_WoodCringe_02" ID="{13581F7F-F2A3-4FA0-A96A-651FD142B74A}" ShortID="286612238">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.09303264684869E-02"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="1.11956481222626"/>
-																			</PropertyList>
+																		<AudioFileSource Name="HB_WoodCringe_02" ID="{E26E56BD-FF1F-4061-8C40-969D7D98E68D}" ShortID="947983209">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_WoodCringe_02.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_WoodCringe_02" ID="{13581F7F-F2A3-4FA0-A96A-651FD142B74A}" Platform="Linked"/>
+																		<ActiveSource Name="HB_WoodCringe_02" ID="{E26E56BD-FF1F-4061-8C40-969D7D98E68D}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_WoodCringe_03" ID="{E071B641-80C4-46D0-8788-C9F16459A660}" ShortID="5157944">
@@ -20800,18 +20790,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_WoodCringe_03" ID="{49313171-1B42-4D1F-9107-02F0FE6EA76F}" ShortID="862182120">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.10958904109588E-02"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="1.5958904109589"/>
-																			</PropertyList>
+																		<AudioFileSource Name="HB_WoodCringe_03" ID="{EC6D7A32-0021-4E4B-B9FB-C166405A938D}" ShortID="938239315">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_WoodCringe_03.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_WoodCringe_03" ID="{49313171-1B42-4D1F-9107-02F0FE6EA76F}" Platform="Linked"/>
+																		<ActiveSource Name="HB_WoodCringe_03" ID="{EC6D7A32-0021-4E4B-B9FB-C166405A938D}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_WoodCringe_04" ID="{57544737-8BAA-483B-97B0-9BF2C8218757}" ShortID="829252208">
@@ -20831,18 +20816,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_WoodCringe_04" ID="{91AC3797-2A49-4F77-868F-F853C900B8C8}" ShortID="457581505">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="2.54710263100675E-02"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="1.59739722144566"/>
-																			</PropertyList>
+																		<AudioFileSource Name="HB_WoodCringe_04" ID="{D45E68B0-CFF1-49EA-A00C-C5536C2B7B5B}" ShortID="185056008">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_WoodCringe_04.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_WoodCringe_04" ID="{91AC3797-2A49-4F77-868F-F853C900B8C8}" Platform="Linked"/>
+																		<ActiveSource Name="HB_WoodCringe_04" ID="{D45E68B0-CFF1-49EA-A00C-C5536C2B7B5B}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -20998,6 +20978,13 @@
 															</ReferenceList>
 															<ChildrenList>
 																<Sound Name="HB_rope_moving_1" ID="{02AA39E1-5D44-4049-BFE9-110D9B62D30F}" ShortID="308416441">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-8</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -21007,13 +20994,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_rope_moving_1" ID="{0EC9C6DE-610E-4502-BB49-4C21DA7416A5}" ShortID="225519632">
+																		<AudioFileSource Name="HB_rope_moving_1" ID="{21D94C27-06B7-4743-87C9-0638F1810E53}" ShortID="1052029816">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_rope_moving_1.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_rope_moving_1" ID="{0EC9C6DE-610E-4502-BB49-4C21DA7416A5}" Platform="Linked"/>
+																		<ActiveSource Name="HB_rope_moving_1" ID="{21D94C27-06B7-4743-87C9-0638F1810E53}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_rope_moving_2" ID="{687CBEC3-B3B5-457D-BD5F-576146CF0660}" ShortID="820832500">
@@ -21033,13 +21020,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_rope_moving_2" ID="{8BFD7AF7-2001-4278-A524-63B670B73BD8}" ShortID="369157319">
+																		<AudioFileSource Name="HB_rope_moving_2" ID="{026509B0-B70A-4AFB-8ADA-BD1B6AD824F1}" ShortID="54996367">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_rope_moving_2.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_rope_moving_2" ID="{8BFD7AF7-2001-4278-A524-63B670B73BD8}" Platform="Linked"/>
+																		<ActiveSource Name="HB_rope_moving_2" ID="{026509B0-B70A-4AFB-8ADA-BD1B6AD824F1}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_rope_moving_3" ID="{2E54B6D8-AB31-4F7A-B7E5-021428F39F16}" ShortID="922299336">
@@ -21059,13 +21046,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_rope_moving_3" ID="{AD30EA0F-7416-4279-AD3F-ECFC99882AC0}" ShortID="124705329">
+																		<AudioFileSource Name="HB_rope_moving_3" ID="{F68564F5-9F0E-4FA8-8606-BF8E8FACB27F}" ShortID="326696016">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_rope_moving_3.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_rope_moving_3" ID="{AD30EA0F-7416-4279-AD3F-ECFC99882AC0}" Platform="Linked"/>
+																		<ActiveSource Name="HB_rope_moving_3" ID="{F68564F5-9F0E-4FA8-8606-BF8E8FACB27F}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_rope_moving_4" ID="{1B221020-6A6E-4CF6-9B59-063F5E880FD6}" ShortID="371952207">
@@ -21085,13 +21072,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_rope_moving_4" ID="{5DB69E04-35E2-4414-9972-3846066AA6DE}" ShortID="670947103">
+																		<AudioFileSource Name="HB_rope_moving_4" ID="{A6A1E510-0292-4205-9EB9-1A1D326B8DFE}" ShortID="643245898">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_rope_moving_4.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_rope_moving_4" ID="{5DB69E04-35E2-4414-9972-3846066AA6DE}" Platform="Linked"/>
+																		<ActiveSource Name="HB_rope_moving_4" ID="{A6A1E510-0292-4205-9EB9-1A1D326B8DFE}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>

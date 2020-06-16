@@ -649,7 +649,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Start" ID="{220B4154-EBE4-4C51-9B3A-924E2597A8F3}"/>
-						<CurrentStateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
 						<CurrentStateRef Name="Ammo_1" ID="{542C4DF4-2B9C-4572-BAB9-2F0F978BB21B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
