@@ -2119,6 +2119,72 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="E_HUD_CloseMap" ID="{1F3ACBEA-29AD-4A6A-A10B-444D3089C186}">
+							<ChildrenList>
+								<Action Name="" ID="{6D8ECA60-6C15-4BA7-AE28-85FADAE7DB07}" ShortID="1065018485">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB_SFX_CloseMap" ID="{B7EC5BDC-ABB7-4476-9C31-D65EFBEEDAF3}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_HUD_OpenMap" ID="{1DF6EB6C-6A67-482F-80C5-C7624E726E0A}">
+							<ChildrenList>
+								<Action Name="" ID="{3A029B73-9622-49A7-9F65-4BD17C1A760D}" ShortID="459750909">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HB_SFX_OpenMap" ID="{95EC3FB6-0308-4CCD-AE5D-2F1C2AF8FA07}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_MainMenu_Over" ID="{DDC5BE22-7BAB-4FC0-B539-67A32777A1F1}">
+							<ChildrenList>
+								<Action Name="" ID="{B29CF744-B39E-4E11-A450-49FD24EE8C2D}" ShortID="592365424">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_MainMenu_Over" ID="{2B2419EE-4183-496C-BC9D-C1C3BE26D957}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_MainMenu_Click" ID="{3291DF75-25F3-4AE9-AC1F-DF812B672886}">
+							<ChildrenList>
+								<Action Name="" ID="{91FFE3EC-443B-4899-8FD9-D3029E1A3438}" ShortID="863341031">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_MainMenu_Click" ID="{55DE473E-0F7F-4034-B612-6924AB9B465A}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_MainMenu_Validate" ID="{47D8FCE0-6FFE-4D2E-8DE8-0C72F19CBC16}">
+							<ChildrenList>
+								<Action Name="" ID="{E5BF7981-3BDC-4F0D-8C3A-6F248E0B3EA6}" ShortID="591149001">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_MainMenu_Validate" ID="{FBF79A52-40A7-4835-B774-DFF2985316EF}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_UI_MainMenu_Play" ID="{B56C14FD-5EDD-4934-ABF0-8EC156D6925C}">
+							<ChildrenList>
+								<Action Name="" ID="{FC0616E9-A2C7-4096-8389-EFE28A5E7EB3}" ShortID="661605323">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_UI_MainMenu_Play" ID="{C71F56D6-0BBC-471B-9155-0F9966CCD2C1}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Intro" ID="{93AA517B-D662-41FF-95A4-BD6759E29F56}" ShortID="110637021">
