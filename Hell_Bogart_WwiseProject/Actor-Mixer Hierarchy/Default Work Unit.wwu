@@ -4804,202 +4804,6 @@
 																		<ActiveSource Name="HB-SFX-Gardian-Idle-02" ID="{92D03E3E-FF25-4EBD-BFBE-AD242F32C321}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="HB-SFX-Gardian-Idle-03" ID="{E2863A28-BE0D-40B4-8AB4-2816093CF07D}" ShortID="632979348">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Attenuation">
-																			<Custom CreatedFrom="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}">
-																				<Attenuation Name="Att_Trash_Mob (Custom)" ID="{E480A89F-3D35-4128-9C15-DEDD5E8475D0}" ShortID="924978775">
-																					<PropertyList>
-																						<Property Name="RadiusMax" Type="Real64" Value="3500"/>
-																					</PropertyList>
-																					<CurveUsageInfoList>
-																						<VolumeDryUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																								<Curve Name="VolumeDry" ID="{2073EC60-77E3-4CA1-AC85-77EDE3FF28F8}">
-																									<PropertyList>
-																										<Property Name="Flags" Type="int32" Value="3"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>0</YPos>
-																											<Flags>5</Flags>
-																											<SegmentShape>Log2</SegmentShape>
-																										</Point>
-																										<Point>
-																											<XPos>1503.1348</XPos>
-																											<YPos>-8.99028</YPos>
-																											<Flags>0</Flags>
-																											<SegmentShape>Exp2</SegmentShape>
-																										</Point>
-																										<Point>
-																											<XPos>3500</XPos>
-																											<YPos>-200</YPos>
-																											<Flags>37</Flags>
-																										</Point>
-																									</PointList>
-																								</Curve>
-																							</CurveUsageInfo>
-																						</VolumeDryUsage>
-																						<VolumeWetGameUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry">
-																								<Curve Name="VolumeWetGame" ID="{B427047B-433E-42D3-872C-ADD03C3FCDF8}">
-																									<PropertyList>
-																										<Property Name="Flags" Type="int32" Value="3"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>0</YPos>
-																											<Flags>5</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>3500</XPos>
-																											<YPos>-200</YPos>
-																											<Flags>37</Flags>
-																										</Point>
-																									</PointList>
-																								</Curve>
-																							</CurveUsageInfo>
-																						</VolumeWetGameUsage>
-																						<VolumeWetUserUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																								<Curve Name="VolumeWetUser" ID="{434507F7-41DB-4475-8011-6110627D7F3A}">
-																									<PropertyList>
-																										<Property Name="Flags" Type="int32" Value="3"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>-11.85148</YPos>
-																											<Flags>5</Flags>
-																											<SegmentShape>Log2</SegmentShape>
-																										</Point>
-																										<Point>
-																											<XPos>1887.82816</XPos>
-																											<YPos>0</YPos>
-																											<Flags>0</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>2132.04861</XPos>
-																											<YPos>-0.05497</YPos>
-																											<Flags>0</Flags>
-																											<SegmentShape>Exp2</SegmentShape>
-																										</Point>
-																										<Point>
-																											<XPos>3500</XPos>
-																											<YPos>-200</YPos>
-																											<Flags>37</Flags>
-																										</Point>
-																									</PointList>
-																								</Curve>
-																							</CurveUsageInfo>
-																						</VolumeWetUserUsage>
-																						<LowPassFilterUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																								<Curve Name="LowPassFilter" ID="{874F3050-395D-43E1-BE47-34ABC63FC9E6}">
-																									<PropertyList>
-																										<Property Name="Flags" Type="int32" Value="65537"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>0</YPos>
-																											<Flags>5</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>2144.984338</XPos>
-																											<YPos>24</YPos>
-																											<Flags>0</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>3500</XPos>
-																											<YPos>34</YPos>
-																											<Flags>37</Flags>
-																										</Point>
-																									</PointList>
-																								</Curve>
-																							</CurveUsageInfo>
-																						</LowPassFilterUsage>
-																						<HighPassFilterUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																								<Curve Name="HighPassFilter" ID="{FCA159FC-EBE9-4701-983B-09B05B936D7D}">
-																									<PropertyList>
-																										<Property Name="Flags" Type="int32" Value="65537"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>0</YPos>
-																											<Flags>5</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>3500</XPos>
-																											<YPos>34</YPos>
-																											<Flags>37</Flags>
-																										</Point>
-																									</PointList>
-																								</Curve>
-																							</CurveUsageInfo>
-																						</HighPassFilterUsage>
-																						<SpreadUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="None">
-																								<Curve Name="Spread" ID="{E916EFC4-11BE-4540-85EC-ED0C204E2320}">
-																									<PropertyList>
-																										<Property Name="Flags" Type="int32" Value="1"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>49.72678</YPos>
-																											<Flags>5</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>3500</XPos>
-																											<YPos>100</YPos>
-																											<Flags>37</Flags>
-																										</Point>
-																									</PointList>
-																								</Curve>
-																							</CurveUsageInfo>
-																						</SpreadUsage>
-																						<FocusUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																						</FocusUsage>
-																					</CurveUsageInfoList>
-																				</Attenuation>
-																			</Custom>
-																		</Reference>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																		<Reference Name="UserAuxSend0">
-																			<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																		<Reference Name="UserAuxSend1">
-																			<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																		<Reference Name="UserAuxSend2">
-																			<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="HB-SFX-Gardian-Idle-03" ID="{1C877D4C-40B6-4770-819B-58C0B7454CC6}" ShortID="1062931980">
-																			<Language>SFX</Language>
-																			<AudioFile>HB-SFX-Gardian-Idle-03.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="HB-SFX-Gardian-Idle-03" ID="{1C877D4C-40B6-4770-819B-58C0B7454CC6}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
 															</ChildrenList>
 														</RandomSequenceContainer>
 													</ChildrenList>
@@ -12975,6 +12779,130 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Destroy_Guardian_RND" ID="{96565C2F-15EE-49A9-A7D1-89E6BD6AB963}" ShortID="998177272">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Att_Trash_Mob" ID="{8EB312C6-D5D2-40A6-9BAF-1460E1889A0D}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_HB_MobStoneGuardian_Destruction_01" ID="{15720357-B3BF-40D2-B941-8CEC86FD9DF1}" ShortID="730343832">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_MobStoneGuardian_Destruction_01" ID="{F4621149-C61E-4C3C-BD53-ECE017A954DF}" ShortID="952672293">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_MobStoneGuardian_Destruction_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_MobStoneGuardian_Destruction_01" ID="{F4621149-C61E-4C3C-BD53-ECE017A954DF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_MobStoneGuardian_Destruction_02" ID="{E5CFB94D-9BC7-43D1-9DDA-04CB6F50FC89}" ShortID="374343215">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_MobStoneGuardian_Destruction_02" ID="{867119AC-35CD-41F3-AF15-6031780E0729}" ShortID="616094592">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_MobStoneGuardian_Destruction_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_MobStoneGuardian_Destruction_02" ID="{867119AC-35CD-41F3-AF15-6031780E0729}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_HB_MobStoneGuardian_Destruction_03" ID="{3F94AD7E-A086-4632-A9AC-F3964F290983}" ShortID="230559869">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_HB_MobStoneGuardian_Destruction_03" ID="{4319E588-A3B1-4748-96D7-C73B57A2B62B}" ShortID="22915438">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_HB_MobStoneGuardian_Destruction_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_HB_MobStoneGuardian_Destruction_03" ID="{4319E588-A3B1-4748-96D7-C73B57A2B62B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<StateInfo>
+														<StatePropertyList>
+															<Property Name="EnableAttenuation"/>
+															<Property Name="Volume"/>
+														</StatePropertyList>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+																<CustomState Name="" ID="{E47D1DBD-B09C-4C11-9C08-3E187442A34C}" ShortID="1014503101">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="4"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+																<CustomState Name="" ID="{7CC4A5A0-4223-44EE-9433-BC2FD7397D03}" ShortID="250398858">
+																	<PropertyList>
+																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																		<Property Name="Volume" Type="Real64" Value="-6"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<GroupingInfo>
 												<GroupingBehaviorList>
@@ -12986,6 +12914,9 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Destroy_Stone_RND" ID="{D65D5222-246D-4075-9F98-50E6E38446D7}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Destroy_Guardian_RND" ID="{96565C2F-15EE-49A9-A7D1-89E6BD6AB963}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Destroy_Tonneau_RND" ID="{008CCB54-DB8B-4865-810F-2D61F5685E94}"/>
@@ -13038,6 +12969,12 @@
 														<SwitchRef Name="Tronc" ID="{A0ABA7CD-721F-4A18-A535-385550A3B9DC}"/>
 														<ItemList>
 															<ItemRef Name="Destroy_Tronc_RND" ID="{2F319B0E-DB1E-4B3E-8265-CB1709345E5C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Guard" ID="{EB2FACD2-3E74-4DCE-8BAC-C860872C134B}"/>
+														<ItemList>
+															<ItemRef Name="Destroy_Guardian_RND" ID="{96565C2F-15EE-49A9-A7D1-89E6BD6AB963}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>

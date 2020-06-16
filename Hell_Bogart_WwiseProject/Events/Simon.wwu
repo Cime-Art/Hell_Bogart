@@ -1762,6 +1762,28 @@
 									<ChildrenList>
 										<Event Name="E_Speech_Bear_Death" ID="{E5E3C83B-B47A-465B-ABBB-F2D6D1889BB9}">
 											<ChildrenList>
+												<Action Name="" ID="{37797301-EECD-495E-A1FD-CD656C56A892}" ShortID="618870111">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Voices Global System" ID="{660CE824-1698-4205-AA5A-8C605350EE3A}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{7E879758-FF2E-4AC7-9E1F-C27973A1A75E}" ShortID="736949222">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Heartbeat" ID="{6E08BCF3-5D0A-49FE-B080-7CA14E3990BE}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{46C539A5-FE3F-4D01-BFBE-C9C22B9C96CB}" ShortID="635786746">
 													<ReferenceList>
 														<Reference Name="Target">

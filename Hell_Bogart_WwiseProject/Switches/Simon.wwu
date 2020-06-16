@@ -15,6 +15,7 @@
 								<Switch Name="Jarre" ID="{A639CD38-D095-4F32-A71B-370AC5D67590}"/>
 								<Switch Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
 								<Switch Name="Explo" ID="{8D74F0FD-956B-4A53-B994-470BBE09DD6C}"/>
+								<Switch Name="Guard" ID="{EB2FACD2-3E74-4DCE-8BAC-C860872C134B}"/>
 							</ChildrenList>
 						</SwitchGroup>
 					</ChildrenList>

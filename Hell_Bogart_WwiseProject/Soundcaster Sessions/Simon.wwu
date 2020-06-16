@@ -502,12 +502,28 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Mus_Kali_Main_Play" ID="{A382111A-B1DF-4FFA-894C-E3B1FB79EDB6}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Mus_Bridge_End" ID="{EA62336C-AF07-47F7-B78B-CB4F5405B902}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Mus_Jungle_Main_Play" ID="{1BB4E9C1-06DA-4333-935C-F4418EBAFDE0}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Ruin_Main_Play" ID="{5C2483EA-55EB-4719-8F4C-669398336ECE}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Bear_Death" ID="{E5E3C83B-B47A-465B-ABBB-F2D6D1889BB9}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Kali_Phase1" ID="{D7123305-BACD-4AC8-B6D6-C4996B7F8DCE}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Mus_Bridge_GoToPhase1" ID="{E23198FE-C61C-465D-94F4-72A13BDEE57C}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -518,12 +534,28 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Mus_Ruin_Explo" ID="{22387EE2-54A7-4AE8-B56E-324C42EC398B}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Kali_Phase2" ID="{D3081E59-3D20-427C-9104-58A4BDB66316}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Mus_Bridge_GoToPhase2" ID="{FDF36D42-84ED-4690-B6A8-4107FEE6DAE0}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Mus_SetFightState" ID="{15D8128B-0DA6-4B1E-9D80-FBF6213F36B8}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Ruin_Fight" ID="{8A0C29B6-59E4-4F08-8889-8A4A4A1A84EE}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Kali_Transition" ID="{73F76A83-5CF3-4289-AEF2-276A369B4C6D}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="3" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Mus_Bridge_Initiate" ID="{33252DEC-794B-4192-B3D3-4895544BA0E7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -544,12 +576,36 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Master_Volume_GP" ID="{FDC7E319-4A9F-4140-9767-9860AAFC4119}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PitchGlobal_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Music_Volume_GP" ID="{2058B59F-F96C-426F-941E-7D3E119AA616}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LowPassNoHit_GP" ID="{72064AAB-5DA6-4378-BD83-A679CF1787F9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Dialog_Volume_GP" ID="{B3D601AC-9ED8-44FC-815E-0875E9E41F09}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume_GP" ID="{6BB572BF-943A-47CC-892E-05ECAC428636}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobal_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="UI_Volume_GP" ID="{762B362E-3A2E-4879-9E24-41940E280A3C}"/>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
@@ -557,14 +613,18 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="normal" ID="{CBF3AD21-3794-465E-A4F8-F097A7B1B724}"/>
-						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
-						<CurrentStateRef Name="Phase_2" ID="{A3F081EA-75E4-404A-BF9B-CC890B6BFD91}"/>
-						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
-						<CurrentStateRef Name="Ice" ID="{BEFC7779-5A48-4827-8367-4DEB88AF99D6}"/>
-						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
+						<CurrentStateRef Name="None" ID="{1CA5B48B-F0FC-4591-ACD6-AE98FA1679C0}"/>
+						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
+						<CurrentStateRef Name="No_Music" ID="{675D24E3-C054-48C2-9E47-2EC0AE39CA0F}"/>
+						<CurrentStateRef Name="Kali_Intro" ID="{FB35FE36-366D-4F98-AA45-FCA74D2E4C0B}"/>
+						<CurrentStateRef Name="Exploration" ID="{5D2B9212-A901-4A60-AC10-FB44F5DB4A1E}"/>
+						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
+						<CurrentStateRef Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}"/>
+						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
+						<CurrentStateRef Name="Ruin_Exploration" ID="{C2E2A441-1D30-4C85-982C-2E487042A8F1}"/>
 						<CurrentStateRef Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
-						<CurrentStateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+						<CurrentStateRef Name="None" ID="{AEAC5A91-B72F-44A1-9026-C89B1E68E264}"/>
+						<CurrentStateRef Name="None" ID="{99508074-D0B5-4286-8BF2-BD358242ADBE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>

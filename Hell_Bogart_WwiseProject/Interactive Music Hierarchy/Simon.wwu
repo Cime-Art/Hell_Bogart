@@ -1483,6 +1483,7 @@
 										<MusicTransition Name="Transition" ID="{9DD38842-233D-4C16-95C9-6DBD928F950F}">
 											<PropertyList>
 												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 												<Property Name="SourceContextType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1546,6 +1547,30 @@
 											</ReferenceList>
 											<TransitionInfo>
 												<TransitionObjectRef Name="MUS_HB_BridgeJungle_End" ID="{950B4052-B445-4BF6-B154-CB60DD26AF66}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{1151FA2D-445F-4CAE-B995-CF88C8288198}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="No_Music_LOOP" ID="{A5764807-56EB-4847-AE2E-3355FC4309A0}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{A8E6FFF7-9DA9-4B46-BF96-ED2F491BE339}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="7"/>
+															<Property Name="FadeTime" Type="Real64" Value="1"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
 											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>

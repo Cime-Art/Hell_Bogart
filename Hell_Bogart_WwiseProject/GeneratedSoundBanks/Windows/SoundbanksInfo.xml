@@ -1109,6 +1109,10 @@
 					<ShortName>SFX_HB_MobjungleCharlie_Dot_Fire_Crackling_05.wav</ShortName>
 					<Path>SFX\SFX_HB_MobjungleCharlie_Dot_Fire_Crackling_05_66C02B12.wem</Path>
 				</File>
+				<File Id="22915438" Language="SFX">
+					<ShortName>SFX_HB_MobStoneGuardian_Destruction_03.wav</ShortName>
+					<Path>SFX\SFX_HB_MobStoneGuardian_Destruction_03_66C02B12.wem</Path>
+				</File>
 				<File Id="23582690" Language="SFX">
 					<ShortName>HB_SFX_radio cassé_2.wav</ShortName>
 					<Path>SFX\HB_SFX_radio cassé_2_77A902E9.wem</Path>
@@ -2829,6 +2833,10 @@
 					<ShortName>HB-SFX-UImenu-Overlay.wav</ShortName>
 					<Path>SFX\HB-SFX-UImenu-Overlay_10C4C929.wem</Path>
 				</File>
+				<File Id="616094592" Language="SFX">
+					<ShortName>SFX_HB_MobStoneGuardian_Destruction_02.wav</ShortName>
+					<Path>SFX\SFX_HB_MobStoneGuardian_Destruction_02_66C02B12.wem</Path>
+				</File>
 				<File Id="618929226" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Whirlwind_02.wav</ShortName>
 					<Path>SFX\Kali_BEAR_Hits_Whirlwind_02_E059CB89.wem</Path>
@@ -3641,6 +3649,10 @@
 					<ShortName>SFX_HB_MobJungleCharlie_v2_IddleFoley_01.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_v2_IddleFoley_01_66C02B12_72095081.wem</Path>
 				</File>
+				<File Id="952672293" Language="SFX">
+					<ShortName>SFX_HB_MobStoneGuardian_Destruction_01.wav</ShortName>
+					<Path>SFX\SFX_HB_MobStoneGuardian_Destruction_01_66C02B12.wem</Path>
+				</File>
 				<File Id="953900687" Language="SFX">
 					<ShortName>HB_SFX_KALI_GrabWhoosh_01.wav</ShortName>
 					<Path>SFX\HB_SFX_KALI_GrabWhoosh_01_66C02B12.wem</Path>
@@ -3892,10 +3904,6 @@
 				<File Id="1060154308" Language="SFX">
 					<ShortName>MnGn_Fire_04.wav</ShortName>
 					<Path>SFX\MnGn_Fire_04_66C02B12.wem</Path>
-				</File>
-				<File Id="1062931980" Language="SFX">
-					<ShortName>HB-SFX-Gardian-Idle-03.wav</ShortName>
-					<Path>SFX\HB-SFX-Gardian-Idle-03_66C02B12.wem</Path>
 				</File>
 				<File Id="1063326116" Language="SFX">
 					<ShortName>SF-DS Weapon Projectile 03_03.wav</ShortName>
