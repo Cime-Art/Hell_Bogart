@@ -10897,6 +10897,8 @@
 							<ChildrenList>
 								<ActorMixer Name="Coffre" ID="{F834FA59-43A2-4EB1-8A29-4E03D8DCE99B}" ShortID="660381779">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-12</Value>
@@ -10904,6 +10906,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_Coffres" ID="{8588ADCB-8648-439C-BDE2-323FA129199B}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 										</Reference>
@@ -17558,14 +17563,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="HB_SFX_KALI_Impact_01" ID="{B68B6BF9-83D7-4727-86D7-061ED9118BF1}" ShortID="685172808">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>2</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
+												<Sound Name="Impact_layer__01" ID="{7784323F-026C-45DD-BC45-9DF1F1D3348D}" ShortID="369538949">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -17575,23 +17573,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="HB_SFX_KALI_Impact_01" ID="{E61E8ECA-81E6-4167-B6D0-B22506D61460}" ShortID="410483608">
+														<AudioFileSource Name="Impact_layer__01" ID="{28F47F8B-D93A-476F-93E7-1FF67019E7FA}" ShortID="151108895">
 															<Language>SFX</Language>
-															<AudioFile>HB_SFX_KALI_Impact_01.wav</AudioFile>
+															<AudioFile>Impact_layer__01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="HB_SFX_KALI_Impact_01" ID="{E61E8ECA-81E6-4167-B6D0-B22506D61460}" Platform="Linked"/>
+														<ActiveSource Name="Impact_layer__01" ID="{28F47F8B-D93A-476F-93E7-1FF67019E7FA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="HB_SFX_KALI_Impact_02" ID="{F27D46EB-E945-4BC6-81AB-6902409CE02E}" ShortID="927829042">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>2</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
+												<Sound Name="Impact_layer__02" ID="{338D17B9-DAA2-426B-8595-D7DA089D2646}" ShortID="826213751">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -17601,23 +17592,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="HB_SFX_KALI_Impact_02" ID="{D4CE6963-5486-4686-8ACD-1032B64824D9}" ShortID="49701756">
+														<AudioFileSource Name="Impact_layer__02" ID="{F5519709-19D9-41DC-A16B-849860D2F248}" ShortID="232177912">
 															<Language>SFX</Language>
-															<AudioFile>HB_SFX_KALI_Impact_02.wav</AudioFile>
+															<AudioFile>Impact_layer__02.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="HB_SFX_KALI_Impact_02" ID="{D4CE6963-5486-4686-8ACD-1032B64824D9}" Platform="Linked"/>
+														<ActiveSource Name="Impact_layer__02" ID="{F5519709-19D9-41DC-A16B-849860D2F248}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="HB_SFX_KALI_Impact_03" ID="{C30F8B8E-BEFD-41EE-93F7-F8ED7A5F51EE}" ShortID="516530817">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>2</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
+												<Sound Name="Impact_layer__03" ID="{881ECBEA-B061-4002-B237-297A17D5DC26}" ShortID="855798812">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -17627,13 +17611,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="HB_SFX_KALI_Impact_03" ID="{69AA8260-6320-4410-A9AE-C8B1A09E2F68}" ShortID="495772797">
+														<AudioFileSource Name="Impact_layer__03" ID="{5306A7A8-555B-4F5C-B358-30289C7FD44B}" ShortID="903875294">
 															<Language>SFX</Language>
-															<AudioFile>HB_SFX_KALI_Impact_03.wav</AudioFile>
+															<AudioFile>Impact_layer__03.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="HB_SFX_KALI_Impact_03" ID="{69AA8260-6320-4410-A9AE-C8B1A09E2F68}" Platform="Linked"/>
+														<ActiveSource Name="Impact_layer__03" ID="{5306A7A8-555B-4F5C-B358-30289C7FD44B}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -18891,6 +18875,172 @@
 												<ActiveSource Name="magic_kami" ID="{CFFB3EA4-8E25-4027-9F00-34843FCC048E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Teleport" ID="{9E9C5520-7E08-4287-AC03-70734EAF6F59}" ShortID="543623582">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_BossKaliSFX" ID="{24416D51-33A7-45F6-9CC3-3798885084F1}" WorkUnitID="{17368089-3E7A-4C57-B20D-9C50091A4DD0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Kali_Teleport_RND" ID="{E6B03E0C-FA75-4F3A-871E-C965D743CA34}" ShortID="569605318">
+											<PropertyList>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{018CF109-193D-4298-8E2F-789E6530CDBD}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Kali_Teleport_01" ID="{545928AE-542C-491F-8CC2-05CC554262FE}" ShortID="911385450">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="KaliBoss_SFX_SUBBUS" ID="{7D0627CF-1A3F-4EF7-8384-9C5D96CD90EA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_Teleport_01" ID="{169B8EDB-8FD3-4F4C-8BE7-0FD2BE559F44}" ShortID="396764428">
+															<Language>SFX</Language>
+															<AudioFile>Kali_Teleport_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_Teleport_01" ID="{169B8EDB-8FD3-4F4C-8BE7-0FD2BE559F44}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_Teleport_02" ID="{5CC619EA-9DF7-4810-A9AE-84B89528640B}" ShortID="556694927">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="KaliBoss_SFX_SUBBUS" ID="{7D0627CF-1A3F-4EF7-8384-9C5D96CD90EA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_Teleport_02" ID="{A92DC652-8FDF-436C-9D21-94F3BCE1E25A}" ShortID="48542292">
+															<Language>SFX</Language>
+															<AudioFile>Kali_Teleport_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_Teleport_02" ID="{A92DC652-8FDF-436C-9D21-94F3BCE1E25A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Kali_Teleport_03" ID="{9249D5DC-B875-4D7D-866C-F9B11BEE84F0}" ShortID="823790049">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="KaliBoss_SFX_SUBBUS" ID="{7D0627CF-1A3F-4EF7-8384-9C5D96CD90EA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Kali_Teleport_03" ID="{BF1CC593-D78A-4BBA-BF88-0107CEE84C34}" ShortID="1020866024">
+															<Language>SFX</Language>
+															<AudioFile>Kali_Teleport_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Kali_Teleport_03" ID="{BF1CC593-D78A-4BBA-BF88-0107CEE84C34}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
@@ -20745,18 +20895,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_WoodCringe_01" ID="{E71C1AE7-8961-4C2E-99E8-393E4EDCC003}" ShortID="305427602">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="3.12996614170783E-02"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="1.17975646879756"/>
-																			</PropertyList>
+																		<AudioFileSource Name="HB_WoodCringe_01" ID="{F12DC815-3D4F-4854-B0F5-9F4FFFC6A99B}" ShortID="717261915">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_WoodCringe_01.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_WoodCringe_01" ID="{E71C1AE7-8961-4C2E-99E8-393E4EDCC003}" Platform="Linked"/>
+																		<ActiveSource Name="HB_WoodCringe_01" ID="{F12DC815-3D4F-4854-B0F5-9F4FFFC6A99B}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_WoodCringe_02" ID="{B2DC3485-0518-4660-8531-066993820B96}" ShortID="84015614">
@@ -20769,18 +20914,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_WoodCringe_02" ID="{13581F7F-F2A3-4FA0-A96A-651FD142B74A}" ShortID="286612238">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.09303264684869E-02"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="1.11956481222626"/>
-																			</PropertyList>
+																		<AudioFileSource Name="HB_WoodCringe_02" ID="{E26E56BD-FF1F-4061-8C40-969D7D98E68D}" ShortID="947983209">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_WoodCringe_02.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_WoodCringe_02" ID="{13581F7F-F2A3-4FA0-A96A-651FD142B74A}" Platform="Linked"/>
+																		<ActiveSource Name="HB_WoodCringe_02" ID="{E26E56BD-FF1F-4061-8C40-969D7D98E68D}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_WoodCringe_03" ID="{E071B641-80C4-46D0-8788-C9F16459A660}" ShortID="5157944">
@@ -20800,18 +20940,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_WoodCringe_03" ID="{49313171-1B42-4D1F-9107-02F0FE6EA76F}" ShortID="862182120">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="4.10958904109588E-02"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="1.5958904109589"/>
-																			</PropertyList>
+																		<AudioFileSource Name="HB_WoodCringe_03" ID="{EC6D7A32-0021-4E4B-B9FB-C166405A938D}" ShortID="938239315">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_WoodCringe_03.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_WoodCringe_03" ID="{49313171-1B42-4D1F-9107-02F0FE6EA76F}" Platform="Linked"/>
+																		<ActiveSource Name="HB_WoodCringe_03" ID="{EC6D7A32-0021-4E4B-B9FB-C166405A938D}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_WoodCringe_04" ID="{57544737-8BAA-483B-97B0-9BF2C8218757}" ShortID="829252208">
@@ -20831,18 +20966,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_WoodCringe_04" ID="{91AC3797-2A49-4F77-868F-F853C900B8C8}" ShortID="457581505">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="2.54710263100675E-02"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="1.59739722144566"/>
-																			</PropertyList>
+																		<AudioFileSource Name="HB_WoodCringe_04" ID="{D45E68B0-CFF1-49EA-A00C-C5536C2B7B5B}" ShortID="185056008">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_WoodCringe_04.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_WoodCringe_04" ID="{91AC3797-2A49-4F77-868F-F853C900B8C8}" Platform="Linked"/>
+																		<ActiveSource Name="HB_WoodCringe_04" ID="{D45E68B0-CFF1-49EA-A00C-C5536C2B7B5B}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -21014,13 +21144,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_rope_moving_1" ID="{0EC9C6DE-610E-4502-BB49-4C21DA7416A5}" ShortID="225519632">
+																		<AudioFileSource Name="HB_rope_moving_1" ID="{21D94C27-06B7-4743-87C9-0638F1810E53}" ShortID="1052029816">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_rope_moving_1.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_rope_moving_1" ID="{0EC9C6DE-610E-4502-BB49-4C21DA7416A5}" Platform="Linked"/>
+																		<ActiveSource Name="HB_rope_moving_1" ID="{21D94C27-06B7-4743-87C9-0638F1810E53}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_rope_moving_2" ID="{687CBEC3-B3B5-457D-BD5F-576146CF0660}" ShortID="820832500">
@@ -21040,13 +21170,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_rope_moving_2" ID="{8BFD7AF7-2001-4278-A524-63B670B73BD8}" ShortID="369157319">
+																		<AudioFileSource Name="HB_rope_moving_2" ID="{026509B0-B70A-4AFB-8ADA-BD1B6AD824F1}" ShortID="54996367">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_rope_moving_2.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_rope_moving_2" ID="{8BFD7AF7-2001-4278-A524-63B670B73BD8}" Platform="Linked"/>
+																		<ActiveSource Name="HB_rope_moving_2" ID="{026509B0-B70A-4AFB-8ADA-BD1B6AD824F1}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_rope_moving_3" ID="{2E54B6D8-AB31-4F7A-B7E5-021428F39F16}" ShortID="922299336">
@@ -21066,13 +21196,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_rope_moving_3" ID="{AD30EA0F-7416-4279-AD3F-ECFC99882AC0}" ShortID="124705329">
+																		<AudioFileSource Name="HB_rope_moving_3" ID="{F68564F5-9F0E-4FA8-8606-BF8E8FACB27F}" ShortID="326696016">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_rope_moving_3.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_rope_moving_3" ID="{AD30EA0F-7416-4279-AD3F-ECFC99882AC0}" Platform="Linked"/>
+																		<ActiveSource Name="HB_rope_moving_3" ID="{F68564F5-9F0E-4FA8-8606-BF8E8FACB27F}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="HB_rope_moving_4" ID="{1B221020-6A6E-4CF6-9B59-063F5E880FD6}" ShortID="371952207">
@@ -21092,13 +21222,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="HB_rope_moving_4" ID="{5DB69E04-35E2-4414-9972-3846066AA6DE}" ShortID="670947103">
+																		<AudioFileSource Name="HB_rope_moving_4" ID="{A6A1E510-0292-4205-9EB9-1A1D326B8DFE}" ShortID="643245898">
 																			<Language>SFX</Language>
 																			<AudioFile>HB_rope_moving_4.wav</AudioFile>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="HB_rope_moving_4" ID="{5DB69E04-35E2-4414-9972-3846066AA6DE}" Platform="Linked"/>
+																		<ActiveSource Name="HB_rope_moving_4" ID="{A6A1E510-0292-4205-9EB9-1A1D326B8DFE}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>

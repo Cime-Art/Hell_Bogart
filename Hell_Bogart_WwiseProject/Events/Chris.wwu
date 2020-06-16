@@ -259,6 +259,21 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Teleport" ID="{CE132486-8828-48ED-97DE-EE4F0E7D12D6}" ShortID="334598451">
+							<ChildrenList>
+								<Event Name="E_Kaliboss_Teleport" ID="{A04214CD-B2F9-48D3-AEBC-479395990B5C}">
+									<ChildrenList>
+										<Action Name="" ID="{4A796488-6D9A-4916-B5F2-5E5059D5FC93}" ShortID="942141864">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Kali_Teleport_RND" ID="{E6B03E0C-FA75-4F3A-871E-C965D743CA34}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="HB_Ui_Character" ID="{6238A0C0-DC63-40FA-BE22-55F0706986CE}" ShortID="604188379">
