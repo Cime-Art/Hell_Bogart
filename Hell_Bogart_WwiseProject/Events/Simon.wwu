@@ -1724,7 +1724,7 @@
 												<Action Name="" ID="{79EF9A97-E06B-4DE9-BDD8-505785B754B7}" ShortID="489673713">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Bear_Speech_LosingLife_RND" ID="{63F64CA7-D750-4E21-95B4-5FE02F64C31D}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+															<ObjectRef Name="Bear_Speech_LosingLife_Speech_RND" ID="{6FF02BEA-821F-465A-BA9A-5583F01E5A68}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -2114,6 +2114,293 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="HUD_Switch_Grenade_RND" ID="{C24C9B78-348D-48B7-8549-D737EAA66A81}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Intro" ID="{93AA517B-D662-41FF-95A4-BD6759E29F56}" ShortID="110637021">
+					<ChildrenList>
+						<Event Name="E_Intro_01_Start" ID="{FEA52953-CD7A-4EDB-93C2-03E6A039D858}">
+							<ChildrenList>
+								<Action Name="" ID="{F0A52548-562F-44E9-86EB-FCC1EC9A472C}" ShortID="596010770">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}" WorkUnitID="{9E48D1B8-3581-4963-99DB-6EE7FF2E886B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7E1A7419-D1A3-44B5-AEA3-91B26CB8867A}" ShortID="991234299">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="8"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_HelicoStatic_SEQ_LOOP" ID="{88D22751-A9EC-4792-A978-BC6DCF3C22A6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E57E5FC8-4620-4E31-9B3A-681225F4DAF9}" ShortID="365885453">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Intro_Wind" ID="{C3A0B4F8-5FDF-49F8-8A52-79F56365CCE6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{409B46C8-0F3A-458D-A5B3-25B28158FBB2}" ShortID="800980841">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_AmbJungle_SEQ_LOOP" ID="{19B785E3-2F2C-4D6A-AA51-9218D86DFAA6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AF84647C-30AD-4800-9533-8F0C409963A9}" ShortID="697552446">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mus_Jungle_Event_Begin_Intro" ID="{B7E3FF1E-E4ED-488C-95B8-CEA4C48CC8B9}" WorkUnitID="{C83CF8AC-E373-4214-9006-244B54CF287B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Intro_02_Boom" ID="{D1E57BCA-5217-46DE-8FA2-B1F56BAE3E88}">
+							<ChildrenList>
+								<Action Name="" ID="{127F5961-C04E-4364-9E75-CE357DB0C012}" ShortID="354860338">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="13"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_HelicoFalling_SEQ_LOOP" ID="{0709570C-2D10-4C4E-9AD4-6DE44C9CBF7C}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{769C3D68-5479-4250-8AE4-0574AD0EB555}" ShortID="444776773">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.03"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Impact_V4" ID="{4E3130E8-7B76-4A42-9F9F-06E62D3FC2D7}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E3D82E63-2C93-4C50-9A22-8D336317EC5D}" ShortID="517013238">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="0.4"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_HelicoStatic_SEQ_LOOP" ID="{88D22751-A9EC-4792-A978-BC6DCF3C22A6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EA75DA7E-64F4-4DDB-8083-C60929EAD575}" ShortID="523791589">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_HelicoFalling_SEQ_LOOP" ID="{0709570C-2D10-4C4E-9AD4-6DE44C9CBF7C}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6D44138E-5363-45A5-8FB7-0495C35557D5}" ShortID="448574063">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="Delay" Type="Real64" Value="0.3"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+										<Property Name="Volume" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Intro_Wind" ID="{C3A0B4F8-5FDF-49F8-8A52-79F56365CCE6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{29635B06-6F5D-4866-A5C0-C8C919C5DEAB}" ShortID="664198246">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="attacking3" ID="{002DBA25-AFCA-4AF3-9E0E-9B84B8897C94}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Intro_03_Crash" ID="{968164A5-488C-4FBB-A21C-EF06F17B840E}">
+							<ChildrenList>
+								<Action Name="" ID="{70A2BEA0-A6F9-4636-8FDB-BAB3C1D8355B}" ShortID="860584922">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Intro_EngineShutDown" ID="{0B7EE4AF-1FE6-40A1-9808-484E396F51BB}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A9F797A2-46B4-4ED3-ADAF-AC350F5EE27F}" ShortID="213556100">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crash_V3" ID="{C197AED1-5895-47EB-A91A-FC2B7B2E3413}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D8F3FFFB-8E2A-4A4C-BF93-1E27E9B0AE7C}" ShortID="479507981">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="13"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+										<Property Name="Pitch" Type="int32" Value="-300"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_HelicoFalling_SEQ_LOOP" ID="{0709570C-2D10-4C4E-9AD4-6DE44C9CBF7C}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D7E3649F-E406-462C-9481-3E6EB08F6353}" ShortID="219877820">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_HelicoFalling_SEQ_LOOP" ID="{0709570C-2D10-4C4E-9AD4-6DE44C9CBF7C}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D473F798-DA45-42CF-8F7C-AEBA1C063F71}" ShortID="516883093">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Intro_CrashLayering" ID="{A33F022D-4287-4E2D-85B1-61DB2F88754A}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F46DEF6B-80C0-4771-9169-25C8721DBCD1}" ShortID="599341567">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_AmbJungle_SEQ_LOOP" ID="{19B785E3-2F2C-4D6A-AA51-9218D86DFAA6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E10DC568-E90E-469E-9BDE-FE707D1FC995}" ShortID="324671412">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Intro_Wind" ID="{C3A0B4F8-5FDF-49F8-8A52-79F56365CCE6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{16B45A50-478F-4201-9F16-2BD42B210283}" ShortID="678011369">
+									<PropertyList>
+										<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="16"/>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+										<Property Name="Volume" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HB_Intro_Wind" ID="{C3A0B4F8-5FDF-49F8-8A52-79F56365CCE6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5E0CBA80-39AD-4644-BDE5-23888D0A6093}" ShortID="732065189">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="8"/>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_BrokenRadio_RND_LOOP" ID="{4B751AC6-8E7A-43EF-A975-BD8F12FD8AD2}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AEC230DF-0CA7-416C-AD0D-DD2663CA6E6C}" ShortID="1044646595">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="8"/>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_Sparkles_BLEND" ID="{D62767D8-6EA5-4056-89FF-FC0B022D6B88}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EBEB5FB0-7718-4BE3-8776-689FF640A5AB}" ShortID="702044537">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="8"/>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_Fire_BLEND" ID="{93DF7A45-C54C-44AE-8272-198C38B72CF1}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Intro_04_End" ID="{A187E79D-3B7B-4C3D-A30F-9AEB0D57E7DE}">
+							<ChildrenList>
+								<Action Name="" ID="{0D0B7FA0-03C4-4FFC-8A4C-9C0041B1269C}" ShortID="203887462">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro Texte Helico" ID="{58EAAD2B-15D4-4E46-BE92-E44B8DF4805A}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="E_Intro_Pass" ID="{146F7417-61A5-40BB-AC32-405A02D508E7}">
+							<ChildrenList>
+								<Action Name="" ID="{7655B59F-C569-49CE-8E3D-6DC69C49C541}" ShortID="909224716">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro Texte Helico" ID="{58EAAD2B-15D4-4E46-BE92-E44B8DF4805A}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

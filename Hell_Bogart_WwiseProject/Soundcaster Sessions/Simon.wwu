@@ -581,16 +581,24 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Shotgun_EVENT" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Traps_Punji_Closing" ID="{48990ED0-60FA-4D10-8C37-6693812E9DC4}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Iddle_MobJungleCharlie_SEQ" ID="{CEF368F9-F5FA-46E7-9013-EE709C5D8278}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
-							<Position X="2" Y="3"/>
+							<ObjectRef Name="E_Mob_JungleCharlie_Scream" ID="{23A276CC-5518-46D4-9A7B-04145C03F0C1}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Traps_Punji_Triggered" ID="{D5996B39-D4C8-4143-BEE4-8C93146D6F1F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY" ID="{70A43E76-1BE5-46F8-BF81-233B3EC8C18F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Global_SetInPauseMenu" ID="{85FBA638-4F4B-43D8-9A14-5F36F100CC3E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -641,6 +649,80 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Start" ID="{220B4154-EBE4-4C51-9B3A-924E2597A8F3}"/>
+						<CurrentStateRef Name="Bridge" ID="{5C3C7D00-B891-4986-A597-5D62DBDAFC11}"/>
+						<CurrentStateRef Name="Ammo_1" ID="{542C4DF4-2B9C-4572-BAB9-2F0F978BB21B}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>
+						<CurrentSwitchRef Name="Epic_Other" ID="{ECBFE668-2E38-4070-B6A2-B1677D34D89A}"/>
+						<CurrentSwitchRef Name="Epic_Grenade" ID="{43BE297D-580F-4529-B4F8-412E1CD8ED7F}"/>
+						<CurrentSwitchRef Name="FTP_Bois_humide_switch" ID="{48F98564-D912-46A8-BECC-3861E09C5B00}"/>
+						<CurrentSwitchRef Name="Epic_Ammo" ID="{47020EE5-3D5E-4642-B9F6-5099348496CA}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Intro" ID="{F32E5483-4CC9-4FD8-B10E-FB325915A467}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="E_Intro_01_Start" ID="{FEA52953-CD7A-4EDB-93C2-03E6A039D858}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Intro_02_Boom" ID="{D1E57BCA-5217-46DE-8FA2-B1F56BAE3E88}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Intro_Pass" ID="{146F7417-61A5-40BB-AC32-405A02D508E7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Intro_03_Crash" ID="{968164A5-488C-4FBB-A21C-EF06F17B840E}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Intro_04_End" ID="{A187E79D-3B7B-4C3D-A30F-9AEB0D57E7DE}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Master_Volume_GP" ID="{FDC7E319-4A9F-4140-9767-9860AAFC4119}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PitchGlobal_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume_GP" ID="{2058B59F-F96C-426F-941E-7D3E119AA616}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LowPassNoHit_GP" ID="{72064AAB-5DA6-4378-BD83-A679CF1787F9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Dialog_Volume_GP" ID="{B3D601AC-9ED8-44FC-815E-0875E9E41F09}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume_GP" ID="{6BB572BF-943A-47CC-892E-05ECAC428636}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LowPassGlobal_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="UI_Volume_GP" ID="{762B362E-3A2E-4879-9E24-41940E280A3C}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
+							<Value>6000</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{8C2EDC2D-F354-45F8-9DFB-4E1A0C9BCAB1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>

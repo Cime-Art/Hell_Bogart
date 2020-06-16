@@ -272,32 +272,6 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="Intro Texte Helico" ID="{58EAAD2B-15D4-4E46-BE92-E44B8DF4805A}" ShortID="47544341">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-										<Reference Name="UserAuxSend1">
-											<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-										<Reference Name="UserAuxSend2">
-											<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-										</Reference>
-									</ReferenceList>
-								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="HUD" ID="{0A2AE610-C0B8-4210-BE57-C317532CEFC5}" ShortID="347791371">
@@ -1030,6 +1004,9 @@
 						<Reference Name="UserAuxSend2">
 							<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 						</Reference>
+						<Reference Name="UserAuxSend3">
+							<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Mobs" ID="{51EE8A80-79CB-4C09-968E-4ADAC41C930B}" ShortID="752623611">
@@ -1049,7 +1026,7 @@
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1445,6 +1422,20 @@
 											</ReferenceList>
 											<ChildrenList>
 												<SwitchContainer Name="SWITCH_Footstep" ID="{E4AABB5D-7B01-4808-96F5-2FD77EDC6110}" ShortID="681068716">
+													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1849,7 +1840,19 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="RND_GetHit" ID="{702339D9-7B41-4D6B-85FD-1E60BD8580CA}" ShortID="440840681">
 													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-4</Value>
@@ -1956,6 +1959,20 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="HB-SFX-Gardian-EndCharge" ID="{101704A1-4FEA-4291-8512-AEAA29B44E34}" ShortID="833070667">
+													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -1975,6 +1992,20 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="HB-SFX-Gardian-StartCharge" ID="{F4DE4257-C3EF-42EB-9B96-E614F4566D71}" ShortID="964600918">
+													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -2010,8 +2041,20 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="RND_Stomp" ID="{3CDD4C14-1A06-4725-B578-7CD7085F0370}" ShortID="328637155">
 													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -2087,6 +2130,12 @@
 											<PropertyList>
 												<Property Name="Color" Type="int16" Value="15"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2102,7 +2151,19 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="RND_HitPlayer_Charge" ID="{AB535604-D4A1-4BBC-8387-4D82C381F3F6}" ShortID="650526185">
 													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-3</Value>
@@ -2199,8 +2260,20 @@
 												<RandomSequenceContainer Name="RND_HitPlayer_Attacks" ID="{87E1E01E-B231-4845-ADD4-44E5B71EE539}" ShortID="629267785">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-3</Value>
@@ -2481,7 +2554,24 @@
 											<ChildrenList>
 												<BlendContainer Name="MobStoneGuardian_Iddle_BLEND" ID="{8A09F1FD-5312-4E68-80AB-8C94E81B4E05}" ShortID="787628285">
 													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="BlendBehavior" Type="int16" Value="1"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="OverridePriority" Type="bool" Value="True"/>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+														<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -4472,6 +4562,30 @@
 													</ChildrenList>
 												</BlendContainer>
 											</ChildrenList>
+											<StateInfo>
+												<StatePropertyList>
+													<Property Name="Volume"/>
+												</StatePropertyList>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Attenuation_STATE" ID="{B4E147B4-AFAA-4F82-9E93-BEAC3A69B829}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+														<CustomState Name="" ID="{2D141BE6-17AD-4D4C-94FC-44918DBC236F}" ShortID="702410254"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
+														<CustomState Name="" ID="{02C12B79-A61B-437B-8917-2E9992D7B70B}" ShortID="307412873">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</ActorMixer>
 									</ChildrenList>
 									<StateInfo>
@@ -4487,14 +4601,18 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
-												<CustomState Name="" ID="{5B080043-5A7A-42F0-B795-14A6C3662EB3}" ShortID="915371895"/>
+												<CustomState Name="" ID="{5B080043-5A7A-42F0-B795-14A6C3662EB3}" ShortID="915371895">
+													<PropertyList>
+														<Property Name="MakeUpGain" Type="Real64" Value="4"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Disable_Att" ID="{CBFD54FA-E877-4A56-B268-9C4AD5B1004A}"/>
 												<CustomState Name="" ID="{947438EC-4589-47B2-9150-64B06D1C7103}" ShortID="558616319">
 													<PropertyList>
 														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-														<Property Name="MakeUpGain" Type="Real64" Value="-3"/>
+														<Property Name="MakeUpGain" Type="Real64" Value="-9"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -26113,6 +26231,931 @@
 								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
+						<ActorMixer Name="Intro Texte Helico" ID="{58EAAD2B-15D4-4E46-BE92-E44B8DF4805A}" ShortID="47544341">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="11"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+								<Reference Name="UserAuxSend2">
+									<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Helico" ID="{35148FB5-8BE0-4EB9-ACEE-D07DE5CC8477}" ShortID="361217461">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Intro Helico Crash" ID="{5BC6CF8D-C6C9-41A6-A3C4-01E8CBA40338}" ShortID="469833826">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Crash_V3" ID="{C197AED1-5895-47EB-A91A-FC2B7B2E3413}" ShortID="56261971">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-300</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Crash_V3" ID="{0CA31BAB-5EDE-4D48-B71E-F543770DDD33}" ShortID="195056202">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Crash_V3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Crash_V3" ID="{0CA31BAB-5EDE-4D48-B71E-F543770DDD33}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Intro_CrashLayering" ID="{A33F022D-4287-4E2D-85B1-61DB2F88754A}" ShortID="179201288">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Intro_CrashLayering" ID="{FEFF2595-0F57-4F5B-B463-C0401731C1B4}" ShortID="861318398">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Intro_CrashLayering.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Intro_CrashLayering" ID="{FEFF2595-0F57-4F5B-B463-C0401731C1B4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_HB_Intro_EngineShutDown" ID="{0B7EE4AF-1FE6-40A1-9808-484E396F51BB}" ShortID="634146951">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_HB_Intro_EngineShutDown" ID="{765A234B-7FC4-4112-9EA9-2FDB55674E04}" ShortID="409644461">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.28720747716895"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.67625570776255"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX_HB_Intro_EngineShutDown.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_HB_Intro_EngineShutDown" ID="{765A234B-7FC4-4112-9EA9-2FDB55674E04}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Intro Helico Static" ID="{5E0F0957-F2E3-495D-8834-D7F99943F051}" ShortID="189632832">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1.5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Intro_HelicoStatic_SEQ_LOOP" ID="{88D22751-A9EC-4792-A978-BC6DCF3C22A6}" ShortID="809575889">
+													<PropertyList>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Engine_helico_static_V3" ID="{70CD8DAB-7A8E-4FCA-A598-405A78950512}" ShortID="727172639">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Engine_helico_static_V3" ID="{C0913FAC-5865-4B5D-AB5C-D959982B8D18}" ShortID="287237017">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Engine_helico_static_V3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Engine_helico_static_V3" ID="{C0913FAC-5865-4B5D-AB5C-D959982B8D18}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Engine_helico_static_V3_01" ID="{E50FC864-7792-42D1-8D2C-C96F6940AC31}" ShortID="681757104">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Engine_helico_static_V3" ID="{33B6E9BF-7AFB-42D1-9024-FFCC891CF9F4}" ShortID="254920599">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Engine_helico_static_V3.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="287237017"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Engine_helico_static_V3" ID="{33B6E9BF-7AFB-42D1-9024-FFCC891CF9F4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="Engine_helico_static_V3" ID="{70CD8DAB-7A8E-4FCA-A598-405A78950512}"/>
+														<ItemRef Name="Engine_helico_static_V3_01" ID="{E50FC864-7792-42D1-8D2C-C96F6940AC31}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Intro Helico Falling" ID="{85EF4D8F-ABDD-41E8-8DBC-7079222989B0}" ShortID="872725213">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Intro_HelicoFalling_SEQ_LOOP" ID="{0709570C-2D10-4C4E-9AD4-6DE44C9CBF7C}" ShortID="751659557">
+													<PropertyList>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Chute_Helico_V3" ID="{B274C040-E849-43F3-903C-A16DDB3F5F20}" ShortID="338281058">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Chute_Helico_V3" ID="{7FF1CF4F-BA21-44F2-A07B-0311C45A257B}" ShortID="7893699">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.10096803652968"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.36438684220366E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.656292237442922"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="29.2984744429691"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Chute_Helico_V3.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="923505764"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Chute_Helico_V3" ID="{7FF1CF4F-BA21-44F2-A07B-0311C45A257B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Chute_Helico_V3_01" ID="{F85B71F1-9FFB-482D-BE34-F76DDC8EE4B0}" ShortID="838107406">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Chute_Helico_V3" ID="{F96827DE-1E1C-4B02-88D0-7A827BECEA61}" ShortID="447230683">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.10096803652968"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.36438684220366E-02"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.656292237442922"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="29.2984744429691"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Chute_Helico_V3.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="923505764"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Chute_Helico_V3" ID="{F96827DE-1E1C-4B02-88D0-7A827BECEA61}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="Chute_Helico_V3" ID="{B274C040-E849-43F3-903C-A16DDB3F5F20}"/>
+														<ItemRef Name="Chute_Helico_V3_01" ID="{F85B71F1-9FFB-482D-BE34-F76DDC8EE4B0}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+												<Sound Name="Impact_V4" ID="{4E3130E8-7B76-4A42-9F9F-06E62D3FC2D7}" ShortID="1053253369">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Impact_V4" ID="{92D45419-B40E-4E69-B969-768E5F865BD3}" ShortID="949601953">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.287671232876712"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Impact_V4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Impact_V4" ID="{92D45419-B40E-4E69-B969-768E5F865BD3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Amb" ID="{C3AD3B03-5EB8-4DA4-940C-92652B47C02A}" ShortID="580960388">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Intro_AmbJungle_SEQ_LOOP" ID="{19B785E3-2F2C-4D6A-AA51-9218D86DFAA6}" ShortID="324689848">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_AMB_JUNGLE_01" ID="{736CE9E7-E111-42B9-81BD-7F0B41F1457D}" ShortID="928728964">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_AMB_JUNGLE_3" ID="{0DDC40C0-1287-4A8D-A374-57858BDEA59C}" ShortID="870205331">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="197.611797945205"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_AMB_JUNGLE_3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="885302166"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_AMB_JUNGLE_3" ID="{0DDC40C0-1287-4A8D-A374-57858BDEA59C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_AMB_JUNGLE_02" ID="{362ABA95-8902-4911-B451-40E2BF6411F6}" ShortID="604248671">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_AMB_JUNGLE_3" ID="{0C1B4C9F-6DEC-45E0-B73E-D80CE1BB5A1C}" ShortID="888095181">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="197.611797945205"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_AMB_JUNGLE_3.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="885302166"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_AMB_JUNGLE_3" ID="{0C1B4C9F-6DEC-45E0-B73E-D80CE1BB5A1C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="HB_AMB_JUNGLE_01" ID="{736CE9E7-E111-42B9-81BD-7F0B41F1457D}"/>
+												<ItemRef Name="HB_AMB_JUNGLE_02" ID="{362ABA95-8902-4911-B451-40E2BF6411F6}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<Sound Name="SFX_HB_Intro_Wind" ID="{C3A0B4F8-5FDF-49F8-8A52-79F56365CCE6}" ShortID="222403470">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_HB_Intro_Wind" ID="{CA009FFF-FDF1-43D3-BC22-2BA6E8378ADB}" ShortID="197257570">
+													<Language>SFX</Language>
+													<AudioFile>SFX_HB_Intro_Wind.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_HB_Intro_Wind" ID="{CA009FFF-FDF1-43D3-BC22-2BA6E8378ADB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Intro_BrokenRadio_RND_LOOP" ID="{4B751AC6-8E7A-43EF-A975-BD8F12FD8AD2}" ShortID="131453602">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_SFX_radio cassé_1" ID="{8F847F66-6D9D-4066-9740-0715BB8648AD}" ShortID="669001457">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_radio cassé_1" ID="{80B51FB6-9D56-48B8-A996-CE410EDD79A8}" ShortID="506159899">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_radio cassé_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_radio cassé_1" ID="{80B51FB6-9D56-48B8-A996-CE410EDD79A8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_radio cassé_2" ID="{85EC4D7B-8773-4F0D-93BB-20B5BF620835}" ShortID="617949419">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_radio cassé_2" ID="{2A1EF8F8-5251-4938-B98D-17F86B41F77B}" ShortID="23582690">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="17.3543835616438"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_radio cassé_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_radio cassé_2" ID="{2A1EF8F8-5251-4938-B98D-17F86B41F77B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_radio cassé_3" ID="{C63421DB-1D86-48C0-AA1C-BAC73910E40D}" ShortID="1070849541">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_radio cassé_3" ID="{5ECFCD2F-D716-4939-BEC4-A9707A1E3D25}" ShortID="524038915">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_radio cassé_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_radio cassé_3" ID="{5ECFCD2F-D716-4939-BEC4-A9707A1E3D25}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<BlendContainer Name="Intro_Sparkles_BLEND" ID="{D62767D8-6EA5-4056-89FF-FC0B022D6B88}" ShortID="718078404">
+											<PropertyList>
+												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Intro_Sparkles_RND_LOOP" ID="{145E7D2B-6CAF-47FD-BAE0-00B137A2F3E1}" ShortID="291241204">
+													<PropertyList>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{2237992F-55DE-46C6-8729-476B25BE3FB7}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="HB_SFX_etincelle_2" ID="{7744D280-6D75-4E1E-8428-FEF01A43F95A}" ShortID="337467325">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend1">
+																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend2">
+																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+																<Reference Name="UserAuxSend3">
+																	<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="HB_SFX_etincelle_2" ID="{E0315837-E390-41D5-B3C2-C32C7E669A87}" ShortID="25403474">
+																	<Language>SFX</Language>
+																	<AudioFile>HB_SFX_etincelle_2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="HB_SFX_etincelle_2" ID="{E0315837-E390-41D5-B3C2-C32C7E669A87}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="HB_SFX_SparklesLoop" ID="{0AD88F76-1AC7-46D9-95C9-4CEA1BDA3EAC}" ShortID="284560389">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_etincelle_3" ID="{1FD02B8D-941B-4AAA-B60A-6D320E82F5C8}" ShortID="258922504">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_etincelle_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_etincelle_3" ID="{1FD02B8D-941B-4AAA-B60A-6D320E82F5C8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Intro_Fire_BLEND" ID="{93DF7A45-C54C-44AE-8272-198C38B72CF1}" ShortID="387274704">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="HB_SFX_Other_BigFire" ID="{6262AA58-ABD0-4136-B108-94253E5DEAB5}" ShortID="64971294">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_Other_BigFire" ID="{39A8EAE1-EBE9-4802-9292-2B7D098B0F8C}" ShortID="674876544">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="6.5859358801108E-03"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.00879711160289E-02"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="33.0447892852097"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_Other_BigFire.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_Other_BigFire" ID="{39A8EAE1-EBE9-4802-9292-2B7D098B0F8C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="HB_SFX_Other_MediumFire" ID="{1C826EE0-AB6E-48CE-8CDC-3618DE722EFD}" ShortID="309633172">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX_Conversion_Settings" ID="{B118825A-C139-4D61-BA21-B675EEC7ECF5}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend1">
+															<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend2">
+															<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+														<Reference Name="UserAuxSend3">
+															<ObjectRef Name="Bridge_SFX_AUX" ID="{F37A5F44-5F91-4B28-80AF-B37654D0C8A1}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HB_SFX_Other_MediumFire" ID="{2EAF0D62-6E96-45FC-8A37-FD227FAEAFF6}" ShortID="507669513">
+															<Language>SFX</Language>
+															<AudioFile>HB_SFX_Other_MediumFire.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="HB_SFX_Other_MediumFire" ID="{2EAF0D62-6E96-45FC-8A37-FD227FAEAFF6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="VOICE" ID="{F1D5766A-C4D9-4ECF-AB79-621C224E0F1B}" ShortID="138907782">
@@ -26135,6 +27178,9 @@
 						</Reference>
 						<Reference Name="UserAuxSend2">
 							<ObjectRef Name="Boss_Arena_Reverb_VOICE_AUX" ID="{F04BB13B-4325-4956-B546-36D7D50240B3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+						</Reference>
+						<Reference Name="UserAuxSend3">
+							<ObjectRef Name="Bridge_Voices_AUX" ID="{F59E8F53-5CC2-48BF-BF89-3B6B2DD406DD}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -26330,7 +27376,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>3</Value>
+																<Value>6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -26659,6 +27705,11 @@
 														<Property Name="Priority" Type="int16">
 															<ValueList>
 																<Value>90</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -33438,9 +34489,33 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="Sssshh" ID="{F54582AA-4113-4002-813A-42D30E1D392E}" ShortID="845803340">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_RoomVerb_(Custom)" ID="{6638DBE8-E1D9-4033-9876-7F17154B2961}" ShortID="275905549" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="3"/>
+																<Property Name="Density" Type="Real32" Value="100"/>
+																<Property Name="DryLevel" Type="Real32" Value="-6.3"/>
+																<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
+																<Property Name="HFDamping" Type="Real32" Value="1.5"/>
+																<Property Name="PreDelay" Type="Real32" Value="9"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-16"/>
+																<Property Name="RoomSize" Type="Real32" Value="-100"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
