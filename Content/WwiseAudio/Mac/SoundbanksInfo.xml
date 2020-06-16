@@ -944,6 +944,7 @@
 				<Event Id="658884810" Name="E_KaliBoss_Jump" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_KaliBoss_Jump"/>
 				<Event Id="889626561" Name="E_Kaliboss_RageSlams" ObjectPath="\Events\Chris\HB_Kali Events\Rage Slams\E_Kaliboss_RageSlams"/>
 				<Event Id="844121353" Name="E_KaliBoss_Reflect" ObjectPath="\Events\Chris\HB_Kali Events\Reflect\E_KaliBoss_Reflect"/>
+				<Event Id="1493378403" Name="E_Kaliboss_Teleport" ObjectPath="\Events\Chris\HB_Kali Events\Teleport\E_Kaliboss_Teleport"/>
 				<Event Id="987842344" Name="E_Kaliboss_Ulti_Shockwave" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_Kaliboss_Ulti_Shockwave"/>
 				<Event Id="1788047770" Name="E_KaliBossh_Whoosh" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBossh_Whoosh"/>
 				<Event Id="663816717" Name="E_Mob_Gardian_Attack" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Attack"/>
@@ -1151,6 +1152,10 @@
 				<File Id="48319379" Language="SFX">
 					<ShortName>Shell_Wood_03.wav</ShortName>
 					<Path>SFX\Shell_Wood_03_66C02B12.wem</Path>
+				</File>
+				<File Id="48542292" Language="SFX">
+					<ShortName>Kali_Teleport_02.wav</ShortName>
+					<Path>SFX\Kali_Teleport_02_66C02B12.wem</Path>
 				</File>
 				<File Id="50418130" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_01.wav</ShortName>
@@ -2147,6 +2152,10 @@
 				<File Id="395274477" Language="SFX">
 					<ShortName>MnGn_Fire_03.wav</ShortName>
 					<Path>SFX\MnGn_Fire_03_66C02B12.wem</Path>
+				</File>
+				<File Id="396764428" Language="SFX">
+					<ShortName>Kali_Teleport_01.wav</ShortName>
+					<Path>SFX\Kali_Teleport_01_66C02B12.wem</Path>
 				</File>
 				<File Id="396871728" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_06.wav</ShortName>
@@ -3771,6 +3780,10 @@
 				<File Id="1018809893" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_8-2_AssHole_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_RC_8-2_AssHole_02_10C4C929.wem</Path>
+				</File>
+				<File Id="1020866024" Language="SFX">
+					<ShortName>Kali_Teleport_03.wav</ShortName>
+					<Path>SFX\Kali_Teleport_03_66C02B12.wem</Path>
 				</File>
 				<File Id="1022057532" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Slash_03.wav</ShortName>

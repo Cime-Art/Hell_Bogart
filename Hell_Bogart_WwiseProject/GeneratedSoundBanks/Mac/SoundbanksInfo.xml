@@ -944,6 +944,7 @@
 				<Event Id="658884810" Name="E_KaliBoss_Jump" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_KaliBoss_Jump"/>
 				<Event Id="889626561" Name="E_Kaliboss_RageSlams" ObjectPath="\Events\Chris\HB_Kali Events\Rage Slams\E_Kaliboss_RageSlams"/>
 				<Event Id="844121353" Name="E_KaliBoss_Reflect" ObjectPath="\Events\Chris\HB_Kali Events\Reflect\E_KaliBoss_Reflect"/>
+				<Event Id="1493378403" Name="E_Kaliboss_Teleport" ObjectPath="\Events\Chris\HB_Kali Events\Teleport\E_Kaliboss_Teleport"/>
 				<Event Id="987842344" Name="E_Kaliboss_Ulti_Shockwave" ObjectPath="\Events\Chris\HB_Kali Events\Ulti\E_Kaliboss_Ulti_Shockwave"/>
 				<Event Id="1788047770" Name="E_KaliBossh_Whoosh" ObjectPath="\Events\Chris\HB_Kali Events\Grab\E_KaliBossh_Whoosh"/>
 				<Event Id="663816717" Name="E_Mob_Gardian_Attack" ObjectPath="\Events\Brian\Gardian\E_Mob_Gardian_Attack"/>
@@ -1152,9 +1153,9 @@
 					<ShortName>Shell_Wood_03.wav</ShortName>
 					<Path>SFX\Shell_Wood_03_66C02B12.wem</Path>
 				</File>
-				<File Id="49701756" Language="SFX">
-					<ShortName>HB_SFX_KALI_Impact_02.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Impact_02_66C02B12.wem</Path>
+				<File Id="48542292" Language="SFX">
+					<ShortName>Kali_Teleport_02.wav</ShortName>
+					<Path>SFX\Kali_Teleport_02_66C02B12.wem</Path>
 				</File>
 				<File Id="50418130" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_PowerLayer_01.wav</ShortName>
@@ -1412,6 +1413,10 @@
 					<ShortName>SFX_HB_Destructibles_Tronc_03.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Tronc_03_66C02B12.wem</Path>
 				</File>
+				<File Id="151108895" Language="SFX">
+					<ShortName>Impact_layer__01.wav</ShortName>
+					<Path>SFX\Impact_layer__01_66C02B12.wem</Path>
+				</File>
 				<File Id="153220038" Language="SFX">
 					<ShortName>i_will_end_your_suffering.WAV</ShortName>
 					<Path>SFX\i_will_end_your_suffering_10BD1CAC.wem</Path>
@@ -1655,6 +1660,10 @@
 				<File Id="232000533" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_GenericBodyFall_01-003.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_GenericBodyFall_01-003_66C02B12.wem</Path>
+				</File>
+				<File Id="232177912" Language="SFX">
+					<ShortName>Impact_layer__02.wav</ShortName>
+					<Path>SFX\Impact_layer__02_66C02B12.wem</Path>
 				</File>
 				<File Id="232588016" Language="SFX">
 					<ShortName>im_coming_for_you.WAV</ShortName>
@@ -2144,6 +2153,10 @@
 					<ShortName>MnGn_Fire_03.wav</ShortName>
 					<Path>SFX\MnGn_Fire_03_66C02B12.wem</Path>
 				</File>
+				<File Id="396764428" Language="SFX">
+					<ShortName>Kali_Teleport_01.wav</ShortName>
+					<Path>SFX\Kali_Teleport_01_66C02B12.wem</Path>
+				</File>
 				<File Id="396871728" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Death_06.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Death_06_66C02B12.wem</Path>
@@ -2203,10 +2216,6 @@
 				<File Id="409644461" Language="SFX">
 					<ShortName>SFX_HB_Intro_EngineShutDown.wav</ShortName>
 					<Path>SFX\SFX_HB_Intro_EngineShutDown_386F0D9A.wem</Path>
-				</File>
-				<File Id="410483608" Language="SFX">
-					<ShortName>HB_SFX_KALI_Impact_01.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Impact_01_66C02B12.wem</Path>
 				</File>
 				<File Id="410803926" Language="SFX">
 					<ShortName>VOICE_HB_Bear_Explo_HolyShit_03.wav</ShortName>
@@ -2415,10 +2424,6 @@
 				<File Id="495664766" Language="SFX">
 					<ShortName>SFX_HB_MobJungleCharlie_Attack_06.wav</ShortName>
 					<Path>SFX\SFX_HB_MobJungleCharlie_Attack_06_E575B914.wem</Path>
-				</File>
-				<File Id="495772797" Language="SFX">
-					<ShortName>HB_SFX_KALI_Impact_03.wav</ShortName>
-					<Path>SFX\HB_SFX_KALI_Impact_03_66C02B12.wem</Path>
 				</File>
 				<File Id="497043436" Language="SFX">
 					<ShortName>SFX_HB_Character_HeartBeat_Fast.wav</ShortName>
@@ -3512,6 +3517,10 @@
 					<ShortName>SFX_HB_Destructibles_Planches_01.wav</ShortName>
 					<Path>SFX\SFX_HB_Destructibles_Planches_01_66C02B12.wem</Path>
 				</File>
+				<File Id="903875294" Language="SFX">
+					<ShortName>Impact_layer__03.wav</ShortName>
+					<Path>SFX\Impact_layer__03_66C02B12.wem</Path>
+				</File>
 				<File Id="910590706" Language="SFX">
 					<ShortName>HB_SFX_Shotgun_Reload_Out_01.wav</ShortName>
 					<Path>SFX\HB_SFX_Shotgun_Reload_Out_01_BF58B340.wem</Path>
@@ -3771,6 +3780,10 @@
 				<File Id="1018809893" Language="SFX">
 					<ShortName>VOICE_HB_Bear_RC_8-2_AssHole_02.wav</ShortName>
 					<Path>SFX\VOICE_HB_Bear_RC_8-2_AssHole_02_10C4C929.wem</Path>
+				</File>
+				<File Id="1020866024" Language="SFX">
+					<ShortName>Kali_Teleport_03.wav</ShortName>
+					<Path>SFX\Kali_Teleport_03_66C02B12.wem</Path>
 				</File>
 				<File Id="1022057532" Language="SFX">
 					<ShortName>Kali_BEAR_Hits_Slash_03.wav</ShortName>
