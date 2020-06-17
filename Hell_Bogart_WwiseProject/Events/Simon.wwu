@@ -577,6 +577,47 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Global" ID="{BD73FDEE-6305-4AAB-A558-D500C2725C1F}" ShortID="330568960">
+							<ChildrenList>
+								<Event Name="E_Mobs_EndAllActiveDots" ID="{6FB38822-AC47-4497-986A-8907357E1CAF}">
+									<ChildrenList>
+										<Action Name="" ID="{4311AD48-F9E9-4370-85A0-B40928BA998A}" ShortID="272380016">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MobJungleCharlie_Dot_Ice_RND_LOOP" ID="{A0E39BFB-A09F-4346-834E-D1E32794DFA3}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A7414B55-F478-4D4C-946E-91F20E3B5284}" ShortID="180942345">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MobJungleCharlie_Dot_Thunder_RND_LOOP" ID="{26EB783D-999E-4277-8548-50D479C96DFC}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{6983349C-7F10-48DA-A3AA-0984BA86E0F3}" ShortID="321694272">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MobJungleCharlie_Dot_Fire_BLEND" ID="{05A5530B-AA52-4C8A-86F0-9134A1FCC8BD}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enviro" ID="{1FD5A903-BDC2-4D21-9715-A30CC91C2660}" ShortID="269519169">

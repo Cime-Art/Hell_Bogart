@@ -969,6 +969,7 @@
 				<Event Id="3258442665" Name="E_MobJungleCharlie_Desintegration" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Death\E_MobJungleCharlie_Desintegration"/>
 				<Event Id="3156110896" Name="E_MobJungleCharlie_GetHit" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\GetHit\E_MobJungleCharlie_GetHit"/>
 				<Event Id="1166618678" Name="E_MobJungleCharlie_Hit" ObjectPath="\Events\Simon\Enemies\MobJungleCharlie\Hit\E_MobJungleCharlie_Hit"/>
+				<Event Id="4270426929" Name="E_Mobs_EndAllActiveDots" ObjectPath="\Events\Simon\Enemies\Global\E_Mobs_EndAllActiveDots"/>
 				<Event Id="850917734" Name="E_Petite_Boite" ObjectPath="\Events\Brian\Coffre\E_Petite_Boite"/>
 				<Event Id="3376467880" Name="E_Play_Grenade" ObjectPath="\Events\Brian\Grenade\E_Play_Grenade"/>
 				<Event Id="2055309167" Name="E_play_Minigun" ObjectPath="\Events\Ben\E_play_Minigun"/>

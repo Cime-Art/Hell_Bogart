@@ -1333,9 +1333,9 @@
 								<MusicTransition Name="Transition" ID="{F94DFBA5-4A27-4CD1-9AF2-11E4DF17A0B8}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
-										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
@@ -1347,6 +1347,16 @@
 									</ReferenceList>
 									<TransitionInfo>
 										<TransitionObjectRef Name="MUS_HB_Ruines_Start" ID="{EF35F5CE-F2F2-49A3-9279-DBE91CA81C3C}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{3B264023-E2D8-4073-B835-E4318717A72E}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
 									</TransitionInfo>
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{0BA3DD52-3CCF-4A00-8450-2FC03CCDA2AE}">
@@ -1529,6 +1539,31 @@
 									</ReferenceList>
 									<TransitionInfo>
 										<TransitionObjectRef Name="MUS_HB_Ruines_EndGardian" ID="{E3EAA176-3456-43A5-8D3B-FDE43D28D3A8}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{E07F95C3-BBFC-473E-9078-766DE2E958BE}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="MUS_Ruin_Explo_LOOP" ID="{197B58DA-CB36-4005-80E9-31E40470A918}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{72945896-1B0D-4802-83E7-05D40BB37C21}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeTime" Type="Real64" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
 									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
@@ -1743,7 +1778,7 @@
 													<PropertyList>
 														<Property Name="BeginTrimOffset" Type="Real64" Value="1417.85494425907"/>
 														<Property Name="EndTrimOffset" Type="Real64" Value="7201.38321995465"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="198.751720408396"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 														<Property Name="PlayAt" Type="Real64" Value="-1417.85494425907"/>
 													</PropertyList>
@@ -1816,7 +1851,7 @@
 													<PropertyList>
 														<Property Name="BeginTrimOffset" Type="Real64" Value="1415.47838907426"/>
 														<Property Name="EndTrimOffset" Type="Real64" Value="6972.22222222222"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="171.649213079978"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 														<Property Name="PlayAt" Type="Real64" Value="-1415.47838907426"/>
 													</PropertyList>
@@ -1889,7 +1924,7 @@
 													<PropertyList>
 														<Property Name="BeginTrimOffset" Type="Real64" Value="1500"/>
 														<Property Name="EndTrimOffset" Type="Real64" Value="9805.55555555555"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="126.478367532615"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 														<Property Name="PlayAt" Type="Real64" Value="-1500"/>
 													</PropertyList>
@@ -1962,7 +1997,7 @@
 													<PropertyList>
 														<Property Name="BeginTrimOffset" Type="Real64" Value="1500"/>
 														<Property Name="EndTrimOffset" Type="Real64" Value="9298.61678004535"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="108.41002931367"/>
 														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 														<Property Name="PlayAt" Type="Real64" Value="-1500"/>
 													</PropertyList>

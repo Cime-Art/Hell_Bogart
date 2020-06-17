@@ -168,6 +168,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	4231375772	E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY			\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_ItsBeautiful_PRIORITY	
 	4233919301	E_Global_SFXVOICE_FadeOut			\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeOut	
 	4269044702	E_Traps_BigRockExplode			\Simon\Traps\E_Traps_BigRockExplode	
+	4270426929	E_Mobs_EndAllActiveDots			\Simon\Enemies\Global\E_Mobs_EndAllActiveDots	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	205697103	Pickup_Other_Rarity_SWITCH			\Chris\Pickup_Other_Rarity_SWITCH	
