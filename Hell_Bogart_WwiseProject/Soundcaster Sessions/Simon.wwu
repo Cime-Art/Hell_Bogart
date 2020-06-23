@@ -367,12 +367,24 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Mus_Kali_Main_Play" ID="{A382111A-B1DF-4FFA-894C-E3B1FB79EDB6}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Speech_Kali_GetHit" ID="{74291BE7-7F5C-48C0-A186-A72C5DF06E0B}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Speech_Bear_StoneGuardian" ID="{5B8624A5-FD53-438A-9D1B-D78AF137F3E7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Speech_Kali_LostHerMask" ID="{2D2970A6-07EC-4FC9-B064-C8638C9137F7}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_Mus_Kali_Phase1" ID="{D7123305-BACD-4AC8-B6D6-C4996B7F8DCE}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}"/>
+							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="E_Speech_Kali_Grab" ID="{F814971F-A575-4260-83A5-60813DD2EE30}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
@@ -383,34 +395,80 @@
 							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="E_Global_MUSIC_ImmediateFadeOut" ID="{982BBE19-06AD-4F8B-839B-03CB9C5F14C3}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="E_Speech_Kali_Hit" ID="{75FAAFBA-138D-4343-8C66-DAC7CE2B9067}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
 							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="E_KaliBoss_Invocation" ID="{DB466EA2-CC1B-47A5-BC85-55CCF7CD5F6A}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Shotgun_EVENT" ID="{5D18328B-61D5-4B4A-A750-130B61E98703}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}"/>
+							<Position X="5" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="SideChain_On_SFX_GP" ID="{870618B1-2C01-410A-B27C-4268A849E003}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Master_Volume_GP" ID="{FDC7E319-4A9F-4140-9767-9860AAFC4119}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PitchGlobal_GP" ID="{133F8AE5-C7C8-4179-BE4B-C5C6541E2BDC}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume_GP" ID="{2058B59F-F96C-426F-941E-7D3E119AA616}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="LowPassNoHit_GP" ID="{72064AAB-5DA6-4378-BD83-A679CF1787F9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Dialog_Volume_GP" ID="{B3D601AC-9ED8-44FC-815E-0875E9E41F09}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume_GP" ID="{6BB572BF-943A-47CC-892E-05ECAC428636}"/>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobal_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="UI_Volume_GP" ID="{762B362E-3A2E-4879-9E24-41940E280A3C}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
-							<Value>4500</Value>
+							<Value>6000</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SideChain_On_Music_GP" ID="{75BD7520-B3E3-4BA2-BDEB-0DBD02E4C53C}"/>
+							<Value>-48</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Regular" ID="{EF43CD12-D8D8-4C2A-8F34-7CADA891F299}"/>
-						<CurrentStateRef Name="Phase_1" ID="{ABAAF5E5-2CDD-4FE2-9428-D76699596B9D}"/>
-						<CurrentStateRef Name="Fight" ID="{5A953166-9510-4B92-8CC6-7DE8FE943550}"/>
-						<CurrentStateRef Name="End" ID="{E7260F21-344D-44BD-A13A-195311D4EDEC}"/>
-						<CurrentStateRef Name="Explosive" ID="{91AAD858-FE0C-47C9-953B-DFB650CF5924}"/>
-						<CurrentStateRef Name="Ruin_Fight" ID="{B65BBDE8-63E4-473A-8F6F-AA825021D5FA}"/>
-						<CurrentStateRef Name="Out" ID="{69F91997-F6E8-40C4-8788-49C329B8B1BE}"/>
-						<CurrentStateRef Name="Boss_Arena" ID="{E0E45DD0-4F6F-4542-A8CF-A3BB5025481D}"/>
-						<CurrentStateRef Name="Enable_Att" ID="{391A5223-9574-492C-9B64-5E5749B1501B}"/>
+						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
+						<CurrentStateRef Name="None" ID="{04CE5BAF-8754-4B51-9EF3-1C8F06557891}"/>
+						<CurrentStateRef Name="None" ID="{DDB325A8-6659-429B-8BB7-D0E9039660E8}"/>
+						<CurrentStateRef Name="None" ID="{711F642A-D061-406A-A43C-7DFCFA603C38}"/>
+						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
+						<CurrentStateRef Name="None" ID="{3B572813-6BBA-41E5-8279-A33F75C29FF9}"/>
+						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
+						<CurrentStateRef Name="None" ID="{0A02832D-A4D8-4BC2-B6BC-0910FE4765F7}"/>
+						<CurrentStateRef Name="None" ID="{A062BEF1-9176-42B0-96D8-9A8B90BBB40C}"/>
+						<CurrentStateRef Name="Exterior" ID="{9CE1C40B-F73D-412F-B755-98C6424569AA}"/>
+						<CurrentStateRef Name="None" ID="{99508074-D0B5-4286-8BF2-BD358242ADBE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Barel" ID="{36CB86C4-38A4-4272-B94D-C7BD6EFC29C6}"/>

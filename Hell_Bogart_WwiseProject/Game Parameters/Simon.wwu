@@ -72,6 +72,24 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SideChains" ID="{3B86B072-2CE6-4291-97F3-EAB4EC4046EE}" ShortID="198621442">
+					<ChildrenList>
+						<GameParameter Name="SideChain_On_Music_GP" ID="{75BD7520-B3E3-4BA2-BDEB-0DBD02E4C53C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SideChain_On_SFX_GP" ID="{870618B1-2C01-410A-B27C-4268A849E003}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="0"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

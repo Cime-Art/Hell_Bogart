@@ -519,6 +519,10 @@
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{3E2A02F6-A77A-483F-B356-1F11CD6F7A0F}" ShortID="414190933">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music_Ruin_MAIN_SWITCH" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
@@ -772,19 +776,13 @@
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{7F02433D-D404-4BFD-9DE2-3E8F440E3006}" ShortID="103341220">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Music_Kali_Fight_MAIN_SWITCH" ID="{7811F982-6A83-4CBC-8062-BA8DD708E693}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{DE0BEF5B-70FC-4816-9417-4542EE9ED394}" ShortID="1055412772">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeInCurve" Type="int16" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Music_Ruin_MAIN_SWITCH" ID="{3B6D6D7C-4A26-4345-AC5F-D96AB225CE8B}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
+											<ObjectRef Name="Music_Kali_Fight_MAIN_SWITCH" ID="{7811F982-6A83-4CBC-8062-BA8DD708E693}" WorkUnitID="{1568DE74-C035-4FED-ADF4-54E7CC1DC0D5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

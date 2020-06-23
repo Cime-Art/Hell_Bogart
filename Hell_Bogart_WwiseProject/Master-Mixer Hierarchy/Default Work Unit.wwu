@@ -43,6 +43,40 @@
 					<ChildrenList>
 						<Bus Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}">
 							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{691BD9C1-80E9-4CA6-8F37-BFA16836BEEB}" ShortID="237877295">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SideChain_On_SFX_GP" ID="{870618B1-2C01-410A-B27C-4268A849E003}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5BB319EF-489E-4286-9097-D51FDBF87149}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-30</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-6</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<RTPCList>
 										<RTPC Name="" ID="{611018F1-A4EF-4270-A6F5-4061FBEEFEC3}" ShortID="668974941">
@@ -71,36 +105,8 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
-								<Property Name="Volume" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{3E2DD463-A3C3-48B0-B06A-1E557CDA8FAE}" ShortID="123515566">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="SFX_Volume_GP" ID="{6BB572BF-943A-47CC-892E-05ECAC428636}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{62523B4D-F214-4A50-9093-8651EE2E9922}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-200</YPos>
-														<Flags>5</Flags>
-														<SegmentShape>Exp2</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>1</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
 							</PropertyList>
+							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}">
 									<PropertyList>
@@ -164,6 +170,21 @@
 											<PropertyList>
 												<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="SideChain_SFX_On_Music" ID="{726A0C32-0024-4332-89BA-440210597544}" ShortID="949756151" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<PropertyList>
+																<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+																<Property Name="ReleaseTime" Type="Real32" Value="1.5"/>
+															</PropertyList>
+															<PluginData>
+	<GameParameter Name="SideChain_On_Music_GP" ID="{75BD7520-B3E3-4BA2-BDEB-0DBD02E4C53C}"/>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
 												<AuxBus Name="Kali_BigAddRev_AUX" ID="{2BA2055F-3BDF-4DA1-ABE3-B8462D0C01FB}">
 													<ReferenceList>
@@ -191,17 +212,6 @@
 													</ReferenceList>
 												</AuxBus>
 											</ChildrenList>
-											<DuckingList>
-												<DuckItem>
-													<BusRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
-													<DuckingParam>
-														<Volume>-2</Volume>
-														<FadeInTime>0.100000001490116</FadeInTime>
-														<FadeOutTime>0.100000001490116</FadeOutTime>
-														<FadeCurve>FadeLinear</FadeCurve>
-													</DuckingParam>
-												</DuckItem>
-											</DuckingList>
 										</Bus>
 										<Bus Name="Acoustics_SFX_AUX" ID="{D0A15373-28FF-4CA5-9B3B-21597792E936}">
 											<ChildrenList>
@@ -500,6 +510,40 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{7A13FA26-1BEB-47BF-971C-018EFD8B695D}" ShortID="274003575">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SideChain_On_Music_GP" ID="{75BD7520-B3E3-4BA2-BDEB-0DBD02E4C53C}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{31AF2A3A-EF1D-4B3E-BFB0-902CDAD88BBD}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-30</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-12</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{30074334-F52A-4A16-8CAA-18A7FEC0C445}" ShortID="820563963">
@@ -589,36 +633,35 @@
 									</RTPCList>
 								</Property>
 								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{57C514D8-6E3E-480A-BCD6-3E996E9F5AF5}" ShortID="643544802">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="Dialog_Volume_GP" ID="{B3D601AC-9ED8-44FC-815E-0875E9E41F09}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{D54C5C03-30E0-45BD-A45B-4C0B5D481E9C}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-200</YPos>
-														<Flags>5</Flags>
-														<SegmentShape>Exp2</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>1</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="SideChain_Voice_On_Music" ID="{6C3593C6-34D6-4D43-9663-F3D6E20B2960}" ShortID="608435665" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+												<Property Name="ReleaseTime" Type="Real32" Value="1.5"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="SideChain_On_Music_GP" ID="{75BD7520-B3E3-4BA2-BDEB-0DBD02E4C53C}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="SideChain_Voice_On_SFX" ID="{CCD83987-E2B0-4872-8697-8E07A4352C4C}" ShortID="65986280" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+												<Property Name="ReleaseTime" Type="Real32" Value="1.5"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="SideChain_On_SFX_GP" ID="{870618B1-2C01-410A-B27C-4268A849E003}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<Bus Name="Acoustics_VOICE_AUX" ID="{D6909AB2-2B1D-4885-B516-56F5EC250DEE}">
 									<ChildrenList>
@@ -846,51 +889,12 @@
 									<PropertyList>
 										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 									</PropertyList>
-									<DuckingList>
-										<DuckItem>
-											<BusRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
-											<DuckingParam>
-												<Volume>-3</Volume>
-												<FadeInTime>1.5</FadeInTime>
-												<FadeOutTime>0.5</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-										<DuckItem>
-											<BusRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}"/>
-											<DuckingParam>
-												<Volume>-1.5</Volume>
-												<FadeInTime>1.5</FadeInTime>
-												<FadeOutTime>0.5</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-									</DuckingList>
 								</Bus>
 								<Bus Name="Special_Voices_SUBBUS" ID="{0E3486CD-D4F7-4D67-AA1D-C7C7B775A186}">
 									<PropertyList>
 										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 									</PropertyList>
-									<DuckingList>
-										<DuckItem>
-											<BusRef Name="MUS_BUS" ID="{C0B9ABA7-B476-4B65-8D7F-7C1812AD4305}"/>
-											<DuckingParam>
-												<Volume>-6</Volume>
-												<FadeInTime>1.5</FadeInTime>
-												<FadeOutTime>0.5</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-										<DuckItem>
-											<BusRef Name="SFX_BUS" ID="{3E84375E-1D5D-4CA7-B800-0618510C91AB}"/>
-											<DuckingParam>
-												<Volume>-2</Volume>
-												<FadeInTime>1.5</FadeInTime>
-												<FadeOutTime>0.5</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-									</DuckingList>
+									<ReferenceList/>
 								</Bus>
 							</ChildrenList>
 							<StateInfo>
@@ -900,39 +904,7 @@
 								</StatePropertyList>
 							</StateInfo>
 						</Bus>
-						<Bus Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{7F187173-4819-4EDA-A030-1DB09CB7D6F7}" ShortID="879448218">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="UI_Volume_GP" ID="{762B362E-3A2E-4879-9E24-41940E280A3C}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{F733AE55-DE46-4276-850C-EECF086D49D5}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-200</YPos>
-														<Flags>5</Flags>
-														<SegmentShape>Exp2</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>1</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-							</PropertyList>
-						</Bus>
+						<Bus Name="UI_BUS" ID="{754CF608-AD37-4F29-AA23-C35204CF4202}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

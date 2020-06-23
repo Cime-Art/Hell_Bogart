@@ -83,6 +83,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1983623934	E_Speech_Bear_Ending			\Simon\Voice\Bear\Special Lines\E_Speech_Bear_Ending	
 	2025380871	E_Speech_Bear_EXPLO_Random_STOP_LOOP			\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_STOP_LOOP	
 	2055309167	E_play_Minigun			\Ben\E_play_Minigun	
+	2056222242	E_Global_UnmuteSFX			\Simon\Global\GlobalEffects\E_Global_UnmuteSFX	
 	2112280100	E_Mob_JungleCharlie_Death			\Simon\Enemies\MobJungleCharlie\Death\E_Mob_JungleCharlie_Death	
 	2167147008	E_Traps_Explosive_Explo			\Simon\Traps\E_Traps_Explosive_Explo	
 	2179743809	E_UI_MainMenu_Over			\Simon\UI\E_UI_MainMenu_Over	
@@ -94,6 +95,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2359215024	E_Speech_Bear_EXPLO_Random_LOOP			\Simon\Voice\Bear\EXPLO\E_Speech_Bear_EXPLO_Random_LOOP	
 	2368673453	E_BigStoneDoor_Opening			\Simon\Enviro\Big Stone Door\E_BigStoneDoor_Opening	
 	2370216155	E_KaliBoss_GrabEnd			\Chris\HB_Kali Events\Grab\E_KaliBoss_GrabEnd	
+	2374760289	E_Global_MuteSFX			\Simon\Global\GlobalEffects\E_Global_MuteSFX	
 	2375570282	E_Disable_Attenuation			\Simon\Global\GlobalEffects\E_Disable_Attenuation	
 	2376769881	E_Speech_Kali_LostHerMask			\Simon\Voice\Kali\E_Speech_Kali_LostHerMask	
 	2380953084	E_Speech_Bear_BrickInTheWall			\Simon\Voice\Bear\Special Lines\E_Speech_Bear_BrickInTheWall	
@@ -268,6 +270,11 @@ Custom State	ID	Name	State Group	Owner		Notes
 	915371895	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Stone Gardian		
 	1014503101	Enable_Att	Attenuation_STATE	\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviro\Destructibles\Destroy_Object_SWITCH\Destroy_Guardian_RND		
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1130989983	SFX_Volume_GP			\Simon\Volumes\SFX_Volume_GP	
+	1986689900	Dialog_Volume_GP			\Simon\Volumes\Dialog_Volume_GP	
+	2518588078	UI_Volume_GP			\Simon\Volumes\UI_Volume_GP	
+
 Effect plug-ins	ID	Name	Type				Notes
 	275905549	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 
@@ -342,7 +349,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	86919969	VOICE_HB_Bear_BossSecondeHealthBar	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\VOICE_HB_Bear_BossSecondeHealthBar_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Voices Global System\Bear Voice\Special Lines\VOICE_HB_Bear_BossSecondeHealthBar		314812
 	89815110	Legendary	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-Genade-02_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Grenade\Element_Grenade_SWTICH\Elm_Regular\Legendary		126756
 	91265510	HB-SFX-Gardian-Footstep_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-Gardian-Footstep_03_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Stone Gardian\Footstep\SWITCH_Footstep\RND_Footstep\HB-SFX-Gardian-Footstep_03		46043
-	92319986	VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_PRIORITY	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Voices Global System\Kali Bear Interactions\Special Events\KaliBear_Speech_LostHerMask_SEQ\VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_PRIORITY		315200
+	92319986	VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_PRIORITY	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VOICE\Voices Global System\Kali Bear Interactions\Random Voice Lines\KaliBear_Speech_Random_SEQ_LOOP\KaliBear_SpeechRandom_SEQ\Bear_Speech_BOSS_DuringFight_RND\VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_PRIORITY		315200
 	94451676	Shell_Gravel_03	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Shell_Gravel_03_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Gatling\Shells\Gravel\Shell_Gravel_03		14034
 	94536974	Shell_Water_02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\Shell_Water_02_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Bear\Weapons\Gatling\Shells\Water\Shell_Water_02		18331
 	94582669	HB-SFX-Gardian-Woosh-02	D:\GIT REPOSITORIES\Hell_Bogart\Hell_Bogart_WwiseProject\.cache\Mac\SFX\HB-SFX-Gardian-Woosh-02_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mobs\Stone Gardian\Attack\MobStoneGuardian_PrepareAttack_RND\HB-SFX-Gardian-Woosh-02		52744

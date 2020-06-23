@@ -41,6 +41,7 @@
 						<ObjectRef Name="E_Mob_JungleCharlie_Attack" ID="{5B1790E9-CFE2-42D5-A7A2-1057AE8B4497}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mob_Gardian_Stomp" ID="{664EAF6C-1D06-42DC-ABA6-425ADD82BB69}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_KaliBoss_deathfire" ID="{76442229-EFB8-42E6-B813-649C7E09C244}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Global_UnmuteSFX" ID="{6C89020A-0409-42EB-89B5-05E0A16A9B40}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Kali_Hit" ID="{75FAAFBA-138D-4343-8C66-DAC7CE2B9067}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_SpikeDoor_End" ID="{DC16C2C8-8097-435A-912E-27589796E563}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Deny" ID="{B2B322CC-2F63-4375-846E-35FF192EC8DB}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
@@ -88,6 +89,7 @@
 						<ObjectRef Name="E_Traps_SpikeTrap_MecaImpact" ID="{3B9A3901-D98E-476D-8950-769C31792A67}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Kali_Random_Lines_LOOP" ID="{B012DD18-59B5-477E-8BBE-23002959BF86}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_KaliBoss_Invocation" ID="{DB466EA2-CC1B-47A5-BC85-55CCF7CD5F6A}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Global_MuteSFX" ID="{AA4AA6C6-CACC-47CA-95BA-7AD9243F9B6B}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="HB_Healthkit" ID="{C652CBF4-E8CD-4807-98CA-9D58BA179795}" WorkUnitID="{FAA10444-24FE-4423-857A-D8F0320B223E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Speech_Bear_Loot_Legendary_PRIORITY" ID="{4F5C7B85-3C0D-4811-B04C-E6EE60FA468F}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_UI_Option" ID="{D5C449DA-7D73-482D-BA58-D5D663DB096B}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
@@ -221,6 +223,7 @@
 						<ObjectRef Name="E_Mus_TriggerChest" ID="{50F64845-E7BA-4DA8-912B-34F5FFE137A0}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Ruin_Fight" ID="{8A0C29B6-59E4-4F08-8889-8A4A4A1A84EE}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Kali_75" ID="{5D201F05-4A10-4F82-AB93-0ABB05496EF0}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="E_Global_MUSIC_ImmediateFadeOut" ID="{982BBE19-06AD-4F8B-839B-03CB9C5F14C3}" WorkUnitID="{E9453A87-3759-4759-9E78-7293ECE81D94}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="E_Mus_Kali_Main_Play" ID="{A382111A-B1DF-4FFA-894C-E3B1FB79EDB6}" WorkUnitID="{3E4F5D84-216A-49AA-B329-B77F9D9E5A12}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
