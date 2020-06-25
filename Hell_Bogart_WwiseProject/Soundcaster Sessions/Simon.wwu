@@ -426,7 +426,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Music_Volume_GP" ID="{2058B59F-F96C-426F-941E-7D3E119AA616}"/>
-							<Value>1</Value>
+							<Value>0.5</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="LowPassNoHit_GP" ID="{72064AAB-5DA6-4378-BD83-A679CF1787F9}"/>
@@ -434,11 +434,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Dialog_Volume_GP" ID="{B3D601AC-9ED8-44FC-815E-0875E9E41F09}"/>
-							<Value>1</Value>
+							<Value>0.5</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFX_Volume_GP" ID="{6BB572BF-943A-47CC-892E-05ECAC428636}"/>
-							<Value>1</Value>
+							<Value>0.5</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="LowPassGlobal_GP" ID="{A77146BC-99D7-4869-8C9C-CF942115E68D}"/>
@@ -446,7 +446,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="UI_Volume_GP" ID="{762B362E-3A2E-4879-9E24-41940E280A3C}"/>
-							<Value>1</Value>
+							<Value>0.5</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Mus_Jungle_Distance_From_Enemy_GP" ID="{5FE4942E-8998-48B7-9F56-82442B4B266E}"/>
@@ -460,10 +460,10 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{5FB73664-B97B-4983-A8E0-AE2BD959BCA3}"/>
 						<CurrentStateRef Name="None" ID="{04CE5BAF-8754-4B51-9EF3-1C8F06557891}"/>
-						<CurrentStateRef Name="None" ID="{DDB325A8-6659-429B-8BB7-D0E9039660E8}"/>
+						<CurrentStateRef Name="Kali_Phase1" ID="{1DC4A0E3-7262-485C-B9AD-09F065FEA9FC}"/>
 						<CurrentStateRef Name="None" ID="{711F642A-D061-406A-A43C-7DFCFA603C38}"/>
 						<CurrentStateRef Name="None" ID="{0907E41D-2943-4225-9F9A-F5F50A1AFC8D}"/>
-						<CurrentStateRef Name="None" ID="{3B572813-6BBA-41E5-8279-A33F75C29FF9}"/>
+						<CurrentStateRef Name="A_Full" ID="{18BCD633-FEA4-4F49-8030-6AE74F999FE8}"/>
 						<CurrentStateRef Name="None" ID="{D82BEEE3-F997-4E0E-BB29-B0F9C4591487}"/>
 						<CurrentStateRef Name="None" ID="{0A02832D-A4D8-4BC2-B6BC-0910FE4765F7}"/>
 						<CurrentStateRef Name="None" ID="{A062BEF1-9176-42B0-96D8-9A8B90BBB40C}"/>

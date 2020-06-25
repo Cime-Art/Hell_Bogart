@@ -22,7 +22,7 @@
 												<XPos>0</XPos>
 												<YPos>-200</YPos>
 												<Flags>5</Flags>
-												<SegmentShape>Exp2</SegmentShape>
+												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>1</XPos>
@@ -106,7 +106,6 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
-							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="SFX_Global_SUBBUS" ID="{E974EA96-31DE-4468-B318-EB32AAAA2D53}">
 									<PropertyList>
@@ -561,7 +560,7 @@
 														<XPos>0</XPos>
 														<YPos>-200</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>Exp2</SegmentShape>
+														<SegmentShape>Log2</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
@@ -894,7 +893,6 @@
 									<PropertyList>
 										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 									</PropertyList>
-									<ReferenceList/>
 								</Bus>
 							</ChildrenList>
 							<StateInfo>

@@ -1296,6 +1296,18 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{9838D9A2-9819-4658-947F-39B276ED6068}" ShortID="507865135">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="4"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Kali Bear Interactions" ID="{1D4FE353-A34F-4BB3-9251-97D2E88FE949}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_Global_UnmuteSFX" ID="{6C89020A-0409-42EB-89B5-05E0A16A9B40}">
@@ -1309,6 +1321,18 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX" ID="{C732343D-F630-4A0C-A49A-5D024BCDD5C6}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{C32C9158-FA66-4229-B72C-4F707450C664}" ShortID="551515064">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Kali Bear Interactions" ID="{1D4FE353-A34F-4BB3-9251-97D2E88FE949}" WorkUnitID="{A18CFECC-FB57-44A0-BA3E-415DA1878AB1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -1855,6 +1879,7 @@
 													<PropertyList>
 														<Property Name="ActionType" Type="int16" Value="2"/>
 														<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
@@ -1866,6 +1891,7 @@
 													<PropertyList>
 														<Property Name="ActionType" Type="int16" Value="2"/>
 														<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">

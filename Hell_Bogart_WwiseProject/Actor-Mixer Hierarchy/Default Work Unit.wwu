@@ -23,7 +23,7 @@
 												<XPos>0</XPos>
 												<YPos>-192</YPos>
 												<Flags>5</Flags>
-												<SegmentShape>Exp2</SegmentShape>
+												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>1</XPos>
@@ -1475,7 +1475,7 @@
 												<XPos>0</XPos>
 												<YPos>-192</YPos>
 												<Flags>5</Flags>
-												<SegmentShape>Exp2</SegmentShape>
+												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>1</XPos>
@@ -17335,7 +17335,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -17349,6 +17349,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="HB_SFX_KALI_BearHit_shockwave_01" ID="{38BC4A04-52C9-4492-8E0E-F3809E770135}" ShortID="862936430">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -17368,6 +17375,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="HB_SFX_KALI_BearHit_shockwave_02" ID="{06C1FA20-F5B7-4593-B72F-AD29EA9CAFED}" ShortID="522531797">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -17391,6 +17405,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="HB_SFX_KALI_BearHit_shockwave_03" ID="{2D9F53D0-D0F2-4F0C-A926-9C90178E60D4}" ShortID="399806087">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -27737,8 +27758,7 @@
 				<ActorMixer Name="VOICE" ID="{F1D5766A-C4D9-4ECF-AB79-621C224E0F1B}" ShortID="138907782">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="2"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
+						<Property Name="MakeUpGain" Type="Real64">
 							<RTPCList>
 								<RTPC Name="" ID="{51F1A8AE-F1DD-4C81-BC1B-E932CC0C5E91}" ShortID="82184361">
 									<ReferenceList>
@@ -27753,9 +27773,9 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-200</YPos>
+												<YPos>-192</YPos>
 												<Flags>5</Flags>
-												<SegmentShape>Exp2</SegmentShape>
+												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>1</XPos>
@@ -27767,6 +27787,7 @@
 								</RTPC>
 							</RTPCList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
