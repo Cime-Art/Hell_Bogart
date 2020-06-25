@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	156378189	E_Mus_Bridge_GoToPhase2			\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase2	
 	156378190	E_Mus_Bridge_GoToPhase1			\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase1	
 	447361772	E_Mus_Bridge_Initiate			\Simon\Music\Bridge\E_Mus_Bridge_Initiate	
+	487855908	E_Global_MUSIC_ImmediateFadeOut			\Simon\Global\GlobalEffects\E_Global_MUSIC_ImmediateFadeOut	
 	849506195	E_Mus_Kali_75			\Brian\Music_Boss\E_Mus_Kali_75	
 	933394352	E_Mus_Kali_25			\Brian\Music_Boss\E_Mus_Kali_25	
 	1031929396	E_Mus_Jungle_End			\Simon\Music\Jungle\E_Mus_Jungle_End	

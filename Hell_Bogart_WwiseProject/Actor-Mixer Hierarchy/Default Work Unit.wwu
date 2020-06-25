@@ -6,6 +6,34 @@
 				<ActorMixer Name="UI" ID="{E35C3409-A1A2-4E0A-AE11-78EAB9BFE0A4}" ShortID="696813139">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="MakeUpGain" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{6C398BFF-80E1-4059-A3CD-C70272585D6D}" ShortID="64074928">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="UI_Volume_GP" ID="{762B362E-3A2E-4879-9E24-41940E280A3C}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{8F405513-0087-4941-9889-E0816D6FC6A8}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-192</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -1429,6 +1457,34 @@
 				<ActorMixer Name="SFX" ID="{C732343D-F630-4A0C-A49A-5D024BCDD5C6}" ShortID="341857498">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="MakeUpGain" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{7DA92C1F-CBE1-4373-B137-20A9BEF227D2}" ShortID="188167620">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="SFX_Volume_GP" ID="{6BB572BF-943A-47CC-892E-05ECAC428636}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{7D1697C1-54BF-488E-A2F4-D35058082214}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-192</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -17277,7 +17333,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -17291,6 +17347,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="HB_SFX_KALI_BearHit_shockwave_01" ID="{38BC4A04-52C9-4492-8E0E-F3809E770135}" ShortID="862936430">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -17310,6 +17373,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="HB_SFX_KALI_BearHit_shockwave_02" ID="{06C1FA20-F5B7-4593-B72F-AD29EA9CAFED}" ShortID="522531797">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -17333,6 +17403,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="HB_SFX_KALI_BearHit_shockwave_03" ID="{2D9F53D0-D0F2-4F0C-A926-9C90178E60D4}" ShortID="399806087">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -27679,6 +27756,34 @@
 				<ActorMixer Name="VOICE" ID="{F1D5766A-C4D9-4ECF-AB79-621C224E0F1B}" ShortID="138907782">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="MakeUpGain" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{51F1A8AE-F1DD-4C81-BC1B-E932CC0C5E91}" ShortID="82184361">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Dialog_Volume_GP" ID="{B3D601AC-9ED8-44FC-815E-0875E9E41F09}" WorkUnitID="{CDC60A27-C437-4AF8-B34A-E30EF6DCD365}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{3A9D7872-4BA2-4DC7-87ED-4181844909B6}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-192</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -28829,6 +28934,13 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="Against Charlie" ID="{C36C2CE7-11AB-4D89-873E-DD4E30A7B176}" ShortID="486189724">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -31280,6 +31392,11 @@
 															</ValueList>
 														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="7"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -32073,6 +32190,7 @@
 											</ValueList>
 										</Property>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-1.5</Value>
@@ -32084,7 +32202,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+											<ObjectRef Name="Special_Voices_SUBBUS" ID="{0E3486CD-D4F7-4D67-AA1D-C7C7B775A186}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -32399,11 +32517,6 @@
 																				<Value>90</Value>
 																			</ValueList>
 																		</Property>
-																		<Property Name="Volume" Type="Real64">
-																			<ValueList>
-																				<Value>-2</Value>
-																			</ValueList>
-																		</Property>
 																		<Property Name="Weight" Type="Real64">
 																			<ValueList>
 																				<Value>20</Value>
@@ -32565,7 +32678,12 @@
 																				</ModifierInfo>
 																			</ModifierList>
 																		</Property>
-																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>3</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -32733,6 +32851,49 @@
 																			</ChildrenList>
 																			<ActiveSourceList>
 																				<ActiveSource Name="VOICE_HB_Bear_Bossline_4-2_GetCloserIntroduceMother" ID="{92658FF1-3621-4C3A-84F3-1E4C5B45A0A9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_PRIORITY" ID="{716A7BFD-58D1-4905-A25A-9289DD7EA1F9}" ShortID="59519566">
+																			<PropertyList>
+																				<Property Name="Priority" Type="int16">
+																					<ValueList>
+																						<Value>90</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>1</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Special_Voices_SUBBUS" ID="{0E3486CD-D4F7-4D67-AA1D-C7C7B775A186}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend0">
+																					<ObjectRef Name="Exterior_Delay_VOICE_AUX" ID="{AE6EEE7F-6759-4F48-8955-3846835DDBFA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend1">
+																					<ObjectRef Name="Ruines_Reverb_VOICE_AUX" ID="{7449AE5E-23F5-4F59-B058-C6035323D69C}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend2">
+																					<ObjectRef Name="Boss_Arena_Reverb_VOICE_AUX" ID="{F04BB13B-4325-4956-B546-36D7D50240B3}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																				<Reference Name="UserAuxSend3">
+																					<ObjectRef Name="Bridge_Voices_AUX" ID="{F59E8F53-5CC2-48BF-BF89-3B6B2DD406DD}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup" ID="{03015491-E35F-4FB1-B9D6-227430017AEA}" ShortID="92319986">
+																					<Language>SFX</Language>
+																					<AudioFile>VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup.wav</AudioFile>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup" ID="{03015491-E35F-4FB1-B9D6-227430017AEA}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
 																	</ChildrenList>
@@ -33232,49 +33393,8 @@
 																<ActiveSource Name="i_will_end_your_suffering" ID="{4D979805-5AC2-4FFB-AB7A-FAF1F4D78626}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_PRIORITY" ID="{716A7BFD-58D1-4905-A25A-9289DD7EA1F9}" ShortID="59519566">
-															<PropertyList>
-																<Property Name="Priority" Type="int16">
-																	<ValueList>
-																		<Value>100</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-2</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="VOICE_BUS" ID="{D017E50E-4D8E-463C-A374-4A8DD4EF7901}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="Exterior_Delay_SFX_AUX" ID="{81AF218D-A11F-4A8A-80FC-6923C237CFAA}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-																<Reference Name="UserAuxSend1">
-																	<ObjectRef Name="Ruines_Reverb_SFX_AUX" ID="{833F64FB-B54D-49B8-B086-6ADED3916236}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-																<Reference Name="UserAuxSend2">
-																	<ObjectRef Name="Boss_Arena_Reverb_SFX_AUX" ID="{E5836F5A-2033-4C34-9338-87BFFCBE9967}" WorkUnitID="{2989982D-0499-49A0-945C-77EC5027D521}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup" ID="{03015491-E35F-4FB1-B9D6-227430017AEA}" ShortID="92319986">
-																	<Language>SFX</Language>
-																	<AudioFile>VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup" ID="{03015491-E35F-4FB1-B9D6-227430017AEA}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 													</ChildrenList>
 													<Playlist>
-														<ItemRef Name="VOICE_HB_Bear_Bossline_3--1_BouhWifeMakeup_PRIORITY" ID="{716A7BFD-58D1-4905-A25A-9289DD7EA1F9}"/>
 														<ItemRef Name="i_will_end_your_suffering" ID="{60B2BAE4-6C2F-4AAB-BB27-6D2576DD706A}"/>
 													</Playlist>
 												</RandomSequenceContainer>
@@ -33889,7 +34009,7 @@
 																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="10"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-2</Value>
+																				<Value>2</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -34796,6 +34916,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<RandomSequenceContainer Name="Bear_Speech_BOSS_GiveDmgToKali" ID="{56C40D19-A63E-4D34-A9B9-8EE2E213923B}" ShortID="84954330">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>
@@ -35230,6 +35357,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Hb_KaliBoss_Death_scream_01" ID="{797A6E1B-3B5F-43FB-976C-0ADA70DCE29C}" ShortID="166462534">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{371EC1A5-2E91-43B5-98AC-8DE08645AF82}"/>

@@ -466,6 +466,7 @@
 			<ShortName>Music_Soundbank</ShortName>
 			<Path>Music_Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="487855908" Name="E_Global_MUSIC_ImmediateFadeOut" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_MUSIC_ImmediateFadeOut"/>
 				<Event Id="1316302252" Name="E_Mus_Bridge_Begin" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_Begin"/>
 				<Event Id="3685971472" Name="E_Mus_Bridge_End" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_End"/>
 				<Event Id="156378190" Name="E_Mus_Bridge_GoToPhase1" ObjectPath="\Events\Simon\Music\Bridge\E_Mus_Bridge_GoToPhase1"/>
@@ -912,12 +913,14 @@
 				<Event Id="3189034779" Name="E_FTP_surface_type_switch" ObjectPath="\Events\Alex\E_FTP_surface_type_switch"/>
 				<Event Id="3454693556" Name="E_Global_MUSIC_FadeIn" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_MUSIC_FadeIn"/>
 				<Event Id="3540013779" Name="E_Global_MUSIC_FadeOut" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_MUSIC_FadeOut"/>
+				<Event Id="2374760289" Name="E_Global_MuteSFX" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_MuteSFX"/>
 				<Event Id="3910514663" Name="E_Global_SetInPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetInPauseMenu"/>
 				<Event Id="574868710" Name="E_Global_SetOutPauseMenu" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SetOutPauseMenu"/>
 				<Event Id="2509479530" Name="E_Global_SFXVOICE_FadeIn" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeIn"/>
 				<Event Id="4233919301" Name="E_Global_SFXVOICE_FadeOut" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_SFXVOICE_FadeOut"/>
 				<Event Id="2197374297" Name="E_Global_TimeDilatation_Off" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_TimeDilatation_Off"/>
 				<Event Id="3233130797" Name="E_Global_TimeDilatation_On" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_TimeDilatation_On"/>
+				<Event Id="2056222242" Name="E_Global_UnmuteSFX" ObjectPath="\Events\Simon\Global\GlobalEffects\E_Global_UnmuteSFX"/>
 				<Event Id="762238587" Name="E_GroundSwitch_Low" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Low"/>
 				<Event Id="1942792786" Name="E_GroundSwitch_Medium" ObjectPath="\Events\Simon\Enviro\Ground Switches\E_GroundSwitch_Medium"/>
 				<Event Id="1801901601" Name="E_HUD_CloseMap" ObjectPath="\Events\Simon\UI\E_HUD_CloseMap"/>

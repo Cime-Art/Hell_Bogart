@@ -104,13 +104,12 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	127213604	LowPassNoHit_GP			\Simon\Global\LowPassNoHit_GP	
-	1130989983	SFX_Volume_GP			\Simon\Volumes\SFX_Volume_GP	
-	1986689900	Dialog_Volume_GP			\Simon\Volumes\Dialog_Volume_GP	
 	2093986695	Music_Volume_GP			\Simon\Volumes\Music_Volume_GP	
-	2518588078	UI_Volume_GP			\Simon\Volumes\UI_Volume_GP	
+	2194216069	SideChain_On_SFX_GP			\Simon\SideChains\SideChain_On_SFX_GP	
 	2673346691	LowPassGlobal_GP			\Simon\Global\LowPassGlobal_GP	
 	3254003518	PitchGlobal_GP			\Simon\Global\PitchGlobal_GP	
 	3931204830	Master_Volume_GP			\Simon\Volumes\Master_Volume_GP	
+	4122870249	SideChain_On_Music_GP			\Simon\SideChains\SideChain_On_Music_GP	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	213475909	SFX_BUS			\Default Work Unit\Master Audio Bus\SFX_BUS	
@@ -141,12 +140,15 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	65986280	SideChain_Voice_On_SFX	Wwise Meter			
 	221328566	Room_Large_(Custom)	Wwise RoomVerb			
 	316662969	Wwise_Stereo_Delay_(Custom)	Wwise Stereo Delay			
 	460801095	Wwise_Stereo_Delay_(Custom)	Wwise Stereo Delay			
 	526505807	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
+	608435665	SideChain_Voice_On_Music	Wwise Meter			
 	621182314	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
 	772888565	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
+	949756151	SideChain_SFX_On_Music	Wwise Meter			
 	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
 	3442768367	Hall_Large_Dark	Wwise RoomVerb			
 
